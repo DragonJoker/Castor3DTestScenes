@@ -1,0 +1,87 @@
+scene_name "MLBump"
+
+light Light0
+{
+	type directional
+	position 0.0 0.0 10.0
+	diffuse 1.0 1.0 1.0
+}
+
+light Light1
+{
+	type directional
+	position 10.0 1.0 -10.0
+	diffuse 1.0 1.0 1.0
+}
+
+light Light2
+{
+	type directional
+	position -10.0 10.0 -10.0
+	diffuse 1.0 1.0 1.0
+}
+
+scene_node Node
+{
+}
+
+material MLBump
+{
+	pass
+	{
+		ambient 0.321212 0.321212 0.321212 1.0
+		diffuse 1.0 1.0 1.0 1.0
+		emissive 0.0 0.0 0.0 1.0
+		specular 0.847059 0.847059 0.847059 1.0
+		shininess 128
+
+		texture_unit
+		{
+			image Textures/mur_Ambiant.bmp
+			colour 1.0 1.0 1.0 1.0
+		}
+
+		texture_unit
+		{
+			image Textures/mur_NormalMap.bmp
+			colour 1.0 1.0 1.0 1.0
+		}
+
+		shader_program
+		{
+			vertex_file Shaders/mlb.vert
+			pixel_file Shaders/mlb.frag
+			variable
+			{
+				type int
+				name colorMap
+				value 0
+			}
+
+			variable
+			{
+				type int
+				name normalMap
+				value 1
+			}
+		}
+	}
+}
+
+object Geometry
+{
+	parent Node
+
+	mesh Mesh
+	{
+//		type plane 0 0 1.0 1.0
+		type cube 1.0 1.0 1.0
+//		type sphere 50 1.0
+//		type torus 100 50 0.5 1.0
+//		type cylinder 50 2.0 1.0
+//		type cone 50 2.0 1.0
+//		type icosaedron 4 1.0
+
+		material MLBump
+	}
+}
