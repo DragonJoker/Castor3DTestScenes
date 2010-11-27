@@ -1,109 +1,73 @@
-scene_name "BaseMaterials"
-
-light Light0
+material Relief
 {
-	type directional
-	position 0.0 0.0 10.0
-	diffuse 1.0 1.0 1.0
-}
+	pass
+	{
+		ambient 0.321212 0.321212 0.321212 1.0
+		diffuse 1.0 1.0 1.0 1.0
+		emissive 0.0 0.0 0.0 1.0
+		specular 0.847059 0.847059 0.847059 1.0
+		shininess 128
 
-light Light1
-{
-	type directional
-	position 10.0 1.0 -10.0
-	diffuse 1.0 1.0 1.0
-}
+		texture_unit
+		{
+			image Textures/rockbump.jpg
+			colour 1.0 1.0 1.0 1.0
+		}
 
-light Light2
-{
-	type directional
-	position -10.0 10.0 -10.0
-	diffuse 1.0 1.0 1.0
-}
+		texture_unit
+		{
+			image Textures/rockbump.tga
+			colour 1.0 1.0 1.0 1.0
+		}
 
-scene_node Node00
-{
-	position -5.0 -2.0 0.0
-}
+		shader_program
+		{
+			vertex_file Shaders/Relief.vert
+			pixel_file Shaders/Relief.frag
 
-scene_node Node01
-{
-	position -3.0 -2.0 0.0
-}
+			variable
+			{
+				type int
+				name texmap
+				value 0
+			}
 
-scene_node Node02
-{
-	position -1.0 -2.0 0.0
-}
+			variable
+			{
+				type int
+				name reliefmap
+				value 1
+			}
 
-scene_node Node03
-{
-	position 1.0 -2.0 0.0
-}
+			variable
+			{
+				type int
+				name linear_search_steps
+				value 100
+			}
 
-scene_node Node04
-{
-	position 3.0 -2.0 0.0
-}
+			variable
+			{
+				type int
+				name binary_search_steps
+				value 100
+			}
 
-scene_node Node05
-{
-	position 5.0 -2.0 0.0
-}
+			variable
+			{
+				type float
+				name depth
+				value 0.075
+			}
 
-scene_node Node10
-{
-	position -5.0 0.0 0.0
-}
-
-scene_node Node11
-{
-	position -3.0 0.0 0.0
-}
-
-scene_node Node12
-{
-	position -1.0 0.0 0.0
-}
-
-scene_node Node13
-{
-	position 1.0 0.0 0.0
-}
-
-scene_node Node14
-{
-	position 3.0 0.0 0.0
-}
-
-scene_node Node15
-{
-	position 5.0 0.0 0.0
-}
-
-scene_node Node20
-{
-	position -5.0 2.0 0.0
-}
-
-scene_node Node21
-{
-	position -3.0 2.0 0.0
-}
-
-scene_node Node22
-{
-	position -1.0 2.0 0.0
-}
-
-scene_node Node23
-{
-	position 1.0 2.0 0.0
-}
-
-scene_node Node24
-{
-	position 3.0 2.0 0.0
+			variable
+			{
+				type float
+				name tile
+				value 1.0
+			}
+		}
+	}
 }
 
 material Brass
@@ -307,192 +271,5 @@ material BlackRubber
 		emissive 0.0 0.0 0.0 1.0
 		specular 0.4 0.4 0.4 1.0
 		shininess 10.0
-	}
-}
-
-object Geometry00
-{
-	parent Node00
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Brass
-	}
-}
-
-object Geometry01
-{
-	parent Node01
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Bronze
-	}
-}
-
-object Geometry02
-{
-	parent Node02
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material PolishedBronze
-	}
-}
-
-object Geometry03
-{
-	parent Node03
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Chrome
-	}
-}
-
-object Geometry04
-{
-	parent Node04
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Copper
-	}
-}
-
-object Geometry05
-{
-	parent Node05
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material PolishedCopper
-	}
-}
-
-object Geometry10
-{
-	parent Node10
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Pewter
-	}
-}
-
-object Geometry11
-{
-	parent Node11
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Silver
-	}
-}
-
-object Geometry12
-{
-	parent Node12
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material PolishedSilver
-	}
-}
-
-object Geometry13
-{
-	parent Node13
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Emerald
-	}
-}
-
-object Geometry14
-{
-	parent Node14
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Jade
-	}
-}
-
-object Geometry15
-{
-	parent Node15
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Obsidian
-	}
-}
-
-object Geometry20
-{
-	parent Node20
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Pearl
-	}
-}
-
-object Geometry21
-{
-	parent Node21
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Ruby
-	}
-}
-
-object Geometry22
-{
-	parent Node22
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material Turquoise
-	}
-}
-
-object Geometry23
-{
-	parent Node23
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material BlackPlastic
-	}
-}
-
-object Geometry24
-{
-	parent Node24
-
-	mesh Mesh
-	{
-		type cube 1.0 1.0 1.0
-		material BlackRubber
 	}
 }

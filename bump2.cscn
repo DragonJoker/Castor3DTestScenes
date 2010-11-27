@@ -1,0 +1,44 @@
+scene_name "Bump2"
+
+light Light0
+{
+	type directional
+	position 0.0 0.0 10.0
+	diffuse 1.0 1.0 1.0
+}
+
+light Light1
+{
+	type directional
+	position 10.0 1.0 -10.0
+	diffuse 1.0 1.0 1.0
+}
+
+light Light2
+{
+	type directional
+	position -10.0 10.0 -10.0
+	diffuse 1.0 1.0 1.0
+}
+
+scene_node Node
+{
+}
+
+object Geometry
+{
+	parent Node
+
+	mesh Mesh
+	{
+//		type plane 0 0 1.0 1.0
+		type cube 1.0 1.0 1.0
+//		type sphere 50 1.0
+//		type torus 100 50 0.5 1.0
+//		type cylinder 50 2.0 1.0
+//		type cone 50 2.0 1.0
+//		type icosaedron 4 1.0
+
+		material Bump2
+	}
+}

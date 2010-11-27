@@ -1,4 +1,4 @@
-scene_name "Test"
+scene_name "OffsetRV"
 
 light Light0
 {
@@ -25,24 +25,6 @@ scene_node Node
 {
 }
 
-material Test
-{
-	pass
-	{
-		ambient 0.321212 0.321212 0.321212 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-
-		shader_program
-		{
-			vertex_file Shaders/test.vert
-			pixel_file Shaders/test.frag
-		}
-	}
-}
-
 object Geometry
 {
 	parent Node
@@ -57,6 +39,6 @@ object Geometry
 //		type cone 50 2.0 1.0
 //		type icosaedron 4 1.0
 
-		material Test
+		material OffsetRV
 	}
 }

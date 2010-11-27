@@ -1,29 +1,32 @@
-varying vec3 lightVec;
-varying vec3 eyeVec;
-varying vec2 texCoord;
 uniform sampler2D colorMap;
 uniform sampler2D normalMap;
-uniform float invRadius;
 
-void main (void)
+varying vec2 TexCoord;
+varying vec3 textureLight;
+varying vec3 textureEye;
+
+void main()
 {
-	float distSqr = dot(lightVec, lightVec);
-	float att = clamp(1.0 - invRadius * sqrt(distSqr), 0.0, 1.0);
-	vec3 lVec = lightVec * inversesqrt(distSqr);
+	float diffuseIntensity;
+	float specularItensity;
 
-	vec3 vVec = normalize(eyeVec);
+	vec3 light;
 
-	vec4 base = texture2D(colorMap, texCoord);
+	vec3 normal;
+	vec3 eye;
 
-	vec3 bump = normalize( texture2D(normalMap, texCoord).xyz * 2.0 - 1.0);
+	vec3 reflection;
 
-	vec4 vAmbient = gl_LightSource[0].ambient * gl_FrontMaterial.ambient;
+	light = normalize( textureLight);
+	
+	normal = normalize( texture2D( normalMap, TexCoord).xyz * 2.0 - 1.0 );
+	normal.y = -normal.y;	// Left handed to right handed space (Most normal maps are generated for DirectX)
+	eye = normalize(textureEye);
 
-	float diffuse = max( dot( lVec, bump), 0.0 );
-	vec4 vDiffuse = gl_LightSource[0].diffuse * gl_FrontMaterial.diffuse * diffuse;	
-
-	float specular = pow(clamp(dot(reflect(-lVec, bump), vVec), 0.0, 1.0), gl_FrontMaterial.shininess );
-	vec4 vSpecular = gl_LightSource[0].specular * gl_FrontMaterial.specular * specular;	
-
-	gl_FragColor = ( vAmbient * base + vDiffuse * base + vSpecular) * att;
+	diffuseIntensity = clamp(max(dot(normal, light), 0.0), 0.0, 1.0);
+	
+	reflection = normalize(reflect(-light, normal));
+	specularItensity = pow(clamp(max(dot(reflection, eye), 0.0), 0.0, 1.0), 0.0 );
+	
+	gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0) + vec4(0.0, 0.0, 0.0, 1.0) + texture2D(colorMap, TexCoord)*diffuseIntensity + vec4(0.0, 0.0, 0.0, 1.0)*specularItensity;
 }

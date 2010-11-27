@@ -1,4 +1,11 @@
-attribute vec3 tangent; 
+attribute vec3 tangent;
+attribute vec4 vertex;
+attribute vec3 normal;
+attribute vec2 MultiTexCoord0;
+
+uniform mat4 ProjectionMatrix;
+uniform mat4 ModelViewMatrix;
+uniform mat3 NormalMatrix;
 
 varying vec2 texCoord;
 varying vec3 eyeSpaceVert;
@@ -9,20 +16,16 @@ varying vec3 eyeSpaceLight;
 
 void main(void)
 { 
-	vec3 binormal = cross( gl_Normal, tangent);
-	vec3 normal = gl_Normal;
+	vec3 binormal = cross( tangent, normal);
 
-	eyeSpaceVert = (gl_ModelViewMatrix * gl_Vertex).xyz;
-	
-	mat3 tbnMatrix = mat3( eyeSpaceTangent, eyeSpaceBinormal, eyeSpaceNormal);
+	eyeSpaceVert = (ModelViewMatrix * vertex).xyz;
+	eyeSpaceLight = gl_LightSource[0].position.xyz;
 
-    eyeSpaceLight = gl_LightSource[0].position.xyz;
-                       
-	eyeSpaceTangent  = gl_NormalMatrix * tangent;
-	eyeSpaceBinormal = gl_NormalMatrix * binormal;
-	eyeSpaceNormal   = gl_NormalMatrix * normal;
-   
-	texCoord   = gl_MultiTexCoord0.xy;
-   
-	gl_Position = ftransform();
+	eyeSpaceTangent = NormalMatrix * tangent;
+	eyeSpaceBinormal = NormalMatrix * binormal;
+	eyeSpaceNormal = NormalMatrix * normal;
+
+	texCoord = MultiTexCoord0;
+
+	gl_Position = ProjectionMatrix * ModelViewMatrix * vertex;
 }

@@ -1,33 +1,35 @@
-varying vec3 lightVec; 
-varying vec3 eyeVec;
-varying vec2 texCoord;
+uniform mat4 ProjectionMatrix;
+uniform mat4 ModelViewMatrix;
 
+attribute vec4 vertex;
+attribute vec3 normal;
 attribute vec3 tangent;
+attribute vec2 MultiTexCoord0;
+
+varying vec2 TexCoord;
+varying vec3 textureLight;
+varying vec3 textureEye;
 
 void main(void)
 {
-	gl_Position = ftransform();
-	texCoord = gl_MultiTexCoord0.xy;
-/*
-	vec3 vTangent = normalize( tangent);
-	vec3 c1 = cross( gl_Normal, vec3( 0.0, 0.0, 1.0)); 
-	vec3 c2 = cross( gl_Normal, vec3( 0.0, 1.0, 0.0)); 
+	TexCoord = MultiTexCoord0;
 
-	vec3 n = normalize( gl_NormalMatrix * gl_Normal);
-	vec3 t = normalize( gl_NormalMatrix * vTangent);
-	vec3 b = cross(n, t);
-*/
-	vec3 n = gl_Normal;
-	vec3 t = tangent;
-	vec3 b = cross( t, n);
+	vec3 n = (ModelViewMatrix*vec4(normal, 0.0)).xyz;
+	vec3 t = (ModelViewMatrix*vec4(tangent, 0.0)).xyz;
+	vec3 b = cross( n, t);
 
-	vec3 vVertex = vec3( gl_ModelViewMatrix * gl_Vertex);
-	vec3 tmpVec = gl_LightSource[0].position.xyz;
+	vec3 light = normalize( gl_LightSource[0].position.xyz);
 
-	lightVec = tmpVec - vVertex;
+	textureLight.x = dot(light, t);
+	textureLight.y = dot(light, b);
+	textureLight.z = dot(light, n);
+	
+	vec3 eye = (ModelViewMatrix * vertex).xyz;
+	eye = normalize(-eye);
+	
+	textureEye.x = dot(eye, t);
+	textureEye.y = dot(eye, b);
+	textureEye.z = dot(eye, n);
 
-	tmpVec = -vVertex;
-	eyeVec.x = dot( tmpVec, t);
-	eyeVec.y = dot( tmpVec, b);
-	eyeVec.z = dot( tmpVec, n);
+	gl_Position = ProjectionMatrix * ModelViewMatrix * vertex;
 }

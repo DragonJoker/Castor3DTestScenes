@@ -1,10 +1,10 @@
-varying vec3 normal, eyeVec;
+varying vec3 outNormal, eyeVec;
 varying vec3 lightDir[gl_MaxLights];
 
 void main (void)
 {
 	vec4 final_color = gl_FrontLightModelProduct.sceneColor;
-	vec3 N = normalize(normal);
+	vec3 N = normalize( outNormal);
 	int i;
 
 	for (i = 0 ; i < gl_MaxLights ; ++i)

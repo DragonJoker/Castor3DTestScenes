@@ -1,6 +1,6 @@
-varying vec2 textureCoordinate;
 varying vec3 lightVector[gl_MaxLights];
 varying vec3 eyeVector;
+varying vec2 TexCoord;
 
 uniform sampler2D colorMap;
 uniform sampler2D heightMap;
@@ -18,9 +18,9 @@ void main()
 
 	vec3 normalizedEyeVector = normalize( eyeVector );
 
-	vec3 heightVector = texture2D( heightMap, textureCoordinate).xyz;
+	vec3 heightVector = texture2D( heightMap, TexCoord).xyz;
 	float height = scale * length( heightVector) - bias;
-	vec2 nextTextureCoordinate = height * normalizedEyeVector.xy + textureCoordinate;
+	vec2 nextTextureCoordinate = height * normalizedEyeVector.xy + TexCoord;
 
 	vec3 offsetNormal = texture2D( normalMap, nextTextureCoordinate).xyz;
 

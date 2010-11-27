@@ -39,13 +39,14 @@ varying vec3 Light0_Position;
 varying vec3 Light1_Position;
 varying vec3 Light2_Position;
 varying vec3 Light3_Position;
+varying vec2 TexCoord;
 
 
 
 void main()
 {
 	vec3 CouleurFinale = vec3(0.0);
-	vec2 CoordonneesTex0 = gl_TexCoord[0].xy;
+	vec2 CoordonneesTex0 = TexCoord;
 	
 	#if ACTIVER_OFFSET_MAPPING == 1
 	    float hauteur = texture2D(Tex_hauteur, CoordonneesTex0).r;

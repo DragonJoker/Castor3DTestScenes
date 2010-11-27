@@ -1,11 +1,13 @@
 varying vec3 lightVec[gl_MaxLights];
 varying vec3 viewVec;
+varying vec2 TexCoord;
+
 uniform sampler2D colorMap;
 uniform sampler2D normalMap;
 
 void main( void)
 {
-	vec2 uv = gl_TexCoord[0].st;
+	vec2 uv = TexCoord;
 	vec4 base = texture2D( colorMap, uv);
 	vec4 final_color = vec4( 0.2, 0.2, 0.2, 1.0) * base;
 	vec3 vVec = normalize( viewVec);

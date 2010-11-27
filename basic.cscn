@@ -1,4 +1,4 @@
-scene_name "Phong"
+scene_name "Basic"
 
 light Light0
 {
@@ -25,18 +25,6 @@ scene_node Node
 {
 }
 
-material Phong
-{
-	pass
-	{
-		shader_program
-		{
-			vertex_file Shaders/lights.vert
-			pixel_file Shaders/lights.frag
-		}
-	}
-}
-
 object Geometry
 {
 	parent Node
@@ -51,6 +39,6 @@ object Geometry
 //		type cone 50 2.0 1.0
 //		type icosaedron 4 1.0
 
-		material Phong
+		material Basic
 	}
 }

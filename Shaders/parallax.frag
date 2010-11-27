@@ -1,11 +1,13 @@
 uniform vec2 scaleBias;
 uniform sampler2D basetex;
 uniform sampler2D bumptex;
+
 varying vec3 eyeVec;
+varying vec2 TexCoord;
 
 void main()
 {
-    vec2 texUV, srcUV = gl_TexCoord[0].xy;
+    vec2 texUV, srcUV = TexCoord;
     float height = texture2D(bumptex, srcUV).r;
     float v = height * scaleBias.x - scaleBias.y;
     vec3 eye = normalize( eyeVec);

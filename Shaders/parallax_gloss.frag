@@ -8,6 +8,7 @@ uniform sampler2D Base;
 
 varying	vec3 g_lightVec;
 varying	vec3 g_viewVec;
+varying vec2 TexCoord;
 
 uniform vec2 cBumpSize;// = 0.02 * vec2 (2.0, -1.0);
 
@@ -18,10 +19,10 @@ void main()
 	vec3 lightVec = normalize(g_lightVec);
 	vec3 viewVec = normalize(g_viewVec);
 	
-	float height = texture2D(NormalHeight, gl_TexCoord[0].xy).a;
+	float height = texture2D(NormalHeight, TexCoord).a;
 	height = height * cBumpSize.x + cBumpSize.y;
 
-	vec2 newUV = gl_TexCoord[0].xy + viewVec.xy * height;
+	vec2 newUV = TexCoord + viewVec.xy * height;
 	vec4 color_base = texture2D(Base,newUV);
 	vec3 bump = texture2D(NormalHeight, newUV.xy).rgb * 2.0 - 1.0;
 	bump = normalize(bump);
