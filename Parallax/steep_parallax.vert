@@ -9,9 +9,9 @@ attribute vec4 vertex;
 attribute vec3 normal;
 attribute vec2 MultiTexCoord0;
 
-uniform vec4 in_LightsPosition[8];
-uniform vec4 in_MatAmbient;
-uniform vec4 in_MatDiffuse;
+uniform vec4 c3d_LightsPosition[8];
+uniform vec4 c3d_MatAmbient;
+uniform vec4 c3d_MatDiffuse;
 
 uniform mat4 ProjectionMatrix;
 uniform mat4 ModelViewMatrix;
@@ -34,10 +34,10 @@ void main()
 
 	for (int i = 0 ; i < 3 ; i++)
 	{
-		lightVector[i] = in_LightsPosition[i].xyz;
+		lightVector[i] = c3d_LightsPosition[i].xyz;
 	}
-	ex_MatAmbient = in_MatAmbient;
-	ex_MatDiffuse = in_MatDiffuse;
+	ex_MatAmbient = c3d_MatAmbient;
+	ex_MatDiffuse = c3d_MatDiffuse;
 
 	eyeVector = cameraInWorldSpace - (ModelViewMatrix * vertex).xyz;
 

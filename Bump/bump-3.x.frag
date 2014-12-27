@@ -1,43 +1,92 @@
 #version 140
 
-uniform sampler2D DiffuseMap;
-uniform sampler2D NormalMap;
+uniform		sampler2D	c3d_mapDiffuse;
+uniform		sampler2D	c3d_mapNormal;
 
-in vec2 TexCoord;
-in vec3 textureLight;
-in vec3 textureEye;
+uniform 	sampler2D 	c3d_sLights;
+uniform 	int 		c3d_iLightsCount;
+uniform 	vec4 		c3d_v4AmbientLight;
+uniform 	vec4 		c3d_v4MatAmbient;
+uniform 	vec4 		c3d_v4MatEmissive;
+uniform 	vec4 		c3d_v4MatDiffuse;
+uniform 	vec4 		c3d_v4MatSpecular;
+uniform 	float 		c3d_fMatShininess;
 
-in vec4 ex_Light0Ambient;
-in vec4 ex_Light0Diffuse;
-in vec4 ex_Light0Specular;
+in 			vec3 		vtx_vertex;
+in 			vec3 		vtx_normal;
+in 			vec3 		vtx_tangent;
+in 			vec3 		vtx_binormal;
+in			vec2 		vtx_texture;
+in		 	vec3		vtx_eyeVec;
+in		 	mat4 		vtx_mtxModelView;
 
-in vec4 ex_MatAmbient;
-in vec4 ex_MatDiffuse;
-in vec4 ex_MatSpecular;
-in float ex_MatShininess;
+out			vec4		out_FragColor;
 
-void main()
+struct Light
 {
-	float diffuseIntensity;
-	float specularItensity;
+	vec4 	m_v4Ambient;
+	vec4 	m_v4Diffuse;
+	vec4 	m_v4Specular;
+	vec4	m_v4Position;
+	int 	m_iType;
+	vec3	m_v3Attenuation;
+	mat4	m_mtx4Orientation;
+	float	m_fExponent;
+	float	m_fCutOff;
+};
 
-	vec3 light;
+Light GetLight( int i )
+{
+	Light l_lightReturn;
+	l_lightReturn.m_v4Ambient		= texture2D( c3d_sLights, vec2( (i * 0.1) + (0 * 0.01) + 0.005, 0.0 ) );
+	l_lightReturn.m_v4Diffuse		= texture2D( c3d_sLights, vec2( (i * 0.1) + (1 * 0.01) + 0.005, 0.0 ) );
+	l_lightReturn.m_v4Specular		= texture2D( c3d_sLights, vec2( (i * 0.1) + (2 * 0.01) + 0.005, 0.0 ) );
+	vec4 	l_v4Position			= texture2D( c3d_sLights, vec2( (i * 0.1) + (3 * 0.01) + 0.005, 0.0 ) );
+	l_lightReturn.m_v3Attenuation	= texture2D( c3d_sLights, vec2( (i * 0.1) + (4 * 0.01) + 0.005, 0.0 ) ).xyz;
+	vec4 	l_v4A					= texture2D( c3d_sLights, vec2( (i * 0.1) + (5 * 0.01) + 0.005, 0.0 ) );
+	vec4 	l_v4B					= texture2D( c3d_sLights, vec2( (i * 0.1) + (6 * 0.01) + 0.005, 0.0 ) );
+	vec4 	l_v4C					= texture2D( c3d_sLights, vec2( (i * 0.1) + (7 * 0.01) + 0.005, 0.0 ) );
+	vec4 	l_v4D					= texture2D( c3d_sLights, vec2( (i * 0.1) + (8 * 0.01) + 0.005, 0.0 ) );
+	vec2	l_v2Spot				= texture2D( c3d_sLights, vec2( (i * 0.1) + (9 * 0.01) + 0.005, 0.0 ) ).xy;
+	l_lightReturn.m_v4Position		= vec4( l_v4Position.z, l_v4Position.y, l_v4Position.x, 0.0 );
+	l_lightReturn.m_iType			= int( l_v4Position.w );
+	l_lightReturn.m_mtx4Orientation	= mat4( l_v4A, l_v4B, l_v4C, l_v4D );
+	l_lightReturn.m_fExponent		= l_v2Spot.x;
+	l_lightReturn.m_fCutOff			= l_v2Spot.x;
+	return l_lightReturn;
+}
 
-	vec3 normal;
-	vec3 eye;
-
-	vec3 reflection;
-
-	light = normalize( textureLight);
+void main (void)
+{
+	float	l_fInvRadius;
+	Light	l_light;
+	vec3	l_v3Tmp;
+	vec3 	l_v3Light;
+	float 	l_fSqrLength;
+	float 	l_fAttenuation;
+	vec3 	l_v3EyeVec;
+	vec4	l_v4Texture;
+	vec3	l_v3Normal;
+	vec4	l_v4Ambient;
+	vec4	l_v4Diffuse;
+	vec4	l_v4Specular;
 	
-	normal = normalize( texture2D( NormalMap, TexCoord).xyz * 2.0 - 1.0 );
-	normal.y = -normal.y;	// Left handed to right handed space (Most normal maps are generated for DirectX)
-	eye = normalize(textureEye);
-
-	diffuseIntensity = clamp(max(dot(normal, light), 0.0), 0.0, 1.0);
+	l_fInvRadius	= 0.02;
+	l_light			= GetLight( 0 );
+	l_v3Tmp			= normalize( (vtx_mtxModelView * l_light.m_v4Position).xyz );
+//	l_v3Tmp			= l_light.m_v4Position.xyz - vtx_vertex;
+	l_v3Light.x 	= dot( l_v3Tmp, vtx_tangent		);
+	l_v3Light.y 	= dot( l_v3Tmp, vtx_binormal	);
+	l_v3Light.z 	= dot( l_v3Tmp, vtx_normal		);
+	l_fSqrLength	= dot( l_v3Light, l_v3Light );
+	l_v3Light		= l_v3Light * inversesqrt( l_fSqrLength );
+	l_fAttenuation	= clamp( 1.0 - l_fInvRadius * sqrt( l_fSqrLength ), 0.0, 1.0 );
+	l_v3EyeVec		= normalize( vtx_eyeVec );
+	l_v4Texture		= texture2D( c3d_mapDiffuse, vtx_texture );
+	l_v3Normal		= normalize( texture2D( c3d_mapNormal, vtx_texture ).xyz * 2.0 - 1.0);
+	l_v4Ambient		= l_light.m_v4Ambient	* c3d_v4MatAmbient;
+	l_v4Diffuse		= l_light.m_v4Diffuse	* c3d_v4MatDiffuse * max( dot( l_v3Light, l_v3Normal ), 0.0 );
+	l_v4Specular	= l_light.m_v4Specular	* c3d_v4MatSpecular * pow( clamp( dot( reflect( -l_v3Light, l_v3Normal ), l_v3EyeVec ), 0.0, 1.0 ), c3d_fMatShininess );	
 	
-	reflection = normalize(reflect(-light, normal));
-	specularItensity = pow(clamp(max(dot(reflection, eye), 0.0), 0.0, 1.0), 0.0 );
-
-	gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0) + texture2D( DiffuseMap, TexCoord) * diffuseIntensity * specularItensity;
+	out_FragColor = (l_v4Ambient * l_v4Texture + l_v4Diffuse * l_v4Texture + l_v4Specular) * l_fAttenuation;
 }

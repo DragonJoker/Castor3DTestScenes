@@ -1,140 +1,227 @@
-material Relief-All
+sampler "Default"
+{
+	min_filter		linear
+	mag_filter		linear
+	min_lod			-500.0
+	max_lod			500.0
+	lod_bias		0.0
+	u_wrap_mode		repeat
+	v_wrap_mode		repeat
+	w_wrap_mode		repeat
+	border_colour	0.0 0.0 0.0 0.0
+}
+
+material "TesselateGeom"
 {
 	pass
 	{
-		ambient 0.5 0.5 0.5 1.0
-		diffuse 0.4 0.4 0.4 1.0
+		ambient 0.0 0.0 0.0 1.0
+		diffuse 0.5 0.5 0.5 1.0
 		emissive 0.0 0.0 0.0 1.0
-		specular 0.774597 0.774597 0.774597 1.0
-		shininess 20.0
-
-		texture_unit
-		{
-			image Relief/Diffuse.jpg
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		texture_unit
-		{
-			image Relief/Normal.tga
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		hl_shader_program
-		{
-			file Relief/Relief.hl
-			
-			vertex_program
-			{
-				entry mainVx
-			}
-			
-			pixel_program
-			{
-				entry mainPx
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name NormalMap
-					value 1
-				}
-
-				variable
-				{
-					type int
-					name LinearSearchSteps
-					value 20
-				}
-
-				variable
-				{
-					type int
-					name BinarySearchSteps
-					value 5
-				}
-
-				variable
-				{
-					type float
-					name Depth
-					value 0.075
-				}
-
-				variable
-				{
-					type float
-					name Tile
-					value 1.0
-				}
-			}
-		}
+		specular 1.0 1.0 1.0 1.0
+		shininess 50.0
 
 		gl_shader_program
 		{
 			vertex_program
 			{
-				file Relief/Relief-3.x.vert
+				file sm_3 "Tesselation/tessellation_pn-3.x.vert"
+				file sm_4 "Tesselation/tessellation_pn-4.vert"
 			}
-			
+
+			geometry_program
+			{
+				input_type triangles
+//				output_type triangle_strip
+				output_type line_strip
+				output_vtx_count 16
+				file sm_3 "Tesselation/tessellation_pn-3.x.geom"
+				file sm_4 "Tesselation/tessellation_pn-4.geom"
+			}
+
 			pixel_program
 			{
-				file Relief/Relief-3.x.frag
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name NormalMap
-					value 1
-				}
-
-				variable
-				{
-					type int
-					name LinearSearchSteps
-					value 20
-				}
-
-				variable
-				{
-					type int
-					name BinarySearchSteps
-					value 5
-				}
-
-				variable
-				{
-					type float
-					name Depth
-					value 0.075
-				}
-
-				variable
-				{
-					type float
-					name Tile
-					value 1.0
-				}
+				file sm_3 "Tesselation/tessellation_pn-3.x.frag"
+				file sm_4 "Tesselation/tessellation_pn-4.frag"
 			}
 		}
 	}
 }
 
-material Basic-Cg
+material "Tesselate"
+{
+	pass
+	{
+		ambient 0.0 0.0 0.0 1.0
+		diffuse 0.5 0.5 0.5 1.0
+		emissive 0.0 0.0 0.0 1.0
+		specular 1.0 1.0 1.0 1.0
+		shininess 50.0
+		blend_func src_alpha inv_src_alpha
+
+		gl_shader_program
+		{
+			vertex_program
+			{
+				file sm_4 "Tesselation/Tesselation-4.x.vert"
+			}
+
+			hull_program
+			{
+				file sm_4 "Tesselation/Tesselation-4.x.ctrl"
+			}
+
+			domain_program
+			{
+				file sm_4 "Tesselation/Tesselation-4.x.eval"
+			}
+
+			pixel_program
+			{
+				file sm_4 "Tesselation/Tesselation-4.x.frag"
+			}
+		}
+	}
+}
+
+material "Basic"
+{
+	pass
+	{
+		ambient 0.0 0.0 0.0 1.0
+		diffuse 0.5 0.5 0.5 1.0
+		emissive 0.0 0.0 0.0 1.0
+		specular 1.0 1.0 1.0 1.0
+		shininess 50.0
+	}
+}
+
+material "Gold"
+{
+	pass
+	{
+		ambient 0.24725	0.1995	0.0745 1.0
+		diffuse 0.75164	0.60648	0.22648 1.0
+		emissive 0.0 0.0 0.0 1.0
+		specular 0.628281 0.555802 0.366065 1.0
+		shininess 51.2
+		two_sided true
+	}
+}
+
+material "GoldTransp"
+{
+	pass
+	{
+		ambient 0.24725	0.1995	0.0745 0.6
+		diffuse 0.75164	0.60648	0.22648 0.6
+		emissive 0.0 0.0 0.0 0.4
+		specular 0.628281 0.555802 0.366065 0.6
+		shininess 51.2
+//		blend_func inv_dst_alpha dst_alpha
+		blend_func src_alpha inv_src_alpha
+		alpha 0.6
+		two_sided true
+	}
+}
+
+material "AlphaBlendImg"
+{
+	pass
+	{
+		ambient 0.24725	0.1995	0.0745 0.6
+		diffuse 0.75164	0.60648	0.22648 0.6
+		emissive 0.0 0.0 0.0 0.4
+		specular 0.628281 0.555802 0.366065 0.6
+		shininess 51.2
+		blend_func src_alpha inv_src_alpha
+		two_sided true
+
+		texture_unit
+		{
+			image "NoShader/AlphaBlend.png"
+			colour 1.0 1.0 1.0 1.0
+			channel diffuse
+			sampler	"Default"
+		}
+	}
+}
+
+material "TnL"
+{
+	pass
+	{
+		ambient 0.0 0.0 0.0 1.0
+		diffuse 1.0 1.0 1.0 1.0
+		emissive 0.0 0.0 0.0 1.0
+		specular 1.0 1.0 1.0 1.0
+		shininess 50.0
+
+		texture_unit
+		{
+			image "Bump/Diffuse.bmp"
+			colour 1.0 1.0 1.0 1.0
+			channel diffuse
+			sampler	"Default"
+		}
+	}
+}
+
+material "ShowNormals"
+{
+	pass
+	{
+		ambient 0.0 0.0 0.0 1.0
+		diffuse 1.0 1.0 1.0 1.0
+		emissive 0.0 0.0 0.0 1.0
+		specular 1.0 1.0 1.0 1.0
+		blend_func src_alpha inv_src_alpha
+		shininess 50.0
+
+		gl_shader_program
+		{
+			vertex_program
+			{
+				file sm_3 "Normals/normals-3.x.vert"
+				file sm_4 "Normals/normals-4.x.vert"
+			}
+			
+			geometry_program
+			{
+				file sm_3 "Normals/normals-3.x.geom"
+				file sm_4 "Normals/normals-4.x.geom"
+				input_type triangles
+				output_type line_strip
+				output_vtx_count 22
+
+				variable "p_bShowNormals"
+				{
+					type int
+					value 1
+				}
+
+				variable "p_bShowTangents"
+				{
+					type int
+					value 1
+				}
+
+				variable "p_bShowBitangents"
+				{
+					type int
+					value 1
+				}
+			}
+			
+			pixel_program
+			{
+				file sm_3 "Normals/normals-3.x.frag"
+			}
+		}
+	}
+}
+
+material "Bump"
 {
 	pass
 	{
@@ -146,190 +233,83 @@ material Basic-Cg
 
 		texture_unit
 		{
-			image Texturing/Diffuse.bmp
+			image "Bump/Diffuse.bmp"
 			colour 1.0 1.0 1.0 1.0
+			channel diffuse
+			sampler	"Default"
 		}
 
-		cg_shader_program
+		texture_unit
 		{
-			file basic.cg
-
-			vertex_program
-			{
-				entry mainVx
-			}
-			
-			pixel_program
-			{
-				entry mainPx
-
-				variable
-				{
-					type int
-					name in_Texture
-					value 0
-				}
-			}
+			image "Bump/Normal.bmp"
+			colour 1.0 1.0 1.0 1.0
+			channel normal
+			sampler	"Default"
 		}
 	}
 }
 
-material Texturing-All
+material "Relief"
 {
 	pass
 	{
-		ambient 0.25 0.25 0.25 1.0
+		ambient 0.5 0.5 0.5 1.0
 		diffuse 0.4 0.4 0.4 1.0
 		emissive 0.0 0.0 0.0 1.0
-		specular 0.774597 0.774597 0.774597 1.0
-		shininess 76.8
-		double_face true
+		specular 0.1 0.1 0.1 1.0
+		shininess 50
 
 		texture_unit
 		{
-			image Texturing/Diffuse.bmp
+			image "Relief/Diffuse.jpg"
 			colour 1.0 1.0 1.0 1.0
-		}
-
-		hl_shader_program
-		{
-			file Texturing/texturing.hl
-			
-			vertex_program
-			{
-				entry mainVx
-			}
-
-			pixel_program
-			{
-				entry mainPx
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-			}
-		}
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Texturing/texturing-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Texturing/texturing-3.x.frag
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-			}
-		}
-	}
-}
-
-material Phong-All
-{
-	pass
-	{
-		ambient 0.25 0.25 0.25 1.0
-		diffuse 0.4 0.4 0.4 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.774597 0.774597 0.774597 1.0
-		shininess 76.8
-		double_face true
-
-		hl_shader_program
-		{
-			file Lights/lights.hl
-			
-			vertex_program
-			{
-				entry mainVx
-			}
-
-			pixel_program
-			{
-				entry mainPx
-			}
-		}
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Lights/lights-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Lights/lights-3.x.frag
-			}
-		}
-	}
-}
-
-material Bump-All
-{
-	pass
-	{
-		ambient 0.847059 0.847059 0.847059 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-
-		texture_unit
-		{
-			image Bump/Diffuse.bmp
-			colour 1.0 1.0 1.0 1.0
+			channel diffuse
+			sampler	"Default"
 		}
 
 		texture_unit
 		{
-			image Bump/Normal.bmp
+			image "Relief/Normal.tga"
 			colour 1.0 1.0 1.0 1.0
+			channel normal
+			sampler	"Default"
 		}
 
 		hl_shader_program
 		{
-			file Bump/bump.hl
-		
+			file sm_2 "Relief/Relief.hl"
+			
 			vertex_program
 			{
-				entry mainVx
+				entry "mainVx"
 			}
 			
 			pixel_program
 			{
-				entry mainPx
+				entry "mainPx"
 
-				variable
+				variable "LinearSearchSteps"
 				{
 					type int
-					name DiffuseMap
-					value 0
+					value 20
 				}
 
-				variable
+				variable "BinarySearchSteps"
 				{
 					type int
-					name NormalMap
-					value 1
+					value 5
 				}
 
-				variable
+				variable "Depth"
 				{
 					type float
-					name invRadius
-					value 0.01
+					value 0.075
+				}
+
+				variable "Tile"
+				{
+					type float
+					value 1.0
 				}
 			}
 		}
@@ -338,39 +318,46 @@ material Bump-All
 		{
 			vertex_program
 			{
-				file Bump/bump-3.x.vert
+				file sm_4 "Relief/Relief-4.x.vert"
+				file sm_3 "Relief/Relief-3.x.vert"
+				file sm_2 "Relief/Relief.vert"
 			}
 			
 			pixel_program
 			{
-				file Bump/bump-3.x.frag
+				file sm_4 "Relief/Relief-4.x.frag"
+				file sm_3 "Relief/Relief-3.x.frag"
+				file sm_2 "Relief/Relief.frag"
 
-				variable
+				variable "LinearSearchSteps"
 				{
 					type int
-					name DiffuseMap
-					value 0
+					value 20
 				}
 
-				variable
+				variable "BinarySearchSteps"
 				{
 					type int
-					name NormalMap
-					value 1
+					value 5
 				}
 
-				variable
+				variable "Depth"
 				{
 					type float
-					name invRadius
-					value 0.01
+					value 0.075
+				}
+
+				variable "Tile"
+				{
+					type float
+					value 1.0
 				}
 			}
 		}
 	}
 }
 
-material OffsetRV-All
+material "OffsetRV"
 {
 	pass
 	{
@@ -382,81 +369,64 @@ material OffsetRV-All
 
 		texture_unit
 		{
-			image OffsetRV/Diffuse.bmp
+			image "OffsetRV/Diffuse.bmp"
 			colour 1.0 1.0 1.0 1.0
+			channel diffuse
+			sampler	"Default"
 		}
 
 		texture_unit
 		{
-			image OffsetRV/Normal.bmp
+			image "OffsetRV/Normal.bmp"
 			colour 1.0 1.0 1.0 1.0
+			channel normal
+			sampler	"Default"
 		}
 
 		texture_unit
 		{
-			image OffsetRV/Height.bmp
+			image "OffsetRV/Height.bmp"
 			colour 1.0 1.0 1.0 1.0
+			channel height
+			sampler	"Default"
 		}
 
 		texture_unit
 		{
-			image OffsetRV/Offset.bmp
+			image "OffsetRV/Offset.bmp"
 			colour 1.0 1.0 1.0 1.0
+			sampler	"Default"
 		}
 
 		hl_shader_program
 		{
-			file OffsetRV/offsetRV.hl
+			file sm_2 "OffsetRV/offsetRV.hl"
 			
 			vertex_program
 			{
-				entry mainVx
+				entry "mainVx"
 
-				variable
+				variable "HeightMapScale"
 				{
 					type float
-					name HeightMapScale
 					value 0.0306
 				}
 
-				variable
+				variable "Scale"
 				{
 					type float
-					name Scale
 					value 0.753
 				}
 			}
 
 			pixel_program
 			{
-				entry mainPx
+				entry "mainPx"
 
-				variable
+				variable "OffsetMap"
 				{
 					type int
-					name DiffuseMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name NormalMap
-					value 1
-				}
-
-				variable
-				{
-					type int
-					name HeightMap
-					value 2
-				}
-
-				variable
-				{
-					type int
-					name OffsetMap
-					value 3
+					value 4
 				}
 			}
 		}
@@ -465,239 +435,38 @@ material OffsetRV-All
 		{
 			vertex_program
 			{
-				file OffsetRV/offsetRV-3.x.vert
+				file sm_3 "OffsetRV/offsetRV-3.x.vert"
+				file sm_2 "OffsetRV/offsetRV.vert"
 
-				variable
+				variable "HeightMapScale"
 				{
 					type float
-					name HeightMapScale
 					value 0.0306
 				}
 
-				variable
+				variable "Scale"
 				{
 					type float
-					name Scale
 					value 0.753
 				}
 			}
 
 			pixel_program
 			{
-				file OffsetRV/offsetRV-3.x.frag
+				file sm_3 "OffsetRV/offsetRV-3.x.frag"
+				file sm_2 "OffsetRV/offsetRV.frag"
 
-				variable
+				variable "OffsetMap"
 				{
 					type int
-					name DiffuseMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name NormalMap
-					value 1
-				}
-
-				variable
-				{
-					type int
-					name HeightMap
-					value 2
-				}
-
-				variable
-				{
-					type int
-					name OffsetMap
-					value 3
+					value 4
 				}
 			}
 		}
 	}
 }
 
-material Arial-2.x
-{
-	pass
-	{
-		ambient 0.847059 0.847059 0.847059 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Texturing/texturing.vert
-			}
-			
-			pixel_program
-			{
-				file Texturing/texturing.frag
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-			}
-		}
-	}
-}
-
-material Texturing-2.x
-{
-	pass
-	{
-		ambient 0.847059 0.847059 0.847059 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-
-		texture_unit
-		{
-			image Texturing/Diffuse.bmp
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Texturing/texturing.vert
-			}
-			
-			pixel_program
-			{
-				file Texturing/texturing.frag
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-			}
-		}
-	}
-}
-
-material Bump-2.x
-{
-	pass
-	{
-		ambient 0.847059 0.847059 0.847059 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-
-		texture_unit
-		{
-			image Bump/Diffuse.bmp
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		texture_unit
-		{
-			image Bump/Normal.bmp
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Bump/bump.vert
-			}
-			
-			pixel_program
-			{
-				file Bump/bump.frag
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name NormalMap
-					value 1
-				}
-
-				variable
-				{
-					type float
-					name invRadius
-					value 0.01
-				}
-			}
-		}
-	}
-}
-
-material MLBump-2.x
-{
-	pass
-	{
-		ambient 0.321212 0.321212 0.321212 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-
-		texture_unit
-		{
-			image Bump/Diffuse.bmp
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		texture_unit
-		{
-			image Bump/Normal.bmp
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Bump/mlb.vert
-			}
-
-			pixel_program
-			{
-				file Bump/mlb.frag
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name NormalMap
-					value 1
-				}
-			}
-		}
-	}
-}
-
-material Parallax-2.x
+material "Parallax"
 {
 	pass
 	{
@@ -705,57 +474,48 @@ material Parallax-2.x
 		diffuse 0.5 0.5 0.5 1.0
 		emissive 0.0 0.0 0.0 1.0
 		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
+		shininess 20
 
 		texture_unit
 		{
-			image Parallax/Diffuse.tga
+			image "Parallax/Diffuse.tga"
 			colour 1.0 1.0 1.0 1.0
+			channel diffuse
+			sampler	"Default"
 		}
 
 		texture_unit
 		{
-			image Parallax/Height.tga
+			image "Parallax/Height.tga"
 			colour 1.0 1.0 1.0 1.0
+			channel height
+			sampler	"Default"
 		}
 
 		gl_shader_program
 		{
 			vertex_program
 			{
-				file Parallax/parallax.vert
+				file sm_3 "Parallax/parallax-3.x.vert"
+				file sm_2 "Parallax/parallax.vert"
 			}
 
 			pixel_program
 			{
-				file Parallax/parallax.frag
+				file sm_3 "Parallax/parallax-3.x.frag"
+				file sm_2 "Parallax/parallax.frag"
 
-				variable
+				variable "Scale"
 				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name HeightMap
-					value 1
-				}
-
-				variable
-				{
-					type vec2f
-					name Scale
-					value 0.034 0.004
+					type float
+					value 0.004
 				}
 			}
 		}
 	}
 }
 
-material SteepParallax-2.x
+material "SteepParallax"
 {
 	pass
 	{
@@ -767,59 +527,46 @@ material SteepParallax-2.x
 
 		texture_unit
 		{
-			image Parallax/Diffuse.bmp
+			image "Parallax/Diffuse.bmp"
 			colour 1.0 1.0 1.0 1.0
+			channel diffuse
+			sampler	"Default"
 		}
 
 		texture_unit
 		{
-			image Parallax/Normal.bmp
+			image "Parallax/Normal.bmp"
 			colour 1.0 1.0 1.0 1.0
+			channel normal
+			sampler	"Default"
 		}
 
 		texture_unit
 		{
-			image Parallax/Height.bmp
+			image "Parallax/Height.bmp"
 			colour 1.0 1.0 1.0 1.0
+			channel height
+			sampler	"Default"
 		}
 
 		gl_shader_program
 		{
 			vertex_program
 			{
-				file Parallax/steep_parallax.vert
+				file sm_3 "Parallax/steep_parallax-3.x.vert"
+				file sm_2 "Parallax/steep_parallax.vert"
 			}
 
 			pixel_program
 			{
-				file Parallax/steep_parallax.frag
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name NormalMap
-					value 1
-				}
-
-				variable
-				{
-					type int
-					name HeightMap
-					value 2
-				}
+				file sm_3 "Parallax/steep_parallax-3.x.frag"
+				file sm_2 "Parallax/steep_parallax.frag"
 			}
 		}
 	}
 }
 
-material ParallaxGloss-2.x
+material "ParallaxGloss"
 {
 	pass
 	{
@@ -831,838 +578,70 @@ material ParallaxGloss-2.x
 
 		texture_unit
 		{
-			image Parallax/Normal.tga
+			image "Parallax/Gloss.tga"
 			colour 1.0 1.0 1.0 1.0
+			channel diffuse
+			sampler	"Default"
 		}
 
 		texture_unit
 		{
-			image Parallax/Gloss.tga
+			image "Parallax/Normal.tga"
 			colour 1.0 1.0 1.0 1.0
+			channel normal
+			sampler	"Default"
 		}
 
 		gl_shader_program
 		{
 			vertex_program
 			{
-				file Parallax/parallax_gloss.vert
+				file sm_3 "Parallax/parallax_gloss-3.x.vert"
+				file sm_2 "Parallax/parallax_gloss.vert"
 			}
 
 			pixel_program
 			{
-				file Parallax/parallax_gloss.frag
-
-				variable
-				{
-					type int
-					name NormalMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 1
-				}
+				file sm_3 "Parallax/parallax_gloss-3.x.frag"
+				file sm_2 "Parallax/parallax_gloss.frag"
 			}
 		}
 	}
 }
-
-material Relief-2.x
-{
-	pass
-	{
-		ambient 0.321212 0.321212 0.321212 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-
-		texture_unit
-		{
-			image Relief/Diffuse.jpg
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		texture_unit
-		{
-			image Relief/Normal.tga
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Relief/Relief.vert
-			}
-
-			pixel_program
-			{
-				file Relief/Relief.frag
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name NormalMap
-					value 1
-				}
-
-				variable
-				{
-					type int
-					name LinearSearchSteps
-					value 20
-				}
-
-				variable
-				{
-					type int
-					name BinarySearchSteps
-					value 5
-				}
-
-				variable
-				{
-					type float
-					name Depth
-					value 0.075
-				}
-
-				variable
-				{
-					type float
-					name Tile
-					value 1.0
-				}
-			}
-		}
-	}
-}
-
-material OffsetRV-2.x
+/*
+material "CgTexture"
 {
 	pass
 	{
 		ambient 0.0 0.0 0.0 1.0
-		diffuse 1.0 1.0 1.0 1.0
+		diffuse 0.5 0.5 0.5 1.0
 		emissive 0.0 0.0 0.0 1.0
 		specular 1.0 1.0 1.0 1.0
-		shininess 128
+		shininess 50.0
+		two_sided true
 
 		texture_unit
 		{
-			image OffsetRV/Diffuse.bmp
+			image "Bump/Diffuse.bmp"
 			colour 1.0 1.0 1.0 1.0
+			channel diffuse
+			sampler	"Default"
 		}
-
-		texture_unit
+		
+		cg_shader_program
 		{
-			image OffsetRV/Normal.bmp
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		texture_unit
-		{
-			image OffsetRV/Height.bmp
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		texture_unit
-		{
-			image OffsetRV/Offset.bmp
-			colour 1.0 1.0 1.0 1.0
-		}
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file OffsetRV/offsetRV.vert
-
-				variable
-				{
-					type float
-					name HeightMapScale
-					value 0.0306
-				}
-
-				variable
-				{
-					type float
-					name Scale
-					value 0.753
-				}
-			}
-
-			pixel_program
-			{
-				file OffsetRV/offsetRV.frag
-
-				variable
-				{
-					type int
-					name DiffuseMap
-					value 0
-				}
-
-				variable
-				{
-					type int
-					name NormalMap
-					value 1
-				}
-
-				variable
-				{
-					type int
-					name HeightMap
-					value 2
-				}
-
-				variable
-				{
-					type int
-					name OffsetMap
-					value 3
-				}
-			}
-		}
-	}
-}
-
-material Phong-2.x
-{
-	pass
-	{
-		ambient 0.321212 0.321212 0.321212 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Lights/lights.vert
-			}
-
-			pixel_program
-			{
-				file Lights/lights.frag
-			}
-		}
-	}
-}
-
-material MultiPass-noshader
-{
-	pass
-	{
-		ambient 0.847059 0.847059 0.847059 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.5 0.5 0.5 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-		double_face true
-		blend_func src_alpha one_minus_src_alpha
-
-		texture_unit
-		{
-			image NoShader/AlphaBlend.png
-			colour 1.0 1.0 1.0 1.0
-		}
-	}
-
-	pass
-	{
-		ambient 0.847059 0.847059 0.847059 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.5 0.5 0.5 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-		double_face true
-
-		texture_unit
-		{
-			alpha_func greater_or_equal 128.0
-			image NoShader/AlphaRejection.png
-			colour 1.0 1.0 1.0 1.0
-		}
-
-	}
-}
-
-material AlphaRejection-noshader
-{
-	pass
-	{
-		ambient 0.847059 0.847059 0.847059 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-		double_face true
-
-		texture_unit
-		{
-			image NoShader/AlphaRejection.png
-			alpha_func greater_or_equal 128.0
-			colour 1.0 1.0 1.0 1.0
-		}
-	}
-}
-
-material Texturing-noshader
-{
-	pass
-	{
-		ambient 0.25 0.25 0.25 1.0
-		diffuse 0.4 0.4 0.4 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.774597 0.774597 0.774597 1.0
-		shininess 76.8
-
-		texture_unit
-		{
-			image NoShader/Diffuse.bmp
-			colour 1.0 1.0 1.0 1.0
-		}
-	}
-}
-
-material TextureEnvironment-noshader
-{
-	pass
-	{
-		ambient 0.847059 0.847059 0.847059 1.0
-		diffuse 1.0 1.0 1.0 1.0
-		emissive 0.5 0.5 0.5 1.0
-		specular 0.847059 0.847059 0.847059 1.0
-		shininess 128
-		double_face true
-		blend_func src_alpha one_minus_src_alpha
-
-		texture_unit
-		{
-			rgb_blend modulate previous texture
-			image NoShader/AlphaBlend.png
-			colour 1 1 1 1
-		}
-
-		texture_unit
-		{
-			rgb_blend modulate previous texture
-			image NoShader/Diffuse.bmp
-			colour 1 1 1 1
-		}
-	}
-}
-
-material Perlin-3.x
-{
-	pass
-	{
-		ambient 0.25 0.25 0.25 1.0
-		diffuse 0.4 0.4 0.4 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.774597 0.774597 0.774597 1.0
-		shininess 76.8
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file perlin-3.x.vert
-			}
+			file sm_3 "Texturing/texturing.cg"
 			
-			pixel_program
-			{
-				file perlin-3.x.frag
-			}
-		}
-	}
-}
-
-material Tesselate-3.x
-{
-	pass
-	{
-		ambient 0.25 0.25 0.25 1.0
-		diffuse 0.4 0.4 0.4 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.774597 0.774597 0.774597 1.0
-		shininess 76.8
-
-		gl_shader_program
-		{
 			vertex_program
 			{
-				file tesselate-3.x.vert
+				entry "mainVx"
 			}
 
 			pixel_program
 			{
-				file tesselate-3.x.frag
-			}
-
-			geometry_program
-			{
-				file tesselate-3.x.geom
+				entry "mainPx"
 			}
 		}
 	}
 }
-
-material Brass
-{
-	pass
-	{
-		ambient 0.329412 0.223529 0.027451 1.0
-		diffuse 0.780392 0.568627 0.113725 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.992157 0.941176 0.807843 1.0
-		shininess 27.8974
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Bronze
-{
-	pass
-	{
-		ambient 0.2125 0.1275 0.054 1.0
-		diffuse 0.714 0.4284 0.12144 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.393548 0.271906 0.166721 1.0
-		shininess 25.6
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material PolishedBronze
-{
-	pass
-	{
-		ambient 0.25 0.148 0.06475 1.0
-		diffuse 0.4 0.2368 0.1036 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.774597 0.458561 0.200621 1.0
-		shininess 76.8
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Chrome
-{
-	pass
-	{
-		ambient 0.25 0.25 0.25 1.0
-		diffuse 0.4 0.4 0.4 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.774597 0.774597 0.774597 1.0
-		shininess 76.8
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Copper
-{
-	pass
-	{
-		ambient 0.19125 0.0735 0.0225 1.0
-		diffuse 0.7038 0.27048 0.137622 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.256777 0.137622 0.086014 1.0
-		shininess 12.8
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material PolishedCopper
-{
-	pass
-	{
-		ambient 0.2295 0.08825 0.0275 1.0
-		diffuse 0.5508 0.2118 0.066 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.580594 0.223257 0.0685701 1.0
-		shininess 51.2
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Pewter
-{
-	pass
-	{
-		ambient 0.105882 0.058824 0.113725 1.0
-		diffuse 0.427451 0.470588 0.541176 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.333333 0.333333 0.521569 1.0
-		shininess 9.84615
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Silver
-{
-	pass
-	{
-		ambient 0.19225 0.19225 0.19225 1.0
-		diffuse 0.50754 0.50754 0.50754 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.508273 0.508273 0.508273 1.0
-		shininess 51.2
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material PolishedSilver
-{
-	pass
-	{
-		ambient 0.23125 0.23125 0.23125 1.0
-		diffuse 0.2775 0.2775 0.2775 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.773911 0.773911 0.773911 1.0
-		shininess 89.6
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Emerald
-{
-	pass
-	{
-		ambient 0.0215 0.1745 0.0215 0.55
-		diffuse 0.07568 0.61424 0.07568 0.55
-		emissive 0.0 0.0 0.0 0.55
-		specular 0.633 0.727811 0.633 0.55
-		shininess 76.8
-		double_face true
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Jade
-{
-	pass
-	{
-		ambient 0.135 0.2225 0.1575 0.95
-		diffuse 0.54 0.89 0.63 0.95
-		emissive 0.0 0.0 0.0 0.95
-		specular 0.316228 0.316228 0.316228 0.95
-		shininess 12.8
-		double_face true
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Obsidian
-{
-	pass
-	{
-		ambient 0.05375 0.05 0.06625 0.82
-		diffuse 0.18275 0.17 0.22525 0.82
-		emissive 0.0 0.0 0.0 0.82
-		specular 0.332741 0.328634 0.346435 0.82
-		shininess 38.4
-		double_face true
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Pearl
-{
-	pass
-	{
-		ambient 0.25 0.20725 0.20725 0.922
-		diffuse 1.0 0.829 0.829 0.922
-		emissive 0.0 0.0 0.0 0.922
-		specular 0.296648 0.296648 0.296648 0.922
-		shininess 11.264
-		double_face true
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Ruby
-{
-	pass
-	{
-		ambient 0.1745 0.01175 0.01175 0.55
-		diffuse 0.61424 0.04136 0.04136 0.55
-		emissive 0.0 0.0 0.0 0.55
-		specular 0.727811 0.626959 0.626959 0.55
-		shininess 76.8
-		double_face true
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Turquoise
-{
-	pass
-	{
-		ambient 0.1 0.18725 0.1745 0.8
-		diffuse 0.396 0.74151 0.69102 0.8
-		emissive 0.0 0.0 0.0 0.8
-		specular 0.297254 0.30829 0.306678 0.8
-		shininess 12.8
-		double_face true
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material BlackPlastic
-{
-	pass
-	{
-		ambient 0.0 0.0 0.0 1.0
-		diffuse 0.01 0.01 0.01 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.5 0.5 0.5 1.0
-		shininess 32.0
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material BlackRubber
-{
-	pass
-	{
-		ambient 0.02 0.02 0.02 1.0
-		diffuse 0.01 0.01 0.01 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.4 0.4 0.4 1.0
-		shininess 10.0
-
-		gl_shader_program
-		{
-			vertex_program
-			{
-				file Material/basic-3.x.vert
-			}
-
-			pixel_program
-			{
-				file Material/basic-3.x.frag
-			}
-		}
-	}
-}
-
-material Brass-2.x
-{
-	pass
-	{
-		ambient 0.329412 0.223529 0.027451 1.0
-		diffuse 0.780392 0.568627 0.113725 1.0
-		emissive 0.0 0.0 0.0 1.0
-		specular 0.992157 0.941176 0.807843 1.0
-		shininess 27.8974
-	}
-}
+*/

@@ -1,39 +1,41 @@
-attribute vec3 tangent;
-attribute vec4 vertex;
-attribute vec3 normal;
-attribute vec2 MultiTexCoord0;
+varying	vec3	tangent;
+varying	vec4	vertex;
+varying	vec3	normal;
+varying	vec2	texture;
 
-uniform mat4 ProjectionMatrix;
-uniform mat4 ModelViewMatrix;
-uniform mat3 NormalMatrix;
-uniform vec4 in_LightsPosition[8];
-uniform vec4 in_LightsDiffuse[8];
+uniform mat4 	c3d_mtxProjection;
+uniform mat4 	c3d_mtxModel;
+uniform mat4 	c3d_mtxView;
+uniform mat3 	c3d_mtxNormal;
 
-varying vec4 ex_Light0Diffuse;
-
-varying vec2 TexCoord;
-
-// inverse light radius ie.. 1.0/light radius;
-uniform float u_invRad;
-
-varying	vec3 g_lightVec;
-varying	vec3 g_viewVec;
+varying	vec3	vtx_viewVec;
+varying	vec3	vtx_eyeVec;
+varying	mat4	vtx_mtxModelView;
+varying	vec3 	vtx_vertex;
+varying	vec3 	vtx_normal;
+varying	vec3 	vtx_tangent;
+varying	vec3 	vtx_binormal;
+varying	vec2	vtx_texture;
 
 void main()
 {
-	gl_Position = ProjectionMatrix * ModelViewMatrix * vertex;
-	TexCoord = MultiTexCoord0;
-	vec3 binormal = cross( tangent, normal);
+	vtx_mtxModelView	= c3d_mtxView * c3d_mtxModel;
+	vtx_texture 		= texture.xy;
+	vtx_normal 			= normalize( c3d_mtxNormal * normal );
+	vtx_tangent 		= normalize( c3d_mtxNormal * tangent );
+	vtx_binormal		= cross( vtx_normal, vtx_tangent );
+	vtx_vertex			= vec3( vtx_mtxModelView * vertex );
+
+	mat3 TBN_Matrix = mat3( vtx_tangent, vtx_binormal, vtx_normal );
+	vec3 tmpVec = -vtx_vertex;
+	vtx_eyeVec.x = dot(tmpVec, vtx_tangent	);
+	vtx_eyeVec.y = dot(tmpVec, vtx_binormal	);
+	vtx_eyeVec.z = dot(tmpVec, vtx_normal	);
 	
-	mat3 TBN_Matrix = NormalMatrix * mat3( tangent, binormal, normal);
-	vec4 mv_Vertex = ModelViewMatrix * vertex;
-	g_viewVec = vec3(-mv_Vertex) * TBN_Matrix;	
-	vec4 lightEye = ModelViewMatrix *  in_LightsPosition[0];
-//	vec4 lightEye = ModelViewMatrix *  gl_LightSource[0].position;
-	vec3 lightVec =0.02 * (lightEye.xyz - mv_Vertex.xyz);				
-	g_lightVec = lightVec * TBN_Matrix;
-//	ex_Light0Diffuse = vec4( 1.0, 0.0, 0.0, 1.0);
-	ex_Light0Diffuse = in_LightsDiffuse[0];
+	vtx_viewVec 		= (-vtx_vertex) * TBN_Matrix;	
+	
+	gl_Position 		= c3d_mtxProjection * vtx_mtxModelView * vertex;
+	
 }
 
 

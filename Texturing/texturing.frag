@@ -1,6 +1,6 @@
 #version 140
 
-uniform sampler2D DiffuseMap;
+uniform sampler2D c3d_mapDiffuse;
 
 in vec3 eyeVertex;
 in vec3 eyeNormal;
@@ -20,7 +20,7 @@ out vec4 out_FragColor;
 
 void main()
 {
-	vec4 final_color = texture2D( DiffuseMap, texCoord);
+	vec4 final_color = texture2D( c3d_mapDiffuse, texCoord);
 	vec3 N = normalize( eyeNormal);
 	vec3 E = normalize( eyeVertex);
 	int i;

@@ -3,15 +3,15 @@ float4x4 ProjectionMatrix;
 float4x4 ModelViewMatrix;
 float3x3 NormalMatrix;
 
-float4 in_LightsPosition[8];
-float4 in_LightsSpecular[8];
-float4 in_LightsDiffuse[8];
-float4 in_LightsAmbient[8];
+float4 c3d_LightsPosition[8];
+float4 c3d_LightsSpecular[8];
+float4 c3d_LightsDiffuse[8];
+float4 c3d_LightsAmbient[8];
 float4 in_AmbientLight;
-float4 in_MatAmbient;
-float4 in_MatDiffuse;
-float4 in_MatSpecular;
-float in_MatShininess;
+float4 c3d_MatAmbient;
+float4 c3d_MatDiffuse;
+float4 c3d_MatSpecular;
+float c3d_MatShininess;
 
 float Depth;
 float Tile;
@@ -64,15 +64,15 @@ VtxOutput mainVx( in VtxInput p_input)
 
 float4 mainPx( in VtxOutput p_input) : COLOR0
 {
-	float4 l_vAmbient = in_LightsAmbient[0] * in_MatAmbient;
-	float3 l_vLight = mul( in_LightsPosition[0], ModelViewMatrix).xyz;
+	float4 l_vAmbient = c3d_LightsAmbient[0] * c3d_MatAmbient;
+	float3 l_vLight = mul( c3d_LightsPosition[0], ModelViewMatrix).xyz;
 	float4 l_vSpecular = float4( 0, 0, 0, 0);
 	float4 l_vDiffuse = float4( 0, 0, 0, 0);
-	float l_fShine = in_MatShininess;
+	float l_fShine = c3d_MatShininess;
 
-	l_vAmbient += in_MatAmbient * in_LightsAmbient[0];
-	l_vSpecular += in_MatSpecular * in_LightsSpecular[0];
-	l_vDiffuse += in_MatDiffuse * in_LightsDiffuse[0];
+	l_vAmbient += c3d_MatAmbient * c3d_LightsAmbient[0];
+	l_vSpecular += c3d_MatSpecular * c3d_LightsSpecular[0];
+	l_vDiffuse += c3d_MatDiffuse * c3d_LightsDiffuse[0];
 
 	float4 l_vTextureRelief;
 	float4 l_vTextureColour;

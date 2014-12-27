@@ -1,32 +1,38 @@
-attribute vec3 tangent;
-attribute vec4 vertex;
-attribute vec3 normal;
-attribute vec2 MultiTexCoord0;
+varying	vec4 	vertex;
+varying	vec3 	normal;
+varying	vec3 	tangent;
+varying	vec2 	texture;
 
-uniform mat4 ProjectionMatrix;
-uniform mat4 ModelViewMatrix;
-uniform mat3 NormalMatrix;
+uniform mat4 	c3d_mtxProjection;
+uniform mat4 	c3d_mtxModel;
+uniform mat4 	c3d_mtxView;
+uniform mat3 	c3d_mtxNormal;
 
-varying vec3 eyeVec;
-varying vec2 TexCoord;
-varying vec3 eyeSpaceLight;
+varying	vec2 	vtx_texture;
+varying	vec3 	vtx_vertex;
+varying	vec3 	vtx_tangent;
+varying	vec3 	vtx_binormal;
+varying	vec3 	vtx_normal;
+varying	mat4 	vtx_mtxModelView;
+varying	vec3	vtx_eyeVec;
 
-void main() 
+void main()
 {
-	TexCoord = MultiTexCoord0;
-
-	vec3 binormal = cross( tangent, normal);
-	
-	eyeSpaceLight = (ModelViewMatrix * in_Lights0Position).xyz;
-
+	vtx_mtxModelView	= c3d_mtxView * c3d_mtxModel;
 	mat3 TBN_Matrix;
-	TBN_Matrix[0] =  NormalMatrix * tangent;
-	TBN_Matrix[1] =  NormalMatrix * binormal;
-	TBN_Matrix[2] =  NormalMatrix * normal;
+	vec3 binormal = cross( tangent, normal );
+	
+	vtx_tangent			= normalize( c3d_mtxNormal * tangent );
+	vtx_binormal		= normalize( c3d_mtxNormal * binormal );
+	vtx_normal			= normalize( c3d_mtxNormal * normal );
+	
+	TBN_Matrix[0] =  vtx_tangent;
+	TBN_Matrix[1] =  vtx_binormal;
+	TBN_Matrix[2] =  vtx_normal;
+	
+	vtx_vertex 			= (vtx_mtxModelView * vertex).xyz;
+	vtx_texture			= texture.xy;
+	vtx_eyeVec			= -vtx_vertex * TBN_Matrix;
 
-	vec4 VertexModelView = ModelViewMatrix * vertex;
-	eyeVec = vec3( -VertexModelView) * TBN_Matrix;
-
-	// Vertex transformation
-	gl_Position = ProjectionMatrix * ModelViewMatrix * vertex;
+	gl_Position = c3d_mtxProjection * vtx_mtxModelView * vertex;
 }

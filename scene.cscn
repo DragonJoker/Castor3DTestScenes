@@ -1,123 +1,69 @@
-ambient_light 0.0 0.0 0.0 1.0
-/*
-scene_node CameraNode
-{
-}
+mtl_file "scene.cmtl"
 
-camera RootCamera
+scene "MainScene"
 {
-	parent CameraNode
-	viewport 3d
-}
-*/
-/*
-font Arial
-{
-	file arial.ttf
-	height 64
-}
+	background_colour 1.0 1.0 1.0 1.0
+	ambient_light 0.5 0.5 0.5 1.0
 
-text_overlay Coin
-{
-	material Arial
-	font Arial
-	text Coin !!
-	position 0.0 0.0
-	size 100.0 20.0
-}
-*/
-
-scene_node LightNode0
-{
-	position 0.0 0.0 -10.0
-}
-
-scene_node LightNode1
-{
-	position 10.0 1.0 10.0
-}
-
-scene_node LightNode2
-{
-	position -10.0 10.0 -10.0
-}
-
-light Light0
-{
-	parent LightNode0
-	type directional
-	diffuse 0.5 0.0 0.0
-	specular 1.0 0.0 0.0
-}
-
-light Light1
-{
-	parent LightNode1
-	type directional
-	diffuse 0.0 0.5 0.0
-	specular 0.0 1.0 0.0
-}
-
-light Light2
-{
-	parent LightNode2
-	type directional
-	diffuse 0.0 0.0 0.5
-	specular 0.0 0.0 1.0
-}
-
-scene_node GeometryNode
-{
-}
-
-object Geometry
-{
-	parent GeometryNode
-
-	mesh Mesh
+	scene_node "SunLightNode"
 	{
-//		type plane 0 0 1.0 1.0
-		type cube 1.0 1.0 1.0
-//		type sphere 20 1.0
-//		type sphere 200 1.0
-//		type torus 10 50 0.5 1.0
-//		type torus 1000 5000 0.5 1.0
-//		type cylinder 50 2.0 1.0
-//		type cone 50 2.0 1.0
-//		type icosaedron 3 1.0
-/*
-		type custom
-
-		submesh
-		{
-			material Relief-3.x
-
-			vertex 0.0 0.0 0.0
-			vertex 0.0 1.0 0.0
-			vertex 1.0 1.0 0.0
-			vertex 1.0 0.0 0.0
-			
-			smoothing_group
-			{
-				face 0 1 2 3
-				uv 0.0 0.0 0.0 1.0 1.0 1.0 1.0 0.0
-			}
-		}
-*/
-//		material AlphaRejection-noshader
-//		material MultiPass-noshader
-//		material TextureEnvironment-noshader
-//		material Texturing-noshader
-//		material BlackPlastic
-//		material Brass
-//		material Brass-2.x
-//		material Basic-Cg
-//		material Perlin-3.x
-//		material Texturing-All
-//		material Lighting-All
-		material Relief-All
-//		material Bump-All
-//		material Relief-Cg
-//		material OffsetRV-All
+		position  0.0 0.0 1.0
 	}
+	light "SunLight"
+	{
+		parent		"SunLightNode"
+		type		directional
+		diffuse		0.8 0.8 0.8
+		specular	1.0 1.0 1.0
+	}
+	
+	scene_node "PrimitiveNode"
+	{
+	}
+	object "PrimitiveObject"
+	{
+		parent "PrimitiveNode"
+		mesh "PrimitiveMesh"
+		{
+//			type plane 0 0 1.0 1.0
+			type cube 1.0 1.0 1.0
+//			type cylinder 40 1.0 2.0
+//			type cone 40 1.0 2.0
+//			type sphere 10 1.0
+//			type torus 10 10 1.0 2.0
+//			type icosaedron 1 1.0
+//			division pn_tri 1
+//			division loop 1
+		}
+		material "Relief"
+//		material GoldTransp
+	}
+/*
+	scene_node "TessNode"
+	{
+	}
+	object Tess
+	{
+		parent "TessNode"
+		mesh Mesh
+		{
+			type cube 1.0 1.0 1.0
+			material "Tesselate"
+		}
+	}
+/**/
+}
+
+window "MainWindow"
+{
+	render_target
+	{
+		format		argb32
+		depth		depth24s8
+//		msaa		8
+		size		1125 600
+		scene		"MainScene"
+	}
+	fullscreen	false
+	vsync		true
 }

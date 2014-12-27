@@ -4,9 +4,9 @@ varying vec2 TexCoord;
 varying vec4 ex_MatAmbient;
 varying vec4 ex_MatDiffuse;
 
-uniform sampler2D DiffuseMap;
-uniform sampler2D HeightMap;
-uniform sampler2D NormalMap;
+uniform sampler2D c3d_mapDiffuse;
+uniform sampler2D c3d_mapHeight;
+uniform sampler2D c3d_mapNormal;
 
 void main()
 {
@@ -20,11 +20,11 @@ void main()
 
 	vec3 normalizedEyeVector = normalize( eyeVector);
 
-	vec3 heightVector = texture2D( HeightMap, TexCoord).xyz;
+	vec3 heightVector = texture2D( c3d_mapHeight, TexCoord).xyz;
 	float height = scale * length( heightVector) - bias;
 	vec2 nextTextureCoordinate = height * normalizedEyeVector.xy + TexCoord;
 
-	vec3 offsetNormal = texture2D( NormalMap, nextTextureCoordinate).xyz;
+	vec3 offsetNormal = texture2D( c3d_mapNormal, nextTextureCoordinate).xyz;
 
 	// [0, 1] -> [-1, 1]
 	offsetNormal = offsetNormal * 2.0 - 1.0;
@@ -38,7 +38,7 @@ void main()
 		diffuseContribution += clamp( dot( offsetNormal, normalizedLightDirection), 0.0, 1.0);
 	}
 
-	vec4 textureColor = texture2D( DiffuseMap, nextTextureCoordinate);
+	vec4 textureColor = texture2D( c3d_mapDiffuse, nextTextureCoordinate);
 
 	gl_FragColor = (ambientColor + diffuseColor * diffuseContribution) * textureColor;
 }

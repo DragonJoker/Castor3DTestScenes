@@ -1,55 +1,39 @@
-#version 140
-
-in vec3 tangent;
-in vec4 vertex;
-in vec3 normal;
-
-uniform vec4 in_MatDiffuse;
-uniform vec4 in_MatAmbient;
-uniform vec4 in_MatEmissive;
-uniform float in_MatShininess;
-uniform vec4 in_MatSpecular;
-uniform mat4 ProjectionModelViewMatrix;
-uniform mat4 ModelViewMatrix;
-uniform mat3 NormalMatrix;
-uniform vec4 in_LightsPosition[8];
-uniform vec4 in_LightsDiffuse[8];
-uniform vec4 in_LightsAmbient[8];
-uniform vec4 in_LightsSpecular[8];
-
-out vec3 eyeNormal;
-out vec3 eyeVertex;
-
-out vec3 ex_LightsPosition[8];
-out vec4 ex_LightsDiffuse[8];
-out vec4 ex_LightsAmbient[8];
-out vec4 ex_LightsSpecular[8];
-
-out vec4 ex_MatDiffuse;
-out vec4 ex_MatAmbient;
-out vec4 ex_MatSpecular;
-out float ex_MatShininess;
-out vec4 ex_MatEmissive;
-
-void main()
+#version 150
+in	vec4	vertex;
+in	vec3	normal;
+in	vec3	tangent;
+in	vec3	bitangent;
+in	vec2	texture;
+layout( std140 ) uniform Matrices
 {
-	eyeNormal = normalize( NormalMatrix * normal);
-	eyeVertex = normalize( (ModelViewMatrix * vertex).xyz);
-	int i;
-
-	for (i = 0 ; i < 3 ; ++i)
-	{
-		ex_LightsPosition[i] = normalize( (ModelViewMatrix * in_LightsPosition[i]).xyz);
-		ex_LightsDiffuse[i] = in_LightsDiffuse[i];
-		ex_LightsSpecular[i] = in_LightsSpecular[i];
-		ex_LightsAmbient[i] = in_LightsAmbient[i];
-	}
-
-	ex_MatDiffuse = in_MatDiffuse;
-	ex_MatAmbient = in_MatAmbient;
-	ex_MatEmissive = in_MatEmissive;
-	ex_MatSpecular = in_MatSpecular;
-	ex_MatShininess = in_MatShininess;
-
-	gl_Position = ProjectionModelViewMatrix * vertex;
+	mat4	c3d_mtxProjection;
+	mat4	c3d_mtxModel;
+	mat4	c3d_mtxView;
+	mat4	c3d_mtxModelView;
+	mat4	c3d_mtxProjectionModelView;
+	mat4	c3d_mtxNormal;
+	mat4	c3d_mtxTexture0;
+	mat4	c3d_mtxTexture1;
+	mat4	c3d_mtxTexture2;
+	mat4	c3d_mtxTexture3;
+};
+out Data
+{
+	vec3	m_v3Vertex;
+	vec3	m_v3Normal;
+	vec3	m_v3Tangent;
+	vec3	m_v3Bitangent;
+	vec2	m_v2Texture;
+	vec3	m_v3Eye;
+} vtx_out;
+void main(void)
+{
+	mat3 l_mtxNormal = mat3( c3d_mtxNormal );
+	vtx_out.m_v2Texture 	= texture.xy;
+	vtx_out.m_v3Normal 		= normalize( l_mtxNormal * normal );
+	vtx_out.m_v3Tangent 	= normalize( l_mtxNormal * tangent );
+	vtx_out.m_v3Bitangent	= normalize( l_mtxNormal * bitangent );
+	vtx_out.m_v3Vertex		= vec3( c3d_mtxModelView * vertex );
+	vtx_out.m_v3Eye			= -vtx_out.m_v3Vertex;
+	gl_Position 			= c3d_mtxProjectionModelView * vertex;
 }

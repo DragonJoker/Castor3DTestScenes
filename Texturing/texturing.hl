@@ -14,7 +14,18 @@ struct VtxOutput
 	float2 Texture	:	TEXCOORD0;
 };
 
-sampler2D DiffuseMap;
+texture diffuseTexture : c3d_mapDiffuse;
+sampler DiffuseTextureSampler = sampler_state
+{
+	Texture = <diffuseTexture>;
+    AddressU  = WRAP;
+	AddressV  = WRAP;
+    AddressW  = WRAP;
+    MipFilter = LINEAR;
+    MinFilter = LINEAR;
+    MagFilter = LINEAR;
+};
+//sampler2D DiffuseMap;
 
 VtxOutput mainVx( in VtxInput p_input)
 {
@@ -26,8 +37,9 @@ VtxOutput mainVx( in VtxInput p_input)
 
 float4 mainPx( in VtxOutput p_input) : COLOR
 {
-	float4 l_output = float4( 0.0, 0.0, 0.0, 1.0);
-	l_output = tex2D( DiffuseMap, p_input.Texture);
+	float4 l_output = float4( 0.0, 0.0, 0.0, 1.0 );
+//	l_output = tex2D( DiffuseMap, p_input.Texture);
+	l_output = tex2D( DiffuseTextureSampler, p_input.Texture);
 	l_output.a = 1.0;
 	return l_output;
 };

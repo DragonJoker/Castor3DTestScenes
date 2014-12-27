@@ -2,14 +2,14 @@ float4x4 ProjectionMatrix;
 float4x4 ModelViewMatrix;
 float4x4 ProjectionModelViewMatrix;
 float4x4 NormalMatrix;
-float4 in_LightsPosition[8];
-float4 in_LightsAmbient[8];
-float4 in_LightsDiffuse[8];
-float4 in_LightsSpecular[8];
-float4 in_MatAmbient;
-float4 in_MatDiffuse;
-float4 in_MatSpecular;
-float in_MatShininess;
+float4 c3d_LightsPosition[8];
+float4 c3d_LightsAmbient[8];
+float4 c3d_LightsDiffuse[8];
+float4 c3d_LightsSpecular[8];
+float4 c3d_MatAmbient;
+float4 c3d_MatDiffuse;
+float4 c3d_MatSpecular;
+float c3d_MatShininess;
 sampler2D DiffuseMap;
 sampler2D NormalMap;
 
@@ -40,7 +40,7 @@ VtxOutput mainVx( in VtxInput p_input)
 	float3 t = mul( p_input.Tangent, l_normalMatrix);
 	float3 b = cross( n, t);
 
-	float3 light = normalize( mul(in_LightsPosition[0], ModelViewMatrix).xyz);
+	float3 light = normalize( mul(c3d_LightsPosition[0], ModelViewMatrix).xyz);
 
 	l_output.Light.x = dot( light, t);
 	l_output.Light.y = dot( light, b);
