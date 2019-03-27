@@ -1,0 +1,417 @@
+materials legacy
+
+scene "Scene"
+{
+	background_colour 0.5 0.5 0.5 1.0
+	ambient_light 0.2 0.2 0.2
+
+	sampler "Nearest"
+	{
+		min_filter nearest
+		mag_filter nearest
+		min_lod -1000.0
+		max_lod 1000.0
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod -1000.0
+		max_lod 1000.0
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	sampler "Repeat"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod -1000.0
+		max_lod 1000.0
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	sampler "MirroredRepeat"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod -1000.0
+		max_lod 1000.0
+		lod_bias 0.0
+		u_wrap_mode mirrored_repeat
+		v_wrap_mode mirrored_repeat
+		w_wrap_mode mirrored_repeat
+		border_colour float_opaque_black
+	}
+
+	sampler "ClampToBorder"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod -1000.0
+		max_lod 1000.0
+		lod_bias 0.0
+		u_wrap_mode clamp_to_border
+		v_wrap_mode clamp_to_border
+		w_wrap_mode clamp_to_border
+		border_colour float_opaque_black
+	}
+
+	sampler "ClampToEdge"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod -1000.0
+		max_lod 1000.0
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
+	material "Nearest"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.628281 0.628281 1.0
+			shininess 50.2
+	
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				channel diffuse
+				sampler "Nearest"
+			}
+		}
+	}
+
+	material "Linear"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.628281 0.628281 1.0
+			shininess 50.2
+	
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				channel diffuse
+				sampler "Linear"
+			}
+		}
+	}
+
+	material "Repeat"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.628281 0.628281 1.0
+			shininess 50.2
+	
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				channel diffuse
+				sampler "Repeat"
+			}
+		}
+	}
+
+	material "MirroredRepeat"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.628281 0.628281 1.0
+			shininess 50.2
+	
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				channel diffuse
+				sampler "MirroredRepeat"
+			}
+		}
+	}
+
+	material "ClampToBorder"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.628281 0.628281 1.0
+			shininess 50.2
+	
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				channel diffuse
+				sampler "ClampToBorder"
+			}
+		}
+	}
+
+	material "ClampToEdge"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.628281 0.628281 1.0
+			shininess 50.2
+	
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				channel diffuse
+				sampler "ClampToEdge"
+			}
+		}
+	}
+
+	scene_node "SunLightNode3"
+	{
+		orientation 1 0 0 180
+	}
+	light "SunLight3"
+	{
+		parent "SunLightNode3"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	scene_node "Nearest"
+	{
+		position -1.25 0.0 0.0
+	}
+	object "Nearest"
+	{
+		parent "Nearest"
+		mesh "Nearest"
+		{
+			type "custom"
+			submesh
+			{
+				vertex 0.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv 0.25 0.25
+				vertex 0.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv 0.25 0.75
+				vertex 1.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv 0.75 0.75
+				vertex 1.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv 0.75 0.25
+				face 0 1 2 3
+			}
+		}
+		material "Nearest"
+	}
+
+	scene_node "Linear"
+	{
+		position 0.0 0.0 0.0
+	}
+	object "Linear"
+	{
+		parent "Linear"
+		mesh "Linear"
+		{
+			type "custom"
+			submesh
+			{
+				vertex 0.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv 0.25 0.25
+				vertex 0.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv 0.25 0.75
+				vertex 1.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv 0.75 0.75
+				vertex 1.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv 0.75 0.25
+				face 0 1 2 3
+			}
+		}
+		material "Linear"
+	}
+
+	scene_node "Repeat"
+	{
+		position -2.5 -1.25 0.0
+	}
+	object "Repeat"
+	{
+		parent "Repeat"
+		mesh "Repeat"
+		{
+			type "custom"
+			submesh
+			{
+				vertex 0.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv -0.25 -0.25
+				vertex 0.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv -0.25 1.25
+				vertex 1.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv 1.25 1.25
+				vertex 1.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv 1.25 -0.25
+				face 0 1 2 3
+			}
+		}
+		material "Repeat"
+	}
+
+	scene_node "MirroredRepeat"
+	{
+		position -1.25 -1.25 0.0
+	}
+	object "MirroredRepeat"
+	{
+		parent "MirroredRepeat"
+		mesh "MirroredRepeat"
+		{
+			type "custom"
+			submesh
+			{
+				vertex 0.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv -0.25 -0.25
+				vertex 0.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv -0.25 1.25
+				vertex 1.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv 1.25 1.25
+				vertex 1.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv 1.25 -0.25
+				face 0 1 2 3
+			}
+		}
+		material "MirroredRepeat"
+	}
+
+	scene_node "ClampToBorder"
+	{
+		position 0.0 -1.25 0.0
+	}
+	object "ClampToBorder"
+	{
+		parent "ClampToBorder"
+		mesh "ClampToBorder"
+		{
+			type "custom"
+			submesh
+			{
+				vertex 0.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv -0.25 -0.25
+				vertex 0.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv -0.25 1.25
+				vertex 1.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv 1.25 1.25
+				vertex 1.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv 1.25 -0.25
+				face 0 1 2 3
+			}
+		}
+		material "ClampToBorder"
+	}
+
+	scene_node "ClampToEdge"
+	{
+		position 1.25 -1.25 0.0
+	}
+	object "ClampToEdge"
+	{
+		parent "ClampToEdge"
+		mesh "ClampToEdge"
+		{
+			type "custom"
+			submesh
+			{
+				vertex 0.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv -0.25 -0.25
+				vertex 0.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv -0.25 1.25
+				vertex 1.0 1.0 0.0
+				normal 0.0 0.0 1.0
+				uv 1.25 1.25
+				vertex 1.0 0.0 0.0
+				normal 0.0 0.0 1.0
+				uv 1.25 -0.25
+				face 0 1 2 3
+			}
+		}
+		material "ClampToEdge"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 180
+		position 0.0 0.0 10.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

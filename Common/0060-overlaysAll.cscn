@@ -1,0 +1,154 @@
+materials legacy
+
+scene "Scene"
+{
+	font "Arial100"
+	{
+		file "Fonts/arial.ttf"
+		height 100
+	}
+
+	font "Arial60"
+	{
+		file "Fonts/arial.ttf"
+		height 60
+	}
+
+	ambient_light 0.2 0.2 0.2
+	background_image "Textures/backgroundImage.jpg"
+
+	material "BlackBlend"
+	{
+		pass
+		{
+			diffuse 0.0 0.0 0.0
+			alpha 0.8
+		}
+	}
+
+	material "ColourMap"
+	{
+		pass
+		{
+			diffuse 1.0 1.0 0.0 0.5
+			alpha 0.8
+	
+			texture_unit
+			{
+				image "Textures/diffuse.jpg" rgb
+				channel diffuse
+				sampler	"Default"
+			}
+		}
+	}
+
+	material "BlendTexture"
+	{
+		pass
+		{
+			diffuse 1.0 1.0 1.0 1.0
+	
+			texture_unit
+			{
+				image "Textures/alphaBlend.png" rgb
+				channel diffuse
+				sampler	"Default"
+			}
+	
+			texture_unit
+			{
+				image "Textures/alphaBlend.png" a
+				channel opacity
+				sampler	"Default"
+			}
+		}
+	}
+
+	material "YellowBlend"
+	{
+		pass
+		{
+			diffuse 1.0 1.0 0.0
+			alpha 0.6
+		}
+	}
+
+	panel_overlay "MainPanel"
+	{
+		size 0.5 0.5
+		position 0.25 0.25
+		material "ColourMap"
+
+		border_panel_overlay "ChildPanel"
+		{
+			pxl_size 480 270
+			position 0.25 0.25
+			center_uv 0.125 0.125 0.875 0.875
+			material "BlendTexture"
+			pxl_border_size 32 32 32 32
+			border_position external
+			border_material "BlendTexture"
+			border_inner_uv 0.125 0.125 0.875 0.875
+
+			text_overlay "ChildChildText"
+			{
+				size 1.0 1.0
+				position 0.0 0.0
+				material "DarkRed"
+				font "Arial60"
+				text "Je ne	sais pas trop..."
+				text_wrapping break_words
+			}
+		}
+	}
+
+	panel_overlay "MainTextPanel"
+	{
+		pxl_size 1070 150
+		position 0.0 0.0
+		material "YellowBlend"
+
+		text_overlay "ChildText"
+		{
+			size 1.0 1.0
+			position 0.0 0.0
+			material "ColourMap"
+			font "Arial100"
+			text "Coucou !! La vie est belle? Ici ça va"
+			text_wrapping break
+			texturing_mode letter
+		}
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 180
+		position 0.0 0.0 100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

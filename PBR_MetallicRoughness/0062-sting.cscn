@@ -1,0 +1,198 @@
+// Global configuration
+materials pbr_metallic_roughness
+
+scene "Scene"
+{
+	// Scene configuration
+
+	background_colour 0.500000 0.500000 0.500000
+	ambient_light 1.00000 1.00000 1.00000
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/nightSkybox.hdr" 1024 1024
+	}
+
+	// Samplers
+
+	sampler "TriLinear"
+	{
+		min_filter linear
+		mag_filter linear
+		mip_filter linear
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		min_lod 0.0
+		max_lod 5.0
+		lod_bias 0.00
+		border_colour float_opaque_black
+		max_anisotropy 1.00
+	}
+
+	// Materials
+
+	material "Sting"
+	{
+		pass
+		{
+			albedo 0.500000 0.500000 0.500000
+			roughness 0.1
+			metallic 1.0
+			emissive 8.0
+			two_sided true
+
+			texture_unit
+			{
+				sampler "TriLinear"
+				channel albedo
+				levels_count 6
+				image "Textures/Sting/sting_albedo.png" rgb
+			}
+
+			texture_unit
+			{
+				sampler "TriLinear"
+				channel normal
+				levels_count 6
+				image "Textures/Sting/sting_normal.png" rgb
+			}
+
+			texture_unit
+			{
+				sampler "TriLinear"
+				channel metallic
+				levels_count 6
+				image "Textures/Sting/sting_metallic.png" rgb
+			}
+
+			texture_unit
+			{
+				sampler "TriLinear"
+				channel roughness
+				levels_count 6
+				image "Textures/Sting/sting_roughness.png" rgb
+			}
+
+			texture_unit
+			{
+				sampler "TriLinear"
+				channel ambient_occlusion
+				levels_count 6
+				image "Textures/Sting/sting_ao.png"
+			}
+
+			texture_unit
+			{
+				sampler "TriLinear"
+				channel emissive
+				levels_count 6
+				image "Textures/Sting/sting_emissive.png"
+			}
+
+			texture_unit
+			{
+				sampler "TriLinear"
+				channel height
+				levels_count 6
+				image "Textures/Sting/sting_bump.png"
+			}
+		}
+	}
+
+	// Meshes
+
+	mesh "Mesh"
+	{
+		import "Meshes/Sting.cmsh"
+	}
+
+	// Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation -0.49748 -0.782414 0.374622 272.192
+		position -10.6777 13.3534 7.15264
+		scale 1 1 1
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.1
+			aspect_ratio 1.333
+			far 20000
+			fov_y 45
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "FinalNode"
+	{
+		orientation 1 0 0 0
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	// Geometries
+
+	object "FinalPrimitive"
+	{
+		parent "FinalNode"
+		mesh "Mesh"
+		material "Sting"
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "Scene"
+		camera "MainCamera"
+		size 800 600
+		format argb32
+		// tone_mapping "uncharted2"
+		// postfx "bloom" -Size=5
+
+		hdr_config
+		{
+			exposure 1
+			gamma 2.2
+		}
+
+		// ssao
+		// {
+			// enabled true
+			// high_quality true
+			// intensity 1.0
+			// radius 1.0
+			// bias 0.023
+			// num_samples 19
+			// edge_sharpness 1.0
+			// blur_step_size 2
+			// blur_radius 4
+		// }
+
+		// smaa
+		// {
+			// mode T2X
+			// preset ultra
+			// reprojection false
+		// }
+	}
+}

@@ -1,0 +1,78 @@
+materials legacy
+
+scene "MyScene"
+{
+	background_colour 0.5 0.5 0.5 1.0
+	ambient_light 0.2 0.2 0.2
+
+	material "Gold"
+	{
+		pass
+		{
+			diffuse 0.75164 0.60648 0.22648 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.555802 0.366065 1.0
+			shininess 51.2
+		}
+	}
+
+	scene_node "SunLightNode"
+	{
+		orientation 1 0 0 45
+	}
+
+	light "SunLight"
+	{
+		parent "SunLightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	scene_node "BuddahNode"
+	{
+		scale 200 200 200
+		position 0 -20 0
+	}
+	object "Buddah"
+	{
+		parent "BuddahNode"
+		mesh "BuddahMesh"
+		{
+			import "Meshes/dragon_vrip_res2.ply"
+		}
+		material "Gold"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 180
+		position 0.0 0.0 100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "MyWindow"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "MyScene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

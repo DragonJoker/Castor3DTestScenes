@@ -1,0 +1,147 @@
+materials legacy
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+
+	skybox
+	{
+		left "Textures/backgroundSkybox_left.tga"
+		right "Textures/backgroundSkybox_right.tga"
+		top "Textures/backgroundSkybox_top.tga"
+		bottom "Textures/backgroundSkybox_bottom.tga"
+		front "Textures/backgroundSkybox_front.tga"
+		back "Textures/backgroundSkybox_back.tga"
+	}
+
+	border_panel_overlay "Panel01"
+	{
+		size 0.2 0.5
+		position 0.0 0.0
+		material "DarkRed"
+		pxl_border_size 32 32 32 32
+		border_position internal
+		border_material "AlphaDarkRed"
+	}
+
+	border_panel_overlay "Panel02"
+	{
+		size 0.2 0.5
+		position 0.2 0.0
+		material "DarkBlue"
+		pxl_border_size 32 32 32 32
+		border_position internal
+		border_material "AlphaDarkBlue"
+	}
+
+	border_panel_overlay "Panel03"
+	{
+		size 0.2 0.5
+		position 0.4 0.0
+		material "DarkGreen"
+		pxl_border_size 32 32 32 32
+		border_position internal
+		border_material "AlphaDarkGreen"
+	}
+
+	border_panel_overlay "Panel04"
+	{
+		size 0.2 0.5
+		position 0.6 0.0
+		material "Black"
+		pxl_border_size 32 32 32 32
+		border_position internal
+		border_material "AlphaBlack"
+	}
+
+	border_panel_overlay "Panel05"
+	{
+		size 0.2 0.5
+		position 0.8 0.0
+		material "White"
+		pxl_border_size 32 32 32 32
+		border_position internal
+		border_material "AlphaWhite"
+	}
+
+	border_panel_overlay "Panel06"
+	{
+		size 0.2 0.5
+		position 0.0 0.5
+		material "AlphaDarkRed"
+		pxl_border_size 32 32 32 32
+		border_position internal
+		border_material "DarkRed"
+	}
+
+	border_panel_overlay "Panel07"
+	{
+		size 0.2 0.5
+		position 0.2 0.5
+		material "AlphaDarkBlue"
+		pxl_border_size 32 32 32 32
+		border_position internal
+		border_material "DarkBlue"
+	}
+
+	border_panel_overlay "Panel08"
+	{
+		size 0.2 0.5
+		position 0.4 0.5
+		material "AlphaDarkGreen"
+		pxl_border_size 32 32 32 32
+		border_position internal
+		border_material "DarkGreen"
+	}
+
+	border_panel_overlay "Panel09"
+	{
+		size 0.2 0.5
+		position 0.6 0.5
+		material "AlphaBlack"
+		pxl_border_size 32 32 32 32
+		border_position internal
+		border_material "Black"
+	}
+
+	border_panel_overlay "Panel10"
+	{
+		size 0.2 0.5
+		position 0.8 0.5
+		material "AlphaWhite"
+		pxl_border_size 32 32 32 32
+		border_position internal
+		border_material "White"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.0 -200.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

@@ -1,0 +1,1850 @@
+materials pbr_metallic_roughness
+
+scene "Scene"
+{
+	ambient_light 1.0 1.0 1.0
+	background_colour 0.5 0.5 0.5 1.0
+
+	skybox
+	{
+		equirectangular "Textures/pineTreeSkybox.hdr" 2048 2048
+	}
+
+	material "Material00"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.0
+			metallic 0.0
+		}
+	}
+
+	material "Material01"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.125
+			metallic 0.0
+		}
+	}
+
+	material "Material02"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.25
+			metallic 0.0
+		}
+	}
+
+	material "Material03"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.375
+			metallic 0.0
+		}
+	}
+
+	material "Material04"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.50
+			metallic 0.0
+		}
+	}
+
+	material "Material05"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.625
+			metallic 0.0
+		}
+	}
+
+	material "Material06"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.75
+			metallic 0.0
+		}
+	}
+
+	material "Material07"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.875
+			metallic 0.0
+		}
+	}
+
+	material "Material08"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 1.0
+			metallic 0.0
+		}
+	}
+
+	material "Material10"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.0
+			metallic 0.125
+		}
+	}
+
+	material "Material11"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.125
+			metallic 0.125
+		}
+	}
+
+	material "Material12"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.25
+			metallic 0.125
+		}
+	}
+
+	material "Material13"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.375
+			metallic 0.125
+		}
+	}
+
+	material "Material14"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.50
+			metallic 0.125
+		}
+	}
+
+	material "Material15"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.625
+			metallic 0.125
+		}
+	}
+
+	material "Material16"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.75
+			metallic 0.125
+		}
+	}
+
+	material "Material17"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.875
+			metallic 0.125
+		}
+	}
+
+	material "Material18"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 1.0
+			metallic 0.125
+		}
+	}
+
+	material "Material20"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.0
+			metallic 0.25
+		}
+	}
+
+	material "Material21"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.125
+			metallic 0.25
+		}
+	}
+
+	material "Material22"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.25
+			metallic 0.25
+		}
+	}
+
+	material "Material23"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.375
+			metallic 0.25
+		}
+	}
+
+	material "Material24"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.50
+			metallic 0.25
+		}
+	}
+
+	material "Material25"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.625
+			metallic 0.25
+		}
+	}
+
+	material "Material26"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.75
+			metallic 0.25
+		}
+	}
+
+	material "Material27"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.875
+			metallic 0.25
+		}
+	}
+
+	material "Material28"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 1.0
+			metallic 0.25
+		}
+	}
+
+	material "Material30"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.0
+			metallic 0.375
+		}
+	}
+
+	material "Material31"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.125
+			metallic 0.375
+		}
+	}
+
+	material "Material32"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.25
+			metallic 0.375
+		}
+	}
+
+	material "Material33"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.375
+			metallic 0.375
+		}
+	}
+
+	material "Material34"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.50
+			metallic 0.375
+		}
+	}
+
+	material "Material35"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.625
+			metallic 0.375
+		}
+	}
+
+	material "Material36"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.75
+			metallic 0.375
+		}
+	}
+
+	material "Material37"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.875
+			metallic 0.375
+		}
+	}
+
+	material "Material38"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 1.0
+			metallic 0.375
+		}
+	}
+
+	material "Material40"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.0
+			metallic 0.5
+		}
+	}
+
+	material "Material41"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.125
+			metallic 0.5
+		}
+	}
+
+	material "Material42"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.25
+			metallic 0.5
+		}
+	}
+
+	material "Material43"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.375
+			metallic 0.5
+		}
+	}
+
+	material "Material44"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.50
+			metallic 0.5
+		}
+	}
+
+	material "Material45"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.625
+			metallic 0.5
+		}
+	}
+
+	material "Material46"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.75
+			metallic 0.5
+		}
+	}
+
+	material "Material47"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.875
+			metallic 0.5
+		}
+	}
+
+	material "Material48"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 1.0
+			metallic 0.5
+		}
+	}
+
+	material "Material50"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.0
+			metallic 0.625
+		}
+	}
+
+	material "Material51"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.125
+			metallic 0.625
+		}
+	}
+
+	material "Material52"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.25
+			metallic 0.625
+		}
+	}
+
+	material "Material53"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.375
+			metallic 0.625
+		}
+	}
+
+	material "Material54"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.50
+			metallic 0.625
+		}
+	}
+
+	material "Material55"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.625
+			metallic 0.625
+		}
+	}
+
+	material "Material56"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.75
+			metallic 0.625
+		}
+	}
+
+	material "Material57"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.875
+			metallic 0.625
+		}
+	}
+
+	material "Material58"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 1.0
+			metallic 0.625
+		}
+	}
+
+	material "Material60"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.0
+			metallic 0.75
+		}
+	}
+
+	material "Material61"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.125
+			metallic 0.75
+		}
+	}
+
+	material "Material62"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.25
+			metallic 0.75
+		}
+	}
+
+	material "Material63"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.375
+			metallic 0.75
+		}
+	}
+
+	material "Material64"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.50
+			metallic 0.75
+		}
+	}
+
+	material "Material65"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.625
+			metallic 0.75
+		}
+	}
+
+	material "Material66"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.75
+			metallic 0.75
+		}
+	}
+
+	material "Material67"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.875
+			metallic 0.75
+		}
+	}
+
+	material "Material68"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 1.0
+			metallic 0.75
+		}
+	}
+
+	material "Material70"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.0
+			metallic 0.875
+		}
+	}
+
+	material "Material71"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.125
+			metallic 0.875
+		}
+	}
+
+	material "Material72"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.25
+			metallic 0.875
+		}
+	}
+
+	material "Material73"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.375
+			metallic 0.875
+		}
+	}
+
+	material "Material74"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.50
+			metallic 0.875
+		}
+	}
+
+	material "Material75"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.625
+			metallic 0.875
+		}
+	}
+
+	material "Material76"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.75
+			metallic 0.875
+		}
+	}
+
+	material "Material77"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.875
+			metallic 0.875
+		}
+	}
+
+	material "Material78"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 1.0
+			metallic 0.875
+		}
+	}
+
+	material "Material80"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.0
+			metallic 1.0
+		}
+	}
+
+	material "Material81"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.125
+			metallic 1.0
+		}
+	}
+
+	material "Material82"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.25
+			metallic 1.0
+		}
+	}
+
+	material "Material83"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.375
+			metallic 1.0
+		}
+	}
+
+	material "Material84"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.50
+			metallic 1.0
+		}
+	}
+
+	material "Material85"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.625
+			metallic 1.0
+		}
+	}
+
+	material "Material86"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.75
+			metallic 1.0
+		}
+	}
+
+	material "Material87"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 0.875
+			metallic 1.0
+		}
+	}
+
+	material "Material88"
+	{
+		pass
+		{
+			albedo 0.5 0.383 0.168
+			roughness 1.0
+			metallic 1.0
+		}
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 0.131861 -0.965589 0.224165 120.808
+	}
+	scene_node "LightNode2"
+	{
+		parent "LightNode"
+		orientation 1.0 0.0 0.0 4.99997
+	}
+	light "SunLight"
+	{
+		parent "LightNode2"
+		type directional
+		colour 1.0 1.0 0.5
+		intensity 0.8 1.0
+	}
+
+	scene_node "Node00"
+	{
+		position -200 -200 0
+	}
+
+	scene_node "Node01"
+	{
+		position -150 -200 0
+	}
+
+	scene_node "Node02"
+	{
+		position -100 -200 0
+	}
+
+	scene_node "Node03"
+	{
+		position -50 -200 0
+	}
+
+	scene_node "Node04"
+	{
+		position 0 -200 0
+	}
+
+	scene_node "Node05"
+	{
+		position 50 -200 0
+	}
+
+	scene_node "Node06"
+	{
+		position 100 -200 0
+	}
+
+	scene_node "Node07"
+	{
+		position 150 -200 0
+	}
+
+	scene_node "Node08"
+	{
+		position 200 -200 0
+	}
+
+	scene_node "Node10"
+	{
+		position -200 -150 0
+	}
+
+	scene_node "Node11"
+	{
+		position -150 -150 0
+	}
+
+	scene_node "Node12"
+	{
+		position -100 -150 0
+	}
+
+	scene_node "Node13"
+	{
+		position -50 -150 0
+	}
+
+	scene_node "Node14"
+	{
+		position 0 -150 0
+	}
+
+	scene_node "Node15"
+	{
+		position 50 -150 0
+	}
+
+	scene_node "Node16"
+	{
+		position 100 -150 0
+	}
+
+	scene_node "Node17"
+	{
+		position 150 -150 0
+	}
+
+	scene_node "Node18"
+	{
+		position 200 -150 0
+	}
+
+	scene_node "Node20"
+	{
+		position -200 -100 0
+	}
+
+	scene_node "Node21"
+	{
+		position -150 -100 0
+	}
+
+	scene_node "Node22"
+	{
+		position -100 -100 0
+	}
+
+	scene_node "Node23"
+	{
+		position -50 -100 0
+	}
+
+	scene_node "Node24"
+	{
+		position 0 -100 0
+	}
+
+	scene_node "Node25"
+	{
+		position 50 -100 0
+	}
+
+	scene_node "Node26"
+	{
+		position 100 -100 0
+	}
+
+	scene_node "Node27"
+	{
+		position 150 -100 0
+	}
+
+	scene_node "Node28"
+	{
+		position 200 -100 0
+	}
+
+	scene_node "Node30"
+	{
+		position -200 -50 0
+	}
+
+	scene_node "Node31"
+	{
+		position -150 -50 0
+	}
+
+	scene_node "Node32"
+	{
+		position -100 -50 0
+	}
+
+	scene_node "Node33"
+	{
+		position -50 -50 0
+	}
+
+	scene_node "Node34"
+	{
+		position 0 -50 0
+	}
+
+	scene_node "Node35"
+	{
+		position 50 -50 0
+	}
+
+	scene_node "Node36"
+	{
+		position 100 -50 0
+	}
+
+	scene_node "Node37"
+	{
+		position 150 -50 0
+	}
+
+	scene_node "Node38"
+	{
+		position 200 -50 0
+	}
+
+	scene_node "Node40"
+	{
+		position -200 0 0
+	}
+
+	scene_node "Node41"
+	{
+		position -150 0 0
+	}
+
+	scene_node "Node42"
+	{
+		position -100 0 0
+	}
+
+	scene_node "Node43"
+	{
+		position -50 0 0
+	}
+
+	scene_node "Node44"
+	{
+		position 0 0 0
+	}
+
+	scene_node "Node45"
+	{
+		position 50 0 0
+	}
+
+	scene_node "Node46"
+	{
+		position 100 0 0
+	}
+
+	scene_node "Node47"
+	{
+		position 150 0 0
+	}
+
+	scene_node "Node48"
+	{
+		position 200 0 0
+	}
+
+	scene_node "Node50"
+	{
+		position -200 50 0
+	}
+
+	scene_node "Node51"
+	{
+		position -150 50 0
+	}
+
+	scene_node "Node52"
+	{
+		position -100 50 0
+	}
+
+	scene_node "Node53"
+	{
+		position -50 50 0
+	}
+
+	scene_node "Node54"
+	{
+		position 0 50 0
+	}
+
+	scene_node "Node55"
+	{
+		position 50 50 0
+	}
+
+	scene_node "Node56"
+	{
+		position 100 50 0
+	}
+
+	scene_node "Node57"
+	{
+		position 150 50 0
+	}
+
+	scene_node "Node58"
+	{
+		position 200 50 0
+	}
+
+	scene_node "Node60"
+	{
+		position -200 100 0
+	}
+
+	scene_node "Node61"
+	{
+		position -150 100 0
+	}
+
+	scene_node "Node62"
+	{
+		position -100 100 0
+	}
+
+	scene_node "Node63"
+	{
+		position -50 100 0
+	}
+
+	scene_node "Node64"
+	{
+		position 0 100 0
+	}
+
+	scene_node "Node65"
+	{
+		position 50 100 0
+	}
+
+	scene_node "Node66"
+	{
+		position 100 100 0
+	}
+
+	scene_node "Node67"
+	{
+		position 150 100 0
+	}
+
+	scene_node "Node68"
+	{
+		position 200 100 0
+	}
+
+	scene_node "Node70"
+	{
+		position -200 150 0
+	}
+
+	scene_node "Node71"
+	{
+		position -150 150 0
+	}
+
+	scene_node "Node72"
+	{
+		position -100 150 0
+	}
+
+	scene_node "Node73"
+	{
+		position -50 150 0
+	}
+
+	scene_node "Node74"
+	{
+		position 0 150 0
+	}
+
+	scene_node "Node75"
+	{
+		position 50 150 0
+	}
+
+	scene_node "Node76"
+	{
+		position 100 150 0
+	}
+
+	scene_node "Node77"
+	{
+		position 150 150 0
+	}
+
+	scene_node "Node78"
+	{
+		position 200 150 0
+	}
+
+	scene_node "Node80"
+	{
+		position -200 200 0
+	}
+
+	scene_node "Node81"
+	{
+		position -150 200 0
+	}
+
+	scene_node "Node82"
+	{
+		position -100 200 0
+	}
+
+	scene_node "Node83"
+	{
+		position -50 200 0
+	}
+
+	scene_node "Node84"
+	{
+		position 0 200 0
+	}
+
+	scene_node "Node85"
+	{
+		position 50 200 0
+	}
+
+	scene_node "Node86"
+	{
+		position 100 200 0
+	}
+
+	scene_node "Node87"
+	{
+		position 150 200 0
+	}
+
+	scene_node "Node88"
+	{
+		position 200 200 0
+	}
+
+	mesh "Mesh"
+	{
+		type "sphere" -subdiv=40 -radius=25
+	}
+
+	object "Primitive00"
+	{
+		parent "Node00"
+		mesh "Mesh"
+		material "Material00"
+	}
+
+	object "Primitive01"
+	{
+		parent "Node01"
+		mesh "Mesh"
+		material "Material01"
+	}
+
+	object "Primitive02"
+	{
+		parent "Node02"
+		mesh "Mesh"
+		material "Material02"
+	}
+
+	object "Primitive03"
+	{
+		parent "Node03"
+		mesh "Mesh"
+		material "Material03"
+	}
+
+	object "Primitive04"
+	{
+		parent "Node04"
+		mesh "Mesh"
+		material "Material04"
+	}
+
+	object "Primitive05"
+	{
+		parent "Node05"
+		mesh "Mesh"
+		material "Material05"
+	}
+
+	object "Primitive06"
+	{
+		parent "Node06"
+		mesh "Mesh"
+		material "Material06"
+	}
+
+	object "Primitive07"
+	{
+		parent "Node07"
+		mesh "Mesh"
+		material "Material07"
+	}
+
+	object "Primitive08"
+	{
+		parent "Node08"
+		mesh "Mesh"
+		material "Material08"
+	}
+
+	object "Primitive10"
+	{
+		parent "Node10"
+		mesh "Mesh"
+		material "Material10"
+	}
+
+	object "Primitive11"
+	{
+		parent "Node11"
+		mesh "Mesh"
+		material "Material11"
+	}
+
+	object "Primitive12"
+	{
+		parent "Node12"
+		mesh "Mesh"
+		material "Material12"
+	}
+
+	object "Primitive13"
+	{
+		parent "Node13"
+		mesh "Mesh"
+		material "Material13"
+	}
+
+	object "Primitive14"
+	{
+		parent "Node14"
+		mesh "Mesh"
+		material "Material14"
+	}
+
+	object "Primitive15"
+	{
+		parent "Node15"
+		mesh "Mesh"
+		material "Material15"
+	}
+
+	object "Primitive16"
+	{
+		parent "Node16"
+		mesh "Mesh"
+		material "Material16"
+	}
+
+	object "Primitive17"
+	{
+		parent "Node17"
+		mesh "Mesh"
+		material "Material17"
+	}
+
+	object "Primitive18"
+	{
+		parent "Node18"
+		mesh "Mesh"
+		material "Material18"
+	}
+
+	object "Primitive20"
+	{
+		parent "Node20"
+		mesh "Mesh"
+		material "Material20"
+	}
+
+	object "Primitive21"
+	{
+		parent "Node21"
+		mesh "Mesh"
+		material "Material21"
+	}
+
+	object "Primitive22"
+	{
+		parent "Node22"
+		mesh "Mesh"
+		material "Material22"
+	}
+
+	object "Primitive23"
+	{
+		parent "Node23"
+		mesh "Mesh"
+		material "Material23"
+	}
+
+	object "Primitive24"
+	{
+		parent "Node24"
+		mesh "Mesh"
+		material "Material24"
+	}
+
+	object "Primitive25"
+	{
+		parent "Node25"
+		mesh "Mesh"
+		material "Material25"
+	}
+
+	object "Primitive26"
+	{
+		parent "Node26"
+		mesh "Mesh"
+		material "Material26"
+	}
+
+	object "Primitive27"
+	{
+		parent "Node27"
+		mesh "Mesh"
+		material "Material27"
+	}
+
+	object "Primitive28"
+	{
+		parent "Node28"
+		mesh "Mesh"
+		material "Material28"
+	}
+
+	object "Primitive30"
+	{
+		parent "Node30"
+		mesh "Mesh"
+		material "Material30"
+	}
+
+	object "Primitive31"
+	{
+		parent "Node31"
+		mesh "Mesh"
+		material "Material31"
+	}
+
+	object "Primitive32"
+	{
+		parent "Node32"
+		mesh "Mesh"
+		material "Material32"
+	}
+
+	object "Primitive33"
+	{
+		parent "Node33"
+		mesh "Mesh"
+		material "Material33"
+	}
+
+	object "Primitive34"
+	{
+		parent "Node34"
+		mesh "Mesh"
+		material "Material34"
+	}
+
+	object "Primitive35"
+	{
+		parent "Node35"
+		mesh "Mesh"
+		material "Material35"
+	}
+
+	object "Primitive36"
+	{
+		parent "Node36"
+		mesh "Mesh"
+		material "Material36"
+	}
+
+	object "Primitive37"
+	{
+		parent "Node37"
+		mesh "Mesh"
+		material "Material37"
+	}
+
+	object "Primitive38"
+	{
+		parent "Node38"
+		mesh "Mesh"
+		material "Material38"
+	}
+
+	object "Primitive40"
+	{
+		parent "Node40"
+		mesh "Mesh"
+		material "Material40"
+	}
+
+	object "Primitive41"
+	{
+		parent "Node41"
+		mesh "Mesh"
+		material "Material41"
+	}
+
+	object "Primitive42"
+	{
+		parent "Node42"
+		mesh "Mesh"
+		material "Material42"
+	}
+
+	object "Primitive43"
+	{
+		parent "Node43"
+		mesh "Mesh"
+		material "Material43"
+	}
+
+	object "Primitive44"
+	{
+		parent "Node44"
+		mesh "Mesh"
+		material "Material44"
+	}
+
+	object "Primitive45"
+	{
+		parent "Node45"
+		mesh "Mesh"
+		material "Material45"
+	}
+
+	object "Primitive46"
+	{
+		parent "Node46"
+		mesh "Mesh"
+		material "Material46"
+	}
+
+	object "Primitive47"
+	{
+		parent "Node47"
+		mesh "Mesh"
+		material "Material47"
+	}
+
+	object "Primitive48"
+	{
+		parent "Node48"
+		mesh "Mesh"
+		material "Material48"
+	}
+
+	object "Primitive50"
+	{
+		parent "Node50"
+		mesh "Mesh"
+		material "Material50"
+	}
+
+	object "Primitive51"
+	{
+		parent "Node51"
+		mesh "Mesh"
+		material "Material51"
+	}
+
+	object "Primitive52"
+	{
+		parent "Node52"
+		mesh "Mesh"
+		material "Material52"
+	}
+
+	object "Primitive53"
+	{
+		parent "Node53"
+		mesh "Mesh"
+		material "Material53"
+	}
+
+	object "Primitive54"
+	{
+		parent "Node54"
+		mesh "Mesh"
+		material "Material54"
+	}
+
+	object "Primitive55"
+	{
+		parent "Node55"
+		mesh "Mesh"
+		material "Material55"
+	}
+
+	object "Primitive56"
+	{
+		parent "Node56"
+		mesh "Mesh"
+		material "Material56"
+	}
+
+	object "Primitive57"
+	{
+		parent "Node57"
+		mesh "Mesh"
+		material "Material57"
+	}
+
+	object "Primitive58"
+	{
+		parent "Node58"
+		mesh "Mesh"
+		material "Material58"
+	}
+
+	object "Primitive60"
+	{
+		parent "Node60"
+		mesh "Mesh"
+		material "Material60"
+	}
+
+	object "Primitive61"
+	{
+		parent "Node61"
+		mesh "Mesh"
+		material "Material61"
+	}
+
+	object "Primitive62"
+	{
+		parent "Node62"
+		mesh "Mesh"
+		material "Material62"
+	}
+
+	object "Primitive63"
+	{
+		parent "Node63"
+		mesh "Mesh"
+		material "Material63"
+	}
+
+	object "Primitive64"
+	{
+		parent "Node64"
+		mesh "Mesh"
+		material "Material64"
+	}
+
+	object "Primitive65"
+	{
+		parent "Node65"
+		mesh "Mesh"
+		material "Material65"
+	}
+
+	object "Primitive66"
+	{
+		parent "Node66"
+		mesh "Mesh"
+		material "Material66"
+	}
+
+	object "Primitive67"
+	{
+		parent "Node67"
+		mesh "Mesh"
+		material "Material67"
+	}
+
+	object "Primitive68"
+	{
+		parent "Node68"
+		mesh "Mesh"
+		material "Material68"
+	}
+
+	object "Primitive70"
+	{
+		parent "Node70"
+		mesh "Mesh"
+		material "Material70"
+	}
+
+	object "Primitive71"
+	{
+		parent "Node71"
+		mesh "Mesh"
+		material "Material71"
+	}
+
+	object "Primitive72"
+	{
+		parent "Node72"
+		mesh "Mesh"
+		material "Material72"
+	}
+
+	object "Primitive73"
+	{
+		parent "Node73"
+		mesh "Mesh"
+		material "Material73"
+	}
+
+	object "Primitive74"
+	{
+		parent "Node74"
+		mesh "Mesh"
+		material "Material74"
+	}
+
+	object "Primitive75"
+	{
+		parent "Node75"
+		mesh "Mesh"
+		material "Material75"
+	}
+
+	object "Primitive76"
+	{
+		parent "Node76"
+		mesh "Mesh"
+		material "Material76"
+	}
+
+	object "Primitive77"
+	{
+		parent "Node77"
+		mesh "Mesh"
+		material "Material77"
+	}
+
+	object "Primitive78"
+	{
+		parent "Node78"
+		mesh "Mesh"
+		material "Material78"
+	}
+
+	object "Primitive80"
+	{
+		parent "Node80"
+		mesh "Mesh"
+		material "Material80"
+	}
+
+	object "Primitive81"
+	{
+		parent "Node81"
+		mesh "Mesh"
+		material "Material81"
+	}
+
+	object "Primitive82"
+	{
+		parent "Node82"
+		mesh "Mesh"
+		material "Material82"
+	}
+
+	object "Primitive83"
+	{
+		parent "Node83"
+		mesh "Mesh"
+		material "Material83"
+	}
+
+	object "Primitive84"
+	{
+		parent "Node84"
+		mesh "Mesh"
+		material "Material84"
+	}
+
+	object "Primitive85"
+	{
+		parent "Node85"
+		mesh "Mesh"
+		material "Material85"
+	}
+
+	object "Primitive86"
+	{
+		parent "Node86"
+		mesh "Mesh"
+		material "Material86"
+	}
+
+	object "Primitive87"
+	{
+		parent "Node87"
+		mesh "Mesh"
+		material "Material87"
+	}
+
+	object "Primitive88"
+	{
+		parent "Node88"
+		mesh "Mesh"
+		material "Material88"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation -0.0306899 0.987886 -0.152114 202.544
+		position 296.655 209.719 541.844
+		//orientation 0 1 0 180
+		//position 0.0 0.0 500.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

@@ -1,0 +1,123 @@
+materials legacy
+
+scene "Nyra"
+{
+	include "Materials/ReflectionRefractionNormalMap.cscn"
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/equirectangularSkybox.hdr" 512
+	}
+
+	// Meshes
+
+	mesh "Nyra"
+	{
+		import "Meshes/Nyra.cmsh"
+	}
+
+	// Cameras nodes
+
+	scene_node "CameraNode"
+	{
+		position 0 50 -200
+		scale 1 1 1
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "CameraNode"
+
+		viewport
+		{
+			type perspective
+			aspect_ratio 1.333
+			near 0.1
+			far 2000
+			fov_y 45
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 45
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "Nyra"
+	{
+		orientation 0 1 0 180
+		scale 5 5 5
+	}
+
+	// Lights
+
+	light "Light"
+	{
+		parent "LightNode"
+		type directional
+		colour 1 1 1
+		intensity 1 1
+		// shadows
+		// {
+			// producer true
+			// filter variance
+		// }
+	}
+
+	// Geometries
+
+	object "Nyra"
+	{
+		parent "Nyra"
+		mesh "Nyra"
+		materials
+		{
+			material 0 "MatBody"
+			material 1 "MatHead"
+			material 2 "cornea"
+			material 3 "dx11Shader6"
+		}
+	}
+
+	// Particle systems
+
+	// Animated object groups
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "Nyra"
+		camera "MainCamera"
+		size 800 600
+		format argb32
+		tone_mapping "linear"
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			intensity 1.0
+			radius 50.0
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1.0
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}

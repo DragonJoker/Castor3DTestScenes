@@ -1,0 +1,369 @@
+ambient_light 0.5 0.5 0.5
+
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	min_lod 0.0
+	max_lod 5.0
+	lod_bias 0.0
+	u_wrap_mode clamp_to_border
+	v_wrap_mode clamp_to_border
+	w_wrap_mode clamp_to_border
+	border_colour float_opaque_black
+}
+
+material "ReflMatBody"
+{
+	pass
+	{
+		shininess 128.0
+		alpha_func greater 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/body-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/body-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflMatHead"
+{
+	pass
+	{
+		shininess 128.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflCornea"
+{
+	pass
+	{
+		shininess 128.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflDx11Shader6"
+{
+	pass
+	{
+		shininess 128.0
+		alpha_func greater 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/head-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "RefrMatBody"
+{
+	pass
+	{
+		shininess 128.0
+		alpha_func greater 0.5
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/body-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/body-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "RefrMatHead"
+{
+	pass
+	{
+		shininess 128.0
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "RefrCornea"
+{
+	pass
+	{
+		shininess 128.0
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "RefrDx11Shader6"
+{
+	pass
+	{
+		shininess 128.0
+		alpha_func greater 0.5
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/head-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflRefrMatBody"
+{
+	pass
+	{
+		shininess 128.0
+		alpha_func greater 0.5
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/body-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/body-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflRefrMatHead"
+{
+	pass
+	{
+		shininess 128.0
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflRefrCornea"
+{
+	pass
+	{
+		shininess 128.0
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflRefrDx11Shader6"
+{
+	pass
+	{
+		shininess 128.0
+		alpha_func greater 0.5
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/head-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}

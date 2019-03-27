@@ -1,0 +1,151 @@
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	min_lod 0.0
+	max_lod 5.0
+	lod_bias 0.0
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	border_colour float_opaque_black
+}
+
+material "gob"
+{
+	pass
+	{
+		diffuse 1.0 1.0 1.0
+		ambient 0
+		shininess 200
+		alpha 0.1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			image "Textures/HellKnight/gob_d.tga" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel specular
+			image "Textures/HellKnight/gob_s.tga" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel normal
+			image "Textures/HellKnight/gob_local.tga" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "gob2"
+{
+	pass
+	{
+		diffuse 1.0 1.0 1.0
+		shininess 200
+		alpha 0.1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			image "Textures/HellKnight/gob2_d.tga" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel specular
+			image "Textures/HellKnight/gob2_s.tga" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel normal
+			image "Textures/HellKnight/gob2_local.tga" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "hellknight"
+{
+	pass
+	{
+		ambient 0
+		shininess 5
+		specular 0.1 0.1 0.1
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			image "Textures/HellKnight/hellknight_d.tga" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel specular
+			image "Textures/HellKnight/hellknight_s.tga" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel normal
+			image "Textures/HellKnight/hellknight_local.tga" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "tongue"
+{
+	pass
+	{
+		ambient 0
+		shininess 200
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			image "Textures/HellKnight/tongue_d.tga" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel specular
+			image "Textures/HellKnight/tongue_s.tga" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel normal
+			image "Textures/HellKnight/tongue_local.tga" rgb
+			sampler "Trilinear"
+		}
+	}
+}

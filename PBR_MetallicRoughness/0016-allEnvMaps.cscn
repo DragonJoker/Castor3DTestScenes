@@ -1,0 +1,144 @@
+materials pbr_metallic_roughness
+
+scene "Nyra"
+{
+	include "Materials/AllEnvMaps.cscn"
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/pineTreeSkybox.hdr" 512
+	}
+
+	// Meshes
+
+	mesh "Nyra"
+	{
+		import "Meshes/Nyra.cmsh"
+	}
+
+	// Cameras nodes
+
+	scene_node "CameraNode"
+	{
+		position -254.3 96.8839 -67.1323
+		orientation 0.0 1.0 0.0 69.3811
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "CameraNode"
+
+		viewport
+		{
+			type perspective
+			aspect_ratio 1.333
+			near 0.1
+			far 2000
+			fov_y 45
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "Refr"
+	{
+		orientation 0 1 0 180
+		position -150 0 0
+		scale 5 5 5
+	}
+
+	scene_node "ReflRefr"
+	{
+		orientation 0 1 0 180
+		position -50 0 0
+		scale 5 5 5
+	}
+
+	scene_node "Refl"
+	{
+		orientation 0 1 0 180
+		position 50 0 0
+		scale 5 5 5
+	}
+
+	scene_node "Nyra"
+	{
+		orientation 0 1 0 180
+		position 150 0 0
+		scale 5 5 5
+	}
+
+	// Geometries
+
+	object "Refr"
+	{
+		parent "Refr"
+		mesh "Nyra"
+		materials
+		{
+			material 0 "RefrMatBody"
+			material 1 "RefrMatHead"
+			material 2 "RefrCornea"
+			material 3 "RefrDx11Shader6"
+		}
+	}
+
+	object "ReflRefr"
+	{
+		parent "ReflRefr"
+		mesh "Nyra"
+		materials
+		{
+			material 0 "ReflRefrMatBody"
+			material 1 "ReflRefrMatHead"
+			material 2 "ReflRefrCornea"
+			material 3 "ReflRefrDx11Shader6"
+		}
+	}
+
+	object "Refl"
+	{
+		parent "Refl"
+		mesh "Nyra"
+		materials
+		{
+			material 0 "ReflMatBody"
+			material 1 "ReflMatHead"
+			material 2 "ReflCornea"
+			material 3 "ReflDx11Shader6"
+		}
+	}
+
+	object "Nyra"
+	{
+		parent "Nyra"
+		mesh "Nyra"
+		materials
+		{
+			material 0 "Body"
+			material 1 "Head"
+			material 2 "Cornea"
+			material 3 "Eyes"
+		}
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "Nyra"
+		camera "MainCamera"
+		size 800 600
+		format argb32
+	}
+}

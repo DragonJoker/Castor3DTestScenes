@@ -1,0 +1,108 @@
+materials legacy
+
+scene "Scene"
+{
+	background_colour 0.5 0.5 0.5 1.0
+	ambient_light 0.2 0.2 0.2
+
+	sampler "Default"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod -1000.0
+		max_lod 1000.0
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	material "Fireworks"
+	{
+		pass
+		{
+			diffuse 1.0 0 0
+			emissive 1.1
+			specular 0 0 0
+			shininess 50
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/fireworks_red.png"
+				channel opacity
+				sampler	"Default"
+			}
+		}
+	}
+
+	scene_node "SunLightNode1"
+	{
+		orientation 1 0 0 -45
+	}
+	light "SunLight1"
+	{
+		parent "SunLightNode1"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	scene_node "FinalNode"
+	{
+	}
+	particle_system "FinalPrimitive"
+	{
+		parent "FinalNode"
+		particles_count 10000
+		dimensions 2 2
+		material "Fireworks"
+		particle
+		{
+			type "fireworks"
+			variable "position" vec3f 0 0 0
+			variable "type" float 0
+			variable "velocity" vec3f 0 0.0001 0
+			variable "age" float 0
+		}
+		cs_shader_program
+		{
+			compute_program
+			{
+				file "Shaders/particleSystemCompute.glsl"
+			}
+		}
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.0 -200.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

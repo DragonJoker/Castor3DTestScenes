@@ -1,0 +1,139 @@
+debug_overlays true
+materials pbr_metallic_roughness
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	include "Materials/SponzaPBRMR.cscn"
+
+	skybox
+	{
+		equirectangular "Textures/pineTreeSkybox.hdr" 1024 1024
+	}
+
+	mesh "Sponza"
+	{
+		import "Meshes/Sponza.cmsh" -rescale=0.1
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0 1.0 -0.0 90
+		position -110.0 20.0 -3.0
+		scale 1 1 1
+	}
+
+	scene_node "FinalNode"
+	{
+		orientation 1 0 0 0
+		position 0 0 0
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 90
+	}
+
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 0.5
+		intensity 0.8 1.0
+		shadows
+		{
+			producer true
+			filter raw
+			min_offset 0.001
+			max_slope_offset 0.001
+			variance_max 0.0000001
+			variance_bias 0.15
+			// volumetric_steps 10
+			// volumetric_scattering 0.2
+		}
+	}
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.1
+			aspect_ratio 1.778
+			far 2000
+			fov_y 45
+		}
+	}
+
+	object "FinalPrimitive"
+	{
+		parent "FinalNode"
+		mesh "Sponza"
+		materials
+		{
+			material 0 "leaf"
+			material 1 "DefaultMaterial"
+			material 2 "vase_round"
+			material 3 "Material__298"
+			material 4 "bricks"
+			material 5 "arch"
+			material 6 "ceiling"
+			material 7 "column_a"
+			material 8 "floor"
+			material 9 "column_c"
+			material 10 "details"
+			material 11 "column_b"
+			material 12 "flagpole"
+			material 13 "fabric_e"
+			material 14 "fabric_d"
+			material 15 "fabric_a"
+			material 16 "fabric_g"
+			material 17 "fabric_c"
+			material 18 "fabric_f"
+			material 19 "chain"
+			material 20 "vase_hanging"
+			material 21 "vase"
+			material 22 "Material__25"
+			material 23 "roof"
+		}
+	}
+}
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "Scene"
+		camera "MainCamera"
+		size 1920 1080
+		format argb32
+		postfx "bloom" -Size=5
+
+		smaa
+		{
+			mode 1X
+			edgeDetection luma
+			preset ultra
+			reprojection false
+		}
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			use_normals_buffer true
+			intensity 1.0
+			radius 7.5
+			bias 0.23
+			num_samples 19
+			edge_sharpness 1.0
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}

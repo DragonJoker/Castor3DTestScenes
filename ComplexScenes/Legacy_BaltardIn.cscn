@@ -1,0 +1,257 @@
+// Global configuration
+materials legacy
+
+scene "BaltardIn"
+{
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.500000 0.500000 0.500000
+	include "Materials/BaltardInLegacy.cscn"
+
+	// Skybox
+
+	skybox
+	{
+		right "Textures/BaltardIn/cube_map_baltard_ns_RT.jpg"
+		left "Textures/BaltardIn/cube_map_baltard_ns_LF.jpg"
+		bottom "Textures/BaltardIn/cube_map_baltard_ns_DN.jpg"
+		top "Textures/BaltardIn/cube_map_baltard_ns_UP.jpg"
+		back "Textures/BaltardIn/cube_map_baltard_ns_FR.jpg"
+		front "Textures/BaltardIn/cube_map_baltard_ns_BK.jpg"
+	}
+
+	// Meshes
+
+	mesh "baltard_in_ns"
+	{
+		import "Meshes/BaltardIn/baltard_in_ns.cmsh"
+	}
+
+	mesh "pavillon_baltard_in"
+	{
+		import "Meshes/BaltardIn/pavillon_baltard_in.cmsh"
+	}
+
+	mesh "plasma"
+	{
+		import "Meshes/BaltardIn/plasma.cmsh"
+	}
+
+	// Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 1 0 0 0
+		position 0 300 0
+		scale 1 1 1
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 5
+			aspect_ratio 1.778
+			far 12000
+			fov_y 45
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 90
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "boule_facettes"
+	{
+		orientation 1 0 0 0
+		position 0 985 -75
+		scale 1.60588 1.60588 1.60588
+	}
+
+	scene_node "plasma"
+	{
+		orientation 0 -1 0 180
+		position -4690 620 -54180
+		scale 2.32381 2.32381 2.32381
+	}
+
+	scene_node "plasma_1"
+	{
+		orientation 0 -1 0 180
+		position 5 595 1970
+		scale 3.12889 3.12889 3.12889
+	}
+
+	scene_node "plasma_2"
+	{
+		orientation 0 -1 0 148
+		position 1280 755 1225
+		scale 1.07744 1.07744 1.07744
+	}
+
+	scene_node "plasma_3"
+	{
+		orientation 0 -1 0 212
+		position -1250 755 1230
+		scale 1.07744 1.07744 1.07744
+	}
+
+	// Lights
+
+	light "light_01"
+	{
+		parent "LightNode"
+		type directional
+		colour 1 1 1
+		intensity 0.7 0.8
+		shadows
+		{
+			producer true
+			filter variance
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000005
+			variance_bias 0.20
+		}
+	}
+
+	// Geometries
+
+	object "baltard_in_ns"
+	{
+		parent "CameraRootNode"
+		mesh "baltard_in_ns"
+		materials
+		{
+			material 0 "baltard_in_ns/piste_ns_01"
+			material 1 "baltard_in_ns/noir_laque"
+			material 2 "baltard_in_ns/piste_ns_02"
+			material 3 "baltard_in_ns/gradin_ns"
+			material 4 "baltard_in_ns/bois_ns"
+			material 5 "baltard_in_ns/metal_cable"
+			material 6 "baltard_in_ns/metal_spot"
+			material 7 "baltard_in_ns/lumiere"
+			material 8 "baltard_in_ns/light"
+			material 9 "baltard_in_ns/ns_bg"
+			material 10 "baltard_in_ns/armature"
+			material 11 "baltard_in_ns/verre_baltard_in"
+			material 12 "baltard_in_ns/cube_ns_01"
+			material 13 "baltard_in_ns/cube_ns_02"
+			material 14 "baltard_in_ns/screen_ns_04"
+			material 15 "baltard_in_ns/baffles"
+			material 16 "baltard_in_ns/marche_ns"
+			material 17 "baltard_in_ns/piste_ns_03"
+		}
+	}
+
+	object "pavillon_baltard_in"
+	{
+		parent "CameraRootNode"
+		mesh "pavillon_baltard_in"
+		materials
+		{
+			material 0 "pavillon_baltard_in/vitres"
+			material 1 "pavillon_baltard_in/bord_toit"
+			material 2 "pavillon_baltard_in/toit"
+			material 3 "pavillon_baltard_in/grilles deco"
+			material 4 "pavillon_baltard_in/ciment"
+			material 5 "pavillon_baltard_in/motifs"
+			material 6 "pavillon_baltard_in/bronze"
+			material 7 "pavillon_baltard_in/grilles deco"
+			material 8 "pavillon_baltard_in/vitres"
+			material 9 "pavillon_baltard_in/light"
+			material 10 "pavillon_baltard_in/metal_bleu"
+			material 11 "pavillon_baltard_in/black"
+		}
+	}
+
+	object "plasma"
+	{
+		parent "plasma"
+		mesh "plasma"
+		materials
+		{
+			material 0 "plasma/ecran"
+			material 1 "plasma/plasma"
+		}
+	}
+
+	object "plasma_1"
+	{
+		parent "plasma_1"
+		mesh "plasma"
+		materials
+		{
+			material 0 "plasma/ecran"
+			material 1 "plasma/plasma"
+		}
+	}
+
+	object "plasma_2"
+	{
+		parent "plasma_2"
+		mesh "plasma"
+		materials
+		{
+			material 0 "plasma/ecran"
+			material 1 "plasma/plasma"
+		}
+	}
+
+	object "plasma_3"
+	{
+		parent "plasma_3"
+		mesh "plasma"
+		materials
+		{
+			material 0 "plasma/ecran"
+			material 1 "plasma/plasma"
+		}
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "BaltardIn"
+		camera "MainCamera"
+		size 1920 1080
+		format argb32
+		tone_mapping "linear"
+
+		hdr_config
+		{
+			exposure 1
+			gamma 2.2
+		}
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			intensity 1
+			radius 50
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}

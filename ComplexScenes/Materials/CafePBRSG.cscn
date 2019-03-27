@@ -1,0 +1,1571 @@
+// Materials
+
+material "DefaultMaterial"
+{
+
+	pass
+	{
+		diffuse 0.600000 0.600000 0.600000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+	}
+}
+
+material "barriere_bar/barriere_bar"
+{
+
+	pass
+	{
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/barriere_metal.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel specular
+			image "Textures/CafePBRSG/barriere_metal.jpg" rgb
+		}
+	}
+}
+
+material "billard/bleu"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/billard_bleu.jpg" rgb
+		}
+	}
+}
+
+material "billard/bois"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.189000 0.189000 0.189000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/billard_bois.jpg" rgb
+		}
+	}
+}
+
+material "billard/dorure"
+{
+
+	pass
+	{
+		glossiness 0.1
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/billard_dorure.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel specular
+			image "Textures/CafePBRSG/billard_dorure.jpg" rgb
+		}
+	}
+}
+
+material "billard/light"
+{
+
+	pass
+	{
+		diffuse 0 0 0
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		alpha_func greater 0.5
+		alpha 0.0
+
+		// texture_unit
+		// {
+			// channel diffuse
+			// image "Textures/CafePBRSG/billard_light.png" rgb
+		// }
+
+		// texture_unit
+		// {
+			// channel emissive
+			// image "Textures/CafePBRSG/billard_light.png" rgb
+		// }
+
+		// texture_unit
+		// {
+			// channel opacity
+			// image "Textures/CafePBRSG/billard_light.png" a
+		// }
+	}
+}
+
+material "billard/noir"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+	}
+}
+
+material "billard/queue"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/billard_queue.jpg" rgb
+		}
+	}
+}
+
+material "billard/tapis"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/billard_tapis.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_coffre"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		emissive 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_coffre.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_coffre.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_coquillage_01"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_coquillage_01.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_coquillage_01.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_coquillage_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_coquillage_02.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_coquillage_02.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_fond"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_fond.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_fond.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_pierre_01"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_pierre_01.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_pierre_01.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_pierre_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_pierre_02.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_pierre_02.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_pierre_03"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_pierre_03.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_pierre_03.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_plafond"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_plafond.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_plafond.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_plante_01"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_plante_01.png" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_plante_01.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/CafePBRSG/cafe_aqua_plante_01.png" a
+		}
+	}
+}
+
+material "cafe/cafe_aqua_plante_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_plante_02.png" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_plante_02.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/CafePBRSG/cafe_aqua_plante_02.png" a
+		}
+	}
+}
+
+material "cafe/cafe_aqua_plante_03"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_plante_03.png" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_plante_03.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/CafePBRSG/cafe_aqua_plante_03.png" a
+		}
+	}
+}
+
+material "cafe/cafe_aqua_sol_01"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_sol_01.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_sol_01.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_sol_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_sol_02.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_sol_02.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_aqua_tube"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_aqua_tube.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_aqua_tube.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_bar_alu"
+{
+
+	pass
+	{
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_bar_alu.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel specular
+			image "Textures/CafePBRSG/cafe_bar_alu.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_bar_gris"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_bar_gris.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_bar_light"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_bar_light.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_bar_marbre"
+{
+
+	pass
+	{
+		specular 0.2196 0.2196 0.2196 1.0
+		glossiness 0.9215
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_bar_marbre.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_bois"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_bois.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_bouteilles_01"
+{
+
+	pass
+	{
+		specular 0.352941 0.352941 0.352941 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_bouteilles_01.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_bouteilles_02"
+{
+
+	pass
+	{
+		specular 0.352941 0.352941 0.352941 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_bouteilles_02.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_bouteilles_03"
+{
+
+	pass
+	{
+		specular 0.352941 0.352941 0.352941 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_bouteilles_03.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_bouteilles_04"
+{
+
+	pass
+	{
+		specular 0.352941 0.352941 0.352941 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_bouteilles_04.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_carelage"
+{
+
+	pass
+	{
+		specular 0.0784314 0.0784314 0.0784314 0.00392157
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_carelage.jpg" rgb
+		}
+
+		// texture_unit
+		// {
+			// channel normal
+			// image "Textures/CafePBRSG/cafe_carelage-normal.jpg" rgb
+		// }
+
+		texture_unit
+		{
+			channel glossiness
+			image "Textures/CafePBRSG/cafe_carelage-glossiness.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_chrome"
+{
+
+	pass
+	{
+		diffuse 0.337255 0.337255 0.337255 0.00392157
+		specular 0.603000 0.603000 0.603000 0.00392157
+		glossiness 0.5
+		two_sided true
+	}
+}
+
+material "cafe/cafe_deco_01"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_deco_01.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_deco_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_deco_02.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_deco_03"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_deco_03.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_deco_04"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_deco_04.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_entree"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/magasins_vitrine_bar.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_exit"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.815082
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_exit.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_exit.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_frigo_bar"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_frigo_bar.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafePBRSG/cafe_frigo_bar.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_grille_bar"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_grille_bar.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_grille_bar_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_grille_bar_02.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_mur_01"
+{
+
+	pass
+	{
+		specular 0.156863 0.156863 0.156863 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_mur_01.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_mur_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 0.271695
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_mur_02.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_neon"
+{
+
+	pass
+	{
+		specular 0.313726 0.313726 0.313726 0.00392157
+		glossiness 0.5
+		two_sided true
+		emissive 1.35847
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_carelage.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_porte"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_porte.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_poteau"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_poteau.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_rideau"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_rideau.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_roof_01"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_roof_01.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_roof_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_roof_02.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_sol_01"
+{
+
+	pass
+	{
+		specular 0.0823529 0.0823529 0.0823529 0.00392157
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_sol_01.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_sol_01-normal.png" rgb
+		}
+
+		texture_unit
+		{
+			channel glossiness
+			image "Textures/CafePBRSG/cafe_sol_01-glossiness.jpg" rgb
+		}
+	}
+}
+
+material "cafe/cafe_vitre"
+{
+
+	pass
+	{
+		specular 0.588235 0.588235 0.588235 0.00392157
+		glossiness 0.5
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/cafe_vitre.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/CafePBRSG/cafe_vitre.png" a
+		}
+	}
+}
+
+material "canape_demi_cercle/canape_demi_cercle"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/canape_demi_cercle.jpg" rgb
+		}
+	}
+}
+
+material "canape_triple/canape_triple"
+{
+	pass
+	{
+		specular 0.05 0.05 0.05
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/canape_bar.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel ambient_occlusion
+			image "Textures/CafePBRSG/cuir-ao.png" rgb
+		}
+
+		texture_unit
+		{
+			channel glossiness
+			image "Textures/CafePBRSG/cuir-glossiness.png" rgb
+		}
+
+		texture_unit
+		{
+			channel normal
+			image "Textures/CafePBRSG/cuir-normal.png" rgb
+		}
+	}
+}
+
+material "fauteuil/gros_fauteuil_bar"
+{
+	pass
+	{
+		specular 0.05 0.05 0.05
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/canape_bar.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel ambient_occlusion
+			image "Textures/CafePBRSG/cuir-ao.png" rgb
+		}
+
+		texture_unit
+		{
+			channel glossiness
+			image "Textures/CafePBRSG/cuir-glossiness.png" rgb
+		}
+
+		texture_unit
+		{
+			channel normal
+			image "Textures/CafePBRSG/cuir-normal.png" rgb
+		}
+	}
+}
+
+material "plante_01/plante_01"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/plante_01.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/CafePBRSG/plante_01.png" a
+		}
+	}
+}
+
+material "plante_01/plante_pot"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/plante_pot.jpg" rgb
+		}
+	}
+}
+
+material "plante_02/plante_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/plante_02.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/CafePBRSG/plante_02.png" a
+		}
+	}
+}
+
+material "plante_02/plante_pot"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/plante_pot.jpg" rgb
+		}
+	}
+}
+
+material "plante_03/plante_03"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/plante_03.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/CafePBRSG/plante_03.png" a
+		}
+	}
+}
+
+material "plante_03/plante_pot"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/plante_pot.jpg" rgb
+		}
+	}
+}
+
+material "plante_05/plante_05"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/plante_05.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/CafePBRSG/plante_05.png" a
+		}
+	}
+}
+
+material "plante_05/plante_pot"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/plante_pot.jpg" rgb
+		}
+	}
+}
+
+material "pouf/pouf"
+{
+
+	pass
+	{
+		specular 0.05 0.05 0.05
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/pouf.jpg" rgb
+		}
+
+		texture_unit
+		{
+			channel ambient_occlusion
+			image "Textures/CafePBRSG/cuir-ao.png" rgb
+		}
+
+		texture_unit
+		{
+			channel glossiness
+			image "Textures/CafePBRSG/cuir-glossiness.png" rgb
+		}
+
+		texture_unit
+		{
+			channel normal
+			image "Textures/CafePBRSG/cuir-normal.png" rgb
+		}
+	}
+}
+
+material "table_bar/cuivre"
+{
+
+	pass
+	{
+		diffuse 0.984314 0.647059 0.545098
+		specular 0.984314 0.647059 0.545098
+		glossiness 0.9
+		two_sided true
+	}
+}
+
+material "table_bar/laque"
+{
+
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000
+		specular 0.1 0.1 0.1
+		glossiness 0.8
+		two_sided true
+	}
+}
+
+material "table_basse/table_basse_cuivre"
+{
+
+	pass
+	{
+		diffuse 0.984314 0.647059 0.545098
+		specular 0.984314 0.647059 0.545098
+		glossiness 0.9
+		two_sided true
+	}
+}
+
+material "table_basse/table_basse_laque"
+{
+
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000
+		specular 0.1 0.1 0.1
+		glossiness 0.8
+		two_sided true
+	}
+}
+
+material "table_verre/table_bar_fer_forge"
+{
+
+	pass
+	{
+		specular 0.360000 0.360000 0.360000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/table_bar_fer_forge.jpg" rgb
+		}
+	}
+}
+
+material "table_verre/table_bar_verre"
+{
+
+	pass
+	{
+		specular 0.270000 0.270000 0.270000 0.00392157
+		glossiness 0.5
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/table_bar_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/CafePBRSG/table_bar_verre.png" a
+		}
+	}
+}
+
+material "tableau_myt/tableau_myt_graff_01"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/tableau_myt_graff_01.jpg" rgb
+		}
+	}
+}
+
+material "tableau_myt/tableau_myt_graff_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/tableau_myt_graff_02.jpg" rgb
+		}
+	}
+}
+
+material "tableau_myt/tableau_myt_graff_03"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafePBRSG/tableau_myt_graff_03.jpg" rgb
+		}
+	}
+}
+
+material "tabouret_bar/cuir"
+{
+
+	pass
+	{
+		diffuse 0.0 0.0 0.0
+		two_sided true
+
+		texture_unit
+		{
+			channel ambient_occlusion
+			image "Textures/CafePBRSG/leather-ao.png"
+		}
+
+		texture_unit
+		{
+			channel glossiness
+			image "Textures/CafePBRSG/leather-glossiness.png"
+		}
+
+		texture_unit
+		{
+			channel specular
+			image "Textures/CafePBRSG/leather-specular.png"
+		}
+
+		texture_unit
+		{
+			channel normal
+			image "Textures/CafePBRSG/leather-normal.png"
+		}
+	}
+}
+
+material "tabouret_bar/metal"
+{
+
+	pass
+	{
+		diffuse 0.196078 0.196078 0.196078 0.00392157
+		specular 0.196078 0.196078 0.196078 0.00392157
+		glossiness 0.9
+		two_sided true
+	}
+}
+
+material "tv_bar/ecran"
+{
+
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000 0.00392157
+		specular 0.360000 0.360000 0.360000 0.00392157
+		glossiness 0.5
+		two_sided true
+	}
+}
+
+material "tv_bar/plasma"
+{
+
+	pass
+	{
+		diffuse 0.156863 0.156863 0.156863 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		glossiness 0.5
+		two_sided true
+	}
+}

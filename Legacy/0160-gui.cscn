@@ -1,0 +1,367 @@
+materials legacy
+
+font "Arial_11"
+{
+	file "arial.ttf"
+	height 11
+}
+
+font "Arial_22"
+{
+	file "arial.ttf"
+	height 22
+}
+
+material "DarkerBlue"
+{
+	pass
+	{
+		diffuse 0.0 0.0 0.25 1.0
+	}
+}
+
+material "ColourMap"
+{
+	pass
+	{
+		diffuse 0.0745 0.0745 0.0745 1.0
+
+		texture_unit
+		{
+			image "Textures/Bricks/Diffuse.jpg"
+			channel diffuse
+		}
+	}
+}
+
+material "BtnTexture"
+{
+	pass
+	{
+		diffuse 0.0745 0.0745 0.0745 1.0
+
+		texture_unit
+		{
+			image "Textures/Gui/button.png"
+			channel diffuse
+		}
+
+		texture_unit
+		{
+			image "Textures/Gui/button.png"
+			channel opacity
+		}
+	}
+}
+
+material "BtnHighlightedTexture"
+{
+	pass
+	{
+		diffuse 0.0745 0.0745 0.0745 1.0
+
+		texture_unit
+		{
+			image "Textures/Gui/button_mo.png"
+			channel diffuse
+		}
+
+		texture_unit
+		{
+			image "Textures/Gui/button_mo.png"
+			channel opacity
+		}
+	}
+}
+
+material "BtnPushedTexture"
+{
+	pass
+	{
+		diffuse 0.0745 0.0745 0.0745 1.0
+
+		texture_unit
+		{
+			image "Textures/Gui/button_push.png"
+			channel diffuse
+		}
+
+		texture_unit
+		{
+			image "Textures/Gui/button_push.png"
+			channel opacity
+		}
+	}
+}
+
+gui
+{
+	default_font "Arial_11"
+
+	button "TestButton"
+	{
+		pixel_position 25 500
+		pixel_size 300 50
+		center_uv 0.025 0.875 0.975 0.125
+		border_inner_uv 0.025 0.125 0.975 0.875
+		background_material "BtnTexture"
+		border_material "BtnTexture"
+		text_material "DarkGray"
+		highlighted_background_material "BtnHighlightedTexture"
+		highlighted_foreground_material "BtnHighlightedTexture"
+		highlighted_text_material "Black"
+		pushed_background_material "BtnPushedTexture"
+		pushed_foreground_material "BtnPushedTexture"
+		pushed_text_material "DarkGray"
+		pixel_border_size 6 6 6 6
+		caption "Click Me!!"
+		font "Arial_22"
+	}
+
+	static "TestColours"
+	{
+		background_material "DarkRed"
+		pixel_position 500 0
+		pixel_size 150 1000
+
+		button "Coin!!"
+		{
+			pixel_position 0 25
+			pixel_size 150 25
+			background_material "Yellow"
+			border_material "Black"
+			caption "Click Me!!"
+		}
+
+		listbox "TestList"
+		{
+			pixel_position 0 60
+			pixel_size 150 100
+			background_material "DarkBlue"
+			border_material "White"
+			selected_item_background_material "DarkGreen"
+			selected_item_foreground_material "LightGray"
+			highlighted_item_background_material "DarkerBlue"
+			item "List Item 1"
+			item "List Item 2"
+			item "List Item 3"
+		}
+
+		combobox "TestCombo"
+		{
+			pixel_position 0 170
+			pixel_size 150 25
+			background_material "DarkBlue"
+			border_material "White"
+			selected_item_background_material "DarkGreen"
+			selected_item_foreground_material "LightGray"
+			highlighted_item_background_material "DarkerBlue"
+			item "Combo Item 1"
+			item "Combo Item 2"
+			item "Combo Item 3"
+		}
+
+		edit "TestSingleLineEdit"
+		{
+			pixel_position 0 205
+			pixel_size 150 25
+			background_material "White"
+			border_material "DarkBlue"
+		}
+
+		edit "TestMultiLineEdit"
+		{
+			pixel_position 0 240
+			pixel_size 150 50
+			background_material "White"
+			border_material "DarkBlue"
+			multiline true
+		}
+
+		static "TestStatic"
+		{
+			pixel_position 0 300
+			pixel_size 150 50
+			background_material "White"
+			border_material "DarkBlue"
+			caption "Test static"
+		}
+	}
+
+	static "TestBackgroundTexture"
+	{
+		background_material "DarkRed"
+		pixel_position 700 0
+		pixel_size 150 1000
+
+		button "BT Coin!!"
+		{
+			pixel_position 0 25
+			pixel_size 150 25
+			background_material "ColourMap"
+			border_material "White"
+			caption "Click Me!!"
+		}
+
+		listbox "BT TestList"
+		{
+			pixel_position 0 60
+			pixel_size 150 100
+			background_material "ColourMap"
+			border_material "White"
+			selected_item_background_material "DarkGreen"
+			selected_item_foreground_material "LightGray"
+			highlighted_item_background_material "DarkerBlue"
+			item "List Item 1"
+			item "List Item 2"
+			item "List Item 3"
+		}
+
+		combobox "BT TestCombo"
+		{
+			pixel_position 0 170
+			pixel_size 150 25
+			background_material "ColourMap"
+			border_material "White"
+			selected_item_background_material "DarkGreen"
+			selected_item_foreground_material "LightGray"
+			highlighted_item_background_material "DarkerBlue"
+			item "Combo Item 1"
+			item "Combo Item 2"
+			item "Combo Item 3"
+		}
+
+		edit "BT TestSingleLineEdit"
+		{
+			pixel_position 0 205
+			pixel_size 150 25
+			background_material "ColourMap"
+			border_material "DarkBlue"
+		}
+
+		edit "BT TestMultiLineEdit"
+		{
+			pixel_position 0 240
+			pixel_size 150 50
+			background_material "ColourMap"
+			border_material "DarkBlue"
+			multiline true
+		}
+
+		static "BT TestStatic"
+		{
+			pixel_position 0 300
+			pixel_size 150 50
+			background_material "ColourMap"
+			border_material "DarkBlue"
+			caption "Test static"
+		}
+	}
+
+	static "TestForegroundTexture"
+	{
+		background_material "DarkRed"
+		pixel_position 900 0
+		pixel_size 150 1000
+
+		button "FT Coin!!"
+		{
+			pixel_position 0 25
+			pixel_size 150 25
+			background_material "Yellow"
+			border_material "ColourMap"
+			caption "Click Me!!"
+		}
+
+		listbox "FT TestList"
+		{
+			pixel_position 0 60
+			pixel_size 150 100
+			background_material "DarkBlue"
+			border_material "ColourMap"
+			selected_item_background_material "DarkGreen"
+			selected_item_foreground_material "LightGray"
+			highlighted_item_background_material "DarkerBlue"
+			item "List Item 1"
+			item "List Item 2"
+			item "List Item 3"
+		}
+
+		combobox "FT TestCombo"
+		{
+			pixel_position 0 170
+			pixel_size 150 25
+			background_material "DarkBlue"
+			border_material "ColourMap"
+			selected_item_background_material "DarkGreen"
+			selected_item_foreground_material "LightGray"
+			highlighted_item_background_material "DarkerBlue"
+			item "Combo Item 1"
+			item "Combo Item 2"
+			item "Combo Item 3"
+		}
+
+		edit "FT TestSingleLineEdit"
+		{
+			pixel_position 0 205
+			pixel_size 150 25
+			background_material "White"
+			border_material "ColourMap"
+		}
+
+		edit "FT TestMultiLineEdit"
+		{
+			pixel_position 0 240
+			pixel_size 150 50
+			background_material "White"
+			border_material "ColourMap"
+			multiline true
+		}
+
+		static "FT TestStatic"
+		{
+			pixel_position 0 300
+			pixel_size 150 50
+			background_material "White"
+			border_material "ColourMap"
+			caption "Test static"
+		}
+	}
+}
+
+scene "Scene"
+{
+	background_image "Textures/background.jpg"
+	ambient_light 0.2 0.2 0.2
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.0 -100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 1920 1080
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

@@ -1,0 +1,230 @@
+// Global configuration
+materials legacy
+
+scene "AnimScene"
+{
+	// Scene configuration
+
+	background_colour 0 0 0
+	ambient_light 0 0 0
+
+	// Materials
+
+	include "Materials/Hellknight.cscn"
+
+	// Skybox
+
+	// Meshes
+
+	mesh "HellKnightMesh"
+	{
+		import "Meshes/Hellknight.cmsh"
+		default_materials
+		{
+			material 0 "hellknight"
+			material 1 "gob2"
+			material 2 "gob"
+			material 3 "tongue"
+		}
+	}
+
+	// Cameras nodes
+
+	scene_node "AnimCameraNode"
+	{
+		orientation 0 1 0 180
+		position 0 0 100
+		scale 1 1 1
+	}
+
+	// Cameras
+
+	camera "AnimCamera"
+	{
+		parent "AnimCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.1
+			aspect_ratio 1.333
+			far 20000
+			fov_y 45
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "HellKnight1Node1"
+	{
+		orientation 1 0 0 180
+		position 45 -30 -50
+		scale 0.5 0.5 0.5
+	}
+
+	scene_node "HellKnight1Node2"
+	{
+		parent "HellKnight1Node1"
+		orientation 0 1 0 90
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "HellKnight2Node1"
+	{
+		orientation 1 0 0 180
+		position 15 -30 -100
+		scale 0.5 0.5 0.5
+	}
+
+	scene_node "HellKnight2Node2"
+	{
+		parent "HellKnight2Node1"
+		orientation 0 1 0 90
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "HellKnight3Node1"
+	{
+		orientation 1 0 0 180
+		position -15 -30 -50
+		scale 0.5 0.5 0.5
+	}
+
+	scene_node "HellKnight3Node2"
+	{
+		parent "HellKnight3Node1"
+		orientation 0 1 0 90
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "HellKnight4Node1"
+	{
+		orientation 1 0 0 180
+		position -45 -30 -100
+		scale 0.5 0.5 0.5
+	}
+
+	scene_node "HellKnight4Node2"
+	{
+		parent "HellKnight4Node1"
+		orientation 0 1 0 90
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "SunLightNode1"
+	{
+		orientation 1 0 0 135
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	// Lights
+
+	light "SunLight1"
+	{
+		parent "SunLightNode1"
+		type directional
+		colour 1 1 1
+		intensity 0.8 1
+	}
+
+	// Geometries
+
+	object "HellKnight1"
+	{
+		parent "HellKnight1Node2"
+		mesh "HellKnightMesh"
+	}
+
+	object "HellKnight2"
+	{
+		parent "HellKnight2Node2"
+		mesh "HellKnightMesh"
+	}
+
+	object "HellKnight3"
+	{
+		parent "HellKnight3Node2"
+		mesh "HellKnightMesh"
+	}
+
+	object "HellKnight4"
+	{
+		parent "HellKnight4Node2"
+		mesh "HellKnightMesh"
+	}
+
+	// Animated object groups
+
+	animated_object_group "HellKnight1_2Anim"
+	{
+		animated_object "HellKnight1"
+
+		animation "idle2"
+		{
+			looped true
+			scale 1
+		}
+
+		start_animation "idle2"
+	}
+
+	animated_object_group "HellKnight1_3Anim"
+	{
+		animated_object "HellKnight2"
+
+		animation "idle2"
+		{
+			looped true
+			scale 1
+		}
+
+		start_animation "idle2"
+	}
+
+	animated_object_group "HellKnight3Anim"
+	{
+		animated_object "HellKnight3"
+
+		animation "attack2"
+		{
+			looped true
+			scale 2
+		}
+
+		start_animation "attack2"
+	}
+
+	animated_object_group "HellKnight4Anim"
+	{
+		animated_object "HellKnight4"
+
+		animation "attack2"
+		{
+			looped true
+			scale -1
+		}
+
+		start_animation "attack2"
+	}
+}
+
+// Windows
+
+window "MainWindow"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "AnimScene"
+		camera "AnimCamera"
+		size 800 600
+		format argb32
+	}
+}

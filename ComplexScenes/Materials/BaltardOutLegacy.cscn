@@ -1,0 +1,1758 @@
+// Materials
+
+material "abris_bus/metal"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.432000 0.432000 0.432000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/abris_bus_metal.jpg" rgb
+		}
+	}
+}
+
+material "abris_bus/plan"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/abris_bus_plan.jpg" rgb
+		}
+	}
+}
+
+material "abris_bus/pub"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/abris_bus_pub_02.jpg" rgb
+		}
+	}
+}
+
+material "abris_bus/verre"
+{
+
+	pass
+	{
+		diffuse 0.686275 0.686275 0.686275 0.00392157
+		specular 0.297000 0.297000 0.297000 0.00392157
+		ambient 0
+		shininess 0.5
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/barriere_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/barriere_verre.png" a
+		}
+	}
+}
+
+material "arbre_rue/bac"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.0720000 0.0720000 0.0720000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/arbre_rue_bac.jpg" rgb
+		}
+	}
+}
+
+material "arbre_rue/feuilles"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		alpha_func greater 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/arbre_rue_branche.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/arbre_rue_branche.png" a
+		}
+	}
+}
+
+material "arbre_rue/terre"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/arbre_rue_terre.jpg" rgb
+		}
+	}
+}
+
+material "arbre_rue/tronc"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.0810000 0.0810000 0.0810000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/arbre_rue_tronc.jpg" rgb
+		}
+	}
+}
+
+material "banc/bois"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/banc_bois.jpg" rgb
+		}
+	}
+}
+
+material "banc/metal"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.234000 0.234000 0.234000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/banc_metal.jpg" rgb
+		}
+	}
+}
+
+material "barriere_chantier/bois"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/barriere_chantier_bois.jpg" rgb
+		}
+	}
+}
+
+material "barriere_chantier/peinture"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/barriere_chantier_peinture.jpg" rgb
+		}
+	}
+}
+
+material "barriere_crs/barriere_crs"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235 0.00392157
+		specular 0.504000 0.504000 0.504000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/barriere_metal.jpg" rgb
+		}
+	}
+}
+
+material "borne_incendie/borne_incendie_gris"
+{
+
+	pass
+	{
+		specular 0.351000 0.351000 0.351000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/borne_metal_gris.jpg" rgb
+		}
+	}
+}
+
+material "borne_incendie/borne_incendie_rouge"
+{
+
+	pass
+	{
+		specular 0.351000 0.351000 0.351000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/borne_metal.jpg" rgb
+		}
+	}
+}
+
+material "cabine_telephone/metal"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.333000 0.333000 0.333000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/cabine_telephone_metal.jpg" rgb
+		}
+	}
+}
+
+material "cabine_telephone/phone"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.135000 0.135000 0.135000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/cabine_telephone_phone.jpg" rgb
+		}
+	}
+}
+
+material "cabine_telephone/verre"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.210392 0.210392 0.210392 0.00392157
+		ambient 0
+		shininess 0.5
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/barriere_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/barriere_verre.png" a
+		}
+	}
+}
+
+material "cabine_telephone/verre marron"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+	}
+}
+
+material "camera_surveillance_gauche/camera_surveillance_gauche"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235 0.00392157
+		specular 0.0990000 0.0990000 0.0990000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/camera.jpg" rgb
+		}
+	}
+}
+
+material "cartons/cartons"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/cartons.jpg" rgb
+		}
+	}
+}
+
+material "chene/feuilles"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/feuille_chene.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/feuille_chene.png" a
+		}
+	}
+}
+
+material "chene/tronc"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235 0.00392157
+		specular 0.0900000 0.0900000 0.0900000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/tronc_chene.jpg" rgb
+		}
+	}
+}
+
+material "corbeille/bois"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.0720000 0.0720000 0.0720000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/corbeille_bois.jpg" rgb
+		}
+	}
+}
+
+material "corbeille/metal"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.288000 0.288000 0.288000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/corbeille_metal.jpg" rgb
+		}
+	}
+}
+
+material "corbeille/trash"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/corbeille_trash.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/metal"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.180000 0.180000 0.180000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/bite_metal.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/metal_or"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.315000 0.315000 0.315000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/metal_or.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/mur"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/briques.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/muret"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/briques.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/nom_station"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.189000 0.189000 0.189000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/panneau_place_mog.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/plafond"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+	}
+}
+
+material "entree_station/plan"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/plan.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/sol"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.216000 0.216000 0.216000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/sol_carrele.jpg" rgb
+		}
+	}
+}
+
+material "feu_tricolore/feu"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/feu_tricolore_rouge.jpg" rgb
+		}
+	}
+}
+
+material "feu_tricolore/metal"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.315000 0.315000 0.315000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/feu_tricolore_metal.jpg" rgb
+		}
+	}
+}
+
+material "feu_tricolore/pieton"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/feu_tricolore_pieton_vert.jpg" rgb
+		}
+	}
+}
+
+material "grille_baltard_out/bareaux"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.207000 0.207000 0.207000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/metal_noir.jpg" rgb
+		}
+	}
+}
+
+material "grille_baltard_out/dorures"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.459000 0.459000 0.459000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/metal_or.jpg" rgb
+		}
+	}
+}
+
+material "grille_baltard_out/grille_parc"
+{
+
+	pass
+	{
+		specular 0.156863 0.156863 0.156863 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/grille_parc.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/grille_parc.png" a
+		}
+	}
+}
+
+material "grille_baltard_out/muret"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.0900000 0.0900000 0.0900000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/briques.jpg" rgb
+		}
+	}
+}
+
+material "interphone/interphone"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235 0.00392157
+		specular 0.0990000 0.0990000 0.0990000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/visiophone.jpg" rgb
+		}
+	}
+}
+
+material "maison_baltard_01"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/maison_01.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/maison_01.png" a
+		}
+	}
+}
+
+material "maison_baltard_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/maison_01.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/maison_01.png" a
+		}
+	}
+}
+
+material "maison_baltard_03"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/maison_01.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/maison_01.png" a
+		}
+	}
+}
+
+material "maison_baltard_04"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/maison_01.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/maison_01.png" a
+		}
+	}
+}
+
+material "maison_baltard_05"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/maison_01.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/maison_01.png" a
+		}
+	}
+}
+
+material "maison_baltard_06"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/maison_01.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/maison_01.png" a
+		}
+	}
+}
+
+material "maison_baltard_07"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/maison_01.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/maison_01.png" a
+		}
+	}
+}
+
+material "pavillon_baltard/antenne"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.784314 0.784314 0.784314 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+	}
+}
+
+material "pavillon_baltard/black"
+{
+
+	pass
+	{
+		diffuse 0.00000 0.00000 0.00000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+	}
+}
+
+material "pavillon_baltard/bord_toit"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.0784314 0.0784314 0.0784314 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/baltar_ciment.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard/bronze"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.196078 0.196078 0.196078 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/baltar_bronze.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard/bronze_alpha"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/baltar_bronze_alpha.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/baltar_bronze_alpha.png" a
+		}
+	}
+}
+
+material "pavillon_baltard/metal_bleu"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.156863 0.156863 0.156863 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/baltar_metal_bleu.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard/motifs"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.117647 0.117647 0.117647 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/baltar_mur.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard/toit"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.288000 0.288000 0.288000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/baltar_tuiles.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard/vitres"
+{
+
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000 0.00392157
+		specular 0.117647 0.117647 0.117647 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+	}
+}
+
+material "plot_chantier/plot_chantier"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.180000 0.180000 0.180000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/plot_chantier_plastique.jpg" rgb
+		}
+	}
+}
+
+material "poubelle/plastique_gris"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/poubelle_plastik_gris.jpg" rgb
+		}
+	}
+}
+
+material "poubelle/plastique_noir"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/poubelle_plastik_noir.jpg" rgb
+		}
+	}
+}
+
+material "poubelle/plastique_vert"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/poubelle_plastik_vert.jpg" rgb
+		}
+	}
+}
+
+material "reverbere/lumiere"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/reverbere_vitre.jpg" rgb
+		}
+	}
+}
+
+material "reverbere/metal"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.144000 0.144000 0.144000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/reverbere_metal.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/beton_use"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/beton_use.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/buisson_baltard"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/buisson.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/buisson.png" a
+		}
+	}
+}
+
+material "road_structure/fond"
+{
+
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/font_bois_baltard.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/font_bois_baltard.png" a
+		}
+	}
+}
+
+material "road_structure/grille_baltard"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/grille_parc.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/grille_parc.png" a
+		}
+	}
+}
+
+material "road_structure/herbe"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/herbe.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/maison_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/maison_02.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/maison_03"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/maison_03.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/maison_04"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/maison_04.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/maison_baltard_01"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+	}
+}
+
+material "road_structure/mur_baltard_01"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/mur_baltard_01.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/mur_baltard_02"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/024briques.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/mur_baltard_03"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/brick047.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/mur_baltard_04"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/brick008.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/pave_baltard"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/brick040+.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/portail_baltard"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/grille.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/grille.png" a
+		}
+	}
+}
+
+material "road_structure/porte"
+{
+
+	pass
+	{
+		specular 0.0588235 0.0588235 0.0588235 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/porte_metal.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/rembarde_mur"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/rembarde_muret.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/road"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/road12.jpg" rgb
+		}
+	}
+}
+
+material "road_structure/trottoire_baltard"
+{
+
+	pass
+	{
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/murcim001.jpg" rgb
+		}
+	}
+}
+
+material "saule_pleureur/feuilles"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/feuille_saule.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/feuille_saule.png" a
+		}
+	}
+}
+
+material "saule_pleureur/tronc"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.108000 0.108000 0.108000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/tronc_saule.jpg" rgb
+		}
+	}
+}
+
+material "wet_floor/bois"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.144000 0.144000 0.144000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/bois_balais.jpg" rgb
+		}
+	}
+}
+
+material "wet_floor/eau"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.522000 0.522000 0.522000 0.00392157
+		ambient 0
+		shininess 0.5
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/eau_sceau.png" rgb
+		}
+
+		texture_unit
+		{
+			channel opacity
+			image "Textures/BaltardOutLegacy/eau_sceau.png" a
+		}
+	}
+}
+
+material "wet_floor/metal"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235 0.00392157
+		specular 0.414000 0.414000 0.414000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/corbeille_metal.jpg" rgb
+		}
+	}
+}
+
+material "wet_floor/wet_floor"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.126000 0.126000 0.126000 0.00392157
+		ambient 0
+		shininess 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/BaltardOutLegacy/wet_floor.jpg" rgb
+		}
+	}
+}

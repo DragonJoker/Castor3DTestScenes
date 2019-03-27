@@ -1,0 +1,67 @@
+materials legacy
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.5 0.5 0.5 1.0
+	include "Materials/Common.cscn"
+
+	scene_node "SunLightNode1"
+	{
+		orientation 1 0 0 45
+	}
+	light "SunLight1"
+	{
+		parent "SunLightNode1"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	scene_node "LoopTorus"
+	{
+		position 0 0 0
+	}
+	object "LoopTorus"
+	{
+		parent "LoopTorus"
+		mesh "LoopTorus"
+		{
+			type "torus" -inner_count=4 -outer_count=4 -inner_size=5 -outer_size=10
+			division "phong" 4
+		}
+		material "Silver"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 50.0 -50.0
+		orientation 1 0 0 45
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "MyWindow"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+
+	vsync false
+}

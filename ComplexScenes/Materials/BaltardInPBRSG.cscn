@@ -1,0 +1,650 @@
+// Samplers
+
+sampler "TriLinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	lod_bias 0.0
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	border_colour float_opaque_black
+}
+
+// Materials
+
+material "baltard_in_ns/armature"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.588235 0.588235 0.588235
+		glossiness 0.5
+		two_sided true
+	}
+}
+
+material "baltard_in_ns/baffles"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baffles.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/bois_ns"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.09
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/bois_ns.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/cube_ns_01"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.765
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/cube_ns_01.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/cube_ns_01.png" a
+		}
+	}
+}
+
+material "baltard_in_ns/cube_ns_02"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.765
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/cube_ns_02.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/cube_ns_02.png" a
+		}
+	}
+}
+
+material "baltard_in_ns/gradin_ns"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.216
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/gradin_ns.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/light"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.9
+		emissive 10
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_light.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_light.png" a
+		}
+	}
+}
+
+material "baltard_in_ns/lumiere"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0
+		emissive 10
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_light.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_light.png" a
+		}
+	}
+}
+
+material "baltard_in_ns/marche_ns"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.36
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/marche_ns.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/metal_cable"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		glossiness 0.135
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel specular
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/metal_spot"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		glossiness 0.36
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel specular
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/noir_laque"
+{
+	pass
+	{
+		diffuse 0.0470588 0.0470588 0.0470588
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.88
+		two_sided true
+	}
+}
+
+material "baltard_in_ns/ns_bg"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.09
+		emissive 0.866025
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/ns_bg.jpg" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel emissive
+			sampler "TriLinear"
+			image "Textures/BaltardIn/ns_bg.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/piste_ns_01"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.2
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/piste_ns.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/piste_ns_02"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.3
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/piste_ns_02.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/piste_ns_03"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/piste_ns.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/screen_ns_04"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.75
+		emissive 0.866025
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/screen_ns_04.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/verre_baltard_in"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.297
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/barriere_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/barriere_verre.png" a
+		}
+	}
+}
+
+material "pavillon_baltard_in/black"
+{
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0
+		two_sided true
+	}
+}
+
+material "pavillon_baltard_in/bord_toit"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_bois.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/bronze"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_bronze.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/ciment"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_ciment.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/grilles deco"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_grille.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel specular
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_grille.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_grille.png" a
+		}
+	}
+}
+
+material "pavillon_baltard_in/light"
+{
+	pass
+	{
+		diffuse 1.00000 0.992157 0.772549
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.9
+		emissive 10
+		two_sided true
+	}
+}
+
+material "pavillon_baltard_in/metal_bleu"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		glossiness 0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel specular
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_metal_bleu.jpg" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_metal_bleu.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/motifs"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_sol.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/toit"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.288
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_mur.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/vitres"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.27
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_vitre.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_vitre.png" a
+		}
+	}
+}
+
+material "plasma/ecran"
+{
+	pass
+	{
+		diffuse 0.0392157 0.0392157 0.0392157
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.135
+		two_sided true
+	}
+}
+
+material "plasma/plasma"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.054
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/BaltardIn/plasma.jpg" rgb
+		}
+	}
+}

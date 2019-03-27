@@ -1,0 +1,1141 @@
+
+// Samplers
+
+sampler "TriLinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod -1000
+	max_lod 1000
+	lod_bias 0
+	max_anisotropy 1
+}
+
+// Materials
+
+material "baffles_boite/baffles"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/baffles.jpg" rgb
+		}
+	}
+}
+
+material "barriere_verre/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/barriere_metal.jpg" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel roughness
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/barriere_metal.jpg" rgb
+		}
+	}
+}
+
+material "barriere_verre/verre"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 6
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/barriere_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/barriere_verre.png" a
+		}
+	}
+}
+
+material "bars_boite/bois"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/bar_bois.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/bois_noir"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/bar_bois_noir.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/bouteilles"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/bar_bouteille_01.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/bouteilles02"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/bar_bouteille_02.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/bouteilles03"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/bar_bouteille_03.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/bouteilles04"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/bar_bouteille_04.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/distrib_biere"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/distrib_biere.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/grille_biere"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/grille_biere.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/lumiere"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		emissive 2
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/bar_lumiere.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/bar_metal.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/porte_bar"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/bar_porte.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/verre"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.1
+		alpha 0.3
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 6
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/bar_verre.png" rgb
+		}
+	}
+}
+
+material "boite/murs"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/mur_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/noir"
+{
+	pass
+	{
+		albedo 0.000000 0.000000 0.000000
+		roughness 0.5
+		two_sided true
+	}
+}
+
+material "boite/parquet 1"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 12
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-albedo.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 12
+			channel ambient_occlusion
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-ao.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 12
+			channel normal
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-normal.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 12
+			channel roughness
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-roughness.png" rgb
+		}
+	}
+}
+
+material "boite/parquet 2"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 12
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-albedo.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 12
+			channel ambient_occlusion
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-ao.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 12
+			channel normal
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-normal.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 12
+			channel roughness
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-roughness.png" rgb
+		}
+	}
+}
+
+material "boite/plafond"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/plafond_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/porte"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/porte_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/sol 1"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 10
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/beton_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/sol 2"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 10
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/beton_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/sol 3"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 10
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/beton_boite.jpg" rgb
+		}
+	}
+}
+
+material "canape_triple/canape_triple"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 10
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/canape_bar.jpg" rgb
+		}
+	}
+}
+
+material "dj_boite/bloc"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/dj_beton.jpg" rgb
+		}
+	}
+}
+
+material "dj_boite/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/dj_metal.jpg" rgb
+		}
+	}
+}
+
+material "dj_boite/piste"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.4
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 12
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-black-albedo.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 12
+			channel ambient_occlusion
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-ao.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 12
+			channel normal
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-normal.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 12
+			channel roughness
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/oak_floor-roughness.png" rgb
+		}
+	}
+}
+
+material "dj_boite/table"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/dj_table.JPG" rgb
+		}
+	}
+}
+
+material "dj_boite/vinyle"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/dj_vinyle.jpg" rgb
+		}
+	}
+}
+
+material "escaliers_boite/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/barriere_metal.jpg" rgb
+		}
+	}
+}
+
+material "escaliers_boite/verre"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.1
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 6
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/barriere_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/barriere_verre.png" a
+		}
+	}
+}
+
+material "fauteuil/gros_fauteuil_bar"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 10
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/canape_bar.jpg" rgb
+		}
+	}
+}
+
+material "panneau_mural/panneau_pub"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/panneau_pub_metal.jpg" rgb
+		}
+	}
+}
+
+material "panneau_mural/pub"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/panneau_pub_pub_01.jpg" rgb
+		}
+	}
+}
+
+material "plante_05/plante_05"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/plante_05.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/plante_05.png" a
+		}
+	}
+}
+
+material "plante_05/plante_pot"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/plante_pot.jpg" rgb
+		}
+	}
+}
+
+material "plasma/ecran"
+{
+	pass
+	{
+		albedo 0.0392157 0.0392157 0.0392157
+		roughness 0.4
+	}
+}
+
+material "plasma/plasma"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.4
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/plasma.jpg" rgb
+		}
+	}
+}
+
+material "pouf/pouf"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 10
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/pouf.jpg" rgb
+		}
+	}
+}
+
+material "spot_couleur/light bleu"
+{
+	pass
+	{
+		albedo 0.000000 0.000000 1.00000
+		roughness 0.5
+		emissive 2
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/spot_light.png" a
+		}
+	}
+}
+
+material "spot_couleur/light jaune"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 0.000000
+		roughness 0.5
+		emissive 2
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/spot_light.png" a
+		}
+	}
+}
+
+material "spot_couleur/light rouge"
+{
+	pass
+	{
+		albedo 1.00000 0.000000 0.000000
+		roughness 0.5
+		emissive 2
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/spot_light.png" a
+		}
+	}
+}
+
+material "spot_couleur/light vert"
+{
+	pass
+	{
+		albedo 0.000000 1.00000 0.000000
+		roughness 0.5
+		emissive 2
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/spot_light.png" a
+		}
+	}
+}
+
+material "spot_couleur/lumiere"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		emissive 2
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/spot_couleur_lumiere.jpg" rgb
+		}
+	}
+}
+
+material "spot_couleur/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/spot_couleur_metal.jpg" rgb
+		}
+	}
+}
+
+material "spot_simple/light"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		emissive 2
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/spot_light.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/spot_light.png" a
+		}
+	}
+}
+
+material "spot_simple/lumiere"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		emissive 2
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/spot_simple_lumiere.jpg" rgb
+		}
+	}
+}
+
+material "spot_simple/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/spot_simple_metal.jpg" rgb
+		}
+	}
+}
+
+material "table_basse/table_basse_cuivre"
+{
+	pass
+	{
+		albedo 0.666667 0.501961 0.00392157
+		roughness 0.2
+		metallic 1
+		two_sided true
+	}
+}
+
+material "table_basse/table_basse_laque"
+{
+	pass
+	{
+		albedo 0.000000 0.000000 0.000000
+		roughness 0.1
+		two_sided true
+	}
+}
+
+material "table_haute/cuivre"
+{
+	pass
+	{
+		albedo 0.666667 0.501961 0.00392157
+		roughness 0.2
+		metallic 1
+		two_sided true
+	}
+}
+
+material "table_haute/laque"
+{
+	pass
+	{
+		albedo 0.000000 0.000000 0.000000
+		roughness 0.1
+		two_sided true
+	}
+}
+
+material "table_verre/table_bar_fer_forge"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/table_bar_fer_forge.jpg" rgb
+		}
+	}
+}
+
+material "table_verre/table_bar_verre"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.1
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/table_bar_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/table_bar_verre.png" a
+		}
+	}
+}
+
+material "tabouret_boite/cuir"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/tabouret_cuir.jpg" rgb
+		}
+	}
+}
+
+material "tabouret_boite/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BoitePBRMR/tabouret_metal.jpg" rgb
+		}
+	}
+}

@@ -1,0 +1,125 @@
+materials pbr_metallic_roughness
+
+scene "Scene"
+{
+	ambient_light 1.0 1.0 1.0
+	background_colour 0 0 0 1
+	background_colour 0.5 0.5 0.5 1.0
+
+	skybox
+	{
+		equirectangular "Textures/pineTreeSkybox.hdr" 2048 2048
+	}
+
+	sampler "TriLinear"
+	{
+		min_filter linear
+		mag_filter linear
+		mip_filter linear
+		min_lod 0.0
+		max_lod 5.0
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	material "Cerberus"
+	{
+		pass
+		{
+			albedo 0.75164 0.75164 0.75164
+			roughness 0.1
+			metallic 0.0
+			two_sided true
+
+			texture_unit
+			{
+				levels_count 6
+				image "Textures/Cerberus/Cerberus_A.png"
+				channel albedo
+				sampler	"TriLinear"
+			}
+
+			texture_unit
+			{
+				levels_count 6
+				image "Textures/Cerberus/Cerberus_N.png"
+				channel normal
+				sampler	"TriLinear"
+			}
+
+			texture_unit
+			{
+				levels_count 6
+				image "Textures/Cerberus/Cerberus_M.png"
+				channel metallic
+				sampler	"TriLinear"
+			}
+
+			texture_unit
+			{
+				levels_count 6
+				image "Textures/Cerberus/Cerberus_R.png"
+				channel roughness
+				sampler	"TriLinear"
+			}
+
+			texture_unit
+			{
+				levels_count 6
+				image "Textures/Cerberus/Cerberus_AO.png"
+				channel ambient_occlusion
+				sampler	"TriLinear"
+			}
+		}
+	}
+
+	scene_node "FinalNode"
+	{
+		position 0.0 0.0 0.0
+		orientation 1 0 0 -90
+	}
+	object "FinalPrimitive"
+	{
+		parent "FinalNode"
+		mesh "Mesh"
+		{
+			import "Meshes/Cerberus_LP.FBX"
+		}
+		material "Cerberus"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0681977 0.989363 -0.128492 124.591
+		position -106.673 25.3795 126.229
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

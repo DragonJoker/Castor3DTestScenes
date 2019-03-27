@@ -1,0 +1,1167 @@
+
+// Samplers
+
+sampler "TriLinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	lod_bias 0.0
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	border_colour float_opaque_black
+}
+
+// Materials
+
+material "baffles_boite/baffles"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.0900000 0.0900000 0.0900000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/baffles.jpg" rgb
+		}
+	}
+}
+
+material "barriere_verre/metal"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.486000 0.486000 0.486000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/barriere_metal.jpg" rgb
+		}
+	}
+}
+
+material "barriere_verre/verre"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.324000 0.324000 0.324000
+		ambient 0
+		shininess 64
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/BoiteLegacy/barriere_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel opacity
+			image "Textures/BoiteLegacy/barriere_verre.png" a
+		}
+	}
+}
+
+material "bars_boite/bois"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.126000 0.126000 0.126000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_bois.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/bois_noir"
+{
+	pass
+	{
+		diffuse 0.0470588 0.0470588 0.0470588
+		specular 0.333000 0.333000 0.333000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_bois_noir.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/bouteilles"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_bouteille_01.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/bouteilles02"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_bouteille_02.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/bouteilles03"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_bouteille_03.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/bouteilles04"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_bouteille_04.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/distrib_biere"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/BoiteLegacy/distrib_biere.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/grille_biere"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/grille_biere.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/lumiere"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_lumiere.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/metal"
+{
+	pass
+	{
+		diffuse 0.525490 0.525490 0.525490
+		specular 0.585000 0.585000 0.585000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_metal.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/porte_bar"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_porte.jpg" rgb
+		}
+	}
+}
+
+material "bars_boite/verre"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.270000 0.270000 0.270000
+		ambient 0
+		shininess 64
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel opacity
+			image "Textures/BoiteLegacy/bar_verre.png" a
+		}
+	}
+}
+
+material "boite/murs"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/mur_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/noir"
+{
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64
+		two_sided true
+	}
+}
+
+material "boite/parquet 1"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/parquet_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/parquet 2"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/parquet_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/plafond"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.117000 0.117000 0.117000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/plafond_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/porte"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/BoiteLegacy/porte_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/sol 1"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/BoiteLegacy/beton_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/sol 2"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/BoiteLegacy/beton_boite.jpg" rgb
+		}
+	}
+}
+
+material "boite/sol 3"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/BoiteLegacy/beton_boite.jpg" rgb
+		}
+	}
+}
+
+material "canape_triple/canape_triple"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/BoiteLegacy/canape_bar.jpg" rgb
+		}
+	}
+}
+
+material "dj_boite/bloc"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.117000 0.117000 0.117000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/dj_beton.jpg" rgb
+		}
+	}
+}
+
+material "dj_boite/metal"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.540000 0.540000 0.540000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/dj_metal.jpg" rgb
+		}
+	}
+}
+
+material "dj_boite/piste"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/dj_piste.jpg" rgb
+		}
+	}
+}
+
+material "dj_boite/table"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.588235 0.588235 0.588235
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/dj_table.JPG" rgb
+		}
+	}
+}
+
+material "dj_boite/vinyle"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/BoiteLegacy/dj_vinyle.jpg" rgb
+		}
+	}
+}
+
+material "escaliers_boite/metal"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.486000 0.486000 0.486000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/barriere_metal.jpg" rgb
+		}
+	}
+}
+
+material "escaliers_boite/verre"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.600000 0.600000 0.600000
+		ambient 0
+		shininess 64
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/BoiteLegacy/bar_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel opacity
+			image "Textures/BoiteLegacy/bar_verre.png" a
+		}
+	}
+}
+
+material "fauteuil/gros_fauteuil_bar"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/BoiteLegacy/canape_bar.jpg" rgb
+		}
+	}
+}
+
+material "panneau_mural/panneau_pub"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/panneau_pub_metal.jpg" rgb
+		}
+	}
+}
+
+material "panneau_mural/pub"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/panneau_pub_pub_01.jpg" rgb
+		}
+	}
+}
+
+material "plante_05/plante_05"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/plante_05.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/BoiteLegacy/plante_05.png" a
+		}
+	}
+}
+
+material "plante_05/plante_pot"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/plante_pot.jpg" rgb
+		}
+	}
+}
+
+material "plasma/ecran"
+{
+	pass
+	{
+		diffuse 0.0392157 0.0392157 0.0392157
+		specular 0.135000 0.135000 0.135000
+		ambient 0
+		shininess 64
+	}
+}
+
+material "plasma/plasma"
+{
+	pass
+	{
+		diffuse 0.117647 0.117647 0.117647
+		specular 0.0540000 0.0540000 0.0540000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/plasma.jpg" rgb
+		}
+	}
+}
+
+material "pouf/pouf"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/BoiteLegacy/pouf.jpg" rgb
+		}
+	}
+}
+
+material "spot_couleur/light bleu"
+{
+	pass
+	{
+		diffuse 0.000000 0.000000 1.00000
+		specular 0.000000 0.000000 1.00000
+		ambient 0
+		shininess 64
+		emissive 5
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/BoiteLegacy/spot_light.png" a
+		}
+	}
+}
+
+material "spot_couleur/light jaune"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 0.000000
+		specular 1.00000 1.00000 0.000000
+		ambient 0
+		shininess 64
+		emissive 5
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/BoiteLegacy/spot_light.png" a
+		}
+	}
+}
+
+material "spot_couleur/light rouge"
+{
+	pass
+	{
+		diffuse 1.00000 0.000000 0.000000
+		specular 1.00000 0.000000 0.000000
+		ambient 0
+		shininess 64
+		emissive 5
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/BoiteLegacy/spot_light.png" a
+		}
+	}
+}
+
+material "spot_couleur/light vert"
+{
+	pass
+	{
+		diffuse 0.000000 1.00000 0.000000
+		specular 0.000000 1.00000 0.000000
+		ambient 0
+		shininess 64
+		emissive 5
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/BoiteLegacy/spot_light.png" a
+		}
+	}
+}
+
+material "spot_couleur/lumiere"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		emissive 5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/BoiteLegacy/spot_couleur_lumiere.jpg" rgb
+		}
+	}
+}
+
+material "spot_couleur/metal"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.630000 0.630000 0.630000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/spot_couleur_metal.jpg" rgb
+		}
+	}
+}
+
+material "spot_simple/light"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 0
+		shininess 64
+		emissive 5
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/spot_light.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/BoiteLegacy/spot_light.png" a
+		}
+	}
+}
+
+material "spot_simple/lumiere"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 0
+		shininess 64
+		emissive 5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/BoiteLegacy/spot_simple_lumiere.jpg" rgb
+		}
+	}
+}
+
+material "spot_simple/metal"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.369000 0.369000 0.369000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/BoiteLegacy/spot_simple_metal.jpg" rgb
+		}
+	}
+}
+
+material "table_basse/table_basse_cuivre"
+{
+	pass
+	{
+		diffuse 0.666667 0.501961 0.00392157
+		specular 0.459000 0.459000 0.459000
+		ambient 0
+		shininess 64
+		two_sided true
+	}
+}
+
+material "table_basse/table_basse_laque"
+{
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000
+		specular 0.315000 0.315000 0.315000
+		ambient 0
+		shininess 64
+		two_sided true
+	}
+}
+
+material "table_haute/cuivre"
+{
+	pass
+	{
+		diffuse 0.666667 0.501961 0.00392157
+		specular 0.459000 0.459000 0.459000
+		ambient 0
+		shininess 64
+		two_sided true
+	}
+}
+
+material "table_haute/laque"
+{
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000
+		specular 0.315000 0.315000 0.315000
+		ambient 0
+		shininess 64
+		two_sided true
+	}
+}
+
+material "table_verre/table_bar_fer_forge"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.360000 0.360000 0.360000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/table_bar_fer_forge.jpg" rgb
+		}
+	}
+}
+
+material "table_verre/table_bar_verre"
+{
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000
+		specular 0.270000 0.270000 0.270000
+		ambient 0
+		shininess 64
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/table_bar_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/BoiteLegacy/table_bar_verre.png" a
+		}
+	}
+}
+
+material "tabouret_boite/cuir"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/tabouret_cuir.jpg" rgb
+		}
+	}
+}
+
+material "tabouret_boite/metal"
+{
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.342000 0.342000 0.342000
+		ambient 0
+		shininess 64
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/BoiteLegacy/tabouret_metal.jpg" rgb
+		}
+	}
+}

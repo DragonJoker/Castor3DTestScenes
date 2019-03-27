@@ -1,0 +1,134 @@
+// Global configuration
+materials legacy
+
+scene "AnimScene"
+{
+	// Scene configuration
+
+	background_colour 0 0 0
+	ambient_light 0 0 0
+
+	// Materials
+
+	include "Materials/Hellknight.cscn"
+
+	// Skybox
+
+	// Meshes
+
+	mesh "HellKnightMesh"
+	{
+		import "Meshes/HellKnight.cmsh"
+		default_materials
+		{
+			material 0 "hellknight"
+			material 1 "gob2"
+			material 2 "gob"
+			material 3 "tongue"
+		}
+	}
+
+	// Cameras nodes
+
+	scene_node "AnimCameraNode"
+	{
+		position 0 25 -200
+		scale 1 1 1
+	}
+
+	// Cameras
+
+	camera "AnimCamera"
+	{
+		parent "AnimCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.1
+			aspect_ratio 1.333
+			far 20000
+			fov_y 45
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "HellKnight1Node1"
+	{
+		orientation 1 0 0 180
+		position 0 -30 0
+		scale 1 1 1
+	}
+
+	scene_node "HellKnight1Node2"
+	{
+		parent "HellKnight1Node1"
+		orientation 0 1 0 -90
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 45
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	// Lights
+
+	light "SunLight1"
+	{
+		parent "LightNode"
+		type directional
+		colour 1 1 1
+		intensity 0.8 1
+	}
+
+	// Geometries
+
+	object "HellKnight"
+	{
+		parent "HellKnight1Node2"
+		mesh "HellKnightMesh"
+	}
+
+	// Animated object groups
+
+	animated_object_group "HellKnight1_2Anim"
+	{
+		animated_object "HellKnight"
+
+		animation "idle2"
+		{
+			looped true
+			scale 1
+		}
+
+		animation "attack2"
+		{
+			looped true
+			scale 1
+		}
+
+		start_animation "idle2"
+	}
+}
+
+// Windows
+
+window "MainWindow"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "AnimScene"
+		camera "AnimCamera"
+		size 800 600
+		format argb32
+		tone_mapping "linear" -Exposure=1 -Gamma=2.2
+	}
+}

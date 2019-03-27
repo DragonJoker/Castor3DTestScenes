@@ -1,0 +1,112 @@
+materials legacy
+
+scene "Relief"
+{
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod -1000.0
+		max_lod 1000.0
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
+	material "Parallax"
+	{
+		pass
+		{
+			diffuse 0.4 0.4 0.4 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.1 0.1 0.1 1.0
+			shininess 50.0
+			parallax_occlusion true
+
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				channel diffuse
+				sampler "Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Bricks/Normal.jpg"
+				channel normal
+				sampler "Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Bricks/Height.jpg"
+				channel height
+				sampler "Linear"
+			}
+		}
+	}
+
+	background_colour 0.5 0.5 0.5 1.0
+	ambient_light 0.2 0.2 0.2
+
+	scene_node "LightNode"
+	{
+    orientation 0 1 0 180
+	}
+
+	light "Light0"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.5 1.0
+	}
+
+	scene_node "GeometryNode"
+	{
+	}
+
+	object "Geometry"
+	{
+		parent "GeometryNode"
+		mesh "Mesh"
+		{
+			type "cube" -width=25 -height=25 -depth=25
+		}
+		material "Parallax"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 180
+		position 0.0 0.0 100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Relief"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

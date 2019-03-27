@@ -1,0 +1,4274 @@
+
+// Samplers
+
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod -1000
+	max_lod 1000
+	lod_bias 0
+	max_anisotropy 1
+}
+
+// Materials
+
+material "Material_#1004/affiche"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.3
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/entree_boite_enseigne.jpg"
+		}
+	}
+}
+
+material "Material_#1004/bite"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0
+		metallic 1
+		two_sided true
+	}
+}
+
+material "Material_#1004/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+		}
+	}
+}
+
+material "Material_#1004/noir"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+	}
+}
+
+material "Material_#1004/velour"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.372549
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/entree_boite_velours.jpg"
+		}
+	}
+}
+
+material "abris_bus/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/painted_metal_dark_green-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/painted_metal-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+		}
+	}
+}
+
+material "abris_bus/plan"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/abris_bus_plan.jpg"
+		}
+	}
+}
+
+material "abris_bus/verre"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.1
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/barriere_verre.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/barriere_verre.png"
+		}
+	}
+}
+
+material "abris_bus_pub_01"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/abris_bus_pub_01.jpg"
+		}
+	}
+}
+
+material "abris_bus_pub_02"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/abris_bus_pub_02.jpg"
+		}
+	}
+}
+
+material "arbre_rue/bac"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/patchy_cement-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/patchy_cement-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/patchy_cement-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/patchy_cement-ao.png"
+		}
+	}
+}
+
+material "arbre_rue/branches"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/street_tree_leaves-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/street_tree_leaves-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/street_tree_leaves-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/street_tree_leaves-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/street_tree_leaves-ao.png"
+		}
+	}
+}
+
+material "arbre_rue/terre"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/dirt-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/dirt-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/dirt-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/dirt-roughness.png"
+		}
+	}
+}
+
+material "arbre_rue/tronc"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bark-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bark-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bark-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bark-roughness.png"
+		}
+	}
+}
+
+material "banc/bois"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bamboo_wood-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bamboo_wood-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bamboo_wood-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bamboo_wood-roughness.png"
+		}
+	}
+}
+
+material "banc/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/painted_metal-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+		}
+	}
+}
+
+material "banniere"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/banniere_pub.jpg"
+		}
+	}
+}
+
+material "barriere_chantier/bois"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/barriere_chantier_bois.jpg"
+		}
+	}
+}
+
+material "barriere_chantier/peinture"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/barriere_chantier_peinture-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/barriere_chantier_peinture-roughness.png"
+		}
+	}
+}
+
+material "barriere_travaux/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+		}
+	}
+}
+
+material "barriere_travaux/peinture"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/barriere_travaux_peinture.jpg"
+		}
+	}
+}
+
+material "bite"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0
+		metallic 1
+		two_sided true
+	}
+}
+
+material "borne_incendie/borne_incendie_gris"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/painted_metal-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+		}
+	}
+}
+
+material "borne_incendie/borne_incendie_rouge"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/painted_metal_red-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/painted_metal-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+		}
+	}
+}
+
+material "buisson/feuilles"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bush_leaves-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bush_leaves-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bush_leaves-ao.png"
+		}
+	}
+}
+
+material "buisson/tronc"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bark-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bark-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bark-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bark-roughness.png"
+		}
+	}
+}
+
+material "buisson_coin_ext/feuilles"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bush_leaves-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bush_leaves-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bush_leaves-ao.png"
+		}
+	}
+}
+
+material "buisson_coin_ext/tronc"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bark-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bark-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bark-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bark-roughness.png"
+		}
+	}
+}
+
+material "buisson_coin_int/feuilles"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bush_leaves-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bush_leaves-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bush_leaves-ao.png"
+		}
+	}
+}
+
+material "buisson_coin_int/tronc"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bark-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bark-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bark-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bark-roughness.png"
+		}
+	}
+}
+
+material "cabine_telephone/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+		}
+	}
+}
+
+material "cabine_telephone/phone"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/cabine_telephone_phone.jpg"
+		}
+	}
+}
+
+material "cabine_telephone/verre"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.882353
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/barriere_verre.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/barriere_verre.png"
+		}
+	}
+}
+
+material "cabine_telephone/verre_marron"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.210392
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/cabine_telephone_verre_opaque.jpg"
+		}
+	}
+}
+
+material "cartons"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.0392157
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/cartons.jpg"
+		}
+	}
+}
+
+material "chene/feuilles"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/oak_leaves-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/oak_leaves-albedo.png"
+		}
+	}
+}
+
+material "chene/tronc"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bark-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bark-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bark-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bark-roughness.png"
+		}
+	}
+}
+
+material "corbeille/bois"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/thrashcan_wood-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/thrashcan_wood-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/thrashcan_wood-roughness.png"
+		}
+	}
+}
+
+material "corbeille/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+		}
+	}
+}
+
+material "corbeille/trash"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.0392157
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/corbeille_trash.jpg"
+		}
+	}
+}
+
+material "distributeur"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.196078
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/distributeur_face.jpg"
+		}
+	}
+}
+
+material "entree_station/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/streakedmetal-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/streakedmetal-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/streakedmetal-metallic.png"
+		}
+	}
+}
+
+material "entree_station/metal_or"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/gold-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/gold-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/gold-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/gold-metallic.png"
+		}
+	}
+}
+
+material "entree_station/mur"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bricks-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bricks-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bricks-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bricks-ao.png"
+		}
+	}
+}
+
+material "entree_station/muret"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bricks-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bricks-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bricks-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bricks-ao.png"
+		}
+	}
+}
+
+material "entree_station/nom_station"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		metallic 0.189
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/panneau_place_mog.jpg"
+		}
+	}
+}
+
+material "entree_station/plafond"
+{
+	pass
+	{
+		albedo 0.588000 0.588000 0.588000
+		two_sided true
+	}
+}
+
+material "entree_station/plan"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/plan.jpg"
+		}
+	}
+}
+
+material "entree_station/sol"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/marble_floor-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/marble_floor-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/marble_floor-roughness.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/marble_floor-ao.jpg"
+		}
+	}
+}
+
+material "feu_tricolore/feu"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/feu_tricolore_rouge.jpg"
+		}
+	}
+}
+
+material "feu_tricolore/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+		}
+	}
+}
+
+material "feu_tricolore/pieton"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/feu_tricolore_pieton_vert.jpg"
+		}
+	}
+}
+
+material "fontaine/barriere"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/fountain_grid-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/fountain_grid-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/fountain_grid-normal.png"
+		}
+	}
+}
+
+material "fontaine/bronze"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bronze-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bronze-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bronze-roughness.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/bronze-metallic.jpg"
+		}
+	}
+}
+
+material "fontaine/eau"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0
+		alpha 0.2
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/fountain_basin-normal.jpg"
+		}
+	}
+}
+
+material "fontaine/eau_tombante"
+{
+	pass
+	{
+		albedo 0.0500000 0.0500000 0.100000
+		roughness 0
+		alpha 0.2
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/falling_water-normal.jpg"
+		}
+	}
+}
+
+material "fontaine/ecume"
+{
+	pass
+	{
+		albedo 0.0500000 0.0500000 0.100000
+		roughness 0
+		alpha 0.2
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/falling_water-normal.jpg"
+		}
+	}
+}
+
+material "fontaine/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/painted_metal-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+		}
+	}
+}
+
+material "fontaine/metal_or"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/gold-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/gold-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/gold-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/gold-metallic.png"
+		}
+	}
+}
+
+material "fontaine/monnaie_01"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		metallic 1
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/coin_1f-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/coin_1f-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/coin_1f-normal.png"
+		}
+	}
+}
+
+material "fontaine/monnaie_02"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		metallic 1
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/coin_2e-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/coin_2e-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/coin_2e-normal.png"
+		}
+	}
+}
+
+material "fontaine/monnaie_03"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		metallic 1
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/coin_20ch-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/coin_20ch-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/coin_20ch-normal.png"
+		}
+	}
+}
+
+material "fontaine/monnaie_04"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		metallic 1
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/coin_20ct-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/coin_20ct-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/coin_20ct-normal.png"
+		}
+	}
+}
+
+material "fontaine/pierre"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/pocked_concrete-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/pocked_concrete-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/pocked_concrete-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/pocked_concrete-ao.png"
+		}
+	}
+}
+
+material "fx_selected"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		emissive 1
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/fx_selected.png"
+		}
+	}
+}
+
+material "grille_parc/bareaux"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/painted_metal-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+		}
+	}
+}
+
+material "grille_parc/dorures"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/gold-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/gold-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/gold-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/gold-metallic.png"
+		}
+	}
+}
+
+material "grille_parc/grille_parc"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/park_grid-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/park_grid-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/park_grid-normal.png"
+		}
+	}
+}
+
+material "grille_parc/muret"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bricks-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bricks-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bricks-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bricks-ao.png"
+		}
+	}
+}
+
+material "horloge"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.108
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/horloge.jpg"
+		}
+	}
+}
+
+material "horloge_aiguilles_heures"
+{
+	pass
+	{
+		albedo 0.0 0.0 0.0
+		roughness 0.5
+		metallic 0.0
+		two_sided true
+	}
+}
+
+material "horloge_aiguilles_minutes"
+{
+	pass
+	{
+		albedo 0.0 0.0 0.0
+		roughness 0.5
+		metallic 0.0
+		two_sided true
+	}
+}
+
+material "horloge_aiguilles_secondes"
+{
+	pass
+	{
+		albedo 0.0 0.0 0.0
+		roughness 0.5
+		metallic 0.0
+		two_sided true
+	}
+}
+
+material "immeubles_parc/banderolle"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		metallic 0.0784314
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_banderolle.jpg"
+		}
+	}
+}
+
+material "immeubles_parc/fenetre"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		metallic 0.0
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/window-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/window-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/window-roughness.png"
+		}
+	}
+}
+
+material "immeubles_parc/fenetre02"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/window2-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/window2-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/window2-roughness.png"
+		}
+	}
+}
+
+material "immeubles_parc/grille"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/building_grid-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/building_grid-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/building_grid-normal.png"
+		}
+	}
+}
+
+material "immeubles_parc/pierre_beige"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/building_wall-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/building_wall-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/building_wall-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/building_wall-ao.png"
+		}
+	}
+}
+
+material "immeubles_parc/pierre_rose"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/building_wall2-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/building_wall-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/building_wall-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/building_wall-ao.png"
+		}
+	}
+}
+
+material "immeubles_parc/porte01"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_porte.jpg"
+		}
+	}
+}
+
+material "immeubles_parc/porte02"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_porte_bis.jpg"
+		}
+	}
+}
+
+material "immeubles_parc/rue"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		metallic 0.117647
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeuble_rue.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/immeuble_rue.png"
+		}
+	}
+}
+
+material "immeubles_parc/tag_01"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_tag_01.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/immeubles_tag_01.png"
+		}
+	}
+}
+
+material "immeubles_parc/tag_02"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_tag_02.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/immeubles_tag_02.png"
+		}
+	}
+}
+
+material "immeubles_parc/tag_03"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_tag_03.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/immeubles_tag_03.png"
+		}
+	}
+}
+
+material "immeubles_parc/tag_04"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_tag_04.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/immeubles_tag_04.png"
+		}
+	}
+}
+
+material "immeubles_parc/tag_05"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_tag_05.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/immeubles_tag_05.png"
+		}
+	}
+}
+
+material "immeubles_parc/tag_06"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_tag_06.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/immeubles_tag_06.png"
+		}
+	}
+}
+
+material "immeubles_parc/toit_gris"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.225
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_toit_bronze_gris.jpg"
+		}
+	}
+}
+
+material "immeubles_parc/toit_vert"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.225
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/immeubles_toit_bronze.jpg"
+		}
+	}
+}
+
+material "kiosque_park/bois_kiosque_01"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bois_kiosque_01.jpg"
+		}
+	}
+}
+
+material "kiosque_park/bois_kiosque_02"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bois_kiosque_02.jpg"
+		}
+	}
+}
+
+material "kiosque_park/fleur_kiosque"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/fleur_kiosque.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/fleur_kiosque.png"
+		}
+	}
+}
+
+material "kiosque_park/grille_fleur_kiosque"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/fleur_grille_kiosque.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/fleur_grille_kiosque.png"
+		}
+	}
+}
+
+material "kiosque_park/light_kiosque"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		alpha 0.0
+		emissive 1
+		two_sided true
+		alpha_func greater 0.5
+	}
+}
+
+material "kiosque_park/pilier_kiosque"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/pilier_kiosque.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/pilier_kiosque.png"
+		}
+	}
+}
+
+material "kiosque_park/sol_kiosque"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/oak_floor-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/oak_floor-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/oak_floor-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/oak_floor-ao.png"
+		}
+	}
+}
+
+material "kiosque_park/toit_kiosque"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/kiosk_roof-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/kiosk_roof-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/kiosk_roof-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/kiosk_roof-ao.png"
+		}
+	}
+}
+
+material "magasins_parc/black"
+{
+	pass
+	{
+		albedo 0.000000 0.000000 0.000000
+		two_sided true
+	}
+}
+
+material "magasins_parc/dab"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.588235
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/magasins_dab.jpg"
+		}
+	}
+}
+
+material "magasins_parc/enseigne_cb"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.196078
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/magasins_enseigne_cb.jpg"
+		}
+	}
+}
+
+material "magasins_parc/enseigne_fashion"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/magasin_enseigne.jpg"
+		}
+	}
+}
+
+material "magasins_parc/enseigne_snow"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.196078
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/magasins_enseigne_snow.jpg"
+		}
+	}
+}
+
+material "magasins_parc/entree_snow"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/metal_shutter-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/metal_shutter-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/metal_shutter-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/metal_shutter-ao.png"
+		}
+	}
+}
+
+material "magasins_parc/magasin_enseigne2"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.588235
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/magasin_enseigne2.jpg"
+		}
+	}
+}
+
+material "magasins_parc/metal_bleu"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/painted_metal_blue-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/painted_metal-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+		}
+	}
+}
+
+material "magasins_parc/soldes"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/pub_soldes.jpg"
+		}
+	}
+}
+
+material "magasins_parc/tabac"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.0392157
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/magasins_tabac.jpg"
+		}
+	}
+}
+
+material "magasins_parc/troquet_enseigne"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/magasins_troquet_enseigne.jpg"
+		}
+	}
+}
+
+material "magasins_parc/vetement_3"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/magasin_enseigne3.jpg"
+		}
+	}
+}
+
+material "magasins_parc/vitres"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.1
+		two_sided true
+	}
+}
+
+material "magasins_parc/vitrine_bar"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/pub_entrance-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/pub_entrance-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/pub_entrance-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/pub_entrance-ao.png"
+		}
+	}
+}
+
+material "magasins_parc/vitrine_femme"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
+		}
+	}
+}
+
+material "magasins_parc/vitrine_homme"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
+		}
+	}
+}
+
+material "magasins_parc/vitrine_mode2"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
+		}
+	}
+}
+
+material "magasins_parc/vitrine_snow"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
+		}
+	}
+}
+
+material "magasins_parc/vitrine_snow2"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
+		}
+	}
+}
+
+material "panneau_enfants/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+		}
+	}
+}
+
+material "panneau_enfants/panneau_enfants"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.196078
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/panneau_enfants.jpg"
+		}
+	}
+}
+
+material "panneau_mural"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/painted_metal-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+		}
+	}
+}
+
+material "panneau_mural_pub_01"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.0784314
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/panneau_pub_pub_01.jpg"
+		}
+	}
+}
+
+material "panneau_pub"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/painted_metal-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+		}
+	}
+}
+
+material "panneau_pub_pub_01"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.0784314
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/panneau_pub_pub_01.jpg"
+		}
+	}
+}
+
+material "panneau_pub_pub_02"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.0784314
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/panneau_pub_pub_02.jpg"
+		}
+	}
+}
+
+material "panneau_stationnement/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+		}
+	}
+}
+
+material "panneau_stationnement/panneau_velo"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+	}
+}
+
+material "piaf_ciel"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bird-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/bird-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bird-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bird-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bird-ao.png"
+		}
+	}
+}
+
+material "plasma/plasma"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+	}
+}
+
+material "plasma_pub"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+	}
+}
+
+material "plot_chantier"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.0784314
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/plot_chantier_plastique.jpg"
+		}
+	}
+}
+
+material "poisson"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.588235
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/fontaine_poisson.jpg"
+		}
+	}
+}
+
+material "poubelle/plastique_gris"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/scuffed_plastic-gray-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/scuffed_plastic-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/scuffed_plastic-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/scuffed_plastic-roughness.png"
+		}
+	}
+}
+
+material "poubelle/plastique_noir"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/scuffed_plastic-black-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/scuffed_plastic-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/scuffed_plastic-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/scuffed_plastic-roughness.png"
+		}
+	}
+}
+
+material "poubelle/plastique_vert"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/scuffed_plastic-green-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/scuffed_plastic-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/scuffed_plastic-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/scuffed_plastic-roughness.png"
+		}
+	}
+}
+
+material "reverbere/lumiere"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.2
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/reverbere_vitre_albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/reverbere_vitre_albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/reverbere_vitre_roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/reverbere_vitre_metallic.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/reverbere_vitre_normal.png"
+		}
+	}
+}
+
+material "reverbere/metal"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/painted_metal-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+		}
+	}
+}
+
+material "saule_pleureur/feuilles"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/willow_leaves-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/willow_leaves-albedo.png"
+		}
+	}
+}
+
+material "saule_pleureur/tronc"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bark-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/bark-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/bark-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/bark-roughness.png"
+		}
+	}
+}
+
+material "skycraper"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/skycraper_pub.jpg"
+		}
+	}
+}
+
+material "sol_parc/arret_bus"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/sol_passage_bus.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/sol_passage_bus.png"
+		}
+	}
+}
+
+material "sol_parc/bord_herbe"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/bord_herbe.jpg"
+		}
+	}
+}
+
+material "sol_parc/egout"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/sewer_cap-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/sewer_cap-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/sewer_cap-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/sewer_cap-roughness.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/sewer_cap-ao.png"
+		}
+	}
+}
+
+material "sol_parc/egout_ouvert"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/sewer_hole-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/sewer_hole-albedo.png"
+		}
+	}
+}
+
+material "sol_parc/metal_cana"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+		}
+	}
+}
+
+material "sol_parc/passage_pieton"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/sol_passage_pieton.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			image "Textures/ParkPBRMR/sol_passage_pieton.png"
+		}
+	}
+}
+
+material "sol_parc/rigole"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.0392157
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/sol_rigole.jpg"
+		}
+	}
+}
+
+material "sol_parc/route"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/pavement-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/pavement-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/pavement-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/pavement-roughness.png"
+		}
+	}
+}
+
+material "sol_parc/sable_canalisations"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/sand-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/sand-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/sand-roughness.png"
+		}
+	}
+}
+
+material "sol_parc/sol_herbe"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/grass-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/grass-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/grass-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/grass-roughness.png"
+		}
+	}
+}
+
+material "sol_parc/sol_sable"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/sand-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/sand-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/sand-roughness.png"
+		}
+	}
+}
+
+material "sol_parc/terre"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/dirt-albedo.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/dirt-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/dirt-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/dirt-roughness.png"
+		}
+	}
+}
+
+material "sol_parc/trottoir"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/sidewalk_pavement-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/sidewalk_pavement-ao.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/sidewalk_pavement-normal.png"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/sidewalk_pavement-roughness.png"
+		}
+	}
+}
+
+material "table_echec/echiquier_echec"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		metallic 0.756
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/echiquier.jpg"
+		}
+	}
+}
+
+material "table_echec/echiquier_table"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/marble-albedo.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel ambient_occlusion
+			image "Textures/ParkPBRMR/marble-ao.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			image "Textures/ParkPBRMR/marble-normal.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			image "Textures/ParkPBRMR/marble-roughness.jpg"
+		}
+	}
+}
+
+material "table_echec/rainure_echiquier"
+{
+	pass
+	{
+		albedo 0.996078 0.996078 0.996078
+		roughness 0.5
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/rainure_echec.jpg"
+		}
+	}
+}
+
+material "trigger"
+{
+	pass
+	{
+		albedo 0.772549 0.376471 0.0235294
+		roughness 0.5
+		metallic 0.18
+		emissive 0.294118
+		two_sided true
+	}
+}
+
+material "z"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.5
+		emissive 0.1
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			image "Textures/ParkPBRMR/fx_pathfinding.png"
+		}
+	}
+}

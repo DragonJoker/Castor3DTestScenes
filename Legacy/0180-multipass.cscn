@@ -1,0 +1,130 @@
+materials legacy
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.5 0.5 0.5 1.0
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour 0.0 0.0 0.0 0.0
+	}
+
+	material "Multipass"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/Billboards/Diffuse.bmp"
+				channel diffuse
+				sampler	"Linear"
+			}
+		}
+
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/Billboards/AlphaRejection.png" rgb
+				channel diffuse
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Billboards/AlphaRejection.png" a
+				channel opacity
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "SunLightNode1"
+	{
+		orientation 1 0 0 225
+	}
+	light "SunLight1"
+	{
+		parent "SunLightNode1"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	scene_node "BulbLight1"
+	{
+		position  0.0 0.0 -5.0
+	}
+	light "BulbLight1"
+	{
+		parent "BulbLight1"
+		type point
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+		attenuation 1.0 0.25 0.0
+	}
+
+	scene_node "Multipass"
+	{
+		position 0 0 0
+	}
+	object "Multipass"
+	{
+		parent "Multipass"
+		mesh "Plane"
+		{
+			type "plane" -width_subdiv=1 -depth_subdiv=1 -width=10.0 depth=10.0
+		}
+		material "Multipass"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0 1.0 0.0 180.0
+		position 0.0 0.0 20.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "Window"
+{
+	fullscreen false
+	vsync false
+
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+}

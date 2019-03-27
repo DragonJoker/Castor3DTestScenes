@@ -1,0 +1,3731 @@
+materials legacy
+
+scene "Parc"
+{
+	background_colour 0.500000 0.500000 0.500000 1.00000
+	ambient_light 0.2 0.2 0.2
+	fog_type squared_exponential
+	fog_density 1
+	include "Materials/ParkLegacy.cscn"
+
+	// Skybox
+
+	skybox
+	{
+		right "Textures/ParkLegacy/skydome.jpg"
+		left "Textures/ParkLegacy/skydome.jpg"
+		bottom "Textures/ParkLegacy/skydome.jpg"
+		top "Textures/ParkLegacy/skydome.jpg"
+		back "Textures/ParkLegacy/skydome.jpg"
+		front "Textures/ParkLegacy/skydome.jpg"
+	}
+
+	// Meshes
+
+	mesh "Fx_Selected"
+	{
+		import "Meshes/Park/Fx_Selected.cmsh"
+	}
+
+	mesh "abris_bus"
+	{
+		import "Meshes/Park/abris_bus.cmsh"
+	}
+
+	mesh "abris_bus_pub_01"
+	{
+		import "Meshes/Park/abris_bus_pub_01.cmsh"
+	}
+
+	mesh "abris_bus_pub_02"
+	{
+		import "Meshes/Park/abris_bus_pub_02.cmsh"
+	}
+
+	mesh "arbre_rue"
+	{
+		import "Meshes/Park/arbre_rue.cmsh"
+	}
+
+	mesh "banc"
+	{
+		import "Meshes/Park/banc.cmsh"
+	}
+
+	mesh "banniere"
+	{
+		import "Meshes/Park/banniere.cmsh"
+	}
+
+	mesh "barriere_chantier"
+	{
+		import "Meshes/Park/barriere_chantier.cmsh"
+	}
+
+	mesh "barriere_travaux"
+	{
+		import "Meshes/Park/barriere_travaux.cmsh"
+	}
+
+	mesh "bite"
+	{
+		import "Meshes/Park/bite.cmsh"
+	}
+
+	mesh "borne_incendie"
+	{
+		import "Meshes/Park/borne_incendie.cmsh"
+	}
+
+	mesh "buisson_coin_ext"
+	{
+		import "Meshes/Park/buisson_coin_ext.cmsh"
+	}
+
+	mesh "buisson_coin_int"
+	{
+		import "Meshes/Park/buisson_coin_int.cmsh"
+	}
+
+	mesh "buisson_droit"
+	{
+		import "Meshes/Park/buisson_droit.cmsh"
+	}
+
+	mesh "cabine_telephone"
+	{
+		import "Meshes/Park/cabine_telephone.cmsh"
+	}
+
+	mesh "cartons"
+	{
+		import "Meshes/Park/cartons.cmsh"
+	}
+
+	mesh "chene"
+	{
+		import "Meshes/Park/chene.cmsh"
+	}
+
+	mesh "corbeille"
+	{
+		import "Meshes/Park/corbeille.cmsh"
+	}
+
+	mesh "distributeur"
+	{
+		import "Meshes/Park/distributeur.cmsh"
+	}
+
+	mesh "entree_boite_parc"
+	{
+		import "Meshes/Park/entree_boite_parc.cmsh"
+	}
+
+	mesh "entree_station"
+	{
+		import "Meshes/Park/entree_station.cmsh"
+	}
+
+	mesh "feu_tricolore"
+	{
+		import "Meshes/Park/feu_tricolore.cmsh"
+	}
+
+	mesh "fontaine"
+	{
+		import "Meshes/Park/fontaine.cmsh"
+	}
+
+	mesh "fontaine_eau_tombante"
+	{
+		import "Meshes/Park/fontaine_eau_tombante.cmsh"
+	}
+
+	mesh "fx_pathfinding"
+	{
+		import "Meshes/Park/fx_pathfinding.cmsh"
+	}
+
+	mesh "grille_parc"
+	{
+		import "Meshes/Park/grille_parc.cmsh"
+	}
+
+	mesh "horloge"
+	{
+		import "Meshes/Park/horloge.cmsh"
+	}
+
+	mesh "horloge_aiguille_heures"
+	{
+		import "Meshes/Park/horloge_aiguille_heures.cmsh"
+	}
+
+	mesh "horloge_aiguille_minutes"
+	{
+		import "Meshes/Park/horloge_aiguille_minutes.cmsh"
+	}
+
+	mesh "horloge_aiguille_secondes"
+	{
+		import "Meshes/Park/horloge_aiguille_secondes.cmsh"
+	}
+
+	mesh "immeubles_parc"
+	{
+		import "Meshes/Park/immeubles_parc.cmsh"
+	}
+
+	mesh "kiosque_park"
+	{
+		import "Meshes/Park/kiosque_park.cmsh"
+	}
+
+	mesh "magasins_parc"
+	{
+		import "Meshes/Park/magasins_parc.cmsh"
+	}
+
+	mesh "panneau_enfants"
+	{
+		import "Meshes/Park/panneau_enfants.cmsh"
+	}
+
+	mesh "panneau_mural"
+	{
+		import "Meshes/Park/panneau_mural.cmsh"
+	}
+
+	mesh "panneau_mural_pub_01"
+	{
+		import "Meshes/Park/panneau_mural_pub_01.cmsh"
+	}
+
+	mesh "panneau_pub"
+	{
+		import "Meshes/Park/panneau_pub.cmsh"
+	}
+
+	mesh "panneau_pub_pub_01"
+	{
+		import "Meshes/Park/panneau_pub_pub_01.cmsh"
+	}
+
+	mesh "panneau_pub_pub_02"
+	{
+		import "Meshes/Park/panneau_pub_pub_02.cmsh"
+	}
+
+	mesh "panneau_stationnement"
+	{
+		import "Meshes/Park/panneau_stationnement.cmsh"
+	}
+
+	mesh "panneau_velo"
+	{
+		import "Meshes/Park/panneau_velo.cmsh"
+	}
+
+	mesh "piaf_ciel"
+	{
+		import "Meshes/Park/piaf_ciel.cmsh"
+	}
+
+	mesh "plasma"
+	{
+		import "Meshes/Park/plasma.cmsh"
+	}
+
+	mesh "plasma_pub"
+	{
+		import "Meshes/Park/plasma_pub.cmsh"
+	}
+
+	mesh "plot_chantier"
+	{
+		import "Meshes/Park/plot_chantier.cmsh"
+	}
+
+	mesh "poisson"
+	{
+		import "Meshes/Park/poisson.cmsh"
+	}
+
+	mesh "poubelle"
+	{
+		import "Meshes/Park/poubelle.cmsh"
+	}
+
+	mesh "reverbere"
+	{
+		import "Meshes/Park/reverbere.cmsh"
+	}
+
+	mesh "saule_pleureur"
+	{
+		import "Meshes/Park/saule_pleureur.cmsh"
+	}
+
+	mesh "skycraper"
+	{
+		import "Meshes/Park/skycraper.cmsh"
+	}
+
+	mesh "sol_parc"
+	{
+		import "Meshes/Park/sol_parc.cmsh"
+	}
+
+	mesh "table_echec"
+	{
+		import "Meshes/Park/table_echec.cmsh"
+	}
+
+	mesh "trigger"
+	{
+		import "Meshes/Park/trigger.cmsh"
+	}
+
+	// Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 90
+		position -995 293 0
+		scale 1 1 1
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 5
+			aspect_ratio 1.778
+			far 12000
+			fov_y 45
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "FromDames"
+	{
+		orientation 1 0 0 0
+		position 518 1 536
+		scale 1 1 1
+	}
+
+	scene_node "Fx_Pathfinding"
+	{
+		orientation 1 0 0 0
+		position 0 0 0
+		scale 0.3 0.3 0.3
+	}
+
+	scene_node "Fx_Selected"
+	{
+		orientation 1 0 0 0
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 90
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "abris_bus"
+	{
+		orientation -0 -1 -0 180
+		position 1200 0 2900
+		scale 1 1 1
+	}
+
+	scene_node "arbre_rue"
+	{
+		orientation 1 0 0 0
+		position 2490 0 525
+		scale 1 1 1
+	}
+
+	scene_node "arbre_rue_2"
+	{
+		orientation 1 0 0 0
+		position 545 8.34465e-07 -2480
+		scale 1 1 1
+	}
+
+	scene_node "arbre_rue_3"
+	{
+		orientation 1 0 0 0
+		position -2425 8.34465e-07 -1040
+		scale 1 1 1
+	}
+
+	scene_node "banc_1"
+	{
+		orientation -0 1 -0 45
+		position -335 0 -335
+		scale 1 1 1
+	}
+
+	scene_node "banc_10"
+	{
+		orientation -0 1 -0 90
+		position 1605 0 -770
+		scale 1 1 1
+	}
+
+	scene_node "banc_12"
+	{
+		orientation -0 -1 -0 90
+		position 2500 -5 -1190
+		scale 1 1 1
+	}
+
+	scene_node "banc_15"
+	{
+		orientation -0 1 -0 180
+		position -1590 0 2820
+		scale 1 1 1
+	}
+
+	scene_node "banc_16"
+	{
+		orientation -0 1 -0 90
+		position -2520 0 1040
+		scale 1 1 1
+	}
+
+	scene_node "banc_2"
+	{
+		orientation -0 -1 -0 45
+		position 335 0 -345
+		scale 1 1 1
+	}
+
+	scene_node "banc_3"
+	{
+		orientation -0 1 -0 135
+		position -330 0 340
+		scale 1 1 1
+	}
+
+	scene_node "banc_5"
+	{
+		orientation 1 0 0 0
+		position -750 0 1605
+		scale 1 1 1
+	}
+
+	scene_node "banc_7"
+	{
+		orientation 0 -1 0 89.9999
+		position -1600 0 -750
+		scale 1 1 1
+	}
+
+	scene_node "banc_9"
+	{
+		orientation -0 1 -0 180
+		position 750 0 -1605
+		scale 1 1 1
+	}
+
+	scene_node "banniere"
+	{
+		orientation 0 -1 0 90.0001
+		position 0 565 3355
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier"
+	{
+		orientation 0 1 0 94.9999
+		position 3391.59 -15 2047.57
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier_10"
+	{
+		orientation 0 1 0 105
+		position 4337.17 -15 2447.77
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier_11"
+	{
+		orientation -0 -1 -0 230
+		position 4405.94 0 2843.43
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier_11_1"
+	{
+		orientation -0 -1 -0 210
+		position 4135.94 -5.96046e-08 3103.43
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier_12_1"
+	{
+		orientation 0 -1 0 59.9999
+		position 4145.94 0 1568.4
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier_2"
+	{
+		orientation 0 1 0 54.9999
+		position 3421.96 0 1618.76
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier_3"
+	{
+		orientation 0 1 0 127.5
+		position 3461.55 0 2914.94
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier_4"
+	{
+		orientation 0 1 0 170
+		position 3762.51 0 3168.83
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier_5"
+	{
+		orientation 0 1 0 80
+		position 3388.82 -15 2449.89
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier_6"
+	{
+		orientation 0 -1 0 4.99997
+		position 3794.73 0 1390.86
+		scale 1 1 1
+	}
+
+	scene_node "barriere_chantier_8"
+	{
+		orientation 0 1 0 99.9999
+		position 4273.25 -15 2024.51
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux"
+	{
+		orientation 0 -1 0 140
+		position -3677.38 0 -2969.1
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_1"
+	{
+		orientation 0 -1 0 125
+		position -3954.71 0 -3269.44
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_10"
+	{
+		orientation 0 -1 0 86.9999
+		position 2244.7 0 2970.12
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_10_1"
+	{
+		orientation 0 -1 0 94
+		position 2259.7 0 3090.12
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_10_2"
+	{
+		orientation 0 -1 0 81
+		position 2244.7 0 3185.12
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_2"
+	{
+		orientation 0 -1 0 89.9999
+		position -4005.3 0 -3139.88
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_3"
+	{
+		orientation 0 -1 0 49.9997
+		position -3955.17 0 -2990.59
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_4"
+	{
+		orientation 0 -1 0 4.99746
+		position -3825.18 0 -2912.88
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_5"
+	{
+		orientation 0 -1 0 89.9999
+		position -3609.23 0 -3089.06
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_6"
+	{
+		orientation 0 -1 0 64.9999
+		position -3639.79 0 -3232.3
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_7"
+	{
+		orientation 0 1 0 9.99872
+		position -3848.68 0 -3347.72
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_8"
+	{
+		orientation 0 -1 0 30
+		position -3720 0 -3330
+		scale 1 1 1
+	}
+
+	scene_node "barriere_travaux_9"
+	{
+		orientation 0 -1 0 92.9999
+		position 2264.7 0 2865.12
+		scale 1 1 1
+	}
+
+	scene_node "bite"
+	{
+		orientation 1 0 0 0
+		position -2350 0 1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_1"
+	{
+		orientation 1 0 0 0
+		position -2350 0 1600
+		scale 1 1 1
+	}
+
+	scene_node "bite_10"
+	{
+		orientation 1 0 0 0
+		position -2350 0 240
+		scale 1 1 1
+	}
+
+	scene_node "bite_11"
+	{
+		orientation 1 0 0 0
+		position -2350 0 -240
+		scale 1 1 1
+	}
+
+	scene_node "bite_12"
+	{
+		orientation 1 0 0 0
+		position -1760 0 -250
+		scale 1 1 1
+	}
+
+	scene_node "bite_13"
+	{
+		orientation 1 0 0 0
+		position -1760 0 240
+		scale 1 1 1
+	}
+
+	scene_node "bite_14"
+	{
+		orientation 1 0 0 0
+		position 1760 0 240
+		scale 1 1 1
+	}
+
+	scene_node "bite_15"
+	{
+		orientation 1 0 0 0
+		position 1760 0 -240
+		scale 1 1 1
+	}
+
+	scene_node "bite_16"
+	{
+		orientation 1 0 0 0
+		position 2350 0 240
+		scale 1 1 1
+	}
+
+	scene_node "bite_17"
+	{
+		orientation 1 0 0 0
+		position 2350 0 -240
+		scale 1 1 1
+	}
+
+	scene_node "bite_18"
+	{
+		orientation 1 0 0 0
+		position -240 0 1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_19"
+	{
+		orientation 1 0 0 0
+		position 240 0 1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_20"
+	{
+		orientation 1 0 0 0
+		position -240 0 2720
+		scale 1 1 1
+	}
+
+	scene_node "bite_21"
+	{
+		orientation 1 0 0 0
+		position 240 0 2720
+		scale 1 1 1
+	}
+
+	scene_node "bite_22"
+	{
+		orientation 1 0 0 0
+		position -240 0 -1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_23"
+	{
+		orientation 1 0 0 0
+		position 240 0 -1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_24"
+	{
+		orientation 1 0 0 0
+		position 240 0 -2370
+		scale 1 1 1
+	}
+
+	scene_node "bite_25"
+	{
+		orientation 1 0 0 0
+		position -240 0 -2370
+		scale 1 1 1
+	}
+
+	scene_node "bite_27"
+	{
+		orientation 1 0 0 0
+		position 1600 0 1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_28"
+	{
+		orientation 1 0 0 0
+		position 1760 0 1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_29"
+	{
+		orientation 1 0 0 0
+		position 1760 0 1610
+		scale 1 1 1
+	}
+
+	scene_node "bite_3"
+	{
+		orientation 1 0 0 0
+		position -2510 0 1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_31"
+	{
+		orientation 1 0 0 0
+		position 2350 0 1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_32"
+	{
+		orientation 1 0 0 0
+		position 2510 0 1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_34"
+	{
+		orientation 1 0 0 0
+		position 2350 0 1610
+		scale 1 1 1
+	}
+
+	scene_node "bite_36"
+	{
+		orientation 1 0 0 0
+		position 1600 0 -1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_37"
+	{
+		orientation 1 0 0 0
+		position 1760 0 -1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_38"
+	{
+		orientation 1 0 0 0
+		position 1760 0 -1610
+		scale 1 1 1
+	}
+
+	scene_node "bite_41"
+	{
+		orientation 1 0 0 0
+		position -1760 0 -1600
+		scale 1 1 1
+	}
+
+	scene_node "bite_43"
+	{
+		orientation 1 0 0 0
+		position -1600 0 -1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_44"
+	{
+		orientation 1 0 0 0
+		position -1760 0 -1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_5"
+	{
+		orientation 1 0 0 0
+		position -1760 0 1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_6"
+	{
+		orientation 1 0 0 0
+		position -1600 0 1770
+		scale 1 1 1
+	}
+
+	scene_node "bite_8"
+	{
+		orientation 1 0 0 0
+		position -1760 0 1610
+		scale 1 1 1
+	}
+
+	scene_node "borne_incendie"
+	{
+		orientation 0 -1 0 4.99793
+		position -387.074 0 -1743.81
+		scale 1 1 1
+	}
+
+	scene_node "borne_incendie_1"
+	{
+		orientation 0 -1 0 89.9999
+		position -2395 0 1255
+		scale 1 1 1
+	}
+
+	scene_node "borne_incendie_2"
+	{
+		orientation 1 0 0 0
+		position 400 0 2750
+		scale 1 1 1
+	}
+
+	scene_node "buisson_3"
+	{
+		orientation 0 1 0 90.0001
+		position 900 10 -1470
+		scale 1 1 1
+	}
+
+	scene_node "buisson_coin_ext"
+	{
+		orientation 1 0 0 0
+		position -1340 10 1345
+		scale 1 1 1
+	}
+
+	scene_node "buisson_coin_ext_1"
+	{
+		orientation 0 -1 0 89.0001
+		position -1350 10 -1345
+		scale 1 1 1
+	}
+
+	scene_node "buisson_coin_ext_2"
+	{
+		orientation 0 -1 0 179
+		position 1330 10 -1350
+		scale 1 1 1
+	}
+
+	scene_node "buisson_coin_ext_3"
+	{
+		orientation -0 1 -0 90
+		position 1330 10 1345
+		scale 1 1 1
+	}
+
+	scene_node "buisson_coin_int"
+	{
+		orientation 1 0 0 0
+		position -835 10 835
+		scale 1 1 1
+	}
+
+	scene_node "buisson_coin_int_1"
+	{
+		orientation -0 1 -0 90
+		position 835 10 840
+		scale 1 1 1
+	}
+
+	scene_node "buisson_coin_int_2"
+	{
+		orientation 0 -1 0 179
+		position 835 10 -845
+		scale 1 1 1
+	}
+
+	scene_node "buisson_coin_int_3"
+	{
+		orientation 0 -1 0 90.0001
+		position -835 10 -850
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_1"
+	{
+		orientation 1 0 0 0
+		position 1460 10 -905
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10"
+	{
+		orientation -0 -1 -0 180
+		position -1465 10 900
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_1"
+	{
+		orientation 0 1 0 90
+		position -375 10 1470
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_10"
+	{
+		orientation -0 -1 -0 180
+		position 980 10 380
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_10_1"
+	{
+		orientation -0 -1 -0 180
+		position -980 10 380
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_10_2"
+	{
+		orientation -0 -1 -0 180
+		position -980 10 -390
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_2"
+	{
+		orientation 0 1 0 90
+		position -900 10 1470
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_3"
+	{
+		orientation 0 1 0 90
+		position 380 10 1470
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_4"
+	{
+		orientation 0 1 0 90
+		position 900 10 1470
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_5"
+	{
+		orientation 0 1 0 90
+		position 385 10 985
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_6"
+	{
+		orientation 0 1 0 90
+		position -380 10 980
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_7"
+	{
+		orientation 0 1 0 90
+		position -380 10 -990
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_8"
+	{
+		orientation 0 1 0 90
+		position 380 10 -990
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_10_9"
+	{
+		orientation -0 -1 -0 180
+		position 980 10 -390
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_11"
+	{
+		orientation 1 0 0 0
+		position 1455 10 910
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_12"
+	{
+		orientation 0 1 0 90.0001
+		position 895 10 -1475
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_13"
+	{
+		orientation 1 0 0 0
+		position 1460 10 -390
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_2"
+	{
+		orientation 0 1 0 90.0001
+		position 375 10 -1475
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_4"
+	{
+		orientation 0 1 0 90.0001
+		position -390 10 -1475
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_5"
+	{
+		orientation 0 1 0 90.0001
+		position -910 10 -1475
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_6"
+	{
+		orientation 0 1 0 1.0056
+		position -1460 10 -375
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_7"
+	{
+		orientation 0 1 0 1.0056
+		position -1470 10 -900
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_8"
+	{
+		orientation 1 0 0 0
+		position 1455 10 385
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_9"
+	{
+		orientation -0 -1 -0 180
+		position -1465 10 370
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_coin_ext_1"
+	{
+		orientation 0 -1 0 90
+		position -1350 10 -1345
+		scale 1 1 1
+	}
+
+	scene_node "buisson_droit_droit"
+	{
+		orientation 1 0 0 0
+		position 1455 10 -380
+		scale 1 1 1
+	}
+
+	scene_node "cabine_telephone"
+	{
+		orientation 1 0 0 0
+		position -796.659 0 2835.41
+		scale 1 1 1
+	}
+
+	scene_node "cabine_telephone_1"
+	{
+		orientation 1 0 0 0
+		position 1250 0 -2680
+		scale 1 1 1
+	}
+
+	scene_node "cartons"
+	{
+		orientation 1 0 0 0
+		position 2660 0 -4020
+		scale 1 1 1
+	}
+
+	scene_node "chene"
+	{
+		orientation 0 -1 0 72
+		position -535 10 555
+		scale 1.29893 1.29893 1.29893
+	}
+
+	scene_node "chene_1"
+	{
+		orientation 0 1 0 23
+		position -705 10 -425
+		scale 1.63292 1.63292 1.63292
+	}
+
+	scene_node "chene_2"
+	{
+		orientation 0 1 0 19.9999
+		position 525 10 -625
+		scale 1.29893 1.29893 1.29893
+	}
+
+	scene_node "chene_3"
+	{
+		orientation 0 -1 0 13
+		position 695 10 260
+		scale 1.11315 1.11315 1.11315
+	}
+
+	scene_node "corbeille"
+	{
+		orientation 1 0 0 0
+		position 1580 0 -575
+		scale 1 1 1
+	}
+
+	scene_node "corbeille_1"
+	{
+		orientation 1 0 0 0
+		position 2405 0 -305
+		scale 1 1 1
+	}
+
+	scene_node "corbeille_2"
+	{
+		orientation 1 0 0 0
+		position -295 0 -2440
+		scale 1 1 1
+	}
+
+	scene_node "corbeille_4"
+	{
+		orientation 1 0 0 0
+		position -260 0 1590
+		scale 1 1 1
+	}
+
+	scene_node "corbeille_6"
+	{
+		orientation 1 0 0 0
+		position -1335 7 -165
+		scale 1 1 1
+	}
+
+	scene_node "corbeille_7"
+	{
+		orientation 1 0 0 0
+		position -455 0 150
+		scale 1 1 1
+	}
+
+	scene_node "distributeur"
+	{
+		orientation 0 -1 0 89.9999
+		position 2920 0 550
+		scale 1 1 1
+	}
+
+	scene_node "distributeur_1"
+	{
+		orientation -0 1 -0 270
+		position -2921.66 0 -1640.14
+		scale 1 1 1
+	}
+
+	scene_node "entree_station"
+	{
+		orientation -0 1 -0 270
+		position 2555 -1.78814e-07 3465
+		scale 1 1 1
+	}
+
+	scene_node "feu_tricolore"
+	{
+		orientation 0 -1 0 89.9999
+		position -2402.58 0 1357.17
+		scale 1 1 1
+	}
+
+	scene_node "feu_tricolore_1"
+	{
+		orientation -0 -1 -0 180
+		position 2770 0 1745
+		scale 1 1 1
+	}
+
+	scene_node "fontaine"
+	{
+		orientation 1 0 0 0
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "horloge"
+	{
+		orientation 1 0 0 0
+		position 0 550 -3085
+		scale 1 1 1
+	}
+
+	scene_node "horloge_aiguille_heures"
+	{
+		orientation 1 0 0 0
+		position 0 550 -3085
+		scale 1 1 1
+	}
+
+	scene_node "horloge_aiguille_minutes"
+	{
+		orientation 1 0 0 0
+		position 0 550 -3085
+		scale 1 1 1
+	}
+
+	scene_node "horloge_aiguille_secondes"
+	{
+		orientation 1 0 0 0
+		position 0 550 -3085
+		scale 1 1 1
+	}
+
+	scene_node "kiosque_park"
+	{
+		orientation 0 -1 0 135
+		position 715.739 0 729.484
+		scale 1 1 1
+	}
+
+	scene_node "npc_node_01"
+	{
+		orientation 1 0 0 0
+		position 484 1 691
+		scale 1 1 1
+	}
+
+	scene_node "panneau_enfants"
+	{
+		orientation -0 -1 -0 359.881
+		position 2380 0 265
+		scale 1 1 1
+	}
+
+	scene_node "panneau_mural"
+	{
+		orientation -0 1 -0 90
+		position -2985 265 305
+		scale 1 1 1
+	}
+
+	scene_node "panneau_pub"
+	{
+		orientation 0 1 0 90.0001
+		position -1150 0 -2470
+		scale 1 1 1
+	}
+
+	scene_node "panneau_stationnement"
+	{
+		orientation 0 -1 0 90
+		position -665 0 -1760
+		scale 1 1 1
+	}
+
+	scene_node "panneau_stationnement_1"
+	{
+		orientation 0 -1 0 90
+		position 1260 0 1760
+		scale 1 1 1
+	}
+
+	scene_node "panneau_stationnement_2"
+	{
+		orientation 0 -1 0 177.5
+		position -2405 0 480
+		scale 1 1 1
+	}
+
+	scene_node "panneau_velo"
+	{
+		orientation 0 -1 0 90.0001
+		position -1270 0 2740
+		scale 1 1 1
+	}
+
+	scene_node "panneau_velo_1"
+	{
+		orientation 0 1 0 90.0001
+		position 310 0 -2395
+		scale 1 1 1
+	}
+
+	scene_node "piaf_ciel"
+	{
+		orientation 0 1 0 60
+		position 455 860 20
+		scale 1 1 1
+	}
+
+	scene_node "piaf_ciel_trajet_01"
+	{
+		orientation 0 1 0 45
+		position 9065 5055 4360
+		scale 1 1 1
+	}
+
+	scene_node "piaf_ciel_trajet_02"
+	{
+		orientation 0 1 0 45
+		position -11800 5055 -85
+		scale 1 1 1
+	}
+
+	scene_node "plasma"
+	{
+		orientation 0 -1 0 90
+		position 2980 290 -1875
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_1"
+	{
+		orientation 0 1 0 19.9999
+		position 3340 -10 2460
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_10"
+	{
+		orientation 0 1 0 45
+		position 3580 0 3095
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_11"
+	{
+		orientation 0 -1 0 4.99966
+		position 3390 -10 2230
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_12_1"
+	{
+		orientation 0 1 0 4.99966
+		position 3935 -5.96046e-08 3325
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_13"
+	{
+		orientation 0 1 0 30
+		position -3880 0 -3040
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_13_1"
+	{
+		orientation 0 1 0 30
+		position -3760 0 -3030
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_13_2"
+	{
+		orientation 0 1 0 60
+		position -3870 0 -3190
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_16"
+	{
+		orientation 1 0 0 0
+		position 4380 0 1930
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_3"
+	{
+		orientation 0 1 0 25
+		position 3440 0 2870
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_4"
+	{
+		orientation 0 1 0 9.99989
+		position 3760 0 1390
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_5"
+	{
+		orientation 0 -1 0 50
+		position 4360 -10 2470
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_6"
+	{
+		orientation 1 0 0 0
+		position 3320 -10 1970
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_7"
+	{
+		orientation 0 -1 0 45
+		position 3350 0 1610
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_8"
+	{
+		orientation 0 1 0 30
+		position 4110 0 3060
+		scale 1 1 1
+	}
+
+	scene_node "plot_chantier_9"
+	{
+		orientation 0 -1 0 25
+		position 4130 0 1550
+		scale 1 1 1
+	}
+
+	scene_node "poisson"
+	{
+		orientation 1 0 0 0
+		position 80 40 190
+		scale 1 1 1
+	}
+
+	scene_node "poisson_1"
+	{
+		orientation -0 -1 -0 20
+		position 145 40 -40
+		scale 0.8 0.8 0.8
+	}
+
+	scene_node "poisson_2"
+	{
+		orientation 0 1 0 90
+		position -175 40 80
+		scale 0.6 0.6 0.6
+	}
+
+	scene_node "poisson_3"
+	{
+		orientation 0 1 0 40
+		position -90 40 -210
+		scale 0.4 0.4 0.4
+	}
+
+	scene_node "poubelle"
+	{
+		orientation 0 1 0 9.99966
+		position -2870 0 -4065
+		scale 1 1 1
+	}
+
+	scene_node "poubelle_1"
+	{
+		orientation 0 -1 0 4.99934
+		position -2735 0 -3935
+		scale 1 1 1
+	}
+
+	scene_node "poubelle_2"
+	{
+		orientation 0 -1 0 4.99934
+		position -2410 0 -4060
+		scale 1 1 1
+	}
+
+	scene_node "poubelle_3"
+	{
+		orientation 0 1 0 10.0006
+		position -2530 0 -3925
+		scale 1 1 1
+	}
+
+	scene_node "reverbere"
+	{
+		orientation 1 0 0 0
+		position 1730 0 -2400
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_11"
+	{
+		orientation 1 0 0 0
+		position 1600 0 1200
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_11_1"
+	{
+		orientation 1 0 0 0
+		position -185 -2.98023e-06 445
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_11_2"
+	{
+		orientation 1 0 0 0
+		position -450 -2.98023e-06 -165
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_11_3"
+	{
+		orientation 1 0 0 0
+		position 435 -2.98023e-06 -210
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_11_4"
+	{
+		orientation 1 0 0 0
+		position 255 -3.33786e-06 420
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_13"
+	{
+		orientation 1 0 0 0
+		position 1200 0 -1600
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_15"
+	{
+		orientation 1 0 0 0
+		position -1200 0 1600
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_16"
+	{
+		orientation 1 0 0 0
+		position -1600 0 -1200
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_19"
+	{
+		orientation 1 0 0 0
+		position -2380 0 1730
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_21"
+	{
+		orientation 1 0 0 0
+		position 4980 0 1730
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_4"
+	{
+		orientation 1 0 0 0
+		position -1730 0 -2400
+		scale 1 1 1
+	}
+
+	scene_node "reverbere_8"
+	{
+		orientation 1 0 0 0
+		position 2390 0 1730
+		scale 1 1 1
+	}
+
+	scene_node "saule_pleureur_1"
+	{
+		orientation 0 1 0 77
+		position 305 -6.55651e-07 715
+		scale 1.74084 1.74084 1.74084
+	}
+
+	scene_node "saule_pleureur_2"
+	{
+		orientation 0 -1 0 29
+		position -265 5 -710
+		scale 1.16575 1.16575 1.16575
+	}
+
+	scene_node "skycraper"
+	{
+		orientation 1 0 0 0
+		position 2935 1525 790
+		scale 1 1 1
+	}
+
+	scene_node "table_echec"
+	{
+		orientation 0 -1 0 45
+		position 710 40 735
+		scale 1 1 1
+	}
+
+	scene_node "trigger_1"
+	{
+		orientation 1 0 0 0
+		position -3035 0 -3525
+		scale 1 1 1
+	}
+
+	scene_node "trigger_2"
+	{
+		orientation 1 0 0 0
+		position -3860 -20 2245
+		scale 1 1 1
+	}
+
+	scene_node "trigger_3"
+	{
+		orientation 1 0 0 0
+		position 2155 2.5 3030
+		scale 1 1 1
+	}
+
+	scene_node "trigger_4"
+	{
+		orientation 1 0 0 0
+		position -3070 0 1045
+		scale 1 1 1
+	}
+
+	// Lights
+
+	light "light_01"
+	{
+		parent "LightNode"
+		type directional
+		colour 1 1 1
+		intensity 0.7 0.8
+		// shadows
+		// {
+			// producer true
+			// filter variance
+			// min_offset 0.00001
+			// max_slope_offset 0.0001
+			// variance_max 0.0000005
+			// variance_bias 0.20
+		// }
+	}
+
+	// Geometries
+
+	object "Fx_Pathfinding"
+	{
+		parent "Fx_Pathfinding"
+		mesh "fx_pathfinding"
+		material  "z"
+	}
+
+	object "Fx_Selected"
+	{
+		parent "Fx_Selected"
+		mesh "Fx_Selected"
+		material  "fx_selected"
+	}
+
+	object "Rond_Fx_Pathfinding"
+	{
+		parent "Fx_Pathfinding"
+		mesh "fx_pathfinding"
+		material  "z"
+	}
+
+	object "abris_bus"
+	{
+		parent "abris_bus"
+		mesh "abris_bus"
+		materials
+		{
+			material 0 "abris_bus/metal"
+			material 1 "abris_bus/verre"
+			material 2 "abris_bus/plan"
+		}
+	}
+
+	object "abris_bus_pub_01"
+	{
+		parent "abris_bus"
+		mesh "abris_bus_pub_01"
+		material  "abris_bus_pub_01"
+	}
+
+	object "abris_bus_pub_02"
+	{
+		parent "abris_bus"
+		mesh "abris_bus_pub_02"
+		material  "abris_bus_pub_02"
+	}
+
+	object "arbre_rue"
+	{
+		parent "arbre_rue"
+		mesh "arbre_rue"
+		materials
+		{
+			material 0 "arbre_rue/branches"
+			material 1 "arbre_rue/tronc"
+			material 2 "arbre_rue/terre"
+			material 3 "arbre_rue/bac"
+		}
+	}
+
+	object "arbre_rue_2"
+	{
+		parent "arbre_rue_2"
+		mesh "arbre_rue"
+		materials
+		{
+			material 0 "arbre_rue/branches"
+			material 1 "arbre_rue/tronc"
+			material 2 "arbre_rue/terre"
+			material 3 "arbre_rue/bac"
+		}
+	}
+
+	object "arbre_rue_3"
+	{
+		parent "arbre_rue_3"
+		mesh "arbre_rue"
+		materials
+		{
+			material 0 "arbre_rue/branches"
+			material 1 "arbre_rue/tronc"
+			material 2 "arbre_rue/terre"
+			material 3 "arbre_rue/bac"
+		}
+	}
+
+	object "banc_1"
+	{
+		parent "banc_1"
+		mesh "banc"
+		materials
+		{
+			material 0 "banc/bois"
+			material 1 "banc/metal"
+		}
+	}
+
+	object "banc_10"
+	{
+		parent "banc_10"
+		mesh "banc"
+		materials
+		{
+			material 0 "banc/bois"
+			material 1 "banc/metal"
+		}
+	}
+
+	object "banc_12"
+	{
+		parent "banc_12"
+		mesh "banc"
+		materials
+		{
+			material 0 "banc/bois"
+			material 1 "banc/metal"
+		}
+	}
+
+	object "banc_15"
+	{
+		parent "banc_15"
+		mesh "banc"
+		materials
+		{
+			material 0 "banc/bois"
+			material 1 "banc/metal"
+		}
+	}
+
+	object "banc_16"
+	{
+		parent "banc_16"
+		mesh "banc"
+		materials
+		{
+			material 0 "banc/bois"
+			material 1 "banc/metal"
+		}
+	}
+
+	object "banc_2"
+	{
+		parent "banc_2"
+		mesh "banc"
+		materials
+		{
+			material 0 "banc/bois"
+			material 1 "banc/metal"
+		}
+	}
+
+	object "banc_3"
+	{
+		parent "banc_3"
+		mesh "banc"
+		materials
+		{
+			material 0 "banc/bois"
+			material 1 "banc/metal"
+		}
+	}
+
+	object "banc_5"
+	{
+		parent "banc_5"
+		mesh "banc"
+		materials
+		{
+			material 0 "banc/bois"
+			material 1 "banc/metal"
+		}
+	}
+
+	object "banc_7"
+	{
+		parent "banc_7"
+		mesh "banc"
+		materials
+		{
+			material 0 "banc/bois"
+			material 1 "banc/metal"
+		}
+	}
+
+	object "banc_9"
+	{
+		parent "banc_9"
+		mesh "banc"
+		materials
+		{
+			material 0 "banc/bois"
+			material 1 "banc/metal"
+		}
+	}
+
+	object "banniere"
+	{
+		parent "banniere"
+		mesh "banniere"
+		material  "banniere"
+	}
+
+	object "barriere_chantier"
+	{
+		parent "barriere_chantier"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_chantier_10"
+	{
+		parent "barriere_chantier_10"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_chantier_11"
+	{
+		parent "barriere_chantier_11"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_chantier_11_1"
+	{
+		parent "barriere_chantier_11_1"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_chantier_12_1"
+	{
+		parent "barriere_chantier_12_1"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_chantier_2"
+	{
+		parent "barriere_chantier_2"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_chantier_3"
+	{
+		parent "barriere_chantier_3"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_chantier_4"
+	{
+		parent "barriere_chantier_4"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_chantier_5"
+	{
+		parent "barriere_chantier_5"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_chantier_6"
+	{
+		parent "barriere_chantier_6"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_chantier_8"
+	{
+		parent "barriere_chantier_8"
+		mesh "barriere_chantier"
+		materials
+		{
+			material 0 "barriere_chantier/bois"
+			material 1 "barriere_chantier/peinture"
+		}
+	}
+
+	object "barriere_travaux"
+	{
+		parent "barriere_travaux"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_1"
+	{
+		parent "barriere_travaux_1"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_10"
+	{
+		parent "barriere_travaux_10"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_10_1"
+	{
+		parent "barriere_travaux_10_1"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_10_2"
+	{
+		parent "barriere_travaux_10_2"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_2"
+	{
+		parent "barriere_travaux_2"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_3"
+	{
+		parent "barriere_travaux_3"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_4"
+	{
+		parent "barriere_travaux_4"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_5"
+	{
+		parent "barriere_travaux_5"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_6"
+	{
+		parent "barriere_travaux_6"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_7"
+	{
+		parent "barriere_travaux_7"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_8"
+	{
+		parent "barriere_travaux_8"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "barriere_travaux_9"
+	{
+		parent "barriere_travaux_9"
+		mesh "barriere_travaux"
+		materials
+		{
+			material 0 "barriere_travaux/metal"
+			material 1 "barriere_travaux/peinture"
+		}
+	}
+
+	object "bite"
+	{
+		parent "bite"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_1"
+	{
+		parent "bite_1"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_10"
+	{
+		parent "bite_10"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_11"
+	{
+		parent "bite_11"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_12"
+	{
+		parent "bite_12"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_13"
+	{
+		parent "bite_13"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_14"
+	{
+		parent "bite_14"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_15"
+	{
+		parent "bite_15"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_16"
+	{
+		parent "bite_16"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_17"
+	{
+		parent "bite_17"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_18"
+	{
+		parent "bite_18"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_19"
+	{
+		parent "bite_19"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_20"
+	{
+		parent "bite_20"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_21"
+	{
+		parent "bite_21"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_22"
+	{
+		parent "bite_22"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_23"
+	{
+		parent "bite_23"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_24"
+	{
+		parent "bite_24"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_25"
+	{
+		parent "bite_25"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_27"
+	{
+		parent "bite_27"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_28"
+	{
+		parent "bite_28"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_29"
+	{
+		parent "bite_29"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_3"
+	{
+		parent "bite_3"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_31"
+	{
+		parent "bite_31"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_32"
+	{
+		parent "bite_32"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_34"
+	{
+		parent "bite_34"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_36"
+	{
+		parent "bite_36"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_37"
+	{
+		parent "bite_37"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_38"
+	{
+		parent "bite_38"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_41"
+	{
+		parent "bite_41"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_43"
+	{
+		parent "bite_43"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_44"
+	{
+		parent "bite_44"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_5"
+	{
+		parent "bite_5"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_6"
+	{
+		parent "bite_6"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "bite_8"
+	{
+		parent "bite_8"
+		mesh "bite"
+		material  "bite"
+	}
+
+	object "borne_incendie"
+	{
+		parent "borne_incendie"
+		mesh "borne_incendie"
+		materials
+		{
+			material 0 "borne_incendie/borne_incendie_rouge"
+			material 1 "borne_incendie/borne_incendie_gris"
+		}
+	}
+
+	object "borne_incendie_1"
+	{
+		parent "borne_incendie_1"
+		mesh "borne_incendie"
+		materials
+		{
+			material 0 "borne_incendie/borne_incendie_rouge"
+			material 1 "borne_incendie/borne_incendie_gris"
+		}
+	}
+
+	object "borne_incendie_2"
+	{
+		parent "borne_incendie_2"
+		mesh "borne_incendie"
+		materials
+		{
+			material 0 "borne_incendie/borne_incendie_rouge"
+			material 1 "borne_incendie/borne_incendie_gris"
+		}
+	}
+
+	object "buisson_coin_ext"
+	{
+		parent "buisson_coin_ext"
+		mesh "buisson_coin_ext"
+		materials
+		{
+			material 0 "buisson_coin_ext/feuilles"
+			material 1 "buisson_coin_ext/tronc"
+		}
+	}
+
+	object "buisson_coin_ext_1"
+	{
+		parent "buisson_coin_ext_1"
+		mesh "buisson_coin_ext"
+		materials
+		{
+			material 0 "buisson_coin_ext/feuilles"
+			material 1 "buisson_coin_ext/tronc"
+		}
+	}
+
+	object "buisson_coin_ext_2"
+	{
+		parent "buisson_coin_ext_2"
+		mesh "buisson_coin_ext"
+		materials
+		{
+			material 0 "buisson_coin_ext/feuilles"
+			material 1 "buisson_coin_ext/tronc"
+		}
+	}
+
+	object "buisson_coin_ext_3"
+	{
+		parent "buisson_coin_ext_3"
+		mesh "buisson_coin_ext"
+		materials
+		{
+			material 0 "buisson_coin_ext/feuilles"
+			material 1 "buisson_coin_ext/tronc"
+		}
+	}
+
+	object "buisson_coin_int"
+	{
+		parent "buisson_coin_int"
+		mesh "buisson_coin_int"
+		materials
+		{
+			material 0 "buisson_coin_int/feuilles"
+			material 1 "buisson_coin_int/tronc"
+		}
+	}
+
+	object "buisson_coin_int_1"
+	{
+		parent "buisson_coin_int_1"
+		mesh "buisson_coin_int"
+		materials
+		{
+			material 0 "buisson_coin_int/feuilles"
+			material 1 "buisson_coin_int/tronc"
+		}
+	}
+
+	object "buisson_coin_int_2"
+	{
+		parent "buisson_coin_int_2"
+		mesh "buisson_coin_int"
+		materials
+		{
+			material 0 "buisson_coin_int/feuilles"
+			material 1 "buisson_coin_int/tronc"
+		}
+	}
+
+	object "buisson_coin_int_3"
+	{
+		parent "buisson_coin_int_3"
+		mesh "buisson_coin_int"
+		materials
+		{
+			material 0 "buisson_coin_int/feuilles"
+			material 1 "buisson_coin_int/tronc"
+		}
+	}
+
+	object "buisson_droit_1"
+	{
+		parent "buisson_droit_1"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10"
+	{
+		parent "buisson_droit_10"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_1"
+	{
+		parent "buisson_droit_10_1"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_10"
+	{
+		parent "buisson_droit_10_10"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_10_1"
+	{
+		parent "buisson_droit_10_10_1"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_10_2"
+	{
+		parent "buisson_droit_10_10_2"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_2"
+	{
+		parent "buisson_droit_10_2"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_3"
+	{
+		parent "buisson_droit_10_3"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_4"
+	{
+		parent "buisson_droit_10_4"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_5"
+	{
+		parent "buisson_droit_10_5"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_6"
+	{
+		parent "buisson_droit_10_6"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_7"
+	{
+		parent "buisson_droit_10_7"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_8"
+	{
+		parent "buisson_droit_10_8"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_10_9"
+	{
+		parent "buisson_droit_10_9"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_11"
+	{
+		parent "buisson_droit_11"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_12"
+	{
+		parent "buisson_droit_12"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_13"
+	{
+		parent "buisson_droit_13"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_2"
+	{
+		parent "buisson_droit_2"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_4"
+	{
+		parent "buisson_droit_4"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_5"
+	{
+		parent "buisson_droit_5"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_6"
+	{
+		parent "buisson_droit_6"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_7"
+	{
+		parent "buisson_droit_7"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_8"
+	{
+		parent "buisson_droit_8"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "buisson_droit_9"
+	{
+		parent "buisson_droit_9"
+		mesh "buisson_droit"
+		materials
+		{
+			material 0 "buisson/feuilles"
+			material 1 "buisson/tronc"
+		}
+	}
+
+	object "cabine_telephone"
+	{
+		parent "cabine_telephone"
+		mesh "cabine_telephone"
+		materials
+		{
+			material 0 "cabine_telephone/metal"
+			material 1 "cabine_telephone/verre"
+			material 2 "cabine_telephone/verre_marron"
+			material 3 "cabine_telephone/phone"
+		}
+	}
+
+	object "cabine_telephone_1"
+	{
+		parent "cabine_telephone_1"
+		mesh "cabine_telephone"
+		materials
+		{
+			material 0 "cabine_telephone/metal"
+			material 1 "cabine_telephone/verre"
+			material 2 "cabine_telephone/verre_marron"
+			material 3 "cabine_telephone/phone"
+		}
+	}
+
+	object "cartons"
+	{
+		parent "cartons"
+		mesh "cartons"
+		material  "cartons"
+	}
+
+	object "chene"
+	{
+		parent "chene"
+		mesh "chene"
+		materials
+		{
+			material 0 "chene/tronc"
+			material 1 "chene/feuilles"
+		}
+	}
+
+	object "chene_1"
+	{
+		parent "chene_1"
+		mesh "chene"
+		materials
+		{
+			material 0 "chene/tronc"
+			material 1 "chene/feuilles"
+		}
+	}
+
+	object "chene_2"
+	{
+		parent "chene_2"
+		mesh "chene"
+		materials
+		{
+			material 0 "chene/tronc"
+			material 1 "chene/feuilles"
+		}
+	}
+
+	object "chene_3"
+	{
+		parent "chene_3"
+		mesh "chene"
+		materials
+		{
+			material 0 "chene/tronc"
+			material 1 "chene/feuilles"
+		}
+	}
+
+	object "corbeille"
+	{
+		parent "corbeille"
+		mesh "corbeille"
+		materials
+		{
+			material 0 "corbeille/metal"
+			material 1 "corbeille/bois"
+			material 2 "corbeille/trash"
+		}
+	}
+
+	object "corbeille_1"
+	{
+		parent "corbeille_1"
+		mesh "corbeille"
+		materials
+		{
+			material 0 "corbeille/metal"
+			material 1 "corbeille/bois"
+			material 2 "corbeille/trash"
+		}
+	}
+
+	object "corbeille_2"
+	{
+		parent "corbeille_2"
+		mesh "corbeille"
+		materials
+		{
+			material 0 "corbeille/metal"
+			material 1 "corbeille/bois"
+			material 2 "corbeille/trash"
+		}
+	}
+
+	object "corbeille_4"
+	{
+		parent "corbeille_4"
+		mesh "corbeille"
+		materials
+		{
+			material 0 "corbeille/metal"
+			material 1 "corbeille/bois"
+			material 2 "corbeille/trash"
+		}
+	}
+
+	object "corbeille_6"
+	{
+		parent "corbeille_6"
+		mesh "corbeille"
+		materials
+		{
+			material 0 "corbeille/metal"
+			material 1 "corbeille/bois"
+			material 2 "corbeille/trash"
+		}
+	}
+
+	object "corbeille_7"
+	{
+		parent "corbeille_7"
+		mesh "corbeille"
+		materials
+		{
+			material 0 "corbeille/metal"
+			material 1 "corbeille/bois"
+			material 2 "corbeille/trash"
+		}
+	}
+
+	object "distributeur"
+	{
+		parent "distributeur"
+		mesh "distributeur"
+		material  "distributeur"
+	}
+
+	object "distributeur_1"
+	{
+		parent "distributeur_1"
+		mesh "distributeur"
+		material  "distributeur"
+	}
+
+	object "entree_boite_parc"
+	{
+		parent "ObjectRootNode"
+		mesh "entree_boite_parc"
+		materials
+		{
+			material 0 "Material_#1004/metal"
+			material 1 "Material_#1004/velour"
+			material 2 "Material_#1004/affiche"
+			material 3 "Material_#1004/noir"
+			material 4 "Material_#1004/bite"
+		}
+	}
+
+	object "entree_station"
+	{
+		parent "entree_station"
+		mesh "entree_station"
+		materials
+		{
+			material 0 "entree_station/metal"
+			material 1 "entree_station/metal_or"
+			material 2 "entree_station/plan"
+			material 3 "entree_station/muret"
+			material 4 "entree_station/mur"
+			material 5 "entree_station/plafond"
+			material 6 "entree_station/sol"
+			material 7 "entree_station/nom_station"
+		}
+	}
+
+	object "feu_tricolore"
+	{
+		parent "feu_tricolore"
+		mesh "feu_tricolore"
+		materials
+		{
+			material 0 "feu_tricolore/metal"
+			material 1 "feu_tricolore/feu"
+			material 2 "feu_tricolore/pieton"
+		}
+	}
+
+	object "feu_tricolore_1"
+	{
+		parent "feu_tricolore_1"
+		mesh "feu_tricolore"
+		materials
+		{
+			material 0 "feu_tricolore/metal"
+			material 1 "feu_tricolore/feu"
+			material 2 "feu_tricolore/pieton"
+		}
+	}
+
+	object "fontaine"
+	{
+		parent "fontaine"
+		mesh "fontaine"
+		materials
+		{
+			material 0 "fontaine/pierre"
+			material 1 "fontaine/metal"
+			material 2 "fontaine/barriere"
+			material 3 "fontaine/eau"
+			material 4 "fontaine/monnaie_01"
+			material 5 "fontaine/monnaie_02"
+			material 6 "fontaine/monnaie_03"
+			material 7 "fontaine/monnaie_04"
+			material 8 "fontaine/eau_tombante"
+			material 9 "fontaine/ecume"
+			material 10 "fontaine/bronze"
+			material 11 "fontaine/metal_or"
+		}
+	}
+
+	object "fontaine_eau_tombante"
+	{
+		parent "fontaine"
+		mesh "fontaine_eau_tombante"
+		material  "fontaine/ecume"
+	}
+
+	object "grille_parc"
+	{
+		parent "ObjectRootNode"
+		mesh "grille_parc"
+		materials
+		{
+			material 0 "grille_parc/grille_parc"
+			material 1 "grille_parc/muret"
+			material 2 "grille_parc/bareaux"
+			material 3 "grille_parc/dorures"
+		}
+	}
+
+	object "horloge"
+	{
+		parent "horloge"
+		mesh "horloge"
+		material  "horloge"
+	}
+
+	object "horloge_aiguille_heures"
+	{
+		parent "horloge_aiguille_heures"
+		mesh "horloge_aiguille_heures"
+		material  "horloge_aiguilles_heures"
+	}
+
+	object "horloge_aiguille_minutes"
+	{
+		parent "horloge_aiguille_minutes"
+		mesh "horloge_aiguille_minutes"
+		material  "horloge_aiguilles_minutes"
+	}
+
+	object "horloge_aiguille_secondes"
+	{
+		parent "horloge_aiguille_secondes"
+		mesh "horloge_aiguille_secondes"
+		material  "horloge_aiguilles_secondes"
+	}
+
+	object "immeubles_parc"
+	{
+		parent "ObjectRootNode"
+		mesh "immeubles_parc"
+		materials
+		{
+			material 0 "immeubles_parc/pierre_rose"
+			material 1 "immeubles_parc/toit_vert"
+			material 2 "immeubles_parc/fenetre"
+			material 3 "immeubles_parc/grille"
+			material 4 "immeubles_parc/porte01"
+			material 5 "immeubles_parc/toit_gris"
+			material 6 "immeubles_parc/fenetre02"
+			material 7 "immeubles_parc/porte02"
+			material 8 "immeubles_parc/pierre_beige"
+			material 9 "immeubles_parc/rue"
+			material 10 "immeubles_parc/tag_01"
+			material 11 "immeubles_parc/tag_02"
+			material 12 "immeubles_parc/tag_03"
+			material 13 "immeubles_parc/tag_04"
+			material 14 "immeubles_parc/tag_05"
+			material 15 "immeubles_parc/tag_06"
+			material 16 "immeubles_parc/banderolle"
+		}
+	}
+
+	object "kiosque_park"
+	{
+		parent "kiosque_park"
+		mesh "kiosque_park"
+		materials
+		{
+			material 0 "kiosque_park/toit_kiosque"
+			material 1 "kiosque_park/bois_kiosque_01"
+			material 2 "kiosque_park/grille_fleur_kiosque"
+			material 3 "kiosque_park/sol_kiosque"
+			material 4 "kiosque_park/bois_kiosque_02"
+			material 5 "kiosque_park/fleur_kiosque"
+			material 6 "kiosque_park/light_kiosque"
+			material 7 "kiosque_park/pilier_kiosque"
+		}
+	}
+
+	object "magasins_parc"
+	{
+		parent "ObjectRootNode"
+		mesh "magasins_parc"
+		materials
+		{
+			material 0 "magasins_parc/enseigne_fashion"
+			material 1 "magasins_parc/entree_snow"
+			material 2 "magasins_parc/vitrine_snow"
+			material 3 "magasins_parc/vitrine_snow2"
+			material 4 "magasins_parc/vitrine_mode2"
+			material 5 "magasins_parc/magasin_enseigne2"
+			material 6 "magasins_parc/dab"
+			material 7 "magasins_parc/troquet_enseigne"
+			material 8 "magasins_parc/vitrine_bar"
+			material 9 "magasins_parc/tabac"
+			material 10 "magasins_parc/vitrine_homme"
+			material 11 "magasins_parc/vitrine_femme"
+			material 12 "magasins_parc/enseigne_snow"
+			material 13 "magasins_parc/enseigne_cb"
+			material 14 "magasins_parc/vetement_3"
+			material 15 "magasins_parc/vitres"
+			material 16 "magasins_parc/metal_bleu"
+			material 17 "magasins_parc/vitres"
+			material 18 "magasins_parc/black"
+			material 19 "magasins_parc/soldes"
+		}
+	}
+
+	object "panneau_enfants"
+	{
+		parent "panneau_enfants"
+		mesh "panneau_enfants"
+		materials
+		{
+			material 0 "panneau_enfants/metal"
+			material 1 "panneau_enfants/panneau_enfants"
+		}
+	}
+
+	object "panneau_mural"
+	{
+		parent "panneau_mural"
+		mesh "panneau_mural"
+		material  "panneau_mural"
+	}
+
+	object "panneau_mural_pub_01"
+	{
+		parent "panneau_mural"
+		mesh "panneau_mural_pub_01"
+		material  "panneau_mural_pub_01"
+	}
+
+	object "panneau_pub"
+	{
+		parent "panneau_pub"
+		mesh "panneau_pub"
+		material  "panneau_pub"
+	}
+
+	object "panneau_pub_pub_01"
+	{
+		parent "panneau_pub"
+		mesh "panneau_pub_pub_01"
+		material  "panneau_pub_pub_02"
+	}
+
+	object "panneau_pub_pub_02"
+	{
+		parent "panneau_pub"
+		mesh "panneau_pub_pub_02"
+		material  "panneau_pub_pub_01"
+	}
+
+	object "panneau_stationnement"
+	{
+		parent "panneau_stationnement"
+		mesh "panneau_stationnement"
+		materials
+		{
+			material 0 "panneau_stationnement/metal"
+			material 1 "panneau_stationnement/panneau_velo"
+		}
+	}
+
+	object "panneau_stationnement_1"
+	{
+		parent "panneau_stationnement_1"
+		mesh "panneau_velo"
+		materials
+		{
+			material 0 "panneau_stationnement/metal"
+			material 1 "panneau_stationnement/panneau_velo"
+		}
+	}
+
+	object "panneau_stationnement_2"
+	{
+		parent "panneau_stationnement_2"
+		mesh "panneau_velo"
+		materials
+		{
+			material 0 "panneau_stationnement/metal"
+			material 1 "panneau_stationnement/panneau_velo"
+		}
+	}
+
+	object "panneau_velo"
+	{
+		parent "panneau_velo"
+		mesh "panneau_velo"
+		materials
+		{
+			material 0 "panneau_stationnement/metal"
+			material 1 "panneau_stationnement/panneau_velo"
+		}
+	}
+
+	object "panneau_velo_1"
+	{
+		parent "panneau_velo_1"
+		mesh "panneau_velo"
+		materials
+		{
+			material 0 "panneau_stationnement/metal"
+			material 1 "panneau_stationnement/panneau_velo"
+		}
+	}
+
+	object "piaf_ciel"
+	{
+		parent "piaf_ciel"
+		mesh "piaf_ciel"
+		material  "piaf_ciel"
+	}
+
+	object "plasma"
+	{
+		parent "plasma"
+		mesh "plasma"
+		material  "plasma/plasma"
+	}
+
+	object "plasma_pub"
+	{
+		parent "plasma"
+		mesh "plasma_pub"
+		material  "plasma_pub"
+	}
+
+	object "plot_chantier_1"
+	{
+		parent "plot_chantier_1"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_10"
+	{
+		parent "plot_chantier_10"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_11"
+	{
+		parent "plot_chantier_11"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_12_1"
+	{
+		parent "plot_chantier_12_1"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_13"
+	{
+		parent "plot_chantier_13"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_13_1"
+	{
+		parent "plot_chantier_13_1"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_13_2"
+	{
+		parent "plot_chantier_13_2"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_16"
+	{
+		parent "plot_chantier_16"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_3"
+	{
+		parent "plot_chantier_3"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_4"
+	{
+		parent "plot_chantier_4"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_5"
+	{
+		parent "plot_chantier_5"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_6"
+	{
+		parent "plot_chantier_6"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_7"
+	{
+		parent "plot_chantier_7"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_8"
+	{
+		parent "plot_chantier_8"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "plot_chantier_9"
+	{
+		parent "plot_chantier_9"
+		mesh "plot_chantier"
+		material  "plot_chantier"
+	}
+
+	object "poisson"
+	{
+		parent "poisson"
+		mesh "poisson"
+		material  "poisson"
+	}
+
+	object "poisson_1"
+	{
+		parent "poisson_1"
+		mesh "poisson"
+		material  "poisson"
+	}
+
+	object "poisson_2"
+	{
+		parent "poisson_2"
+		mesh "poisson"
+		material  "poisson"
+	}
+
+	object "poisson_3"
+	{
+		parent "poisson_3"
+		mesh "poisson"
+		material  "poisson"
+	}
+
+	object "poubelle"
+	{
+		parent "poubelle"
+		mesh "poubelle"
+		materials
+		{
+			material 0 "poubelle/plastique_gris"
+			material 1 "poubelle/plastique_vert"
+			material 2 "poubelle/plastique_noir"
+		}
+	}
+
+	object "poubelle_1"
+	{
+		parent "poubelle_1"
+		mesh "poubelle"
+		materials
+		{
+			material 0 "poubelle/plastique_gris"
+			material 1 "poubelle/plastique_vert"
+			material 2 "poubelle/plastique_noir"
+		}
+	}
+
+	object "poubelle_2"
+	{
+		parent "poubelle_2"
+		mesh "poubelle"
+		materials
+		{
+			material 0 "poubelle/plastique_gris"
+			material 1 "poubelle/plastique_vert"
+			material 2 "poubelle/plastique_noir"
+		}
+	}
+
+	object "poubelle_3"
+	{
+		parent "poubelle_3"
+		mesh "poubelle"
+		materials
+		{
+			material 0 "poubelle/plastique_gris"
+			material 1 "poubelle/plastique_vert"
+			material 2 "poubelle/plastique_noir"
+		}
+	}
+
+	object "reverbere"
+	{
+		parent "reverbere"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_11"
+	{
+		parent "reverbere_11"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_11_1"
+	{
+		parent "reverbere_11_1"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_11_2"
+	{
+		parent "reverbere_11_2"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_11_3"
+	{
+		parent "reverbere_11_3"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_11_4"
+	{
+		parent "reverbere_11_4"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_13"
+	{
+		parent "reverbere_13"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_15"
+	{
+		parent "reverbere_15"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_16"
+	{
+		parent "reverbere_16"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_19"
+	{
+		parent "reverbere_19"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_21"
+	{
+		parent "reverbere_21"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_4"
+	{
+		parent "reverbere_4"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "reverbere_8"
+	{
+		parent "reverbere_8"
+		mesh "reverbere"
+		materials
+		{
+			material 0 "reverbere/metal"
+			material 1 "reverbere/lumiere"
+		}
+	}
+
+	object "saule_pleureur_1"
+	{
+		parent "saule_pleureur_1"
+		mesh "saule_pleureur"
+		materials
+		{
+			material 0 "saule_pleureur/tronc"
+			material 1 "saule_pleureur/feuilles"
+		}
+	}
+
+	object "saule_pleureur_2"
+	{
+		parent "saule_pleureur_2"
+		mesh "saule_pleureur"
+		materials
+		{
+			material 0 "saule_pleureur/tronc"
+			material 1 "saule_pleureur/feuilles"
+		}
+	}
+
+	object "skycraper"
+	{
+		parent "skycraper"
+		mesh "skycraper"
+		material  "skycraper"
+	}
+
+	object "sol_parc"
+	{
+		parent "ObjectRootNode"
+		mesh "sol_parc"
+		materials
+		{
+			material 0 "sol_parc/route"
+			material 1 "sol_parc/rigole"
+			material 2 "sol_parc/trottoir"
+			material 3 "sol_parc/sol_sable"
+			material 4 "sol_parc/sol_herbe"
+			material 5 "sol_parc/passage_pieton"
+			material 6 "sol_parc/arret_bus"
+			material 7 "sol_parc/sable_canalisations"
+			material 8 "sol_parc/egout"
+			material 9 "sol_parc/egout_ouvert"
+			material 10 "sol_parc/metal_cana"
+			material 11 "sol_parc/bord_herbe"
+			material 12 "sol_parc/terre"
+		}
+	}
+
+	object "table_echec"
+	{
+		parent "table_echec"
+		mesh "table_echec"
+		materials
+		{
+			material 0 "table_echec/echiquier_table"
+			material 1 "table_echec/echiquier_echec"
+			material 2 "table_echec/rainure_echiquier"
+		}
+	}
+
+	object "trigger_1"
+	{
+		parent "trigger_1"
+		mesh "trigger"
+		material  "trigger"
+	}
+
+	object "trigger_2"
+	{
+		parent "trigger_2"
+		mesh "trigger"
+		material  "trigger"
+	}
+
+	object "trigger_3"
+	{
+		parent "trigger_3"
+		mesh "trigger"
+		material  "trigger"
+	}
+
+	object "trigger_4"
+	{
+		parent "trigger_4"
+		mesh "trigger"
+		material  "trigger"
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "Parc"
+		camera "MainCamera"
+		size 1920 1080
+		format argb32
+		tone_mapping "linear"
+
+		hdr_config
+		{
+			exposure 1
+			gamma 2.2
+		}
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			intensity 1
+			radius 50
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}

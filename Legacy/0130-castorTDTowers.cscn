@@ -1,0 +1,379 @@
+materials legacy
+
+scene "MyScene"
+{
+	background_colour 0.5 0.5 0.5 1.0
+	ambient_light 0.2 0.2 0.2
+
+	material "splash_accessories"
+	{
+		pass
+		{
+			diffuse 0.640000 0.406873 0.176735 0.00392157
+			specular 0.000000 0.000000 0.000000 0.00392157
+			ambient 0
+			emissive 0
+			shininess 9.60784
+			two_sided false
+			colour_blend_mode none
+			alpha_blend_mode none
+
+			texture_unit
+			{
+				channel diffuse
+				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Diffuse.png"
+			}
+
+			texture_unit
+			{
+				channel specular
+				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss.png" rgb
+			}
+
+			texture_unit
+			{
+				channel shininess
+				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss.png" a
+			}
+
+			texture_unit
+			{
+				channel normal
+				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Normal.png"
+			}
+		}
+	}
+
+	material "splash_body"
+	{
+		pass
+		{
+			diffuse 0.400000 0.400000 0.400000 0.00392157
+			specular 0.000000 0.000000 0.000000 0.00392157
+			ambient 0
+			emissive 0
+			shininess 9.41177
+			two_sided false
+			colour_blend_mode none
+			alpha_blend_mode none
+
+			texture_unit
+			{
+				channel diffuse
+				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Diffuse_0.png"
+			}
+
+			texture_unit
+			{
+				channel specular
+				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss_0.png" rgb
+			}
+
+			texture_unit
+			{
+				channel shininess
+				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss_0.png" a
+			}
+
+			texture_unit
+			{
+				channel normal
+				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Normal_0.png"
+			}
+		}
+	}
+
+	material "inventor_accessories"
+	{
+		pass
+		{
+			diffuse 0.640000 0.406873 0.176735 0.00392157
+			specular 0.000000 0.000000 0.000000 0.00392157
+			ambient 0
+			emissive 0
+			shininess 9.60784
+			two_sided false
+			colour_blend_mode none
+			alpha_blend_mode none
+
+			texture_unit
+			{
+				channel diffuse
+				image "Textures/CastorTD/inventor_tower_tower1_inventor_Diffuse.png"
+			}
+
+			texture_unit
+			{
+				channel specular
+				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss.png" rgb
+			}
+
+			texture_unit
+			{
+				channel shininess
+				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss.png" a
+			}
+
+			texture_unit
+			{
+				channel normal
+				image "Textures/CastorTD/inventor_tower_tower1_inventor_Normal.png"
+			}
+		}
+	}
+
+	material "inventor_body"
+	{
+		pass
+		{
+			diffuse 0.400000 0.400000 0.400000 0.00392157
+			specular 0.000000 0.000000 0.000000 0.00392157
+			ambient 0
+			emissive 0
+			shininess 9.41177
+			two_sided false
+			colour_blend_mode none
+			alpha_blend_mode none
+
+			texture_unit
+			{
+				channel diffuse
+				image "Textures/CastorTD/inventor_tower_tower1_inventor_Diffuse_0.png"
+			}
+
+			texture_unit
+			{
+				channel specular
+				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss_0.png" rgb
+			}
+
+			texture_unit
+			{
+				channel shininess
+				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss_0.png" a
+			}
+
+			texture_unit
+			{
+				channel normal
+				image "Textures/CastorTD/inventor_tower_tower1_inventor_Normal_0.png"
+			}
+		}
+	}
+
+	material "short_range_accessories"
+	{
+		pass
+		{
+			diffuse 0.640000 0.406873 0.176735 0.00392157
+			specular 0.000000 0.000000 0.000000 0.00392157
+			ambient 0
+			emissive 0
+			shininess 9.60784
+			two_sided false
+			colour_blend_mode none
+			alpha_blend_mode none
+
+			texture_unit
+			{
+				channel diffuse
+				image "Textures/CastorTD/short_range_tower_tower1_quick_short_Diffuse_0.png"
+			}
+
+			texture_unit
+			{
+				channel specular
+				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss_0.png" rgb
+			}
+
+			texture_unit
+			{
+				channel shininess
+				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss_0.png" a
+			}
+
+			texture_unit
+			{
+				channel normal
+				image "Textures/CastorTD/short_range_tower_tower1_quick_short_Normal_0.png"
+			}
+		}
+	}
+
+	material "short_range_body"
+	{
+		pass
+		{
+			diffuse 0.400000 0.400000 0.400000 0.00392157
+			specular 0.000000 0.000000 0.000000 0.00392157
+			ambient 0
+			emissive 0
+			shininess 9.41177
+			two_sided false
+			colour_blend_mode none
+			alpha_blend_mode none
+
+			texture_unit
+			{
+				channel diffuse
+				image "Textures/CastorTD/short_range_tower_tower1_quick_short_Diffuse.png"
+			}
+
+			texture_unit
+			{
+				channel specular
+				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss.png" rgb
+			}
+
+			texture_unit
+			{
+				channel shininess
+				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss.png" a
+			}
+
+			texture_unit
+			{
+				channel normal
+				image "Textures/CastorTD/short_range_tower_tower1_quick_short_Normal.png"
+			}
+		}
+	}
+
+	scene_node "LightNode"
+	{
+		orientation -1 0 0 155.727
+	}
+
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	scene_node "HeavySplash"
+	{
+		position -200 0 0
+	}
+	object "HeavySplash"
+	{
+		parent "HeavySplash"
+		mesh "HeavySplash"
+		{
+			import "Meshes/CastorTD/tower1_heavy_splash.fbx"
+		}
+
+		materials
+		{
+			material 0 "splash_accessories"
+			material 1 "splash_accessories"
+			material 2 "splash_body"
+		}
+	}
+	animated_object_group "HeavySplash"
+	{
+		animated_object "HeavySplash"
+
+		animation "armature_short_range.1|attack"
+		{
+			looped true
+		}
+
+		start_animation "armature_short_range.1|attack"
+	}
+
+	scene_node "Inventor"
+	{
+		position 0 0 0
+	}
+	object "Inventor"
+	{
+		parent "Inventor"
+		mesh "Inventor"
+		{
+			import "Meshes/CastorTD/tower1_inventor.fbx"
+		}
+
+		materials
+		{
+			material 0 "inventor_accessories"
+			material 1 "inventor_accessories"
+			material 2 "inventor_body"
+		}
+	}
+	animated_object_group "Inventor"
+	{
+		animated_object "Inventor"
+
+		animation "armature_inventor.1|Action"
+		{
+			looped true
+		}
+
+		start_animation "armature_inventor.1|Action"
+	}
+
+	scene_node "ShortRange"
+	{
+		position 200 0 0
+	}
+	object "ShortRange"
+	{
+		parent "ShortRange"
+		mesh "ShortRange"
+		{
+			import "Meshes/CastorTD/tower1_quick_short.fbx"
+		}
+
+		materials
+		{
+			material 0 "short_range_accessories"
+			material 1 "short_range_accessories"
+			material 2 "short_range_body"
+		}
+	}
+	animated_object_group "ShortRange"
+	{
+		animated_object "ShortRange"
+
+		animation "armature_short_range.1|attack"
+		{
+			looped true
+		}
+
+		start_animation "armature_short_range.1|attack"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 180
+		position 0.0 0.0 1000.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "MyWindow"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "MyScene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

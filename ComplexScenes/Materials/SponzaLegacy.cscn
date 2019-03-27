@@ -1,0 +1,625 @@
+
+// Samplers
+
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod 0
+	max_lod 5
+	lod_bias 0
+	max_anisotropy 1
+}
+
+// Materials
+
+material "Material__25"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/lion.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel normal
+			image "Textures/SponzaLegacy/lion_bump.png" rgb
+		}
+	}
+}
+
+material "Material__298"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/background.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel normal
+			image "Textures/SponzaLegacy/background_bump.png" rgb
+		}
+	}
+}
+
+material "Material__47"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+	}
+}
+
+material "Material__57"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/vase_plant.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel opacity
+			image "Textures/SponzaLegacy/vase_plant_mask.png" a
+		}
+	}
+}
+
+material "arch"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_arch_diff.png" rgb
+		}
+	}
+}
+
+material "bricks"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0100000 0.0100000 0.0100000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel specular
+			image "Textures/SponzaLegacy/spnza_bricks_a_spec.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/spnza_bricks_a_diff.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel normal
+			image "Textures/SponzaLegacy/spnza_bricks_a_bump.png" rgb
+		}
+	}
+}
+
+material "ceiling"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_ceiling_a_diff.png" rgb
+		}
+	}
+}
+
+material "chain"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.0100000 0.0100000 0.0100000
+		ambient 0
+		shininess 10
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SponzaLegacy/chain_texture.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SponzaLegacy/chain_texture_mask.png" a
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 9
+			channel normal
+			image "Textures/SponzaLegacy/chain_texture_bump.png" rgb
+		}
+	}
+}
+
+material "column_a"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_column_a_diff.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel normal
+			image "Textures/SponzaLegacy/sponza_column_a_bump.png" rgb
+		}
+	}
+}
+
+material "column_b"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_column_b_diff.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel normal
+			image "Textures/SponzaLegacy/sponza_column_b_bump.png" rgb
+		}
+	}
+}
+
+material "column_c"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_column_c_diff.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel normal
+			image "Textures/SponzaLegacy/sponza_column_c_bump.png" rgb
+		}
+	}
+}
+
+material "details"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_details_diff.png" rgb
+		}
+	}
+}
+
+material "fabric_a"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 0
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_fabric_diff.png" rgb
+		}
+	}
+}
+
+material "fabric_c"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 0
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 12
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_curtain_diff.png" rgb
+		}
+	}
+}
+
+material "fabric_d"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 0
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_fabric_blue_diff.png" rgb
+		}
+	}
+}
+
+material "fabric_e"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 0
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_fabric_green_diff.png" rgb
+		}
+	}
+}
+
+material "fabric_f"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 0
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 12
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_curtain_green_diff.png" rgb
+		}
+	}
+}
+
+material "fabric_g"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 0
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 12
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_curtain_blue_diff.png" rgb
+		}
+	}
+}
+
+material "flagpole"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_flagpole_diff.png" rgb
+		}
+	}
+}
+
+material "floor"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_floor_a_diff.png" rgb
+		}
+	}
+}
+
+material "leaf"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_thorn_diff.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			channel opacity
+			image "Textures/SponzaLegacy/sponza_thorn_mask.png" a
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 9
+			channel normal
+			image "Textures/SponzaLegacy/sponza_thorn_bump.png" rgb
+		}
+	}
+}
+
+material "roof"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/sponza_roof_diff.png" rgb
+		}
+	}
+}
+
+material "vase"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/vase_dif.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel normal
+			image "Textures/SponzaLegacy/vase_bump.png" rgb
+		}
+	}
+}
+
+material "vase_hanging"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/vase_hanging.png" rgb
+		}
+	}
+}
+
+material "vase_round"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SponzaLegacy/vase_round.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			channel normal
+			image "Textures/SponzaLegacy/vase_round_bump.png" rgb
+		}
+	}
+}

@@ -1,0 +1,144 @@
+ambient_light 0.5 0.5 0.5
+
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	min_lod 0.0
+	max_lod 5.0
+	lod_bias 0.0
+	u_wrap_mode clamp_to_border
+	v_wrap_mode clamp_to_border
+	w_wrap_mode clamp_to_border
+	border_colour float_opaque_black
+}
+
+material "MatBody"
+{
+	pass
+	{
+		shininess 128.0
+		alpha_func greater 0.5
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			levels_count 6
+			image "Textures/Nyra/body-diffuse.jpg" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/body-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/body-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel specular
+			levels_count 6
+			image "Textures/Nyra/body-specular.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "MatHead"
+{
+	pass
+	{
+		shininess 128.0
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			levels_count 6
+			image "Textures/Nyra/head-diffuse.jpg" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel specular
+			levels_count 6
+			image "Textures/Nyra/head-specular.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "cornea"
+{
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000 0.00392157
+		specular 1.00000 1.00000 1.00000 0.00392157
+		shininess 128.0
+		alpha 0.119661
+		alpha_blend_mode interpolative
+		two_sided true
+	}
+}
+
+material "dx11Shader6"
+{
+	pass
+	{
+		shininess 128.0
+		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			levels_count 6
+			image "Textures/Nyra/head-diffuse.jpg" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/head-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel specular
+			levels_count 6
+			image "Textures/Nyra/head-specular.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}

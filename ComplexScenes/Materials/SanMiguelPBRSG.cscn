@@ -1,0 +1,6387 @@
+
+// Samplers
+
+sampler "TriLinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod -1000
+	max_lod 1000
+	lod_bias 0
+	max_anisotropy 1
+}
+
+// Materials
+
+material "CafeChair_Metal"
+{
+	pass
+	{
+		diffuse 0.480000 0.480000 0.480000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0.1
+	}
+}
+
+material "material_0"
+{
+	pass
+	{
+		diffuse 0.100000 0.100000 0.100000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.9
+		alpha 0.2
+		alpha_blend_mode interpolative
+	}
+}
+
+material "material_032"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/individual_b.png"
+		}
+	}
+}
+
+material "material_033"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.196078 0.196078 0.196078
+		glossiness 0.1
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/cenicero.png"
+		}
+	}
+}
+
+material "material_034"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.196078 0.196078 0.196078
+		glossiness 0.1
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/ceramic_tile.png"
+		}
+	}
+}
+
+material "material_035"
+{
+	pass
+	{
+		diffuse 0.776471 0.756863 0.721569
+		specular 0.0128628 0.0128628 0.0128628
+		glossiness 0
+	}
+}
+
+material "material_036"
+{
+	pass
+	{
+		diffuse 0.121569 0.113726 0.101961
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+	}
+}
+
+material "material_038"
+{
+	pass
+	{
+		diffuse 0.0862740 0.0823530 0.0745100
+		specular 0.449019 0.403922 0.354902
+		glossiness 0.1
+	}
+}
+
+material "material_039"
+{
+	pass
+	{
+		diffuse 0.776471 0.749020 0.709804
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel normal
+			image "Textures/SanMiguel/N_PITTED.png"
+		}
+	}
+}
+
+material "material_040"
+{
+	pass
+	{
+		diffuse 0.301950 0.875973 0.726676
+		specular 0.301950 0.875973 0.726676
+		glossiness 0.1
+	}
+}
+
+material "material_041"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		glossiness 0.9
+		alpha 0.2
+		alpha_blend_mode interpolative
+	}
+}
+
+material "material_042"
+{
+	pass
+	{
+		diffuse 0.142338 0.462081 0.235328
+		specular 0.142338 0.462081 0.235328
+		glossiness 0.1
+	}
+}
+
+material "material_1"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/jardinera_1_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_jardinera_1_displacement_2.png"
+		}
+	}
+}
+
+material "material_10"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/losa.png"
+		}
+	}
+}
+
+material "material_11"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/moldura2piso_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_moldura2piso_bump.png"
+		}
+	}
+}
+
+material "material_12"
+{
+	pass
+	{
+		diffuse 0.750000 0.750000 0.750000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+	}
+}
+
+material "material_123"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00658824 0.00658824 0.00658824
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/Forja_Macetas.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel normal
+			image "Textures/SanMiguel/N_Forja_Macetas_bump.png"
+		}
+	}
+}
+
+material "material_124"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Maceta_A_Color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_Maceta_A_Bump.png"
+		}
+	}
+}
+
+material "material_125"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Maceta_A2_Color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_Maceta_A_Bump.png"
+		}
+	}
+}
+
+material "material_126"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Maceta_B_Color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_Maceta_B_Bump.png"
+		}
+	}
+}
+
+material "material_127"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Maceta_B2_Color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_Maceta_B_Bump.png"
+		}
+	}
+}
+
+material "material_128"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Maceta_C_Color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_Maceta_C_Bump.png"
+		}
+	}
+}
+
+material "material_129"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Maceta_C2_Color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_Maceta_C_Bump.png"
+		}
+	}
+}
+
+material "material_13"
+{
+	pass
+	{
+		diffuse 0.549020 0.549020 0.549020
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+	}
+}
+
+material "material_130"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Maceta_D2_Color_0.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_Maceta_D_Bump_0.png"
+		}
+	}
+}
+
+material "material_131"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/dracaena_fragrans_leaf.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/dracaena_fragrans_leaf.png"
+		}
+	}
+}
+
+material "material_132"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/BS01brk.png"
+		}
+	}
+}
+
+material "material_133"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/BS01lef.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/BS01lef.png"
+		}
+	}
+}
+
+material "material_134"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/BS01flo1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/BS01flo1.png"
+		}
+	}
+}
+
+material "material_135"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/BS01flo2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/BS01flo2.png"
+		}
+	}
+}
+
+material "material_136"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/aglaonema_leaf.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/aglaonema_leaf.png"
+		}
+	}
+}
+
+material "material_137"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/aglaonema_bark.png"
+		}
+	}
+}
+
+material "material_138"
+{
+	pass
+	{
+		diffuse 0.147313 0.165899 0.988525
+		specular 0.00589252 0.00663596 0.0395410
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL13pet2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL13pet2.png"
+		}
+	}
+}
+
+material "material_139"
+{
+	pass
+	{
+		diffuse 0.445692 0.119083 0.00466900
+		specular 0.0178277 0.00476332 0.000186760
+		glossiness 0
+	}
+}
+
+material "material_14"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/piso_rustico.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel specular
+			image "Textures/SanMiguel/piso_rustico_Spec.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_piso_rustico_displace2.png"
+		}
+	}
+}
+
+material "material_140"
+{
+	pass
+	{
+		diffuse 0.00891100 0.377880 0.531663
+		specular 0.000356440 0.0151152 0.0212665
+		glossiness 0
+	}
+}
+
+material "material_141"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/FL16stm.png"
+		}
+	}
+}
+
+material "material_142"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL16lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL16lef1.png"
+		}
+	}
+}
+
+material "material_143"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL16pet1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL16pet1.png"
+		}
+	}
+}
+
+material "material_144"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL16lef3.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL16lef3.png"
+		}
+	}
+}
+
+material "material_145"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/TR14lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/TR14lef1.png"
+		}
+	}
+}
+
+material "material_146"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/ampelopsis_brevipedunculata_bark.png"
+		}
+	}
+}
+
+material "material_147"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/HP19stm1.png"
+		}
+	}
+}
+
+material "material_148"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/HP19stm2.png"
+		}
+	}
+}
+
+material "material_149"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP19lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/HP19lef2.png"
+		}
+	}
+}
+
+material "material_15"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00454904 0.00454904 0.00454904
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/madera_triplay_01.png"
+		}
+	}
+}
+
+material "material_150"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP19lef3.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/HP19lef3.png"
+		}
+	}
+}
+
+material "material_151"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP19lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/HP19lef2.png"
+		}
+	}
+}
+
+material "material_152"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL15lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL15lef1.png"
+		}
+	}
+}
+
+material "material_153"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL15cnt2.png"
+		}
+	}
+}
+
+material "material_154"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/FL15stm.png"
+		}
+	}
+}
+
+material "material_155"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL15pet2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL15pet2.png"
+		}
+	}
+}
+
+material "material_156"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL15lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL15lef2.png"
+		}
+	}
+}
+
+material "material_157"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL15cnt1.png"
+		}
+	}
+}
+
+material "material_158"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL15lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL15lef1.png"
+		}
+	}
+}
+
+material "material_159"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL15lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL15lef2.png"
+		}
+	}
+}
+
+material "material_16"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/rust_a1.png"
+		}
+	}
+}
+
+material "material_160"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL15pet2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL15pet2.png"
+		}
+	}
+}
+
+material "material_161"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/HP07lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel opacity
+			image "Textures/SanMiguel/HP07lef1.png"
+		}
+	}
+}
+
+material "material_162"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP07stm1.png"
+		}
+	}
+}
+
+material "material_163"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/HP07lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel opacity
+			image "Textures/SanMiguel/HP07lef2.png"
+		}
+	}
+}
+
+material "material_164"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP07stm2.png"
+		}
+	}
+}
+
+material "material_165"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL11pet1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL11pet1.png"
+		}
+	}
+}
+
+material "material_166"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL11pet2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL11pet2.png"
+		}
+	}
+}
+
+material "material_167"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL11sta.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL11sta.png"
+		}
+	}
+}
+
+material "material_168"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL11pet3.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL11pet3.png"
+		}
+	}
+}
+
+material "material_169"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL11pet4.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL11pet4.png"
+		}
+	}
+}
+
+material "material_17"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/muros_a.png"
+		}
+	}
+}
+
+material "material_170"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL11lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL11lef1.png"
+		}
+	}
+}
+
+material "material_171"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL11lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL11lef2.png"
+		}
+	}
+}
+
+material "material_172"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL11stm.png"
+		}
+	}
+}
+
+material "material_173"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL11pet1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL11pet1.png"
+		}
+	}
+}
+
+material "material_174"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL11pet2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL11pet2.png"
+		}
+	}
+}
+
+material "material_175"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL11pet3.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL11pet3.png"
+		}
+	}
+}
+
+material "material_176"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL11pet4.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL11pet4.png"
+		}
+	}
+}
+
+material "material_177"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL11lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL11lef1.png"
+		}
+	}
+}
+
+material "material_178"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP17lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/HP17lef1.png"
+		}
+	}
+}
+
+material "material_179"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/HP17lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/HP17lef2.png"
+		}
+	}
+}
+
+material "material_18"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/muros_b1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_muros_b1.png"
+		}
+	}
+}
+
+material "material_180"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/HP17stm.png"
+		}
+	}
+}
+
+material "material_181"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP11stm.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_HP11stm.png"
+		}
+	}
+}
+
+material "material_182"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00470588 0.00470588 0.00470588
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP11lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/HP11lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_hp13lef1_bump.png"
+		}
+	}
+}
+
+material "material_183"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL13pet1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL13pet1.png"
+		}
+	}
+}
+
+material "material_184"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL13pet2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL13pet2.png"
+		}
+	}
+}
+
+material "material_185"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL13pet3.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL13pet3.png"
+		}
+	}
+}
+
+material "material_186"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/FL13stm.png"
+		}
+	}
+}
+
+material "material_187"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL13lef5.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL13lef5.png"
+		}
+	}
+}
+
+material "material_188"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL13lef4.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL13lef4.png"
+		}
+	}
+}
+
+material "material_189"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL13lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL13lef1.png"
+		}
+	}
+}
+
+material "material_19"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/muros_c2.png"
+		}
+	}
+}
+
+material "material_190"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/elaeagnus_umbellate_bark.png"
+		}
+	}
+}
+
+material "material_191"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/impatiens_newguinea_hybrids_petal.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel opacity
+			image "Textures/SanMiguel/impatiens_newguinea_hybrids_petal.png"
+		}
+	}
+}
+
+material "material_192"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/citrus_limon_leaf.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/citrus_limon_leaf.png"
+		}
+	}
+}
+
+material "material_193"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP13stm2.png"
+		}
+	}
+}
+
+material "material_194"
+{
+	pass
+	{
+		diffuse 0.571184 0.601764 0.607166
+		specular 0.0228474 0.0240706 0.0242866
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL13lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL13lef1.png"
+		}
+	}
+}
+
+material "material_195"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP13lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/HP13lef2.png"
+		}
+	}
+}
+
+material "material_196"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP13stm2.png"
+		}
+	}
+}
+
+material "material_197"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP13lef3.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/HP13lef3.png"
+		}
+	}
+}
+
+material "material_198"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/BS04lef.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/BS04lef.png"
+		}
+	}
+}
+
+material "material_199"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/BS04flo.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/BS04flo.png"
+		}
+	}
+}
+
+material "material_2"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/cantera_naranja_liso.png"
+		}
+	}
+}
+
+material "material_20"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/muros_f.png"
+		}
+	}
+}
+
+material "material_200"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/BS04brk.png"
+		}
+	}
+}
+
+material "material_201"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL12lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL12lef1.png"
+		}
+	}
+}
+
+material "material_202"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL12pet2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL12pet2.png"
+		}
+	}
+}
+
+material "material_203"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/FL12pis1.png"
+		}
+	}
+}
+
+material "material_204"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL12sta1.png"
+		}
+	}
+}
+
+material "material_205"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/FL12stm.png"
+		}
+	}
+}
+
+material "material_206"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/FL12pis1.png"
+		}
+	}
+}
+
+material "material_207"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL12pet1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL12pet1.png"
+		}
+	}
+}
+
+material "material_208"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/FL12stm.png"
+		}
+	}
+}
+
+material "material_209"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/HP01stm1.png"
+		}
+	}
+}
+
+material "material_21"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/muros_e.png"
+		}
+	}
+}
+
+material "material_210"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP01stm2.png"
+		}
+	}
+}
+
+material "material_211"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/HP01stm1.png"
+		}
+	}
+}
+
+material "material_212"
+{
+	pass
+	{
+		diffuse 0.341000 0.397200 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL16pet1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL16pet1.png"
+		}
+	}
+}
+
+material "material_213"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/HP01stm1.png"
+		}
+	}
+}
+
+material "material_214"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP01stm2.png"
+		}
+	}
+}
+
+material "material_215"
+{
+	pass
+	{
+		diffuse 0.858800 0.803900 0.141200
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL17lef6.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL17lef6.png"
+		}
+	}
+}
+
+material "material_216"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/HP01lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/HP01lef2.png"
+		}
+	}
+}
+
+material "material_217"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP01lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/HP01lef1.png"
+		}
+	}
+}
+
+material "material_218"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/HP01pet3.png"
+		}
+	}
+}
+
+material "material_219"
+{
+	pass
+	{
+		diffuse 0.0549100 0.151900 0.0523500
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+	}
+}
+
+material "material_22"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/muros_d.png"
+		}
+	}
+}
+
+material "material_220"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL04lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL04lef1.png"
+		}
+	}
+}
+
+material "material_221"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL04lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL04lef2.png"
+		}
+	}
+}
+
+material "material_222"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL04pet1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL04pet1.png"
+		}
+	}
+}
+
+material "material_223"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL04cnt2.png"
+		}
+	}
+}
+
+material "material_224"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/FL04cnt1.png"
+		}
+	}
+}
+
+material "material_225"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/FL04stm.png"
+		}
+	}
+}
+
+material "material_226"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/TR02lef5.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/TR02lef5.png"
+		}
+	}
+}
+
+material "material_227"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/quercus_rubra_bark.png"
+		}
+	}
+}
+
+material "material_228"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL19pe13.png"
+		}
+	}
+}
+
+material "material_229"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL19pe16.png"
+		}
+	}
+}
+
+material "material_23"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/muros_g.png"
+		}
+	}
+}
+
+material "material_230"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL19pe14.png"
+		}
+	}
+}
+
+material "material_231"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL19pe15.png"
+		}
+	}
+}
+
+material "material_232"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL19lef4.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL19lef4.png"
+		}
+	}
+}
+
+material "material_233"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL19lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL19lef2.png"
+		}
+	}
+}
+
+material "material_234"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL19lef3.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL19lef3.png"
+		}
+	}
+}
+
+material "material_235"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/FL19stm.png"
+		}
+	}
+}
+
+material "material_236"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/HP04lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/HP04lef2.png"
+		}
+	}
+}
+
+material "material_237"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/zebrina_pendula_bark.png"
+		}
+	}
+}
+
+material "material_238"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/BL05lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel opacity
+			image "Textures/SanMiguel/BL05lef2.png"
+		}
+	}
+}
+
+material "material_239"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/hypoestes_phyllostachya_bark.png"
+		}
+	}
+}
+
+material "material_24"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/muros_h.png"
+		}
+	}
+}
+
+material "material_240"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL29cnt1.png"
+		}
+	}
+}
+
+material "material_241"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL29cnt2.png"
+		}
+	}
+}
+
+material "material_242"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL29lef.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL29lef.png"
+		}
+	}
+}
+
+material "material_243"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/FL29twg.png"
+		}
+	}
+}
+
+material "material_244"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL29pet1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL29pet1.png"
+		}
+	}
+}
+
+material "material_245"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL29pet2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL29pet2.png"
+		}
+	}
+}
+
+material "material_246"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL29stm1.png"
+		}
+	}
+}
+
+material "material_247"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/FL29twg.png"
+		}
+	}
+}
+
+material "material_248"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/FL29stm2.png"
+		}
+	}
+}
+
+material "material_249"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL29lef.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL29lef.png"
+		}
+	}
+}
+
+material "material_25"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/muros_l.png"
+		}
+	}
+}
+
+material "material_250"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL29pet2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL29pet2.png"
+		}
+	}
+}
+
+material "material_251"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL17lef1.png"
+		}
+	}
+}
+
+material "material_252"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL17lef2.png"
+		}
+	}
+}
+
+material "material_253"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17pet5.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL17pet5.png"
+		}
+	}
+}
+
+material "material_254"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17stm.png"
+		}
+	}
+}
+
+material "material_255"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL17lef6.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL17lef6.png"
+		}
+	}
+}
+
+material "material_256"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17cnt.png"
+		}
+	}
+}
+
+material "material_257"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17lef3.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL17lef3.png"
+		}
+	}
+}
+
+material "material_258"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17pet1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL17pet1.png"
+		}
+	}
+}
+
+material "material_259"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17stm.png"
+		}
+	}
+}
+
+material "material_26"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/muros_j.png"
+		}
+	}
+}
+
+material "material_260"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17cnt.png"
+		}
+	}
+}
+
+material "material_261"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/FL17lef5.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/FL17lef5.png"
+		}
+	}
+}
+
+material "material_262"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17lef2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL17lef2.png"
+		}
+	}
+}
+
+material "material_263"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL17pet2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL17pet2.png"
+		}
+	}
+}
+
+material "material_264"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/FL03lef1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/FL03lef1.png"
+		}
+	}
+}
+
+material "material_265"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/fittonia_verschaffeltii_bark.png"
+		}
+	}
+}
+
+material "material_266"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/EU15lef.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel opacity
+			image "Textures/SanMiguel/EU15lef.png"
+		}
+	}
+}
+
+material "material_267"
+{
+	pass
+	{
+		diffuse 0.480000 0.480000 0.480000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0.1
+	}
+}
+
+material "material_268"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Fierro_A.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel specular
+			image "Textures/SanMiguel/Fierro_A_Bump.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_Fierro_A_Bump.png"
+		}
+	}
+}
+
+material "material_269"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00313724 0.00313724 0.00313724
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/silla_d_piel.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_silla_d_piel_bump.png"
+		}
+	}
+}
+
+material "material_27"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/muros_l.png"
+		}
+	}
+}
+
+material "material_270"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0480000 0.0480000 0.0480000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/WOOD08.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_WOOD08_Bump.png"
+		}
+	}
+}
+
+material "material_271"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0487342 0.0487342 0.0487342
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/WOOD08.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_WOOD08_Bump.png"
+		}
+	}
+}
+
+material "material_272"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/tapa_talabera.png"
+		}
+	}
+}
+
+material "material_273"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0481013 0.0481013 0.0481013
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/WOOD08.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_WOOD08_Bump.png"
+		}
+	}
+}
+
+material "material_274"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/tela_mesa_d.png"
+		}
+	}
+}
+
+material "material_275"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/tela_mesa_b.png"
+		}
+	}
+}
+
+material "material_276"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0486274 0.0486274 0.0486274
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/WOOD08.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_WOOD08_Bump.png"
+		}
+	}
+}
+
+material "material_277"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Finishes.Flooring.Carpet.Loop.5.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_Finishes.Flooring.Carpet.Loop.5.png"
+		}
+	}
+}
+
+material "material_278"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/BWK_1024.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel specular
+			image "Textures/SanMiguel/bwk_1024_Spec2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_bwk_1024_Bump.png"
+		}
+	}
+}
+
+material "material_279"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/tela_blanca.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_tela_blanca.png"
+		}
+	}
+}
+
+material "material_28"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/muros_m.png"
+		}
+	}
+}
+
+material "material_280"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0800000 0.0800000 0.0800000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Fierro_A.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_Fierro_A_Bump.png"
+		}
+	}
+}
+
+material "material_281"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/wood.3.Bubinga.png"
+		}
+	}
+}
+
+material "material_282"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/tela_silla_b.png"
+		}
+	}
+}
+
+material "material_284"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/Vigas_B.png"
+		}
+	}
+}
+
+material "material_285"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/BWK_1024.png"
+		}
+	}
+}
+
+material "material_286"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/tela_silla_b.png"
+		}
+	}
+}
+
+material "material_287"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.196078 0.196078 0.196078
+		glossiness 0.1
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/plato_a.png"
+		}
+	}
+}
+
+material "material_29"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/muros_n.png"
+		}
+	}
+}
+
+material "material_3"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/moldura_volado.png"
+		}
+	}
+}
+
+material "material_30"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/muros_b.png"
+		}
+	}
+}
+
+material "material_31"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/muros_p_.png"
+		}
+	}
+}
+
+material "material_32"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/muros_q3.png"
+		}
+	}
+}
+
+material "material_33"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/muros_q.png"
+		}
+	}
+}
+
+material "material_34"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/muros_q4.png"
+		}
+	}
+}
+
+material "material_35"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/techo.png"
+		}
+	}
+}
+
+material "material_36"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/052terresable.png"
+		}
+	}
+}
+
+material "material_37"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/muros_q_patio2.png"
+		}
+	}
+}
+
+material "material_39"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/arcos_lisos_2_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel normal
+			image "Textures/SanMiguel/N_arcos_lisos_2_bump.png"
+		}
+	}
+}
+
+material "material_4"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/moldura_techo.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel normal
+			image "Textures/SanMiguel/N_moldura_techo_bump.png"
+		}
+	}
+}
+
+material "material_40"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/arcos_lisos_3_color_1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel normal
+			image "Textures/SanMiguel/N_arcos_lisos_3_bump_1.png"
+		}
+	}
+}
+
+material "material_41"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/muros_b2.png"
+		}
+	}
+}
+
+material "material_42"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00172548 0.00172548 0.00172548
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/madera_rustica_2.png"
+		}
+	}
+}
+
+material "material_43"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/madera_rustica_2.png"
+		}
+	}
+}
+
+material "material_44"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/muros_k.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/Maceta_D_Bump_0.png"
+		}
+	}
+}
+
+material "material_45"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/concreto_01.png"
+		}
+	}
+}
+
+material "material_46"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/Vigas_A2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_vigas_a2_bump.png"
+		}
+	}
+}
+
+material "material_47"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/techo_01.png"
+		}
+	}
+}
+
+material "material_48"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/piso_patio_exterior.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_piso_patio_exterior_displace_inv.png"
+		}
+	}
+}
+
+material "material_49"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/fuente_piedra_01.png"
+		}
+	}
+}
+
+material "material_5"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/escalera_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_escalera_bump.png"
+		}
+	}
+}
+
+material "material_51"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/arco_frente.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel normal
+			image "Textures/SanMiguel/N_arco_frente_displace_inv.png"
+		}
+	}
+}
+
+material "material_52"
+{
+	pass
+	{
+		diffuse 0.337255 0.286275 0.223529
+		specular 0.0200784 0.0177255 0.0149020
+		glossiness 0
+	}
+}
+
+material "material_53"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7785.png"
+		}
+	}
+}
+
+material "material_54"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/0001_carros.png"
+		}
+	}
+}
+
+material "material_55"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7815.png"
+		}
+	}
+}
+
+material "material_56"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7812.png"
+		}
+	}
+}
+
+material "material_57"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/027_Cola_Caballo_06-30-1997.png"
+		}
+	}
+}
+
+material "material_58"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7812.png"
+		}
+	}
+}
+
+material "material_59"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7843.png"
+		}
+	}
+}
+
+material "material_6"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/pared_barro_afinado.png"
+		}
+	}
+}
+
+material "material_60"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7785.png"
+		}
+	}
+}
+
+material "material_61"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7758.png"
+		}
+	}
+}
+
+material "material_62"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7843.png"
+		}
+	}
+}
+
+material "material_63"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7833.png"
+		}
+	}
+}
+
+material "material_64"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7768.png"
+		}
+	}
+}
+
+material "material_65"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7833.png"
+		}
+	}
+}
+
+material "material_66"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7833.png"
+		}
+	}
+}
+
+material "material_67"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/D30_Smiguel_2003_7833.png"
+		}
+	}
+}
+
+material "material_68"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00627452 0.00627452 0.00627452
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/madera_marcos.png"
+		}
+	}
+}
+
+material "material_69"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/postes_barandal_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_postes_barandal_bump.png"
+		}
+	}
+}
+
+material "material_7"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/techo.png"
+		}
+	}
+}
+
+material "material_70"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/piso_patio_exterior2.png"
+		}
+	}
+}
+
+material "material_72"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/rust_a1.png"
+		}
+	}
+}
+
+material "material_73"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/rust_detalle.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_rust_detalle_bump.png"
+		}
+	}
+}
+
+material "material_74"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/madera_barandal_esc_2.png"
+		}
+	}
+}
+
+material "material_75"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/pared_calle.png"
+		}
+	}
+}
+
+material "material_76"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0125490 0.0125490 0.0125490
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/fierro_b.png"
+		}
+	}
+}
+
+material "material_77"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/fierro_b.png"
+		}
+	}
+}
+
+material "material_78"
+{
+	pass
+	{
+		diffuse 0.808740 0.585009 0.479873
+		specular 0.0323496 0.0234004 0.0191949
+		glossiness 0
+	}
+}
+
+material "material_79"
+{
+	pass
+	{
+		diffuse 0.200000 0.200000 0.200000
+		specular 0.300000 0.300000 0.300000
+		glossiness 0.4
+	}
+}
+
+material "material_8"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/concreto_02.png"
+		}
+	}
+}
+
+material "material_80"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00658824 0.00658824 0.00658824
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/candil_madera.png"
+		}
+	}
+}
+
+material "material_81"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0120784 0.0120784 0.0120784
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/metal_viejo_2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_metal_viejo_2.png"
+		}
+	}
+}
+
+material "material_82"
+{
+	pass
+	{
+		diffuse 0.0588230 0.0588230 0.0588230
+		specular 0.0120784 0.0120784 0.0120784
+		glossiness 0
+	}
+}
+
+material "material_83"
+{
+	pass
+	{
+		diffuse 0.200000 0.200000 0.200000
+		specular 0.200000 0.200000 0.200000
+		glossiness 0.2
+		emissive 1.73205
+	}
+}
+
+material "material_84"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/detmoldura_06_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_detmoldura_06_bump.png"
+		}
+	}
+}
+
+material "material_85"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/detmoldura_05_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_detmoldura_05_bump.png"
+		}
+	}
+}
+
+material "material_86"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/detmoldura_04_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_detmoldura_04_bump.png"
+		}
+	}
+}
+
+material "material_87"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/detmoldura_03_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_detmoldura_03_bump.png"
+		}
+	}
+}
+
+material "material_88"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/detmoldura_02_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_detmoldura_02_bump.png"
+		}
+	}
+}
+
+material "material_89"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/detmoldura_01_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_detmoldura_01_bump.png"
+		}
+	}
+}
+
+material "material_9"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/moldura_volado.png"
+		}
+	}
+}
+
+material "material_90"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/escurridera_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_escurridera_bump.png"
+		}
+	}
+}
+
+material "material_91"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/rust_a1.png"
+		}
+	}
+}
+
+material "material_92"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/sm_leaf_seca_03b.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/sm_leaf_seca_03b.png"
+		}
+	}
+}
+
+material "material_93"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/sm_leaf_seca_02b.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/sm_leaf_seca_02b.png"
+		}
+	}
+}
+
+material "material_94"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/sm_hoja_c_seca.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/sm_hoja_c_seca.png"
+		}
+	}
+}
+
+material "material_95"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/marco_puerta_1.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_marco_puerta_1_bump.png"
+		}
+	}
+}
+
+material "material_96"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/madera_barandal_esc_2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel normal
+			image "Textures/SanMiguel/N_madera_barandal_esc_2_bump.png"
+		}
+	}
+}
+
+material "material_97"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/mold_arco_01_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel normal
+			image "Textures/SanMiguel/N_mold_arco_01_bump.png"
+		}
+	}
+}
+
+material "material_98"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/molduraterraza__color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel normal
+			image "Textures/SanMiguel/N_molduraterraza_bump.png"
+		}
+	}
+}
+
+material "materiald"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00172548 0.00172548 0.00172548
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/puerta.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_puerta_bump.png"
+		}
+	}
+}
+
+material "materiale"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 11
+			channel diffuse
+			image "Textures/SanMiguel/Barro_2.png"
+		}
+	}
+}
+
+material "materiali"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel diffuse
+			image "Textures/SanMiguel/columna_b_color.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel normal
+			image "Textures/SanMiguel/N_columna_b_displacement_3_inv.png"
+		}
+	}
+}
+
+material "materialn"
+{
+	pass
+	{
+		diffuse 0.710501 0.513535 0.303995
+		specular 0.200000 0.200000 0.200000
+		glossiness 0.05
+	}
+}
+
+material "materialo"
+{
+	pass
+	{
+		diffuse 0.100000 0.100000 0.800000
+		specular 1.00000 1.00000 1.00000
+		glossiness 0.8
+		alpha 0.2
+		alpha_blend_mode interpolative
+
+		// texture_unit
+		// {
+			// sampler "TriLinear"
+			// levels_count 10
+			// channel normal
+			// image "Textures/SanMiguel/water_bump.png"
+		// }
+	}
+}
+
+material "materialp"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel diffuse
+			image "Textures/SanMiguel/fuente_piedra_02.png"
+		}
+	}
+}
+
+material "materialq"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/fuente_azulejo.png"
+		}
+	}
+}
+
+material "materialr"
+{
+	pass
+	{
+		diffuse 0.750000 0.750000 0.750000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+	}
+}
+
+material "materials"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/sm_tronco.png"
+		}
+	}
+}
+
+material "materialt"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/sm_leaf_02a.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/sm_leaf_02a.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel normal
+			image "Textures/SanMiguel/N_sm_leaf_02_bump.png"
+		}
+	}
+}
+
+material "materialu"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/sm_leaf_02b.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/sm_leaf_02b.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel normal
+			image "Textures/SanMiguel/N_sm_leaf_02_bump.png"
+		}
+	}
+}
+
+material "materialv"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel diffuse
+			image "Textures/SanMiguel/sm_leaf_03a.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel opacity
+			image "Textures/SanMiguel/sm_leaf_03a.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel normal
+			image "Textures/SanMiguel/N_sm_leaf_02_bump.png"
+		}
+	}
+}
+
+material "materialw"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel diffuse
+			image "Textures/SanMiguel/bark06mi.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			channel normal
+			image "Textures/SanMiguel/N_bark06mi.png"
+		}
+	}
+}
+
+material "materialx"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/l33-upper.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel opacity
+			image "Textures/SanMiguel/l33-upper.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel normal
+			image "Textures/SanMiguel/N_l33-upper.png"
+		}
+	}
+}
+
+material "materialy"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/l37-upper.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel opacity
+			image "Textures/SanMiguel/l37-upper.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			channel normal
+			image "Textures/SanMiguel/N_l37-upper.png"
+		}
+	}
+}
+
+material "materialz"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel diffuse
+			image "Textures/SanMiguel/l04-upper.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel opacity
+			image "Textures/SanMiguel/l04-upper.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			channel normal
+			image "Textures/SanMiguel/N_l04-upper.png"
+		}
+	}
+}

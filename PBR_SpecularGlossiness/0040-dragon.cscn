@@ -1,0 +1,124 @@
+materials pbr_specular_glossiness
+
+scene "Scene"
+{
+	ambient_light 1.0 1.0 1.0
+	background_colour 0.5 0.5 0.5 1.0
+
+	skybox
+	{
+		// equirectangular "Textures/pineTreeSkybox.hdr" 1024
+		equirectangular "Textures/nightSkybox.hdr" 1024
+	}
+
+	sampler "TriLinear"
+	{
+		min_filter linear
+		mag_filter linear
+		mip_filter linear
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
+	material "Dragon"
+	{
+		pass
+		{
+			emissive 8.0
+
+			texture_unit
+			{
+				image "Textures/Dragon/albedo.png" rgb
+				channel diffuse
+				sampler	"TriLinear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Dragon/normal.png" rgb
+				channel normal
+				sampler	"TriLinear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Dragon/specular_smoothness.png" rgb
+				channel specular
+				sampler	"TriLinear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Dragon/specular_smoothness.png" a
+				channel gloss
+				sampler	"TriLinear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Dragon/ambient_occlusion.png" rgb
+				channel ambient_occlusion
+				sampler	"TriLinear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Dragon/emissive.png" rgb
+				channel emissive
+				sampler	"TriLinear"
+			}
+		}
+	}
+
+	mesh "Dragon"
+	{
+		import "Meshes/Dragon.fbx"
+	}
+
+	scene_node "FinalNode"
+	{
+		position 0.0 0.0 0.0
+		scale 0.1 0.1 0.1
+	}
+	object "FinalPrimitive"
+	{
+		parent "FinalNode"
+		mesh "Dragon"
+		material "Dragon"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0784342 0.988477 -0.129463 132.154
+		position -70.9118 38.1081 70.0328
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

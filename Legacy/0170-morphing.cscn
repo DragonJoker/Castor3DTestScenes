@@ -1,0 +1,177 @@
+materials legacy
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.5 0.5 0.5 1.0
+
+	scene_node "SunLightNode1"
+	{
+		orientation 1 0 0 225
+	}
+	light "SunLight1"
+	{
+		parent "SunLightNode1"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	scene_node "FinalNode"
+	{
+		position 0.0 -0.5 0.0
+		scale 10.0 10.0 10.0
+	}
+	object "Object"
+	{
+		parent "FinalNode"
+		mesh "Mesh"
+		{
+			import "Meshes/Morphing/untitled_0_000001.obj"
+			morph_import "Meshes/Morphing/untitled_0_000001.obj" 0.1
+			morph_import "Meshes/Morphing/untitled_0_000002.obj" 0.2
+			morph_import "Meshes/Morphing/untitled_0_000003.obj" 0.3
+			morph_import "Meshes/Morphing/untitled_0_000004.obj" 0.4
+			morph_import "Meshes/Morphing/untitled_0_000005.obj" 0.5
+			morph_import "Meshes/Morphing/untitled_0_000006.obj" 0.6
+			morph_import "Meshes/Morphing/untitled_0_000007.obj" 0.7
+			morph_import "Meshes/Morphing/untitled_0_000008.obj" 0.8
+			morph_import "Meshes/Morphing/untitled_0_000009.obj" 0.9
+			morph_import "Meshes/Morphing/untitled_0_000010.obj" 1.0
+			morph_import "Meshes/Morphing/untitled_0_000011.obj" 1.1
+			morph_import "Meshes/Morphing/untitled_0_000012.obj" 1.2
+			morph_import "Meshes/Morphing/untitled_0_000013.obj" 1.3
+			morph_import "Meshes/Morphing/untitled_0_000014.obj" 1.4
+			morph_import "Meshes/Morphing/untitled_0_000015.obj" 1.5
+			morph_import "Meshes/Morphing/untitled_0_000016.obj" 1.6
+			morph_import "Meshes/Morphing/untitled_0_000017.obj" 1.7
+			morph_import "Meshes/Morphing/untitled_0_000018.obj" 1.8
+			morph_import "Meshes/Morphing/untitled_0_000019.obj" 1.9
+			morph_import "Meshes/Morphing/untitled_0_000020.obj" 2.0
+			morph_import "Meshes/Morphing/untitled_0_000021.obj" 2.1
+			morph_import "Meshes/Morphing/untitled_0_000022.obj" 2.2
+			morph_import "Meshes/Morphing/untitled_0_000023.obj" 2.3
+			morph_import "Meshes/Morphing/untitled_0_000024.obj" 2.4
+			morph_import "Meshes/Morphing/untitled_0_000025.obj" 2.5
+			morph_import "Meshes/Morphing/untitled_0_000026.obj" 2.6
+			morph_import "Meshes/Morphing/untitled_0_000027.obj" 2.7
+			morph_import "Meshes/Morphing/untitled_0_000028.obj" 2.8
+			morph_import "Meshes/Morphing/untitled_0_000029.obj" 2.9
+			morph_import "Meshes/Morphing/untitled_0_000030.obj" 3.0
+			morph_import "Meshes/Morphing/untitled_0_000031.obj" 3.1
+			morph_import "Meshes/Morphing/untitled_0_000032.obj" 3.2
+			morph_import "Meshes/Morphing/untitled_0_000033.obj" 3.3
+			morph_import "Meshes/Morphing/untitled_0_000034.obj" 3.4
+			morph_import "Meshes/Morphing/untitled_0_000035.obj" 3.5
+			morph_import "Meshes/Morphing/untitled_0_000036.obj" 3.6
+			morph_import "Meshes/Morphing/untitled_0_000037.obj" 3.7
+			morph_import "Meshes/Morphing/untitled_0_000038.obj" 3.8
+			morph_import "Meshes/Morphing/untitled_0_000039.obj" 3.9
+			morph_import "Meshes/Morphing/untitled_0_000040.obj" 4.0
+			morph_import "Meshes/Morphing/untitled_0_000041.obj" 4.1
+			morph_import "Meshes/Morphing/untitled_0_000042.obj" 4.2
+			morph_import "Meshes/Morphing/untitled_0_000043.obj" 4.3
+			morph_import "Meshes/Morphing/untitled_0_000044.obj" 4.4
+			morph_import "Meshes/Morphing/untitled_0_000045.obj" 4.5
+			morph_import "Meshes/Morphing/untitled_0_000046.obj" 4.6
+			morph_import "Meshes/Morphing/untitled_0_000047.obj" 4.7
+			morph_import "Meshes/Morphing/untitled_0_000048.obj" 4.8
+			morph_import "Meshes/Morphing/untitled_0_000049.obj" 4.9
+			morph_import "Meshes/Morphing/untitled_0_000050.obj" 5.0
+			morph_import "Meshes/Morphing/untitled_0_000051.obj" 5.1
+			morph_import "Meshes/Morphing/untitled_0_000052.obj" 5.2
+			morph_import "Meshes/Morphing/untitled_0_000053.obj" 5.3
+			morph_import "Meshes/Morphing/untitled_0_000054.obj" 5.4
+			morph_import "Meshes/Morphing/untitled_0_000055.obj" 5.5
+			morph_import "Meshes/Morphing/untitled_0_000056.obj" 5.6
+			morph_import "Meshes/Morphing/untitled_0_000057.obj" 5.7
+			morph_import "Meshes/Morphing/untitled_0_000058.obj" 5.8
+			morph_import "Meshes/Morphing/untitled_0_000059.obj" 5.9
+			morph_import "Meshes/Morphing/untitled_0_000060.obj" 6.0
+			morph_import "Meshes/Morphing/untitled_0_000061.obj" 6.1
+			morph_import "Meshes/Morphing/untitled_0_000062.obj" 6.2
+			morph_import "Meshes/Morphing/untitled_0_000063.obj" 6.3
+			morph_import "Meshes/Morphing/untitled_0_000064.obj" 6.4
+			morph_import "Meshes/Morphing/untitled_0_000065.obj" 6.5
+			morph_import "Meshes/Morphing/untitled_0_000066.obj" 6.6
+			morph_import "Meshes/Morphing/untitled_0_000067.obj" 6.7
+			morph_import "Meshes/Morphing/untitled_0_000068.obj" 6.8
+			morph_import "Meshes/Morphing/untitled_0_000069.obj" 6.9
+			morph_import "Meshes/Morphing/untitled_0_000070.obj" 7.0
+			morph_import "Meshes/Morphing/untitled_0_000071.obj" 7.1
+			morph_import "Meshes/Morphing/untitled_0_000072.obj" 7.2
+			morph_import "Meshes/Morphing/untitled_0_000073.obj" 7.3
+			morph_import "Meshes/Morphing/untitled_0_000074.obj" 7.4
+			morph_import "Meshes/Morphing/untitled_0_000075.obj" 7.5
+			morph_import "Meshes/Morphing/untitled_0_000076.obj" 7.6
+			morph_import "Meshes/Morphing/untitled_0_000077.obj" 7.7
+			morph_import "Meshes/Morphing/untitled_0_000078.obj" 7.8
+			morph_import "Meshes/Morphing/untitled_0_000079.obj" 7.9
+			morph_import "Meshes/Morphing/untitled_0_000080.obj" 8.0
+			morph_import "Meshes/Morphing/untitled_0_000081.obj" 8.1
+			morph_import "Meshes/Morphing/untitled_0_000082.obj" 8.2
+			morph_import "Meshes/Morphing/untitled_0_000083.obj" 8.3
+			morph_import "Meshes/Morphing/untitled_0_000084.obj" 8.4
+			morph_import "Meshes/Morphing/untitled_0_000085.obj" 8.5
+			morph_import "Meshes/Morphing/untitled_0_000086.obj" 8.6
+			morph_import "Meshes/Morphing/untitled_0_000087.obj" 8.7
+			morph_import "Meshes/Morphing/untitled_0_000088.obj" 8.8
+			morph_import "Meshes/Morphing/untitled_0_000089.obj" 8.9
+			morph_import "Meshes/Morphing/untitled_0_000090.obj" 9.0
+			morph_import "Meshes/Morphing/untitled_0_000091.obj" 9.1
+			morph_import "Meshes/Morphing/untitled_0_000092.obj" 9.2
+			morph_import "Meshes/Morphing/untitled_0_000093.obj" 9.3
+			morph_import "Meshes/Morphing/untitled_0_000094.obj" 9.4
+			morph_import "Meshes/Morphing/untitled_0_000095.obj" 9.5
+			morph_import "Meshes/Morphing/untitled_0_000096.obj" 9.6
+			morph_import "Meshes/Morphing/untitled_0_000097.obj" 9.7
+			morph_import "Meshes/Morphing/untitled_0_000098.obj" 9.8
+			morph_import "Meshes/Morphing/untitled_0_000099.obj" 9.9
+			morph_import "Meshes/Morphing/untitled_0_000100.obj" 10.0
+		}
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 180
+		position 0.0 0.0 200.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+
+	animated_object_group "Object"
+	{
+		animated_object "Object"
+
+		animation "Morph"
+		{
+			looped true
+		}
+
+		start_animation "Morph"
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

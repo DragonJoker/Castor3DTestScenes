@@ -1,0 +1,229 @@
+// Global configuration
+// debug_overlays true
+materials pbr_metallic_roughness
+
+scene "Scene"
+{
+	// Scene configuration
+
+	ambient_light 1 1 1
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/nightSkybox.hdr" 1024
+	}
+
+	// Samplers
+
+	sampler "Trilinear"
+	{
+		min_filter linear
+		mag_filter linear
+		mip_filter linear
+		u_wrap_mode clamp_to_border
+		v_wrap_mode clamp_to_border
+		w_wrap_mode clamp_to_border
+		min_lod 0.0
+		max_lod 5.0
+		lod_bias 0.00
+		border_colour float_opaque_black
+		max_anisotropy 1.0
+	}
+
+	// Materials
+
+	material "Skin"
+	{
+		pass
+		{
+			roughness 0.5
+
+			texture_unit
+			{
+				channel normal
+				sampler "Trilinear"
+				levels_count 6
+				image "Textures/LeePerrySmithHead/face-normal.png" rgb
+			}
+
+			texture_unit
+			{
+				sampler "Trilinear"
+				channel albedo
+				levels_count 6
+				image "Textures/LeePerrySmithHead/face-albedo.png" rgb
+			}
+
+			texture_unit
+			{
+				sampler "Trilinear"
+				channel height
+				levels_count 6
+				image "Textures/LeePerrySmithHead/face-height.jpg" rgb
+			}
+
+			texture_unit
+			{
+				sampler "Trilinear"
+				channel transmittance
+				levels_count 6
+				image "Textures/LeePerrySmithHead/face-albedo.png" a
+			}
+
+			subsurface_scattering
+			{
+				strength 1
+				gaussian_width 20
+
+				transmittance_profile
+				{
+					factor 0.233 0.455 0.649 0.0064
+					factor 0.1 0.336 0.344 0.0484
+					factor 0.118 0.198 0.0 0.187
+					factor 0.113 0.007 0.007 0.567
+					factor 0.358 0.004 0.0 1.99
+					factor 0.078 0.0 0.0 7.41
+				}
+			}
+		}
+	}
+
+	material "WhiteEmit"
+	{
+		pass
+		{
+			albedo 1 1 1
+			emissive 1
+			two_sided true
+		}
+	}
+
+	// Meshes
+
+	mesh "LeePerrySmithHead"
+	{
+		import "Meshes/LeePerrySmithHead.cmsh"
+	}
+
+	mesh "LightMesh"
+	{
+		type "cube" -width=0.1 -height=0.1 -depth=0.4
+	}
+
+	// Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0305798 0.999499 -0.00818503 29.9836
+		position -2.27493 2.91548 -3.25698
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			aspect_ratio 1.333
+			fov_y 45
+			near 0.1
+			far 2000.0
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "FinalNode"
+	{
+		orientation 0 1 0 180
+		position 0 0 0
+		scale 10 10 10
+	}
+
+	scene_node "LightNode"
+	{
+		orientation -0.0903325 -0.995532 0.0274958 325.998
+		position 0 0 0
+	}
+
+	scene_node "SpotLightNode"
+	{
+		orientation 0 1 0 19.0076
+		position -1.16929 2.86268 -2.35752
+	}
+
+	// Lights
+
+	light "SpotLight"
+	{
+		parent "SpotLightNode"
+		type spot
+		colour 1 1 1
+		intensity 0.8 1.0
+		attenuation 1 0.1 0
+		exponent 1.000000
+		cut_off 20.000000
+		// shadows
+		// {
+			// producer true
+			// filter variance
+		// }
+	}
+
+	// Geometries
+
+	object "FinalPrimitive"
+	{
+		parent "FinalNode"
+		mesh "LeePerrySmithHead"
+		material "Skin"
+	}
+
+	object "SpotLight"
+	{
+		parent "SpotLightNode"
+		cast_shadows false
+		mesh "LightMesh"
+		material "WhiteEmit"
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "Scene"
+		camera "MainCamera"
+		size 800 600
+		format argb32
+
+		hdr_config
+		{
+			exposure 1.0
+			gamma 2.2
+		}
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			intensity 1.0
+			radius 0.75
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1.0
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}

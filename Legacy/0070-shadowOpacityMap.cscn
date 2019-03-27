@@ -1,0 +1,166 @@
+materials legacy
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.5 0.5 0.5 1.0
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
+	material "Silver"
+	{
+		pass
+		{
+			diffuse 0.75164	0.75164	0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.628281 0.628281 1.0
+			shininess 50.0
+			alpha_func greater 0.5
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/Bricks/opacity.png"
+				channel opacity
+				sampler	"Linear"
+			}
+		}
+	}
+
+	material "Gold"
+	{
+		pass
+		{
+			diffuse 0.75164 0.60648 0.22648 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.555802 0.366065 1.0
+			shininess 51.2
+			two_sided true
+		}
+	}
+
+	material "Copper"
+	{
+		pass
+		{
+			diffuse 0.7038 0.27048 0.0828 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.256777 0.137622 0.086014 1.0
+			shininess 51.2
+			two_sided true
+		}
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 45
+	}
+
+	light "Light"
+	{
+		type directional
+		parent "LightNode"
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0 1.0
+		shadows
+		{
+			producer true
+			filter variance
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "Plane"
+	{
+		position 0.0 0.0 50.0
+		orientation 1.0 0.0 0.0 90.0
+	}
+
+	scene_node "Plane2"
+	{
+		position 0.0 50.0 150.0
+	}
+
+	scene_node "Plane3"
+	{
+		position 0.0 30.0 0.0
+		orientation 1.0 0.0 0.0 45.0
+	}
+
+	object "Plane"
+	{
+		parent "Plane"
+
+		mesh "Plane"
+		{
+			type "plane" -width_subdiv=0 -depth_subdiv=0 -width=200 -depth=200
+		}
+
+		material "Gold"
+	}
+
+	object "Plane2"
+	{
+		parent "Plane2"
+		mesh "Plane"
+		material "Copper"
+	}
+
+	object "Plane3"
+	{
+		parent "Plane3"
+
+		mesh "Plane2"
+		{
+			type "plane" -width_subdiv=0 -depth_subdiv=0 -width=50 -depth=50
+		}
+
+		material "Silver"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 200.0 -200.0
+		orientation 1 0 0 45
+	}
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+
+    fullscreen false
+	vsync false
+}

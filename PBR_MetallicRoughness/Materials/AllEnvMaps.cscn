@@ -1,0 +1,578 @@
+ambient_light 1 1 1
+
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	min_lod 0.0
+	max_lod 5.0
+	lod_bias 0.0
+	u_wrap_mode clamp_to_border
+	v_wrap_mode clamp_to_border
+	w_wrap_mode clamp_to_border
+	border_colour float_opaque_black
+}
+
+material "ReflMatBody"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		alpha_func greater 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/body-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/body-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflMatHead"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflCornea"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflDx11Shader6"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		alpha_func greater 0.5
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/head-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "RefrMatBody"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		alpha_func greater 0.5
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/body-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/body-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "RefrMatHead"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "RefrCornea"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "RefrDx11Shader6"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		alpha_func greater 0.5
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/head-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflRefrMatBody"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		alpha_func greater 0.5
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/body-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/body-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflRefrMatHead"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflRefrCornea"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "ReflRefrDx11Shader6"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		alpha_func greater 0.5
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel reflection
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/head-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "Body"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			levels_count 6
+			image "Textures/Nyra/body-diffuse.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/body-opacity.png" a
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/body-normal.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			levels_count 6
+			image "Textures/Nyra/body-metallic.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			levels_count 6
+			image "Textures/Nyra/body-roughness.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel height
+			levels_count 6
+			image "Textures/Nyra/body-displ.png" rgb
+		}
+	}
+}
+
+material "Cornea"
+{
+	pass
+	{
+		albedo 0.000000 0.000000 0.000000
+		roughness 0
+		alpha 0.119661
+		two_sided true
+		alpha_blend_mode interpolative
+	}
+}
+
+material "Eyes"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			levels_count 6
+			image "Textures/Nyra/head-diffuse.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/head-opacity.png" a
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			levels_count 6
+			image "Textures/Nyra/head-metallic.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			levels_count 6
+			image "Textures/Nyra/head-roughness.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel height
+			levels_count 6
+			image "Textures/Nyra/head-displ.png" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel transmittance
+			levels_count 6
+			image "Textures/Nyra/head-transmittance.png" rgb
+		}
+	}
+}
+
+material "Head"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel albedo
+			levels_count 6
+			image "Textures/Nyra/head-diffuse.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel metallic
+			levels_count 6
+			image "Textures/Nyra/head-metallic.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel roughness
+			levels_count 6
+			image "Textures/Nyra/head-roughness.jpg" rgb
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel height
+			levels_count 6
+			image "Textures/Nyra/head-displ.png" rgb
+		}
+	}
+}

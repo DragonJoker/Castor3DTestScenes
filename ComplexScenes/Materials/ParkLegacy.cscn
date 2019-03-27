@@ -1,0 +1,3430 @@
+// Samplers
+
+sampler "TriLinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	lod_bias 0.0
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	border_colour float_opaque_black
+}
+
+// Materials
+
+material "Material_#1004/affiche"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/entree_boite_enseigne.jpg" rgb
+		}
+	}
+}
+
+material "Material_#1004/bite"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 100.0
+		two_sided true
+	}
+}
+
+material "Material_#1004/metal"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.333000 0.333000 0.333000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/entree_boite_metal.jpg" rgb
+		}
+	}
+}
+
+material "Material_#1004/noir"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+	}
+}
+
+material "Material_#1004/velour"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.372549 0.372549 0.372549
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/entree_boite_velours.jpg" rgb
+		}
+	}
+}
+
+material "abris_bus/metal"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.432000 0.432000 0.432000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/abris_bus_metal.jpg" rgb
+		}
+	}
+}
+
+material "abris_bus/plan"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/abris_bus_plan.jpg" rgb
+		}
+	}
+}
+
+material "abris_bus/verre"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.882353 0.882353 0.882353
+		ambient 0
+		shininess 120.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 5
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/barriere_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 5
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/barriere_verre.png" a
+		}
+	}
+}
+
+material "abris_bus_pub_01"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/abris_bus_pub_01.jpg" rgb
+		}
+	}
+}
+
+material "abris_bus_pub_02"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/abris_bus_pub_02.jpg" rgb
+		}
+	}
+}
+
+material "arbre_rue/bac"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0392157 0.0392157 0.0392157
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/arbre_rue_bac.jpg" rgb
+		}
+	}
+}
+
+material "arbre_rue/branches"
+{
+	pass
+	{
+		diffuse 0.490196 0.490196 0.490196
+		specular 0.156863 0.156863 0.156863
+		ambient 0
+		shininess 10.0
+		emissive 0.392157
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/arbre_rue_branche.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/arbre_rue_branche.png" a
+		}
+	}
+}
+
+material "arbre_rue/terre"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0392157 0.0392157 0.0392157
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/arbre_rue_terre.jpg" rgb
+		}
+	}
+}
+
+material "arbre_rue/tronc"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/arbre_rue_tronc.jpg" rgb
+		}
+	}
+}
+
+material "banc/bois"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/banc_bois.jpg" rgb
+		}
+	}
+}
+
+material "banc/metal"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.215686 0.215686 0.215686
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/banc_metal.jpg" rgb
+		}
+	}
+}
+
+material "banniere"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/banniere_pub.jpg" rgb
+		}
+	}
+}
+
+material "barriere_chantier/bois"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/barriere_chantier_bois.jpg" rgb
+		}
+	}
+}
+
+material "barriere_chantier/peinture"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/barriere_chantier_peinture.jpg" rgb
+		}
+	}
+}
+
+material "barriere_travaux/metal"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/barriere_travaux_metal.jpg" rgb
+		}
+	}
+}
+
+material "barriere_travaux/peinture"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/barriere_travaux_peinture.jpg" rgb
+		}
+	}
+}
+
+material "bite"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.333000 0.333000 0.333000
+		ambient 0
+		shininess 120.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/bite_metal.jpg" rgb
+		}
+	}
+}
+
+material "borne_incendie/borne_incendie_gris"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.351000 0.351000 0.351000
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/borne_metal_gris.jpg" rgb
+		}
+	}
+}
+
+material "borne_incendie/borne_incendie_rouge"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.351000 0.351000 0.351000
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/borne_metal.jpg" rgb
+		}
+	}
+}
+
+material "buisson/feuilles"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/buisson.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/buisson.png" a
+		}
+	}
+}
+
+material "buisson/tronc"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/tronc_buisson.jpg" rgb
+		}
+	}
+}
+
+material "buisson_coin_ext/feuilles"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/buisson.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/buisson.png" a
+		}
+	}
+}
+
+material "buisson_coin_ext/tronc"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/tronc_buisson.jpg" rgb
+		}
+	}
+}
+
+material "buisson_coin_int/feuilles"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/buisson.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/buisson.png" a
+		}
+	}
+}
+
+material "buisson_coin_int/tronc"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/tronc_buisson.jpg" rgb
+		}
+	}
+}
+
+material "cabine_telephone/metal"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.333000 0.333000 0.333000
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/cabine_telephone_metal.jpg" rgb
+		}
+	}
+}
+
+material "cabine_telephone/phone"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/cabine_telephone_phone.jpg" rgb
+		}
+	}
+}
+
+material "cabine_telephone/verre"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.882353 0.882353 0.882353
+		ambient 0
+		shininess 120.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 5
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/barriere_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 5
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/barriere_verre.png" a
+		}
+	}
+}
+
+material "cabine_telephone/verre_marron"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.210392 0.210392 0.210392
+		ambient 0
+		shininess 120.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/cabine_telephone_verre_opaque.jpg" rgb
+		}
+	}
+}
+
+material "cartons"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0392157 0.0392157 0.0392157
+		ambient 0
+		shininess 5.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/cartons.jpg" rgb
+		}
+	}
+}
+
+material "chene/feuilles"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/feuille_chene.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/feuille_chene.png" a
+		}
+	}
+}
+
+material "chene/tronc"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0900000 0.0900000 0.0900000
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/tronc_chene.jpg" rgb
+		}
+	}
+}
+
+material "corbeille/bois"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/corbeille_bois.jpg" rgb
+		}
+	}
+}
+
+material "corbeille/metal"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.313726 0.313726 0.313726
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/corbeille_metal.jpg" rgb
+		}
+	}
+}
+
+material "corbeille/trash"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0392157 0.0392157 0.0392157
+		ambient 0
+		shininess 10.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/corbeille_trash.jpg" rgb
+		}
+	}
+}
+
+material "distributeur"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.196078 0.196078 0.196078
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/distributeur_face.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/metal"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.180000 0.180000 0.180000
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/bite_metal.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/metal_or"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.315000 0.315000 0.315000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/metal_or.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/mur"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.117647 0.117647 0.117647
+		ambient 0
+		shininess 20.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/briques.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/muret"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.117647 0.117647 0.117647
+		ambient 0
+		shininess 20.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/briques.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/nom_station"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.189000 0.189000 0.189000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/panneau_place_mog.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/plafond"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+	}
+}
+
+material "entree_station/plan"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/plan.jpg" rgb
+		}
+	}
+}
+
+material "entree_station/sol"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.216000 0.216000 0.216000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_carrele.jpg" rgb
+		}
+	}
+}
+
+material "feu_tricolore/feu"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/feu_tricolore_rouge.jpg" rgb
+		}
+	}
+}
+
+material "feu_tricolore/metal"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.315000 0.315000 0.315000
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/feu_tricolore_metal.jpg" rgb
+		}
+	}
+}
+
+material "feu_tricolore/pieton"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/feu_tricolore_pieton_vert.jpg" rgb
+		}
+	}
+}
+
+material "fontaine/barriere"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.117647 0.117647 0.117647
+		ambient 0
+		shininess 64.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_barriere.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_barriere.png" a
+		}
+	}
+}
+
+material "fontaine/bronze"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.306000 0.306000 0.306000
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/bronze.jpg" rgb
+		}
+	}
+}
+
+material "fontaine/eau"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.288235 0.288235 0.288235
+		ambient 0
+		shininess 128.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_eau.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_eau.png" a
+		}
+	}
+}
+
+material "fontaine/eau_tombante"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.588235 0.588235 0.588235
+		ambient 0
+		shininess 128.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_eau.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_eau.png" a
+		}
+	}
+}
+
+material "fontaine/ecume"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_ecume.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_ecume.png" a
+		}
+	}
+}
+
+material "fontaine/metal"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.252000 0.252000 0.252000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_metal.jpg" rgb
+		}
+	}
+}
+
+material "fontaine/metal_or"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.252000 0.252000 0.252000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/metal_or.jpg" rgb
+		}
+	}
+}
+
+material "fontaine/monnaie_01"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.784314 0.784314 0.784314
+		ambient 0
+		shininess 120.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_monnaie_1f.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_monnaie_1f.png" a
+		}
+	}
+}
+
+material "fontaine/monnaie_02"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.784314 0.784314 0.784314
+		ambient 0
+		shininess 120.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_monnaie_2e.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_monnaie_2e.png" a
+		}
+	}
+}
+
+material "fontaine/monnaie_03"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.784314 0.784314 0.784314
+		ambient 0
+		shininess 120.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_monnaie_20c01.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_monnaie_20c01.png" a
+		}
+	}
+}
+
+material "fontaine/monnaie_04"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.784314 0.784314 0.784314
+		ambient 0
+		shininess 120.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_monnaie_20c02.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_monnaie_20c02.png" a
+		}
+	}
+}
+
+material "fontaine/pierre"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.162000 0.162000 0.162000
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_pierre.jpg" rgb
+		}
+	}
+}
+
+material "fx_selected"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		emissive 1
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fx_selected.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fx_selected.png" a
+		}
+	}
+}
+
+material "grille_parc/bareaux"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.207000 0.207000 0.207000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/metal_noir.jpg" rgb
+		}
+	}
+}
+
+material "grille_parc/dorures"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.459000 0.459000 0.459000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/metal_or.jpg" rgb
+		}
+	}
+}
+
+material "grille_parc/grille_parc"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.156863 0.156863 0.156863
+		ambient 0
+		shininess 96.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/grille_parc.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/grille_parc.png" a
+		}
+	}
+}
+
+material "grille_parc/muret"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0900000 0.0900000 0.0900000
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/briques.jpg" rgb
+		}
+	}
+}
+
+material "horloge"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.108000 0.108000 0.108000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/horloge.jpg" rgb
+		}
+	}
+}
+
+material "horloge_aiguilles_heures"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.108000 0.108000 0.108000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/horloge.jpg" rgb
+		}
+	}
+}
+
+material "horloge_aiguilles_minutes"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.108000 0.108000 0.108000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/horloge.jpg" rgb
+		}
+	}
+}
+
+material "horloge_aiguilles_secondes"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.108000 0.108000 0.108000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/horloge.jpg" rgb
+		}
+	}
+}
+
+material "immeubles_parc/banderolle"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_banderolle.jpg" rgb
+		}
+	}
+}
+
+material "immeubles_parc/fenetre"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.784314 0.784314 0.784314
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_fenetre.jpg" rgb
+		}
+	}
+}
+
+material "immeubles_parc/fenetre02"
+{
+	pass
+	{
+		diffuse 1.0 1.0 1.0
+		specular 0.784314 0.784314 0.784314
+		ambient 0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/window-albedo.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel normal
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/window-normal.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel shininess
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/window-shininess.png" rgb
+		}
+	}
+}
+
+material "immeubles_parc/grille"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 70.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_grille.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_grille.png" a
+		}
+	}
+}
+
+material "immeubles_parc/pierre_beige"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.225000 0.225000 0.225000
+		ambient 0
+		shininess 20.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_mur.jpg" rgb
+		}
+	}
+}
+
+material "immeubles_parc/pierre_rose"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.225000 0.225000 0.225000
+		ambient 0
+		shininess 20.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_mur2.jpg" rgb
+		}
+	}
+}
+
+material "immeubles_parc/porte01"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_porte.jpg" rgb
+		}
+	}
+}
+
+material "immeubles_parc/porte02"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_porte_bis.jpg" rgb
+		}
+	}
+}
+
+material "immeubles_parc/rue"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.117647 0.117647 0.117647
+		ambient 0
+		shininess 32.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeuble_rue.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeuble_rue.png" a
+		}
+	}
+}
+
+material "immeubles_parc/tag_01"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 8.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_01.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_01.png" a
+		}
+	}
+}
+
+material "immeubles_parc/tag_02"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 8.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_02.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_02.png" a
+		}
+	}
+}
+
+material "immeubles_parc/tag_03"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 8.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_03.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_03.png" a
+		}
+	}
+}
+
+material "immeubles_parc/tag_04"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 8.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_04.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_04.png" a
+		}
+	}
+}
+
+material "immeubles_parc/tag_05"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 8.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_05.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_05.png" a
+		}
+	}
+}
+
+material "immeubles_parc/tag_06"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 8.0
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_06.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_tag_06.png" a
+		}
+	}
+}
+
+material "immeubles_parc/toit_gris"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.225000 0.225000 0.225000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_toit_bronze_gris.jpg" rgb
+		}
+	}
+}
+
+material "immeubles_parc/toit_vert"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.225000 0.225000 0.225000
+		ambient 0
+		shininess 48.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/immeubles_toit_bronze.jpg" rgb
+		}
+	}
+}
+
+material "kiosque_park/bois_kiosque_01"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/bois_kiosque_01.jpg" rgb
+		}
+	}
+}
+
+material "kiosque_park/bois_kiosque_02"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/bois_kiosque_02.jpg" rgb
+		}
+	}
+}
+
+material "kiosque_park/fleur_kiosque"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 48.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fleur_kiosque.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fleur_kiosque.png" a
+		}
+	}
+}
+
+material "kiosque_park/grille_fleur_kiosque"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 16.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fleur_grille_kiosque.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fleur_grille_kiosque.png" a
+		}
+	}
+}
+
+material "kiosque_park/light_kiosque"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 0.0
+		alpha 0.0
+		alpha_func greater 0.5
+	}
+}
+
+material "kiosque_park/pilier_kiosque"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 16.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/pilier_kiosque.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/pilier_kiosque.png" a
+		}
+	}
+}
+
+material "kiosque_park/sol_kiosque"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_kiosque.jpg" rgb
+		}
+	}
+}
+
+material "kiosque_park/toit_kiosque"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/toit_kiosque.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/black"
+{
+	pass
+	{
+		diffuse 0.000000 0.000000 0.000000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 16.0
+		two_sided true
+	}
+}
+
+material "magasins_parc/dab"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.588235 0.588235 0.588235
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/magasins_dab.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/enseigne_cb"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.196078 0.196078 0.196078
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/magasins_enseigne_cb.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/enseigne_fashion"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/magasin_enseigne.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/enseigne_snow"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.196078 0.196078 0.196078
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/magasins_enseigne_snow.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/entree_snow"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.207000 0.207000 0.207000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/rideau_fer.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/magasin_enseigne2"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.588235 0.588235 0.588235
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/magasin_enseigne2.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/metal_bleu"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.156863 0.156863 0.156863
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/baltar_metal_bleu.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/soldes"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/pub_soldes.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/tabac"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0392157 0.0392157 0.0392157
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/magasins_tabac.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/troquet_enseigne"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/magasins_troquet_enseigne.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/vetement_3"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/magasin_enseigne3.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/vitres"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.117647 0.117647 0.117647
+		ambient 0
+		shininess 120.0
+		two_sided true
+	}
+}
+
+material "magasins_parc/vitrine_bar"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/magasins_vitrine_bar.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/vitrine_femme"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.180000 0.180000 0.180000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/rideau_fer_reserve.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/vitrine_homme"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.180000 0.180000 0.180000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/rideau_fer_reserve.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/vitrine_mode2"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.180000 0.180000 0.180000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/rideau_fer_reserve.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/vitrine_snow"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.180000 0.180000 0.180000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/rideau_fer_reserve.jpg" rgb
+		}
+	}
+}
+
+material "magasins_parc/vitrine_snow2"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.180000 0.180000 0.180000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/rideau_fer_reserve.jpg" rgb
+		}
+	}
+}
+
+material "panneau_enfants/metal"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.196078 0.196078 0.196078
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/panneau_metal.jpg" rgb
+		}
+	}
+}
+
+material "panneau_enfants/panneau_enfants"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.196078 0.196078 0.196078
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/panneau_enfants.jpg" rgb
+		}
+	}
+}
+
+material "panneau_mural"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.392157 0.392157 0.392157
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/panneau_pub_metal.jpg" rgb
+		}
+	}
+}
+
+material "panneau_mural_pub_01"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/panneau_pub_pub_01.jpg" rgb
+		}
+	}
+}
+
+material "panneau_pub"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.392157 0.392157 0.392157
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/panneau_pub_metal.jpg" rgb
+		}
+	}
+}
+
+material "panneau_pub_pub_01"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/panneau_pub_pub_01.jpg" rgb
+		}
+	}
+}
+
+material "panneau_pub_pub_02"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/panneau_pub_pub_02.jpg" rgb
+		}
+	}
+}
+
+material "panneau_stationnement/metal"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.196078 0.196078 0.196078
+		ambient 0
+		shininess 70.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/panneau_metal.jpg" rgb
+		}
+	}
+}
+
+material "panneau_stationnement/panneau_velo"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+	}
+}
+
+material "piaf_ciel"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.135000 0.135000 0.135000
+		ambient 0
+		shininess 32.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/piaf_ciel.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/piaf_ciel.png" a
+		}
+	}
+}
+
+material "plasma/plasma"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 32.0
+		two_sided true
+	}
+}
+
+material "plasma_pub"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 32.0
+		two_sided true
+	}
+}
+
+material "plot_chantier"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 48.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/plot_chantier_plastique.jpg" rgb
+		}
+	}
+}
+
+material "poisson"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.588235 0.588235 0.588235
+		ambient 0
+		shininess 96.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fontaine_poisson.jpg" rgb
+		}
+	}
+}
+
+material "poubelle/plastique_gris"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/poubelle_plastik_gris.jpg" rgb
+		}
+	}
+}
+
+material "poubelle/plastique_noir"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/poubelle_plastik_noir.jpg" rgb
+		}
+	}
+}
+
+material "poubelle/plastique_vert"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/poubelle_plastik_vert.jpg" rgb
+		}
+	}
+}
+
+material "reverbere/lumiere"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 120.0
+		two_sided true
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			channel diffuse
+			image "Textures/ParkLegacy/reverbere_vitre.png"
+		}
+	}
+}
+
+material "reverbere/metal"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.144000 0.144000 0.144000
+		ambient 0
+		shininess 120.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/reverbere_metal.jpg" rgb
+		}
+	}
+}
+
+material "saule_pleureur/feuilles"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 64.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/feuille_saule.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/feuille_saule.png" a
+		}
+	}
+}
+
+material "saule_pleureur/tronc"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.108000 0.108000 0.108000
+		ambient 0
+		shininess 8.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/tronc_saule.jpg" rgb
+		}
+	}
+}
+
+material "skycraper"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/skycraper_pub.jpg" rgb
+		}
+	}
+}
+
+material "skydome"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 0.0
+		emissive 0.588235
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/skydome.jpg" rgb
+		}
+	}
+}
+
+material "sol_parc/arret_bus"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 8.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_passage_bus.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_passage_bus.png" a
+		}
+	}
+}
+
+material "sol_parc/bord_herbe"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.153000 0.153000 0.153000
+		ambient 0
+		shininess 16.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/bord_herbe.jpg" rgb
+		}
+	}
+}
+
+material "sol_parc/egout"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.137255 0.137255 0.137255
+		ambient 0
+		shininess 64.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_bouche_egout.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_bouche_egout.png" a
+		}
+	}
+}
+
+material "sol_parc/egout_ouvert"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 32.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_bouche_egout_ouverte.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_bouche_egout_ouverte.png" a
+		}
+	}
+}
+
+material "sol_parc/metal_cana"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.198000 0.198000 0.198000
+		ambient 0
+		shininess 100.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_metal_cana.jpg" rgb
+		}
+	}
+}
+
+material "sol_parc/passage_pieton"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 16.0
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_passage_pieton.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_passage_pieton.png" a
+		}
+	}
+}
+
+material "sol_parc/rigole"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0392157 0.0392157 0.0392157
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_rigole.jpg" rgb
+		}
+	}
+}
+
+material "sol_parc/route"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.137255 0.137255 0.137255
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_route_beton.jpg" rgb
+		}
+	}
+}
+
+material "sol_parc/sable_canalisations"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 8.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_sable_tranchee.jpg" rgb
+		}
+	}
+}
+
+material "sol_parc/sol_herbe"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/test_herbe.jpg" rgb
+		}
+	}
+}
+
+material "sol_parc/sol_sable"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0810000 0.0810000 0.0810000
+		ambient 0
+		shininess 8.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_parc_sable.jpg" rgb
+		}
+	}
+}
+
+material "sol_parc/terre"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 8.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/buisson_terre.jpg" rgb
+		}
+	}
+}
+
+material "sol_parc/trottoir"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.137255 0.137255 0.137255
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/sol_trottoir_beton.jpg" rgb
+		}
+	}
+}
+
+material "table_echec/echiquier_echec"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.756000 0.756000 0.756000
+		ambient 0
+		shininess 64.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/echiquier.jpg" rgb
+		}
+	}
+}
+
+material "table_echec/echiquier_table"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.729000 0.729000 0.729000
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/marbre_table_echec.jpg" rgb
+		}
+	}
+}
+
+material "table_echec/rainure_echiquier"
+{
+	pass
+	{
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 32.0
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/rainure_echec.jpg" rgb
+		}
+	}
+}
+
+material "trigger"
+{
+	pass
+	{
+		diffuse 0.772549 0.376471 0.0235294
+		specular 0.180000 0.180000 0.180000
+		ambient 0
+		shininess 8.0
+		emissive 0.294118
+		two_sided true
+	}
+}
+
+material "z"
+{
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.000000 0.000000 0.000000
+		ambient 0
+		shininess 8.0
+		emissive 0.1
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 3
+			channel diffuse
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fx_pathfinding.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 3
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/ParkLegacy/fx_pathfinding.png" a
+		}
+	}
+}

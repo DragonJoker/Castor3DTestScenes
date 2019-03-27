@@ -1,0 +1,149 @@
+materials legacy
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.5 0.5 0.5 1.0
+	include "Materials/Common.cscn"
+
+	mesh "LightMesh"
+	{
+		type "cube" -width=0.1 -height=0.1 -depth=0.4
+	}
+
+	mesh "Plane"
+	{
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=20 -depth=20
+	}
+
+	mesh "Torus"
+	{
+		type "torus" -inner_count=30 -outer_count=30 -inner_size=1.5 -outer_size=3.0
+	}
+
+	scene_node "SpotLightNode1"
+	{
+		orientation 1 0 0 45
+		position 0.0 10.0 -10.0
+	}
+
+	scene_node "SpotLightNode2"
+	{
+		orientation 0.82 -0.5 -0.25 95
+		position 10.0 10.0 0.0
+	}
+
+	scene_node "Plane"
+	{
+		position 0.0 0.0 0.0
+		orientation 1.0 0.0 0.0 -90.0
+	}
+
+	scene_node "Torus"
+	{
+		position 0.0 3.0 0.0
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 18.0 -20.0
+		orientation 0.320588 0 0 40.947219
+	}
+
+	light "SpotLight1"
+	{
+		type spot
+		parent "SpotLightNode1"
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+		attenuation 1.0 0.0 0.0
+		cut_off 20
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	light "SpotLight2"
+	{
+		type spot
+		parent "SpotLightNode2"
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+		attenuation 1.0 0.0 0.0
+		cut_off 20
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	object "SpotLight1"
+	{
+		parent "SpotLightNode1"
+		mesh "LightMesh"
+		cast_shadows false
+
+		material "WhiteEmit"
+	}
+
+	object "SpotLight2"
+	{
+		parent "SpotLightNode2"
+		cast_shadows false
+		mesh "LightMesh"
+		material "WhiteEmit"
+	}
+
+	object "Plane"
+	{
+		parent "Plane"
+		mesh "Plane"
+		material "Gold"
+	}
+
+	object "Torus"
+	{
+		parent "Torus"
+		mesh "Torus"
+		material "Silver"
+	}
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+
+	fullscreen false
+	vsync false
+}

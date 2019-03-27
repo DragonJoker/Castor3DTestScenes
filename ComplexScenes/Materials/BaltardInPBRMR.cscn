@@ -1,0 +1,591 @@
+// Samplers
+
+sampler "TriLinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	lod_bias 0.0
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	border_colour float_opaque_black
+}
+
+// Materials
+
+material "baltard_in_ns/armature"
+{
+	pass
+	{
+		albedo 0.588235 0.588235 0.588235
+		roughness 0.5
+		metallic 1
+		two_sided true
+	}
+}
+
+material "baltard_in_ns/baffles"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baffles.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/bois_ns"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.91
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/bois_ns.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/cube_ns_01"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.235
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/cube_ns_01.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/cube_ns_01.png" a
+		}
+	}
+}
+
+material "baltard_in_ns/cube_ns_02"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.235
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/cube_ns_02.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/cube_ns_02.png" a
+		}
+	}
+}
+
+material "baltard_in_ns/gradin_ns"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.784
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/gradin_ns.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/light"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		emissive 10
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_light.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel emissive
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_light.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_light.png" a
+		}
+	}
+}
+
+material "baltard_in_ns/lumiere"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		emissive 10
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_light.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_light.png" a
+		}
+	}
+}
+
+material "baltard_in_ns/marche_ns"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.64
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/marche_ns.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/metal_cable"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.865
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/metal_spot"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.64
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/noir_laque"
+{
+	pass
+	{
+		albedo 0.0470588 0.0470588 0.0470588
+		roughness 0.12
+		two_sided true
+	}
+}
+
+material "baltard_in_ns/ns_bg"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.91
+		emissive 0.866025
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/ns_bg.jpg" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel emissive
+			sampler "TriLinear"
+			image "Textures/BaltardIn/ns_bg.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/piste_ns_01"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.8
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/piste_ns.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/piste_ns_02"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.7
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/piste_ns_02.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/piste_ns_03"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.9
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/piste_ns.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/screen_ns_04"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.25
+		emissive 0.866025
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/screen_ns_04.jpg" rgb
+		}
+	}
+}
+
+material "baltard_in_ns/verre_baltard_in"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.703
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 6
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/barriere_verre.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/barriere_verre.png" a
+		}
+	}
+}
+
+material "pavillon_baltard_in/black"
+{
+	pass
+	{
+		albedo 0.000000 0.000000 0.000000
+		two_sided true
+	}
+}
+
+material "pavillon_baltard_in/bord_toit"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_bois.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/bronze"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_bronze.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/ciment"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_ciment.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/grilles deco"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		metallic 1
+		two_sided true
+		alpha_func greater 0.5
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_grille.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_grille.png" a
+		}
+	}
+}
+
+material "pavillon_baltard_in/light"
+{
+	pass
+	{
+		albedo 1.00000 0.992157 0.772549
+		roughness 0.1
+		emissive 10
+		two_sided true
+	}
+}
+
+material "pavillon_baltard_in/metal_bleu"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		metallic 1
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_metal_bleu.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/motifs"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_sol.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/toit"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.712
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_mur.jpg" rgb
+		}
+	}
+}
+
+material "pavillon_baltard_in/vitres"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.73
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 6
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_vitre.png" rgb
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			sampler "TriLinear"
+			image "Textures/BaltardIn/baltar_int_vitre.png" a
+		}
+	}
+}
+
+material "plasma/ecran"
+{
+	pass
+	{
+		albedo 0.0392157 0.0392157 0.0392157
+		roughness 0.865
+		two_sided true
+	}
+}
+
+material "plasma/plasma"
+{
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 0.946
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 9
+			channel albedo
+			sampler "TriLinear"
+			image "Textures/BaltardIn/plasma.jpg" rgb
+		}
+	}
+}

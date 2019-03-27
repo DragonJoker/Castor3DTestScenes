@@ -1,0 +1,127 @@
+materials pbr_specular_glossiness
+
+scene "Scene"
+{
+	ambient_light 1.0 1.0 1.0
+
+	skybox
+	{
+		equirectangular "Textures/cityCenterSkybox.hdr" 1024
+	}
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod 0.0
+		max_lod 0.0
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
+	material "Textured"
+	{
+		pass
+		{
+			albedo 0.75164	0.75164	0.75164 1.0
+			metallic 0.628281
+			roughness 0.2
+			parallax_occlusion true
+
+			texture_unit
+			{
+				channel glossiness
+				sampler "Linear"
+				image "Textures/Rusted/glossiness.png"
+			}
+
+			texture_unit
+			{
+				channel occlusion
+				sampler "Linear"
+				image "Textures/Rusted/occlusion.png"
+			}
+
+			texture_unit
+			{
+				channel normal
+				sampler "Linear"
+				image "Textures/Rusted/normal.png"
+			}
+
+			texture_unit
+			{
+				channel height
+				sampler "Linear"
+				image "Textures/Rusted/height.png"
+			}
+
+			texture_unit
+			{
+				channel reflection
+			}
+		}
+	}
+
+	scene_node "SunLightNode1"
+	{
+		orientation 1 0 0 45
+	}
+	light "SunLight1"
+	{
+		parent "SunLightNode1"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	scene_node "FinalNode"
+	{
+		position 0.0 0.0 0.0
+	}
+	object "FinalPrimitive"
+	{
+		parent "FinalNode"
+		mesh "Mesh"
+		{
+			type "cube" -width=50 -height=50 depth=50
+		}
+		material "Textured"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position 87.3926 -3.91655 -82.7833
+		orientation -0.0337855 -0.999314 -0.0151473 48.3264
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangles
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}
+

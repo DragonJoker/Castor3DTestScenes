@@ -1,0 +1,3037 @@
+// Global configuration
+debug_overlays true
+materials pbr_specular_glossiness
+
+scene "Cafe"
+{
+	// Scene configuration
+
+	background_colour 0.01 0.01 0.01
+	ambient_light 1.0 1.0 1.0
+	include "Materials/CafePBRSG.cscn"
+
+	// Skybox
+
+	// Fonts
+
+	// Samplers
+
+	// Overlays
+
+	// Meshes
+
+	mesh "barriere_bar"
+	{
+		import "Meshes/Cafe/barriere_bar.cmsh"
+	}
+
+	mesh "billard"
+	{
+		import "Meshes/Cafe/billard.cmsh"
+	}
+
+	mesh "cafe"
+	{
+		import "Meshes/Cafe/cafe.cmsh"
+	}
+
+	mesh "canape_demi_cercle"
+	{
+		import "Meshes/Cafe/canape_demi_cercle.cmsh"
+	}
+
+	mesh "canape_triple"
+	{
+		import "Meshes/Cafe/canape_triple.cmsh"
+	}
+
+	mesh "fauteuil"
+	{
+		import "Meshes/Cafe/fauteuil.cmsh"
+	}
+
+	mesh "objets_billard"
+	{
+		import "Meshes/Cafe/objets_billard.cmsh"
+	}
+
+	mesh "plante_01"
+	{
+		import "Meshes/Cafe/plante_01.cmsh"
+	}
+
+	mesh "plante_02"
+	{
+		import "Meshes/Cafe/plante_02.cmsh"
+	}
+
+	mesh "plante_03"
+	{
+		import "Meshes/Cafe/plante_03.cmsh"
+	}
+
+	mesh "plante_05"
+	{
+		import "Meshes/Cafe/plante_05.cmsh"
+	}
+
+	mesh "pouf"
+	{
+		import "Meshes/Cafe/pouf.cmsh"
+	}
+
+	mesh "table_bar"
+	{
+		import "Meshes/Cafe/table_bar.cmsh"
+	}
+
+	mesh "table_basse"
+	{
+		import "Meshes/Cafe/table_basse.cmsh"
+	}
+
+	mesh "table_verre"
+	{
+		import "Meshes/Cafe/table_verre.cmsh"
+	}
+
+	mesh "tableau_myt"
+	{
+		import "Meshes/Cafe/tableau_myt.cmsh"
+	}
+
+	mesh "tabouret_bar"
+	{
+		import "Meshes/Cafe/tabouret_bar.cmsh"
+	}
+
+	mesh "tv_bar"
+	{
+		import "Meshes/Cafe/tv_bar.cmsh"
+	}
+
+	// Cameras nodes
+
+	scene_node "CameraNode"
+	{
+		orientation 0 1 0 200
+		position 467 191 1327
+		scale 1 1 1
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "CameraNode"
+
+		viewport
+		{
+			type perspective
+			near 5
+			aspect_ratio 1.778
+			far 12000
+			fov_y 45
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "MainCharacter"
+	{
+		orientation 1 0 0 0
+		position -335 5 965
+		scale 1 1 1
+	}
+
+	scene_node "barriere_bar"
+	{
+		orientation 1 0 0 0
+		position -183 -2.38419e-07 -695
+		scale 1 1 1
+	}
+
+	scene_node "barriere_bar_1"
+	{
+		orientation 1 0 0 0
+		position -958 -5.96046e-08 -965
+		scale 1 1 1
+	}
+
+	scene_node "barriere_bar_10"
+	{
+		orientation 0 -1 0 89.8813
+		position 397 3.69549e-06 -175
+		scale 1 1 1
+	}
+
+	scene_node "barriere_bar_5"
+	{
+		orientation 0 1 0 0.118694
+		position 592 -1.19209e-07 30
+		scale 1 1 1
+	}
+
+	scene_node "barriere_bar_7"
+	{
+		orientation 0 1 0 90
+		position -607 0 1325
+		scale 1 1 1
+	}
+
+	scene_node "barriere_bar_8"
+	{
+		orientation 0 1 0 90
+		position -602 -2.38419e-07 675
+		scale 1 1 1
+	}
+
+	scene_node "billard_1"
+	{
+		orientation 0 -1 0 89.9999
+		position -170 0 -1100
+		scale 1 1 1
+	}
+
+	scene_node "billard_2"
+	{
+		orientation 0 -1 0 180
+		position 415 0 -970
+		scale 1 1 1
+	}
+
+	scene_node "canape_demi_cercle"
+	{
+		orientation 0 -1 0 270
+		position 1005 -7.7486e-07 -790
+		scale 1 1 1
+	}
+
+	scene_node "canape_triple"
+	{
+		orientation 1 0 0 0
+		position 665 0 165
+	}
+
+	scene_node "canape_triple_1"
+	{
+		orientation 1 0 0 0
+		position 665 0 570
+	}
+
+	scene_node "canape_triple_10_1"
+	{
+		orientation 0 -1 0 90
+		position -455 0 90
+	}
+
+	scene_node "canape_triple_10_2"
+	{
+		orientation 1 0 0 0
+		position -545 0 -1415
+	}
+
+	scene_node "canape_triple_10_3"
+	{
+		orientation 1 0 0 0
+		position 545 0 -1420
+	}
+
+	scene_node "canape_triple_2"
+	{
+		orientation 0 -1 0 180
+		position 665 0 485
+	}
+
+	scene_node "canape_triple_3"
+	{
+		orientation 0 -1 0 180
+		position 670 0 930
+	}
+
+	scene_node "canape_triple_4"
+	{
+		orientation 0 -1 0 270
+		position -135 0 1420
+	}
+
+	scene_node "canape_triple_5"
+	{
+		orientation 0 1 0 270
+		position 190 0 1420
+	}
+
+	scene_node "canape_triple_6"
+	{
+		orientation 0 1 0 270
+		position 585 0 1420
+	}
+
+	scene_node "canape_triple_7"
+	{
+		orientation 0 -1 0 270
+		position -525 0 1420
+	}
+
+	scene_node "canape_triple_8"
+	{
+		orientation 0 -1 0 270
+		position 275 0 1420
+	}
+
+	scene_node "canape_triple_9"
+	{
+		orientation 0 1 0 270
+		position -220 0 1420
+	}
+
+	scene_node "fauteuil"
+	{
+		orientation 0 1 0 40
+		position -1075 0 -1395
+	}
+
+	scene_node "fauteuil_1"
+	{
+		orientation 0 1 0 145
+		position -1095 0 -1100
+	}
+
+	scene_node "fauteuil_2"
+	{
+		orientation 0 -1 0 25
+		position -855 -7.7486e-07 -1410
+	}
+
+	scene_node "fauteuil_3"
+	{
+		orientation 0 -1 0 140
+		position 720 0 -40
+	}
+
+	scene_node "fauteuil_4"
+	{
+		orientation 0 -1 0 50
+		position 710 0 -340
+	}
+
+	scene_node "light_05"
+	{
+		orientation 1 0 0 0
+		position -595 20 -1095
+		scale 1 1 1
+	}
+
+	scene_node "light_06"
+	{
+		orientation 1 0 0 0
+		position -400 20 -1095
+		scale 1 1 1
+	}
+
+	scene_node "objets_billard"
+	{
+		orientation 1 0 0 0
+		position -160 -80 -1965
+		scale 1 1 1
+	}
+
+	scene_node "plante_01_4"
+	{
+		orientation 1 0 0 0
+		position 365 -60 170
+		scale 1 1 1
+	}
+
+	scene_node "plante_02"
+	{
+		orientation 1 0 0 0
+		position -330 0 -50
+		scale 1 1 1
+	}
+
+	scene_node "plante_03"
+	{
+		orientation 1 0 0 0
+		position 745 0 -1420
+		scale 1 1 1
+	}
+
+	scene_node "plante_05"
+	{
+		orientation 1 0 0 0
+		position -335 0 -335
+		scale 1 1 1
+	}
+
+	scene_node "pouf"
+	{
+		position -675 0 -1200
+	}
+
+	scene_node "pouf_1"
+	{
+		position -595 0 -1095
+	}
+
+	scene_node "pouf_2"
+	{
+		position -440 0 -1175
+	}
+
+	scene_node "pouf_3"
+	{
+		position 760 0 -705
+	}
+
+	scene_node "pouf_4"
+	{
+		position 770 0 -875
+	}
+
+	scene_node "pouf_5"
+	{
+		position 515 0 -75
+	}
+
+	scene_node "pouf_6"
+	{
+		position 510 0 -330
+	}
+
+	scene_node "pouf_7"
+	{
+		position 700 1.19209e-07 -1235
+	}
+
+	scene_node "pouf_9"
+	{
+		position 415 0 -1250
+	}
+
+	scene_node "spot_cafe"
+	{
+		orientation 1 0 0 0
+		position -115 400 370
+		scale 1 1 1
+	}
+
+	scene_node "spot_simple_1"
+	{
+		orientation 1 0 0 0
+		position 290 400 75
+		scale 1 1 1
+	}
+
+	scene_node "spot_simple_2"
+	{
+		orientation 0 -1 0 130
+		position 550 450 1175
+		scale 1 1 1
+	}
+
+	scene_node "table_bar"
+	{
+		orientation 1 0 0 0
+		position 190 0 340
+		scale 1 1 1
+	}
+
+	scene_node "table_bar_1"
+	{
+		orientation 1 0 0 0
+		position 15 0 860
+		scale 1 1 1
+	}
+
+	scene_node "table_bar_2"
+	{
+		orientation 1 0 0 0
+		position -225 0 590
+		scale 1 1 1
+	}
+
+	scene_node "table_bar_3"
+	{
+		orientation 1 0 0 0
+		position -105 0 155
+		scale 1 1 1
+	}
+
+	scene_node "table_bar_4"
+	{
+		orientation 1 0 0 0
+		position 15 0 -320
+		scale 1 1 1
+	}
+
+	scene_node "table_bar_5"
+	{
+		orientation 1 0 0 0
+		position 220 0 -75
+		scale 1 1 1
+	}
+
+	scene_node "table_basse"
+	{
+		orientation 1 0 0 0
+		position -955 0 -1230
+		scale 1 1 1
+	}
+
+	scene_node "table_basse_1"
+	{
+		orientation 1 0 0 0
+		position 625 0 -195
+		scale 1 1 1
+	}
+
+	scene_node "table_basse_2"
+	{
+		orientation 1 0 0 0
+		position 950 0 -770
+		scale 1 1 1
+	}
+
+	scene_node "table_basse_4"
+	{
+		orientation 1 0 0 0
+		position 550 0 -1260
+		scale 1 1 1
+	}
+
+	scene_node "table_basse_5"
+	{
+		orientation 1 0 0 0
+		position -545 0 -1225
+		scale 1 1 1
+	}
+
+	scene_node "table_verre"
+	{
+		orientation 0 -1 0 90
+		position 670 0 325
+		scale 1 1 1
+	}
+
+	scene_node "table_verre_1"
+	{
+		orientation 0 -1 0 90
+		position 670 0 755
+		scale 1 1 1
+	}
+
+	scene_node "table_verre_2"
+	{
+		orientation 0 -1 0 180
+		position 20 0 1420
+		scale 1 1 1
+	}
+
+	scene_node "table_verre_3"
+	{
+		orientation 0 -1 0 180
+		position 435 0 1425
+		scale 1 1 1
+	}
+
+	scene_node "table_verre_4"
+	{
+		orientation 0 -1 0 180
+		position -375 0 1420
+		scale 1 1 1
+	}
+
+	scene_node "tableau_myt"
+	{
+		orientation 0 1 0 89.9999
+		position -1146.6 150 700.916
+		scale 1 1 1
+	}
+
+	scene_node "tabouret_bar"
+	{
+		orientation 0 -1 0 30
+		position 280 0 -130
+	}
+
+	scene_node "tabouret_bar_1"
+	{
+		orientation 0 -1 0 77
+		position 265 0 305
+	}
+
+	scene_node "tabouret_bar_10"
+	{
+		orientation 0 -1 0 40
+		position 90 0 825
+	}
+
+	scene_node "tabouret_bar_13"
+	{
+		orientation 0 -1 0 99.9999
+		position 90 0 -355
+	}
+
+	scene_node "tabouret_bar_14"
+	{
+		orientation 0 -1 0 135
+		position 50 0 -260
+	}
+
+	scene_node "tabouret_bar_14_1"
+	{
+		orientation 0 -1 0 135
+		position -70 0 220
+	}
+
+	scene_node "tabouret_bar_16"
+	{
+		orientation 0 -1 0 237
+		position -60 0 -280
+	}
+
+	scene_node "tabouret_bar_17"
+	{
+		orientation 0 -1 0 335
+		position -25 0 -390
+	}
+
+	scene_node "tabouret_bar_18"
+	{
+		orientation 0 -1 0 335
+		position -20 0 785
+	}
+
+	scene_node "tabouret_bar_18_1"
+	{
+		orientation 0 1 0 320
+		position -170 0 510
+	}
+
+	scene_node "tabouret_bar_19"
+	{
+		orientation 0 -1 0 115
+		position 300 0 -30
+	}
+
+	scene_node "tabouret_bar_19_1"
+	{
+		orientation 0 -1 0 205
+		position 190 0 20
+	}
+
+	scene_node "tabouret_bar_19_2"
+	{
+		orientation 0 -1 0 300
+		position 150 0 -125
+	}
+
+	scene_node "tabouret_bar_2"
+	{
+		orientation 0 -1 0 135
+		position 240 0 395
+	}
+
+	scene_node "tabouret_bar_20"
+	{
+		orientation 0 1 0 280
+		position -825 0 -15
+	}
+
+	scene_node "tabouret_bar_20_1"
+	{
+		orientation 0 1 0 260
+		position -835 0 200
+	}
+
+	scene_node "tabouret_bar_20_3"
+	{
+		orientation 0 1 0 225
+		position -715 0 -185
+	}
+
+	scene_node "tabouret_bar_20_4"
+	{
+		orientation 0 1 0 270
+		position -580 0 -430
+	}
+
+	scene_node "tabouret_bar_20_6"
+	{
+		orientation 0 1 0 270
+		position -585 0 -660
+	}
+
+	scene_node "tabouret_bar_20_7"
+	{
+		orientation 0 1 0 310
+		position -665 0 -865
+	}
+
+	scene_node "tabouret_bar_21"
+	{
+		orientation 0 -1 0 265
+		position -195 0 160
+	}
+
+	scene_node "tabouret_bar_21_1"
+	{
+		orientation 0 -1 0 340
+		position -150 0 60
+	}
+
+	scene_node "tabouret_bar_21_2"
+	{
+		orientation 0 1 0 285
+		position -20 0 120
+	}
+
+	scene_node "tabouret_bar_21_3"
+	{
+		orientation 0 1 0 225
+		position -165 0 635
+	}
+
+	scene_node "tabouret_bar_21_5"
+	{
+		orientation 0 1 0 92.0001
+		position -305 0 560
+	}
+
+	scene_node "tabouret_bar_3"
+	{
+		orientation 0 -1 0 215
+		position 130 0 385
+	}
+
+	scene_node "tabouret_bar_5"
+	{
+		orientation 0 -1 0 325
+		position 155 0 275
+	}
+
+	scene_node "tabouret_bar_7"
+	{
+		orientation 0 -1 0 215
+		position 0 0 935
+	}
+
+	scene_node "tv_bar"
+	{
+		orientation 0 1 0 217.5
+		position 725 355 1480
+		scale 2.01347 2.01347 2.01347
+	}
+
+	scene_node "tv_bar_01"
+	{
+		orientation 0 1 0 45
+		position -1125 310 -1430
+		scale 1.1474 1.1474 1.1474
+	}
+
+	// Lights
+
+	scene_node "spot_01"
+	{
+		position 479.473 439.408 1287.94
+		orientation 1 0 0 90
+	}
+
+	light "spot_01"
+	{
+		parent "spot_01"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_02"
+	{
+		position 662.749 439.408 1105.66
+		orientation 1 0 0 90
+	}
+
+	light "spot_02"
+	{
+		parent "spot_02"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_03"
+	{
+		position -733.294 417.279 653.509
+		orientation 1 0 0 90
+	}
+
+	light "spot_03"
+	{
+		parent "spot_03"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_04"
+	{
+		position -733.294 417.279 946.337
+		orientation 1 0 0 90
+	}
+
+	light "spot_04"
+	{
+		parent "spot_04"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_05"
+	{
+		position -733.294 417.279 1234.54
+		orientation 1 0 0 90
+	}
+
+	light "spot_05"
+	{
+		parent "spot_05"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_06"
+	{
+		position -995.59 417.279 1234.54
+		orientation 1 0 0 90
+	}
+
+	light "spot_06"
+	{
+		parent "spot_06"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_07"
+	{
+		position -995.59 417.279 946.337
+		orientation 1 0 0 90
+	}
+
+	light "spot_07"
+	{
+		parent "spot_07"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_08"
+	{
+		position -995.59 417.279 653.509
+		orientation 1 0 0 90
+	}
+
+	light "spot_08"
+	{
+		parent "spot_08"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_09"
+	{
+		position 688.002 423.752 -398.914
+		orientation 1 0 0 90
+	}
+
+	light "spot_09"
+	{
+		parent "spot_09"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_10"
+	{
+		position 688.002 423.752 -398.914
+		orientation 1 0 0 90
+	}
+
+	light "spot_10"
+	{
+		parent "spot_10"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_11"
+	{
+		position 688.002 423.752 -786.792
+		orientation 1 0 0 90
+	}
+
+	light "spot_11"
+	{
+		parent "spot_11"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_12"
+	{
+		position 688.002 423.752 -1173.61
+		orientation 1 0 0 90
+	}
+
+	light "spot_12"
+	{
+		parent "spot_12"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_13"
+	{
+		position 887.288 423.752 -592.878
+		orientation 1 0 0 90
+	}
+
+	light "spot_13"
+	{
+		parent "spot_13"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_14"
+	{
+		position 887.288 423.752 -980.312
+		orientation 1 0 0 90
+	}
+
+	light "spot_14"
+	{
+		parent "spot_14"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_15"
+	{
+		position 495.383 423.752 -980.312
+		orientation 1 0 0 90
+	}
+
+	light "spot_15"
+	{
+		parent "spot_15"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_16"
+	{
+		position 495.383 423.752 -1370.17
+		orientation 1 0 0 90
+	}
+
+	light "spot_16"
+	{
+		parent "spot_16"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_17"
+	{
+		position 495.383 423.752 -204.006
+		orientation 1 0 0 90
+	}
+
+	light "spot_17"
+	{
+		parent "spot_17"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_18"
+	{
+		position 1077.19 423.752 -790.896
+		orientation 1 0 0 90
+	}
+
+	light "spot_18"
+	{
+		parent "spot_18"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_19"
+	{
+		position -671.329 444.518 -981.461
+		orientation 1 0 0 90
+	}
+
+	light "spot_19"
+	{
+		parent "spot_19"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_20"
+	{
+		position 1077.19 423.752 -981.461
+		orientation 1 0 0 90
+	}
+
+	light "spot_20"
+	{
+		parent "spot_20"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_21"
+	{
+		position -671.329 444.518 -790.896
+		orientation 1 0 0 90
+	}
+
+	light "spot_21"
+	{
+		parent "spot_21"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_22"
+	{
+		position -1061.82 394.654 -979.597
+		orientation 1 0 0 90
+	}
+
+	light "spot_22"
+	{
+		parent "spot_22"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_23"
+	{
+		position -1061.82 394.654 -1372.15
+		orientation 1 0 0 90
+	}
+
+	light "spot_23"
+	{
+		parent "spot_23"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_24"
+	{
+		position -477.952 394.654 -592.365
+		orientation 1 0 0 90
+	}
+
+	light "spot_24"
+	{
+		parent "spot_24"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_25"
+	{
+		position -477.952 394.654 -204.861
+		orientation 1 0 0 90
+	}
+
+	light "spot_25"
+	{
+		parent "spot_25"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_26"
+	{
+		position -477.952 394.654 185.497
+		orientation 1 0 0 90
+	}
+
+	light "spot_26"
+	{
+		parent "spot_26"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_27_bar"
+	{
+		position -1059.02 273.0 -774.963
+		orientation 1 0 0 90
+	}
+
+	light "spot_27_bar"
+	{
+		parent "spot_27_bar"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_28_bar"
+	{
+		position -855.573 273.0 -774.963
+		orientation 1 0 0 90
+	}
+
+	light "spot_28_bar"
+	{
+		parent "spot_28_bar"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_29_bar"
+	{
+		position -712.856 273.0 -741.762
+		orientation 1 0 0 90
+	}
+
+	light "spot_29_bar"
+	{
+		parent "spot_29_bar"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_30_bar"
+	{
+		position -682.616 273.0 -596.697
+		orientation 1 0 0 90
+	}
+
+	light "spot_30_bar"
+	{
+		parent "spot_30_bar"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_31_bar"
+	{
+		position -682.616 273.0 -432.128
+		orientation 1 0 0 90
+	}
+
+	light "spot_31_bar"
+	{
+		parent "spot_31_bar"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_32_bar"
+	{
+		position -730.466 273.0 -293.087
+		orientation 1 0 0 90
+	}
+
+	light "spot_32_bar"
+	{
+		parent "spot_32_bar"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_33_bar"
+	{
+		position -923.241 273.0 -138.997
+		orientation 1 0 0 90
+	}
+
+	light "spot_33_bar"
+	{
+		parent "spot_33_bar"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_34_bar"
+	{
+		position -923.241 273.0 108.299
+		orientation 1 0 0 90
+	}
+
+	light "spot_34_bar"
+	{
+		parent "spot_34_bar"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_35_bar"
+	{
+		position -1048.18 273.0 244.784
+		orientation 1 0 0 90
+	}
+
+	light "spot_35_bar"
+	{
+		parent "spot_35_bar"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_36_bar_back"
+	{
+		position -1184.8 236.0 -603.379
+		orientation 1 0 0 90
+	}
+
+	light "spot_36_bar_back"
+	{
+		parent "spot_36_bar_back"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_37_bar_back"
+	{
+		position -1184.8 164.437 -603.379
+		orientation 1 0 0 90
+	}
+
+	light "spot_37_bar_back"
+	{
+		parent "spot_37_bar_back"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_38_bar_back"
+	{
+		position -1184.8 236.0 -405.864
+		orientation 1 0 0 90
+	}
+
+	light "spot_38_bar_back"
+	{
+		parent "spot_38_bar_back"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_39_bar_back"
+	{
+		position -1184.8 164.437 -405.864
+		orientation 1 0 0 90
+	}
+
+	light "spot_39_bar_back"
+	{
+		parent "spot_39_bar_back"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_40_bar_back"
+	{
+		position -1184.8 236.0 -199.571
+		orientation 1 0 0 90
+	}
+
+	light "spot_40_bar_back"
+	{
+		parent "spot_40_bar_back"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_41_bar_back"
+	{
+		position -1184.8 164.437 -199.571
+		orientation 1 0 0 90
+	}
+
+	light "spot_41_bar_back"
+	{
+		parent "spot_41_bar_back"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_42_bar_back"
+	{
+		position -1184.8 236.0 0.0
+		orientation 1 0 0 90
+	}
+
+	light "spot_42_bar_back"
+	{
+		parent "spot_42_bar_back"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_43_bar_back"
+	{
+		position -1184.8 164.437 0.0
+		orientation 1 0 0 90
+	}
+
+	light "spot_43_bar_back"
+	{
+		parent "spot_43_bar_back"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_44_bar_back_display"
+	{
+		position -1162.44 193.092 -95.105
+		orientation 1 0 0 90
+	}
+
+	light "spot_44_bar_back_display"
+	{
+		parent "spot_44_bar_back_display"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_45_bar_back_display"
+	{
+		position -1162.44 193.092 -503.336
+		orientation 1 0 0 90
+	}
+
+	light "spot_45_bar_back_display"
+	{
+		parent "spot_45_bar_back_display"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_46_billard"
+	{
+		position 480.0 228.0 -972.113
+		orientation 1 0 0 90
+	}
+
+	light "spot_46_billard"
+	{
+		parent "spot_46_billard"
+		type spot
+		colour 1.0 1.0 0.5
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_47_billard"
+	{
+		position 332.0 228.0 -972.113
+		orientation 1 0 0 90
+	}
+
+	light "spot_47_billard"
+	{
+		parent "spot_47_billard"
+		type spot
+		colour 1.0 1.0 0.5
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_48_billard"
+	{
+		position 406.0 228.0 -972.113
+		orientation 1 0 0 90
+	}
+
+	light "spot_48_billard"
+	{
+		parent "spot_48_billard"
+		type spot
+		colour 1.0 1.0 0.5
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_49_billard"
+	{
+		position -171.5 228.0 -1180.0
+		orientation 1 0 0 90
+	}
+
+	light "spot_49_billard"
+	{
+		parent "spot_49_billard"
+		type spot
+		colour 1.0 1.0 0.5
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_50_billard"
+	{
+		position -171.5 228.0 -1032.0
+		orientation 1 0 0 90
+	}
+
+	light "spot_50_billard"
+	{
+		parent "spot_50_billard"
+		type spot
+		colour 1.0 1.0 0.5
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_51_billard"
+	{
+		position -171.5 228.0 -1106.0
+		orientation 1 0 0 90
+	}
+
+	light "spot_51_billard"
+	{
+		parent "spot_51_billard"
+		type spot
+		colour 1.0 1.0 0.5
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_52"
+	{
+		position -671.528 442.165 -1373.77
+		orientation 1 0 0 90
+	}
+
+	light "spot_52"
+	{
+		parent "spot_52"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "spot_53"
+	{
+		position -285.327 442.165 -1373.77
+		orientation 1 0 0 90
+	}
+
+	light "spot_53"
+	{
+		parent "spot_53"
+		type spot
+		colour 1.0 1.0 1.0
+		intensity 0.5 1
+		attenuation 1 0.02 0
+		cut_off 45.0
+		shadows
+		{
+			producer true
+			filter pcf
+			min_offset 0.00001
+			max_slope_offset 0.0001
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+
+	scene_node "aqua_point_01"
+	{
+		position 887.164 216.499 760.168
+	}
+
+	light "aqua_point_01"
+	{
+		parent "aqua_point_01"
+		type point
+		colour 0.40000 0.64706 0.84314
+		intensity 1 1
+		attenuation 1 0.02 0
+	}
+
+	scene_node "aqua_point_02"
+	{
+		position 887.164 216.499 409.166
+	}
+
+	light "aqua_point_02"
+	{
+		parent "aqua_point_02"
+		type point
+		colour 0.40000 0.64706 0.84314
+		intensity 1 1
+		attenuation 1 0.02 0
+	}
+
+	// Geometries
+
+	object "barriere_bar"
+	{
+		parent "barriere_bar"
+		mesh "barriere_bar"
+		materials
+		{
+			material 0 "barriere_bar/barriere_bar"
+		}
+	}
+
+	object "barriere_bar_1"
+	{
+		parent "barriere_bar_1"
+		mesh "barriere_bar"
+		materials
+		{
+			material 0 "barriere_bar/barriere_bar"
+		}
+	}
+
+	object "barriere_bar_10"
+	{
+		parent "barriere_bar_10"
+		mesh "barriere_bar"
+		materials
+		{
+			material 0 "barriere_bar/barriere_bar"
+		}
+	}
+
+	object "barriere_bar_5"
+	{
+		parent "barriere_bar_5"
+		mesh "barriere_bar"
+		materials
+		{
+			material 0 "barriere_bar/barriere_bar"
+		}
+	}
+
+	object "barriere_bar_7"
+	{
+		parent "barriere_bar_7"
+		mesh "barriere_bar"
+		materials
+		{
+			material 0 "barriere_bar/barriere_bar"
+		}
+	}
+
+	object "barriere_bar_8"
+	{
+		parent "barriere_bar_8"
+		mesh "barriere_bar"
+		materials
+		{
+			material 0 "barriere_bar/barriere_bar"
+		}
+	}
+
+	object "billard_1"
+	{
+		parent "billard_1"
+		mesh "billard"
+		materials
+		{
+			material 0 "billard/tapis"
+			material 1 "billard/noir"
+			material 2 "billard/dorure"
+			material 3 "billard/bois"
+			material 4 "billard/queue"
+			material 5 "billard/bleu"
+			material 6 "billard/light"
+		}
+	}
+
+	object "billard_2"
+	{
+		parent "billard_2"
+		mesh "billard"
+		materials
+		{
+			material 0 "billard/tapis"
+			material 1 "billard/noir"
+			material 2 "billard/dorure"
+			material 3 "billard/bois"
+			material 4 "billard/queue"
+			material 5 "billard/bleu"
+			material 6 "billard/light"
+		}
+	}
+
+	object "cafe"
+	{
+		parent "ObjectRootNode"
+		mesh "cafe"
+		materials
+		{
+			material 0 "cafe/cafe_carelage"
+			material 1 "cafe/cafe_neon"
+			material 2 "cafe/cafe_bois"
+			material 3 "cafe/cafe_bar_alu"
+			material 4 "cafe/cafe_bar_light"
+			material 5 "cafe/cafe_poteau"
+			material 6 "cafe/cafe_bar_marbre"
+			material 7 "cafe/cafe_bar_gris"
+			material 8 "cafe/cafe_aqua_sol_01"
+			material 9 "cafe/cafe_grille_bar"
+			material 10 "cafe/cafe_frigo_bar"
+			material 11 "cafe/cafe_grille_bar_02"
+			material 12 "cafe/cafe_bouteilles_01"
+			material 13 "cafe/cafe_bouteilles_02"
+			material 14 "cafe/cafe_bouteilles_03"
+			material 15 "cafe/cafe_bouteilles_04"
+			material 16 "cafe/cafe_exit"
+			material 17 "cafe/cafe_aqua_fond"
+			material 18 "cafe/cafe_aqua_plafond"
+			material 19 "cafe/cafe_aqua_pierre_01"
+			material 20 "cafe/cafe_aqua_pierre_02"
+			material 21 "cafe/cafe_aqua_pierre_03"
+			material 22 "cafe/cafe_aqua_coffre"
+			material 23 "cafe/cafe_aqua_tube"
+			material 24 "cafe/cafe_deco_01"
+			material 25 "cafe/cafe_deco_02"
+			material 26 "cafe/cafe_deco_03"
+			material 27 "cafe/cafe_mur_01"
+			material 28 "cafe/cafe_sol_01"
+			material 29 "cafe/cafe_mur_02"
+			material 30 "cafe/cafe_aqua_coquillage_01"
+			material 31 "cafe/cafe_aqua_plante_01"
+			material 32 "cafe/cafe_aqua_plante_02"
+			material 33 "cafe/cafe_aqua_plante_03"
+			material 34 "cafe/cafe_aqua_coquillage_02"
+			material 35 "cafe/cafe_deco_04"
+			material 36 "cafe/cafe_porte"
+			material 37 "cafe/cafe_roof_01"
+			material 38 "cafe/cafe_vitre"
+			material 39 "cafe/cafe_roof_02"
+			material 40 "cafe/cafe_aqua_sol_02"
+			material 41 "cafe/cafe_chrome"
+			material 42 "cafe/cafe_entree"
+			material 43 "cafe/cafe_rideau"
+		}
+	}
+
+	object "canape_demi_cercle"
+	{
+		parent "canape_demi_cercle"
+		mesh "canape_demi_cercle"
+		materials
+		{
+			material 0 "canape_demi_cercle/canape_demi_cercle"
+		}
+	}
+
+	object "canape_triple"
+	{
+		parent "canape_triple"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_1"
+	{
+		parent "canape_triple_1"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_10_1"
+	{
+		parent "canape_triple_10_1"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_10_2"
+	{
+		parent "canape_triple_10_2"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_10_3"
+	{
+		parent "canape_triple_10_3"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_2"
+	{
+		parent "canape_triple_2"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_3"
+	{
+		parent "canape_triple_3"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_4"
+	{
+		parent "canape_triple_4"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_5"
+	{
+		parent "canape_triple_5"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_6"
+	{
+		parent "canape_triple_6"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_7"
+	{
+		parent "canape_triple_7"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_8"
+	{
+		parent "canape_triple_8"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "canape_triple_9"
+	{
+		parent "canape_triple_9"
+		mesh "canape_triple"
+		material "canape_triple/canape_triple"
+	}
+
+	object "fauteuil"
+	{
+		parent "fauteuil"
+		mesh "fauteuil"
+		material "fauteuil/gros_fauteuil_bar"
+	}
+
+	object "fauteuil_1"
+	{
+		parent "fauteuil_1"
+		mesh "fauteuil"
+		material "fauteuil/gros_fauteuil_bar"
+	}
+
+	object "fauteuil_2"
+	{
+		parent "fauteuil_2"
+		mesh "fauteuil"
+		material "fauteuil/gros_fauteuil_bar"
+	}
+
+	object "fauteuil_3"
+	{
+		parent "fauteuil_3"
+		mesh "fauteuil"
+		material "fauteuil/gros_fauteuil_bar"
+	}
+
+	object "fauteuil_4"
+	{
+		parent "fauteuil_4"
+		mesh "fauteuil"
+		material "fauteuil/gros_fauteuil_bar"
+	}
+
+	object "objets_billard"
+	{
+		parent "objets_billard"
+		mesh "objets_billard"
+		material "fauteuil/gros_fauteuil_bar"
+	}
+
+	object "plante_01_4"
+	{
+		parent "plante_01_4"
+		mesh "plante_01"
+		materials
+		{
+			material 0 "plante_01/plante_01"
+			material 1 "plante_01/plante_pot"
+		}
+	}
+
+	object "plante_02"
+	{
+		parent "plante_02"
+		mesh "plante_02"
+		materials
+		{
+			material 0 "plante_02/plante_02"
+			material 1 "plante_02/plante_pot"
+		}
+	}
+
+	object "plante_03"
+	{
+		parent "plante_03"
+		mesh "plante_03"
+		materials
+		{
+			material 0 "plante_03/plante_03"
+			material 1 "plante_03/plante_pot"
+		}
+	}
+
+	object "plante_05"
+	{
+		parent "plante_05"
+		mesh "plante_05"
+		materials
+		{
+			material 0 "plante_05/plante_05"
+			material 1 "plante_05/plante_pot"
+		}
+	}
+
+	object "pouf"
+	{
+		parent "pouf"
+		mesh "pouf"
+		material "pouf/pouf"
+	}
+
+	object "pouf_1"
+	{
+		parent "pouf_1"
+		mesh "pouf"
+		material "pouf/pouf"
+	}
+
+	object "pouf_2"
+	{
+		parent "pouf_2"
+		mesh "pouf"
+		material "pouf/pouf"
+	}
+
+	object "pouf_3"
+	{
+		parent "pouf_3"
+		mesh "pouf"
+		material "pouf/pouf"
+	}
+
+	object "pouf_4"
+	{
+		parent "pouf_4"
+		mesh "pouf"
+		material "pouf/pouf"
+	}
+
+	object "pouf_5"
+	{
+		parent "pouf_5"
+		mesh "pouf"
+		material "pouf/pouf"
+	}
+
+	object "pouf_6"
+	{
+		parent "pouf_6"
+		mesh "pouf"
+		material "pouf/pouf"
+	}
+
+	object "pouf_7"
+	{
+		parent "pouf_7"
+		mesh "pouf"
+		material "pouf/pouf"
+	}
+
+	object "pouf_9"
+	{
+		parent "pouf_9"
+		mesh "pouf"
+		material "pouf/pouf"
+	}
+
+	object "table_bar"
+	{
+		parent "table_bar"
+		mesh "table_bar"
+		materials
+		{
+			material 0 "table_bar/laque"
+			material 1 "table_bar/cuivre"
+		}
+	}
+
+	object "table_bar_1"
+	{
+		parent "table_bar_1"
+		mesh "table_bar"
+		materials
+		{
+			material 0 "table_bar/laque"
+			material 1 "table_bar/cuivre"
+		}
+	}
+
+	object "table_bar_2"
+	{
+		parent "table_bar_2"
+		mesh "table_bar"
+		materials
+		{
+			material 0 "table_bar/laque"
+			material 1 "table_bar/cuivre"
+		}
+	}
+
+	object "table_bar_3"
+	{
+		parent "table_bar_3"
+		mesh "table_bar"
+		materials
+		{
+			material 0 "table_bar/laque"
+			material 1 "table_bar/cuivre"
+		}
+	}
+
+	object "table_bar_4"
+	{
+		parent "table_bar_4"
+		mesh "table_bar"
+		materials
+		{
+			material 0 "table_bar/laque"
+			material 1 "table_bar/cuivre"
+		}
+	}
+
+	object "table_bar_5"
+	{
+		parent "table_bar_5"
+		mesh "table_bar"
+		materials
+		{
+			material 0 "table_bar/laque"
+			material 1 "table_bar/cuivre"
+		}
+	}
+
+	object "table_basse"
+	{
+		parent "table_basse"
+		mesh "table_basse"
+		materials
+		{
+			material 0 "table_basse/table_basse_laque"
+			material 1 "table_basse/table_basse_cuivre"
+		}
+	}
+
+	object "table_basse_1"
+	{
+		parent "table_basse_1"
+		mesh "table_basse"
+		materials
+		{
+			material 0 "table_basse/table_basse_laque"
+			material 1 "table_basse/table_basse_cuivre"
+		}
+	}
+
+	object "table_basse_2"
+	{
+		parent "table_basse_2"
+		mesh "table_basse"
+		materials
+		{
+			material 0 "table_basse/table_basse_laque"
+			material 1 "table_basse/table_basse_cuivre"
+		}
+	}
+
+	object "table_basse_4"
+	{
+		parent "table_basse_4"
+		mesh "table_basse"
+		materials
+		{
+			material 0 "table_basse/table_basse_laque"
+			material 1 "table_basse/table_basse_cuivre"
+		}
+	}
+
+	object "table_basse_5"
+	{
+		parent "table_basse_5"
+		mesh "table_basse"
+		materials
+		{
+			material 0 "table_basse/table_basse_laque"
+			material 1 "table_basse/table_basse_cuivre"
+		}
+	}
+
+	object "table_verre"
+	{
+		parent "table_verre"
+		mesh "table_verre"
+		materials
+		{
+			material 0 "table_verre/table_bar_fer_forge"
+			material 1 "table_verre/table_bar_verre"
+		}
+	}
+
+	object "table_verre_1"
+	{
+		parent "table_verre_1"
+		mesh "table_verre"
+		materials
+		{
+			material 0 "table_verre/table_bar_fer_forge"
+			material 1 "table_verre/table_bar_verre"
+		}
+	}
+
+	object "table_verre_2"
+	{
+		parent "table_verre_2"
+		mesh "table_verre"
+		materials
+		{
+			material 0 "table_verre/table_bar_fer_forge"
+			material 1 "table_verre/table_bar_verre"
+		}
+	}
+
+	object "table_verre_3"
+	{
+		parent "table_verre_3"
+		mesh "table_verre"
+		materials
+		{
+			material 0 "table_verre/table_bar_fer_forge"
+			material 1 "table_verre/table_bar_verre"
+		}
+	}
+
+	object "table_verre_4"
+	{
+		parent "table_verre_4"
+		mesh "table_verre"
+		materials
+		{
+			material 0 "table_verre/table_bar_fer_forge"
+			material 1 "table_verre/table_bar_verre"
+		}
+	}
+
+	object "tableau_myt"
+	{
+		parent "tableau_myt"
+		mesh "tableau_myt"
+		materials
+		{
+			material 0 "tableau_myt/tableau_myt_graff_01"
+			material 1 "tableau_myt/tableau_myt_graff_02"
+			material 2 "tableau_myt/tableau_myt_graff_03"
+		}
+	}
+
+	object "tabouret_bar"
+	{
+		parent "tabouret_bar"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_1"
+	{
+		parent "tabouret_bar_1"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_10"
+	{
+		parent "tabouret_bar_10"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_13"
+	{
+		parent "tabouret_bar_13"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_14"
+	{
+		parent "tabouret_bar_14"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_14_1"
+	{
+		parent "tabouret_bar_14_1"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_16"
+	{
+		parent "tabouret_bar_16"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_17"
+	{
+		parent "tabouret_bar_17"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_18"
+	{
+		parent "tabouret_bar_18"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_18_1"
+	{
+		parent "tabouret_bar_18_1"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_19"
+	{
+		parent "tabouret_bar_19"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_19_1"
+	{
+		parent "tabouret_bar_19_1"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_19_2"
+	{
+		parent "tabouret_bar_19_2"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_2"
+	{
+		parent "tabouret_bar_2"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_20"
+	{
+		parent "tabouret_bar_20"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_20_1"
+	{
+		parent "tabouret_bar_20_1"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_20_3"
+	{
+		parent "tabouret_bar_20_3"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_20_4"
+	{
+		parent "tabouret_bar_20_4"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_20_6"
+	{
+		parent "tabouret_bar_20_6"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_20_7"
+	{
+		parent "tabouret_bar_20_7"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_21"
+	{
+		parent "tabouret_bar_21"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_21_1"
+	{
+		parent "tabouret_bar_21_1"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_21_2"
+	{
+		parent "tabouret_bar_21_2"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_21_3"
+	{
+		parent "tabouret_bar_21_3"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_21_5"
+	{
+		parent "tabouret_bar_21_5"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_3"
+	{
+		parent "tabouret_bar_3"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_5"
+	{
+		parent "tabouret_bar_5"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tabouret_bar_7"
+	{
+		parent "tabouret_bar_7"
+		mesh "tabouret_bar"
+		materials
+		{
+			material 0 "tabouret_bar/cuir"
+			material 1 "tabouret_bar/metal"
+		}
+	}
+
+	object "tv_bar"
+	{
+		parent "tv_bar"
+		mesh "tv_bar"
+		materials
+		{
+			material 0 "tv_bar/ecran"
+			material 1 "tv_bar/plasma"
+		}
+	}
+
+	object "tv_bar_01"
+	{
+		parent "tv_bar_01"
+		mesh "tv_bar"
+		materials
+		{
+			material 0 "tv_bar/ecran"
+			material 1 "tv_bar/plasma"
+		}
+	}
+
+	// Particle systems
+
+	// Animated object groups
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "Cafe"
+		camera "MainCamera"
+		size 1920 1080
+		format argb32
+		tone_mapping "linear"
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			intensity 1.0
+			radius 50.0
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1.0
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}

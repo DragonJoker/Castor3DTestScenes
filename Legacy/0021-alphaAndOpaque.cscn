@@ -1,0 +1,87 @@
+materials legacy
+
+scene "MainScene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.500000 0.500000 0.500000 1.00000
+	include "Materials/Lightning.cscn"
+
+	scene_node "MainCameraNode"
+	{
+		parent "CameraRootNode"
+		orientation 0 1 0 180
+		position 0 25 100
+		scale 1 1 1
+	}
+
+	scene_node "GeomNode"
+	{
+		parent "ObjectRootNode"
+		orientation 1 0 0 0
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 180
+	}
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.1
+			aspect_ratio 1.333
+			far 20000
+			fov_y 45
+		}
+	}
+
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.2 1.0
+	}
+
+	mesh "GeomMesh"
+	{
+		import "Meshes/Lightning.cmsh"
+		default_materials
+		{
+			material 0 "Hair"
+			material 1 "Face"
+			material 2 "Stuff"
+			material 3 "Clothes"
+			material 4 "Eye"
+			material 5 "Pendant"
+			material 6 "Weapon"
+		}
+	}
+
+	object "GeomObject"
+	{
+		parent "GeomNode"
+		mesh "GeomMesh"
+	}
+}
+
+window "MainWindow"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "MainScene"
+		camera "MainCamera"
+		size 800 600
+		format argb32
+		tone_mapping "linear" -Exposure=1 -Gamma=1
+	}
+}

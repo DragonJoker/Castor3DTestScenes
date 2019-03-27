@@ -1,0 +1,133 @@
+ambient_light 0.5 0.5 0.5
+
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	min_lod 0.0
+	max_lod 5.0
+	lod_bias 0.0
+	u_wrap_mode clamp_to_border
+	v_wrap_mode clamp_to_border
+	w_wrap_mode clamp_to_border
+	border_colour float_opaque_black
+}
+
+material "MatBody"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		alpha_func greater 0.5
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/body-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/body-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "MatHead"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "cornea"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+	}
+}
+
+material "dx11Shader6"
+{
+	pass
+	{
+		albedo 0.75164 0.75164 0.75164 1.0
+		roughness 0.0
+		metallic 1.0
+		alpha_func greater 0.5
+		two_sided true
+		refraction_ratio 0.92
+
+		texture_unit
+		{
+			levels_count 6
+			channel refraction
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel opacity
+			levels_count 6
+			image "Textures/Nyra/head-opacity.png" a
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			channel normal
+			levels_count 6
+			image "Textures/Nyra/head-normal.jpg" rgb
+			sampler "Trilinear"
+		}
+	}
+}
