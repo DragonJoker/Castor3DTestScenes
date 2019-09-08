@@ -17,7 +17,7 @@ def writeChannel( file, channel, extension ):
 	file.write( '			}\n' )
 
 def writeFile( file, indices ):
-	file.write( 'materials legacy\n' )
+	file.write( 'materials phong\n' )
 	file.write( '\n' )
 	file.write( 'scene "Scene"\n' )
 	file.write( '{\n' )

@@ -1,5 +1,5 @@
 // debug_overlays true
-materials pbr_metallic_roughness
+materials metallic_roughness
 
 scene "Scene"
 {

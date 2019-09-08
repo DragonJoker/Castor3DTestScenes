@@ -1,5 +1,5 @@
 debug_overlays true
-materials legacy
+materials phong
 
 scene "Scene"
 {

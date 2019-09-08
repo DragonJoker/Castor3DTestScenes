@@ -1,5 +1,5 @@
 // Global configuration
-materials legacy
+materials phong
 
 scene "Parc"
 {

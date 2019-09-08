@@ -1,5 +1,5 @@
 // Global configuration
-materials pbr_specular_glossiness
+materials specular_glossiness
 
 scene "SanMiguel"
 {

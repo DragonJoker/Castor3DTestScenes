@@ -17,7 +17,7 @@ def writeChannel( file, channel, extension ):
 	file.write( '			}\n' )
 
 def writeFile( file, indices ):
-	file.write( 'materials pbr_specular_glossiness\n' )
+	file.write( 'materials specular_glossiness\n' )
 	file.write( '\n' )
 	file.write( 'scene "Scene"\n' )
 	file.write( '{\n' )
@@ -45,9 +45,9 @@ def writeFile( file, indices ):
 	file.write( '	{\n' )
 	file.write( '		pass\n' )
 	file.write( '		{\n' )
-	file.write( '			albedo 0.75164	0.75164	0.75164 1.0\n' )
-	file.write( '			metallic 0.628281\n' )
-	file.write( '			roughness 0.2\n' )
+	file.write( '			albedo 0.75164 0.75164 0.75164 1.0\n' )
+	file.write( '			specular 0.628281 0.628281 0.628281\n' )
+	file.write( '			glossiness 0.2\n' )
 	for i in indices:
 		if len( options[i] ) > 0:
 			file.write( '			' + options[i] + '\n' )
