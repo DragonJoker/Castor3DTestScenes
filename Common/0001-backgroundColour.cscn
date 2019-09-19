@@ -1,3 +1,5 @@
+materials phong
+
 scene "Scene"
 {
 	background_colour 0.5 0.5 0.5 1.0
