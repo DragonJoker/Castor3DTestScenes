@@ -48,8 +48,8 @@ scene "Scene"
 			max_slope_offset 0.001
 			variance_max 0.0000001
 			variance_bias 0.15
-			// volumetric_steps 10
-			// volumetric_scattering 0.2
+			volumetric_steps 10
+			volumetric_scattering 0.2
 		}
 	}
 

@@ -86,18 +86,5 @@ window "Window"
 		size 800 600
 		format argb32
 		tone_mapping "linear"
-
-		ssao
-		{
-			enabled true
-			high_quality true
-			intensity 1.0
-			radius 50.0
-			bias 0.023
-			num_samples 19
-			edge_sharpness 1.0
-			blur_step_size 2
-			blur_radius 4
-		}
 	}
 }

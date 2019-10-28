@@ -163,18 +163,6 @@ scene "AnimScene"
 	animated_object_group "HellKnight1_2Anim"
 	{
 		animated_object "HellKnight1"
-
-		animation "idle2"
-		{
-			looped true
-			scale 1
-		}
-
-		start_animation "idle2"
-	}
-
-	animated_object_group "HellKnight1_3Anim"
-	{
 		animated_object "HellKnight2"
 
 		animation "idle2"

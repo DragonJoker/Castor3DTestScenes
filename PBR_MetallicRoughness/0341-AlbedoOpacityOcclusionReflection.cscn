@@ -93,7 +93,7 @@ scene "Scene"
 	camera "MainCamera"
 	{
 		parent "MainCameraNode"
-		primitive triangles
+		primitive triangle_list
 		viewport "MainViewport"
 		{
 			type perspective

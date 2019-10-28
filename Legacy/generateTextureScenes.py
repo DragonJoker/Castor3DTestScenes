@@ -90,7 +90,7 @@ def writeFile( file, indices ):
 	file.write( '	camera "MainCamera"\n' )
 	file.write( '	{\n' )
 	file.write( '		parent "MainCameraNode"\n' )
-	file.write( '		primitive triangles\n' )
+	file.write( '		primitive triangle_list\n' )
 	file.write( '		viewport "MainViewport"\n' )
 	file.write( '		{\n' )
 	file.write( '			type perspective\n' )

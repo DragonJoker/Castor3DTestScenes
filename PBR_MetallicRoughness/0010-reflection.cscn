@@ -120,7 +120,7 @@ scene "Scene"
 	camera "Camera"
 	{
 		parent "Camera"
-		primitive triangles
+		primitive triangle_list
 		viewport "Camera"
 		{
 			type perspective

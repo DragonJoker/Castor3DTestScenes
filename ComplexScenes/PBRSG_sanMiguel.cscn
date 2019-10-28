@@ -1470,7 +1470,7 @@ scene "SanMiguel"
 		{
 			type perspective
 			near 0.1
-			aspect_ratio 1.778
+			aspect_ratio 1.333
 			far 100
 			fov_y 45
 		}
@@ -4966,7 +4966,7 @@ window "SanMiguel"
 	{
 		scene "SanMiguel"
 		camera "MainCamera"
-		size 1920 1080
+		size 800 600
 		format argb32
 		tone_mapping "linear"
 		// postfx "bloom" -Size=5
