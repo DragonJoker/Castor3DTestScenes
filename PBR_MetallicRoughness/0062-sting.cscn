@@ -79,7 +79,7 @@ scene "Scene"
 			texture_unit
 			{
 				sampler "TriLinear"
-				channel ambient_occlusion
+				channel occlusion
 				levels_count 6
 				image "Textures/Sting/sting_ao.png"
 			}

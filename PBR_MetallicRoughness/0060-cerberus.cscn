@@ -70,7 +70,7 @@ scene "Scene"
 			{
 				levels_count 6
 				image "Textures/Cerberus/Cerberus_AO.png"
-				channel ambient_occlusion
+				channel occlusion
 				sampler	"TriLinear"
 			}
 		}

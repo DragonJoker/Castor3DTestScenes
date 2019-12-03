@@ -253,7 +253,7 @@ material "arbre_rue/bac"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/patchy_cement-ao.png"
 		}
 	}
@@ -298,7 +298,7 @@ material "arbre_rue/branches"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/street_tree_leaves-ao.png"
 		}
 	}
@@ -321,7 +321,7 @@ material "arbre_rue/terre"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/dirt-ao.png"
 		}
 
@@ -358,7 +358,7 @@ material "arbre_rue/tronc"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bark-ao.png"
 		}
 
@@ -395,7 +395,7 @@ material "banc/bois"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bamboo_wood-ao.png"
 		}
 
@@ -674,7 +674,7 @@ material "buisson/feuilles"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bush_leaves-ao.png"
 		}
 	}
@@ -697,7 +697,7 @@ material "buisson/tronc"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bark-ao.png"
 		}
 
@@ -756,7 +756,7 @@ material "buisson_coin_ext/feuilles"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bush_leaves-ao.png"
 		}
 	}
@@ -779,7 +779,7 @@ material "buisson_coin_ext/tronc"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bark-ao.png"
 		}
 
@@ -838,7 +838,7 @@ material "buisson_coin_int/feuilles"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bush_leaves-ao.png"
 		}
 	}
@@ -861,7 +861,7 @@ material "buisson_coin_int/tronc"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bark-ao.png"
 		}
 
@@ -1037,7 +1037,7 @@ material "chene/tronc"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bark-ao.png"
 		}
 
@@ -1259,7 +1259,7 @@ material "entree_station/mur"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bricks-ao.png"
 		}
 	}
@@ -1296,7 +1296,7 @@ material "entree_station/muret"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bricks-ao.png"
 		}
 	}
@@ -1377,7 +1377,7 @@ material "entree_station/sol"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/marble_floor-ao.jpg"
 		}
 	}
@@ -1817,7 +1817,7 @@ material "fontaine/pierre"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/pocked_concrete-ao.png"
 		}
 	}
@@ -1978,7 +1978,7 @@ material "grille_parc/muret"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bricks-ao.png"
 		}
 	}
@@ -2177,7 +2177,7 @@ material "immeubles_parc/pierre_beige"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/building_wall-ao.png"
 		}
 	}
@@ -2214,7 +2214,7 @@ material "immeubles_parc/pierre_rose"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/building_wall-ao.png"
 		}
 	}
@@ -2618,7 +2618,7 @@ material "kiosque_park/sol_kiosque"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/oak_floor-ao.png"
 		}
 	}
@@ -2655,7 +2655,7 @@ material "kiosque_park/toit_kiosque"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/kiosk_roof-ao.png"
 		}
 	}
@@ -2773,7 +2773,7 @@ material "magasins_parc/entree_snow"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/metal_shutter-ao.png"
 		}
 	}
@@ -2944,7 +2944,7 @@ material "magasins_parc/vitrine_bar"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/pub_entrance-ao.png"
 		}
 	}
@@ -2988,7 +2988,7 @@ material "magasins_parc/vitrine_femme"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
 		}
 	}
@@ -3032,7 +3032,7 @@ material "magasins_parc/vitrine_homme"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
 		}
 	}
@@ -3076,7 +3076,7 @@ material "magasins_parc/vitrine_mode2"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
 		}
 	}
@@ -3120,7 +3120,7 @@ material "magasins_parc/vitrine_snow"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
 		}
 	}
@@ -3164,7 +3164,7 @@ material "magasins_parc/vitrine_snow2"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
 		}
 	}
@@ -3439,7 +3439,7 @@ material "piaf_ciel"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bird-ao.png"
 		}
 	}
@@ -3518,7 +3518,7 @@ material "poubelle/plastique_gris"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/scuffed_plastic-ao.png"
 		}
 
@@ -3555,7 +3555,7 @@ material "poubelle/plastique_noir"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/scuffed_plastic-ao.png"
 		}
 
@@ -3592,7 +3592,7 @@ material "poubelle/plastique_vert"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/scuffed_plastic-ao.png"
 		}
 
@@ -3735,7 +3735,7 @@ material "saule_pleureur/tronc"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/bark-ao.png"
 		}
 
@@ -3853,7 +3853,7 @@ material "sol_parc/egout"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/sewer_cap-ao.png"
 		}
 	}
@@ -3980,7 +3980,7 @@ material "sol_parc/route"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/pavement-ao.png"
 		}
 
@@ -4047,7 +4047,7 @@ material "sol_parc/sol_herbe"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/grass-ao.png"
 		}
 
@@ -4114,7 +4114,7 @@ material "sol_parc/terre"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/dirt-ao.png"
 		}
 
@@ -4151,7 +4151,7 @@ material "sol_parc/trottoir"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/sidewalk_pavement-ao.png"
 		}
 
@@ -4206,7 +4206,7 @@ material "table_echec/echiquier_table"
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/ParkPBRMR/marble-ao.jpg"
 		}
 

@@ -155,7 +155,7 @@ material "billard/tapis"
 
 		texture_unit
 		{
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/CafePBRMR/billard_tapis-ao.png" rgb
 		}
 
@@ -1094,7 +1094,7 @@ material "canape_demi_cercle/canape_demi_cercle"
 
 		texture_unit
 		{
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/CafePBRMR/leather-ao.png" rgb
 		}
 
@@ -1127,7 +1127,7 @@ material "canape_triple/canape_triple"
 
 		texture_unit
 		{
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/CafePBRMR/cuir-ao.png"
 		}
 
@@ -1160,7 +1160,7 @@ material "pouf/pouf"
 
 		texture_unit
 		{
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/CafePBRMR/cuir-ao.png"
 		}
 
@@ -1193,7 +1193,7 @@ material "fauteuil/gros_fauteuil_bar"
 
 		texture_unit
 		{
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/CafePBRMR/cuir-ao.png"
 		}
 
@@ -1525,7 +1525,7 @@ material "tabouret_bar/cuir"
 
 		texture_unit
 		{
-			channel ambient_occlusion
+			channel occlusion
 			image "Textures/CafePBRMR/leather-ao.png"
 		}
 

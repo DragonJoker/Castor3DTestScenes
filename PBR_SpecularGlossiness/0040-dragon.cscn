@@ -59,8 +59,8 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Dragon/ambient_occlusion.png" rgb
-				channel ambient_occlusion
+				image "Textures/Dragon/occlusion.png" rgb
+				channel occlusion
 				sampler	"TriLinear"
 			}
 

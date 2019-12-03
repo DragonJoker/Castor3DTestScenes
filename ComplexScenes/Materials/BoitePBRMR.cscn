@@ -354,7 +354,7 @@ material "boite/parquet 1"
 		texture_unit
 		{
 			levels_count 12
-			channel ambient_occlusion
+			channel occlusion
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/oak_floor-ao.png" rgb
 		}
@@ -396,7 +396,7 @@ material "boite/parquet 2"
 		texture_unit
 		{
 			levels_count 12
-			channel ambient_occlusion
+			channel occlusion
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/oak_floor-ao.png" rgb
 		}
@@ -583,7 +583,7 @@ material "dj_boite/piste"
 		texture_unit
 		{
 			levels_count 12
-			channel ambient_occlusion
+			channel occlusion
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/oak_floor-ao.png" rgb
 		}
