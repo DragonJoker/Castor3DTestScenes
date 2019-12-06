@@ -66,7 +66,7 @@ material "barriere_verre/verre"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
-		roughness 0.5
+		roughness 0.1
 		alpha_blend_mode interpolative
 
 		texture_unit
@@ -959,14 +959,6 @@ material "spot_simple/light"
 		emissive 2
 		two_sided true
 		alpha_blend_mode interpolative
-
-		texture_unit
-		{
-			levels_count 9
-			channel albedo
-			sampler "TriLinear"
-			image "Textures/BoitePBRMR/spot_light.png" rgb
-		}
 
 		texture_unit
 		{
