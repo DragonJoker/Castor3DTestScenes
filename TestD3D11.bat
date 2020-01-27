@@ -8,8 +8,8 @@ set C3D_DIR=..\..\binaries\x64\Release\bin
 if not "%1" == "" (
 	set FILE=%1
 	echo "Testing %1"
-	%C3D_DIR%\CastorTestLauncher --direct3d11 "%1"
-	%C3D_DIR%\DiffImage direct3d11 -f "%1"
+	%C3D_DIR%\CastorTestLauncher -d3d11 "%1"
+	%C3D_DIR%\DiffImage d3d11 -f "%1"
 	shift
 	goto loop
 )

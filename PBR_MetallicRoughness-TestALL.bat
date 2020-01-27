@@ -8,14 +8,12 @@ for /f "delims=" %%A in ('forfiles /s /p %DATA_DIR% /m *.cscn /c "cmd /c echo @r
 	set "file=%%~A"
 	setlocal enableDelayedExpansion
 	echo "Testing !file:~2!"
-	echo "  OpenGL 3.x"
-	%C3D_DIR%\CastorTestLauncher --opengl3 "%DATA_DIR%\!file:~2!"
-	echo "  OpenGL 4.x"
-	%C3D_DIR%\CastorTestLauncher --opengl4 "%DATA_DIR%\!file:~2!"
+	echo "  OpenGL"
+	%C3D_DIR%\CastorTestLauncher -gl "%DATA_DIR%\!file:~2!"
 	echo "  Direct3D 11"
-	%C3D_DIR%\CastorTestLauncher --direct3d11 "%DATA_DIR%\!file:~2!"
+	%C3D_DIR%\CastorTestLauncher -d3d11 "%DATA_DIR%\!file:~2!"
 	echo "  Vulkan"
-	%C3D_DIR%\CastorTestLauncher --vulkan "%DATA_DIR%\!file:~2!"
-	%C3D_DIR%\DiffImage opengl3 opengl4 direct3d11 vulkan -f "%DATA_DIR%\!file:~2!"
+	%C3D_DIR%\CastorTestLauncher -vk "%DATA_DIR%\!file:~2!"
+	%C3D_DIR%\DiffImage gl d3d11 vk -f "%DATA_DIR%\!file:~2!"
 	endlocal
 )

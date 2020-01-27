@@ -8,7 +8,7 @@ for /f "delims=" %%A in ('forfiles /s /p %DATA_DIR% /m *.cscn /c "cmd /c echo @r
 	set "file=%%~A"
 	setlocal enableDelayedExpansion
 	echo "Testing !file:~2!"
-	%C3D_DIR%\CastorTestLauncher --opengl4 "%DATA_DIR%\!file:~2!"
-	%C3D_DIR%\DiffImage opengl4 -f "%DATA_DIR%\!file:~2!"
+	%C3D_DIR%\CastorTestLauncher -gl "%DATA_DIR%\!file:~2!"
+	%C3D_DIR%\DiffImage gl -f "%DATA_DIR%\!file:~2!"
 	endlocal
 )

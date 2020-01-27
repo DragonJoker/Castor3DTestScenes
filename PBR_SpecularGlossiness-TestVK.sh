@@ -11,5 +11,5 @@ do
 	pids+=($!)
 	wait "${pids[@]}"
 	# echo "  Diffing"
-	# $C3D_DIR/DiffImage.exe opengl3 opengl4 direct3d11 vulkan -f $file
+	# $C3D_DIR/DiffImage.exe gl3 gl4 d3d11 vk -f $file
 done
