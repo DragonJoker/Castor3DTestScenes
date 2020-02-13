@@ -4,7 +4,7 @@ startIndex = 230
 
 channels = ["diffuse", "shininess", "specular", "emissive", "opacity", "occlusion", "normal", "height", "reflection", "refraction"]
 extensions = ["jpg", "jpg", "jpg", "jpg", "png", "jpg", "jpg", "jpg", "", ""]
-options = ["", "", "", "emissive 1.0", "two_sided true", "", "", "parallax_occlusion true", "", "refraction_ratio 0.92"]
+options = ["", "", "", "emissive 1.0", 'two_sided true\n			mixed_interpolation true', "", "", "parallax_occlusion true", "", "refraction_ratio 0.92"]
 
 def writeChannel( file, channel, extension ):
 	file.write( '\n' )

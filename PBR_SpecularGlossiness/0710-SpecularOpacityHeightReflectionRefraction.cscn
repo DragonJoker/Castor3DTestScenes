@@ -30,6 +30,7 @@ scene "Scene"
 			specular 0.628281 0.628281 0.628281
 			glossiness 0.2
 			two_sided true
+			mixed_interpolation true
 			parallax_occlusion true
 			refraction_ratio 0.92
 

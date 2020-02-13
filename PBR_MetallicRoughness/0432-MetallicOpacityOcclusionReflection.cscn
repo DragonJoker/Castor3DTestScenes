@@ -30,6 +30,7 @@ scene "Scene"
 			metallic 0.628281
 			roughness 0.2
 			two_sided true
+			mixed_interpolation true
 
 			texture_unit
 			{
