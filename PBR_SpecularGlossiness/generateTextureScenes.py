@@ -2,8 +2,8 @@
 
 startIndex = 100
 
-channels = ["albedo", "glossiness", "specular", "emissive", "opacity", "occlusion", "normal", "height", "reflection", "refraction"]
-extensions = ["png", "png", "png", "png", "png", "png", "png", "png", "", ""]
+channels =   ["albedo", "glossiness", "specular", "emissive", "opacity", "occlusion", "normal", "height", "reflection", "refraction"]
+extensions = ["jpg", "jpg", "jpg", "png", "png", "jpg", "jpg", "jpg", "", ""]
 options = ["", "", "", "emissive 1.0", 'two_sided true\n			mixed_interpolation true', "", "", "parallax_occlusion true", "", "refraction_ratio 0.92"]
 
 def writeChannel( file, channel, extension ):
@@ -54,18 +54,6 @@ def writeFile( file, indices ):
 	for i in indices:
 		writeChannel( file, channels[i], extensions[i] )
 	file.write( '		}\n' )
-	file.write( '	}\n' )
-	file.write( '\n' )
-	file.write( '	scene_node "SunLightNode1"\n' )
-	file.write( '	{\n' )
-	file.write( '		orientation 1 0 0 45\n' )
-	file.write( '	}\n' )
-	file.write( '	light "SunLight1"\n' )
-	file.write( '	{\n' )
-	file.write( '		parent "SunLightNode1"\n' )
-	file.write( '		type directional\n' )
-	file.write( '		colour 1.0 1.0 1.0\n' )
-	file.write( '		intensity 0.8 1.0\n' )
 	file.write( '	}\n' )
 	file.write( '\n' )
 	file.write( '	scene_node "FinalNode"\n' )

@@ -37,14 +37,14 @@ scene "Scene"
 			{
 				channel glossiness
 				sampler "Linear"
-				image "Textures/Rusted/glossiness.png"
+				image "Textures/Rusted/glossiness.jpg"
 			}
 
 			texture_unit
 			{
 				channel specular
 				sampler "Linear"
-				image "Textures/Rusted/specular.png"
+				image "Textures/Rusted/specular.jpg"
 			}
 
 			texture_unit
@@ -59,18 +59,6 @@ scene "Scene"
 				channel refraction
 			}
 		}
-	}
-
-	scene_node "SunLightNode1"
-	{
-		orientation 1 0 0 45
-	}
-	light "SunLight1"
-	{
-		parent "SunLightNode1"
-		type directional
-		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
 	}
 
 	scene_node "FinalNode"

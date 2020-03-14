@@ -37,7 +37,7 @@ scene "Scene"
 			{
 				channel glossiness
 				sampler "Linear"
-				image "Textures/Rusted/glossiness.png"
+				image "Textures/Rusted/glossiness.jpg"
 			}
 
 			texture_unit
@@ -51,14 +51,14 @@ scene "Scene"
 			{
 				channel normal
 				sampler "Linear"
-				image "Textures/Rusted/normal.png"
+				image "Textures/Rusted/normal.jpg"
 			}
 
 			texture_unit
 			{
 				channel height
 				sampler "Linear"
-				image "Textures/Rusted/height.png"
+				image "Textures/Rusted/height.jpg"
 			}
 
 			texture_unit
@@ -66,18 +66,6 @@ scene "Scene"
 				channel refraction
 			}
 		}
-	}
-
-	scene_node "SunLightNode1"
-	{
-		orientation 1 0 0 45
-	}
-	light "SunLight1"
-	{
-		parent "SunLightNode1"
-		type directional
-		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
 	}
 
 	scene_node "FinalNode"

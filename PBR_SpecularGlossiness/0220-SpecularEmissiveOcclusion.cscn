@@ -35,7 +35,7 @@ scene "Scene"
 			{
 				channel specular
 				sampler "Linear"
-				image "Textures/Rusted/specular.png"
+				image "Textures/Rusted/specular.jpg"
 			}
 
 			texture_unit
@@ -49,21 +49,9 @@ scene "Scene"
 			{
 				channel occlusion
 				sampler "Linear"
-				image "Textures/Rusted/occlusion.png"
+				image "Textures/Rusted/occlusion.jpg"
 			}
 		}
-	}
-
-	scene_node "SunLightNode1"
-	{
-		orientation 1 0 0 45
-	}
-	light "SunLight1"
-	{
-		parent "SunLightNode1"
-		type directional
-		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
 	}
 
 	scene_node "FinalNode"
