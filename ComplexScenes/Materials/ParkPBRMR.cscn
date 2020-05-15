@@ -50,6 +50,7 @@ material "Material_#1004/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -115,6 +116,7 @@ material "abris_bus/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -420,6 +422,7 @@ material "banc/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -514,6 +517,7 @@ material "barriere_travaux/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -603,6 +607,7 @@ material "borne_incendie/borne_incendie_rouge"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -886,6 +891,7 @@ material "cabine_telephone/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -941,7 +947,7 @@ material "cabine_telephone/verre"
 	{
 		albedo 0.996078 0.996078 0.996078
 		roughness 0.5
-		metallic 0.882353
+		metallic 0.210392
 		two_sided true
 
 		texture_unit
@@ -1092,6 +1098,7 @@ material "corbeille/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -1196,6 +1203,7 @@ material "entree_station/metal_or"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -1405,6 +1413,7 @@ material "feu_tricolore/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -1491,6 +1500,7 @@ material "fontaine/bronze"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -1585,6 +1595,7 @@ material "fontaine/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -1846,6 +1857,7 @@ material "grille_parc/bareaux"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -1883,6 +1895,7 @@ material "grille_parc/dorures"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -2802,6 +2815,7 @@ material "magasins_parc/metal_bleu"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -2955,6 +2969,7 @@ material "magasins_parc/vitrine_femme"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -2999,6 +3014,7 @@ material "magasins_parc/vitrine_homme"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -3043,6 +3059,7 @@ material "magasins_parc/vitrine_mode2"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -3087,6 +3104,7 @@ material "magasins_parc/vitrine_snow"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -3131,6 +3149,7 @@ material "magasins_parc/vitrine_snow2"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -3175,6 +3194,7 @@ material "panneau_enfants/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -3230,6 +3250,7 @@ material "panneau_mural"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -3285,6 +3306,7 @@ material "panneau_pub"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -3358,6 +3380,7 @@ material "panneau_stationnement/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -3617,6 +3640,7 @@ material "reverbere/lumiere"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		roughness 0.2
 		two_sided true
 
@@ -3662,6 +3686,7 @@ material "reverbere/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -3888,6 +3913,7 @@ material "sol_parc/metal_cana"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit

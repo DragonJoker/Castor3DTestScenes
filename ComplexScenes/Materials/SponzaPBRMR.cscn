@@ -19,6 +19,7 @@ material "DefaultMaterial"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 		alpha_func greater 0.5
 
@@ -65,6 +66,7 @@ material "Material__25"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -103,6 +105,7 @@ material "Material__298"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -141,6 +144,7 @@ material "Material__47"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 		alpha_func greater 0.5
 
@@ -187,6 +191,7 @@ material "Material__57"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 		alpha_func greater 0.5
 
@@ -233,6 +238,7 @@ material "VasePlant"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 		alpha_func greater 0.5
 
@@ -279,6 +285,7 @@ material "arch"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -317,6 +324,7 @@ material "bricks"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -355,6 +363,7 @@ material "ceiling"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -393,6 +402,7 @@ material "chain"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 		alpha_func greater 0.5
 
@@ -439,6 +449,7 @@ material "column_a"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -477,6 +488,7 @@ material "column_b"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -515,6 +527,7 @@ material "column_c"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -553,6 +566,7 @@ material "details"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -591,6 +605,7 @@ material "fabric_a"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -629,6 +644,7 @@ material "fabric_c"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -667,6 +683,7 @@ material "fabric_d"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -705,6 +722,7 @@ material "fabric_e"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -743,6 +761,7 @@ material "fabric_f"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -781,6 +800,7 @@ material "fabric_g"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -819,6 +839,7 @@ material "flagpole"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -857,6 +878,7 @@ material "floor"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -895,6 +917,7 @@ material "leaf"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 		alpha_func greater 0.5
 
@@ -941,6 +964,7 @@ material "roof"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -979,6 +1003,7 @@ material "vase"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -1017,6 +1042,7 @@ material "vase_hanging"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit
@@ -1055,6 +1081,7 @@ material "vase_round"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 1.00000
+		metallic 1.0
 		two_sided true
 
 		texture_unit

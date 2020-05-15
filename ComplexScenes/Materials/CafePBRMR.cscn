@@ -17,6 +17,7 @@ material "barriere_bar/barriere_bar"
 
 	pass
 	{
+		metallic 1.0
 		roughness 0.2
 		two_sided true
 
@@ -73,6 +74,7 @@ material "billard/dorure"
 
 	pass
 	{
+		metallic 1.0
 		roughness 0.1
 		two_sided true
 
@@ -529,6 +531,7 @@ material "cafe/cafe_bar_alu"
 
 	pass
 	{
+		metallic 1.0
 		roughness 0.5
 		two_sided true
 
@@ -716,7 +719,7 @@ material "cafe/cafe_chrome"
 	pass
 	{
 		albedo 0.337255 0.337255 0.337255 0.00392157
-		metallic 0.603000
+		metallic 1.0
 		roughness 0.5
 		two_sided true
 	}

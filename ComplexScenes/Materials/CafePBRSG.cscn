@@ -690,6 +690,7 @@ material "cafe/cafe_carelage"
 
 	pass
 	{
+		glossiness 1.0
 		specular 0.0784314 0.0784314 0.0784314 0.00392157
 		two_sided true
 
@@ -1034,6 +1035,7 @@ material "cafe/cafe_sol_01"
 
 	pass
 	{
+		glossiness 1.0
 		specular 0.0823529 0.0823529 0.0823529 0.00392157
 		two_sided true
 
@@ -1101,6 +1103,7 @@ material "canape_triple/canape_triple"
 {
 	pass
 	{
+		glossiness 1.0
 		specular 0.05 0.05 0.05
 		two_sided true
 
@@ -1134,6 +1137,7 @@ material "fauteuil/gros_fauteuil_bar"
 {
 	pass
 	{
+		glossiness 1.0
 		specular 0.05 0.05 0.05
 		two_sided true
 
@@ -1332,6 +1336,7 @@ material "pouf/pouf"
 
 	pass
 	{
+		glossiness 1.0
 		specular 0.05 0.05 0.05
 		two_sided true
 
@@ -1505,6 +1510,7 @@ material "tabouret_bar/cuir"
 
 	pass
 	{
+		glossiness 1.0
 		diffuse 0.0 0.0 0.0
 		two_sided true
 

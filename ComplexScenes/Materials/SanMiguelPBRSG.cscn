@@ -180,6 +180,7 @@ material "material_1"
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
 		glossiness 0
+		parallax_occlusion true
 
 		texture_unit
 		{
@@ -195,6 +196,15 @@ material "material_1"
 			levels_count 10
 			channel normal
 			image "Textures/SanMiguel/N_jardinera_1_displacement_2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel height
+			height_factor 0.01
+			image "Textures/SanMiguel/jardinera_1_displacement_2.png"
 		}
 	}
 }
@@ -692,6 +702,7 @@ material "material_14"
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
 		glossiness 0
+		parallax_occlusion true
 
 		texture_unit
 		{
@@ -715,6 +726,15 @@ material "material_14"
 			levels_count 9
 			channel normal
 			image "Textures/SanMiguel/N_piso_rustico_displace2.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 9
+			channel height
+			height_factor 0.02
+			image "Textures/SanMiguel/piso_rustico_displace2.png"
 		}
 	}
 }
@@ -4888,6 +4908,7 @@ material "material_48"
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
 		glossiness 0
+		parallax_occlusion true
 
 		texture_unit
 		{
@@ -4903,6 +4924,15 @@ material "material_48"
 			levels_count 10
 			channel normal
 			image "Textures/SanMiguel/N_piso_patio_exterior_displace_inv.png"
+		}
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 10
+			channel height
+			height_factor 0.02
+			image "Textures/SanMiguel/piso_patio_exterior_displace_inv.png"
 		}
 	}
 }

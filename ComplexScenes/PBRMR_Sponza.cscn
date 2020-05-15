@@ -39,7 +39,7 @@ scene "Scene"
 		parent "LightNode"
 		type directional
 		colour 1.0 1.0 0.5
-		intensity 0.8 1.0
+		intensity 8.0 10.0
 		shadows
 		{
 			producer true
@@ -117,7 +117,7 @@ window "Window"
 		smaa
 		{
 			mode 1X
-			edgeDetection luma
+			edgeDetection colour
 			preset ultra
 			reprojection false
 		}
@@ -128,6 +128,7 @@ window "Window"
 			high_quality true
 			use_normals_buffer true
 			intensity 1.0
+			min_radius 0.1
 			radius 7.5
 			bias 0.23
 			num_samples 19

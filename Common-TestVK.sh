@@ -10,6 +10,6 @@ do
 	timeout -k 60s 60s $C3D_DIR/CastorTestLauncher.exe -vk $file > /dev/null &
 	pids+=($!)
 	wait "${pids[@]}"
-	# echo "  Diffing"
-	# $C3D_DIR/DiffImage.exe gl3 gl4 d3d11 vk -f $file
+	echo "  Diffing"
+	$C3D_DIR/DiffImage.exe vk -f $file
 done

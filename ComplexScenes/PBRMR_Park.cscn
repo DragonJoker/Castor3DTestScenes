@@ -1658,7 +1658,7 @@ scene "Parc"
 		parent "LightNode"
 		type directional
 		colour 1 1 1
-		intensity 0.7 0.8
+		intensity 7.0 8.0
 		shadows
 		{
 			producer true
@@ -2892,9 +2892,17 @@ window "Window"
 	{
 		scene "Parc"
 		camera "MainCamera"
-		size 1920 1080
+		size 1280 720
 		format argb32
 		postfx "bloom" -Size=5
+
+		smaa
+		{
+			mode 1X
+			edgeDetection colour
+			preset ultra
+			reprojection false
+		}
 
 		ssao
 		{
@@ -2907,14 +2915,6 @@ window "Window"
 			edge_sharpness 1.0
 			blur_step_size 2
 			blur_radius 4
-		}
-
-		smaa
-		{
-			mode 1X
-			preset ultra
-			edgeDetection luma
-			predication true
 		}
 	}
 }
