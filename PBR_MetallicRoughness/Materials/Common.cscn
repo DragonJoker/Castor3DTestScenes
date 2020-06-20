@@ -10,22 +10,44 @@ material "Grayish"
 	}
 }
 
-material "Yellowish"
+material "Redish"
 {
 	pass
 	{
-		albedo 1.0 1.0 0.0 1.0
+		albedo 1.0 0.0 0.0 1.0
 		roughness 0.3
 		metallic 0.0
 		two_sided true
 	}
 }
 
-material "Redish"
+material "Greenish"
 {
 	pass
 	{
-		albedo 1.0 0.0 0.0 1.0
+		albedo 0.0 1.0 0.0 1.0
+		roughness 0.3
+		metallic 0.0
+		two_sided true
+	}
+}
+
+material "Blueish"
+{
+	pass
+	{
+		albedo 0.0 0.0 1.0 1.0
+		roughness 0.3
+		metallic 0.0
+		two_sided true
+	}
+}
+
+material "Yellowish"
+{
+	pass
+	{
+		albedo 1.0 1.0 0.0 1.0
 		roughness 0.3
 		metallic 0.0
 		two_sided true
