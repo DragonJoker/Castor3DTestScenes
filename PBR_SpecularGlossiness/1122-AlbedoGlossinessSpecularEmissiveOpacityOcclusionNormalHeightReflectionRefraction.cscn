@@ -90,16 +90,8 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/height.jpg"
 			}
-
-			texture_unit
-			{
-				channel reflection
-			}
-
-			texture_unit
-			{
-				channel refraction
-			}
+			reflections true
+			refractions true
 		}
 	}
 
@@ -130,7 +122,7 @@ scene "Scene"
 		{
 			type perspective
 			fov_y 45.0
-			aspect_ratio 1.778
+			aspect_ratio 1.333
 			near 0.1
 			far 20000.0
 		}
@@ -142,7 +134,7 @@ window "Window"
 	render_target
 	{
 		format argb32
-		size 1920 1080
+		size 800 600
 		scene "Scene"
 		camera "MainCamera"
 	}

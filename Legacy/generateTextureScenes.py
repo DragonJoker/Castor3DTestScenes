@@ -3,18 +3,21 @@
 startIndex = 230
 
 channels = ["diffuse", "shininess", "specular", "emissive", "opacity", "occlusion", "normal", "height", "reflection", "refraction"]
+materials = ["reflection", "refraction"]
 extensions = ["jpg", "jpg", "jpg", "jpg", "png", "jpg", "jpg", "jpg", "", ""]
 options = ["", "", "", "emissive 1.0", 'two_sided true\n			mixed_interpolation true', "", "", "parallax_occlusion true", "", "refraction_ratio 0.92"]
 
 def writeChannel( file, channel, extension ):
-	file.write( '\n' )
-	file.write( '			texture_unit\n' )
-	file.write( '			{\n' )
-	file.write( '				channel ' + channel + '\n' )
 	if channel != "reflection" and channel != "refraction":
+		file.write( '\n' )
+		file.write( '			texture_unit\n' )
+		file.write( '			{\n' )
+		file.write( '				channel ' + channel + '\n' )
 		file.write( '				sampler "Linear"\n' )
 		file.write( '				image "Textures/Bricks/' + channel.capitalize() + '.' + extension + '"\n' )
-	file.write( '			}\n' )
+		file.write( '			}\n' )
+	else:
+		file.write( '			' + channel + 's true\n' )
 
 def writeFile( file, indices ):
 	file.write( 'materials phong\n' )
@@ -45,9 +48,10 @@ def writeFile( file, indices ):
 	file.write( '	{\n' )
 	file.write( '		pass\n' )
 	file.write( '		{\n' )
-	file.write( '			diffuse 0.75164	0.75164	0.75164 1.0\n' )
-	file.write( '			specular 0.628281 0.628281 0.628281 1.0\n' )
-	file.write( '			shininess 51.2\n' )
+	file.write( '			diffuse 0.75164	0.75164	0.75164\n' )
+	file.write( '			specular 0.628281 0.628281 0.628281\n' )
+	file.write( '			ambient 1.0\n' )
+	file.write( '			shininess 192.0\n' )
 	for i in indices:
 		if len( options[i] ) > 0:
 			file.write( '			' + options[i] + '\n' )

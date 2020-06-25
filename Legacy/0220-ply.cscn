@@ -13,6 +13,7 @@ scene "MyScene"
 			emissive 0.0 0.0 0.0 1.0
 			specular 0.628281 0.555802 0.366065 1.0
 			shininess 51.2
+			ambient 1.0
 		}
 	}
 

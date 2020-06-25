@@ -18,12 +18,8 @@ scene "Scene"
 			emissive 0.0 0.0 0.0 1.0
 			specular 0.628281 0.628281 0.628281 1.0
 			//alpha 0.7
-			shininess 51.2
-
-			texture_unit
-			{
-				channel reflection
-			}
+			shininess 192.0
+			reflections true
 		}
 	}
 
@@ -34,12 +30,8 @@ scene "Scene"
 			diffuse 0.75164 0.60648 0.22648 1.0
 			emissive 0.0 0.0 0.0 1.0
 			specular 0.628281 0.555802 0.366065 1.0
-			shininess 51.2
-
-			texture_unit
-			{
-				channel reflection
-			}
+			shininess 192.0
+			reflections true
 		}
 	}
 
@@ -50,12 +42,8 @@ scene "Scene"
 			diffuse 0.7038 0.27048 0.0828 1.0
 			emissive 0.0 0.0 0.0 1.0
 			specular 0.256777 0.137622 0.086014 1.0
-			shininess 51.2
-
-			texture_unit
-			{
-				channel reflection
-			}
+			shininess 192.0
+			reflections true
 		}
 	}
 

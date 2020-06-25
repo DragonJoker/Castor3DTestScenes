@@ -62,16 +62,8 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/height.jpg"
 			}
-
-			texture_unit
-			{
-				channel reflection
-			}
-
-			texture_unit
-			{
-				channel refraction
-			}
+			reflections true
+			refractions true
 		}
 	}
 

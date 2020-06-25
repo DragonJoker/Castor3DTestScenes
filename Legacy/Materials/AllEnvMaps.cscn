@@ -18,16 +18,11 @@ material "ReflMatBody"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -51,15 +46,10 @@ material "ReflMatHead"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -75,15 +65,10 @@ material "ReflCornea"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 	}
 }
 
@@ -91,16 +76,11 @@ material "ReflDx11Shader6"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -124,17 +104,12 @@ material "RefrMatBody"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -158,16 +133,11 @@ material "RefrMatHead"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -183,16 +153,11 @@ material "RefrCornea"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 	}
 }
 
@@ -200,17 +165,12 @@ material "RefrDx11Shader6"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -234,24 +194,13 @@ material "ReflRefrMatBody"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
+		reflections true
 
 		texture_unit
 		{
@@ -275,23 +224,12 @@ material "ReflRefrMatHead"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
+		reflections true
 
 		texture_unit
 		{
@@ -307,23 +245,12 @@ material "ReflRefrCornea"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
+		reflections true
 	}
 }
 
@@ -331,24 +258,13 @@ material "ReflRefrDx11Shader6"
 {
 	pass
 	{
-		shininess 128.0
+		ambient 1.0
+		shininess 192.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
+		reflections true
 
 		texture_unit
 		{

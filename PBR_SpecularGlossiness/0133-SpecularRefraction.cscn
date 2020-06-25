@@ -37,11 +37,7 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/specular.jpg"
 			}
-
-			texture_unit
-			{
-				channel refraction
-			}
+			refractions true
 		}
 	}
 

@@ -21,13 +21,7 @@ material "MatBody"
 		shininess 128.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -53,13 +47,7 @@ material "MatHead"
 	{
 		shininess 128.0
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -79,13 +67,7 @@ material "cornea"
 		alpha 0.119661
 		alpha_blend_mode interpolative
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 	}
 }
 
@@ -96,13 +78,7 @@ material "dx11Shader6"
 		shininess 128.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{

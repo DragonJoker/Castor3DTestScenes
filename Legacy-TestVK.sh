@@ -11,5 +11,5 @@ do
 	pids+=($!)
 	wait "${pids[@]}"
 	# echo "  Diffing"
-	# $C3D_DIR/DiffImage.exe vk -f $file
+	$C3D_DIR/DiffImage.exe vk -f $file
 done

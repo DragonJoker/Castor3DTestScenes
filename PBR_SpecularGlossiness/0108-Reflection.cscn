@@ -29,11 +29,7 @@ scene "Scene"
 			albedo 0.75164 0.75164 0.75164 1.0
 			specular 0.628281 0.628281 0.628281
 			glossiness 0.2
-
-			texture_unit
-			{
-				channel reflection
-			}
+			reflections true
 		}
 	}
 

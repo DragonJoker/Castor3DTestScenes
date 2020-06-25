@@ -52,11 +52,7 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/normal.jpg"
 			}
-
-			texture_unit
-			{
-				channel refraction
-			}
+			refractions true
 		}
 	}
 

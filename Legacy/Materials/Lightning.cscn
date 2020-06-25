@@ -99,8 +99,9 @@ material "Hair"
 		emissive 0.000000 0.000000 0.000000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
 		shininess 40
-		two_sided false
+		two_sided true
 		colour_blend_mode none
+		mixed_interpolation true
 
 		texture_unit
 		{
@@ -190,10 +191,6 @@ material "Weapon"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		emissive 0.000000 0.000000 0.000000 0.00392157
-		specular 0.588000 0.588000 0.588000 0.00392157
-		shininess 40
 		two_sided false
 		colour_blend_mode none
 
@@ -201,7 +198,31 @@ material "Weapon"
 		{
 			levels_count 6
 			channel diffuse
-			image "Textures/Lightning/weapon_D.tga"
+			image "Textures/Lightning/weapon_D.png" rgb
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel specular
+			image "Textures/Lightning/weapon_S.png" rgb
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel shininess
+			image "Textures/Lightning/weapon_S.png" a
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel occlusion
+			image "Textures/Lightning/weapon_N.png" a
 			sampler	"Trilinear"
 		}
 
@@ -209,7 +230,7 @@ material "Weapon"
 		{
 			levels_count 6
 			channel normal
-			image "Textures/Lightning/weapon_N.tga"
+			image "Textures/Lightning/weapon_N.png" rgb
 			sampler	"Trilinear"
 		}
 	}

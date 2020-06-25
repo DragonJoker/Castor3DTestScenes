@@ -1,9 +1,10 @@
-debug_overlays true
+// debug_overlays true
 materials metallic_roughness
 
 scene "Scene"
 {
-	ambient_light 0.2 0.2 0.2
+	// ambient_light 0.1 0.1 0.1
+	ambient_light 0.0 0.0 0.0
 	include "Materials/SponzaPBRMR.cscn"
 
 	skybox
@@ -11,15 +12,24 @@ scene "Scene"
 		equirectangular "Textures/pineTreeSkybox.hdr" 1024 1024
 	}
 
+	material "WhiteEmit"
+	{
+		pass
+		{
+			albedo 1.0 1.0 1.0
+			emissive 1.1
+		}
+	}
+
 	mesh "Sponza"
 	{
-		import "Meshes/Sponza.cmsh" -rescale=0.1
+		import "Meshes/Sponza.cmsh" -rescale=0.008
 	}
 
 	scene_node "MainCameraNode"
 	{
-		orientation 0.0 1.0 -0.0 90
-		position -110.0 20.0 -3.0
+		orientation 0.0 1.0 -0.0 90.0
+		position -9.0 0.7 -0.3
 		scale 1 1 1
 	}
 
@@ -31,27 +41,159 @@ scene "Scene"
 
 	scene_node "LightNode"
 	{
-		orientation 1 0 0 90
+		orientation 1 0 0 100
 	}
 
-	light "SunLight"
+	light "Light"
 	{
 		parent "LightNode"
 		type directional
 		colour 1.0 1.0 0.5
-		intensity 8.0 10.0
+		intensity 8 10
 		shadows
 		{
 			producer true
-			filter raw
-			min_offset 0.001
-			max_slope_offset 0.001
-			variance_max 0.0000001
-			variance_bias 0.15
-			volumetric_steps 10
-			volumetric_scattering 0.2
+			filter variance
+			min_offset 0.0001
+			max_slope_offset 0.00001
+			variance_max 0.000000001
+			variance_bias 1.0
+			layered_lpv
+			{
+				intensity 1.0
+				max_radius 0.03
+				sample_count 100
+			}
 		}
 	}
+
+	/* Hand camera */
+	// scene_node "LightNode"
+	// {
+		// parent "MainCameraNode"
+		// position 0.3 -0.3 0.3
+	// }
+
+	// object "SpotLight"
+	// {
+		// parent "LightNode"
+		// cast_shadows false
+
+		// mesh "SpotLightMesh"
+		// {
+			// type "cube" -width=0.05 -height=0.05 -depth=0.1
+		// }
+
+		// material "WhiteEmit"
+	// }
+
+	// light "Light"
+	// {
+		// parent "LightNode"
+		// type spot
+		// colour 1.0 1.0 0.5
+		// intensity 8.0 10.0
+		// attenuation 1.0 0.5 0.0
+		// cut_off 10.0
+		// shadows
+		// {
+			// producer true
+			// filter pcf
+			// min_offset 0.00001
+			// max_slope_offset 0.0001
+			// lpv
+			// {
+				// intensity 1.0
+				// max_radius 0.03
+				// sample_count 100
+			// }
+		// }
+	// }
+
+	/* Spot light */
+	// scene_node "LightNode"
+	// {
+		// orientation 0.743296 -0.667922 0.0372979 8.59274
+		// position -3.81611 10.8762 -2.00082
+	// }
+
+	// object "SpotLight"
+	// {
+		// parent "LightNode"
+		// cast_shadows false
+
+		// mesh "SpotLightMesh"
+		// {
+			// type "cube" -width=0.25 -height=0.25 -depth=0.5
+		// }
+
+		// material "WhiteEmit"
+	// }
+
+	// light "Light"
+	// {
+		// parent "LightNode"
+		// type spot
+		// colour 1.0 1.0 0.5
+		// intensity 40.0 50.0
+		// attenuation 1.0 0.2 0.0
+		// cut_off 45.0
+		// shadows
+		// {
+			// producer true
+			// filter pcf
+			// min_offset 0.00001
+			// max_slope_offset 0.0001
+			// variance_max 0.0000001
+			// variance_bias 0.15
+			// lpv
+			// {
+				// intensity 1.0
+				// max_radius 0.03
+				// sample_count 100
+			// }
+		// }
+	// }
+
+	// scene_node "LightNode"
+	// {
+		// position 10 120 10
+	// }
+
+	// object "PointLight"
+	// {
+		// parent "LightNode"
+		// cast_shadows false
+
+		// mesh "PointLightMesh"
+		// {
+			// type "sphere" -subdiv=20 -radius=1
+		// }
+
+		// material "WhiteEmit"
+	// }
+
+	// light "Light"
+	// {
+		// parent "LightNode"
+		// type point
+		// colour 1.0 1.0 0.5
+		// intensity 8.0 10.0
+		// attenuation 1 0.02 0
+		// shadows
+		// {
+			// producer true
+			// filter raw
+			// min_offset 0.00001
+			// max_slope_offset 0.0001
+			// rsm
+			// {
+				// intensity 1.0
+				// max_radius 0.03
+				// sample_count 100
+			// }
+		// }
+	// }
 
 	camera "MainCamera"
 	{
@@ -62,7 +204,7 @@ scene "Scene"
 			type perspective
 			near 0.1
 			aspect_ratio 1.778
-			far 2000
+			far 500
 			fov_y 45
 		}
 	}
@@ -110,9 +252,10 @@ window "Window"
 	{
 		scene "Scene"
 		camera "MainCamera"
+		// size 1280 720
 		size 1920 1080
 		format argb32
-		postfx "bloom" -Size=5
+		//postfx "bloom" -Size=5
 
 		smaa
 		{
@@ -122,19 +265,19 @@ window "Window"
 			reprojection false
 		}
 
-		ssao
-		{
-			enabled true
-			high_quality true
-			use_normals_buffer true
-			intensity 1.0
-			min_radius 0.1
-			radius 7.5
-			bias 0.23
-			num_samples 19
-			edge_sharpness 1.0
-			blur_step_size 2
-			blur_radius 4
-		}
+		// ssao
+		// {
+			// enabled true
+			// high_quality true
+			// use_normals_buffer true
+			// intensity 1.0
+			// min_radius 0.1
+			// radius 7.5
+			// bias 0.23
+			// num_samples 19
+			// edge_sharpness 1.0
+			// blur_step_size 2
+			// blur_radius 4
+		// }
 	}
 }

@@ -30,16 +30,8 @@ scene "Scene"
 			specular 0.628281 0.628281 0.628281
 			glossiness 0.2
 			refraction_ratio 0.92
-
-			texture_unit
-			{
-				channel reflection
-			}
-
-			texture_unit
-			{
-				channel refraction
-			}
+			reflections true
+			refractions true
 		}
 	}
 

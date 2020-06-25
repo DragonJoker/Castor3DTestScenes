@@ -75,11 +75,7 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/occlusion.png"
 			}
-
-			texture_unit
-			{
-				channel refraction
-			}
+			refractions true
 		}
 	}
 

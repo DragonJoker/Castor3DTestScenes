@@ -37,16 +37,8 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/albedo.jpg"
 			}
-
-			texture_unit
-			{
-				channel reflection
-			}
-
-			texture_unit
-			{
-				channel refraction
-			}
+			reflections true
+			refractions true
 		}
 	}
 

@@ -32,18 +32,8 @@ scene "Scene"
 			specular 0.628281 0.628281 0.628281 1.0
 			shininess 51.2
 			refraction_ratio 0.92
-
-			texture_unit
-			{
-				channel refraction
-				sampler "Linear"
-			}
-
-			texture_unit
-			{
-				channel reflection
-				sampler "Linear"
-			}
+			reflections true
+			refractions true
 		}
 	}
 
@@ -56,18 +46,8 @@ scene "Scene"
 			specular 0.628281 0.555802 0.366065 1.0
 			shininess 51.2
 			refraction_ratio 0.92
-
-			texture_unit
-			{
-				channel refraction
-				sampler "Linear"
-			}
-
-			texture_unit
-			{
-				channel reflection
-				sampler "Linear"
-			}
+			reflections true
+			refractions true
 		}
 	}
 
@@ -80,18 +60,8 @@ scene "Scene"
 			specular 0.256777 0.137622 0.086014 1.0
 			shininess 51.2
 			refraction_ratio 0.92
-
-			texture_unit
-			{
-				channel refraction
-				sampler "Linear"
-			}
-
-			texture_unit
-			{
-				channel reflection
-				sampler "Linear"
-			}
+			reflections true
+			refractions true
 		}
 	}
 

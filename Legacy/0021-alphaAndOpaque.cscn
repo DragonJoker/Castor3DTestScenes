@@ -2,15 +2,21 @@ materials phong
 
 scene "MainScene"
 {
-	ambient_light 0.2 0.2 0.2
-	background_colour 0.500000 0.500000 0.500000 1.00000
 	include "Materials/Lightning.cscn"
+	ambient_light 0.2 0.2 0.2
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/equirectangularSkybox.hdr" 1024
+	}
 
 	scene_node "MainCameraNode"
 	{
 		parent "CameraRootNode"
-		orientation 0 1 0 180
-		position 0 25 100
+		orientation 0.00668748 -0.999235 0.0385239 160.319
+		position 15.3058 56.4662 38.0419
 		scale 1 1 1
 	}
 
@@ -36,6 +42,7 @@ scene "MainScene"
 			type perspective
 			near 0.1
 			aspect_ratio 1.333
+			aspect_ratio 1.778
 			far 20000
 			fov_y 45
 		}
@@ -46,7 +53,7 @@ scene "MainScene"
 		parent "LightNode"
 		type directional
 		colour 1.0 1.0 1.0
-		intensity 0.2 1.0
+		intensity 1.0 1.0
 	}
 
 	mesh "GeomMesh"
@@ -81,7 +88,7 @@ window "MainWindow"
 		scene "MainScene"
 		camera "MainCamera"
 		size 800 600
+		size 1920 1080
 		format argb32
-		tone_mapping "linear" -Exposure=1 -Gamma=1
 	}
 }

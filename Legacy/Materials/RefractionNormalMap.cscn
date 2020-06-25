@@ -22,13 +22,7 @@ material "MatBody"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -55,13 +49,7 @@ material "MatHead"
 		shininess 128.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -80,13 +68,7 @@ material "cornea"
 		shininess 128.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 	}
 }
 
@@ -98,13 +80,7 @@ material "dx11Shader6"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 
 		texture_unit
 		{

@@ -18,6 +18,7 @@ material "MatBody"
 {
 	pass
 	{
+		ambient 1.0
 		shininess 128.0
 		alpha_func greater 0.5
 		two_sided true
@@ -60,6 +61,7 @@ material "MatHead"
 {
 	pass
 	{
+		ambient 1.0
 		shininess 128.0
 		two_sided true
 
@@ -93,6 +95,7 @@ material "cornea"
 {
 	pass
 	{
+		ambient 1.0
 		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 1.00000 1.00000 1.00000 0.00392157
 		shininess 128.0
@@ -106,6 +109,7 @@ material "dx11Shader6"
 {
 	pass
 	{
+		ambient 1.0
 		shininess 128.0
 		two_sided true
 

@@ -39,11 +39,7 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/opacity.png"
 			}
-
-			texture_unit
-			{
-				channel refraction
-			}
+			refractions true
 		}
 	}
 

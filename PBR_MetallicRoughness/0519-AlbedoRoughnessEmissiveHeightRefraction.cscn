@@ -60,11 +60,7 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/height.png"
 			}
-
-			texture_unit
-			{
-				channel refraction
-			}
+			refractions true
 		}
 	}
 

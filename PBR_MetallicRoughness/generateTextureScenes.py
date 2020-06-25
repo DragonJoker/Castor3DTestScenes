@@ -7,14 +7,16 @@ extensions = ["png", "png", "png", "png", "png", "png", "png", "png", "", ""]
 options = ["", "", "", "emissive 1.0", 'two_sided true\n			mixed_interpolation true', "", "", "parallax_occlusion true", "", "refraction_ratio 0.92"]
 
 def writeChannel( file, channel, extension ):
-	file.write( '\n' )
-	file.write( '			texture_unit\n' )
-	file.write( '			{\n' )
-	file.write( '				channel ' + channel + '\n' )
 	if channel != "reflection" and channel != "refraction":
+		file.write( '\n' )
+		file.write( '			texture_unit\n' )
+		file.write( '			{\n' )
+		file.write( '				channel ' + channel + '\n' )
 		file.write( '				sampler "Linear"\n' )
 		file.write( '				image "Textures/Rusted/' + channel + '.' + extension + '"\n' )
-	file.write( '			}\n' )
+		file.write( '			}\n' )
+	else:
+		file.write( '			' + channel + 's true\n' )
 
 def writeFile( file, indices ):
 	file.write( 'materials metallic_roughness\n' )
