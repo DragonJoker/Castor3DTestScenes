@@ -23,13 +23,7 @@ material "MatBody"
 		metallic 1.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -65,13 +59,7 @@ material "MatHead"
 		roughness 0.0
 		metallic 1.0
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -99,13 +87,7 @@ material "cornea"
 		roughness 0.0
 		metallic 1.0
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 	}
 }
 
@@ -118,13 +100,7 @@ material "dx11Shader6"
 		metallic 1.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{

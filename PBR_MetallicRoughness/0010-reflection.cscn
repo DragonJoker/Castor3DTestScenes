@@ -30,12 +30,7 @@ scene "Scene"
 			albedo 0.75164 0.75164 0.75164 1.0
 			roughness 0.0
 			metallic 1.0
-
-			texture_unit
-			{
-				sampler "Linear"
-				channel reflection
-			}
+			reflections true
 		}
 	}
 
@@ -46,12 +41,7 @@ scene "Scene"
 			albedo 0.75164 0.60648 0.22648 1.0
 			roughness 0.0
 			metallic 1.0
-
-			texture_unit
-			{
-				sampler "Linear"
-				channel reflection
-			}
+			reflections true
 		}
 	}
 
@@ -62,12 +52,7 @@ scene "Scene"
 			albedo 0.7038 0.27048 0.0828 1.0
 			roughness 0.0
 			metallic 1.0
-
-			texture_unit
-			{
-				sampler "Linear"
-				channel reflection
-			}
+			reflections true
 		}
 	}
 

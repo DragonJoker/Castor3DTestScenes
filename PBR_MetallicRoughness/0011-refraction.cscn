@@ -32,12 +32,7 @@ scene "Scene"
 			metallic 1.0
 			refraction_ratio 0.92
 			two_sided true
-
-			texture_unit
-			{
-				channel refraction
-				sampler "Linear"
-			}
+			refractions true
 		}
 	}
 
@@ -50,12 +45,7 @@ scene "Scene"
 			metallic 1.0
 			refraction_ratio 0.92
 			two_sided true
-
-			texture_unit
-			{
-				channel refraction
-				sampler "Linear"
-			}
+			refractions true
 		}
 	}
 
@@ -68,12 +58,7 @@ scene "Scene"
 			metallic 1.0
 			refraction_ratio 0.92
 			two_sided true
-
-			texture_unit
-			{
-				channel refraction
-				sampler "Linear"
-			}
+			refractions true
 		}
 	}
 

@@ -145,18 +145,8 @@ scene "Scene"
 			// shininess 51.2
 			// refraction_ratio 0.92
 			// two_sided true
-
-			// texture_unit
-			// {
-				// channel reflection
-				// sampler "Linear"
-			// }
-
-			// texture_unit
-			// {
-				// channel refraction
-				// sampler "Linear"
-			// }
+			// reflections true
+			// refractions true
 		// }
 	// }
 
@@ -311,6 +301,8 @@ scene "Scene"
 			// shininess 51.2
 			// refraction_ratio 0.92
 			// two_sided true
+			// refractions true
+			// reflections true
 
 			// texture_unit
 			// {
@@ -331,18 +323,6 @@ scene "Scene"
 				// image "Textures/Normal.jpg"
 				// channel normal
 				// sampler	"Linear"
-			// }
-
-			// texture_unit
-			// {
-				// channel reflection
-				// sampler "Linear"
-			// }
-
-			// texture_unit
-			// {
-				// channel refraction
-				// sampler "Linear"
 			// }
 		// }
 	// }
@@ -531,6 +511,8 @@ scene "Scene"
 			// refraction_ratio 0.92
 			// two_sided true
 			// parallax_occlusion true
+			// refractions true
+			// reflections true
 
 			// texture_unit
 			// {
@@ -565,18 +547,6 @@ scene "Scene"
 				// image "Textures/Height.jpg"
 				// channel height
 				// sampler	"Linear"
-			// }
-
-			// texture_unit
-			// {
-				// channel reflection
-				// sampler "Linear"
-			// }
-
-			// texture_unit
-			// {
-				// channel refraction
-				// sampler "Linear"
 			// }
 		// }
 	// }

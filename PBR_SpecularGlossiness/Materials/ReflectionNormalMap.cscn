@@ -21,11 +21,7 @@ material "MatBody"
 		glossiness 1.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			channel reflection
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -51,11 +47,7 @@ material "MatHead"
 	{
 		glossiness 1.0
 		two_sided true
-
-		texture_unit
-		{
-			channel reflection
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -74,11 +66,7 @@ material "cornea"
 		glossiness 1.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			channel reflection
-		}
+		reflections true
 	}
 }
 
@@ -89,11 +77,7 @@ material "dx11Shader6"
 		glossiness 1.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			channel reflection
-		}
+		reflections true
 
 		texture_unit
 		{

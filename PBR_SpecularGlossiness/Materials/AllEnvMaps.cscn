@@ -21,11 +21,7 @@ material "ReflMatBody"
 		glossiness 1.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			channel reflection
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -51,11 +47,7 @@ material "ReflMatHead"
 	{
 		glossiness 1.0
 		two_sided true
-
-		texture_unit
-		{
-			channel reflection
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -73,11 +65,7 @@ material "ReflCornea"
 	{
 		glossiness 1.0
 		two_sided true
-
-		texture_unit
-		{
-			channel reflection
-		}
+		reflections true
 	}
 }
 
@@ -88,11 +76,7 @@ material "ReflDx11Shader6"
 		glossiness 1.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			channel reflection
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -120,11 +104,7 @@ material "RefrMatBody"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			channel refraction
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -151,11 +131,7 @@ material "RefrMatHead"
 		glossiness 1.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			channel refraction
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -174,11 +150,7 @@ material "RefrCornea"
 		glossiness 1.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			channel refraction
-		}
+		refractions true
 	}
 }
 
@@ -190,11 +162,7 @@ material "RefrDx11Shader6"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			channel refraction
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -222,16 +190,8 @@ material "ReflRefrMatBody"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			channel reflection
-		}
-
-		texture_unit
-		{
-			channel refraction
-		}
+		refractions true
+		reflections true
 
 		texture_unit
 		{
@@ -258,16 +218,8 @@ material "ReflRefrMatHead"
 		glossiness 1.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			channel reflection
-		}
-
-		texture_unit
-		{
-			channel refraction
-		}
+		refractions true
+		reflections true
 
 		texture_unit
 		{
@@ -286,16 +238,8 @@ material "ReflRefrCornea"
 		glossiness 1.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			channel reflection
-		}
-
-		texture_unit
-		{
-			channel refraction
-		}
+		refractions true
+		reflections true
 	}
 }
 
@@ -307,16 +251,8 @@ material "ReflRefrDx11Shader6"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			channel reflection
-		}
-
-		texture_unit
-		{
-			channel refraction
-		}
+		refractions true
+		reflections true
 
 		texture_unit
 		{

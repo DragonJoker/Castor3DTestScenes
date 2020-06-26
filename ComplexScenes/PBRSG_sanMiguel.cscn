@@ -3224,7 +3224,7 @@ scene "SanMiguel"
 		shadows
 		{
 			producer true
-			filter raw
+			filter pcf
 			min_offset 0.00001
 			max_slope_offset 0.0001
 			variance_max 0.0000005

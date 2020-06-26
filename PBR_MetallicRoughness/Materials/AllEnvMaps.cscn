@@ -23,13 +23,7 @@ material "ReflMatBody"
 		metallic 1.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -57,13 +51,7 @@ material "ReflMatHead"
 		roughness 0.0
 		metallic 1.0
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -83,13 +71,7 @@ material "ReflCornea"
 		roughness 0.0
 		metallic 1.0
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 	}
 }
 
@@ -102,13 +84,7 @@ material "ReflDx11Shader6"
 		metallic 1.0
 		alpha_func greater 0.5
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
+		reflections true
 
 		texture_unit
 		{
@@ -138,13 +114,7 @@ material "RefrMatBody"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -173,13 +143,7 @@ material "RefrMatHead"
 		metallic 1.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -200,13 +164,7 @@ material "RefrCornea"
 		metallic 1.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 	}
 }
 
@@ -220,13 +178,7 @@ material "RefrDx11Shader6"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		refractions true
 
 		texture_unit
 		{
@@ -256,20 +208,8 @@ material "ReflRefrMatBody"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		reflections true
+		refractions true
 
 		texture_unit
 		{
@@ -298,20 +238,8 @@ material "ReflRefrMatHead"
 		metallic 1.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		reflections true
+		refractions true
 
 		texture_unit
 		{
@@ -332,20 +260,8 @@ material "ReflRefrCornea"
 		metallic 1.0
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		reflections true
+		refractions true
 	}
 }
 
@@ -359,20 +275,8 @@ material "ReflRefrDx11Shader6"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-
-		texture_unit
-		{
-			levels_count 6
-			channel reflection
-			sampler "Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel refraction
-			sampler "Trilinear"
-		}
+		reflections true
+		refractions true
 
 		texture_unit
 		{

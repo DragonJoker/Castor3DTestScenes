@@ -31,13 +31,7 @@ scene "Scene"
 			diffuse 0.75164 0.75164 0.75164 1.0
 			specular 0.75164 0.75164 0.75164 1.0
 			glossiness 1.0
-
-			texture_unit
-			{
-				channel reflection
-				levels_count 6
-				sampler "TriLinear"
-			}
+			reflections true
 		}
 	}
 
@@ -48,13 +42,7 @@ scene "Scene"
 			diffuse 0.75164 0.60648 0.22648 1.0
 			specular 0.75164 0.60648 0.22648 1.0
 			glossiness 1.0
-
-			texture_unit
-			{
-				channel reflection
-				levels_count 6
-				sampler "TriLinear"
-			}
+			reflections true
 		}
 	}
 
@@ -65,13 +53,7 @@ scene "Scene"
 			diffuse 0.7038 0.27048 0.0828 1.0
 			specular 0.7038 0.27048 0.0828 1.0
 			glossiness 1.0
-
-			texture_unit
-			{
-				channel reflection
-				levels_count 6
-				sampler "TriLinear"
-			}
+			reflections true
 		}
 	}
 
