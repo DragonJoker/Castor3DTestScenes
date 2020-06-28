@@ -23,8 +23,8 @@ material "Material__25"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -51,8 +51,8 @@ material "Material__298"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -79,8 +79,8 @@ material "Material__47"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 	}
 }
@@ -91,8 +91,8 @@ material "Material__57"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 		alpha_func greater 0.5
 
@@ -120,8 +120,8 @@ material "arch"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -140,8 +140,8 @@ material "bricks"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0100000 0.0100000 0.0100000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -176,8 +176,8 @@ material "ceiling"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -196,8 +196,8 @@ material "chain"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.0100000 0.0100000 0.0100000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 		alpha_func greater 0.5
 
@@ -233,8 +233,8 @@ material "column_a"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -261,8 +261,8 @@ material "column_b"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -289,8 +289,8 @@ material "column_c"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -317,8 +317,8 @@ material "details"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -337,8 +337,8 @@ material "fabric_a"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 0
+		ambient 1.0
+		shininess 1
 		two_sided true
 
 		texture_unit
@@ -357,8 +357,8 @@ material "fabric_c"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 0
+		ambient 1.0
+		shininess 1
 		two_sided true
 
 		texture_unit
@@ -377,8 +377,8 @@ material "fabric_d"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 0
+		ambient 1.0
+		shininess 1
 		two_sided true
 
 		texture_unit
@@ -397,8 +397,8 @@ material "fabric_e"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 0
+		ambient 1.0
+		shininess 1
 		two_sided true
 
 		texture_unit
@@ -417,8 +417,8 @@ material "fabric_f"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 0
+		ambient 1.0
+		shininess 1
 		two_sided true
 
 		texture_unit
@@ -437,8 +437,8 @@ material "fabric_g"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 0
+		ambient 1.0
+		shininess 1
 		two_sided true
 
 		texture_unit
@@ -457,8 +457,8 @@ material "flagpole"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -477,8 +477,8 @@ material "floor"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -497,8 +497,8 @@ material "leaf"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 		alpha_func greater 0.5
 
@@ -534,8 +534,8 @@ material "roof"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -554,8 +554,8 @@ material "vase"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -582,8 +582,8 @@ material "vase_hanging"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit
@@ -602,8 +602,8 @@ material "vase_round"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
-		shininess 10
+		ambient 1.0
+		shininess 64
 		two_sided true
 
 		texture_unit

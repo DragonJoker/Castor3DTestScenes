@@ -21,8 +21,6 @@ scene "Scene"
 		{
 			producer true
 			filter variance
-			min_offset 0.00001
-			max_slope_offset 0.0001
 			variance_max 0.0000001
 			variance_bias 0.15
 		}
@@ -118,7 +116,8 @@ scene "Scene"
 
 	scene_node "MainCameraNode"
 	{
-		position 0.0 80.0 -100.0
+		position 179.746 -142.541 173.368
+		orientation 0.0981709 0.948821 0.300168 214.48
 	}
 
 	camera "MainCamera"
@@ -128,8 +127,8 @@ scene "Scene"
 		viewport "MainViewport"
 		{
 			type perspective
-			fov_y 45.0
-			aspect_ratio 1.333
+			fov_y 90.0
+			aspect_ratio 1.6
 			near 1
 			far 10000
 		}
@@ -141,7 +140,7 @@ window "Window"
 	render_target
 	{
 		format argb32
-		size 800 600
+		size 800 1000
 		scene "Scene"
 		camera "MainCamera"
 	}
