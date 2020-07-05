@@ -1,0 +1,263 @@
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	min_lod 0.0
+	max_lod 5.0
+	lod_bias 0.0
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	border_colour float_opaque_black
+}
+
+material "Clothes"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		specular 0.0 0.0 0.0
+		glossiness 0.1
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			image "Textures/Lightning/clothes_D.tga"
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel normal
+			image "Textures/Lightning/clothes_N.tga"
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel specular
+			image "Textures/Lightning/clothes_S.tga"
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Eye"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		specular 0.0 0.0 0.0
+		glossiness 0.7
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			image "Textures/Lightning/eye_D.tga"
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Face"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		specular 0.0 0.0 0.0
+		glossiness 0.1
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			image "Textures/Lightning/face_D.tga"
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel specular
+			image "Textures/Lightning/face_S.tga"
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel normal
+			image "Textures/Lightning/face_N.tga"
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Hair"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		specular 0.0 0.0 0.0
+		glossiness 0.1
+		two_sided false
+		mixed_interpolation true
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			image "Textures/Lightning/hair_D.tga" rgb
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel opacity
+			image "Textures/Lightning/hair_D.tga" a
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel specular
+			image "Textures/Lightning/hair_S.tga"
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Pendant"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		specular 0.0 0.0 0.0
+		glossiness 0.9
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			image "Textures/Lightning/pendant_D.tga"
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel normal
+			image "Textures/Lightning/pendant_N.tga"
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Stuff"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		glossiness 0.1
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			image "Textures/Lightning/stuff_D.tga"
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel specular
+			image "Textures/Lightning/stuff_S.tga"
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel normal
+			image "Textures/Lightning/stuff_N.tga"
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Weapon"
+{
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		specular 0.588000 0.588000 0.588000 0.00392157
+		glossiness 0.8
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			channel diffuse
+			image "Textures/Lightning/weapon_D.png" rgb
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel specular
+			image "Textures/Lightning/weapon_S.png" rgb
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel glossiness
+			image "Textures/Lightning/weapon_S.png" a
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel occlusion
+			image "Textures/Lightning/weapon_N.png" a
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel normal
+			image "Textures/Lightning/weapon_N.png" rgb
+			sampler	"Trilinear"
+		}
+	}
+}

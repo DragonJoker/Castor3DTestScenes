@@ -68,6 +68,7 @@ material "baltard_in_ns/cube_ns_01"
 		roughness 0.235
 		two_sided true
 		alpha_func greater 0.5
+		reflections true
 
 		texture_unit
 		{
@@ -95,6 +96,7 @@ material "baltard_in_ns/cube_ns_02"
 		roughness 0.235
 		two_sided true
 		alpha_func greater 0.5
+		reflections true
 
 		texture_unit
 		{
@@ -346,15 +348,9 @@ material "baltard_in_ns/screen_ns_04"
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.25
 		emissive 0.866025
+		alpha 0.0
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 8
-			channel albedo
-			sampler "TriLinear"
-			image "Textures/BaltardIn/screen_ns_04.jpg" rgb
-		}
+		alpha_func greater 0.5
 	}
 }
 

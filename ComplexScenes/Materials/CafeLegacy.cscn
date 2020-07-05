@@ -5,7 +5,7 @@ material "DefaultMaterial"
 	{
 		diffuse 0.600000 0.600000 0.600000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -18,7 +18,7 @@ material "barriere_bar/barriere_bar"
 	{
 		diffuse 0.588235 0.588235 0.588235 0.00392157
 		specular 0.423000 0.423000 0.423000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -37,7 +37,7 @@ material "billard/bleu"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -56,7 +56,7 @@ material "billard/bois"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.189000 0.189000 0.189000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 256
 		two_sided true
 
@@ -75,7 +75,7 @@ material "billard/dorure"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -94,7 +94,7 @@ material "billard/light"
 	{
 		diffuse 1.00000 1.00000 0.752941 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -127,7 +127,7 @@ material "billard/noir"
 	{
 		diffuse 1.00000 1.00000 1.00000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -140,7 +140,7 @@ material "billard/queue"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -159,7 +159,7 @@ material "billard/tapis"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -177,7 +177,7 @@ material "cafe/cafe_aqua_coffre"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -202,7 +202,7 @@ material "cafe/cafe_aqua_coquillage_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -227,7 +227,7 @@ material "cafe/cafe_aqua_coquillage_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -252,7 +252,7 @@ material "cafe/cafe_aqua_fond"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -277,7 +277,7 @@ material "cafe/cafe_aqua_pierre_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -302,7 +302,7 @@ material "cafe/cafe_aqua_pierre_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -327,7 +327,7 @@ material "cafe/cafe_aqua_pierre_03"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -352,7 +352,7 @@ material "cafe/cafe_aqua_plafond"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -377,7 +377,7 @@ material "cafe/cafe_aqua_plante_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -409,7 +409,7 @@ material "cafe/cafe_aqua_plante_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -441,7 +441,7 @@ material "cafe/cafe_aqua_plante_03"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -473,7 +473,7 @@ material "cafe/cafe_aqua_sol_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -498,7 +498,7 @@ material "cafe/cafe_aqua_sol_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -523,7 +523,7 @@ material "cafe/cafe_aqua_tube"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -549,7 +549,7 @@ material "cafe/cafe_bar_alu"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.156863 0.156863 0.156863 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -568,7 +568,7 @@ material "cafe/cafe_bar_gris"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -587,7 +587,7 @@ material "cafe/cafe_bar_light"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -606,7 +606,7 @@ material "cafe/cafe_bar_marbre"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.235294 0.235294 0.235294 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 1024
 		two_sided true
 
@@ -625,7 +625,7 @@ material "cafe/cafe_bois"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -644,7 +644,7 @@ material "cafe/cafe_bouteilles_01"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -663,7 +663,7 @@ material "cafe/cafe_bouteilles_02"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -682,7 +682,7 @@ material "cafe/cafe_bouteilles_03"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -701,7 +701,7 @@ material "cafe/cafe_bouteilles_04"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -720,7 +720,7 @@ material "cafe/cafe_carelage"
 	{
 		diffuse 0.843137 0.843137 0.843137 0.00392157
 		specular 0.0784314 0.0784314 0.0784314 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 1024
 		two_sided true
 
@@ -739,7 +739,7 @@ material "cafe/cafe_chrome"
 	{
 		diffuse 0.337255 0.337255 0.337255 0.00392157
 		specular 0.603000 0.603000 0.603000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -752,7 +752,7 @@ material "cafe/cafe_deco_01"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -771,7 +771,7 @@ material "cafe/cafe_deco_02"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -790,7 +790,7 @@ material "cafe/cafe_deco_03"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -809,7 +809,7 @@ material "cafe/cafe_deco_04"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -828,7 +828,7 @@ material "cafe/cafe_entree"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -847,7 +847,7 @@ material "cafe/cafe_exit"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.815082
@@ -867,7 +867,7 @@ material "cafe/cafe_frigo_bar"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -886,7 +886,7 @@ material "cafe/cafe_grille_bar"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -905,7 +905,7 @@ material "cafe/cafe_grille_bar_02"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -924,7 +924,7 @@ material "cafe/cafe_mur_01"
 	{
 		diffuse 0.843137 0.843137 0.843137 0.00392157
 		specular 0.156863 0.156863 0.156863 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -943,7 +943,7 @@ material "cafe/cafe_mur_02"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.271695
@@ -963,7 +963,7 @@ material "cafe/cafe_neon"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.313726 0.313726 0.313726 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 1.35847
@@ -983,7 +983,7 @@ material "cafe/cafe_porte"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1002,7 +1002,7 @@ material "cafe/cafe_poteau"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1021,7 +1021,7 @@ material "cafe/cafe_rideau"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1040,7 +1040,7 @@ material "cafe/cafe_roof_01"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1059,7 +1059,7 @@ material "cafe/cafe_roof_02"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1078,7 +1078,7 @@ material "cafe/cafe_sol_01"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.0823529 0.0823529 0.0823529 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 128
 		two_sided true
 
@@ -1097,7 +1097,7 @@ material "cafe/cafe_vitre"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.588235 0.588235 0.588235 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 512
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1123,7 +1123,7 @@ material "canape_demi_cercle/canape_demi_cercle"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1142,7 +1142,7 @@ material "canape_triple/canape_triple"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1161,7 +1161,7 @@ material "fauteuil/gros_fauteuil_bar"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1180,7 +1180,7 @@ material "plante_01/plante_01"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_func greater 0.5
@@ -1206,7 +1206,7 @@ material "plante_01/plante_pot"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1225,7 +1225,7 @@ material "plante_02/plante_02"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_func greater 0.5
@@ -1251,7 +1251,7 @@ material "plante_02/plante_pot"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1270,7 +1270,7 @@ material "plante_03/plante_03"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_func greater 0.5
@@ -1296,7 +1296,7 @@ material "plante_03/plante_pot"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1315,7 +1315,7 @@ material "plante_05/plante_05"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_func greater 0.5
@@ -1341,7 +1341,7 @@ material "plante_05/plante_pot"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1360,7 +1360,7 @@ material "pouf/pouf"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1379,7 +1379,7 @@ material "table_bar/cuivre"
 	{
 		diffuse 0.666667 0.501961 0.00392157 0.00392157
 		specular 0.459000 0.459000 0.459000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -1392,7 +1392,7 @@ material "table_bar/laque"
 	{
 		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 0.315000 0.315000 0.315000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 1024
 		two_sided true
 	}
@@ -1405,7 +1405,7 @@ material "table_basse/table_basse_cuivre"
 	{
 		diffuse 0.666667 0.501961 0.00392157 0.00392157
 		specular 0.459000 0.459000 0.459000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -1418,7 +1418,7 @@ material "table_basse/table_basse_laque"
 	{
 		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 0.315000 0.315000 0.315000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 1024
 		two_sided true
 	}
@@ -1431,7 +1431,7 @@ material "table_verre/table_bar_fer_forge"
 	{
 		diffuse 0.588235 0.588235 0.588235 0.00392157
 		specular 0.360000 0.360000 0.360000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1450,7 +1450,7 @@ material "table_verre/table_bar_verre"
 	{
 		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 0.270000 0.270000 0.270000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1476,7 +1476,7 @@ material "tableau_myt/tableau_myt_graff_01"
 	{
 		diffuse 0.588235 0.588235 0.588235 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1495,7 +1495,7 @@ material "tableau_myt/tableau_myt_graff_02"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1514,7 +1514,7 @@ material "tableau_myt/tableau_myt_graff_03"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1533,7 +1533,7 @@ material "tabouret_bar/tabouret_bar_cuir"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.108000 0.108000 0.108000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1552,7 +1552,7 @@ material "tabouret_bar/tabouret_bar_metal"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.360000 0.360000 0.360000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1571,7 +1571,7 @@ material "tv_bar/ecran"
 	{
 		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 0.360000 0.360000 0.360000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -1584,7 +1584,7 @@ material "tv_bar/plasma"
 	{
 		diffuse 0.156863 0.156863 0.156863 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 64
 		two_sided true
 	}

@@ -1,32 +1,1468 @@
+// Global configuration
+// debug_overlays true
 materials phong
 
 scene "SanMiguel"
 {
-	ambient_light 1.0 1.0 1.0
+	// Scene configuration
+	ambient_light 0.0 0.0 0.0
 	include "Materials/SanMiguelLegacy.cscn"
+
+	// Skybox
 
 	skybox
 	{
 		equirectangular "Textures/pineTreeSkybox.hdr" 1024
 	}
 
+	// Meshes
+
+	mesh "SanMiguel_0"
+	{
+		import "Meshes/SanMiguel/SanMiguel_0.cmsh"
+	}
+
+	mesh "SanMiguel_1"
+	{
+		import "Meshes/SanMiguel/SanMiguel_1.cmsh"
+	}
+
+	mesh "SanMiguel_10"
+	{
+		import "Meshes/SanMiguel/SanMiguel_10.cmsh"
+	}
+
+	mesh "SanMiguel_100"
+	{
+		import "Meshes/SanMiguel/SanMiguel_100.cmsh"
+	}
+
+	mesh "SanMiguel_101"
+	{
+		import "Meshes/SanMiguel/SanMiguel_101.cmsh"
+	}
+
+	mesh "SanMiguel_102"
+	{
+		import "Meshes/SanMiguel/SanMiguel_102.cmsh"
+	}
+
+	mesh "SanMiguel_103"
+	{
+		import "Meshes/SanMiguel/SanMiguel_103.cmsh"
+	}
+
+	mesh "SanMiguel_104"
+	{
+		import "Meshes/SanMiguel/SanMiguel_104.cmsh"
+	}
+
+	mesh "SanMiguel_105"
+	{
+		import "Meshes/SanMiguel/SanMiguel_105.cmsh"
+	}
+
+	mesh "SanMiguel_106"
+	{
+		import "Meshes/SanMiguel/SanMiguel_106.cmsh"
+	}
+
+	mesh "SanMiguel_107"
+	{
+		import "Meshes/SanMiguel/SanMiguel_107.cmsh"
+	}
+
+	mesh "SanMiguel_108"
+	{
+		import "Meshes/SanMiguel/SanMiguel_108.cmsh"
+	}
+
+	mesh "SanMiguel_109"
+	{
+		import "Meshes/SanMiguel/SanMiguel_109.cmsh"
+	}
+
+	mesh "SanMiguel_11"
+	{
+		import "Meshes/SanMiguel/SanMiguel_11.cmsh"
+	}
+
+	mesh "SanMiguel_110"
+	{
+		import "Meshes/SanMiguel/SanMiguel_110.cmsh"
+	}
+
+	mesh "SanMiguel_111"
+	{
+		import "Meshes/SanMiguel/SanMiguel_111.cmsh"
+	}
+
+	mesh "SanMiguel_112"
+	{
+		import "Meshes/SanMiguel/SanMiguel_112.cmsh"
+	}
+
+	mesh "SanMiguel_113"
+	{
+		import "Meshes/SanMiguel/SanMiguel_113.cmsh"
+	}
+
+	mesh "SanMiguel_114"
+	{
+		import "Meshes/SanMiguel/SanMiguel_114.cmsh"
+	}
+
+	mesh "SanMiguel_115"
+	{
+		import "Meshes/SanMiguel/SanMiguel_115.cmsh"
+	}
+
+	mesh "SanMiguel_116"
+	{
+		import "Meshes/SanMiguel/SanMiguel_116.cmsh"
+	}
+
+	mesh "SanMiguel_117"
+	{
+		import "Meshes/SanMiguel/SanMiguel_117.cmsh"
+	}
+
+	mesh "SanMiguel_118"
+	{
+		import "Meshes/SanMiguel/SanMiguel_118.cmsh"
+	}
+
+	mesh "SanMiguel_119"
+	{
+		import "Meshes/SanMiguel/SanMiguel_119.cmsh"
+	}
+
+	mesh "SanMiguel_12"
+	{
+		import "Meshes/SanMiguel/SanMiguel_12.cmsh"
+	}
+
+	mesh "SanMiguel_120"
+	{
+		import "Meshes/SanMiguel/SanMiguel_120.cmsh"
+	}
+
+	mesh "SanMiguel_121"
+	{
+		import "Meshes/SanMiguel/SanMiguel_121.cmsh"
+	}
+
+	mesh "SanMiguel_122"
+	{
+		import "Meshes/SanMiguel/SanMiguel_122.cmsh"
+	}
+
+	mesh "SanMiguel_123"
+	{
+		import "Meshes/SanMiguel/SanMiguel_123.cmsh"
+	}
+
+	mesh "SanMiguel_124"
+	{
+		import "Meshes/SanMiguel/SanMiguel_124.cmsh"
+	}
+
+	mesh "SanMiguel_125"
+	{
+		import "Meshes/SanMiguel/SanMiguel_125.cmsh"
+	}
+
+	mesh "SanMiguel_126"
+	{
+		import "Meshes/SanMiguel/SanMiguel_126.cmsh"
+	}
+
+	mesh "SanMiguel_127"
+	{
+		import "Meshes/SanMiguel/SanMiguel_127.cmsh"
+	}
+
+	mesh "SanMiguel_128"
+	{
+		import "Meshes/SanMiguel/SanMiguel_128.cmsh"
+	}
+
+	mesh "SanMiguel_129"
+	{
+		import "Meshes/SanMiguel/SanMiguel_129.cmsh"
+	}
+
+	mesh "SanMiguel_13"
+	{
+		import "Meshes/SanMiguel/SanMiguel_13.cmsh"
+	}
+
+	mesh "SanMiguel_130"
+	{
+		import "Meshes/SanMiguel/SanMiguel_130.cmsh"
+	}
+
+	mesh "SanMiguel_131"
+	{
+		import "Meshes/SanMiguel/SanMiguel_131.cmsh"
+	}
+
+	mesh "SanMiguel_132"
+	{
+		import "Meshes/SanMiguel/SanMiguel_132.cmsh"
+	}
+
+	mesh "SanMiguel_133"
+	{
+		import "Meshes/SanMiguel/SanMiguel_133.cmsh"
+	}
+
+	mesh "SanMiguel_134"
+	{
+		import "Meshes/SanMiguel/SanMiguel_134.cmsh"
+	}
+
+	mesh "SanMiguel_135"
+	{
+		import "Meshes/SanMiguel/SanMiguel_135.cmsh"
+	}
+
+	mesh "SanMiguel_136"
+	{
+		import "Meshes/SanMiguel/SanMiguel_136.cmsh"
+	}
+
+	mesh "SanMiguel_137"
+	{
+		import "Meshes/SanMiguel/SanMiguel_137.cmsh"
+	}
+
+	mesh "SanMiguel_138"
+	{
+		import "Meshes/SanMiguel/SanMiguel_138.cmsh"
+	}
+
+	mesh "SanMiguel_139"
+	{
+		import "Meshes/SanMiguel/SanMiguel_139.cmsh"
+	}
+
+	mesh "SanMiguel_14"
+	{
+		import "Meshes/SanMiguel/SanMiguel_14.cmsh"
+	}
+
+	mesh "SanMiguel_140"
+	{
+		import "Meshes/SanMiguel/SanMiguel_140.cmsh"
+	}
+
+	mesh "SanMiguel_141"
+	{
+		import "Meshes/SanMiguel/SanMiguel_141.cmsh"
+	}
+
+	mesh "SanMiguel_142"
+	{
+		import "Meshes/SanMiguel/SanMiguel_142.cmsh"
+	}
+
+	mesh "SanMiguel_143"
+	{
+		import "Meshes/SanMiguel/SanMiguel_143.cmsh"
+	}
+
+	mesh "SanMiguel_144"
+	{
+		import "Meshes/SanMiguel/SanMiguel_144.cmsh"
+	}
+
+	mesh "SanMiguel_145"
+	{
+		import "Meshes/SanMiguel/SanMiguel_145.cmsh"
+	}
+
+	mesh "SanMiguel_146"
+	{
+		import "Meshes/SanMiguel/SanMiguel_146.cmsh"
+	}
+
+	mesh "SanMiguel_147"
+	{
+		import "Meshes/SanMiguel/SanMiguel_147.cmsh"
+	}
+
+	mesh "SanMiguel_148"
+	{
+		import "Meshes/SanMiguel/SanMiguel_148.cmsh"
+	}
+
+	mesh "SanMiguel_149"
+	{
+		import "Meshes/SanMiguel/SanMiguel_149.cmsh"
+	}
+
+	mesh "SanMiguel_15"
+	{
+		import "Meshes/SanMiguel/SanMiguel_15.cmsh"
+	}
+
+	mesh "SanMiguel_150"
+	{
+		import "Meshes/SanMiguel/SanMiguel_150.cmsh"
+	}
+
+	mesh "SanMiguel_151"
+	{
+		import "Meshes/SanMiguel/SanMiguel_151.cmsh"
+	}
+
+	mesh "SanMiguel_152"
+	{
+		import "Meshes/SanMiguel/SanMiguel_152.cmsh"
+	}
+
+	mesh "SanMiguel_153"
+	{
+		import "Meshes/SanMiguel/SanMiguel_153.cmsh"
+	}
+
+	mesh "SanMiguel_154"
+	{
+		import "Meshes/SanMiguel/SanMiguel_154.cmsh"
+	}
+
+	mesh "SanMiguel_155"
+	{
+		import "Meshes/SanMiguel/SanMiguel_155.cmsh"
+	}
+
+	mesh "SanMiguel_156"
+	{
+		import "Meshes/SanMiguel/SanMiguel_156.cmsh"
+	}
+
+	mesh "SanMiguel_157"
+	{
+		import "Meshes/SanMiguel/SanMiguel_157.cmsh"
+	}
+
+	mesh "SanMiguel_158"
+	{
+		import "Meshes/SanMiguel/SanMiguel_158.cmsh"
+	}
+
+	mesh "SanMiguel_159"
+	{
+		import "Meshes/SanMiguel/SanMiguel_159.cmsh"
+	}
+
+	mesh "SanMiguel_16"
+	{
+		import "Meshes/SanMiguel/SanMiguel_16.cmsh"
+	}
+
+	mesh "SanMiguel_160"
+	{
+		import "Meshes/SanMiguel/SanMiguel_160.cmsh"
+	}
+
+	mesh "SanMiguel_161"
+	{
+		import "Meshes/SanMiguel/SanMiguel_161.cmsh"
+	}
+
+	mesh "SanMiguel_162"
+	{
+		import "Meshes/SanMiguel/SanMiguel_162.cmsh"
+	}
+
+	mesh "SanMiguel_163"
+	{
+		import "Meshes/SanMiguel/SanMiguel_163.cmsh"
+	}
+
+	mesh "SanMiguel_164"
+	{
+		import "Meshes/SanMiguel/SanMiguel_164.cmsh"
+	}
+
+	mesh "SanMiguel_165"
+	{
+		import "Meshes/SanMiguel/SanMiguel_165.cmsh"
+	}
+
+	mesh "SanMiguel_166"
+	{
+		import "Meshes/SanMiguel/SanMiguel_166.cmsh"
+	}
+
+	mesh "SanMiguel_167"
+	{
+		import "Meshes/SanMiguel/SanMiguel_167.cmsh"
+	}
+
+	mesh "SanMiguel_168"
+	{
+		import "Meshes/SanMiguel/SanMiguel_168.cmsh"
+	}
+
+	mesh "SanMiguel_169"
+	{
+		import "Meshes/SanMiguel/SanMiguel_169.cmsh"
+	}
+
+	mesh "SanMiguel_17"
+	{
+		import "Meshes/SanMiguel/SanMiguel_17.cmsh"
+	}
+
+	mesh "SanMiguel_170"
+	{
+		import "Meshes/SanMiguel/SanMiguel_170.cmsh"
+	}
+
+	mesh "SanMiguel_171"
+	{
+		import "Meshes/SanMiguel/SanMiguel_171.cmsh"
+	}
+
+	mesh "SanMiguel_172"
+	{
+		import "Meshes/SanMiguel/SanMiguel_172.cmsh"
+	}
+
+	mesh "SanMiguel_173"
+	{
+		import "Meshes/SanMiguel/SanMiguel_173.cmsh"
+	}
+
+	mesh "SanMiguel_174"
+	{
+		import "Meshes/SanMiguel/SanMiguel_174.cmsh"
+	}
+
+	mesh "SanMiguel_175"
+	{
+		import "Meshes/SanMiguel/SanMiguel_175.cmsh"
+	}
+
+	mesh "SanMiguel_176"
+	{
+		import "Meshes/SanMiguel/SanMiguel_176.cmsh"
+	}
+
+	mesh "SanMiguel_177"
+	{
+		import "Meshes/SanMiguel/SanMiguel_177.cmsh"
+	}
+
+	mesh "SanMiguel_178"
+	{
+		import "Meshes/SanMiguel/SanMiguel_178.cmsh"
+	}
+
+	mesh "SanMiguel_179"
+	{
+		import "Meshes/SanMiguel/SanMiguel_179.cmsh"
+	}
+
+	mesh "SanMiguel_18"
+	{
+		import "Meshes/SanMiguel/SanMiguel_18.cmsh"
+	}
+
+	mesh "SanMiguel_180"
+	{
+		import "Meshes/SanMiguel/SanMiguel_180.cmsh"
+	}
+
+	mesh "SanMiguel_181"
+	{
+		import "Meshes/SanMiguel/SanMiguel_181.cmsh"
+	}
+
+	mesh "SanMiguel_182"
+	{
+		import "Meshes/SanMiguel/SanMiguel_182.cmsh"
+	}
+
+	mesh "SanMiguel_183"
+	{
+		import "Meshes/SanMiguel/SanMiguel_183.cmsh"
+	}
+
+	mesh "SanMiguel_184"
+	{
+		import "Meshes/SanMiguel/SanMiguel_184.cmsh"
+	}
+
+	mesh "SanMiguel_185"
+	{
+		import "Meshes/SanMiguel/SanMiguel_185.cmsh"
+	}
+
+	mesh "SanMiguel_186"
+	{
+		import "Meshes/SanMiguel/SanMiguel_186.cmsh"
+	}
+
+	mesh "SanMiguel_187"
+	{
+		import "Meshes/SanMiguel/SanMiguel_187.cmsh"
+	}
+
+	mesh "SanMiguel_188"
+	{
+		import "Meshes/SanMiguel/SanMiguel_188.cmsh"
+	}
+
+	mesh "SanMiguel_189"
+	{
+		import "Meshes/SanMiguel/SanMiguel_189.cmsh"
+	}
+
+	mesh "SanMiguel_19"
+	{
+		import "Meshes/SanMiguel/SanMiguel_19.cmsh"
+	}
+
+	mesh "SanMiguel_190"
+	{
+		import "Meshes/SanMiguel/SanMiguel_190.cmsh"
+	}
+
+	mesh "SanMiguel_191"
+	{
+		import "Meshes/SanMiguel/SanMiguel_191.cmsh"
+	}
+
+	mesh "SanMiguel_192"
+	{
+		import "Meshes/SanMiguel/SanMiguel_192.cmsh"
+	}
+
+	mesh "SanMiguel_193"
+	{
+		import "Meshes/SanMiguel/SanMiguel_193.cmsh"
+	}
+
+	mesh "SanMiguel_194"
+	{
+		import "Meshes/SanMiguel/SanMiguel_194.cmsh"
+	}
+
+	mesh "SanMiguel_195"
+	{
+		import "Meshes/SanMiguel/SanMiguel_195.cmsh"
+	}
+
+	mesh "SanMiguel_196"
+	{
+		import "Meshes/SanMiguel/SanMiguel_196.cmsh"
+	}
+
+	mesh "SanMiguel_197"
+	{
+		import "Meshes/SanMiguel/SanMiguel_197.cmsh"
+	}
+
+	mesh "SanMiguel_198"
+	{
+		import "Meshes/SanMiguel/SanMiguel_198.cmsh"
+	}
+
+	mesh "SanMiguel_199"
+	{
+		import "Meshes/SanMiguel/SanMiguel_199.cmsh"
+	}
+
+	mesh "SanMiguel_2"
+	{
+		import "Meshes/SanMiguel/SanMiguel_2.cmsh"
+	}
+
+	mesh "SanMiguel_20"
+	{
+		import "Meshes/SanMiguel/SanMiguel_20.cmsh"
+	}
+
+	mesh "SanMiguel_200"
+	{
+		import "Meshes/SanMiguel/SanMiguel_200.cmsh"
+	}
+
+	mesh "SanMiguel_201"
+	{
+		import "Meshes/SanMiguel/SanMiguel_201.cmsh"
+	}
+
+	mesh "SanMiguel_202"
+	{
+		import "Meshes/SanMiguel/SanMiguel_202.cmsh"
+	}
+
+	mesh "SanMiguel_203"
+	{
+		import "Meshes/SanMiguel/SanMiguel_203.cmsh"
+	}
+
+	mesh "SanMiguel_204"
+	{
+		import "Meshes/SanMiguel/SanMiguel_204.cmsh"
+	}
+
+	mesh "SanMiguel_205"
+	{
+		import "Meshes/SanMiguel/SanMiguel_205.cmsh"
+	}
+
+	mesh "SanMiguel_206"
+	{
+		import "Meshes/SanMiguel/SanMiguel_206.cmsh"
+	}
+
+	mesh "SanMiguel_207"
+	{
+		import "Meshes/SanMiguel/SanMiguel_207.cmsh"
+	}
+
+	mesh "SanMiguel_208"
+	{
+		import "Meshes/SanMiguel/SanMiguel_208.cmsh"
+	}
+
+	mesh "SanMiguel_209"
+	{
+		import "Meshes/SanMiguel/SanMiguel_209.cmsh"
+	}
+
+	mesh "SanMiguel_21"
+	{
+		import "Meshes/SanMiguel/SanMiguel_21.cmsh"
+	}
+
+	mesh "SanMiguel_210"
+	{
+		import "Meshes/SanMiguel/SanMiguel_210.cmsh"
+	}
+
+	mesh "SanMiguel_211"
+	{
+		import "Meshes/SanMiguel/SanMiguel_211.cmsh"
+	}
+
+	mesh "SanMiguel_212"
+	{
+		import "Meshes/SanMiguel/SanMiguel_212.cmsh"
+	}
+
+	mesh "SanMiguel_213"
+	{
+		import "Meshes/SanMiguel/SanMiguel_213.cmsh"
+	}
+
+	mesh "SanMiguel_214"
+	{
+		import "Meshes/SanMiguel/SanMiguel_214.cmsh"
+	}
+
+	mesh "SanMiguel_215"
+	{
+		import "Meshes/SanMiguel/SanMiguel_215.cmsh"
+	}
+
+	mesh "SanMiguel_216"
+	{
+		import "Meshes/SanMiguel/SanMiguel_216.cmsh"
+	}
+
+	mesh "SanMiguel_217"
+	{
+		import "Meshes/SanMiguel/SanMiguel_217.cmsh"
+	}
+
+	mesh "SanMiguel_218"
+	{
+		import "Meshes/SanMiguel/SanMiguel_218.cmsh"
+	}
+
+	mesh "SanMiguel_219"
+	{
+		import "Meshes/SanMiguel/SanMiguel_219.cmsh"
+	}
+
+	mesh "SanMiguel_22"
+	{
+		import "Meshes/SanMiguel/SanMiguel_22.cmsh"
+	}
+
+	mesh "SanMiguel_220"
+	{
+		import "Meshes/SanMiguel/SanMiguel_220.cmsh"
+	}
+
+	mesh "SanMiguel_221"
+	{
+		import "Meshes/SanMiguel/SanMiguel_221.cmsh"
+	}
+
+	mesh "SanMiguel_222"
+	{
+		import "Meshes/SanMiguel/SanMiguel_222.cmsh"
+	}
+
+	mesh "SanMiguel_223"
+	{
+		import "Meshes/SanMiguel/SanMiguel_223.cmsh"
+	}
+
+	mesh "SanMiguel_224"
+	{
+		import "Meshes/SanMiguel/SanMiguel_224.cmsh"
+	}
+
+	mesh "SanMiguel_225"
+	{
+		import "Meshes/SanMiguel/SanMiguel_225.cmsh"
+	}
+
+	mesh "SanMiguel_226"
+	{
+		import "Meshes/SanMiguel/SanMiguel_226.cmsh"
+	}
+
+	mesh "SanMiguel_227"
+	{
+		import "Meshes/SanMiguel/SanMiguel_227.cmsh"
+	}
+
+	mesh "SanMiguel_228"
+	{
+		import "Meshes/SanMiguel/SanMiguel_228.cmsh"
+	}
+
+	mesh "SanMiguel_229"
+	{
+		import "Meshes/SanMiguel/SanMiguel_229.cmsh"
+	}
+
+	mesh "SanMiguel_23"
+	{
+		import "Meshes/SanMiguel/SanMiguel_23.cmsh"
+	}
+
+	mesh "SanMiguel_230"
+	{
+		import "Meshes/SanMiguel/SanMiguel_230.cmsh"
+	}
+
+	mesh "SanMiguel_231"
+	{
+		import "Meshes/SanMiguel/SanMiguel_231.cmsh"
+	}
+
+	mesh "SanMiguel_232"
+	{
+		import "Meshes/SanMiguel/SanMiguel_232.cmsh"
+	}
+
+	mesh "SanMiguel_233"
+	{
+		import "Meshes/SanMiguel/SanMiguel_233.cmsh"
+	}
+
+	mesh "SanMiguel_234"
+	{
+		import "Meshes/SanMiguel/SanMiguel_234.cmsh"
+	}
+
+	mesh "SanMiguel_235"
+	{
+		import "Meshes/SanMiguel/SanMiguel_235.cmsh"
+	}
+
+	mesh "SanMiguel_236"
+	{
+		import "Meshes/SanMiguel/SanMiguel_236.cmsh"
+	}
+
+	mesh "SanMiguel_237"
+	{
+		import "Meshes/SanMiguel/SanMiguel_237.cmsh"
+	}
+
+	mesh "SanMiguel_238"
+	{
+		import "Meshes/SanMiguel/SanMiguel_238.cmsh"
+	}
+
+	mesh "SanMiguel_239"
+	{
+		import "Meshes/SanMiguel/SanMiguel_239.cmsh"
+	}
+
+	mesh "SanMiguel_24"
+	{
+		import "Meshes/SanMiguel/SanMiguel_24.cmsh"
+	}
+
+	mesh "SanMiguel_240"
+	{
+		import "Meshes/SanMiguel/SanMiguel_240.cmsh"
+	}
+
+	mesh "SanMiguel_241"
+	{
+		import "Meshes/SanMiguel/SanMiguel_241.cmsh"
+	}
+
+	mesh "SanMiguel_242"
+	{
+		import "Meshes/SanMiguel/SanMiguel_242.cmsh"
+	}
+
+	mesh "SanMiguel_243"
+	{
+		import "Meshes/SanMiguel/SanMiguel_243.cmsh"
+	}
+
+	mesh "SanMiguel_244"
+	{
+		import "Meshes/SanMiguel/SanMiguel_244.cmsh"
+	}
+
+	mesh "SanMiguel_245"
+	{
+		import "Meshes/SanMiguel/SanMiguel_245.cmsh"
+	}
+
+	mesh "SanMiguel_246"
+	{
+		import "Meshes/SanMiguel/SanMiguel_246.cmsh"
+	}
+
+	mesh "SanMiguel_247"
+	{
+		import "Meshes/SanMiguel/SanMiguel_247.cmsh"
+	}
+
+	mesh "SanMiguel_248"
+	{
+		import "Meshes/SanMiguel/SanMiguel_248.cmsh"
+	}
+
+	mesh "SanMiguel_249"
+	{
+		import "Meshes/SanMiguel/SanMiguel_249.cmsh"
+	}
+
+	mesh "SanMiguel_25"
+	{
+		import "Meshes/SanMiguel/SanMiguel_25.cmsh"
+	}
+
+	mesh "SanMiguel_250"
+	{
+		import "Meshes/SanMiguel/SanMiguel_250.cmsh"
+	}
+
+	mesh "SanMiguel_251"
+	{
+		import "Meshes/SanMiguel/SanMiguel_251.cmsh"
+	}
+
+	mesh "SanMiguel_252"
+	{
+		import "Meshes/SanMiguel/SanMiguel_252.cmsh"
+	}
+
+	mesh "SanMiguel_253"
+	{
+		import "Meshes/SanMiguel/SanMiguel_253.cmsh"
+	}
+
+	mesh "SanMiguel_254"
+	{
+		import "Meshes/SanMiguel/SanMiguel_254.cmsh"
+	}
+
+	mesh "SanMiguel_255"
+	{
+		import "Meshes/SanMiguel/SanMiguel_255.cmsh"
+	}
+
+	mesh "SanMiguel_256"
+	{
+		import "Meshes/SanMiguel/SanMiguel_256.cmsh"
+	}
+
+	mesh "SanMiguel_257"
+	{
+		import "Meshes/SanMiguel/SanMiguel_257.cmsh"
+	}
+
+	mesh "SanMiguel_258"
+	{
+		import "Meshes/SanMiguel/SanMiguel_258.cmsh"
+	}
+
+	mesh "SanMiguel_259"
+	{
+		import "Meshes/SanMiguel/SanMiguel_259.cmsh"
+	}
+
+	mesh "SanMiguel_26"
+	{
+		import "Meshes/SanMiguel/SanMiguel_26.cmsh"
+	}
+
+	mesh "SanMiguel_260"
+	{
+		import "Meshes/SanMiguel/SanMiguel_260.cmsh"
+	}
+
+	mesh "SanMiguel_261"
+	{
+		import "Meshes/SanMiguel/SanMiguel_261.cmsh"
+	}
+
+	mesh "SanMiguel_262"
+	{
+		import "Meshes/SanMiguel/SanMiguel_262.cmsh"
+	}
+
+	mesh "SanMiguel_263"
+	{
+		import "Meshes/SanMiguel/SanMiguel_263.cmsh"
+	}
+
+	mesh "SanMiguel_264"
+	{
+		import "Meshes/SanMiguel/SanMiguel_264.cmsh"
+	}
+
+	mesh "SanMiguel_265"
+	{
+		import "Meshes/SanMiguel/SanMiguel_265.cmsh"
+	}
+
+	mesh "SanMiguel_266"
+	{
+		import "Meshes/SanMiguel/SanMiguel_266.cmsh"
+	}
+
+	mesh "SanMiguel_267"
+	{
+		import "Meshes/SanMiguel/SanMiguel_267.cmsh"
+	}
+
+	mesh "SanMiguel_268"
+	{
+		import "Meshes/SanMiguel/SanMiguel_268.cmsh"
+	}
+
+	mesh "SanMiguel_269"
+	{
+		import "Meshes/SanMiguel/SanMiguel_269.cmsh"
+	}
+
+	mesh "SanMiguel_27"
+	{
+		import "Meshes/SanMiguel/SanMiguel_27.cmsh"
+	}
+
+	mesh "SanMiguel_270"
+	{
+		import "Meshes/SanMiguel/SanMiguel_270.cmsh"
+	}
+
+	mesh "SanMiguel_271"
+	{
+		import "Meshes/SanMiguel/SanMiguel_271.cmsh"
+	}
+
+	mesh "SanMiguel_272"
+	{
+		import "Meshes/SanMiguel/SanMiguel_272.cmsh"
+	}
+
+	mesh "SanMiguel_273"
+	{
+		import "Meshes/SanMiguel/SanMiguel_273.cmsh"
+	}
+
+	mesh "SanMiguel_274"
+	{
+		import "Meshes/SanMiguel/SanMiguel_274.cmsh"
+	}
+
+	mesh "SanMiguel_275"
+	{
+		import "Meshes/SanMiguel/SanMiguel_275.cmsh"
+	}
+
+	mesh "SanMiguel_276"
+	{
+		import "Meshes/SanMiguel/SanMiguel_276.cmsh"
+	}
+
+	mesh "SanMiguel_277"
+	{
+		import "Meshes/SanMiguel/SanMiguel_277.cmsh"
+	}
+
+	mesh "SanMiguel_278"
+	{
+		import "Meshes/SanMiguel/SanMiguel_278.cmsh"
+	}
+
+	mesh "SanMiguel_279"
+	{
+		import "Meshes/SanMiguel/SanMiguel_279.cmsh"
+	}
+
+	mesh "SanMiguel_28"
+	{
+		import "Meshes/SanMiguel/SanMiguel_28.cmsh"
+	}
+
+	mesh "SanMiguel_280"
+	{
+		import "Meshes/SanMiguel/SanMiguel_280.cmsh"
+	}
+
+	mesh "SanMiguel_281"
+	{
+		import "Meshes/SanMiguel/SanMiguel_281.cmsh"
+	}
+
+	mesh "SanMiguel_282"
+	{
+		import "Meshes/SanMiguel/SanMiguel_282.cmsh"
+	}
+
+	mesh "SanMiguel_283"
+	{
+		import "Meshes/SanMiguel/SanMiguel_283.cmsh"
+	}
+
+	mesh "SanMiguel_284"
+	{
+		import "Meshes/SanMiguel/SanMiguel_284.cmsh"
+	}
+
+	mesh "SanMiguel_285"
+	{
+		import "Meshes/SanMiguel/SanMiguel_285.cmsh"
+	}
+
+	mesh "SanMiguel_286"
+	{
+		import "Meshes/SanMiguel/SanMiguel_286.cmsh"
+	}
+
+	mesh "SanMiguel_29"
+	{
+		import "Meshes/SanMiguel/SanMiguel_29.cmsh"
+	}
+
+	mesh "SanMiguel_3"
+	{
+		import "Meshes/SanMiguel/SanMiguel_3.cmsh"
+	}
+
+	mesh "SanMiguel_30"
+	{
+		import "Meshes/SanMiguel/SanMiguel_30.cmsh"
+	}
+
+	mesh "SanMiguel_31"
+	{
+		import "Meshes/SanMiguel/SanMiguel_31.cmsh"
+	}
+
+	mesh "SanMiguel_32"
+	{
+		import "Meshes/SanMiguel/SanMiguel_32.cmsh"
+	}
+
+	mesh "SanMiguel_33"
+	{
+		import "Meshes/SanMiguel/SanMiguel_33.cmsh"
+	}
+
+	mesh "SanMiguel_34"
+	{
+		import "Meshes/SanMiguel/SanMiguel_34.cmsh"
+	}
+
+	mesh "SanMiguel_35"
+	{
+		import "Meshes/SanMiguel/SanMiguel_35.cmsh"
+	}
+
+	mesh "SanMiguel_36"
+	{
+		import "Meshes/SanMiguel/SanMiguel_36.cmsh"
+	}
+
+	mesh "SanMiguel_37"
+	{
+		import "Meshes/SanMiguel/SanMiguel_37.cmsh"
+	}
+
+	mesh "SanMiguel_38"
+	{
+		import "Meshes/SanMiguel/SanMiguel_38.cmsh"
+	}
+
+	mesh "SanMiguel_39"
+	{
+		import "Meshes/SanMiguel/SanMiguel_39.cmsh"
+	}
+
+	mesh "SanMiguel_4"
+	{
+		import "Meshes/SanMiguel/SanMiguel_4.cmsh"
+	}
+
+	mesh "SanMiguel_40"
+	{
+		import "Meshes/SanMiguel/SanMiguel_40.cmsh"
+	}
+
+	mesh "SanMiguel_41"
+	{
+		import "Meshes/SanMiguel/SanMiguel_41.cmsh"
+	}
+
+	mesh "SanMiguel_42"
+	{
+		import "Meshes/SanMiguel/SanMiguel_42.cmsh"
+	}
+
+	mesh "SanMiguel_43"
+	{
+		import "Meshes/SanMiguel/SanMiguel_43.cmsh"
+	}
+
+	mesh "SanMiguel_44"
+	{
+		import "Meshes/SanMiguel/SanMiguel_44.cmsh"
+	}
+
+	mesh "SanMiguel_45"
+	{
+		import "Meshes/SanMiguel/SanMiguel_45.cmsh"
+	}
+
+	mesh "SanMiguel_46"
+	{
+		import "Meshes/SanMiguel/SanMiguel_46.cmsh"
+	}
+
+	mesh "SanMiguel_47"
+	{
+		import "Meshes/SanMiguel/SanMiguel_47.cmsh"
+	}
+
+	mesh "SanMiguel_48"
+	{
+		import "Meshes/SanMiguel/SanMiguel_48.cmsh"
+	}
+
+	mesh "SanMiguel_49"
+	{
+		import "Meshes/SanMiguel/SanMiguel_49.cmsh"
+	}
+
+	mesh "SanMiguel_5"
+	{
+		import "Meshes/SanMiguel/SanMiguel_5.cmsh"
+	}
+
+	mesh "SanMiguel_50"
+	{
+		import "Meshes/SanMiguel/SanMiguel_50.cmsh"
+	}
+
+	mesh "SanMiguel_51"
+	{
+		import "Meshes/SanMiguel/SanMiguel_51.cmsh"
+	}
+
+	mesh "SanMiguel_52"
+	{
+		import "Meshes/SanMiguel/SanMiguel_52.cmsh"
+	}
+
+	mesh "SanMiguel_53"
+	{
+		import "Meshes/SanMiguel/SanMiguel_53.cmsh"
+	}
+
+	mesh "SanMiguel_54"
+	{
+		import "Meshes/SanMiguel/SanMiguel_54.cmsh"
+	}
+
+	mesh "SanMiguel_55"
+	{
+		import "Meshes/SanMiguel/SanMiguel_55.cmsh"
+	}
+
+	mesh "SanMiguel_56"
+	{
+		import "Meshes/SanMiguel/SanMiguel_56.cmsh"
+	}
+
+	mesh "SanMiguel_57"
+	{
+		import "Meshes/SanMiguel/SanMiguel_57.cmsh"
+	}
+
+	mesh "SanMiguel_58"
+	{
+		import "Meshes/SanMiguel/SanMiguel_58.cmsh"
+	}
+
+	mesh "SanMiguel_59"
+	{
+		import "Meshes/SanMiguel/SanMiguel_59.cmsh"
+	}
+
+	mesh "SanMiguel_6"
+	{
+		import "Meshes/SanMiguel/SanMiguel_6.cmsh"
+	}
+
+	mesh "SanMiguel_60"
+	{
+		import "Meshes/SanMiguel/SanMiguel_60.cmsh"
+	}
+
+	mesh "SanMiguel_61"
+	{
+		import "Meshes/SanMiguel/SanMiguel_61.cmsh"
+	}
+
+	mesh "SanMiguel_62"
+	{
+		import "Meshes/SanMiguel/SanMiguel_62.cmsh"
+	}
+
+	mesh "SanMiguel_63"
+	{
+		import "Meshes/SanMiguel/SanMiguel_63.cmsh"
+	}
+
+	mesh "SanMiguel_64"
+	{
+		import "Meshes/SanMiguel/SanMiguel_64.cmsh"
+	}
+
+	mesh "SanMiguel_65"
+	{
+		import "Meshes/SanMiguel/SanMiguel_65.cmsh"
+	}
+
+	mesh "SanMiguel_66"
+	{
+		import "Meshes/SanMiguel/SanMiguel_66.cmsh"
+	}
+
+	mesh "SanMiguel_67"
+	{
+		import "Meshes/SanMiguel/SanMiguel_67.cmsh"
+	}
+
+	mesh "SanMiguel_68"
+	{
+		import "Meshes/SanMiguel/SanMiguel_68.cmsh"
+	}
+
+	mesh "SanMiguel_69"
+	{
+		import "Meshes/SanMiguel/SanMiguel_69.cmsh"
+	}
+
+	mesh "SanMiguel_7"
+	{
+		import "Meshes/SanMiguel/SanMiguel_7.cmsh"
+	}
+
+	mesh "SanMiguel_70"
+	{
+		import "Meshes/SanMiguel/SanMiguel_70.cmsh"
+	}
+
+	mesh "SanMiguel_71"
+	{
+		import "Meshes/SanMiguel/SanMiguel_71.cmsh"
+	}
+
+	mesh "SanMiguel_72"
+	{
+		import "Meshes/SanMiguel/SanMiguel_72.cmsh"
+	}
+
+	mesh "SanMiguel_73"
+	{
+		import "Meshes/SanMiguel/SanMiguel_73.cmsh"
+	}
+
+	mesh "SanMiguel_74"
+	{
+		import "Meshes/SanMiguel/SanMiguel_74.cmsh"
+	}
+
+	mesh "SanMiguel_75"
+	{
+		import "Meshes/SanMiguel/SanMiguel_75.cmsh"
+	}
+
+	mesh "SanMiguel_76"
+	{
+		import "Meshes/SanMiguel/SanMiguel_76.cmsh"
+	}
+
+	mesh "SanMiguel_77"
+	{
+		import "Meshes/SanMiguel/SanMiguel_77.cmsh"
+	}
+
+	mesh "SanMiguel_78"
+	{
+		import "Meshes/SanMiguel/SanMiguel_78.cmsh"
+	}
+
+	mesh "SanMiguel_79"
+	{
+		import "Meshes/SanMiguel/SanMiguel_79.cmsh"
+	}
+
+	mesh "SanMiguel_8"
+	{
+		import "Meshes/SanMiguel/SanMiguel_8.cmsh"
+	}
+
+	mesh "SanMiguel_80"
+	{
+		import "Meshes/SanMiguel/SanMiguel_80.cmsh"
+	}
+
+	mesh "SanMiguel_81"
+	{
+		import "Meshes/SanMiguel/SanMiguel_81.cmsh"
+	}
+
+	mesh "SanMiguel_82"
+	{
+		import "Meshes/SanMiguel/SanMiguel_82.cmsh"
+	}
+
+	mesh "SanMiguel_83"
+	{
+		import "Meshes/SanMiguel/SanMiguel_83.cmsh"
+	}
+
+	mesh "SanMiguel_84"
+	{
+		import "Meshes/SanMiguel/SanMiguel_84.cmsh"
+	}
+
+	mesh "SanMiguel_85"
+	{
+		import "Meshes/SanMiguel/SanMiguel_85.cmsh"
+	}
+
+	mesh "SanMiguel_86"
+	{
+		import "Meshes/SanMiguel/SanMiguel_86.cmsh"
+	}
+
+	mesh "SanMiguel_87"
+	{
+		import "Meshes/SanMiguel/SanMiguel_87.cmsh"
+	}
+
+	mesh "SanMiguel_88"
+	{
+		import "Meshes/SanMiguel/SanMiguel_88.cmsh"
+	}
+
+	mesh "SanMiguel_89"
+	{
+		import "Meshes/SanMiguel/SanMiguel_89.cmsh"
+	}
+
+	mesh "SanMiguel_9"
+	{
+		import "Meshes/SanMiguel/SanMiguel_9.cmsh"
+	}
+
+	mesh "SanMiguel_90"
+	{
+		import "Meshes/SanMiguel/SanMiguel_90.cmsh"
+	}
+
+	mesh "SanMiguel_91"
+	{
+		import "Meshes/SanMiguel/SanMiguel_91.cmsh"
+	}
+
+	mesh "SanMiguel_92"
+	{
+		import "Meshes/SanMiguel/SanMiguel_92.cmsh"
+	}
+
+	mesh "SanMiguel_93"
+	{
+		import "Meshes/SanMiguel/SanMiguel_93.cmsh"
+	}
+
+	mesh "SanMiguel_94"
+	{
+		import "Meshes/SanMiguel/SanMiguel_94.cmsh"
+	}
+
+	mesh "SanMiguel_95"
+	{
+		import "Meshes/SanMiguel/SanMiguel_95.cmsh"
+	}
+
+	mesh "SanMiguel_96"
+	{
+		import "Meshes/SanMiguel/SanMiguel_96.cmsh"
+	}
+
+	mesh "SanMiguel_97"
+	{
+		import "Meshes/SanMiguel/SanMiguel_97.cmsh"
+	}
+
+	mesh "SanMiguel_98"
+	{
+		import "Meshes/SanMiguel/SanMiguel_98.cmsh"
+	}
+
+	mesh "SanMiguel_99"
+	{
+		import "Meshes/SanMiguel/SanMiguel_99.cmsh"
+	}
+
+	// Cameras nodes
+
 	scene_node "MainCameraNode"
 	{
-		orientation 0.305089 0.900222 -0.310679 97.0449
-		position 7.2628 12.262 2.87199
+		// orientation 0.305089 0.900222 -0.310679 97.0449
+		// position 7.2628 12.262 2.87199
+		orientation 0.0 1.0 0.0 310.0
+		position 236.159 16.5023 -16.6404
 	}
 
-	scene_node "FinalNode"
-	{
-		orientation 1 0 0 0
-		position 0 0 0
-		scale 1 1 1
-	}
-
-	scene_node "LightNode"
-	{
-		orientation -0.59796 -0.347865 0.722104 212.139
-	}
+	// Cameras
 
 	camera "MainCamera"
 	{
@@ -36,37 +1472,1776 @@ scene "SanMiguel"
 		{
 			type perspective
 			aspect_ratio 1.778
-			fov_y 45
 			near 0.1
-			far 100
+			far 1000
+			fov_y 45
 		}
 	}
+
+	// Objects nodes
+
+	scene_node "FinalNode"
+	{
+		scale 10 10 10
+	}
+
+	scene_node "LightNode"
+	{
+		// orientation -0.59796 -0.347865 0.722104 212.139
+		orientation 0.636294 -0.431266 0.63964 134.761
+	}
+
+	scene_node "SanMiguel_0"
+	{
+		parent "FinalNode"
+		position 16.3642 0.776218 5.00679
+	}
+
+	scene_node "SanMiguel_1"
+	{
+		parent "FinalNode"
+		position 16.4625 0.774329 4.99925
+	}
+
+	scene_node "SanMiguel_10"
+	{
+		parent "FinalNode"
+		position 13.0134 1.44178 -2.64789
+	}
+
+	scene_node "SanMiguel_100"
+	{
+		parent "FinalNode"
+		position 15.3988 6.34392 1.05917
+	}
+
+	scene_node "SanMiguel_101"
+	{
+		parent "FinalNode"
+		position 14.7863 3.60734 3.72813
+	}
+
+	scene_node "SanMiguel_102"
+	{
+		parent "FinalNode"
+		position 15.2226 5.85258 0.24712
+	}
+
+	scene_node "SanMiguel_103"
+	{
+		parent "FinalNode"
+		position 17.16 -0.0424138 5.14893
+	}
+
+	scene_node "SanMiguel_104"
+	{
+		parent "FinalNode"
+		position 12.7487 6.17048 7.76855
+	}
+
+	scene_node "SanMiguel_105"
+	{
+		parent "FinalNode"
+		position 12.1039 3.81438 6.49529
+	}
+
+	scene_node "SanMiguel_106"
+	{
+		parent "FinalNode"
+		position 12.7905 0.308483 6.13927
+	}
+
+	scene_node "SanMiguel_107"
+	{
+		parent "FinalNode"
+		position 16.6964 3.18122 4.92773
+	}
+
+	scene_node "SanMiguel_108"
+	{
+		parent "FinalNode"
+		position 18.0809 5.60647 0.185145
+	}
+
+	scene_node "SanMiguel_109"
+	{
+		parent "FinalNode"
+		position 16.5116 -0.0323917 5.83076
+	}
+
+	scene_node "SanMiguel_11"
+	{
+		parent "FinalNode"
+		position 22.226 6.75666 0.184395
+	}
+
+	scene_node "SanMiguel_110"
+	{
+		parent "FinalNode"
+		position 21.8983 7.25114 -3.25208
+	}
+
+	scene_node "SanMiguel_111"
+	{
+		parent "FinalNode"
+		position 26.6896 7.81824 5.64997
+	}
+
+	scene_node "SanMiguel_112"
+	{
+		parent "FinalNode"
+		position 26.0906 2.9709 4.35858
+	}
+
+	scene_node "SanMiguel_113"
+	{
+		parent "FinalNode"
+		position 26.687 2.73738 -1.75535
+	}
+
+	scene_node "SanMiguel_114"
+	{
+		parent "FinalNode"
+		position 26.6797 5.39493 10.9265
+	}
+
+	scene_node "SanMiguel_115"
+	{
+		parent "FinalNode"
+		position 20.3296 8.0669 -3.23555
+	}
+
+	scene_node "SanMiguel_116"
+	{
+		parent "FinalNode"
+		position 20.6042 2.70965 -3.23943
+	}
+
+	scene_node "SanMiguel_117"
+	{
+		parent "FinalNode"
+		position 23.7885 3.70926 7.21561
+	}
+
+	scene_node "SanMiguel_118"
+	{
+		parent "FinalNode"
+		position 26.0276 2.15827 4.36226
+	}
+
+	scene_node "SanMiguel_119"
+	{
+		parent "FinalNode"
+		position 22.4188 2.82843 -3.24972
+	}
+
+	scene_node "SanMiguel_12"
+	{
+		parent "FinalNode"
+		position 12.9501 1.72515 -2.5541
+	}
+
+	scene_node "SanMiguel_120"
+	{
+		parent "FinalNode"
+		position 22.5291 8.58179 -3.2473
+	}
+
+	scene_node "SanMiguel_121"
+	{
+		parent "FinalNode"
+		position 26.689 6.61825 8.18258
+	}
+
+	scene_node "SanMiguel_122"
+	{
+		parent "FinalNode"
+		position 23.7864 4.93834 11.9017
+	}
+
+	scene_node "SanMiguel_123"
+	{
+		parent "FinalNode"
+		position 25.2926 3.09587 6.21251
+	}
+
+	scene_node "SanMiguel_124"
+	{
+		parent "FinalNode"
+		position 25.9205 3.98468 4.3533
+	}
+
+	scene_node "SanMiguel_125"
+	{
+		parent "FinalNode"
+		position 23.2163 5.5415 4.50571
+	}
+
+	scene_node "SanMiguel_126"
+	{
+		parent "FinalNode"
+		position 7.13901 4.55095 3.52213
+	}
+
+	scene_node "SanMiguel_127"
+	{
+		parent "FinalNode"
+		position 16.5736 -0.0520606 4.87064
+	}
+
+	scene_node "SanMiguel_128"
+	{
+		parent "FinalNode"
+		position 11.5089 4.62914 5.79531
+	}
+
+	scene_node "SanMiguel_129"
+	{
+		parent "FinalNode"
+		position 7.08329 4.49004 3.52155
+	}
+
+	scene_node "SanMiguel_13"
+	{
+		parent "FinalNode"
+		position 22.2439 6.92056 0.16748
+	}
+
+	scene_node "SanMiguel_130"
+	{
+		parent "FinalNode"
+		position 25.235 3.8143 8.90004
+	}
+
+	scene_node "SanMiguel_131"
+	{
+		parent "FinalNode"
+		position 15.1185 0.206499 9.36146
+	}
+
+	scene_node "SanMiguel_132"
+	{
+		parent "FinalNode"
+		position 15.523 3.28273 1.74502
+	}
+
+	scene_node "SanMiguel_133"
+	{
+		parent "FinalNode"
+		position 14.9127 5.9963 8.27004
+	}
+
+	scene_node "SanMiguel_134"
+	{
+		parent "FinalNode"
+		position 15.3963 7.36385 8.27814
+	}
+
+	scene_node "SanMiguel_135"
+	{
+		parent "FinalNode"
+		position 23.268 6.65076 1.84215
+	}
+
+	scene_node "SanMiguel_136"
+	{
+		parent "FinalNode"
+		position 24.6996 4.69505 7.87684
+	}
+
+	scene_node "SanMiguel_137"
+	{
+		parent "FinalNode"
+		position 6.72764 0.161874 5.72291
+	}
+
+	scene_node "SanMiguel_138"
+	{
+		parent "FinalNode"
+		position 11.6153 6.12093 2.73213
+	}
+
+	scene_node "SanMiguel_139"
+	{
+		parent "FinalNode"
+		position 11.635 6.19963 2.70568
+	}
+
+	scene_node "SanMiguel_14"
+	{
+		parent "FinalNode"
+		position 22.24 6.92643 0.184351
+	}
+
+	scene_node "SanMiguel_140"
+	{
+		parent "FinalNode"
+		position 16.5415 3.26216 4.89086
+	}
+
+	scene_node "SanMiguel_141"
+	{
+		parent "FinalNode"
+		position 14.6133 2.93249 -0.1975
+	}
+
+	scene_node "SanMiguel_142"
+	{
+		parent "FinalNode"
+		position 17.7093 5.60279 1.48664
+	}
+
+	scene_node "SanMiguel_143"
+	{
+		parent "FinalNode"
+		position 14.9698 5.63434 -1.21945
+	}
+
+	scene_node "SanMiguel_144"
+	{
+		parent "FinalNode"
+		position 18.2309 3.74439 6.33205
+	}
+
+	scene_node "SanMiguel_145"
+	{
+		parent "FinalNode"
+		position 13.6185 3.53829 1.88859
+	}
+
+	scene_node "SanMiguel_146"
+	{
+		parent "FinalNode"
+		position 9.46796 3.64629 4.38673
+	}
+
+	scene_node "SanMiguel_147"
+	{
+		parent "FinalNode"
+		position 22.5199 3.9925 6.30484
+	}
+
+	scene_node "SanMiguel_148"
+	{
+		parent "FinalNode"
+		position 16.3813 6.70162 -2.95116
+	}
+
+	scene_node "SanMiguel_149"
+	{
+		parent "FinalNode"
+		position 16.3912 6.46023 -2.93471
+	}
+
+	scene_node "SanMiguel_15"
+	{
+		parent "FinalNode"
+		position 13.0044 1.0595 -2.80739
+	}
+
+	scene_node "SanMiguel_150"
+	{
+		parent "FinalNode"
+		position 16.4557 4.27645 3.62257
+	}
+
+	scene_node "SanMiguel_151"
+	{
+		parent "FinalNode"
+		position 16.4522 3.75933 3.07218
+	}
+
+	scene_node "SanMiguel_152"
+	{
+		parent "FinalNode"
+		position 5.9782 3.0409 6.11164
+	}
+
+	scene_node "SanMiguel_153"
+	{
+		parent "FinalNode"
+		position 5.9381 2.22563 6.12739
+	}
+
+	scene_node "SanMiguel_154"
+	{
+		parent "FinalNode"
+		position 16.468 4.22406 3.68539
+	}
+
+	scene_node "SanMiguel_155"
+	{
+		parent "FinalNode"
+		position 16.4792 4.21774 1.70943
+	}
+
+	scene_node "SanMiguel_156"
+	{
+		parent "FinalNode"
+		position 24.6687 4.00673 7.86042
+	}
+
+	scene_node "SanMiguel_157"
+	{
+		parent "FinalNode"
+		position 6.78673 10.5483 1.78578
+	}
+
+	scene_node "SanMiguel_158"
+	{
+		parent "FinalNode"
+		position 16.4652 6.95698 -0.314902
+	}
+
+	scene_node "SanMiguel_159"
+	{
+		parent "FinalNode"
+		position 25.2362 6.70038 13.0828
+	}
+
+	scene_node "SanMiguel_16"
+	{
+		parent "FinalNode"
+		position 22.2196 6.75947 0.175453
+	}
+
+	scene_node "SanMiguel_160"
+	{
+		parent "FinalNode"
+		position 23.8041 8.10528 3.9888
+	}
+
+	scene_node "SanMiguel_161"
+	{
+		parent "FinalNode"
+		position 6.26676 2.60527 -0.03538
+	}
+
+	scene_node "SanMiguel_162"
+	{
+		parent "FinalNode"
+		position 26.6657 2.6075 -0.03538
+	}
+
+	scene_node "SanMiguel_163"
+	{
+		parent "FinalNode"
+		position 2.72654 7.8254 6.66356
+	}
+
+	scene_node "SanMiguel_164"
+	{
+		parent "FinalNode"
+		position 23.466 4.68025 9.38969
+	}
+
+	scene_node "SanMiguel_165"
+	{
+		parent "FinalNode"
+		position 14.7902 8.22085 1.26515
+	}
+
+	scene_node "SanMiguel_166"
+	{
+		parent "FinalNode"
+		position 16.4649 8.28812 4.88648
+	}
+
+	scene_node "SanMiguel_167"
+	{
+		parent "FinalNode"
+		position 16.4661 2.65062 -3.30407
+	}
+
+	scene_node "SanMiguel_168"
+	{
+		parent "FinalNode"
+		position 25.2352 6.79955 4.5676
+	}
+
+	scene_node "SanMiguel_169"
+	{
+		parent "FinalNode"
+		position 24.6683 4.0057 7.86192
+	}
+
+	scene_node "SanMiguel_17"
+	{
+		parent "FinalNode"
+		position 22.2186 6.63584 0.17978
+	}
+
+	scene_node "SanMiguel_170"
+	{
+		parent "FinalNode"
+		position 14.7902 7.25 1.4123
+	}
+
+	scene_node "SanMiguel_171"
+	{
+		parent "FinalNode"
+		position 31.6245 2.05 2.14852
+	}
+
+	scene_node "SanMiguel_172"
+	{
+		parent "FinalNode"
+		position 23.4797 4.67921 9.38697
+	}
+
+	scene_node "SanMiguel_173"
+	{
+		parent "FinalNode"
+		position 16.5424 8.21211 4.78356
+	}
+
+	scene_node "SanMiguel_174"
+	{
+		parent "FinalNode"
+		position 16.4664 4.25004 3.70829
+	}
+
+	scene_node "SanMiguel_175"
+	{
+		parent "FinalNode"
+		position 16.4664 8.17305 4.90159
+	}
+
+	scene_node "SanMiguel_176"
+	{
+		parent "FinalNode"
+		position 16.4661 8.20016 -3.30361
+	}
+
+	scene_node "SanMiguel_177"
+	{
+		parent "FinalNode"
+		position 6.88309 10.5981 1.87099
+	}
+
+	scene_node "SanMiguel_178"
+	{
+		parent "FinalNode"
+		position 6.7817 5.34251 7.80552
+	}
+
+	scene_node "SanMiguel_179"
+	{
+		parent "FinalNode"
+		position 6.53747 4.94916 7.83792
+	}
+
+	scene_node "SanMiguel_18"
+	{
+		parent "FinalNode"
+		position 22.2396 6.91797 0.209976
+	}
+
+	scene_node "SanMiguel_180"
+	{
+		parent "FinalNode"
+		position 26.6655 8.10466 3.98865
+	}
+
+	scene_node "SanMiguel_181"
+	{
+		parent "FinalNode"
+		position 14.6973 11.6133 6.66206
+	}
+
+	scene_node "SanMiguel_182"
+	{
+		parent "FinalNode"
+		position 14.7522 2.8 1.2677
+	}
+
+	scene_node "SanMiguel_183"
+	{
+		parent "FinalNode"
+		position 12.1887 2.70057 0.66388
+	}
+
+	scene_node "SanMiguel_184"
+	{
+		parent "FinalNode"
+		position 25.2347 2.74983 8.9957
+	}
+
+	scene_node "SanMiguel_185"
+	{
+		parent "FinalNode"
+		position 6.88114 10.4258 1.88091
+	}
+
+	scene_node "SanMiguel_186"
+	{
+		parent "FinalNode"
+		position 14.9903 5.38489 1.83341
+	}
+
+	scene_node "SanMiguel_187"
+	{
+		parent "FinalNode"
+		position 14.7902 5.76359 1.11345
+	}
+
+	scene_node "SanMiguel_188"
+	{
+		parent "FinalNode"
+		position 14.7902 13.8017 13.248
+	}
+
+	scene_node "SanMiguel_189"
+	{
+		parent "FinalNode"
+		position 14.7835 7.2 13.2472
+	}
+
+	scene_node "SanMiguel_19"
+	{
+		parent "FinalNode"
+		position 22.2549 6.92081 0.198166
+	}
+
+	scene_node "SanMiguel_190"
+	{
+		parent "FinalNode"
+		position 23.2055 5.70491 4.89607
+	}
+
+	scene_node "SanMiguel_191"
+	{
+		parent "FinalNode"
+		position 25.2278 5.31553 4.04096
+	}
+
+	scene_node "SanMiguel_192"
+	{
+		parent "FinalNode"
+		position 26.7227 5.40083 4.90094
+	}
+
+	scene_node "SanMiguel_193"
+	{
+		parent "FinalNode"
+		position 27.0398 1.4486 2.1485
+	}
+
+	scene_node "SanMiguel_194"
+	{
+		parent "FinalNode"
+		position 25.3521 2.67811 7.73627
+	}
+
+	scene_node "SanMiguel_195"
+	{
+		parent "FinalNode"
+		position 23.7336 5.4002 4.89597
+	}
+
+	scene_node "SanMiguel_196"
+	{
+		parent "FinalNode"
+		position 27.3398 2.05 2.14852
+	}
+
+	scene_node "SanMiguel_197"
+	{
+		parent "FinalNode"
+		position 24.5402 3.10391 4.63816
+	}
+
+	scene_node "SanMiguel_198"
+	{
+		parent "FinalNode"
+		position 6.19307 5.705 4.90514
+	}
+
+	scene_node "SanMiguel_199"
+	{
+		parent "FinalNode"
+		position 6.04472 2.2729 6.12739
+	}
+
+	scene_node "SanMiguel_2"
+	{
+		parent "FinalNode"
+		position 16.3964 0.839706 4.97309
+	}
+
+	scene_node "SanMiguel_20"
+	{
+		parent "FinalNode"
+		position 22.2213 6.75662 0.187421
+	}
+
+	scene_node "SanMiguel_200"
+	{
+		parent "FinalNode"
+		position 6.71746 10.2016 1.86659
+	}
+
+	scene_node "SanMiguel_201"
+	{
+		parent "FinalNode"
+		position -12.3736 3.32534 1.30085
+	}
+
+	scene_node "SanMiguel_202"
+	{
+		parent "FinalNode"
+		position 6.04373 4.20945 1.46118
+	}
+
+	scene_node "SanMiguel_203"
+	{
+		parent "FinalNode"
+		position 16.4652 7.26178 0.226309
+	}
+
+	scene_node "SanMiguel_204"
+	{
+		parent "FinalNode"
+		position 29.4821 2.05 2.14852
+	}
+
+	scene_node "SanMiguel_205"
+	{
+		parent "FinalNode"
+		position 22.0546 0.109729 1.69545
+	}
+
+	scene_node "SanMiguel_206"
+	{
+		parent "FinalNode"
+		position 16.4721 -0.10012 6.71713
+	}
+
+	scene_node "SanMiguel_207"
+	{
+		parent "FinalNode"
+		position 16.5595 6.61343 0.37704
+	}
+
+	scene_node "SanMiguel_208"
+	{
+		parent "FinalNode"
+		position -12.386 -0.0278807 0.8287
+	}
+
+	scene_node "SanMiguel_209"
+	{
+		parent "FinalNode"
+		position 14.6997 10.6884 4.6814
+	}
+
+	scene_node "SanMiguel_21"
+	{
+		parent "FinalNode"
+		position 22.2262 6.75576 0.169508
+	}
+
+	scene_node "SanMiguel_210"
+	{
+		parent "FinalNode"
+		position 6.26676 8.10466 -0.0353795
+	}
+
+	scene_node "SanMiguel_211"
+	{
+		parent "FinalNode"
+		position 46.741 4.25719 1.6971
+	}
+
+	scene_node "SanMiguel_212"
+	{
+		parent "FinalNode"
+		position 16.4664 4.55915 4.08749
+	}
+
+	scene_node "SanMiguel_213"
+	{
+		parent "FinalNode"
+		position 6.04868 4.67858 4.27779
+	}
+
+	scene_node "SanMiguel_214"
+	{
+		parent "FinalNode"
+		position 26.6654 8.10466 -0.0353795
+	}
+
+	scene_node "SanMiguel_215"
+	{
+		parent "FinalNode"
+		position 17.7225 6.12893 1.52237
+	}
+
+	scene_node "SanMiguel_216"
+	{
+		parent "FinalNode"
+		position 20.1202 6.36285 1.35289
+	}
+
+	scene_node "SanMiguel_217"
+	{
+		parent "FinalNode"
+		position 20.2201 6.16364 1.28852
+	}
+
+	scene_node "SanMiguel_218"
+	{
+		parent "FinalNode"
+		position 20.12 6.36241 1.3534
+	}
+
+	scene_node "SanMiguel_219"
+	{
+		parent "FinalNode"
+		position 22.9605 6.59759 2.18861
+	}
+
+	scene_node "SanMiguel_22"
+	{
+		parent "FinalNode"
+		position 22.2551 6.67103 0.177028
+	}
+
+	scene_node "SanMiguel_220"
+	{
+		parent "FinalNode"
+		position 22.2398 6.83109 0.185557
+	}
+
+	scene_node "SanMiguel_221"
+	{
+		parent "FinalNode"
+		position 22.9614 6.59445 2.19466
+	}
+
+	scene_node "SanMiguel_222"
+	{
+		parent "FinalNode"
+		position 22.2692 6.79649 0.0926575
+	}
+
+	scene_node "SanMiguel_223"
+	{
+		parent "FinalNode"
+		position 22.2664 6.80653 0.0981318
+	}
+
+	scene_node "SanMiguel_224"
+	{
+		parent "FinalNode"
+		position 22.2216 6.74633 0.181253
+	}
+
+	scene_node "SanMiguel_225"
+	{
+		parent "FinalNode"
+		position 23.2826 6.70257 2.19609
+	}
+
+	scene_node "SanMiguel_226"
+	{
+		parent "FinalNode"
+		position 18.3064 6.38472 0.278012
+	}
+
+	scene_node "SanMiguel_227"
+	{
+		parent "FinalNode"
+		position 17.2705 6.1303 0.533862
+	}
+
+	scene_node "SanMiguel_228"
+	{
+		parent "FinalNode"
+		position 17.2787 6.12883 0.533888
+	}
+
+	scene_node "SanMiguel_229"
+	{
+		parent "FinalNode"
+		position 22.2526 6.79192 0.119832
+	}
+
+	scene_node "SanMiguel_23"
+	{
+		parent "FinalNode"
+		position 16.4592 3.50692 0.700945
+	}
+
+	scene_node "SanMiguel_230"
+	{
+		parent "FinalNode"
+		position 11.3675 6.62996 0.19455
+	}
+
+	scene_node "SanMiguel_231"
+	{
+		parent "FinalNode"
+		position 7.49576 6.74445 5.82937
+	}
+
+	scene_node "SanMiguel_232"
+	{
+		parent "FinalNode"
+		position 18.3106 6.37542 0.275759
+	}
+
+	scene_node "SanMiguel_233"
+	{
+		parent "FinalNode"
+		position 15.5996 3.28137 4.84954
+	}
+
+	scene_node "SanMiguel_234"
+	{
+		parent "FinalNode"
+		position 22.5196 3.96733 6.34449
+	}
+
+	scene_node "SanMiguel_235"
+	{
+		parent "FinalNode"
+		position 22.2508 6.80001 0.12025
+	}
+
+	scene_node "SanMiguel_236"
+	{
+		parent "FinalNode"
+		position 14.9457 3.09664 -0.905259
+	}
+
+	scene_node "SanMiguel_237"
+	{
+		parent "FinalNode"
+		position 17.1951 5.90444 0.444354
+	}
+
+	scene_node "SanMiguel_238"
+	{
+		parent "FinalNode"
+		position 23.0679 6.61066 2.18142
+	}
+
+	scene_node "SanMiguel_239"
+	{
+		parent "FinalNode"
+		position 22.2547 6.64608 0.125501
+	}
+
+	scene_node "SanMiguel_24"
+	{
+		parent "FinalNode"
+		position 16.8827 3.11708 4.94667
+	}
+
+	scene_node "SanMiguel_240"
+	{
+		parent "FinalNode"
+		position 22.2207 6.57337 0.123946
+	}
+
+	scene_node "SanMiguel_241"
+	{
+		parent "FinalNode"
+		position 22.217 6.58304 0.11796
+	}
+
+	scene_node "SanMiguel_242"
+	{
+		parent "FinalNode"
+		position 22.2066 6.68642 0.116292
+	}
+
+	scene_node "SanMiguel_243"
+	{
+		parent "FinalNode"
+		position 23.2782 6.68991 2.19166
+	}
+
+	scene_node "SanMiguel_244"
+	{
+		parent "FinalNode"
+		position 19.7976 6.22489 -2.77486
+	}
+
+	scene_node "SanMiguel_245"
+	{
+		parent "FinalNode"
+		position 22.2209 6.56185 0.121789
+	}
+
+	scene_node "SanMiguel_246"
+	{
+		parent "FinalNode"
+		position 23.3095 6.63517 2.19282
+	}
+
+	scene_node "SanMiguel_247"
+	{
+		parent "FinalNode"
+		position 18.3067 6.2555 0.271366
+	}
+
+	scene_node "SanMiguel_248"
+	{
+		parent "FinalNode"
+		position 23.2859 6.68952 2.20018
+	}
+
+	scene_node "SanMiguel_249"
+	{
+		parent "FinalNode"
+		position 23.3132 6.60372 2.19354
+	}
+
+	scene_node "SanMiguel_25"
+	{
+		parent "FinalNode"
+		position 15.2394 5.79276 0.25758
+	}
+
+	scene_node "SanMiguel_250"
+	{
+		parent "FinalNode"
+		position 23.2872 6.7014 2.19669
+	}
+
+	scene_node "SanMiguel_251"
+	{
+		parent "FinalNode"
+		position 18.2946 6.31244 0.274769
+	}
+
+	scene_node "SanMiguel_252"
+	{
+		parent "FinalNode"
+		position 23.2768 6.60781 1.83221
+	}
+
+	scene_node "SanMiguel_253"
+	{
+		parent "FinalNode"
+		position 7.03392 1.58801 8.39047
+	}
+
+	scene_node "SanMiguel_254"
+	{
+		parent "FinalNode"
+		position 16.3046 0.499877 -1.76861
+	}
+
+	scene_node "SanMiguel_255"
+	{
+		parent "FinalNode"
+		position 16.3094 0.502355 -1.76814
+	}
+
+	scene_node "SanMiguel_256"
+	{
+		parent "FinalNode"
+		position 16.3164 0.57717 -1.7675
+	}
+
+	scene_node "SanMiguel_257"
+	{
+		parent "FinalNode"
+		position 15.7197 6.17734 -2.08194
+	}
+
+	scene_node "SanMiguel_258"
+	{
+		parent "FinalNode"
+		position 15.7199 6.00173 -2.08264
+	}
+
+	scene_node "SanMiguel_259"
+	{
+		parent "FinalNode"
+		position 16.4948 0.328808 4.93666
+	}
+
+	scene_node "SanMiguel_26"
+	{
+		parent "FinalNode"
+		position 16.8764 3.17398 4.91806
+	}
+
+	scene_node "SanMiguel_260"
+	{
+		parent "FinalNode"
+		position 16.4272 0.682975 -1.72321
+	}
+
+	scene_node "SanMiguel_261"
+	{
+		parent "FinalNode"
+		position 16.4942 0.794211 -1.71005
+	}
+
+	scene_node "SanMiguel_262"
+	{
+		parent "FinalNode"
+		position 16.5017 0.725559 -1.72108
+	}
+
+	scene_node "SanMiguel_263"
+	{
+		parent "FinalNode"
+		position 16.5043 0.747592 -1.70861
+	}
+
+	scene_node "SanMiguel_264"
+	{
+		parent "FinalNode"
+		position 15.6724 6.29868 -2.09266
+	}
+
+	scene_node "SanMiguel_265"
+	{
+		parent "FinalNode"
+		position 15.2483 0.69724 7.08488
+	}
+
+	scene_node "SanMiguel_266"
+	{
+		parent "FinalNode"
+		position 16.4799 7.23072 4.12875
+	}
+
+	scene_node "SanMiguel_267"
+	{
+		parent "FinalNode"
+		position 18.2509 8.08144 4.09241
+	}
+
+	scene_node "SanMiguel_268"
+	{
+		parent "FinalNode"
+		position 18.2517 8.40489 4.09379
+	}
+
+	scene_node "SanMiguel_269"
+	{
+		parent "FinalNode"
+		position 18.2515 8.03176 4.09312
+	}
+
+	scene_node "SanMiguel_27"
+	{
+		parent "FinalNode"
+		position 16.8832 3.4841 4.94727
+	}
+
+	scene_node "SanMiguel_270"
+	{
+		parent "FinalNode"
+		position 18.2518 8.3253 4.09341
+	}
+
+	scene_node "SanMiguel_271"
+	{
+		parent "FinalNode"
+		position 15.108 0.0948234 3.7618
+	}
+
+	scene_node "SanMiguel_272"
+	{
+		parent "FinalNode"
+		position 15.107 1.57889 3.76181
+	}
+
+	scene_node "SanMiguel_273"
+	{
+		parent "FinalNode"
+		position 15.108 0.753753 3.7569
+	}
+
+	scene_node "SanMiguel_274"
+	{
+		parent "FinalNode"
+		position 16.447 6.24673 0.125415
+	}
+
+	scene_node "SanMiguel_275"
+	{
+		parent "FinalNode"
+		position 16.4446 6.34286 0.12556
+	}
+
+	scene_node "SanMiguel_276"
+	{
+		parent "FinalNode"
+		position 16.4442 7.18992 0.12649
+	}
+
+	scene_node "SanMiguel_277"
+	{
+		parent "FinalNode"
+		position 16.4442 6.15532 0.125735
+	}
+
+	scene_node "SanMiguel_278"
+	{
+		parent "FinalNode"
+		position 15.1076 0.965377 3.76197
+	}
+
+	scene_node "SanMiguel_279"
+	{
+		parent "FinalNode"
+		position 15.2702 0.673885 7.1009
+	}
+
+	scene_node "SanMiguel_28"
+	{
+		parent "FinalNode"
+		position 16.8218 3.88019 4.91729
+	}
+
+	scene_node "SanMiguel_280"
+	{
+		parent "FinalNode"
+		position 15.2812 0.593297 7.0985
+	}
+
+	scene_node "SanMiguel_281"
+	{
+		parent "FinalNode"
+		position 15.1991 0.457874 7.0444
+	}
+
+	scene_node "SanMiguel_282"
+	{
+		parent "FinalNode"
+		position 15.2124 -0.103501 7.04923
+	}
+
+	scene_node "SanMiguel_283"
+	{
+		parent "FinalNode"
+		position 15.2019 0.417431 7.04162
+	}
+
+	scene_node "SanMiguel_284"
+	{
+		parent "FinalNode"
+		position 15.1969 0.450253 7.03792
+	}
+
+	scene_node "SanMiguel_285"
+	{
+		parent "FinalNode"
+		position 13.948 0.449685 7.31897
+	}
+
+	scene_node "SanMiguel_286"
+	{
+		parent "FinalNode"
+		position 13.9473 0.405253 7.31911
+	}
+
+	scene_node "SanMiguel_29"
+	{
+		parent "FinalNode"
+		position 22.2659 6.75799 0.112333
+	}
+
+	scene_node "SanMiguel_3"
+	{
+		parent "FinalNode"
+		position 16.3979 0.902388 4.97339
+	}
+
+	scene_node "SanMiguel_30"
+	{
+		parent "FinalNode"
+		position 22.2645 6.80336 0.101945
+	}
+
+	scene_node "SanMiguel_31"
+	{
+		parent "FinalNode"
+		position 22.2537 6.65649 0.129771
+	}
+
+	scene_node "SanMiguel_32"
+	{
+		parent "FinalNode"
+		position 15.2367 6.04317 0.232444
+	}
+
+	scene_node "SanMiguel_33"
+	{
+		parent "FinalNode"
+		position 22.2637 6.71763 0.186209
+	}
+
+	scene_node "SanMiguel_34"
+	{
+		parent "FinalNode"
+		position 16.8787 3.14899 4.91805
+	}
+
+	scene_node "SanMiguel_35"
+	{
+		parent "FinalNode"
+		position 16.9029 3.22502 4.93792
+	}
+
+	scene_node "SanMiguel_36"
+	{
+		parent "FinalNode"
+		position 16.8871 3.19232 4.92422
+	}
+
+	scene_node "SanMiguel_37"
+	{
+		parent "FinalNode"
+		position 7.49517 6.74773 5.82443
+	}
+
+	scene_node "SanMiguel_38"
+	{
+		parent "FinalNode"
+		position 11.3573 6.65614 0.195139
+	}
+
+	scene_node "SanMiguel_39"
+	{
+		parent "FinalNode"
+		position 15.397 6.24162 1.06071
+	}
+
+	scene_node "SanMiguel_4"
+	{
+		parent "FinalNode"
+		position 16.3955 0.795215 4.97345
+	}
+
+	scene_node "SanMiguel_40"
+	{
+		parent "FinalNode"
+		position 15.3661 6.28269 1.10225
+	}
+
+	scene_node "SanMiguel_41"
+	{
+		parent "FinalNode"
+		position 15.3736 6.31237 1.0108
+	}
+
+	scene_node "SanMiguel_42"
+	{
+		parent "FinalNode"
+		position 16.8879 3.61121 4.94283
+	}
+
+	scene_node "SanMiguel_43"
+	{
+		parent "FinalNode"
+		position 15.6092 3.35224 6.05792
+	}
+
+	scene_node "SanMiguel_44"
+	{
+		parent "FinalNode"
+		position 15.3746 6.11334 1.04976
+	}
+
+	scene_node "SanMiguel_45"
+	{
+		parent "FinalNode"
+		position 22.2051 6.69466 0.114067
+	}
+
+	scene_node "SanMiguel_46"
+	{
+		parent "FinalNode"
+		position 10.9572 6.19141 1.16356
+	}
+
+	scene_node "SanMiguel_47"
+	{
+		parent "FinalNode"
+		position 6.96348 6.86074 11.5734
+	}
+
+	scene_node "SanMiguel_48"
+	{
+		parent "FinalNode"
+		position 7.1661 3.58404 4.31755
+	}
+
+	scene_node "SanMiguel_49"
+	{
+		parent "FinalNode"
+		position 7.49786 6.62252 5.80489
+	}
+
+	scene_node "SanMiguel_5"
+	{
+		parent "FinalNode"
+		position 16.3864 0.949679 5.00306
+	}
+
+	scene_node "SanMiguel_50"
+	{
+		parent "FinalNode"
+		position 14.6726 6.23785 3.0159
+	}
+
+	scene_node "SanMiguel_51"
+	{
+		parent "FinalNode"
+		position 14.7967 3.50807 3.72405
+	}
+
+	scene_node "SanMiguel_52"
+	{
+		parent "FinalNode"
+		position 15.3685 6.13809 1.10014
+	}
+
+	scene_node "SanMiguel_53"
+	{
+		parent "FinalNode"
+		position 15.3687 6.26758 1.09975
+	}
+
+	scene_node "SanMiguel_54"
+	{
+		parent "FinalNode"
+		position 19.8056 6.32407 -2.73957
+	}
+
+	scene_node "SanMiguel_55"
+	{
+		parent "FinalNode"
+		position 14.2609 6.18818 0.119459
+	}
+
+	scene_node "SanMiguel_56"
+	{
+		parent "FinalNode"
+		position 22.2213 6.57148 0.129128
+	}
+
+	scene_node "SanMiguel_57"
+	{
+		parent "FinalNode"
+		position 15.3725 6.3004 1.04426
+	}
+
+	scene_node "SanMiguel_58"
+	{
+		parent "FinalNode"
+		position 14.6696 6.3843 3.02147
+	}
+
+	scene_node "SanMiguel_59"
+	{
+		parent "FinalNode"
+		position 14.8643 6.58569 8.27188
+	}
+
+	scene_node "SanMiguel_6"
+	{
+		parent "FinalNode"
+		position 16.4451 0.782656 5.02942
+	}
+
+	scene_node "SanMiguel_60"
+	{
+		parent "FinalNode"
+		position 15.3767 6.27797 1.05139
+	}
+
+	scene_node "SanMiguel_61"
+	{
+		parent "FinalNode"
+		position 15.2297 6.04661 0.229952
+	}
+
+	scene_node "SanMiguel_62"
+	{
+		parent "FinalNode"
+		position 7.51496 5.5404 3.37733
+	}
+
+	scene_node "SanMiguel_63"
+	{
+		parent "FinalNode"
+		position 15.0369 3.58547 -0.80615
+	}
+
+	scene_node "SanMiguel_64"
+	{
+		parent "FinalNode"
+		position 16.4839 4.06799 0.721785
+	}
+
+	scene_node "SanMiguel_65"
+	{
+		parent "FinalNode"
+		position 15.2288 6.04902 0.23331
+	}
+
+	scene_node "SanMiguel_66"
+	{
+		parent "FinalNode"
+		position 15.2466 5.99628 0.234599
+	}
+
+	scene_node "SanMiguel_67"
+	{
+		parent "FinalNode"
+		position 17.721 6.16589 1.50952
+	}
+
+	scene_node "SanMiguel_68"
+	{
+		parent "FinalNode"
+		position 15.2335 6.03866 0.229702
+	}
+
+	scene_node "SanMiguel_69"
+	{
+		parent "FinalNode"
+		position 7.06067 1.66629 8.36238
+	}
+
+	scene_node "SanMiguel_7"
+	{
+		parent "FinalNode"
+		position 16.4314 0.798439 4.99742
+	}
+
+	scene_node "SanMiguel_70"
+	{
+		parent "FinalNode"
+		position 13.6763 3.56613 1.85658
+	}
+
+	scene_node "SanMiguel_71"
+	{
+		parent "FinalNode"
+		position 11.1571 6.19686 0.319144
+	}
+
+	scene_node "SanMiguel_72"
+	{
+		parent "FinalNode"
+		position 17.7187 5.98741 1.47868
+	}
+
+	scene_node "SanMiguel_73"
+	{
+		parent "FinalNode"
+		position 7.02748 1.66021 8.4077
+	}
+
+	scene_node "SanMiguel_74"
+	{
+		parent "FinalNode"
+		position 16.1419 3.68296 -0.85441
+	}
+
+	scene_node "SanMiguel_75"
+	{
+		parent "FinalNode"
+		position 7.10551 4.41447 3.51401
+	}
+
+	scene_node "SanMiguel_76"
+	{
+		parent "FinalNode"
+		position 22.5218 3.79393 6.33392
+	}
+
+	scene_node "SanMiguel_77"
+	{
+		parent "FinalNode"
+		position 12.9999 0.883321 -2.74792
+	}
+
+	scene_node "SanMiguel_78"
+	{
+		parent "FinalNode"
+		position 7.04694 1.58285 8.39771
+	}
+
+	scene_node "SanMiguel_79"
+	{
+		parent "FinalNode"
+		position 9.46727 3.63704 4.38719
+	}
+
+	scene_node "SanMiguel_8"
+	{
+		parent "FinalNode"
+		position 16.4457 0.78574 5.02954
+	}
+
+	scene_node "SanMiguel_80"
+	{
+		parent "FinalNode"
+		position 12.0558 6.85651 -1.17406
+	}
+
+	scene_node "SanMiguel_81"
+	{
+		parent "FinalNode"
+		position 19.2011 6.294 0.231713
+	}
+
+	scene_node "SanMiguel_82"
+	{
+		parent "FinalNode"
+		position 23.1008 6.59513 0.933696
+	}
+
+	scene_node "SanMiguel_83"
+	{
+		parent "FinalNode"
+		position 15.5921 3.31453 6.05354
+	}
+
+	scene_node "SanMiguel_84"
+	{
+		parent "FinalNode"
+		position 6.92282 7.10635 11.574
+	}
+
+	scene_node "SanMiguel_85"
+	{
+		parent "FinalNode"
+		position 10.9659 6.18137 1.15284
+	}
+
+	scene_node "SanMiguel_86"
+	{
+		parent "FinalNode"
+		position 14.9459 5.90689 4.78306
+	}
+
+	scene_node "SanMiguel_87"
+	{
+		parent "FinalNode"
+		position 16.8688 3.58121 4.95611
+	}
+
+	scene_node "SanMiguel_88"
+	{
+		parent "FinalNode"
+		position 7.15844 3.57004 4.32609
+	}
+
+	scene_node "SanMiguel_89"
+	{
+		parent "FinalNode"
+		position 23.3654 6.67009 2.17028
+	}
+
+	scene_node "SanMiguel_9"
+	{
+		parent "FinalNode"
+		position 16.4174 0.767303 5.00278
+	}
+
+	scene_node "SanMiguel_90"
+	{
+		parent "FinalNode"
+		position 6.95475 7.13437 11.6052
+	}
+
+	scene_node "SanMiguel_91"
+	{
+		parent "FinalNode"
+		position 14.8705 5.98721 4.77281
+	}
+
+	scene_node "SanMiguel_92"
+	{
+		parent "FinalNode"
+		position 14.7932 3.53882 3.73649
+	}
+
+	scene_node "SanMiguel_93"
+	{
+		parent "FinalNode"
+		position 23.2961 6.63497 2.17819
+	}
+
+	scene_node "SanMiguel_94"
+	{
+		parent "FinalNode"
+		position 18.2845 6.17589 0.244382
+	}
+
+	scene_node "SanMiguel_95"
+	{
+		parent "FinalNode"
+		position 7.47454 6.59984 5.80533
+	}
+
+	scene_node "SanMiguel_96"
+	{
+		parent "FinalNode"
+		position 15.3789 6.16525 1.09422
+	}
+
+	scene_node "SanMiguel_97"
+	{
+		parent "FinalNode"
+		position 15.3729 6.16912 1.0995
+	}
+
+	scene_node "SanMiguel_98"
+	{
+		parent "FinalNode"
+		position 15.3639 6.29784 1.10624
+	}
+
+	scene_node "SanMiguel_99"
+	{
+		parent "FinalNode"
+		position 15.3971 6.16399 1.05926
+	}
+
+	// Lights
 
 	light "SunLight"
 	{
 		parent "LightNode"
 		type directional
 		colour 1 1 1
-		intensity 0.8 1
+		intensity 8 10
 		shadows
 		{
 			producer true
 			filter variance
 			min_offset 0.00001
 			max_slope_offset 0.0001
-			variance_max 0.000001
-			variance_bias 0.15
+			// variance_max 0.000001
+			// variance_bias 0.15
+			variance_max 0.0000005
+			variance_bias 0.20
+			lpv
+			{
+				intensity 1.0
+				max_radius 0.03
+				sample_count 100
+			}
 		}
 	}
 
-	mesh "SanMiguel_0"
-	{
-		import "Meshes/SanMiguel/SanMiguel_0.cmsh"
-	}
-	scene_node "SanMiguel_0"
-	{
-		position 16.3642 0.776218 5.00679
-	}
+	// Geometries
+
 	object "SanMiguel_0"
 	{
 		parent "SanMiguel_0"
@@ -74,14 +3249,6 @@ scene "SanMiguel"
 		material "material_287"
 	}
 
-	mesh "SanMiguel_1"
-	{
-		import "Meshes/SanMiguel/SanMiguel_1.cmsh"
-	}
-	scene_node "SanMiguel_1"
-	{
-		position 16.4625 0.774329 4.99925
-	}
 	object "SanMiguel_1"
 	{
 		parent "SanMiguel_1"
@@ -89,134 +3256,6 @@ scene "SanMiguel"
 		material "material_033"
 	}
 
-	mesh "SanMiguel_2"
-	{
-		import "Meshes/SanMiguel/SanMiguel_2.cmsh"
-	}
-	scene_node "SanMiguel_2"
-	{
-		position 16.3964 0.839706 4.97309
-	}
-	object "SanMiguel_2"
-	{
-		parent "SanMiguel_2"
-		mesh "SanMiguel_2"
-		material "material_035"
-	}
-
-	mesh "SanMiguel_3"
-	{
-		import "Meshes/SanMiguel/SanMiguel_3.cmsh"
-	}
-	scene_node "SanMiguel_3"
-	{
-		position 16.3979 0.902388 4.97339
-	}
-	object "SanMiguel_3"
-	{
-		parent "SanMiguel_3"
-		mesh "SanMiguel_3"
-		material "material_036"
-	}
-
-	mesh "SanMiguel_4"
-	{
-		import "Meshes/SanMiguel/SanMiguel_4.cmsh"
-	}
-	scene_node "SanMiguel_4"
-	{
-		position 16.3955 0.795215 4.97345
-	}
-	object "SanMiguel_4"
-	{
-		parent "SanMiguel_4"
-		mesh "SanMiguel_4"
-		material "material_034"
-	}
-
-	mesh "SanMiguel_5"
-	{
-		import "Meshes/SanMiguel/SanMiguel_5.cmsh"
-	}
-	scene_node "SanMiguel_5"
-	{
-		position 16.3864 0.949679 5.00306
-	}
-	object "SanMiguel_5"
-	{
-		parent "SanMiguel_5"
-		mesh "SanMiguel_5"
-		material "material_041"
-	}
-
-	mesh "SanMiguel_6"
-	{
-		import "Meshes/SanMiguel/SanMiguel_6.cmsh"
-	}
-	scene_node "SanMiguel_6"
-	{
-		position 16.4451 0.782656 5.02942
-	}
-	object "SanMiguel_6"
-	{
-		parent "SanMiguel_6"
-		mesh "SanMiguel_6"
-		material "material_039"
-	}
-
-	mesh "SanMiguel_7"
-	{
-		import "Meshes/SanMiguel/SanMiguel_7.cmsh"
-	}
-	scene_node "SanMiguel_7"
-	{
-		position 16.4314 0.798439 4.99742
-	}
-	object "SanMiguel_7"
-	{
-		parent "SanMiguel_7"
-		mesh "SanMiguel_7"
-		material "material_038"
-	}
-
-	mesh "SanMiguel_8"
-	{
-		import "Meshes/SanMiguel/SanMiguel_8.cmsh"
-	}
-	scene_node "SanMiguel_8"
-	{
-		position 16.4457 0.78574 5.02954
-	}
-	object "SanMiguel_8"
-	{
-		parent "SanMiguel_8"
-		mesh "SanMiguel_8"
-		material "material_042"
-	}
-
-	mesh "SanMiguel_9"
-	{
-		import "Meshes/SanMiguel/SanMiguel_9.cmsh"
-	}
-	scene_node "SanMiguel_9"
-	{
-		position 16.4174 0.767303 5.00278
-	}
-	object "SanMiguel_9"
-	{
-		parent "SanMiguel_9"
-		mesh "SanMiguel_9"
-		material "material_040"
-	}
-
-	mesh "SanMiguel_10"
-	{
-		import "Meshes/SanMiguel/SanMiguel_10.cmsh"
-	}
-	scene_node "SanMiguel_10"
-	{
-		position 13.0134 1.44178 -2.64789
-	}
 	object "SanMiguel_10"
 	{
 		parent "SanMiguel_10"
@@ -224,1349 +3263,6 @@ scene "SanMiguel"
 		material "material_163"
 	}
 
-	mesh "SanMiguel_11"
-	{
-		import "Meshes/SanMiguel/SanMiguel_11.cmsh"
-	}
-	scene_node "SanMiguel_11"
-	{
-		position 22.226 6.75666 0.184395
-	}
-	object "SanMiguel_11"
-	{
-		parent "SanMiguel_11"
-		mesh "SanMiguel_11"
-		material "material_166"
-	}
-
-	mesh "SanMiguel_12"
-	{
-		import "Meshes/SanMiguel/SanMiguel_12.cmsh"
-	}
-	scene_node "SanMiguel_12"
-	{
-		position 12.9501 1.72515 -2.5541
-	}
-	object "SanMiguel_12"
-	{
-		parent "SanMiguel_12"
-		mesh "SanMiguel_12"
-		material "material_161"
-	}
-
-	mesh "SanMiguel_13"
-	{
-		import "Meshes/SanMiguel/SanMiguel_13.cmsh"
-	}
-	scene_node "SanMiguel_13"
-	{
-		position 22.2439 6.92056 0.16748
-	}
-	object "SanMiguel_13"
-	{
-		parent "SanMiguel_13"
-		mesh "SanMiguel_13"
-		material "material_175"
-	}
-
-	mesh "SanMiguel_14"
-	{
-		import "Meshes/SanMiguel/SanMiguel_14.cmsh"
-	}
-	scene_node "SanMiguel_14"
-	{
-		position 22.24 6.92643 0.184351
-	}
-	object "SanMiguel_14"
-	{
-		parent "SanMiguel_14"
-		mesh "SanMiguel_14"
-		material "material_176"
-	}
-
-	mesh "SanMiguel_15"
-	{
-		import "Meshes/SanMiguel/SanMiguel_15.cmsh"
-	}
-	scene_node "SanMiguel_15"
-	{
-		position 13.0044 1.0595 -2.80739
-	}
-	object "SanMiguel_15"
-	{
-		parent "SanMiguel_15"
-		mesh "SanMiguel_15"
-		material "material_164"
-	}
-
-	mesh "SanMiguel_16"
-	{
-		import "Meshes/SanMiguel/SanMiguel_16.cmsh"
-	}
-	scene_node "SanMiguel_16"
-	{
-		position 22.2196 6.75947 0.175453
-	}
-	object "SanMiguel_16"
-	{
-		parent "SanMiguel_16"
-		mesh "SanMiguel_16"
-		material "material_169"
-	}
-
-	mesh "SanMiguel_17"
-	{
-		import "Meshes/SanMiguel/SanMiguel_17.cmsh"
-	}
-	scene_node "SanMiguel_17"
-	{
-		position 22.2186 6.63584 0.17978
-	}
-	object "SanMiguel_17"
-	{
-		parent "SanMiguel_17"
-		mesh "SanMiguel_17"
-		material "material_170"
-	}
-
-	mesh "SanMiguel_18"
-	{
-		import "Meshes/SanMiguel/SanMiguel_18.cmsh"
-	}
-	scene_node "SanMiguel_18"
-	{
-		position 22.2396 6.91797 0.209976
-	}
-	object "SanMiguel_18"
-	{
-		parent "SanMiguel_18"
-		mesh "SanMiguel_18"
-		material "material_173"
-	}
-
-	mesh "SanMiguel_19"
-	{
-		import "Meshes/SanMiguel/SanMiguel_19.cmsh"
-	}
-	scene_node "SanMiguel_19"
-	{
-		position 22.2549 6.92081 0.198166
-	}
-	object "SanMiguel_19"
-	{
-		parent "SanMiguel_19"
-		mesh "SanMiguel_19"
-		material "material_174"
-	}
-
-	mesh "SanMiguel_20"
-	{
-		import "Meshes/SanMiguel/SanMiguel_20.cmsh"
-	}
-	scene_node "SanMiguel_20"
-	{
-		position 22.2213 6.75662 0.187421
-	}
-	object "SanMiguel_20"
-	{
-		parent "SanMiguel_20"
-		mesh "SanMiguel_20"
-		material "material_165"
-	}
-
-	mesh "SanMiguel_21"
-	{
-		import "Meshes/SanMiguel/SanMiguel_21.cmsh"
-	}
-	scene_node "SanMiguel_21"
-	{
-		position 22.2262 6.75576 0.169508
-	}
-	object "SanMiguel_21"
-	{
-		parent "SanMiguel_21"
-		mesh "SanMiguel_21"
-		material "material_168"
-	}
-
-	mesh "SanMiguel_22"
-	{
-		import "Meshes/SanMiguel/SanMiguel_22.cmsh"
-	}
-	scene_node "SanMiguel_22"
-	{
-		position 22.2551 6.67103 0.177028
-	}
-	object "SanMiguel_22"
-	{
-		parent "SanMiguel_22"
-		mesh "SanMiguel_22"
-		material "material_172"
-	}
-
-	mesh "SanMiguel_23"
-	{
-		import "Meshes/SanMiguel/SanMiguel_23.cmsh"
-	}
-	scene_node "SanMiguel_23"
-	{
-		position 16.4592 3.50692 0.700945
-	}
-	object "SanMiguel_23"
-	{
-		parent "SanMiguel_23"
-		mesh "SanMiguel_23"
-		material "material_181"
-	}
-
-	mesh "SanMiguel_24"
-	{
-		import "Meshes/SanMiguel/SanMiguel_24.cmsh"
-	}
-	scene_node "SanMiguel_24"
-	{
-		position 16.8827 3.11708 4.94667
-	}
-	object "SanMiguel_24"
-	{
-		parent "SanMiguel_24"
-		mesh "SanMiguel_24"
-		material "material_218"
-	}
-
-	mesh "SanMiguel_25"
-	{
-		import "Meshes/SanMiguel/SanMiguel_25.cmsh"
-	}
-	scene_node "SanMiguel_25"
-	{
-		position 15.2394 5.79276 0.25758
-	}
-	object "SanMiguel_25"
-	{
-		parent "SanMiguel_25"
-		mesh "SanMiguel_25"
-		material "material_186"
-	}
-
-	mesh "SanMiguel_26"
-	{
-		import "Meshes/SanMiguel/SanMiguel_26.cmsh"
-	}
-	scene_node "SanMiguel_26"
-	{
-		position 16.8764 3.17398 4.91806
-	}
-	object "SanMiguel_26"
-	{
-		parent "SanMiguel_26"
-		mesh "SanMiguel_26"
-		material "material_212"
-	}
-
-	mesh "SanMiguel_27"
-	{
-		import "Meshes/SanMiguel/SanMiguel_27.cmsh"
-	}
-	scene_node "SanMiguel_27"
-	{
-		position 16.8832 3.4841 4.94727
-	}
-	object "SanMiguel_27"
-	{
-		parent "SanMiguel_27"
-		mesh "SanMiguel_27"
-		material "material_209"
-	}
-
-	mesh "SanMiguel_28"
-	{
-		import "Meshes/SanMiguel/SanMiguel_28.cmsh"
-	}
-	scene_node "SanMiguel_28"
-	{
-		position 16.8218 3.88019 4.91729
-	}
-	object "SanMiguel_28"
-	{
-		parent "SanMiguel_28"
-		mesh "SanMiguel_28"
-		material "material_210"
-	}
-
-	mesh "SanMiguel_29"
-	{
-		import "Meshes/SanMiguel/SanMiguel_29.cmsh"
-	}
-	scene_node "SanMiguel_29"
-	{
-		position 22.2659 6.75799 0.112333
-	}
-	object "SanMiguel_29"
-	{
-		parent "SanMiguel_29"
-		mesh "SanMiguel_29"
-		material "material_205"
-	}
-
-	mesh "SanMiguel_30"
-	{
-		import "Meshes/SanMiguel/SanMiguel_30.cmsh"
-	}
-	scene_node "SanMiguel_30"
-	{
-		position 22.2645 6.80336 0.101945
-	}
-	object "SanMiguel_30"
-	{
-		parent "SanMiguel_30"
-		mesh "SanMiguel_30"
-		material "material_202"
-	}
-
-	mesh "SanMiguel_31"
-	{
-		import "Meshes/SanMiguel/SanMiguel_31.cmsh"
-	}
-	scene_node "SanMiguel_31"
-	{
-		position 22.2537 6.65649 0.129771
-	}
-	object "SanMiguel_31"
-	{
-		parent "SanMiguel_31"
-		mesh "SanMiguel_31"
-		material "material_201"
-	}
-
-	mesh "SanMiguel_32"
-	{
-		import "Meshes/SanMiguel/SanMiguel_32.cmsh"
-	}
-	scene_node "SanMiguel_32"
-	{
-		position 15.2367 6.04317 0.232444
-	}
-	object "SanMiguel_32"
-	{
-		parent "SanMiguel_32"
-		mesh "SanMiguel_32"
-		material "material_185"
-	}
-
-	mesh "SanMiguel_33"
-	{
-		import "Meshes/SanMiguel/SanMiguel_33.cmsh"
-	}
-	scene_node "SanMiguel_33"
-	{
-		position 22.2637 6.71763 0.186209
-	}
-	object "SanMiguel_33"
-	{
-		parent "SanMiguel_33"
-		mesh "SanMiguel_33"
-		material "material_177"
-	}
-
-	mesh "SanMiguel_34"
-	{
-		import "Meshes/SanMiguel/SanMiguel_34.cmsh"
-	}
-	scene_node "SanMiguel_34"
-	{
-		position 16.8787 3.14899 4.91805
-	}
-	object "SanMiguel_34"
-	{
-		parent "SanMiguel_34"
-		mesh "SanMiguel_34"
-		material "material_215"
-	}
-
-	mesh "SanMiguel_35"
-	{
-		import "Meshes/SanMiguel/SanMiguel_35.cmsh"
-	}
-	scene_node "SanMiguel_35"
-	{
-		position 16.9029 3.22502 4.93792
-	}
-	object "SanMiguel_35"
-	{
-		parent "SanMiguel_35"
-		mesh "SanMiguel_35"
-		material "material_211"
-	}
-
-	mesh "SanMiguel_36"
-	{
-		import "Meshes/SanMiguel/SanMiguel_36.cmsh"
-	}
-	scene_node "SanMiguel_36"
-	{
-		position 16.8871 3.19232 4.92422
-	}
-	object "SanMiguel_36"
-	{
-		parent "SanMiguel_36"
-		mesh "SanMiguel_36"
-		material "material_213"
-	}
-
-	mesh "SanMiguel_37"
-	{
-		import "Meshes/SanMiguel/SanMiguel_37.cmsh"
-	}
-	scene_node "SanMiguel_37"
-	{
-		position 7.49517 6.74773 5.82443
-	}
-	object "SanMiguel_37"
-	{
-		parent "SanMiguel_37"
-		mesh "SanMiguel_37"
-		material "material_250"
-	}
-
-	mesh "SanMiguel_38"
-	{
-		import "Meshes/SanMiguel/SanMiguel_38.cmsh"
-	}
-	scene_node "SanMiguel_38"
-	{
-		position 11.3573 6.65614 0.195139
-	}
-	object "SanMiguel_38"
-	{
-		parent "SanMiguel_38"
-		mesh "SanMiguel_38"
-		material "material_236"
-	}
-
-	mesh "SanMiguel_39"
-	{
-		import "Meshes/SanMiguel/SanMiguel_39.cmsh"
-	}
-	scene_node "SanMiguel_39"
-	{
-		position 15.397 6.24162 1.06071
-	}
-	object "SanMiguel_39"
-	{
-		parent "SanMiguel_39"
-		mesh "SanMiguel_39"
-		material "material_262"
-	}
-
-	mesh "SanMiguel_40"
-	{
-		import "Meshes/SanMiguel/SanMiguel_40.cmsh"
-	}
-	scene_node "SanMiguel_40"
-	{
-		position 15.3661 6.28269 1.10225
-	}
-	object "SanMiguel_40"
-	{
-		parent "SanMiguel_40"
-		mesh "SanMiguel_40"
-		material "material_255"
-	}
-
-	mesh "SanMiguel_41"
-	{
-		import "Meshes/SanMiguel/SanMiguel_41.cmsh"
-	}
-	scene_node "SanMiguel_41"
-	{
-		position 15.3736 6.31237 1.0108
-	}
-	object "SanMiguel_41"
-	{
-		parent "SanMiguel_41"
-		mesh "SanMiguel_41"
-		material "material_258"
-	}
-
-	mesh "SanMiguel_42"
-	{
-		import "Meshes/SanMiguel/SanMiguel_42.cmsh"
-	}
-	scene_node "SanMiguel_42"
-	{
-		position 16.8879 3.61121 4.94283
-	}
-	object "SanMiguel_42"
-	{
-		parent "SanMiguel_42"
-		mesh "SanMiguel_42"
-		material "material_214"
-	}
-
-	mesh "SanMiguel_43"
-	{
-		import "Meshes/SanMiguel/SanMiguel_43.cmsh"
-	}
-	scene_node "SanMiguel_43"
-	{
-		position 15.6092 3.35224 6.05792
-	}
-	object "SanMiguel_43"
-	{
-		parent "SanMiguel_43"
-		mesh "SanMiguel_43"
-		material "material_194"
-	}
-
-	mesh "SanMiguel_44"
-	{
-		import "Meshes/SanMiguel/SanMiguel_44.cmsh"
-	}
-	scene_node "SanMiguel_44"
-	{
-		position 15.3746 6.11334 1.04976
-	}
-	object "SanMiguel_44"
-	{
-		parent "SanMiguel_44"
-		mesh "SanMiguel_44"
-		material "material_259"
-	}
-
-	mesh "SanMiguel_45"
-	{
-		import "Meshes/SanMiguel/SanMiguel_45.cmsh"
-	}
-	scene_node "SanMiguel_45"
-	{
-		position 22.2051 6.69466 0.114067
-	}
-	object "SanMiguel_45"
-	{
-		parent "SanMiguel_45"
-		mesh "SanMiguel_45"
-		material "material_222"
-	}
-
-	mesh "SanMiguel_46"
-	{
-		import "Meshes/SanMiguel/SanMiguel_46.cmsh"
-	}
-	scene_node "SanMiguel_46"
-	{
-		position 10.9572 6.19141 1.16356
-	}
-	object "SanMiguel_46"
-	{
-		parent "SanMiguel_46"
-		mesh "SanMiguel_46"
-		material "material_196"
-	}
-
-	mesh "SanMiguel_47"
-	{
-		import "Meshes/SanMiguel/SanMiguel_47.cmsh"
-	}
-	scene_node "SanMiguel_47"
-	{
-		position 6.96348 6.86074 11.5734
-	}
-	object "SanMiguel_47"
-	{
-		parent "SanMiguel_47"
-		mesh "SanMiguel_47"
-		material "material_200"
-	}
-
-	mesh "SanMiguel_48"
-	{
-		import "Meshes/SanMiguel/SanMiguel_48.cmsh"
-	}
-	scene_node "SanMiguel_48"
-	{
-		position 7.1661 3.58404 4.31755
-	}
-	object "SanMiguel_48"
-	{
-		parent "SanMiguel_48"
-		mesh "SanMiguel_48"
-		material "material_227"
-	}
-
-	mesh "SanMiguel_49"
-	{
-		import "Meshes/SanMiguel/SanMiguel_49.cmsh"
-	}
-	scene_node "SanMiguel_49"
-	{
-		position 7.49786 6.62252 5.80489
-	}
-	object "SanMiguel_49"
-	{
-		parent "SanMiguel_49"
-		mesh "SanMiguel_49"
-		material "material_247"
-	}
-
-	mesh "SanMiguel_50"
-	{
-		import "Meshes/SanMiguel/SanMiguel_50.cmsh"
-	}
-	scene_node "SanMiguel_50"
-	{
-		position 14.6726 6.23785 3.0159
-	}
-	object "SanMiguel_50"
-	{
-		parent "SanMiguel_50"
-		mesh "SanMiguel_50"
-		material "material_246"
-	}
-
-	mesh "SanMiguel_51"
-	{
-		import "Meshes/SanMiguel/SanMiguel_51.cmsh"
-	}
-	scene_node "SanMiguel_51"
-	{
-		position 14.7967 3.50807 3.72405
-	}
-	object "SanMiguel_51"
-	{
-		parent "SanMiguel_51"
-		mesh "SanMiguel_51"
-		material "material_190"
-	}
-
-	mesh "SanMiguel_52"
-	{
-		import "Meshes/SanMiguel/SanMiguel_52.cmsh"
-	}
-	scene_node "SanMiguel_52"
-	{
-		position 15.3685 6.13809 1.10014
-	}
-	object "SanMiguel_52"
-	{
-		parent "SanMiguel_52"
-		mesh "SanMiguel_52"
-		material "material_254"
-	}
-
-	mesh "SanMiguel_53"
-	{
-		import "Meshes/SanMiguel/SanMiguel_53.cmsh"
-	}
-	scene_node "SanMiguel_53"
-	{
-		position 15.3687 6.26758 1.09975
-	}
-	object "SanMiguel_53"
-	{
-		parent "SanMiguel_53"
-		mesh "SanMiguel_53"
-		material "material_256"
-	}
-
-	mesh "SanMiguel_54"
-	{
-		import "Meshes/SanMiguel/SanMiguel_54.cmsh"
-	}
-	scene_node "SanMiguel_54"
-	{
-		position 19.8056 6.32407 -2.73957
-	}
-	object "SanMiguel_54"
-	{
-		parent "SanMiguel_54"
-		mesh "SanMiguel_54"
-		material "material_238"
-	}
-
-	mesh "SanMiguel_55"
-	{
-		import "Meshes/SanMiguel/SanMiguel_55.cmsh"
-	}
-	scene_node "SanMiguel_55"
-	{
-		position 14.2609 6.18818 0.119459
-	}
-	object "SanMiguel_55"
-	{
-		parent "SanMiguel_55"
-		mesh "SanMiguel_55"
-		material "material_197"
-	}
-
-	mesh "SanMiguel_56"
-	{
-		import "Meshes/SanMiguel/SanMiguel_56.cmsh"
-	}
-	scene_node "SanMiguel_56"
-	{
-		position 22.2213 6.57148 0.129128
-	}
-	object "SanMiguel_56"
-	{
-		parent "SanMiguel_56"
-		mesh "SanMiguel_56"
-		material "material_220"
-	}
-
-	mesh "SanMiguel_57"
-	{
-		import "Meshes/SanMiguel/SanMiguel_57.cmsh"
-	}
-	scene_node "SanMiguel_57"
-	{
-		position 15.3725 6.3004 1.04426
-	}
-	object "SanMiguel_57"
-	{
-		parent "SanMiguel_57"
-		mesh "SanMiguel_57"
-		material "material_261"
-	}
-
-	mesh "SanMiguel_58"
-	{
-		import "Meshes/SanMiguel/SanMiguel_58.cmsh"
-	}
-	scene_node "SanMiguel_58"
-	{
-		position 14.6696 6.3843 3.02147
-	}
-	object "SanMiguel_58"
-	{
-		parent "SanMiguel_58"
-		mesh "SanMiguel_58"
-		material "material_240"
-	}
-
-	mesh "SanMiguel_59"
-	{
-		import "Meshes/SanMiguel/SanMiguel_59.cmsh"
-	}
-	scene_node "SanMiguel_59"
-	{
-		position 14.8643 6.58569 8.27188
-	}
-	object "SanMiguel_59"
-	{
-		parent "SanMiguel_59"
-		mesh "SanMiguel_59"
-		material "materials"
-	}
-
-	mesh "SanMiguel_60"
-	{
-		import "Meshes/SanMiguel/SanMiguel_60.cmsh"
-	}
-	scene_node "SanMiguel_60"
-	{
-		position 15.3767 6.27797 1.05139
-	}
-	object "SanMiguel_60"
-	{
-		parent "SanMiguel_60"
-		mesh "SanMiguel_60"
-		material "material_260"
-	}
-
-	mesh "SanMiguel_61"
-	{
-		import "Meshes/SanMiguel/SanMiguel_61.cmsh"
-	}
-	scene_node "SanMiguel_61"
-	{
-		position 15.2297 6.04661 0.229952
-	}
-	object "SanMiguel_61"
-	{
-		parent "SanMiguel_61"
-		mesh "SanMiguel_61"
-		material "material_183"
-	}
-
-	mesh "SanMiguel_62"
-	{
-		import "Meshes/SanMiguel/SanMiguel_62.cmsh"
-	}
-	scene_node "SanMiguel_62"
-	{
-		position 7.51496 5.5404 3.37733
-	}
-	object "SanMiguel_62"
-	{
-		parent "SanMiguel_62"
-		mesh "SanMiguel_62"
-		material "materialy"
-	}
-
-	mesh "SanMiguel_63"
-	{
-		import "Meshes/SanMiguel/SanMiguel_63.cmsh"
-	}
-	scene_node "SanMiguel_63"
-	{
-		position 15.0369 3.58547 -0.80615
-	}
-	object "SanMiguel_63"
-	{
-		parent "SanMiguel_63"
-		mesh "SanMiguel_63"
-		material "material_147"
-	}
-
-	mesh "SanMiguel_64"
-	{
-		import "Meshes/SanMiguel/SanMiguel_64.cmsh"
-	}
-	scene_node "SanMiguel_64"
-	{
-		position 16.4839 4.06799 0.721785
-	}
-	object "SanMiguel_64"
-	{
-		parent "SanMiguel_64"
-		mesh "SanMiguel_64"
-		material "material_182"
-	}
-
-	mesh "SanMiguel_65"
-	{
-		import "Meshes/SanMiguel/SanMiguel_65.cmsh"
-	}
-	scene_node "SanMiguel_65"
-	{
-		position 15.2288 6.04902 0.23331
-	}
-	object "SanMiguel_65"
-	{
-		parent "SanMiguel_65"
-		mesh "SanMiguel_65"
-		material "material_184"
-	}
-
-	mesh "SanMiguel_66"
-	{
-		import "Meshes/SanMiguel/SanMiguel_66.cmsh"
-	}
-	scene_node "SanMiguel_66"
-	{
-		position 15.2466 5.99628 0.234599
-	}
-	object "SanMiguel_66"
-	{
-		parent "SanMiguel_66"
-		mesh "SanMiguel_66"
-		material "material_187"
-	}
-
-	mesh "SanMiguel_67"
-	{
-		import "Meshes/SanMiguel/SanMiguel_67.cmsh"
-	}
-	scene_node "SanMiguel_67"
-	{
-		position 17.721 6.16589 1.50952
-	}
-	object "SanMiguel_67"
-	{
-		parent "SanMiguel_67"
-		mesh "SanMiguel_67"
-		material "material_143"
-	}
-
-	mesh "SanMiguel_68"
-	{
-		import "Meshes/SanMiguel/SanMiguel_68.cmsh"
-	}
-	scene_node "SanMiguel_68"
-	{
-		position 15.2335 6.03866 0.229702
-	}
-	object "SanMiguel_68"
-	{
-		parent "SanMiguel_68"
-		mesh "SanMiguel_68"
-		material "material_188"
-	}
-
-	mesh "SanMiguel_69"
-	{
-		import "Meshes/SanMiguel/SanMiguel_69.cmsh"
-	}
-	scene_node "SanMiguel_69"
-	{
-		position 7.06067 1.66629 8.36238
-	}
-	object "SanMiguel_69"
-	{
-		parent "SanMiguel_69"
-		mesh "SanMiguel_69"
-		material "material_134"
-	}
-
-	mesh "SanMiguel_70"
-	{
-		import "Meshes/SanMiguel/SanMiguel_70.cmsh"
-	}
-	scene_node "SanMiguel_70"
-	{
-		position 13.6763 3.56613 1.85658
-	}
-	object "SanMiguel_70"
-	{
-		parent "SanMiguel_70"
-		mesh "SanMiguel_70"
-		material "material_145"
-	}
-
-	mesh "SanMiguel_71"
-	{
-		import "Meshes/SanMiguel/SanMiguel_71.cmsh"
-	}
-	scene_node "SanMiguel_71"
-	{
-		position 11.1571 6.19686 0.319144
-	}
-	object "SanMiguel_71"
-	{
-		parent "SanMiguel_71"
-		mesh "SanMiguel_71"
-		material "material_131"
-	}
-
-	mesh "SanMiguel_72"
-	{
-		import "Meshes/SanMiguel/SanMiguel_72.cmsh"
-	}
-	scene_node "SanMiguel_72"
-	{
-		position 17.7187 5.98741 1.47868
-	}
-	object "SanMiguel_72"
-	{
-		parent "SanMiguel_72"
-		mesh "SanMiguel_72"
-		material "material_142"
-	}
-
-	mesh "SanMiguel_73"
-	{
-		import "Meshes/SanMiguel/SanMiguel_73.cmsh"
-	}
-	scene_node "SanMiguel_73"
-	{
-		position 7.02748 1.66021 8.4077
-	}
-	object "SanMiguel_73"
-	{
-		parent "SanMiguel_73"
-		mesh "SanMiguel_73"
-		material "material_135"
-	}
-
-	mesh "SanMiguel_74"
-	{
-		import "Meshes/SanMiguel/SanMiguel_74.cmsh"
-	}
-	scene_node "SanMiguel_74"
-	{
-		position 16.1419 3.68296 -0.85441
-	}
-	object "SanMiguel_74"
-	{
-		parent "SanMiguel_74"
-		mesh "SanMiguel_74"
-		material "material_150"
-	}
-
-	mesh "SanMiguel_75"
-	{
-		import "Meshes/SanMiguel/SanMiguel_75.cmsh"
-	}
-	scene_node "SanMiguel_75"
-	{
-		position 7.10551 4.41447 3.51401
-	}
-	object "SanMiguel_75"
-	{
-		parent "SanMiguel_75"
-		mesh "SanMiguel_75"
-		material "materialw"
-	}
-
-	mesh "SanMiguel_76"
-	{
-		import "Meshes/SanMiguel/SanMiguel_76.cmsh"
-	}
-	scene_node "SanMiguel_76"
-	{
-		position 22.5218 3.79393 6.33392
-	}
-	object "SanMiguel_76"
-	{
-		parent "SanMiguel_76"
-		mesh "SanMiguel_76"
-		material "material_138"
-	}
-
-	mesh "SanMiguel_77"
-	{
-		import "Meshes/SanMiguel/SanMiguel_77.cmsh"
-	}
-	scene_node "SanMiguel_77"
-	{
-		position 12.9999 0.883321 -2.74792
-	}
-	object "SanMiguel_77"
-	{
-		parent "SanMiguel_77"
-		mesh "SanMiguel_77"
-		material "material_162"
-	}
-
-	mesh "SanMiguel_78"
-	{
-		import "Meshes/SanMiguel/SanMiguel_78.cmsh"
-	}
-	scene_node "SanMiguel_78"
-	{
-		position 7.04694 1.58285 8.39771
-	}
-	object "SanMiguel_78"
-	{
-		parent "SanMiguel_78"
-		mesh "SanMiguel_78"
-		material "material_132"
-	}
-
-	mesh "SanMiguel_79"
-	{
-		import "Meshes/SanMiguel/SanMiguel_79.cmsh"
-	}
-	scene_node "SanMiguel_79"
-	{
-		position 9.46727 3.63704 4.38719
-	}
-	object "SanMiguel_79"
-	{
-		parent "SanMiguel_79"
-		mesh "SanMiguel_79"
-		material "material_179"
-	}
-
-	mesh "SanMiguel_80"
-	{
-		import "Meshes/SanMiguel/SanMiguel_80.cmsh"
-	}
-	scene_node "SanMiguel_80"
-	{
-		position 12.0558 6.85651 -1.17406
-	}
-	object "SanMiguel_80"
-	{
-		parent "SanMiguel_80"
-		mesh "SanMiguel_80"
-		material "material_149"
-	}
-
-	mesh "SanMiguel_81"
-	{
-		import "Meshes/SanMiguel/SanMiguel_81.cmsh"
-	}
-	scene_node "SanMiguel_81"
-	{
-		position 19.2011 6.294 0.231713
-	}
-	object "SanMiguel_81"
-	{
-		parent "SanMiguel_81"
-		mesh "SanMiguel_81"
-		material "material_178"
-	}
-
-	mesh "SanMiguel_82"
-	{
-		import "Meshes/SanMiguel/SanMiguel_82.cmsh"
-	}
-	scene_node "SanMiguel_82"
-	{
-		position 23.1008 6.59513 0.933696
-	}
-	object "SanMiguel_82"
-	{
-		parent "SanMiguel_82"
-		mesh "SanMiguel_82"
-		material "material_151"
-	}
-
-	mesh "SanMiguel_83"
-	{
-		import "Meshes/SanMiguel/SanMiguel_83.cmsh"
-	}
-	scene_node "SanMiguel_83"
-	{
-		position 15.5921 3.31453 6.05354
-	}
-	object "SanMiguel_83"
-	{
-		parent "SanMiguel_83"
-		mesh "SanMiguel_83"
-		material "material_193"
-	}
-
-	mesh "SanMiguel_84"
-	{
-		import "Meshes/SanMiguel/SanMiguel_84.cmsh"
-	}
-	scene_node "SanMiguel_84"
-	{
-		position 6.92282 7.10635 11.574
-	}
-	object "SanMiguel_84"
-	{
-		parent "SanMiguel_84"
-		mesh "SanMiguel_84"
-		material "material_198"
-	}
-
-	mesh "SanMiguel_85"
-	{
-		import "Meshes/SanMiguel/SanMiguel_85.cmsh"
-	}
-	scene_node "SanMiguel_85"
-	{
-		position 10.9659 6.18137 1.15284
-	}
-	object "SanMiguel_85"
-	{
-		parent "SanMiguel_85"
-		mesh "SanMiguel_85"
-		material "material_195"
-	}
-
-	mesh "SanMiguel_86"
-	{
-		import "Meshes/SanMiguel/SanMiguel_86.cmsh"
-	}
-	scene_node "SanMiguel_86"
-	{
-		position 14.9459 5.90689 4.78306
-	}
-	object "SanMiguel_86"
-	{
-		parent "SanMiguel_86"
-		mesh "SanMiguel_86"
-		material "material_216"
-	}
-
-	mesh "SanMiguel_87"
-	{
-		import "Meshes/SanMiguel/SanMiguel_87.cmsh"
-	}
-	scene_node "SanMiguel_87"
-	{
-		position 16.8688 3.58121 4.95611
-	}
-	object "SanMiguel_87"
-	{
-		parent "SanMiguel_87"
-		mesh "SanMiguel_87"
-		material "material_219"
-	}
-
-	mesh "SanMiguel_88"
-	{
-		import "Meshes/SanMiguel/SanMiguel_88.cmsh"
-	}
-	scene_node "SanMiguel_88"
-	{
-		position 7.15844 3.57004 4.32609
-	}
-	object "SanMiguel_88"
-	{
-		parent "SanMiguel_88"
-		mesh "SanMiguel_88"
-		material "material_226"
-	}
-
-	mesh "SanMiguel_89"
-	{
-		import "Meshes/SanMiguel/SanMiguel_89.cmsh"
-	}
-	scene_node "SanMiguel_89"
-	{
-		position 23.3654 6.67009 2.17028
-	}
-	object "SanMiguel_89"
-	{
-		parent "SanMiguel_89"
-		mesh "SanMiguel_89"
-		material "material_233"
-	}
-
-	mesh "SanMiguel_90"
-	{
-		import "Meshes/SanMiguel/SanMiguel_90.cmsh"
-	}
-	scene_node "SanMiguel_90"
-	{
-		position 6.95475 7.13437 11.6052
-	}
-	object "SanMiguel_90"
-	{
-		parent "SanMiguel_90"
-		mesh "SanMiguel_90"
-		material "material_199"
-	}
-
-	mesh "SanMiguel_91"
-	{
-		import "Meshes/SanMiguel/SanMiguel_91.cmsh"
-	}
-	scene_node "SanMiguel_91"
-	{
-		position 14.8705 5.98721 4.77281
-	}
-	object "SanMiguel_91"
-	{
-		parent "SanMiguel_91"
-		mesh "SanMiguel_91"
-		material "material_217"
-	}
-
-	mesh "SanMiguel_92"
-	{
-		import "Meshes/SanMiguel/SanMiguel_92.cmsh"
-	}
-	scene_node "SanMiguel_92"
-	{
-		position 14.7932 3.53882 3.73649
-	}
-	object "SanMiguel_92"
-	{
-		parent "SanMiguel_92"
-		mesh "SanMiguel_92"
-		material "material_192"
-	}
-
-	mesh "SanMiguel_93"
-	{
-		import "Meshes/SanMiguel/SanMiguel_93.cmsh"
-	}
-	scene_node "SanMiguel_93"
-	{
-		position 23.2961 6.63497 2.17819
-	}
-	object "SanMiguel_93"
-	{
-		parent "SanMiguel_93"
-		mesh "SanMiguel_93"
-		material "material_234"
-	}
-
-	mesh "SanMiguel_94"
-	{
-		import "Meshes/SanMiguel/SanMiguel_94.cmsh"
-	}
-	scene_node "SanMiguel_94"
-	{
-		position 18.2845 6.17589 0.244382
-	}
-	object "SanMiguel_94"
-	{
-		parent "SanMiguel_94"
-		mesh "SanMiguel_94"
-		material "material_242"
-	}
-
-	mesh "SanMiguel_95"
-	{
-		import "Meshes/SanMiguel/SanMiguel_95.cmsh"
-	}
-	scene_node "SanMiguel_95"
-	{
-		position 7.47454 6.59984 5.80533
-	}
-	object "SanMiguel_95"
-	{
-		parent "SanMiguel_95"
-		mesh "SanMiguel_95"
-		material "material_249"
-	}
-
-	mesh "SanMiguel_96"
-	{
-		import "Meshes/SanMiguel/SanMiguel_96.cmsh"
-	}
-	scene_node "SanMiguel_96"
-	{
-		position 15.3789 6.16525 1.09422
-	}
-	object "SanMiguel_96"
-	{
-		parent "SanMiguel_96"
-		mesh "SanMiguel_96"
-		material "material_251"
-	}
-
-	mesh "SanMiguel_97"
-	{
-		import "Meshes/SanMiguel/SanMiguel_97.cmsh"
-	}
-	scene_node "SanMiguel_97"
-	{
-		position 15.3729 6.16912 1.0995
-	}
-	object "SanMiguel_97"
-	{
-		parent "SanMiguel_97"
-		mesh "SanMiguel_97"
-		material "material_252"
-	}
-
-	mesh "SanMiguel_98"
-	{
-		import "Meshes/SanMiguel/SanMiguel_98.cmsh"
-	}
-	scene_node "SanMiguel_98"
-	{
-		position 15.3639 6.29784 1.10624
-	}
-	object "SanMiguel_98"
-	{
-		parent "SanMiguel_98"
-		mesh "SanMiguel_98"
-		material "material_253"
-	}
-
-	mesh "SanMiguel_99"
-	{
-		import "Meshes/SanMiguel/SanMiguel_99.cmsh"
-	}
-	scene_node "SanMiguel_99"
-	{
-		position 15.3971 6.16399 1.05926
-	}
-	object "SanMiguel_99"
-	{
-		parent "SanMiguel_99"
-		mesh "SanMiguel_99"
-		material "material_257"
-	}
-
-	mesh "SanMiguel_100"
-	{
-		import "Meshes/SanMiguel/SanMiguel_100.cmsh"
-	}
-	scene_node "SanMiguel_100"
-	{
-		position 15.3988 6.34392 1.05917
-	}
 	object "SanMiguel_100"
 	{
 		parent "SanMiguel_100"
@@ -1574,14 +3270,6 @@ scene "SanMiguel"
 		material "material_263"
 	}
 
-	mesh "SanMiguel_101"
-	{
-		import "Meshes/SanMiguel/SanMiguel_101.cmsh"
-	}
-	scene_node "SanMiguel_101"
-	{
-		position 14.7863 3.60734 3.72813
-	}
 	object "SanMiguel_101"
 	{
 		parent "SanMiguel_101"
@@ -1589,14 +3277,6 @@ scene "SanMiguel"
 		material "material_191"
 	}
 
-	mesh "SanMiguel_102"
-	{
-		import "Meshes/SanMiguel/SanMiguel_102.cmsh"
-	}
-	scene_node "SanMiguel_102"
-	{
-		position 15.2226 5.85258 0.24712
-	}
 	object "SanMiguel_102"
 	{
 		parent "SanMiguel_102"
@@ -1604,14 +3284,6 @@ scene "SanMiguel"
 		material "material_189"
 	}
 
-	mesh "SanMiguel_103"
-	{
-		import "Meshes/SanMiguel/SanMiguel_103.cmsh"
-	}
-	scene_node "SanMiguel_103"
-	{
-		position 17.16 -0.0424138 5.14893
-	}
 	object "SanMiguel_103"
 	{
 		parent "SanMiguel_103"
@@ -1619,14 +3291,6 @@ scene "SanMiguel"
 		material "material_94"
 	}
 
-	mesh "SanMiguel_104"
-	{
-		import "Meshes/SanMiguel/SanMiguel_104.cmsh"
-	}
-	scene_node "SanMiguel_104"
-	{
-		position 12.7487 6.17048 7.76855
-	}
 	object "SanMiguel_104"
 	{
 		parent "SanMiguel_104"
@@ -1634,14 +3298,6 @@ scene "SanMiguel"
 		material "materialt"
 	}
 
-	mesh "SanMiguel_105"
-	{
-		import "Meshes/SanMiguel/SanMiguel_105.cmsh"
-	}
-	scene_node "SanMiguel_105"
-	{
-		position 12.1039 3.81438 6.49529
-	}
 	object "SanMiguel_105"
 	{
 		parent "SanMiguel_105"
@@ -1649,14 +3305,6 @@ scene "SanMiguel"
 		material "material_72"
 	}
 
-	mesh "SanMiguel_106"
-	{
-		import "Meshes/SanMiguel/SanMiguel_106.cmsh"
-	}
-	scene_node "SanMiguel_106"
-	{
-		position 12.7905 0.308483 6.13927
-	}
 	object "SanMiguel_106"
 	{
 		parent "SanMiguel_106"
@@ -1664,14 +3312,6 @@ scene "SanMiguel"
 		material "material_36"
 	}
 
-	mesh "SanMiguel_107"
-	{
-		import "Meshes/SanMiguel/SanMiguel_107.cmsh"
-	}
-	scene_node "SanMiguel_107"
-	{
-		position 16.6964 3.18122 4.92773
-	}
 	object "SanMiguel_107"
 	{
 		parent "SanMiguel_107"
@@ -1679,14 +3319,6 @@ scene "SanMiguel"
 		material "material_123"
 	}
 
-	mesh "SanMiguel_108"
-	{
-		import "Meshes/SanMiguel/SanMiguel_108.cmsh"
-	}
-	scene_node "SanMiguel_108"
-	{
-		position 18.0809 5.60647 0.185145
-	}
 	object "SanMiguel_108"
 	{
 		parent "SanMiguel_108"
@@ -1694,14 +3326,6 @@ scene "SanMiguel"
 		material "material_125"
 	}
 
-	mesh "SanMiguel_109"
-	{
-		import "Meshes/SanMiguel/SanMiguel_109.cmsh"
-	}
-	scene_node "SanMiguel_109"
-	{
-		position 16.5116 -0.0323917 5.83076
-	}
 	object "SanMiguel_109"
 	{
 		parent "SanMiguel_109"
@@ -1709,14 +3333,13 @@ scene "SanMiguel"
 		material "material_93"
 	}
 
-	mesh "SanMiguel_110"
+	object "SanMiguel_11"
 	{
-		import "Meshes/SanMiguel/SanMiguel_110.cmsh"
+		parent "SanMiguel_11"
+		mesh "SanMiguel_11"
+		material "material_166"
 	}
-	scene_node "SanMiguel_110"
-	{
-		position 21.8983 7.25114 -3.25208
-	}
+
 	object "SanMiguel_110"
 	{
 		parent "SanMiguel_110"
@@ -1724,14 +3347,6 @@ scene "SanMiguel"
 		material "material_67"
 	}
 
-	mesh "SanMiguel_111"
-	{
-		import "Meshes/SanMiguel/SanMiguel_111.cmsh"
-	}
-	scene_node "SanMiguel_111"
-	{
-		position 26.6896 7.81824 5.64997
-	}
 	object "SanMiguel_111"
 	{
 		parent "SanMiguel_111"
@@ -1739,14 +3354,6 @@ scene "SanMiguel"
 		material "material_57"
 	}
 
-	mesh "SanMiguel_112"
-	{
-		import "Meshes/SanMiguel/SanMiguel_112.cmsh"
-	}
-	scene_node "SanMiguel_112"
-	{
-		position 26.0906 2.9709 4.35858
-	}
 	object "SanMiguel_112"
 	{
 		parent "SanMiguel_112"
@@ -1754,14 +3361,6 @@ scene "SanMiguel"
 		material "material_59"
 	}
 
-	mesh "SanMiguel_113"
-	{
-		import "Meshes/SanMiguel/SanMiguel_113.cmsh"
-	}
-	scene_node "SanMiguel_113"
-	{
-		position 26.687 2.73738 -1.75535
-	}
 	object "SanMiguel_113"
 	{
 		parent "SanMiguel_113"
@@ -1769,14 +3368,6 @@ scene "SanMiguel"
 		material "material_60"
 	}
 
-	mesh "SanMiguel_114"
-	{
-		import "Meshes/SanMiguel/SanMiguel_114.cmsh"
-	}
-	scene_node "SanMiguel_114"
-	{
-		position 26.6797 5.39493 10.9265
-	}
 	object "SanMiguel_114"
 	{
 		parent "SanMiguel_114"
@@ -1784,14 +3375,6 @@ scene "SanMiguel"
 		material "material_62"
 	}
 
-	mesh "SanMiguel_115"
-	{
-		import "Meshes/SanMiguel/SanMiguel_115.cmsh"
-	}
-	scene_node "SanMiguel_115"
-	{
-		position 20.3296 8.0669 -3.23555
-	}
 	object "SanMiguel_115"
 	{
 		parent "SanMiguel_115"
@@ -1799,14 +3382,6 @@ scene "SanMiguel"
 		material "material_61"
 	}
 
-	mesh "SanMiguel_116"
-	{
-		import "Meshes/SanMiguel/SanMiguel_116.cmsh"
-	}
-	scene_node "SanMiguel_116"
-	{
-		position 20.6042 2.70965 -3.23943
-	}
 	object "SanMiguel_116"
 	{
 		parent "SanMiguel_116"
@@ -1814,14 +3389,6 @@ scene "SanMiguel"
 		material "material_65"
 	}
 
-	mesh "SanMiguel_117"
-	{
-		import "Meshes/SanMiguel/SanMiguel_117.cmsh"
-	}
-	scene_node "SanMiguel_117"
-	{
-		position 23.7885 3.70926 7.21561
-	}
 	object "SanMiguel_117"
 	{
 		parent "SanMiguel_117"
@@ -1829,14 +3396,6 @@ scene "SanMiguel"
 		material "material_63"
 	}
 
-	mesh "SanMiguel_118"
-	{
-		import "Meshes/SanMiguel/SanMiguel_118.cmsh"
-	}
-	scene_node "SanMiguel_118"
-	{
-		position 26.0276 2.15827 4.36226
-	}
 	object "SanMiguel_118"
 	{
 		parent "SanMiguel_118"
@@ -1844,14 +3403,6 @@ scene "SanMiguel"
 		material "material_66"
 	}
 
-	mesh "SanMiguel_119"
-	{
-		import "Meshes/SanMiguel/SanMiguel_119.cmsh"
-	}
-	scene_node "SanMiguel_119"
-	{
-		position 22.4188 2.82843 -3.24972
-	}
 	object "SanMiguel_119"
 	{
 		parent "SanMiguel_119"
@@ -1859,14 +3410,13 @@ scene "SanMiguel"
 		material "material_53"
 	}
 
-	mesh "SanMiguel_120"
+	object "SanMiguel_12"
 	{
-		import "Meshes/SanMiguel/SanMiguel_120.cmsh"
+		parent "SanMiguel_12"
+		mesh "SanMiguel_12"
+		material "material_161"
 	}
-	scene_node "SanMiguel_120"
-	{
-		position 22.5291 8.58179 -3.2473
-	}
+
 	object "SanMiguel_120"
 	{
 		parent "SanMiguel_120"
@@ -1874,14 +3424,6 @@ scene "SanMiguel"
 		material "material_56"
 	}
 
-	mesh "SanMiguel_121"
-	{
-		import "Meshes/SanMiguel/SanMiguel_121.cmsh"
-	}
-	scene_node "SanMiguel_121"
-	{
-		position 26.689 6.61825 8.18258
-	}
 	object "SanMiguel_121"
 	{
 		parent "SanMiguel_121"
@@ -1889,14 +3431,6 @@ scene "SanMiguel"
 		material "material_55"
 	}
 
-	mesh "SanMiguel_122"
-	{
-		import "Meshes/SanMiguel/SanMiguel_122.cmsh"
-	}
-	scene_node "SanMiguel_122"
-	{
-		position 23.7864 4.93834 11.9017
-	}
 	object "SanMiguel_122"
 	{
 		parent "SanMiguel_122"
@@ -1904,14 +3438,6 @@ scene "SanMiguel"
 		material "material_58"
 	}
 
-	mesh "SanMiguel_123"
-	{
-		import "Meshes/SanMiguel/SanMiguel_123.cmsh"
-	}
-	scene_node "SanMiguel_123"
-	{
-		position 25.2926 3.09587 6.21251
-	}
 	object "SanMiguel_123"
 	{
 		parent "SanMiguel_123"
@@ -1919,14 +3445,6 @@ scene "SanMiguel"
 		material "material_64"
 	}
 
-	mesh "SanMiguel_124"
-	{
-		import "Meshes/SanMiguel/SanMiguel_124.cmsh"
-	}
-	scene_node "SanMiguel_124"
-	{
-		position 25.9205 3.98468 4.3533
-	}
 	object "SanMiguel_124"
 	{
 		parent "SanMiguel_124"
@@ -1934,14 +3452,6 @@ scene "SanMiguel"
 		material "material_54"
 	}
 
-	mesh "SanMiguel_125"
-	{
-		import "Meshes/SanMiguel/SanMiguel_125.cmsh"
-	}
-	scene_node "SanMiguel_125"
-	{
-		position 23.2163 5.5415 4.50571
-	}
 	object "SanMiguel_125"
 	{
 		parent "SanMiguel_125"
@@ -1949,14 +3459,6 @@ scene "SanMiguel"
 		material "material_68"
 	}
 
-	mesh "SanMiguel_126"
-	{
-		import "Meshes/SanMiguel/SanMiguel_126.cmsh"
-	}
-	scene_node "SanMiguel_126"
-	{
-		position 7.13901 4.55095 3.52213
-	}
 	object "SanMiguel_126"
 	{
 		parent "SanMiguel_126"
@@ -1964,14 +3466,6 @@ scene "SanMiguel"
 		material "materialz"
 	}
 
-	mesh "SanMiguel_127"
-	{
-		import "Meshes/SanMiguel/SanMiguel_127.cmsh"
-	}
-	scene_node "SanMiguel_127"
-	{
-		position 16.5736 -0.0520606 4.87064
-	}
 	object "SanMiguel_127"
 	{
 		parent "SanMiguel_127"
@@ -1979,14 +3473,6 @@ scene "SanMiguel"
 		material "material_92"
 	}
 
-	mesh "SanMiguel_128"
-	{
-		import "Meshes/SanMiguel/SanMiguel_128.cmsh"
-	}
-	scene_node "SanMiguel_128"
-	{
-		position 11.5089 4.62914 5.79531
-	}
 	object "SanMiguel_128"
 	{
 		parent "SanMiguel_128"
@@ -1994,14 +3480,6 @@ scene "SanMiguel"
 		material "material_73"
 	}
 
-	mesh "SanMiguel_129"
-	{
-		import "Meshes/SanMiguel/SanMiguel_129.cmsh"
-	}
-	scene_node "SanMiguel_129"
-	{
-		position 7.08329 4.49004 3.52155
-	}
 	object "SanMiguel_129"
 	{
 		parent "SanMiguel_129"
@@ -2009,14 +3487,13 @@ scene "SanMiguel"
 		material "materialx"
 	}
 
-	mesh "SanMiguel_130"
+	object "SanMiguel_13"
 	{
-		import "Meshes/SanMiguel/SanMiguel_130.cmsh"
+		parent "SanMiguel_13"
+		mesh "SanMiguel_13"
+		material "material_175"
 	}
-	scene_node "SanMiguel_130"
-	{
-		position 25.235 3.8143 8.90004
-	}
+
 	object "SanMiguel_130"
 	{
 		parent "SanMiguel_130"
@@ -2024,14 +3501,6 @@ scene "SanMiguel"
 		material "material_74"
 	}
 
-	mesh "SanMiguel_131"
-	{
-		import "Meshes/SanMiguel/SanMiguel_131.cmsh"
-	}
-	scene_node "SanMiguel_131"
-	{
-		position 15.1185 0.206499 9.36146
-	}
 	object "SanMiguel_131"
 	{
 		parent "SanMiguel_131"
@@ -2039,14 +3508,6 @@ scene "SanMiguel"
 		material "material_49"
 	}
 
-	mesh "SanMiguel_132"
-	{
-		import "Meshes/SanMiguel/SanMiguel_132.cmsh"
-	}
-	scene_node "SanMiguel_132"
-	{
-		position 15.523 3.28273 1.74502
-	}
 	object "SanMiguel_132"
 	{
 		parent "SanMiguel_132"
@@ -2054,14 +3515,6 @@ scene "SanMiguel"
 		material "material_126"
 	}
 
-	mesh "SanMiguel_133"
-	{
-		import "Meshes/SanMiguel/SanMiguel_133.cmsh"
-	}
-	scene_node "SanMiguel_133"
-	{
-		position 14.9127 5.9963 8.27004
-	}
 	object "SanMiguel_133"
 	{
 		parent "SanMiguel_133"
@@ -2069,14 +3522,6 @@ scene "SanMiguel"
 		material "materialv"
 	}
 
-	mesh "SanMiguel_134"
-	{
-		import "Meshes/SanMiguel/SanMiguel_134.cmsh"
-	}
-	scene_node "SanMiguel_134"
-	{
-		position 15.3963 7.36385 8.27814
-	}
 	object "SanMiguel_134"
 	{
 		parent "SanMiguel_134"
@@ -2084,14 +3529,6 @@ scene "SanMiguel"
 		material "materialu"
 	}
 
-	mesh "SanMiguel_135"
-	{
-		import "Meshes/SanMiguel/SanMiguel_135.cmsh"
-	}
-	scene_node "SanMiguel_135"
-	{
-		position 23.268 6.65076 1.84215
-	}
 	object "SanMiguel_135"
 	{
 		parent "SanMiguel_135"
@@ -2099,14 +3536,6 @@ scene "SanMiguel"
 		material "material_264"
 	}
 
-	mesh "SanMiguel_136"
-	{
-		import "Meshes/SanMiguel/SanMiguel_136.cmsh"
-	}
-	scene_node "SanMiguel_136"
-	{
-		position 24.6996 4.69505 7.87684
-	}
 	object "SanMiguel_136"
 	{
 		parent "SanMiguel_136"
@@ -2114,14 +3543,6 @@ scene "SanMiguel"
 		material "material_69"
 	}
 
-	mesh "SanMiguel_137"
-	{
-		import "Meshes/SanMiguel/SanMiguel_137.cmsh"
-	}
-	scene_node "SanMiguel_137"
-	{
-		position 6.72764 0.161874 5.72291
-	}
 	object "SanMiguel_137"
 	{
 		parent "SanMiguel_137"
@@ -2129,14 +3550,6 @@ scene "SanMiguel"
 		material "material_1"
 	}
 
-	mesh "SanMiguel_138"
-	{
-		import "Meshes/SanMiguel/SanMiguel_138.cmsh"
-	}
-	scene_node "SanMiguel_138"
-	{
-		position 11.6153 6.12093 2.73213
-	}
 	object "SanMiguel_138"
 	{
 		parent "SanMiguel_138"
@@ -2144,14 +3557,6 @@ scene "SanMiguel"
 		material "material_267"
 	}
 
-	mesh "SanMiguel_139"
-	{
-		import "Meshes/SanMiguel/SanMiguel_139.cmsh"
-	}
-	scene_node "SanMiguel_139"
-	{
-		position 11.635 6.19963 2.70568
-	}
 	object "SanMiguel_139"
 	{
 		parent "SanMiguel_139"
@@ -2159,14 +3564,13 @@ scene "SanMiguel"
 		material "material_266"
 	}
 
-	mesh "SanMiguel_140"
+	object "SanMiguel_14"
 	{
-		import "Meshes/SanMiguel/SanMiguel_140.cmsh"
+		parent "SanMiguel_14"
+		mesh "SanMiguel_14"
+		material "material_176"
 	}
-	scene_node "SanMiguel_140"
-	{
-		position 16.5415 3.26216 4.89086
-	}
+
 	object "SanMiguel_140"
 	{
 		parent "SanMiguel_140"
@@ -2174,14 +3578,6 @@ scene "SanMiguel"
 		material "material_130"
 	}
 
-	mesh "SanMiguel_141"
-	{
-		import "Meshes/SanMiguel/SanMiguel_141.cmsh"
-	}
-	scene_node "SanMiguel_141"
-	{
-		position 14.6133 2.93249 -0.1975
-	}
 	object "SanMiguel_141"
 	{
 		parent "SanMiguel_141"
@@ -2189,14 +3585,6 @@ scene "SanMiguel"
 		material "material_129"
 	}
 
-	mesh "SanMiguel_142"
-	{
-		import "Meshes/SanMiguel/SanMiguel_142.cmsh"
-	}
-	scene_node "SanMiguel_142"
-	{
-		position 17.7093 5.60279 1.48664
-	}
 	object "SanMiguel_142"
 	{
 		parent "SanMiguel_142"
@@ -2204,14 +3592,6 @@ scene "SanMiguel"
 		material "material_128"
 	}
 
-	mesh "SanMiguel_143"
-	{
-		import "Meshes/SanMiguel/SanMiguel_143.cmsh"
-	}
-	scene_node "SanMiguel_143"
-	{
-		position 14.9698 5.63434 -1.21945
-	}
 	object "SanMiguel_143"
 	{
 		parent "SanMiguel_143"
@@ -2219,14 +3599,6 @@ scene "SanMiguel"
 		material "material_127"
 	}
 
-	mesh "SanMiguel_144"
-	{
-		import "Meshes/SanMiguel/SanMiguel_144.cmsh"
-	}
-	scene_node "SanMiguel_144"
-	{
-		position 18.2309 3.74439 6.33205
-	}
 	object "SanMiguel_144"
 	{
 		parent "SanMiguel_144"
@@ -2234,14 +3606,6 @@ scene "SanMiguel"
 		material "material_141"
 	}
 
-	mesh "SanMiguel_145"
-	{
-		import "Meshes/SanMiguel/SanMiguel_145.cmsh"
-	}
-	scene_node "SanMiguel_145"
-	{
-		position 13.6185 3.53829 1.88859
-	}
 	object "SanMiguel_145"
 	{
 		parent "SanMiguel_145"
@@ -2249,14 +3613,6 @@ scene "SanMiguel"
 		material "material_146"
 	}
 
-	mesh "SanMiguel_146"
-	{
-		import "Meshes/SanMiguel/SanMiguel_146.cmsh"
-	}
-	scene_node "SanMiguel_146"
-	{
-		position 9.46796 3.64629 4.38673
-	}
 	object "SanMiguel_146"
 	{
 		parent "SanMiguel_146"
@@ -2264,14 +3620,6 @@ scene "SanMiguel"
 		material "material_180"
 	}
 
-	mesh "SanMiguel_147"
-	{
-		import "Meshes/SanMiguel/SanMiguel_147.cmsh"
-	}
-	scene_node "SanMiguel_147"
-	{
-		position 22.5199 3.9925 6.30484
-	}
 	object "SanMiguel_147"
 	{
 		parent "SanMiguel_147"
@@ -2279,14 +3627,6 @@ scene "SanMiguel"
 		material "material_139"
 	}
 
-	mesh "SanMiguel_148"
-	{
-		import "Meshes/SanMiguel/SanMiguel_148.cmsh"
-	}
-	scene_node "SanMiguel_148"
-	{
-		position 16.3813 6.70162 -2.95116
-	}
 	object "SanMiguel_148"
 	{
 		parent "SanMiguel_148"
@@ -2294,14 +3634,6 @@ scene "SanMiguel"
 		material "material_136"
 	}
 
-	mesh "SanMiguel_149"
-	{
-		import "Meshes/SanMiguel/SanMiguel_149.cmsh"
-	}
-	scene_node "SanMiguel_149"
-	{
-		position 16.3912 6.46023 -2.93471
-	}
 	object "SanMiguel_149"
 	{
 		parent "SanMiguel_149"
@@ -2309,14 +3641,13 @@ scene "SanMiguel"
 		material "material_137"
 	}
 
-	mesh "SanMiguel_150"
+	object "SanMiguel_15"
 	{
-		import "Meshes/SanMiguel/SanMiguel_150.cmsh"
+		parent "SanMiguel_15"
+		mesh "SanMiguel_15"
+		material "material_164"
 	}
-	scene_node "SanMiguel_150"
-	{
-		position 16.4557 4.27645 3.62257
-	}
+
 	object "SanMiguel_150"
 	{
 		parent "SanMiguel_150"
@@ -2324,14 +3655,6 @@ scene "SanMiguel"
 		material "material_0"
 	}
 
-	mesh "SanMiguel_151"
-	{
-		import "Meshes/SanMiguel/SanMiguel_151.cmsh"
-	}
-	scene_node "SanMiguel_151"
-	{
-		position 16.4522 3.75933 3.07218
-	}
 	object "SanMiguel_151"
 	{
 		parent "SanMiguel_151"
@@ -2339,14 +3662,6 @@ scene "SanMiguel"
 		material "material_52"
 	}
 
-	mesh "SanMiguel_152"
-	{
-		import "Meshes/SanMiguel/SanMiguel_152.cmsh"
-	}
-	scene_node "SanMiguel_152"
-	{
-		position 5.9782 3.0409 6.11164
-	}
 	object "SanMiguel_152"
 	{
 		parent "SanMiguel_152"
@@ -2354,14 +3669,6 @@ scene "SanMiguel"
 		material "material_16"
 	}
 
-	mesh "SanMiguel_153"
-	{
-		import "Meshes/SanMiguel/SanMiguel_153.cmsh"
-	}
-	scene_node "SanMiguel_153"
-	{
-		position 5.9381 2.22563 6.12739
-	}
 	object "SanMiguel_153"
 	{
 		parent "SanMiguel_153"
@@ -2369,14 +3676,6 @@ scene "SanMiguel"
 		material "material_15"
 	}
 
-	mesh "SanMiguel_154"
-	{
-		import "Meshes/SanMiguel/SanMiguel_154.cmsh"
-	}
-	scene_node "SanMiguel_154"
-	{
-		position 16.468 4.22406 3.68539
-	}
 	object "SanMiguel_154"
 	{
 		parent "SanMiguel_154"
@@ -2384,14 +3683,6 @@ scene "SanMiguel"
 		material "materiald"
 	}
 
-	mesh "SanMiguel_155"
-	{
-		import "Meshes/SanMiguel/SanMiguel_155.cmsh"
-	}
-	scene_node "SanMiguel_155"
-	{
-		position 16.4792 4.21774 1.70943
-	}
 	object "SanMiguel_155"
 	{
 		parent "SanMiguel_155"
@@ -2399,14 +3690,6 @@ scene "SanMiguel"
 		material "materiali"
 	}
 
-	mesh "SanMiguel_156"
-	{
-		import "Meshes/SanMiguel/SanMiguel_156.cmsh"
-	}
-	scene_node "SanMiguel_156"
-	{
-		position 24.6687 4.00673 7.86042
-	}
 	object "SanMiguel_156"
 	{
 		parent "SanMiguel_156"
@@ -2414,14 +3697,6 @@ scene "SanMiguel"
 		material "material_20"
 	}
 
-	mesh "SanMiguel_157"
-	{
-		import "Meshes/SanMiguel/SanMiguel_157.cmsh"
-	}
-	scene_node "SanMiguel_157"
-	{
-		position 6.78673 10.5483 1.78578
-	}
 	object "SanMiguel_157"
 	{
 		parent "SanMiguel_157"
@@ -2429,14 +3704,6 @@ scene "SanMiguel"
 		material "material_10"
 	}
 
-	mesh "SanMiguel_158"
-	{
-		import "Meshes/SanMiguel/SanMiguel_158.cmsh"
-	}
-	scene_node "SanMiguel_158"
-	{
-		position 16.4652 6.95698 -0.314902
-	}
 	object "SanMiguel_158"
 	{
 		parent "SanMiguel_158"
@@ -2444,14 +3711,6 @@ scene "SanMiguel"
 		material "material_26"
 	}
 
-	mesh "SanMiguel_159"
-	{
-		import "Meshes/SanMiguel/SanMiguel_159.cmsh"
-	}
-	scene_node "SanMiguel_159"
-	{
-		position 25.2362 6.70038 13.0828
-	}
 	object "SanMiguel_159"
 	{
 		parent "SanMiguel_159"
@@ -2459,14 +3718,13 @@ scene "SanMiguel"
 		material "material_27"
 	}
 
-	mesh "SanMiguel_160"
+	object "SanMiguel_16"
 	{
-		import "Meshes/SanMiguel/SanMiguel_160.cmsh"
+		parent "SanMiguel_16"
+		mesh "SanMiguel_16"
+		material "material_169"
 	}
-	scene_node "SanMiguel_160"
-	{
-		position 23.8041 8.10528 3.9888
-	}
+
 	object "SanMiguel_160"
 	{
 		parent "SanMiguel_160"
@@ -2474,14 +3732,6 @@ scene "SanMiguel"
 		material "material_87"
 	}
 
-	mesh "SanMiguel_161"
-	{
-		import "Meshes/SanMiguel/SanMiguel_161.cmsh"
-	}
-	scene_node "SanMiguel_161"
-	{
-		position 6.26676 2.60527 -0.03538
-	}
 	object "SanMiguel_161"
 	{
 		parent "SanMiguel_161"
@@ -2489,14 +3739,6 @@ scene "SanMiguel"
 		material "material_88"
 	}
 
-	mesh "SanMiguel_162"
-	{
-		import "Meshes/SanMiguel/SanMiguel_162.cmsh"
-	}
-	scene_node "SanMiguel_162"
-	{
-		position 26.6657 2.6075 -0.03538
-	}
 	object "SanMiguel_162"
 	{
 		parent "SanMiguel_162"
@@ -2504,14 +3746,6 @@ scene "SanMiguel"
 		material "material_84"
 	}
 
-	mesh "SanMiguel_163"
-	{
-		import "Meshes/SanMiguel/SanMiguel_163.cmsh"
-	}
-	scene_node "SanMiguel_163"
-	{
-		position 2.72654 7.8254 6.66356
-	}
 	object "SanMiguel_163"
 	{
 		parent "SanMiguel_163"
@@ -2519,14 +3753,6 @@ scene "SanMiguel"
 		material "material_47"
 	}
 
-	mesh "SanMiguel_164"
-	{
-		import "Meshes/SanMiguel/SanMiguel_164.cmsh"
-	}
-	scene_node "SanMiguel_164"
-	{
-		position 23.466 4.68025 9.38969
-	}
 	object "SanMiguel_164"
 	{
 		parent "SanMiguel_164"
@@ -2534,14 +3760,6 @@ scene "SanMiguel"
 		material "material_2"
 	}
 
-	mesh "SanMiguel_165"
-	{
-		import "Meshes/SanMiguel/SanMiguel_165.cmsh"
-	}
-	scene_node "SanMiguel_165"
-	{
-		position 14.7902 8.22085 1.26515
-	}
 	object "SanMiguel_165"
 	{
 		parent "SanMiguel_165"
@@ -2549,14 +3767,6 @@ scene "SanMiguel"
 		material "material_7"
 	}
 
-	mesh "SanMiguel_166"
-	{
-		import "Meshes/SanMiguel/SanMiguel_166.cmsh"
-	}
-	scene_node "SanMiguel_166"
-	{
-		position 16.4649 8.28812 4.88648
-	}
 	object "SanMiguel_166"
 	{
 		parent "SanMiguel_166"
@@ -2564,14 +3774,6 @@ scene "SanMiguel"
 		material "material_35"
 	}
 
-	mesh "SanMiguel_167"
-	{
-		import "Meshes/SanMiguel/SanMiguel_167.cmsh"
-	}
-	scene_node "SanMiguel_167"
-	{
-		position 16.4661 2.65062 -3.30407
-	}
 	object "SanMiguel_167"
 	{
 		parent "SanMiguel_167"
@@ -2579,14 +3781,6 @@ scene "SanMiguel"
 		material "material_18"
 	}
 
-	mesh "SanMiguel_168"
-	{
-		import "Meshes/SanMiguel/SanMiguel_168.cmsh"
-	}
-	scene_node "SanMiguel_168"
-	{
-		position 25.2352 6.79955 4.5676
-	}
 	object "SanMiguel_168"
 	{
 		parent "SanMiguel_168"
@@ -2594,14 +3788,6 @@ scene "SanMiguel"
 		material "material_25"
 	}
 
-	mesh "SanMiguel_169"
-	{
-		import "Meshes/SanMiguel/SanMiguel_169.cmsh"
-	}
-	scene_node "SanMiguel_169"
-	{
-		position 24.6683 4.0057 7.86192
-	}
 	object "SanMiguel_169"
 	{
 		parent "SanMiguel_169"
@@ -2609,14 +3795,13 @@ scene "SanMiguel"
 		material "material_28"
 	}
 
-	mesh "SanMiguel_170"
+	object "SanMiguel_17"
 	{
-		import "Meshes/SanMiguel/SanMiguel_170.cmsh"
+		parent "SanMiguel_17"
+		mesh "SanMiguel_17"
+		material "material_170"
 	}
-	scene_node "SanMiguel_170"
-	{
-		position 14.7902 7.25 1.4123
-	}
+
 	object "SanMiguel_170"
 	{
 		parent "SanMiguel_170"
@@ -2624,14 +3809,6 @@ scene "SanMiguel"
 		material "material_6"
 	}
 
-	mesh "SanMiguel_171"
-	{
-		import "Meshes/SanMiguel/SanMiguel_171.cmsh"
-	}
-	scene_node "SanMiguel_171"
-	{
-		position 31.6245 2.05 2.14852
-	}
 	object "SanMiguel_171"
 	{
 		parent "SanMiguel_171"
@@ -2639,14 +3816,6 @@ scene "SanMiguel"
 		material "material_34"
 	}
 
-	mesh "SanMiguel_172"
-	{
-		import "Meshes/SanMiguel/SanMiguel_172.cmsh"
-	}
-	scene_node "SanMiguel_172"
-	{
-		position 23.4797 4.67921 9.38697
-	}
 	object "SanMiguel_172"
 	{
 		parent "SanMiguel_172"
@@ -2654,14 +3823,6 @@ scene "SanMiguel"
 		material "material_91"
 	}
 
-	mesh "SanMiguel_173"
-	{
-		import "Meshes/SanMiguel/SanMiguel_173.cmsh"
-	}
-	scene_node "SanMiguel_173"
-	{
-		position 16.5424 8.21211 4.78356
-	}
 	object "SanMiguel_173"
 	{
 		parent "SanMiguel_173"
@@ -2669,14 +3830,6 @@ scene "SanMiguel"
 		material "material_42"
 	}
 
-	mesh "SanMiguel_174"
-	{
-		import "Meshes/SanMiguel/SanMiguel_174.cmsh"
-	}
-	scene_node "SanMiguel_174"
-	{
-		position 16.4664 4.25004 3.70829
-	}
 	object "SanMiguel_174"
 	{
 		parent "SanMiguel_174"
@@ -2684,14 +3837,6 @@ scene "SanMiguel"
 		material "material_96"
 	}
 
-	mesh "SanMiguel_175"
-	{
-		import "Meshes/SanMiguel/SanMiguel_175.cmsh"
-	}
-	scene_node "SanMiguel_175"
-	{
-		position 16.4664 8.17305 4.90159
-	}
 	object "SanMiguel_175"
 	{
 		parent "SanMiguel_175"
@@ -2699,14 +3844,6 @@ scene "SanMiguel"
 		material "material_43"
 	}
 
-	mesh "SanMiguel_176"
-	{
-		import "Meshes/SanMiguel/SanMiguel_176.cmsh"
-	}
-	scene_node "SanMiguel_176"
-	{
-		position 16.4661 8.20016 -3.30361
-	}
 	object "SanMiguel_176"
 	{
 		parent "SanMiguel_176"
@@ -2714,14 +3851,6 @@ scene "SanMiguel"
 		material "material_41"
 	}
 
-	mesh "SanMiguel_177"
-	{
-		import "Meshes/SanMiguel/SanMiguel_177.cmsh"
-	}
-	scene_node "SanMiguel_177"
-	{
-		position 6.88309 10.5981 1.87099
-	}
 	object "SanMiguel_177"
 	{
 		parent "SanMiguel_177"
@@ -2729,14 +3858,6 @@ scene "SanMiguel"
 		material "materiale"
 	}
 
-	mesh "SanMiguel_178"
-	{
-		import "Meshes/SanMiguel/SanMiguel_178.cmsh"
-	}
-	scene_node "SanMiguel_178"
-	{
-		position 6.7817 5.34251 7.80552
-	}
 	object "SanMiguel_178"
 	{
 		parent "SanMiguel_178"
@@ -2744,14 +3865,6 @@ scene "SanMiguel"
 		material "material_98"
 	}
 
-	mesh "SanMiguel_179"
-	{
-		import "Meshes/SanMiguel/SanMiguel_179.cmsh"
-	}
-	scene_node "SanMiguel_179"
-	{
-		position 6.53747 4.94916 7.83792
-	}
 	object "SanMiguel_179"
 	{
 		parent "SanMiguel_179"
@@ -2759,14 +3872,13 @@ scene "SanMiguel"
 		material "material_8"
 	}
 
-	mesh "SanMiguel_180"
+	object "SanMiguel_18"
 	{
-		import "Meshes/SanMiguel/SanMiguel_180.cmsh"
+		parent "SanMiguel_18"
+		mesh "SanMiguel_18"
+		material "material_173"
 	}
-	scene_node "SanMiguel_180"
-	{
-		position 26.6655 8.10466 3.98865
-	}
+
 	object "SanMiguel_180"
 	{
 		parent "SanMiguel_180"
@@ -2774,14 +3886,6 @@ scene "SanMiguel"
 		material "material_86"
 	}
 
-	mesh "SanMiguel_181"
-	{
-		import "Meshes/SanMiguel/SanMiguel_181.cmsh"
-	}
-	scene_node "SanMiguel_181"
-	{
-		position 14.6973 11.6133 6.66206
-	}
 	object "SanMiguel_181"
 	{
 		parent "SanMiguel_181"
@@ -2789,14 +3893,6 @@ scene "SanMiguel"
 		material "material_4"
 	}
 
-	mesh "SanMiguel_182"
-	{
-		import "Meshes/SanMiguel/SanMiguel_182.cmsh"
-	}
-	scene_node "SanMiguel_182"
-	{
-		position 14.7522 2.8 1.2677
-	}
 	object "SanMiguel_182"
 	{
 		parent "SanMiguel_182"
@@ -2804,14 +3900,6 @@ scene "SanMiguel"
 		material "material_12"
 	}
 
-	mesh "SanMiguel_183"
-	{
-		import "Meshes/SanMiguel/SanMiguel_183.cmsh"
-	}
-	scene_node "SanMiguel_183"
-	{
-		position 12.1887 2.70057 0.66388
-	}
 	object "SanMiguel_183"
 	{
 		parent "SanMiguel_183"
@@ -2819,14 +3907,6 @@ scene "SanMiguel"
 		material "material_14"
 	}
 
-	mesh "SanMiguel_184"
-	{
-		import "Meshes/SanMiguel/SanMiguel_184.cmsh"
-	}
-	scene_node "SanMiguel_184"
-	{
-		position 25.2347 2.74983 8.9957
-	}
 	object "SanMiguel_184"
 	{
 		parent "SanMiguel_184"
@@ -2834,14 +3914,6 @@ scene "SanMiguel"
 		material "material_5"
 	}
 
-	mesh "SanMiguel_185"
-	{
-		import "Meshes/SanMiguel/SanMiguel_185.cmsh"
-	}
-	scene_node "SanMiguel_185"
-	{
-		position 6.88114 10.4258 1.88091
-	}
 	object "SanMiguel_185"
 	{
 		parent "SanMiguel_185"
@@ -2849,14 +3921,6 @@ scene "SanMiguel"
 		material "material_9"
 	}
 
-	mesh "SanMiguel_186"
-	{
-		import "Meshes/SanMiguel/SanMiguel_186.cmsh"
-	}
-	scene_node "SanMiguel_186"
-	{
-		position 14.9903 5.38489 1.83341
-	}
 	object "SanMiguel_186"
 	{
 		parent "SanMiguel_186"
@@ -2864,14 +3928,6 @@ scene "SanMiguel"
 		material "material_11"
 	}
 
-	mesh "SanMiguel_187"
-	{
-		import "Meshes/SanMiguel/SanMiguel_187.cmsh"
-	}
-	scene_node "SanMiguel_187"
-	{
-		position 14.7902 5.76359 1.11345
-	}
 	object "SanMiguel_187"
 	{
 		parent "SanMiguel_187"
@@ -2879,14 +3935,6 @@ scene "SanMiguel"
 		material "material_13"
 	}
 
-	mesh "SanMiguel_188"
-	{
-		import "Meshes/SanMiguel/SanMiguel_188.cmsh"
-	}
-	scene_node "SanMiguel_188"
-	{
-		position 14.7902 13.8017 13.248
-	}
 	object "SanMiguel_188"
 	{
 		parent "SanMiguel_188"
@@ -2894,14 +3942,6 @@ scene "SanMiguel"
 		material "material_3"
 	}
 
-	mesh "SanMiguel_189"
-	{
-		import "Meshes/SanMiguel/SanMiguel_189.cmsh"
-	}
-	scene_node "SanMiguel_189"
-	{
-		position 14.7835 7.2 13.2472
-	}
 	object "SanMiguel_189"
 	{
 		parent "SanMiguel_189"
@@ -2909,14 +3949,13 @@ scene "SanMiguel"
 		material "material_29"
 	}
 
-	mesh "SanMiguel_190"
+	object "SanMiguel_19"
 	{
-		import "Meshes/SanMiguel/SanMiguel_190.cmsh"
+		parent "SanMiguel_19"
+		mesh "SanMiguel_19"
+		material "material_174"
 	}
-	scene_node "SanMiguel_190"
-	{
-		position 23.2055 5.70491 4.89607
-	}
+
 	object "SanMiguel_190"
 	{
 		parent "SanMiguel_190"
@@ -2924,14 +3963,6 @@ scene "SanMiguel"
 		material "material_24"
 	}
 
-	mesh "SanMiguel_191"
-	{
-		import "Meshes/SanMiguel/SanMiguel_191.cmsh"
-	}
-	scene_node "SanMiguel_191"
-	{
-		position 25.2278 5.31553 4.04096
-	}
 	object "SanMiguel_191"
 	{
 		parent "SanMiguel_191"
@@ -2939,14 +3970,6 @@ scene "SanMiguel"
 		material "material_19"
 	}
 
-	mesh "SanMiguel_192"
-	{
-		import "Meshes/SanMiguel/SanMiguel_192.cmsh"
-	}
-	scene_node "SanMiguel_192"
-	{
-		position 26.7227 5.40083 4.90094
-	}
 	object "SanMiguel_192"
 	{
 		parent "SanMiguel_192"
@@ -2954,14 +3977,6 @@ scene "SanMiguel"
 		material "material_22"
 	}
 
-	mesh "SanMiguel_193"
-	{
-		import "Meshes/SanMiguel/SanMiguel_193.cmsh"
-	}
-	scene_node "SanMiguel_193"
-	{
-		position 27.0398 1.4486 2.1485
-	}
 	object "SanMiguel_193"
 	{
 		parent "SanMiguel_193"
@@ -2969,14 +3984,6 @@ scene "SanMiguel"
 		material "material_31"
 	}
 
-	mesh "SanMiguel_194"
-	{
-		import "Meshes/SanMiguel/SanMiguel_194.cmsh"
-	}
-	scene_node "SanMiguel_194"
-	{
-		position 25.3521 2.67811 7.73627
-	}
 	object "SanMiguel_194"
 	{
 		parent "SanMiguel_194"
@@ -2984,14 +3991,6 @@ scene "SanMiguel"
 		material "material_21"
 	}
 
-	mesh "SanMiguel_195"
-	{
-		import "Meshes/SanMiguel/SanMiguel_195.cmsh"
-	}
-	scene_node "SanMiguel_195"
-	{
-		position 23.7336 5.4002 4.89597
-	}
 	object "SanMiguel_195"
 	{
 		parent "SanMiguel_195"
@@ -2999,14 +3998,6 @@ scene "SanMiguel"
 		material "material_23"
 	}
 
-	mesh "SanMiguel_196"
-	{
-		import "Meshes/SanMiguel/SanMiguel_196.cmsh"
-	}
-	scene_node "SanMiguel_196"
-	{
-		position 27.3398 2.05 2.14852
-	}
 	object "SanMiguel_196"
 	{
 		parent "SanMiguel_196"
@@ -3014,14 +4005,6 @@ scene "SanMiguel"
 		material "material_32"
 	}
 
-	mesh "SanMiguel_197"
-	{
-		import "Meshes/SanMiguel/SanMiguel_197.cmsh"
-	}
-	scene_node "SanMiguel_197"
-	{
-		position 24.5402 3.10391 4.63816
-	}
 	object "SanMiguel_197"
 	{
 		parent "SanMiguel_197"
@@ -3029,14 +4012,6 @@ scene "SanMiguel"
 		material "material_30"
 	}
 
-	mesh "SanMiguel_198"
-	{
-		import "Meshes/SanMiguel/SanMiguel_198.cmsh"
-	}
-	scene_node "SanMiguel_198"
-	{
-		position 6.19307 5.705 4.90514
-	}
 	object "SanMiguel_198"
 	{
 		parent "SanMiguel_198"
@@ -3044,14 +4019,6 @@ scene "SanMiguel"
 		material "material_17"
 	}
 
-	mesh "SanMiguel_199"
-	{
-		import "Meshes/SanMiguel/SanMiguel_199.cmsh"
-	}
-	scene_node "SanMiguel_199"
-	{
-		position 6.04472 2.2729 6.12739
-	}
 	object "SanMiguel_199"
 	{
 		parent "SanMiguel_199"
@@ -3059,14 +4026,20 @@ scene "SanMiguel"
 		material "material_40"
 	}
 
-	mesh "SanMiguel_200"
+	object "SanMiguel_2"
 	{
-		import "Meshes/SanMiguel/SanMiguel_200.cmsh"
+		parent "SanMiguel_2"
+		mesh "SanMiguel_2"
+		material "material_035"
 	}
-	scene_node "SanMiguel_200"
+
+	object "SanMiguel_20"
 	{
-		position 6.71746 10.2016 1.86659
+		parent "SanMiguel_20"
+		mesh "SanMiguel_20"
+		material "material_165"
 	}
+
 	object "SanMiguel_200"
 	{
 		parent "SanMiguel_200"
@@ -3074,14 +4047,6 @@ scene "SanMiguel"
 		material "material_46"
 	}
 
-	mesh "SanMiguel_201"
-	{
-		import "Meshes/SanMiguel/SanMiguel_201.cmsh"
-	}
-	scene_node "SanMiguel_201"
-	{
-		position -12.3736 3.32534 1.30085
-	}
 	object "SanMiguel_201"
 	{
 		parent "SanMiguel_201"
@@ -3089,14 +4054,6 @@ scene "SanMiguel"
 		material "material_37"
 	}
 
-	mesh "SanMiguel_202"
-	{
-		import "Meshes/SanMiguel/SanMiguel_202.cmsh"
-	}
-	scene_node "SanMiguel_202"
-	{
-		position 6.04373 4.20945 1.46118
-	}
 	object "SanMiguel_202"
 	{
 		parent "SanMiguel_202"
@@ -3104,14 +4061,6 @@ scene "SanMiguel"
 		material "material_39"
 	}
 
-	mesh "SanMiguel_203"
-	{
-		import "Meshes/SanMiguel/SanMiguel_203.cmsh"
-	}
-	scene_node "SanMiguel_203"
-	{
-		position 16.4652 7.26178 0.226309
-	}
 	object "SanMiguel_203"
 	{
 		parent "SanMiguel_203"
@@ -3119,14 +4068,6 @@ scene "SanMiguel"
 		material "material_44"
 	}
 
-	mesh "SanMiguel_204"
-	{
-		import "Meshes/SanMiguel/SanMiguel_204.cmsh"
-	}
-	scene_node "SanMiguel_204"
-	{
-		position 29.4821 2.05 2.14852
-	}
 	object "SanMiguel_204"
 	{
 		parent "SanMiguel_204"
@@ -3134,14 +4075,6 @@ scene "SanMiguel"
 		material "material_33"
 	}
 
-	mesh "SanMiguel_205"
-	{
-		import "Meshes/SanMiguel/SanMiguel_205.cmsh"
-	}
-	scene_node "SanMiguel_205"
-	{
-		position 22.0546 0.109729 1.69545
-	}
 	object "SanMiguel_205"
 	{
 		parent "SanMiguel_205"
@@ -3149,14 +4082,6 @@ scene "SanMiguel"
 		material "material_45"
 	}
 
-	mesh "SanMiguel_206"
-	{
-		import "Meshes/SanMiguel/SanMiguel_206.cmsh"
-	}
-	scene_node "SanMiguel_206"
-	{
-		position 16.4721 -0.10012 6.71713
-	}
 	object "SanMiguel_206"
 	{
 		parent "SanMiguel_206"
@@ -3164,14 +4089,6 @@ scene "SanMiguel"
 		material "material_48"
 	}
 
-	mesh "SanMiguel_207"
-	{
-		import "Meshes/SanMiguel/SanMiguel_207.cmsh"
-	}
-	scene_node "SanMiguel_207"
-	{
-		position 16.5595 6.61343 0.37704
-	}
 	object "SanMiguel_207"
 	{
 		parent "SanMiguel_207"
@@ -3179,14 +4096,6 @@ scene "SanMiguel"
 		material "material_51"
 	}
 
-	mesh "SanMiguel_208"
-	{
-		import "Meshes/SanMiguel/SanMiguel_208.cmsh"
-	}
-	scene_node "SanMiguel_208"
-	{
-		position -12.386 -0.0278807 0.8287
-	}
 	object "SanMiguel_208"
 	{
 		parent "SanMiguel_208"
@@ -3194,14 +4103,6 @@ scene "SanMiguel"
 		material "material_70"
 	}
 
-	mesh "SanMiguel_209"
-	{
-		import "Meshes/SanMiguel/SanMiguel_209.cmsh"
-	}
-	scene_node "SanMiguel_209"
-	{
-		position 14.6997 10.6884 4.6814
-	}
 	object "SanMiguel_209"
 	{
 		parent "SanMiguel_209"
@@ -3209,14 +4110,13 @@ scene "SanMiguel"
 		material "material_90"
 	}
 
-	mesh "SanMiguel_210"
+	object "SanMiguel_21"
 	{
-		import "Meshes/SanMiguel/SanMiguel_210.cmsh"
+		parent "SanMiguel_21"
+		mesh "SanMiguel_21"
+		material "material_168"
 	}
-	scene_node "SanMiguel_210"
-	{
-		position 6.26676 8.10466 -0.0353795
-	}
+
 	object "SanMiguel_210"
 	{
 		parent "SanMiguel_210"
@@ -3224,14 +4124,6 @@ scene "SanMiguel"
 		material "material_89"
 	}
 
-	mesh "SanMiguel_211"
-	{
-		import "Meshes/SanMiguel/SanMiguel_211.cmsh"
-	}
-	scene_node "SanMiguel_211"
-	{
-		position 46.741 4.25719 1.6971
-	}
 	object "SanMiguel_211"
 	{
 		parent "SanMiguel_211"
@@ -3239,14 +4131,6 @@ scene "SanMiguel"
 		material "material_75"
 	}
 
-	mesh "SanMiguel_212"
-	{
-		import "Meshes/SanMiguel/SanMiguel_212.cmsh"
-	}
-	scene_node "SanMiguel_212"
-	{
-		position 16.4664 4.55915 4.08749
-	}
 	object "SanMiguel_212"
 	{
 		parent "SanMiguel_212"
@@ -3254,14 +4138,6 @@ scene "SanMiguel"
 		material "material_95"
 	}
 
-	mesh "SanMiguel_213"
-	{
-		import "Meshes/SanMiguel/SanMiguel_213.cmsh"
-	}
-	scene_node "SanMiguel_213"
-	{
-		position 6.04868 4.67858 4.27779
-	}
 	object "SanMiguel_213"
 	{
 		parent "SanMiguel_213"
@@ -3269,14 +4145,6 @@ scene "SanMiguel"
 		material "material_97"
 	}
 
-	mesh "SanMiguel_214"
-	{
-		import "Meshes/SanMiguel/SanMiguel_214.cmsh"
-	}
-	scene_node "SanMiguel_214"
-	{
-		position 26.6654 8.10466 -0.0353795
-	}
 	object "SanMiguel_214"
 	{
 		parent "SanMiguel_214"
@@ -3284,14 +4152,6 @@ scene "SanMiguel"
 		material "material_85"
 	}
 
-	mesh "SanMiguel_215"
-	{
-		import "Meshes/SanMiguel/SanMiguel_215.cmsh"
-	}
-	scene_node "SanMiguel_215"
-	{
-		position 17.7225 6.12893 1.52237
-	}
 	object "SanMiguel_215"
 	{
 		parent "SanMiguel_215"
@@ -3299,14 +4159,6 @@ scene "SanMiguel"
 		material "material_144"
 	}
 
-	mesh "SanMiguel_216"
-	{
-		import "Meshes/SanMiguel/SanMiguel_216.cmsh"
-	}
-	scene_node "SanMiguel_216"
-	{
-		position 20.1202 6.36285 1.35289
-	}
 	object "SanMiguel_216"
 	{
 		parent "SanMiguel_216"
@@ -3314,14 +4166,6 @@ scene "SanMiguel"
 		material "material_153"
 	}
 
-	mesh "SanMiguel_217"
-	{
-		import "Meshes/SanMiguel/SanMiguel_217.cmsh"
-	}
-	scene_node "SanMiguel_217"
-	{
-		position 20.2201 6.16364 1.28852
-	}
 	object "SanMiguel_217"
 	{
 		parent "SanMiguel_217"
@@ -3329,14 +4173,6 @@ scene "SanMiguel"
 		material "material_154"
 	}
 
-	mesh "SanMiguel_218"
-	{
-		import "Meshes/SanMiguel/SanMiguel_218.cmsh"
-	}
-	scene_node "SanMiguel_218"
-	{
-		position 20.12 6.36241 1.3534
-	}
 	object "SanMiguel_218"
 	{
 		parent "SanMiguel_218"
@@ -3344,14 +4180,6 @@ scene "SanMiguel"
 		material "material_157"
 	}
 
-	mesh "SanMiguel_219"
-	{
-		import "Meshes/SanMiguel/SanMiguel_219.cmsh"
-	}
-	scene_node "SanMiguel_219"
-	{
-		position 22.9605 6.59759 2.18861
-	}
 	object "SanMiguel_219"
 	{
 		parent "SanMiguel_219"
@@ -3359,14 +4187,13 @@ scene "SanMiguel"
 		material "material_159"
 	}
 
-	mesh "SanMiguel_220"
+	object "SanMiguel_22"
 	{
-		import "Meshes/SanMiguel/SanMiguel_220.cmsh"
+		parent "SanMiguel_22"
+		mesh "SanMiguel_22"
+		material "material_172"
 	}
-	scene_node "SanMiguel_220"
-	{
-		position 22.2398 6.83109 0.185557
-	}
+
 	object "SanMiguel_220"
 	{
 		parent "SanMiguel_220"
@@ -3374,14 +4201,6 @@ scene "SanMiguel"
 		material "material_167"
 	}
 
-	mesh "SanMiguel_221"
-	{
-		import "Meshes/SanMiguel/SanMiguel_221.cmsh"
-	}
-	scene_node "SanMiguel_221"
-	{
-		position 22.9614 6.59445 2.19466
-	}
 	object "SanMiguel_221"
 	{
 		parent "SanMiguel_221"
@@ -3389,14 +4208,6 @@ scene "SanMiguel"
 		material "material_160"
 	}
 
-	mesh "SanMiguel_222"
-	{
-		import "Meshes/SanMiguel/SanMiguel_222.cmsh"
-	}
-	scene_node "SanMiguel_222"
-	{
-		position 22.2692 6.79649 0.0926575
-	}
 	object "SanMiguel_222"
 	{
 		parent "SanMiguel_222"
@@ -3404,14 +4215,6 @@ scene "SanMiguel"
 		material "material_203"
 	}
 
-	mesh "SanMiguel_223"
-	{
-		import "Meshes/SanMiguel/SanMiguel_223.cmsh"
-	}
-	scene_node "SanMiguel_223"
-	{
-		position 22.2664 6.80653 0.0981318
-	}
 	object "SanMiguel_223"
 	{
 		parent "SanMiguel_223"
@@ -3419,14 +4222,6 @@ scene "SanMiguel"
 		material "material_204"
 	}
 
-	mesh "SanMiguel_224"
-	{
-		import "Meshes/SanMiguel/SanMiguel_224.cmsh"
-	}
-	scene_node "SanMiguel_224"
-	{
-		position 22.2216 6.74633 0.181253
-	}
 	object "SanMiguel_224"
 	{
 		parent "SanMiguel_224"
@@ -3434,14 +4229,6 @@ scene "SanMiguel"
 		material "material_171"
 	}
 
-	mesh "SanMiguel_225"
-	{
-		import "Meshes/SanMiguel/SanMiguel_225.cmsh"
-	}
-	scene_node "SanMiguel_225"
-	{
-		position 23.2826 6.70257 2.19609
-	}
 	object "SanMiguel_225"
 	{
 		parent "SanMiguel_225"
@@ -3449,14 +4236,6 @@ scene "SanMiguel"
 		material "material_229"
 	}
 
-	mesh "SanMiguel_226"
-	{
-		import "Meshes/SanMiguel/SanMiguel_226.cmsh"
-	}
-	scene_node "SanMiguel_226"
-	{
-		position 18.3064 6.38472 0.278012
-	}
 	object "SanMiguel_226"
 	{
 		parent "SanMiguel_226"
@@ -3464,14 +4243,6 @@ scene "SanMiguel"
 		material "material_241"
 	}
 
-	mesh "SanMiguel_227"
-	{
-		import "Meshes/SanMiguel/SanMiguel_227.cmsh"
-	}
-	scene_node "SanMiguel_227"
-	{
-		position 17.2705 6.1303 0.533862
-	}
 	object "SanMiguel_227"
 	{
 		parent "SanMiguel_227"
@@ -3479,14 +4250,6 @@ scene "SanMiguel"
 		material "material_156"
 	}
 
-	mesh "SanMiguel_228"
-	{
-		import "Meshes/SanMiguel/SanMiguel_228.cmsh"
-	}
-	scene_node "SanMiguel_228"
-	{
-		position 17.2787 6.12883 0.533888
-	}
 	object "SanMiguel_228"
 	{
 		parent "SanMiguel_228"
@@ -3494,14 +4257,6 @@ scene "SanMiguel"
 		material "material_155"
 	}
 
-	mesh "SanMiguel_229"
-	{
-		import "Meshes/SanMiguel/SanMiguel_229.cmsh"
-	}
-	scene_node "SanMiguel_229"
-	{
-		position 22.2526 6.79192 0.119832
-	}
 	object "SanMiguel_229"
 	{
 		parent "SanMiguel_229"
@@ -3509,14 +4264,13 @@ scene "SanMiguel"
 		material "material_206"
 	}
 
-	mesh "SanMiguel_230"
+	object "SanMiguel_23"
 	{
-		import "Meshes/SanMiguel/SanMiguel_230.cmsh"
+		parent "SanMiguel_23"
+		mesh "SanMiguel_23"
+		material "material_181"
 	}
-	scene_node "SanMiguel_230"
-	{
-		position 11.3675 6.62996 0.19455
-	}
+
 	object "SanMiguel_230"
 	{
 		parent "SanMiguel_230"
@@ -3524,14 +4278,6 @@ scene "SanMiguel"
 		material "material_237"
 	}
 
-	mesh "SanMiguel_231"
-	{
-		import "Meshes/SanMiguel/SanMiguel_231.cmsh"
-	}
-	scene_node "SanMiguel_231"
-	{
-		position 7.49576 6.74445 5.82937
-	}
 	object "SanMiguel_231"
 	{
 		parent "SanMiguel_231"
@@ -3539,14 +4285,6 @@ scene "SanMiguel"
 		material "material_248"
 	}
 
-	mesh "SanMiguel_232"
-	{
-		import "Meshes/SanMiguel/SanMiguel_232.cmsh"
-	}
-	scene_node "SanMiguel_232"
-	{
-		position 18.3106 6.37542 0.275759
-	}
 	object "SanMiguel_232"
 	{
 		parent "SanMiguel_232"
@@ -3554,14 +4292,6 @@ scene "SanMiguel"
 		material "material_245"
 	}
 
-	mesh "SanMiguel_233"
-	{
-		import "Meshes/SanMiguel/SanMiguel_233.cmsh"
-	}
-	scene_node "SanMiguel_233"
-	{
-		position 15.5996 3.28137 4.84954
-	}
 	object "SanMiguel_233"
 	{
 		parent "SanMiguel_233"
@@ -3569,14 +4299,6 @@ scene "SanMiguel"
 		material "material_124"
 	}
 
-	mesh "SanMiguel_234"
-	{
-		import "Meshes/SanMiguel/SanMiguel_234.cmsh"
-	}
-	scene_node "SanMiguel_234"
-	{
-		position 22.5196 3.96733 6.34449
-	}
 	object "SanMiguel_234"
 	{
 		parent "SanMiguel_234"
@@ -3584,14 +4306,6 @@ scene "SanMiguel"
 		material "material_140"
 	}
 
-	mesh "SanMiguel_235"
-	{
-		import "Meshes/SanMiguel/SanMiguel_235.cmsh"
-	}
-	scene_node "SanMiguel_235"
-	{
-		position 22.2508 6.80001 0.12025
-	}
 	object "SanMiguel_235"
 	{
 		parent "SanMiguel_235"
@@ -3599,14 +4313,6 @@ scene "SanMiguel"
 		material "material_207"
 	}
 
-	mesh "SanMiguel_236"
-	{
-		import "Meshes/SanMiguel/SanMiguel_236.cmsh"
-	}
-	scene_node "SanMiguel_236"
-	{
-		position 14.9457 3.09664 -0.905259
-	}
 	object "SanMiguel_236"
 	{
 		parent "SanMiguel_236"
@@ -3614,14 +4320,6 @@ scene "SanMiguel"
 		material "material_148"
 	}
 
-	mesh "SanMiguel_237"
-	{
-		import "Meshes/SanMiguel/SanMiguel_237.cmsh"
-	}
-	scene_node "SanMiguel_237"
-	{
-		position 17.1951 5.90444 0.444354
-	}
 	object "SanMiguel_237"
 	{
 		parent "SanMiguel_237"
@@ -3629,14 +4327,6 @@ scene "SanMiguel"
 		material "material_152"
 	}
 
-	mesh "SanMiguel_238"
-	{
-		import "Meshes/SanMiguel/SanMiguel_238.cmsh"
-	}
-	scene_node "SanMiguel_238"
-	{
-		position 23.0679 6.61066 2.18142
-	}
 	object "SanMiguel_238"
 	{
 		parent "SanMiguel_238"
@@ -3644,14 +4334,6 @@ scene "SanMiguel"
 		material "material_158"
 	}
 
-	mesh "SanMiguel_239"
-	{
-		import "Meshes/SanMiguel/SanMiguel_239.cmsh"
-	}
-	scene_node "SanMiguel_239"
-	{
-		position 22.2547 6.64608 0.125501
-	}
 	object "SanMiguel_239"
 	{
 		parent "SanMiguel_239"
@@ -3659,14 +4341,13 @@ scene "SanMiguel"
 		material "material_208"
 	}
 
-	mesh "SanMiguel_240"
+	object "SanMiguel_24"
 	{
-		import "Meshes/SanMiguel/SanMiguel_240.cmsh"
+		parent "SanMiguel_24"
+		mesh "SanMiguel_24"
+		material "material_218"
 	}
-	scene_node "SanMiguel_240"
-	{
-		position 22.2207 6.57337 0.123946
-	}
+
 	object "SanMiguel_240"
 	{
 		parent "SanMiguel_240"
@@ -3674,14 +4355,6 @@ scene "SanMiguel"
 		material "material_221"
 	}
 
-	mesh "SanMiguel_241"
-	{
-		import "Meshes/SanMiguel/SanMiguel_241.cmsh"
-	}
-	scene_node "SanMiguel_241"
-	{
-		position 22.217 6.58304 0.11796
-	}
 	object "SanMiguel_241"
 	{
 		parent "SanMiguel_241"
@@ -3689,14 +4362,6 @@ scene "SanMiguel"
 		material "material_223"
 	}
 
-	mesh "SanMiguel_242"
-	{
-		import "Meshes/SanMiguel/SanMiguel_242.cmsh"
-	}
-	scene_node "SanMiguel_242"
-	{
-		position 22.2066 6.68642 0.116292
-	}
 	object "SanMiguel_242"
 	{
 		parent "SanMiguel_242"
@@ -3704,14 +4369,6 @@ scene "SanMiguel"
 		material "material_224"
 	}
 
-	mesh "SanMiguel_243"
-	{
-		import "Meshes/SanMiguel/SanMiguel_243.cmsh"
-	}
-	scene_node "SanMiguel_243"
-	{
-		position 23.2782 6.68991 2.19166
-	}
 	object "SanMiguel_243"
 	{
 		parent "SanMiguel_243"
@@ -3719,14 +4376,6 @@ scene "SanMiguel"
 		material "material_231"
 	}
 
-	mesh "SanMiguel_244"
-	{
-		import "Meshes/SanMiguel/SanMiguel_244.cmsh"
-	}
-	scene_node "SanMiguel_244"
-	{
-		position 19.7976 6.22489 -2.77486
-	}
 	object "SanMiguel_244"
 	{
 		parent "SanMiguel_244"
@@ -3734,14 +4383,6 @@ scene "SanMiguel"
 		material "material_239"
 	}
 
-	mesh "SanMiguel_245"
-	{
-		import "Meshes/SanMiguel/SanMiguel_245.cmsh"
-	}
-	scene_node "SanMiguel_245"
-	{
-		position 22.2209 6.56185 0.121789
-	}
 	object "SanMiguel_245"
 	{
 		parent "SanMiguel_245"
@@ -3749,14 +4390,6 @@ scene "SanMiguel"
 		material "material_225"
 	}
 
-	mesh "SanMiguel_246"
-	{
-		import "Meshes/SanMiguel/SanMiguel_246.cmsh"
-	}
-	scene_node "SanMiguel_246"
-	{
-		position 23.3095 6.63517 2.19282
-	}
 	object "SanMiguel_246"
 	{
 		parent "SanMiguel_246"
@@ -3764,14 +4397,6 @@ scene "SanMiguel"
 		material "material_232"
 	}
 
-	mesh "SanMiguel_247"
-	{
-		import "Meshes/SanMiguel/SanMiguel_247.cmsh"
-	}
-	scene_node "SanMiguel_247"
-	{
-		position 18.3067 6.2555 0.271366
-	}
 	object "SanMiguel_247"
 	{
 		parent "SanMiguel_247"
@@ -3779,14 +4404,6 @@ scene "SanMiguel"
 		material "material_243"
 	}
 
-	mesh "SanMiguel_248"
-	{
-		import "Meshes/SanMiguel/SanMiguel_248.cmsh"
-	}
-	scene_node "SanMiguel_248"
-	{
-		position 23.2859 6.68952 2.20018
-	}
 	object "SanMiguel_248"
 	{
 		parent "SanMiguel_248"
@@ -3794,14 +4411,6 @@ scene "SanMiguel"
 		material "material_230"
 	}
 
-	mesh "SanMiguel_249"
-	{
-		import "Meshes/SanMiguel/SanMiguel_249.cmsh"
-	}
-	scene_node "SanMiguel_249"
-	{
-		position 23.3132 6.60372 2.19354
-	}
 	object "SanMiguel_249"
 	{
 		parent "SanMiguel_249"
@@ -3809,14 +4418,13 @@ scene "SanMiguel"
 		material "material_235"
 	}
 
-	mesh "SanMiguel_250"
+	object "SanMiguel_25"
 	{
-		import "Meshes/SanMiguel/SanMiguel_250.cmsh"
+		parent "SanMiguel_25"
+		mesh "SanMiguel_25"
+		material "material_186"
 	}
-	scene_node "SanMiguel_250"
-	{
-		position 23.2872 6.7014 2.19669
-	}
+
 	object "SanMiguel_250"
 	{
 		parent "SanMiguel_250"
@@ -3824,14 +4432,6 @@ scene "SanMiguel"
 		material "material_228"
 	}
 
-	mesh "SanMiguel_251"
-	{
-		import "Meshes/SanMiguel/SanMiguel_251.cmsh"
-	}
-	scene_node "SanMiguel_251"
-	{
-		position 18.2946 6.31244 0.274769
-	}
 	object "SanMiguel_251"
 	{
 		parent "SanMiguel_251"
@@ -3839,14 +4439,6 @@ scene "SanMiguel"
 		material "material_244"
 	}
 
-	mesh "SanMiguel_252"
-	{
-		import "Meshes/SanMiguel/SanMiguel_252.cmsh"
-	}
-	scene_node "SanMiguel_252"
-	{
-		position 23.2768 6.60781 1.83221
-	}
 	object "SanMiguel_252"
 	{
 		parent "SanMiguel_252"
@@ -3854,14 +4446,6 @@ scene "SanMiguel"
 		material "material_265"
 	}
 
-	mesh "SanMiguel_253"
-	{
-		import "Meshes/SanMiguel/SanMiguel_253.cmsh"
-	}
-	scene_node "SanMiguel_253"
-	{
-		position 7.03392 1.58801 8.39047
-	}
 	object "SanMiguel_253"
 	{
 		parent "SanMiguel_253"
@@ -3869,14 +4453,6 @@ scene "SanMiguel"
 		material "material_133"
 	}
 
-	mesh "SanMiguel_254"
-	{
-		import "Meshes/SanMiguel/SanMiguel_254.cmsh"
-	}
-	scene_node "SanMiguel_254"
-	{
-		position 16.3046 0.499877 -1.76861
-	}
 	object "SanMiguel_254"
 	{
 		parent "SanMiguel_254"
@@ -3884,14 +4460,6 @@ scene "SanMiguel"
 		material "material_268"
 	}
 
-	mesh "SanMiguel_255"
-	{
-		import "Meshes/SanMiguel/SanMiguel_255.cmsh"
-	}
-	scene_node "SanMiguel_255"
-	{
-		position 16.3094 0.502355 -1.76814
-	}
 	object "SanMiguel_255"
 	{
 		parent "SanMiguel_255"
@@ -3899,14 +4467,6 @@ scene "SanMiguel"
 		material "material_269"
 	}
 
-	mesh "SanMiguel_256"
-	{
-		import "Meshes/SanMiguel/SanMiguel_256.cmsh"
-	}
-	scene_node "SanMiguel_256"
-	{
-		position 16.3164 0.57717 -1.7675
-	}
 	object "SanMiguel_256"
 	{
 		parent "SanMiguel_256"
@@ -3914,14 +4474,6 @@ scene "SanMiguel"
 		material "material_270"
 	}
 
-	mesh "SanMiguel_257"
-	{
-		import "Meshes/SanMiguel/SanMiguel_257.cmsh"
-	}
-	scene_node "SanMiguel_257"
-	{
-		position 15.7197 6.17734 -2.08194
-	}
 	object "SanMiguel_257"
 	{
 		parent "SanMiguel_257"
@@ -3929,14 +4481,6 @@ scene "SanMiguel"
 		material "material_277"
 	}
 
-	mesh "SanMiguel_258"
-	{
-		import "Meshes/SanMiguel/SanMiguel_258.cmsh"
-	}
-	scene_node "SanMiguel_258"
-	{
-		position 15.7199 6.00173 -2.08264
-	}
 	object "SanMiguel_258"
 	{
 		parent "SanMiguel_258"
@@ -3944,14 +4488,6 @@ scene "SanMiguel"
 		material "material_276"
 	}
 
-	mesh "SanMiguel_259"
-	{
-		import "Meshes/SanMiguel/SanMiguel_259.cmsh"
-	}
-	scene_node "SanMiguel_259"
-	{
-		position 16.4948 0.328808 4.93666
-	}
 	object "SanMiguel_259"
 	{
 		parent "SanMiguel_259"
@@ -3959,14 +4495,13 @@ scene "SanMiguel"
 		material "material_271"
 	}
 
-	mesh "SanMiguel_260"
+	object "SanMiguel_26"
 	{
-		import "Meshes/SanMiguel/SanMiguel_260.cmsh"
+		parent "SanMiguel_26"
+		mesh "SanMiguel_26"
+		material "material_212"
 	}
-	scene_node "SanMiguel_260"
-	{
-		position 16.4272 0.682975 -1.72321
-	}
+
 	object "SanMiguel_260"
 	{
 		parent "SanMiguel_260"
@@ -3974,14 +4509,6 @@ scene "SanMiguel"
 		material "material_275"
 	}
 
-	mesh "SanMiguel_261"
-	{
-		import "Meshes/SanMiguel/SanMiguel_261.cmsh"
-	}
-	scene_node "SanMiguel_261"
-	{
-		position 16.4942 0.794211 -1.71005
-	}
 	object "SanMiguel_261"
 	{
 		parent "SanMiguel_261"
@@ -3989,14 +4516,6 @@ scene "SanMiguel"
 		material "material_272"
 	}
 
-	mesh "SanMiguel_262"
-	{
-		import "Meshes/SanMiguel/SanMiguel_262.cmsh"
-	}
-	scene_node "SanMiguel_262"
-	{
-		position 16.5017 0.725559 -1.72108
-	}
 	object "SanMiguel_262"
 	{
 		parent "SanMiguel_262"
@@ -4004,14 +4523,6 @@ scene "SanMiguel"
 		material "material_274"
 	}
 
-	mesh "SanMiguel_263"
-	{
-		import "Meshes/SanMiguel/SanMiguel_263.cmsh"
-	}
-	scene_node "SanMiguel_263"
-	{
-		position 16.5043 0.747592 -1.70861
-	}
 	object "SanMiguel_263"
 	{
 		parent "SanMiguel_263"
@@ -4019,14 +4530,6 @@ scene "SanMiguel"
 		material "material_273"
 	}
 
-	mesh "SanMiguel_264"
-	{
-		import "Meshes/SanMiguel/SanMiguel_264.cmsh"
-	}
-	scene_node "SanMiguel_264"
-	{
-		position 15.6724 6.29868 -2.09266
-	}
 	object "SanMiguel_264"
 	{
 		parent "SanMiguel_264"
@@ -4034,14 +4537,6 @@ scene "SanMiguel"
 		material "material_278"
 	}
 
-	mesh "SanMiguel_265"
-	{
-		import "Meshes/SanMiguel/SanMiguel_265.cmsh"
-	}
-	scene_node "SanMiguel_265"
-	{
-		position 15.2483 0.69724 7.08488
-	}
 	object "SanMiguel_265"
 	{
 		parent "SanMiguel_265"
@@ -4049,14 +4544,6 @@ scene "SanMiguel"
 		material "material_032"
 	}
 
-	mesh "SanMiguel_266"
-	{
-		import "Meshes/SanMiguel/SanMiguel_266.cmsh"
-	}
-	scene_node "SanMiguel_266"
-	{
-		position 16.4799 7.23072 4.12875
-	}
 	object "SanMiguel_266"
 	{
 		parent "SanMiguel_266"
@@ -4064,14 +4551,6 @@ scene "SanMiguel"
 		material "material_76"
 	}
 
-	mesh "SanMiguel_267"
-	{
-		import "Meshes/SanMiguel/SanMiguel_267.cmsh"
-	}
-	scene_node "SanMiguel_267"
-	{
-		position 18.2509 8.08144 4.09241
-	}
 	object "SanMiguel_267"
 	{
 		parent "SanMiguel_267"
@@ -4079,14 +4558,6 @@ scene "SanMiguel"
 		material "material_80"
 	}
 
-	mesh "SanMiguel_268"
-	{
-		import "Meshes/SanMiguel/SanMiguel_268.cmsh"
-	}
-	scene_node "SanMiguel_268"
-	{
-		position 18.2517 8.40489 4.09379
-	}
 	object "SanMiguel_268"
 	{
 		parent "SanMiguel_268"
@@ -4094,14 +4565,6 @@ scene "SanMiguel"
 		material "material_79"
 	}
 
-	mesh "SanMiguel_269"
-	{
-		import "Meshes/SanMiguel/SanMiguel_269.cmsh"
-	}
-	scene_node "SanMiguel_269"
-	{
-		position 18.2515 8.03176 4.09312
-	}
 	object "SanMiguel_269"
 	{
 		parent "SanMiguel_269"
@@ -4109,14 +4572,13 @@ scene "SanMiguel"
 		material "material_77"
 	}
 
-	mesh "SanMiguel_270"
+	object "SanMiguel_27"
 	{
-		import "Meshes/SanMiguel/SanMiguel_270.cmsh"
+		parent "SanMiguel_27"
+		mesh "SanMiguel_27"
+		material "material_209"
 	}
-	scene_node "SanMiguel_270"
-	{
-		position 18.2518 8.3253 4.09341
-	}
+
 	object "SanMiguel_270"
 	{
 		parent "SanMiguel_270"
@@ -4124,14 +4586,6 @@ scene "SanMiguel"
 		material "material_78"
 	}
 
-	mesh "SanMiguel_271"
-	{
-		import "Meshes/SanMiguel/SanMiguel_271.cmsh"
-	}
-	scene_node "SanMiguel_271"
-	{
-		position 15.108 0.0948234 3.7618
-	}
 	object "SanMiguel_271"
 	{
 		parent "SanMiguel_271"
@@ -4139,14 +4593,6 @@ scene "SanMiguel"
 		material "materialq"
 	}
 
-	mesh "SanMiguel_272"
-	{
-		import "Meshes/SanMiguel/SanMiguel_272.cmsh"
-	}
-	scene_node "SanMiguel_272"
-	{
-		position 15.107 1.57889 3.76181
-	}
 	object "SanMiguel_272"
 	{
 		parent "SanMiguel_272"
@@ -4154,14 +4600,6 @@ scene "SanMiguel"
 		material "materialr"
 	}
 
-	mesh "SanMiguel_273"
-	{
-		import "Meshes/SanMiguel/SanMiguel_273.cmsh"
-	}
-	scene_node "SanMiguel_273"
-	{
-		position 15.108 0.753753 3.7569
-	}
 	object "SanMiguel_273"
 	{
 		parent "SanMiguel_273"
@@ -4169,14 +4607,6 @@ scene "SanMiguel"
 		material "materialp"
 	}
 
-	mesh "SanMiguel_274"
-	{
-		import "Meshes/SanMiguel/SanMiguel_274.cmsh"
-	}
-	scene_node "SanMiguel_274"
-	{
-		position 16.447 6.24673 0.125415
-	}
 	object "SanMiguel_274"
 	{
 		parent "SanMiguel_274"
@@ -4184,14 +4614,6 @@ scene "SanMiguel"
 		material "material_83"
 	}
 
-	mesh "SanMiguel_275"
-	{
-		import "Meshes/SanMiguel/SanMiguel_275.cmsh"
-	}
-	scene_node "SanMiguel_275"
-	{
-		position 16.4446 6.34286 0.12556
-	}
 	object "SanMiguel_275"
 	{
 		parent "SanMiguel_275"
@@ -4199,14 +4621,6 @@ scene "SanMiguel"
 		material "material_82"
 	}
 
-	mesh "SanMiguel_276"
-	{
-		import "Meshes/SanMiguel/SanMiguel_276.cmsh"
-	}
-	scene_node "SanMiguel_276"
-	{
-		position 16.4442 7.18992 0.12649
-	}
 	object "SanMiguel_276"
 	{
 		parent "SanMiguel_276"
@@ -4214,14 +4628,6 @@ scene "SanMiguel"
 		material "material_81"
 	}
 
-	mesh "SanMiguel_277"
-	{
-		import "Meshes/SanMiguel/SanMiguel_277.cmsh"
-	}
-	scene_node "SanMiguel_277"
-	{
-		position 16.4442 6.15532 0.125735
-	}
 	object "SanMiguel_277"
 	{
 		parent "SanMiguel_277"
@@ -4229,14 +4635,6 @@ scene "SanMiguel"
 		material "materialn"
 	}
 
-	mesh "SanMiguel_278"
-	{
-		import "Meshes/SanMiguel/SanMiguel_278.cmsh"
-	}
-	scene_node "SanMiguel_278"
-	{
-		position 15.1076 0.965377 3.76197
-	}
 	object "SanMiguel_278"
 	{
 		parent "SanMiguel_278"
@@ -4244,14 +4642,6 @@ scene "SanMiguel"
 		material "materialo"
 	}
 
-	mesh "SanMiguel_279"
-	{
-		import "Meshes/SanMiguel/SanMiguel_279.cmsh"
-	}
-	scene_node "SanMiguel_279"
-	{
-		position 15.2702 0.673885 7.1009
-	}
 	object "SanMiguel_279"
 	{
 		parent "SanMiguel_279"
@@ -4259,14 +4649,13 @@ scene "SanMiguel"
 		material "material_284"
 	}
 
-	mesh "SanMiguel_280"
+	object "SanMiguel_28"
 	{
-		import "Meshes/SanMiguel/SanMiguel_280.cmsh"
+		parent "SanMiguel_28"
+		mesh "SanMiguel_28"
+		material "material_210"
 	}
-	scene_node "SanMiguel_280"
-	{
-		position 15.2812 0.593297 7.0985
-	}
+
 	object "SanMiguel_280"
 	{
 		parent "SanMiguel_280"
@@ -4274,14 +4663,6 @@ scene "SanMiguel"
 		material "material_279"
 	}
 
-	mesh "SanMiguel_281"
-	{
-		import "Meshes/SanMiguel/SanMiguel_281.cmsh"
-	}
-	scene_node "SanMiguel_281"
-	{
-		position 15.1991 0.457874 7.0444
-	}
 	object "SanMiguel_281"
 	{
 		parent "SanMiguel_281"
@@ -4289,14 +4670,6 @@ scene "SanMiguel"
 		material "material_280"
 	}
 
-	mesh "SanMiguel_282"
-	{
-		import "Meshes/SanMiguel/SanMiguel_282.cmsh"
-	}
-	scene_node "SanMiguel_282"
-	{
-		position 15.2124 -0.103501 7.04923
-	}
 	object "SanMiguel_282"
 	{
 		parent "SanMiguel_282"
@@ -4304,14 +4677,6 @@ scene "SanMiguel"
 		material "CafeChair_Metal"
 	}
 
-	mesh "SanMiguel_283"
-	{
-		import "Meshes/SanMiguel/SanMiguel_283.cmsh"
-	}
-	scene_node "SanMiguel_283"
-	{
-		position 15.2019 0.417431 7.04162
-	}
 	object "SanMiguel_283"
 	{
 		parent "SanMiguel_283"
@@ -4319,14 +4684,6 @@ scene "SanMiguel"
 		material "material_285"
 	}
 
-	mesh "SanMiguel_284"
-	{
-		import "Meshes/SanMiguel/SanMiguel_284.cmsh"
-	}
-	scene_node "SanMiguel_284"
-	{
-		position 15.1969 0.450253 7.03792
-	}
 	object "SanMiguel_284"
 	{
 		parent "SanMiguel_284"
@@ -4334,14 +4691,6 @@ scene "SanMiguel"
 		material "material_286"
 	}
 
-	mesh "SanMiguel_285"
-	{
-		import "Meshes/SanMiguel/SanMiguel_285.cmsh"
-	}
-	scene_node "SanMiguel_285"
-	{
-		position 13.948 0.449685 7.31897
-	}
 	object "SanMiguel_285"
 	{
 		parent "SanMiguel_285"
@@ -4349,19 +4698,557 @@ scene "SanMiguel"
 		material "material_282"
 	}
 
-	mesh "SanMiguel_286"
-	{
-		import "Meshes/SanMiguel/SanMiguel_286.cmsh"
-	}
-	scene_node "SanMiguel_286"
-	{
-		position 13.9473 0.405253 7.31911
-	}
 	object "SanMiguel_286"
 	{
 		parent "SanMiguel_286"
 		mesh "SanMiguel_286"
 		material "material_281"
+	}
+
+	object "SanMiguel_29"
+	{
+		parent "SanMiguel_29"
+		mesh "SanMiguel_29"
+		material "material_205"
+	}
+
+	object "SanMiguel_3"
+	{
+		parent "SanMiguel_3"
+		mesh "SanMiguel_3"
+		material "material_036"
+	}
+
+	object "SanMiguel_30"
+	{
+		parent "SanMiguel_30"
+		mesh "SanMiguel_30"
+		material "material_202"
+	}
+
+	object "SanMiguel_31"
+	{
+		parent "SanMiguel_31"
+		mesh "SanMiguel_31"
+		material "material_201"
+	}
+
+	object "SanMiguel_32"
+	{
+		parent "SanMiguel_32"
+		mesh "SanMiguel_32"
+		material "material_185"
+	}
+
+	object "SanMiguel_33"
+	{
+		parent "SanMiguel_33"
+		mesh "SanMiguel_33"
+		material "material_177"
+	}
+
+	object "SanMiguel_34"
+	{
+		parent "SanMiguel_34"
+		mesh "SanMiguel_34"
+		material "material_215"
+	}
+
+	object "SanMiguel_35"
+	{
+		parent "SanMiguel_35"
+		mesh "SanMiguel_35"
+		material "material_211"
+	}
+
+	object "SanMiguel_36"
+	{
+		parent "SanMiguel_36"
+		mesh "SanMiguel_36"
+		material "material_213"
+	}
+
+	object "SanMiguel_37"
+	{
+		parent "SanMiguel_37"
+		mesh "SanMiguel_37"
+		material "material_250"
+	}
+
+	object "SanMiguel_38"
+	{
+		parent "SanMiguel_38"
+		mesh "SanMiguel_38"
+		material "material_236"
+	}
+
+	object "SanMiguel_39"
+	{
+		parent "SanMiguel_39"
+		mesh "SanMiguel_39"
+		material "material_262"
+	}
+
+	object "SanMiguel_4"
+	{
+		parent "SanMiguel_4"
+		mesh "SanMiguel_4"
+		material "material_034"
+	}
+
+	object "SanMiguel_40"
+	{
+		parent "SanMiguel_40"
+		mesh "SanMiguel_40"
+		material "material_255"
+	}
+
+	object "SanMiguel_41"
+	{
+		parent "SanMiguel_41"
+		mesh "SanMiguel_41"
+		material "material_258"
+	}
+
+	object "SanMiguel_42"
+	{
+		parent "SanMiguel_42"
+		mesh "SanMiguel_42"
+		material "material_214"
+	}
+
+	object "SanMiguel_43"
+	{
+		parent "SanMiguel_43"
+		mesh "SanMiguel_43"
+		material "material_194"
+	}
+
+	object "SanMiguel_44"
+	{
+		parent "SanMiguel_44"
+		mesh "SanMiguel_44"
+		material "material_259"
+	}
+
+	object "SanMiguel_45"
+	{
+		parent "SanMiguel_45"
+		mesh "SanMiguel_45"
+		material "material_222"
+	}
+
+	object "SanMiguel_46"
+	{
+		parent "SanMiguel_46"
+		mesh "SanMiguel_46"
+		material "material_196"
+	}
+
+	object "SanMiguel_47"
+	{
+		parent "SanMiguel_47"
+		mesh "SanMiguel_47"
+		material "material_200"
+	}
+
+	object "SanMiguel_48"
+	{
+		parent "SanMiguel_48"
+		mesh "SanMiguel_48"
+		material "material_227"
+	}
+
+	object "SanMiguel_49"
+	{
+		parent "SanMiguel_49"
+		mesh "SanMiguel_49"
+		material "material_247"
+	}
+
+	object "SanMiguel_5"
+	{
+		parent "SanMiguel_5"
+		mesh "SanMiguel_5"
+		material "material_041"
+	}
+
+	object "SanMiguel_50"
+	{
+		parent "SanMiguel_50"
+		mesh "SanMiguel_50"
+		material "material_246"
+	}
+
+	object "SanMiguel_51"
+	{
+		parent "SanMiguel_51"
+		mesh "SanMiguel_51"
+		material "material_190"
+	}
+
+	object "SanMiguel_52"
+	{
+		parent "SanMiguel_52"
+		mesh "SanMiguel_52"
+		material "material_254"
+	}
+
+	object "SanMiguel_53"
+	{
+		parent "SanMiguel_53"
+		mesh "SanMiguel_53"
+		material "material_256"
+	}
+
+	object "SanMiguel_54"
+	{
+		parent "SanMiguel_54"
+		mesh "SanMiguel_54"
+		material "material_238"
+	}
+
+	object "SanMiguel_55"
+	{
+		parent "SanMiguel_55"
+		mesh "SanMiguel_55"
+		material "material_197"
+	}
+
+	object "SanMiguel_56"
+	{
+		parent "SanMiguel_56"
+		mesh "SanMiguel_56"
+		material "material_220"
+	}
+
+	object "SanMiguel_57"
+	{
+		parent "SanMiguel_57"
+		mesh "SanMiguel_57"
+		material "material_261"
+	}
+
+	object "SanMiguel_58"
+	{
+		parent "SanMiguel_58"
+		mesh "SanMiguel_58"
+		material "material_240"
+	}
+
+	object "SanMiguel_59"
+	{
+		parent "SanMiguel_59"
+		mesh "SanMiguel_59"
+		material "materials"
+	}
+
+	object "SanMiguel_6"
+	{
+		parent "SanMiguel_6"
+		mesh "SanMiguel_6"
+		material "material_039"
+	}
+
+	object "SanMiguel_60"
+	{
+		parent "SanMiguel_60"
+		mesh "SanMiguel_60"
+		material "material_260"
+	}
+
+	object "SanMiguel_61"
+	{
+		parent "SanMiguel_61"
+		mesh "SanMiguel_61"
+		material "material_183"
+	}
+
+	object "SanMiguel_62"
+	{
+		parent "SanMiguel_62"
+		mesh "SanMiguel_62"
+		material "materialy"
+	}
+
+	object "SanMiguel_63"
+	{
+		parent "SanMiguel_63"
+		mesh "SanMiguel_63"
+		material "material_147"
+	}
+
+	object "SanMiguel_64"
+	{
+		parent "SanMiguel_64"
+		mesh "SanMiguel_64"
+		material "material_182"
+	}
+
+	object "SanMiguel_65"
+	{
+		parent "SanMiguel_65"
+		mesh "SanMiguel_65"
+		material "material_184"
+	}
+
+	object "SanMiguel_66"
+	{
+		parent "SanMiguel_66"
+		mesh "SanMiguel_66"
+		material "material_187"
+	}
+
+	object "SanMiguel_67"
+	{
+		parent "SanMiguel_67"
+		mesh "SanMiguel_67"
+		material "material_143"
+	}
+
+	object "SanMiguel_68"
+	{
+		parent "SanMiguel_68"
+		mesh "SanMiguel_68"
+		material "material_188"
+	}
+
+	object "SanMiguel_69"
+	{
+		parent "SanMiguel_69"
+		mesh "SanMiguel_69"
+		material "material_134"
+	}
+
+	object "SanMiguel_7"
+	{
+		parent "SanMiguel_7"
+		mesh "SanMiguel_7"
+		material "material_038"
+	}
+
+	object "SanMiguel_70"
+	{
+		parent "SanMiguel_70"
+		mesh "SanMiguel_70"
+		material "material_145"
+	}
+
+	object "SanMiguel_71"
+	{
+		parent "SanMiguel_71"
+		mesh "SanMiguel_71"
+		material "material_131"
+	}
+
+	object "SanMiguel_72"
+	{
+		parent "SanMiguel_72"
+		mesh "SanMiguel_72"
+		material "material_142"
+	}
+
+	object "SanMiguel_73"
+	{
+		parent "SanMiguel_73"
+		mesh "SanMiguel_73"
+		material "material_135"
+	}
+
+	object "SanMiguel_74"
+	{
+		parent "SanMiguel_74"
+		mesh "SanMiguel_74"
+		material "material_150"
+	}
+
+	object "SanMiguel_75"
+	{
+		parent "SanMiguel_75"
+		mesh "SanMiguel_75"
+		material "materialw"
+	}
+
+	object "SanMiguel_76"
+	{
+		parent "SanMiguel_76"
+		mesh "SanMiguel_76"
+		material "material_138"
+	}
+
+	object "SanMiguel_77"
+	{
+		parent "SanMiguel_77"
+		mesh "SanMiguel_77"
+		material "material_162"
+	}
+
+	object "SanMiguel_78"
+	{
+		parent "SanMiguel_78"
+		mesh "SanMiguel_78"
+		material "material_132"
+	}
+
+	object "SanMiguel_79"
+	{
+		parent "SanMiguel_79"
+		mesh "SanMiguel_79"
+		material "material_179"
+	}
+
+	object "SanMiguel_8"
+	{
+		parent "SanMiguel_8"
+		mesh "SanMiguel_8"
+		material "material_042"
+	}
+
+	object "SanMiguel_80"
+	{
+		parent "SanMiguel_80"
+		mesh "SanMiguel_80"
+		material "material_149"
+	}
+
+	object "SanMiguel_81"
+	{
+		parent "SanMiguel_81"
+		mesh "SanMiguel_81"
+		material "material_178"
+	}
+
+	object "SanMiguel_82"
+	{
+		parent "SanMiguel_82"
+		mesh "SanMiguel_82"
+		material "material_151"
+	}
+
+	object "SanMiguel_83"
+	{
+		parent "SanMiguel_83"
+		mesh "SanMiguel_83"
+		material "material_193"
+	}
+
+	object "SanMiguel_84"
+	{
+		parent "SanMiguel_84"
+		mesh "SanMiguel_84"
+		material "material_198"
+	}
+
+	object "SanMiguel_85"
+	{
+		parent "SanMiguel_85"
+		mesh "SanMiguel_85"
+		material "material_195"
+	}
+
+	object "SanMiguel_86"
+	{
+		parent "SanMiguel_86"
+		mesh "SanMiguel_86"
+		material "material_216"
+	}
+
+	object "SanMiguel_87"
+	{
+		parent "SanMiguel_87"
+		mesh "SanMiguel_87"
+		material "material_219"
+	}
+
+	object "SanMiguel_88"
+	{
+		parent "SanMiguel_88"
+		mesh "SanMiguel_88"
+		material "material_226"
+	}
+
+	object "SanMiguel_89"
+	{
+		parent "SanMiguel_89"
+		mesh "SanMiguel_89"
+		material "material_233"
+	}
+
+	object "SanMiguel_9"
+	{
+		parent "SanMiguel_9"
+		mesh "SanMiguel_9"
+		material "material_040"
+	}
+
+	object "SanMiguel_90"
+	{
+		parent "SanMiguel_90"
+		mesh "SanMiguel_90"
+		material "material_199"
+	}
+
+	object "SanMiguel_91"
+	{
+		parent "SanMiguel_91"
+		mesh "SanMiguel_91"
+		material "material_217"
+	}
+
+	object "SanMiguel_92"
+	{
+		parent "SanMiguel_92"
+		mesh "SanMiguel_92"
+		material "material_192"
+	}
+
+	object "SanMiguel_93"
+	{
+		parent "SanMiguel_93"
+		mesh "SanMiguel_93"
+		material "material_234"
+	}
+
+	object "SanMiguel_94"
+	{
+		parent "SanMiguel_94"
+		mesh "SanMiguel_94"
+		material "material_242"
+	}
+
+	object "SanMiguel_95"
+	{
+		parent "SanMiguel_95"
+		mesh "SanMiguel_95"
+		material "material_249"
+	}
+
+	object "SanMiguel_96"
+	{
+		parent "SanMiguel_96"
+		mesh "SanMiguel_96"
+		material "material_251"
+	}
+
+	object "SanMiguel_97"
+	{
+		parent "SanMiguel_97"
+		mesh "SanMiguel_97"
+		material "material_252"
+	}
+
+	object "SanMiguel_98"
+	{
+		parent "SanMiguel_98"
+		mesh "SanMiguel_98"
+		material "material_253"
+	}
+
+	object "SanMiguel_99"
+	{
+		parent "SanMiguel_99"
+		mesh "SanMiguel_99"
+		material "material_257"
 	}
 }
 
@@ -4377,7 +5264,7 @@ window "SanMiguel"
 		size 1920 1080
 		format argb32
 		tone_mapping "linear"
-		postfx "bloom" -Size=5
+		// postfx "bloom" -Size=5
 
 		hdr_config
 		{
@@ -4387,9 +5274,10 @@ window "SanMiguel"
 
 		smaa
 		{
-			mode T2X
+			mode 1X
+			edgeDetection colour
 			preset ultra
-			reprojection false
+			reprojection true
 		}
 
 		ssao

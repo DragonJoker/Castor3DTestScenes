@@ -1,5 +1,5 @@
 // Global configuration
-debug_overlays true
+// debug_overlays true
 materials phong
 
 scene "BaltardOut"
@@ -174,8 +174,8 @@ scene "BaltardOut"
 
 	scene_node "CameraNode"
 	{
-		orientation 1 0 0 0
-		position 0 200 0
+		orientation 0.479944 -0.846948 0.228763 58.7399
+		position 2205.67 924.019 -635.787
 		scale 1 1 1
 	}
 
@@ -486,7 +486,7 @@ scene "BaltardOut"
 
 	scene_node "LightNode"
 	{
-		orientation 1 0 0 90
+		orientation 1 0 0 38.3301
 	}
 
 	scene_node "maison_baltard_01"
@@ -1081,13 +1081,11 @@ scene "BaltardOut"
 		shadows
 		{
 			producer true
-			filter raw
+			filter pcf
 			min_offset 0.001
-			max_slope_offset 0.001
+			max_slope_offset 0.000001
 			variance_max 0.0000001
 			variance_bias 0.15
-			// volumetric_steps 10
-			// volumetric_scattering 0.2
 		}
 	}
 

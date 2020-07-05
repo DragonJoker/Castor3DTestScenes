@@ -20,7 +20,7 @@ material "CafeChair_Metal"
 	{
 		diffuse 0.480000 0.480000 0.480000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 8 //
 	}
 }
@@ -31,7 +31,7 @@ material "Default"
 	{
 		diffuse 0.480000 0.480000 0.480000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 4
 		two_sided true
 	}
@@ -43,7 +43,7 @@ material "material_0"
 	{
 		diffuse 0.100000 0.100000 0.100000
 		specular 0.500000 0.500000 0.500000
-		ambient 0
+		ambient 1.0
 		shininess 128 //
 	}
 }
@@ -54,7 +54,7 @@ material "material_032"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -72,7 +72,7 @@ material "material_033"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.196078 0.196078 0.196078
-		ambient 0
+		ambient 1.0
 		shininess 8 //
 
 		texture_unit
@@ -90,7 +90,7 @@ material "material_034"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.196078 0.196078 0.196078
-		ambient 0
+		ambient 1.0
 		shininess 8 //
 
 		texture_unit
@@ -108,7 +108,7 @@ material "material_035"
 	{
 		diffuse 0.776471 0.756863 0.721569
 		specular 0.0128628 0.0128628 0.0128628
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 	}
 }
@@ -119,7 +119,7 @@ material "material_036"
 	{
 		diffuse 0.121569 0.113726 0.101961
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 	}
 }
@@ -130,7 +130,7 @@ material "material_038"
 	{
 		diffuse 0.0862740 0.0823530 0.0745100
 		specular 0.449019 0.403922 0.354902
-		ambient 0
+		ambient 1.0
 		shininess 8 //
 	}
 }
@@ -141,7 +141,7 @@ material "material_039"
 	{
 		diffuse 0.776471 0.749020 0.709804
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -159,7 +159,7 @@ material "material_040"
 	{
 		diffuse 0.301950 0.875973 0.726676
 		specular 0.301950 0.875973 0.726676
-		ambient 0
+		ambient 1.0
 		shininess 8 //
 	}
 }
@@ -170,7 +170,7 @@ material "material_041"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
-		ambient 0
+		ambient 1.0
 		shininess 8 //
 		alpha 0.5
 		alpha_blend_mode interpolative
@@ -183,7 +183,7 @@ material "material_042"
 	{
 		diffuse 0.142338 0.462081 0.235328
 		specular 0.142338 0.462081 0.235328
-		ambient 0
+		ambient 1.0
 		shininess 8 //
 	}
 }
@@ -194,7 +194,7 @@ material "material_1"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -219,7 +219,7 @@ material "material_10"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -237,7 +237,7 @@ material "material_11"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -262,7 +262,7 @@ material "material_12"
 	{
 		diffuse 0.750000 0.750000 0.750000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 	}
 }
@@ -273,7 +273,7 @@ material "material_123"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.00658824 0.00658824 0.00658824
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -298,7 +298,7 @@ material "material_124"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -323,7 +323,7 @@ material "material_125"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -348,7 +348,7 @@ material "material_126"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -373,7 +373,7 @@ material "material_127"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -398,7 +398,7 @@ material "material_128"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -423,7 +423,7 @@ material "material_129"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -448,7 +448,7 @@ material "material_13"
 	{
 		diffuse 0.549020 0.549020 0.549020
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 	}
 }
@@ -459,7 +459,7 @@ material "material_130"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -484,7 +484,7 @@ material "material_131"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -511,7 +511,7 @@ material "material_132"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -529,7 +529,7 @@ material "material_133"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -556,7 +556,7 @@ material "material_134"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -583,7 +583,7 @@ material "material_135"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -610,7 +610,7 @@ material "material_136"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -637,7 +637,7 @@ material "material_137"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -655,7 +655,7 @@ material "material_138"
 	{
 		diffuse 0.147313 0.165899 0.988525
 		specular 0.00589252 0.00663596 0.0395410
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -682,7 +682,7 @@ material "material_139"
 	{
 		diffuse 0.445692 0.119083 0.00466900
 		specular 0.0178277 0.00476332 0.000186760
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -709,7 +709,7 @@ material "material_14"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -741,7 +741,7 @@ material "material_140"
 	{
 		diffuse 0.00891100 0.377880 0.531663
 		specular 0.000356440 0.0151152 0.0212665
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 	}
 }
@@ -752,7 +752,7 @@ material "material_141"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -770,7 +770,7 @@ material "material_142"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -797,7 +797,7 @@ material "material_143"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -824,7 +824,7 @@ material "material_144"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -851,7 +851,7 @@ material "material_145"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -878,7 +878,7 @@ material "material_146"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -896,7 +896,7 @@ material "material_147"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -914,7 +914,7 @@ material "material_148"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -932,7 +932,7 @@ material "material_149"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -959,7 +959,7 @@ material "material_15"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.00454904 0.00454904 0.00454904
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -977,7 +977,7 @@ material "material_150"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1004,7 +1004,7 @@ material "material_151"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1031,7 +1031,7 @@ material "material_152"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1058,7 +1058,7 @@ material "material_153"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1076,7 +1076,7 @@ material "material_154"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1094,7 +1094,7 @@ material "material_155"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1121,7 +1121,7 @@ material "material_156"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1148,7 +1148,7 @@ material "material_157"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1166,7 +1166,7 @@ material "material_158"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1193,7 +1193,7 @@ material "material_159"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1220,7 +1220,7 @@ material "material_16"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1238,7 +1238,7 @@ material "material_160"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1265,7 +1265,7 @@ material "material_161"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1292,7 +1292,7 @@ material "material_162"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1310,7 +1310,7 @@ material "material_163"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1337,7 +1337,7 @@ material "material_164"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1355,7 +1355,7 @@ material "material_165"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1382,7 +1382,7 @@ material "material_166"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1409,7 +1409,7 @@ material "material_167"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1436,7 +1436,7 @@ material "material_168"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1463,7 +1463,7 @@ material "material_169"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1490,7 +1490,7 @@ material "material_17"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1508,7 +1508,7 @@ material "material_170"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1535,7 +1535,7 @@ material "material_171"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1562,7 +1562,7 @@ material "material_172"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1580,7 +1580,7 @@ material "material_173"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1607,7 +1607,7 @@ material "material_174"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1634,7 +1634,7 @@ material "material_175"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1661,7 +1661,7 @@ material "material_176"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1688,7 +1688,7 @@ material "material_177"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1715,7 +1715,7 @@ material "material_178"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1742,7 +1742,7 @@ material "material_179"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1769,7 +1769,7 @@ material "material_18"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1794,7 +1794,7 @@ material "material_180"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1812,7 +1812,7 @@ material "material_181"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1837,7 +1837,7 @@ material "material_182"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.00470588 0.00470588 0.00470588
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1864,7 +1864,7 @@ material "material_183"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1891,7 +1891,7 @@ material "material_184"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1918,7 +1918,7 @@ material "material_185"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1945,7 +1945,7 @@ material "material_186"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -1963,7 +1963,7 @@ material "material_187"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -1990,7 +1990,7 @@ material "material_188"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2017,7 +2017,7 @@ material "material_189"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2044,7 +2044,7 @@ material "material_19"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2062,7 +2062,7 @@ material "material_190"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2080,7 +2080,7 @@ material "material_191"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2107,7 +2107,7 @@ material "material_192"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2134,7 +2134,7 @@ material "material_193"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2152,7 +2152,7 @@ material "material_194"
 	{
 		diffuse 0.571184 0.601764 0.607166
 		specular 0.0228474 0.0240706 0.0242866
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2179,7 +2179,7 @@ material "material_195"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2206,7 +2206,7 @@ material "material_196"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2224,7 +2224,7 @@ material "material_197"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2251,7 +2251,7 @@ material "material_198"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2278,7 +2278,7 @@ material "material_199"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2305,7 +2305,7 @@ material "material_2"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2323,7 +2323,7 @@ material "material_20"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2341,7 +2341,7 @@ material "material_200"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2359,7 +2359,7 @@ material "material_201"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2386,7 +2386,7 @@ material "material_202"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2413,7 +2413,7 @@ material "material_203"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2431,7 +2431,7 @@ material "material_204"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2449,7 +2449,7 @@ material "material_205"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2467,7 +2467,7 @@ material "material_206"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2485,7 +2485,7 @@ material "material_207"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2512,7 +2512,7 @@ material "material_208"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2530,7 +2530,7 @@ material "material_209"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2548,7 +2548,7 @@ material "material_21"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2566,7 +2566,7 @@ material "material_210"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2584,7 +2584,7 @@ material "material_211"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2602,7 +2602,7 @@ material "material_212"
 	{
 		diffuse 0.340958 0.397245 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2629,7 +2629,7 @@ material "material_213"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2647,7 +2647,7 @@ material "material_214"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2665,7 +2665,7 @@ material "material_215"
 	{
 		diffuse 0.858824 0.803922 0.141176
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2692,7 +2692,7 @@ material "material_216"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2719,7 +2719,7 @@ material "material_217"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2746,7 +2746,7 @@ material "material_218"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2764,7 +2764,7 @@ material "material_219"
 	{
 		diffuse 0.0549107 0.151899 0.0523469
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2791,7 +2791,7 @@ material "material_22"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2809,7 +2809,7 @@ material "material_220"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2836,7 +2836,7 @@ material "material_221"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2863,7 +2863,7 @@ material "material_222"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2890,7 +2890,7 @@ material "material_223"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2908,7 +2908,7 @@ material "material_224"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2935,7 +2935,7 @@ material "material_225"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2953,7 +2953,7 @@ material "material_226"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -2980,7 +2980,7 @@ material "material_227"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -2998,7 +2998,7 @@ material "material_228"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3025,7 +3025,7 @@ material "material_229"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3052,7 +3052,7 @@ material "material_23"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3070,7 +3070,7 @@ material "material_230"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3097,7 +3097,7 @@ material "material_231"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3124,7 +3124,7 @@ material "material_232"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3151,7 +3151,7 @@ material "material_233"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3178,7 +3178,7 @@ material "material_234"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3205,7 +3205,7 @@ material "material_235"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3223,7 +3223,7 @@ material "material_236"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3250,7 +3250,7 @@ material "material_237"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3268,7 +3268,7 @@ material "material_238"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3295,7 +3295,7 @@ material "material_239"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3313,7 +3313,7 @@ material "material_24"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3331,7 +3331,7 @@ material "material_240"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3349,7 +3349,7 @@ material "material_241"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3367,7 +3367,7 @@ material "material_242"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3394,7 +3394,7 @@ material "material_243"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3412,7 +3412,7 @@ material "material_244"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3439,7 +3439,7 @@ material "material_245"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3466,7 +3466,7 @@ material "material_246"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3484,7 +3484,7 @@ material "material_247"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3502,7 +3502,7 @@ material "material_248"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3520,7 +3520,7 @@ material "material_249"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3547,7 +3547,7 @@ material "material_25"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3565,7 +3565,7 @@ material "material_250"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3592,7 +3592,7 @@ material "material_251"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3619,7 +3619,7 @@ material "material_252"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3646,7 +3646,7 @@ material "material_253"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3673,7 +3673,7 @@ material "material_254"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3691,7 +3691,7 @@ material "material_255"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3718,7 +3718,7 @@ material "material_256"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3736,7 +3736,7 @@ material "material_257"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3763,7 +3763,7 @@ material "material_258"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3790,7 +3790,7 @@ material "material_259"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3808,7 +3808,7 @@ material "material_26"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3826,7 +3826,7 @@ material "material_260"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3844,7 +3844,7 @@ material "material_261"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3871,7 +3871,7 @@ material "material_262"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3898,7 +3898,7 @@ material "material_263"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3925,7 +3925,7 @@ material "material_264"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3952,7 +3952,7 @@ material "material_265"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -3970,7 +3970,7 @@ material "material_266"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -3997,7 +3997,7 @@ material "material_267"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 8 //
 
 		texture_unit
@@ -4015,7 +4015,7 @@ material "material_268"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4047,7 +4047,7 @@ material "material_269"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.00313724 0.00313724 0.00313724
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4072,7 +4072,7 @@ material "material_27"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4090,7 +4090,7 @@ material "material_270"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0480000 0.0480000 0.0480000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4115,7 +4115,7 @@ material "material_271"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0474684 0.0474684 0.0474684
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4140,7 +4140,7 @@ material "material_272"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4158,7 +4158,7 @@ material "material_273"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0481013 0.0481013 0.0481013
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4183,7 +4183,7 @@ material "material_274"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4201,7 +4201,7 @@ material "material_275"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4219,7 +4219,7 @@ material "material_276"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0486274 0.0486274 0.0486274
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4244,7 +4244,7 @@ material "material_277"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4269,7 +4269,7 @@ material "material_278"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4301,7 +4301,7 @@ material "material_279"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4326,7 +4326,7 @@ material "material_28"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4344,7 +4344,7 @@ material "material_280"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0800000 0.0800000 0.0800000
-		ambient 0
+		ambient 1.0
 		shininess 0 //
 
 		texture_unit
@@ -4369,7 +4369,7 @@ material "material_281"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4387,7 +4387,7 @@ material "material_282"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4405,7 +4405,7 @@ material "material_284"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4423,7 +4423,7 @@ material "material_285"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4441,7 +4441,7 @@ material "material_286"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4459,7 +4459,7 @@ material "material_287"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.196078 0.196078 0.196078
-		ambient 0
+		ambient 1.0
 		shininess 8 //
 
 		texture_unit
@@ -4477,7 +4477,7 @@ material "material_29"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4495,7 +4495,7 @@ material "material_3"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4513,7 +4513,7 @@ material "material_30"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4531,7 +4531,7 @@ material "material_31"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4549,7 +4549,7 @@ material "material_32"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4567,7 +4567,7 @@ material "material_33"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4585,7 +4585,7 @@ material "material_34"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4603,7 +4603,7 @@ material "material_35"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4621,7 +4621,7 @@ material "material_36"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4639,7 +4639,7 @@ material "material_37"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4657,7 +4657,7 @@ material "material_39"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4682,7 +4682,7 @@ material "material_4"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4707,7 +4707,7 @@ material "material_40"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4732,7 +4732,7 @@ material "material_41"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4750,7 +4750,7 @@ material "material_42"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.00172548 0.00172548 0.00172548
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4768,7 +4768,7 @@ material "material_43"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4786,7 +4786,7 @@ material "material_44"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 0.5 //
 
 		texture_unit
@@ -4811,7 +4811,7 @@ material "material_45"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4829,7 +4829,7 @@ material "material_46"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4854,7 +4854,7 @@ material "material_47"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4872,7 +4872,7 @@ material "material_48"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4897,7 +4897,7 @@ material "material_49"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4915,7 +4915,7 @@ material "material_5"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4940,7 +4940,7 @@ material "material_51"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4965,7 +4965,7 @@ material "material_52"
 	{
 		diffuse 0.337255 0.286275 0.223529
 		specular 0.0200784 0.0177255 0.0149020
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 	}
 }
@@ -4976,7 +4976,7 @@ material "material_53"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -4994,7 +4994,7 @@ material "material_54"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5012,7 +5012,7 @@ material "material_55"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5030,7 +5030,7 @@ material "material_56"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5048,7 +5048,7 @@ material "material_57"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5066,7 +5066,7 @@ material "material_58"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5084,7 +5084,7 @@ material "material_59"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5102,7 +5102,7 @@ material "material_6"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5120,7 +5120,7 @@ material "material_60"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5138,7 +5138,7 @@ material "material_61"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5156,7 +5156,7 @@ material "material_62"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5174,7 +5174,7 @@ material "material_63"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5192,7 +5192,7 @@ material "material_64"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5210,7 +5210,7 @@ material "material_65"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5228,7 +5228,7 @@ material "material_66"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5246,7 +5246,7 @@ material "material_67"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5264,7 +5264,7 @@ material "material_68"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.00627452 0.00627452 0.00627452
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5282,7 +5282,7 @@ material "material_69"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5307,7 +5307,7 @@ material "material_7"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5325,7 +5325,7 @@ material "material_70"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5343,7 +5343,7 @@ material "material_72"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5361,7 +5361,7 @@ material "material_73"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5386,7 +5386,7 @@ material "material_74"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5404,7 +5404,7 @@ material "material_75"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5422,7 +5422,7 @@ material "material_76"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0125490 0.0125490 0.0125490
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5440,7 +5440,7 @@ material "material_77"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5458,7 +5458,7 @@ material "material_78"
 	{
 		diffuse 0.808740 0.585009 0.479873
 		specular 0.0323496 0.0234004 0.0191949
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 	}
 }
@@ -5469,7 +5469,7 @@ material "material_79"
 	{
 		diffuse 0.200000 0.200000 0.200000
 		specular 0.300000 0.300000 0.300000
-		ambient 0
+		ambient 1.0
 		shininess 32 //
 	}
 }
@@ -5480,7 +5480,7 @@ material "material_8"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5498,7 +5498,7 @@ material "material_80"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.00658824 0.00658824 0.00658824
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5516,7 +5516,7 @@ material "material_81"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0120784 0.0120784 0.0120784
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5541,7 +5541,7 @@ material "material_82"
 	{
 		diffuse 0.0588230 0.0588230 0.0588230
 		specular 0.0120784 0.0120784 0.0120784
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 	}
 }
@@ -5552,7 +5552,7 @@ material "material_83"
 	{
 		diffuse 0.200000 0.200000 0.200000
 		specular 0.200000 0.200000 0.200000
-		ambient 0
+		ambient 1.0
 		shininess 16 //
 		emissive 1.73205
 	}
@@ -5564,7 +5564,7 @@ material "material_84"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5589,7 +5589,7 @@ material "material_85"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5614,7 +5614,7 @@ material "material_86"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5639,7 +5639,7 @@ material "material_87"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5664,7 +5664,7 @@ material "material_88"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5689,7 +5689,7 @@ material "material_89"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5714,7 +5714,7 @@ material "material_9"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5732,7 +5732,7 @@ material "material_90"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5757,7 +5757,7 @@ material "material_91"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5775,7 +5775,7 @@ material "material_92"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -5802,7 +5802,7 @@ material "material_93"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -5829,7 +5829,7 @@ material "material_94"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -5856,7 +5856,7 @@ material "material_95"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5881,7 +5881,7 @@ material "material_96"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5906,7 +5906,7 @@ material "material_97"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5931,7 +5931,7 @@ material "material_98"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5956,7 +5956,7 @@ material "materiald"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.00172548 0.00172548 0.00172548
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5981,7 +5981,7 @@ material "materiale"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -5999,7 +5999,7 @@ material "materiali"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -6024,7 +6024,7 @@ material "materialn"
 	{
 		diffuse 0.710501 0.513535 0.303995
 		specular 0.200000 0.200000 0.200000
-		ambient 0
+		ambient 1.0
 		shininess 4 //
 	}
 }
@@ -6035,7 +6035,7 @@ material "materialo"
 	{
 		diffuse 0.100000 0.100000 0.100000
 		specular 0.250000 0.250000 0.250000
-		ambient 0
+		ambient 1.0
 		alpha 0.5
 		shininess 32 //
 
@@ -6054,7 +6054,7 @@ material "materialp"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -6072,7 +6072,7 @@ material "materialq"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -6090,7 +6090,7 @@ material "materialr"
 	{
 		diffuse 0.750000 0.750000 0.750000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 	}
 }
@@ -6101,7 +6101,7 @@ material "materials"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -6126,7 +6126,7 @@ material "materialt"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -6160,7 +6160,7 @@ material "materialu"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -6194,7 +6194,7 @@ material "materialv"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -6228,7 +6228,7 @@ material "materialw"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 
 		texture_unit
@@ -6253,7 +6253,7 @@ material "materialx"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -6287,7 +6287,7 @@ material "materialy"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true
@@ -6321,7 +6321,7 @@ material "materialz"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
-		ambient 0
+		ambient 1.0
 		shininess 1 //
 		alpha_func greater 0.5
 		two_sided true

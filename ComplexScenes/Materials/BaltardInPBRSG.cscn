@@ -72,6 +72,7 @@ material "baltard_in_ns/cube_ns_01"
 		glossiness 0.765
 		two_sided true
 		alpha_func greater 0.5
+		reflections true
 
 		texture_unit
 		{
@@ -100,6 +101,7 @@ material "baltard_in_ns/cube_ns_02"
 		glossiness 0.765
 		two_sided true
 		alpha_func greater 0.5
+		reflections true
 
 		texture_unit
 		{
@@ -370,16 +372,8 @@ material "baltard_in_ns/screen_ns_04"
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.75
-		emissive 0.866025
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 8
-			channel diffuse
-			sampler "TriLinear"
-			image "Textures/BaltardIn/screen_ns_04.jpg" rgb
-		}
+		alpha 0.1
 	}
 }
 

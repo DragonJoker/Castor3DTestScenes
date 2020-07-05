@@ -1,0 +1,94 @@
+materials specular_glossiness
+
+scene "MainScene"
+{
+	ambient_light 1.0 1.0 1.0
+	include "Materials/Lightning.cscn"
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/cityCenterSkybox.hdr" 1024
+	}
+
+	scene_node "MainCameraNode"
+	{
+		parent "CameraRootNode"
+		orientation 0 1 0 180
+		position 0 25 100
+		scale 1 1 1
+	}
+
+	scene_node "GeomNode"
+	{
+		parent "ObjectRootNode"
+		orientation 1 0 0 0
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 180
+	}
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.1
+			// aspect_ratio 1.333
+			aspect_ratio 1.778
+			far 20000
+			fov_y 45
+		}
+	}
+
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 1.0 1.0
+	}
+
+	mesh "GeomMesh"
+	{
+		import "Meshes/Lightning.cmsh"
+		default_materials
+		{
+			material 0 "Hair"
+			material 1 "Face"
+			material 2 "Stuff"
+			material 3 "Clothes"
+			material 4 "Eye"
+			material 5 "Pendant"
+			material 6 "Weapon"
+		}
+	}
+
+	object "GeomObject"
+	{
+		parent "GeomNode"
+		mesh "GeomMesh"
+	}
+}
+
+window "MainWindow"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "MainScene"
+		camera "MainCamera"
+		size 1920 1080
+		// size 800 600
+		format argb32
+	}
+}

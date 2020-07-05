@@ -20,7 +20,7 @@ material "baltard_in_ns/armature"
 	{
 		diffuse 0.588235 0.588235 0.588235 0.00392157
 		specular 0.486000 0.486000 0.486000 0.00392157
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 	}
@@ -32,7 +32,7 @@ material "baltard_in_ns/baffles"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.180000 0.180000 0.180000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -52,7 +52,7 @@ material "baltard_in_ns/bois_ns"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.0900000 0.0900000 0.0900000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -72,7 +72,7 @@ material "baltard_in_ns/cube_ns_01"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.765000 0.765000 0.765000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 		alpha_func greater 0.5
@@ -101,7 +101,7 @@ material "baltard_in_ns/cube_ns_02"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.765000 0.765000 0.765000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 		alpha_func greater 0.5
@@ -130,7 +130,7 @@ material "baltard_in_ns/gradin_ns"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.216000 0.216000 0.216000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -150,7 +150,7 @@ material "baltard_in_ns/light"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		emissive 10
 		alpha_blend_mode interpolative
@@ -179,7 +179,7 @@ material "baltard_in_ns/lumiere"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		emissive 10
 		alpha_blend_mode interpolative
@@ -208,7 +208,7 @@ material "baltard_in_ns/marche_ns"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.360000 0.360000 0.360000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -228,7 +228,7 @@ material "baltard_in_ns/metal_cable"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.135000 0.135000 0.135000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -248,7 +248,7 @@ material "baltard_in_ns/metal_spot"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.360000 0.360000 0.360000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -268,7 +268,7 @@ material "baltard_in_ns/noir_laque"
 	{
 		diffuse 0.0470588 0.0470588 0.0470588
 		specular 0.880000 0.880000 0.880000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 	}
@@ -280,7 +280,7 @@ material "baltard_in_ns/ns_bg"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.0900000 0.0900000 0.0900000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		emissive 0.866025
 		two_sided true
@@ -301,7 +301,7 @@ material "baltard_in_ns/piste_ns_01"
 	{
 		diffuse 0.878431 0.772549 0.878431
 		specular 0.200000 0.200000 0.200000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -321,7 +321,7 @@ material "baltard_in_ns/piste_ns_02"
 	{
 		diffuse 0.886275 0.294118 0.839216
 		specular 0.300000 0.300000 0.300000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -341,7 +341,7 @@ material "baltard_in_ns/piste_ns_03"
 	{
 		diffuse 0.878431 0.772549 0.878431
 		specular 0.100000 0.100000 0.100000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -361,7 +361,7 @@ material "baltard_in_ns/screen_ns_04"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.756000 0.756000 0.756000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		emissive 0.866025
 		two_sided true
@@ -382,7 +382,7 @@ material "baltard_in_ns/verre_baltard_in"
 	{
 		diffuse 0.686275 0.686275 0.686275
 		specular 0.297000 0.297000 0.297000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 		alpha_blend_mode interpolative
@@ -411,7 +411,7 @@ material "pavillon_baltard_in/black"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 	}
@@ -423,7 +423,7 @@ material "pavillon_baltard_in/bord_toit"
 	{
 		diffuse 0.905882 0.780392 0.623529
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -443,7 +443,7 @@ material "pavillon_baltard_in/bronze"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -463,7 +463,7 @@ material "pavillon_baltard_in/ciment"
 	{
 		diffuse 0.666667 0.925490 0.670588
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -483,7 +483,7 @@ material "pavillon_baltard_in/grilles deco"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 		alpha_func greater 0.5
@@ -512,7 +512,7 @@ material "pavillon_baltard_in/light"
 	{
 		diffuse 1.00000 0.992157 0.772549
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		emissive 10
 		two_sided true
@@ -525,7 +525,7 @@ material "pavillon_baltard_in/metal_bleu"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -545,7 +545,7 @@ material "pavillon_baltard_in/motifs"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -565,7 +565,7 @@ material "pavillon_baltard_in/toit"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.288000 0.288000 0.288000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 
@@ -585,7 +585,7 @@ material "pavillon_baltard_in/vitres"
 	{
 		diffuse 0.300000 0.300000 0.300000
 		specular 0.270000 0.270000 0.270000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		alpha_blend_mode interpolative
 
@@ -613,7 +613,7 @@ material "plasma/ecran"
 	{
 		diffuse 0.0392157 0.0392157 0.0392157
 		specular 0.135000 0.135000 0.135000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 	}
@@ -625,7 +625,7 @@ material "plasma/plasma"
 	{
 		diffuse 0.117647 0.117647 0.117647
 		specular 0.0540000 0.0540000 0.0540000
-		ambient 0
+		ambient 1.0
 		shininess 0.5
 		two_sided true
 

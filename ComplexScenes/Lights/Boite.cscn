@@ -1,0 +1,723 @@
+// Light nodes
+
+scene_node "bar_spot_01"
+{
+	orientation 1 0 0 90
+	position 847.609 254.754 -720.782
+	scale 1 1 1
+}
+
+scene_node "bar_spot_02"
+{
+	orientation 1 0 0 90
+	position 701.506 254.754 -720.782
+	scale 1 1 1
+}
+
+scene_node "bar_spot_03"
+{
+	orientation 1 0 0 90
+	position 559.15 254.754 -720.782
+	scale 1 1 1
+}
+
+scene_node "bar_spot_04"
+{
+	orientation 1 0 0 90
+	position 415.383 254.754 -720.782
+	scale 1 1 1
+}
+
+scene_node "bar_spot_05"
+{
+	orientation 1 0 0 90
+	position 271.544 254.754 -720.782
+	scale 1 1 1
+}
+
+scene_node "bar_spot_06"
+{
+	orientation 1 0 0 90
+	position 129.023 254.754 -720.782
+	scale 1 1 1
+}
+
+scene_node "bar_spot_07"
+{
+	orientation 1 0 0 90
+	position 56.1214 254.754 -783.663
+	scale 1 1 1
+}
+
+scene_node "bar_spot_08"
+{
+	orientation 1 0 0 90
+	position 56.1214 254.754 -934.784
+	scale 1 1 1
+}
+
+scene_node "blue_spot"
+{
+	orientation 0.320521 -0.890376 0.32326 97.1217
+	position 738.768 360.572 10.6663
+	scale 1 1 1
+}
+
+scene_node "green_spot"
+{
+	orientation 0.320521 -0.890376 0.32326 97.1217
+	position 738.768 360.572 -30.57
+	scale 1 1 1
+}
+
+scene_node "red_spot"
+{
+	orientation 0.320521 -0.890376 0.32326 97.1217
+	position 738.768 360.572 -11.0213
+	scale 1 1 1
+}
+
+scene_node "scene_spot_01"
+{
+	orientation -0.0196813 -0.939641 0.341594 186.198
+	position 874.796 353.408 -219.279
+	scale 1 1 1
+}
+
+scene_node "scene_spot_02"
+{
+	orientation 0.0544341 -0.936782 0.345655 163.216
+	position 794.617 355.963 -230.933
+	scale 1 1 1
+}
+
+scene_node "scene_spot_03"
+{
+	orientation 0.0736882 -0.936338 0.34328 157.271
+	position 732.113 354.356 -173.846
+	scale 1 1 1
+}
+
+scene_node "scene_spot_04"
+{
+	orientation 0.142108 -0.925898 0.350025 138.797
+	position 720.468 355.772 -105.84
+	scale 1 1 1
+}
+
+scene_node "scene_spot_05"
+{
+	orientation -0.400068 0.858369 -0.321166 273.833
+	position 714.826 354.094 93.5337
+	scale 1 1 1
+}
+
+scene_node "scene_spot_06"
+{
+	orientation -0.583014 0.760762 -0.285194 294.518
+	position 722.358 354.738 167.757
+	scale 1 1 1
+}
+
+scene_node "scene_spot_07"
+{
+	orientation -0.574151 0.766997 -0.286474 293.91
+	position 781.99 355.659 222.275
+	scale 1 1 1
+}
+
+scene_node "scene_spot_08"
+{
+	orientation -0.950291 0.292548 -0.106596 318.043
+	position 865.059 354.624 220.4
+	scale 1 1 1
+}
+
+scene_node "spot_01"
+{
+	orientation -0.779256 -0.585529 0.223418 307.822
+	position 12.4577 390.179 -527.48
+	scale 1 1 1
+}
+
+scene_node "spot_02"
+{
+	orientation -0.996415 -0.0792881 0.0295056 319.042
+	position 200.554 390.762 -527.021
+	scale 1 1 1
+}
+
+scene_node "spot_03"
+{
+	orientation -0.647598 0.715198 -0.262886 300.842
+	position 385.194 392.266 -535.258
+	scale 1 1 1
+}
+
+scene_node "spot_04"
+{
+	orientation -0.841438 0.504189 -0.194358 310.772
+	position 590.74 393.718 -529.516
+	scale 1 1 1
+}
+
+scene_node "spot_05"
+{
+	orientation -0.82805 0.525974 -0.194124 311.953
+	position 787.914 388.935 -530.919
+	scale 1 1 1
+}
+
+scene_node "spot_06"
+{
+	orientation 0.0166756 0.936993 -0.348949 174.89
+	position 805.771 392.102 529.413
+	scale 1 1 1
+}
+
+scene_node "spot_07"
+{
+	orientation 0.0245555 0.935128 -0.353458 172.566
+	position 603.552 391.641 529.247
+	scale 1 1 1
+}
+
+scene_node "spot_08"
+{
+	orientation 0.135415 0.931361 -0.337979 139.073
+	position 415.003 392.432 535.547
+	scale 1 1 1
+}
+
+scene_node "spot_09"
+{
+	orientation 0.0418711 0.939232 -0.34072 166.832
+	position 205.33 392.002 529.637
+	scale 1 1 1
+}
+
+scene_node "spot_10"
+{
+	orientation 0.0633521 0.936459 -0.34501 160.486
+	position 7.88652 391.832 531.306
+	scale 1 1 1
+}
+
+scene_node "upstairs_bar_spot_01"
+{
+	orientation 1 0 0 90
+	position -685.352 717 364.685
+	scale 1 1 1
+}
+
+scene_node "upstairs_bar_spot_02"
+{
+	orientation 1 0 0 90
+	position -685.352 717 214.823
+	scale 1 1 1
+}
+
+scene_node "upstairs_bar_spot_03"
+{
+	orientation 1 0 0 90
+	position -685.352 717 66.1987
+	scale 1 1 1
+}
+
+scene_node "upstairs_bar_spot_04"
+{
+	orientation 1 0 0 90
+	position -685.352 717 -81.654
+	scale 1 1 1
+}
+
+scene_node "upstairs_bar_spot_05"
+{
+	orientation 1 0 0 90
+	position -685.352 717 -226.061
+	scale 1 1 1
+}
+
+scene_node "upstairs_bar_spot_06"
+{
+	orientation 1 0 0 90
+	position -685.352 717 -375.147
+	scale 1 1 1
+}
+
+scene_node "upstairs_bar_spot_07"
+{
+	orientation 1 0 0 90
+	position -759.779 717 -445.378
+	scale 1 1 1
+}
+
+scene_node "upstairs_bar_spot_08"
+{
+	orientation 1 0 0 90
+	position -898.067 717 -445.378
+	scale 1 1 1
+}
+
+scene_node "upstairs_bar_spot_09"
+{
+	orientation 1 0 0 90
+	position -757.951 717 -431.875
+	scale 1 1 1
+}
+
+scene_node "upstairs_bar_spot_19"
+{
+	orientation 1 0 0 90
+	position -900.07 717 -431.875
+	scale 1 1 1
+}
+
+scene_node "yellow_spot"
+{
+	orientation 0.320521 -0.890376 0.32326 97.1217
+	position 738.768 360.572 31.7658
+	scale 1 1 1
+}
+
+// Lights
+
+light "bar_spot_01"
+{
+	parent "bar_spot_01"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "bar_spot_02"
+{
+	parent "bar_spot_02"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "bar_spot_03"
+{
+	parent "bar_spot_03"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "bar_spot_04"
+{
+	parent "bar_spot_04"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "bar_spot_05"
+{
+	parent "bar_spot_05"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "bar_spot_06"
+{
+	parent "bar_spot_06"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "bar_spot_07"
+{
+	parent "bar_spot_07"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "bar_spot_08"
+{
+	parent "bar_spot_08"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "blue_spot"
+{
+	parent "blue_spot"
+	type spot
+	colour 0 0 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "green_spot"
+{
+	parent "green_spot"
+	type spot
+	colour 0 1 0
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "red_spot"
+{
+	parent "red_spot"
+	type spot
+	colour 1 0 0
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "scene_spot_01"
+{
+	parent "scene_spot_01"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "scene_spot_02"
+{
+	parent "scene_spot_02"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "scene_spot_03"
+{
+	parent "scene_spot_03"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "scene_spot_04"
+{
+	parent "scene_spot_04"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "scene_spot_05"
+{
+	parent "scene_spot_05"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "scene_spot_06"
+{
+	parent "scene_spot_06"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "scene_spot_07"
+{
+	parent "scene_spot_07"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "scene_spot_08"
+{
+	parent "scene_spot_08"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "spot_01"
+{
+	parent "spot_01"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "spot_02"
+{
+	parent "spot_02"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "spot_03"
+{
+	parent "spot_03"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "spot_04"
+{
+	parent "spot_04"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "spot_05"
+{
+	parent "spot_05"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "spot_06"
+{
+	parent "spot_06"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "spot_07"
+{
+	parent "spot_07"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "spot_08"
+{
+	parent "spot_08"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "spot_09"
+{
+	parent "spot_09"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "spot_10"
+{
+	parent "spot_10"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}
+
+light "upstairs_bar_spot_01"
+{
+	parent "upstairs_bar_spot_01"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "upstairs_bar_spot_02"
+{
+	parent "upstairs_bar_spot_02"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "upstairs_bar_spot_03"
+{
+	parent "upstairs_bar_spot_03"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "upstairs_bar_spot_04"
+{
+	parent "upstairs_bar_spot_04"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "upstairs_bar_spot_05"
+{
+	parent "upstairs_bar_spot_05"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "upstairs_bar_spot_06"
+{
+	parent "upstairs_bar_spot_06"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "upstairs_bar_spot_07"
+{
+	parent "upstairs_bar_spot_07"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "upstairs_bar_spot_08"
+{
+	parent "upstairs_bar_spot_08"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "upstairs_bar_spot_09"
+{
+	parent "upstairs_bar_spot_09"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "upstairs_bar_spot_19"
+{
+	parent "upstairs_bar_spot_19"
+	type spot
+	colour 1 1 1
+	intensity 1 1
+	attenuation 1 0.03 0
+	exponent 1.000000
+	cut_off 45.000000
+}
+
+light "yellow_spot"
+{
+	parent "yellow_spot"
+	type spot
+	colour 1 1 0
+	intensity 1 1
+	attenuation 1 0.001 0
+	exponent 1.000000
+	cut_off 10.000000
+}

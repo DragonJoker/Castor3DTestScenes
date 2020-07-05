@@ -20,7 +20,7 @@ material "Material_#1004/affiche"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -40,7 +40,7 @@ material "Material_#1004/bite"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 	}
@@ -52,7 +52,7 @@ material "Material_#1004/metal"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.333000 0.333000 0.333000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -72,7 +72,7 @@ material "Material_#1004/noir"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 	}
@@ -84,7 +84,7 @@ material "Material_#1004/velour"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.372549 0.372549 0.372549
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -104,7 +104,7 @@ material "abris_bus/metal"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.432000 0.432000 0.432000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -124,7 +124,7 @@ material "abris_bus/plan"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -144,7 +144,7 @@ material "abris_bus/verre"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.882353 0.882353 0.882353
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -173,7 +173,7 @@ material "abris_bus_pub_01"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -193,7 +193,7 @@ material "abris_bus_pub_02"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -213,7 +213,7 @@ material "arbre_rue/bac"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0392157 0.0392157 0.0392157
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -233,7 +233,7 @@ material "arbre_rue/branches"
 	{
 		diffuse 0.490196 0.490196 0.490196
 		specular 0.156863 0.156863 0.156863
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		emissive 0.392157
 		two_sided true
@@ -263,7 +263,7 @@ material "arbre_rue/terre"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0392157 0.0392157 0.0392157
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -283,7 +283,7 @@ material "arbre_rue/tronc"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -303,7 +303,7 @@ material "banc/bois"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -323,7 +323,7 @@ material "banc/metal"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.215686 0.215686 0.215686
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -343,7 +343,7 @@ material "banniere"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -363,7 +363,7 @@ material "barriere_chantier/bois"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -383,7 +383,7 @@ material "barriere_chantier/peinture"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -403,7 +403,7 @@ material "barriere_travaux/metal"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -423,7 +423,7 @@ material "barriere_travaux/peinture"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -443,7 +443,7 @@ material "bite"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.333000 0.333000 0.333000
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 
@@ -463,7 +463,7 @@ material "borne_incendie/borne_incendie_gris"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.351000 0.351000 0.351000
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -483,7 +483,7 @@ material "borne_incendie/borne_incendie_rouge"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.351000 0.351000 0.351000
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -503,7 +503,7 @@ material "buisson/feuilles"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 		alpha_func greater 0.5
@@ -532,7 +532,7 @@ material "buisson/tronc"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -552,7 +552,7 @@ material "buisson_coin_ext/feuilles"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 		alpha_func greater 0.5
@@ -581,7 +581,7 @@ material "buisson_coin_ext/tronc"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -601,7 +601,7 @@ material "buisson_coin_int/feuilles"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 		alpha_func greater 0.5
@@ -630,7 +630,7 @@ material "buisson_coin_int/tronc"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -650,7 +650,7 @@ material "cabine_telephone/metal"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.333000 0.333000 0.333000
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -670,7 +670,7 @@ material "cabine_telephone/phone"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -690,7 +690,7 @@ material "cabine_telephone/verre"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.882353 0.882353 0.882353
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -719,7 +719,7 @@ material "cabine_telephone/verre_marron"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.210392 0.210392 0.210392
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 
@@ -739,7 +739,7 @@ material "cartons"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0392157 0.0392157 0.0392157
-		ambient 0
+		ambient 1.0
 		shininess 5.0
 		two_sided true
 
@@ -759,7 +759,7 @@ material "chene/feuilles"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 		alpha_func greater 0.5
@@ -788,7 +788,7 @@ material "chene/tronc"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0900000 0.0900000 0.0900000
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -808,7 +808,7 @@ material "corbeille/bois"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -828,7 +828,7 @@ material "corbeille/metal"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.313726 0.313726 0.313726
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -848,7 +848,7 @@ material "corbeille/trash"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0392157 0.0392157 0.0392157
-		ambient 0
+		ambient 1.0
 		shininess 10.0
 		two_sided true
 
@@ -868,7 +868,7 @@ material "distributeur"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.196078 0.196078 0.196078
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -888,7 +888,7 @@ material "entree_station/metal"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.180000 0.180000 0.180000
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -908,7 +908,7 @@ material "entree_station/metal_or"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.315000 0.315000 0.315000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -928,7 +928,7 @@ material "entree_station/mur"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.117647 0.117647 0.117647
-		ambient 0
+		ambient 1.0
 		shininess 20.0
 		two_sided true
 
@@ -948,7 +948,7 @@ material "entree_station/muret"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.117647 0.117647 0.117647
-		ambient 0
+		ambient 1.0
 		shininess 20.0
 		two_sided true
 
@@ -968,7 +968,7 @@ material "entree_station/nom_station"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.189000 0.189000 0.189000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -988,7 +988,7 @@ material "entree_station/plafond"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 	}
@@ -1000,7 +1000,7 @@ material "entree_station/plan"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1020,7 +1020,7 @@ material "entree_station/sol"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.216000 0.216000 0.216000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1040,7 +1040,7 @@ material "feu_tricolore/feu"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1060,7 +1060,7 @@ material "feu_tricolore/metal"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.315000 0.315000 0.315000
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -1080,7 +1080,7 @@ material "feu_tricolore/pieton"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1100,7 +1100,7 @@ material "fontaine/barriere"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.117647 0.117647 0.117647
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1129,7 +1129,7 @@ material "fontaine/bronze"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.306000 0.306000 0.306000
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -1149,7 +1149,7 @@ material "fontaine/eau"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.288235 0.288235 0.288235
-		ambient 0
+		ambient 1.0
 		shininess 128.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1178,7 +1178,7 @@ material "fontaine/eau_tombante"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.588235 0.588235 0.588235
-		ambient 0
+		ambient 1.0
 		shininess 128.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1207,7 +1207,7 @@ material "fontaine/ecume"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1236,7 +1236,7 @@ material "fontaine/metal"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.252000 0.252000 0.252000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -1256,7 +1256,7 @@ material "fontaine/metal_or"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.252000 0.252000 0.252000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -1276,7 +1276,7 @@ material "fontaine/monnaie_01"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.784314 0.784314 0.784314
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1305,7 +1305,7 @@ material "fontaine/monnaie_02"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.784314 0.784314 0.784314
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1334,7 +1334,7 @@ material "fontaine/monnaie_03"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.784314 0.784314 0.784314
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1363,7 +1363,7 @@ material "fontaine/monnaie_04"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.784314 0.784314 0.784314
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1392,7 +1392,7 @@ material "fontaine/pierre"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.162000 0.162000 0.162000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -1412,7 +1412,7 @@ material "fx_selected"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		emissive 1
 		two_sided true
@@ -1442,7 +1442,7 @@ material "grille_parc/bareaux"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.207000 0.207000 0.207000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -1462,7 +1462,7 @@ material "grille_parc/dorures"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.459000 0.459000 0.459000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -1482,7 +1482,7 @@ material "grille_parc/grille_parc"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.156863 0.156863 0.156863
-		ambient 0
+		ambient 1.0
 		shininess 96.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1511,7 +1511,7 @@ material "grille_parc/muret"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0900000 0.0900000 0.0900000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -1531,7 +1531,7 @@ material "horloge"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.108000 0.108000 0.108000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1551,7 +1551,7 @@ material "horloge_aiguilles_heures"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.108000 0.108000 0.108000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1571,7 +1571,7 @@ material "horloge_aiguilles_minutes"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.108000 0.108000 0.108000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1591,7 +1591,7 @@ material "horloge_aiguilles_secondes"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.108000 0.108000 0.108000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1611,7 +1611,7 @@ material "immeubles_parc/banderolle"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1631,7 +1631,7 @@ material "immeubles_parc/fenetre"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.784314 0.784314 0.784314
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -1651,7 +1651,7 @@ material "immeubles_parc/fenetre02"
 	{
 		diffuse 1.0 1.0 1.0
 		specular 0.784314 0.784314 0.784314
-		ambient 0
+		ambient 1.0
 		two_sided true
 
 		texture_unit
@@ -1686,7 +1686,7 @@ material "immeubles_parc/grille"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1715,7 +1715,7 @@ material "immeubles_parc/pierre_beige"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.225000 0.225000 0.225000
-		ambient 0
+		ambient 1.0
 		shininess 20.0
 		two_sided true
 
@@ -1735,7 +1735,7 @@ material "immeubles_parc/pierre_rose"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.225000 0.225000 0.225000
-		ambient 0
+		ambient 1.0
 		shininess 20.0
 		two_sided true
 
@@ -1755,7 +1755,7 @@ material "immeubles_parc/porte01"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1775,7 +1775,7 @@ material "immeubles_parc/porte02"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -1795,7 +1795,7 @@ material "immeubles_parc/rue"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.117647 0.117647 0.117647
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1824,7 +1824,7 @@ material "immeubles_parc/tag_01"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1853,7 +1853,7 @@ material "immeubles_parc/tag_02"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1882,7 +1882,7 @@ material "immeubles_parc/tag_03"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1911,7 +1911,7 @@ material "immeubles_parc/tag_04"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1940,7 +1940,7 @@ material "immeubles_parc/tag_05"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1969,7 +1969,7 @@ material "immeubles_parc/tag_06"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 		alpha_blend_mode interpolative
@@ -1998,7 +1998,7 @@ material "immeubles_parc/toit_gris"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.225000 0.225000 0.225000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2018,7 +2018,7 @@ material "immeubles_parc/toit_vert"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.225000 0.225000 0.225000
-		ambient 0
+		ambient 1.0
 		shininess 48.0
 		two_sided true
 
@@ -2038,7 +2038,7 @@ material "kiosque_park/bois_kiosque_01"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -2058,7 +2058,7 @@ material "kiosque_park/bois_kiosque_02"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -2078,7 +2078,7 @@ material "kiosque_park/fleur_kiosque"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 48.0
 		two_sided true
 		alpha_func greater 0.5
@@ -2107,7 +2107,7 @@ material "kiosque_park/grille_fleur_kiosque"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 16.0
 		two_sided true
 		alpha_func greater 0.5
@@ -2136,7 +2136,7 @@ material "kiosque_park/light_kiosque"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.0
 		alpha 0.0
 		alpha_func greater 0.5
@@ -2149,7 +2149,7 @@ material "kiosque_park/pilier_kiosque"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 16.0
 		two_sided true
 		alpha_func greater 0.5
@@ -2178,7 +2178,7 @@ material "kiosque_park/sol_kiosque"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -2198,7 +2198,7 @@ material "kiosque_park/toit_kiosque"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -2218,7 +2218,7 @@ material "magasins_parc/black"
 	{
 		diffuse 0.000000 0.000000 0.000000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 16.0
 		two_sided true
 	}
@@ -2230,7 +2230,7 @@ material "magasins_parc/dab"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.588235 0.588235 0.588235
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2250,7 +2250,7 @@ material "magasins_parc/enseigne_cb"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.196078 0.196078 0.196078
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2270,7 +2270,7 @@ material "magasins_parc/enseigne_fashion"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2290,7 +2290,7 @@ material "magasins_parc/enseigne_snow"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.196078 0.196078 0.196078
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2310,7 +2310,7 @@ material "magasins_parc/entree_snow"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.207000 0.207000 0.207000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2330,7 +2330,7 @@ material "magasins_parc/magasin_enseigne2"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.588235 0.588235 0.588235
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2350,7 +2350,7 @@ material "magasins_parc/metal_bleu"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.156863 0.156863 0.156863
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -2370,7 +2370,7 @@ material "magasins_parc/soldes"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2390,7 +2390,7 @@ material "magasins_parc/tabac"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0392157 0.0392157 0.0392157
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2410,7 +2410,7 @@ material "magasins_parc/troquet_enseigne"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2430,7 +2430,7 @@ material "magasins_parc/vetement_3"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2450,7 +2450,7 @@ material "magasins_parc/vitres"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.117647 0.117647 0.117647
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 	}
@@ -2462,7 +2462,7 @@ material "magasins_parc/vitrine_bar"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -2482,7 +2482,7 @@ material "magasins_parc/vitrine_femme"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.180000 0.180000 0.180000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -2502,7 +2502,7 @@ material "magasins_parc/vitrine_homme"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.180000 0.180000 0.180000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -2522,7 +2522,7 @@ material "magasins_parc/vitrine_mode2"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.180000 0.180000 0.180000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -2542,7 +2542,7 @@ material "magasins_parc/vitrine_snow"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.180000 0.180000 0.180000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -2562,7 +2562,7 @@ material "magasins_parc/vitrine_snow2"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.180000 0.180000 0.180000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -2582,7 +2582,7 @@ material "panneau_enfants/metal"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.196078 0.196078 0.196078
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -2602,7 +2602,7 @@ material "panneau_enfants/panneau_enfants"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.196078 0.196078 0.196078
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -2622,7 +2622,7 @@ material "panneau_mural"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.392157 0.392157 0.392157
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -2642,7 +2642,7 @@ material "panneau_mural_pub_01"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2662,7 +2662,7 @@ material "panneau_pub"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.392157 0.392157 0.392157
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -2682,7 +2682,7 @@ material "panneau_pub_pub_01"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2702,7 +2702,7 @@ material "panneau_pub_pub_02"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2722,7 +2722,7 @@ material "panneau_stationnement/metal"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.196078 0.196078 0.196078
-		ambient 0
+		ambient 1.0
 		shininess 70.0
 		two_sided true
 
@@ -2742,7 +2742,7 @@ material "panneau_stationnement/panneau_velo"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 	}
@@ -2754,7 +2754,7 @@ material "piaf_ciel"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.135000 0.135000 0.135000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 		alpha_func greater 0.5
@@ -2783,7 +2783,7 @@ material "plasma/plasma"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 	}
@@ -2795,7 +2795,7 @@ material "plasma_pub"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 	}
@@ -2807,7 +2807,7 @@ material "plot_chantier"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 48.0
 		two_sided true
 
@@ -2827,7 +2827,7 @@ material "poisson"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.588235 0.588235 0.588235
-		ambient 0
+		ambient 1.0
 		shininess 96.0
 		two_sided true
 
@@ -2847,7 +2847,7 @@ material "poubelle/plastique_gris"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2867,7 +2867,7 @@ material "poubelle/plastique_noir"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2887,7 +2887,7 @@ material "poubelle/plastique_vert"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -2907,13 +2907,13 @@ material "reverbere/lumiere"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 
 		texture_unit
 		{
-			sampler "Trilinear"
+			sampler "TriLinear"
 			channel diffuse
 			image "Textures/ParkLegacy/reverbere_vitre.png"
 		}
@@ -2926,7 +2926,7 @@ material "reverbere/metal"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.144000 0.144000 0.144000
-		ambient 0
+		ambient 1.0
 		shininess 120.0
 		two_sided true
 
@@ -2946,7 +2946,7 @@ material "saule_pleureur/feuilles"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 		alpha_func greater 0.5
@@ -2975,7 +2975,7 @@ material "saule_pleureur/tronc"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.108000 0.108000 0.108000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 
@@ -2995,7 +2995,7 @@ material "skycraper"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -3015,7 +3015,7 @@ material "skydome"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 0.0
 		emissive 0.588235
 		two_sided true
@@ -3036,7 +3036,7 @@ material "sol_parc/arret_bus"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 		alpha_func greater 0.5
@@ -3065,7 +3065,7 @@ material "sol_parc/bord_herbe"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.153000 0.153000 0.153000
-		ambient 0
+		ambient 1.0
 		shininess 16.0
 		two_sided true
 
@@ -3085,7 +3085,7 @@ material "sol_parc/egout"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.137255 0.137255 0.137255
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 		alpha_func greater 0.5
@@ -3114,7 +3114,7 @@ material "sol_parc/egout_ouvert"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 		alpha_func greater 0.5
@@ -3143,7 +3143,7 @@ material "sol_parc/metal_cana"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.198000 0.198000 0.198000
-		ambient 0
+		ambient 1.0
 		shininess 100.0
 		two_sided true
 
@@ -3163,7 +3163,7 @@ material "sol_parc/passage_pieton"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 16.0
 		two_sided true
 		alpha_func greater 0.5
@@ -3192,7 +3192,7 @@ material "sol_parc/rigole"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0392157 0.0392157 0.0392157
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -3212,7 +3212,7 @@ material "sol_parc/route"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.137255 0.137255 0.137255
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -3232,7 +3232,7 @@ material "sol_parc/sable_canalisations"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 
@@ -3252,7 +3252,7 @@ material "sol_parc/sol_herbe"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0784314 0.0784314 0.0784314
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -3272,7 +3272,7 @@ material "sol_parc/sol_sable"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.0810000 0.0810000 0.0810000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 
@@ -3292,7 +3292,7 @@ material "sol_parc/terre"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		two_sided true
 
@@ -3312,7 +3312,7 @@ material "sol_parc/trottoir"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.137255 0.137255 0.137255
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -3332,7 +3332,7 @@ material "table_echec/echiquier_echec"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.756000 0.756000 0.756000
-		ambient 0
+		ambient 1.0
 		shininess 64.0
 		two_sided true
 
@@ -3352,7 +3352,7 @@ material "table_echec/echiquier_table"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.729000 0.729000 0.729000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -3372,7 +3372,7 @@ material "table_echec/rainure_echiquier"
 	{
 		diffuse 0.996078 0.996078 0.996078
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 32.0
 		two_sided true
 
@@ -3392,7 +3392,7 @@ material "trigger"
 	{
 		diffuse 0.772549 0.376471 0.0235294
 		specular 0.180000 0.180000 0.180000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		emissive 0.294118
 		two_sided true
@@ -3405,7 +3405,7 @@ material "z"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.000000 0.000000 0.000000
-		ambient 0
+		ambient 1.0
 		shininess 8.0
 		emissive 0.1
 		two_sided true

@@ -1,9 +1,9 @@
 materials phong
 
-font "Arial_11"
+font "Arial_20"
 {
 	file "arial.ttf"
-	height 11
+	height 20
 }
 
 font "Arial_22"
@@ -24,11 +24,11 @@ material "ColourMap"
 {
 	pass
 	{
-		diffuse 0.0745 0.0745 0.0745 1.0
+		diffuse 1.0 1.0 1.0
 
 		texture_unit
 		{
-			image "Textures/Bricks/Diffuse.jpg"
+			image "Textures/Bricks/Diffuse.jpg" rgb
 			channel diffuse
 		}
 	}
@@ -42,13 +42,13 @@ material "BtnTexture"
 
 		texture_unit
 		{
-			image "Textures/Gui/button.png"
+			image "Textures/Gui/button.png" rgb
 			channel diffuse
 		}
 
 		texture_unit
 		{
-			image "Textures/Gui/button.png"
+			image "Textures/Gui/button.png" a
 			channel opacity
 		}
 	}
@@ -62,13 +62,13 @@ material "BtnHighlightedTexture"
 
 		texture_unit
 		{
-			image "Textures/Gui/button_mo.png"
+			image "Textures/Gui/button_mo.png" rgb
 			channel diffuse
 		}
 
 		texture_unit
 		{
-			image "Textures/Gui/button_mo.png"
+			image "Textures/Gui/button_mo.png" a
 			channel opacity
 		}
 	}
@@ -82,13 +82,13 @@ material "BtnPushedTexture"
 
 		texture_unit
 		{
-			image "Textures/Gui/button_push.png"
+			image "Textures/Gui/button_push.png" rgb
 			channel diffuse
 		}
 
 		texture_unit
 		{
-			image "Textures/Gui/button_push.png"
+			image "Textures/Gui/button_push.png" a
 			channel opacity
 		}
 	}
@@ -96,11 +96,11 @@ material "BtnPushedTexture"
 
 gui
 {
-	default_font "Arial_11"
+	default_font "Arial_20"
 
 	button "TestButton"
 	{
-		pixel_position 25 500
+		pixel_position 372 693
 		pixel_size 300 50
 		center_uv 0.025 0.875 0.975 0.125
 		border_inner_uv 0.025 0.125 0.975 0.875
@@ -121,69 +121,81 @@ gui
 	static "TestColours"
 	{
 		background_material "DarkRed"
-		pixel_position 500 0
-		pixel_size 150 1000
+		pixel_position 48 0
+		pixel_size 160 668
 
 		button "Coin!!"
 		{
-			pixel_position 0 25
-			pixel_size 150 25
+			pixel_position 16 25
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "Yellow"
 			border_material "Black"
+			text_material "Black"
 			caption "Click Me!!"
 		}
 
 		listbox "TestList"
 		{
-			pixel_position 0 60
-			pixel_size 150 100
+			pixel_position 16 60
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "DarkBlue"
 			border_material "White"
+			text_material "White"
 			selected_item_background_material "DarkGreen"
 			selected_item_foreground_material "LightGray"
 			highlighted_item_background_material "DarkerBlue"
-			item "List Item 1"
-			item "List Item 2"
-			item "List Item 3"
+			item "Item 1"
+			item "Item 2"
+			item "Item 3"
 		}
 
 		combobox "TestCombo"
 		{
-			pixel_position 0 170
-			pixel_size 150 25
+			pixel_position 16 170
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "DarkBlue"
 			border_material "White"
+			text_material "White"
 			selected_item_background_material "DarkGreen"
 			selected_item_foreground_material "LightGray"
 			highlighted_item_background_material "DarkerBlue"
-			item "Combo Item 1"
-			item "Combo Item 2"
-			item "Combo Item 3"
+			item "Item 1"
+			item "Item 2"
+			item "Item 3"
 		}
 
 		edit "TestSingleLineEdit"
 		{
-			pixel_position 0 205
-			pixel_size 150 25
+			pixel_position 16 205
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "White"
 			border_material "DarkBlue"
+			text_material "DarkBlue"
 		}
 
 		edit "TestMultiLineEdit"
 		{
-			pixel_position 0 240
-			pixel_size 150 50
+			pixel_position 16 240
+			pixel_size 128 50
+			pixel_border_size 1 1 1 1
 			background_material "White"
 			border_material "DarkBlue"
+			text_material "DarkBlue"
 			multiline true
 		}
 
 		static "TestStatic"
 		{
-			pixel_position 0 300
-			pixel_size 150 50
+			pixel_position 16 300
+			pixel_size 128 50
+			pixel_border_size 1 1 1 1
 			background_material "White"
 			border_material "DarkBlue"
+			text_material "DarkBlue"
 			caption "Test static"
 		}
 	}
@@ -191,13 +203,14 @@ gui
 	static "TestBackgroundTexture"
 	{
 		background_material "DarkRed"
-		pixel_position 700 0
-		pixel_size 150 1000
+		pixel_position 304 0
+		pixel_size 160 668
 
 		button "BT Coin!!"
 		{
-			pixel_position 0 25
-			pixel_size 150 25
+			pixel_position 16 25
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "ColourMap"
 			border_material "White"
 			caption "Click Me!!"
@@ -205,44 +218,48 @@ gui
 
 		listbox "BT TestList"
 		{
-			pixel_position 0 60
-			pixel_size 150 100
+			pixel_position 16 60
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "ColourMap"
 			border_material "White"
 			selected_item_background_material "DarkGreen"
 			selected_item_foreground_material "LightGray"
 			highlighted_item_background_material "DarkerBlue"
-			item "List Item 1"
-			item "List Item 2"
-			item "List Item 3"
+			item "Item 1"
+			item "Item 2"
+			item "Item 3"
 		}
 
 		combobox "BT TestCombo"
 		{
-			pixel_position 0 170
-			pixel_size 150 25
+			pixel_position 16 170
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "ColourMap"
 			border_material "White"
 			selected_item_background_material "DarkGreen"
 			selected_item_foreground_material "LightGray"
 			highlighted_item_background_material "DarkerBlue"
-			item "Combo Item 1"
-			item "Combo Item 2"
-			item "Combo Item 3"
+			item "Item 1"
+			item "Item 2"
+			item "Item 3"
 		}
 
 		edit "BT TestSingleLineEdit"
 		{
-			pixel_position 0 205
-			pixel_size 150 25
+			pixel_position 16 205
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "ColourMap"
 			border_material "DarkBlue"
 		}
 
 		edit "BT TestMultiLineEdit"
 		{
-			pixel_position 0 240
-			pixel_size 150 50
+			pixel_position 16 240
+			pixel_size 128 50
+			pixel_border_size 1 1 1 1
 			background_material "ColourMap"
 			border_material "DarkBlue"
 			multiline true
@@ -250,8 +267,9 @@ gui
 
 		static "BT TestStatic"
 		{
-			pixel_position 0 300
-			pixel_size 150 50
+			pixel_position 16 300
+			pixel_size 128 50
+			pixel_border_size 1 1 1 1
 			background_material "ColourMap"
 			border_material "DarkBlue"
 			caption "Test static"
@@ -261,13 +279,14 @@ gui
 	static "TestForegroundTexture"
 	{
 		background_material "DarkRed"
-		pixel_position 900 0
-		pixel_size 150 1000
+		pixel_position 560 0
+		pixel_size 160 668
 
 		button "FT Coin!!"
 		{
-			pixel_position 0 25
-			pixel_size 150 25
+			pixel_position 16 25
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "Yellow"
 			border_material "ColourMap"
 			caption "Click Me!!"
@@ -275,44 +294,49 @@ gui
 
 		listbox "FT TestList"
 		{
-			pixel_position 0 60
-			pixel_size 150 100
+			pixel_position 16 60
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "DarkBlue"
 			border_material "ColourMap"
 			selected_item_background_material "DarkGreen"
 			selected_item_foreground_material "LightGray"
 			highlighted_item_background_material "DarkerBlue"
-			item "List Item 1"
-			item "List Item 2"
-			item "List Item 3"
+			item "Item 1"
+			item "Item 2"
+			item "Item 3"
 		}
 
 		combobox "FT TestCombo"
 		{
-			pixel_position 0 170
-			pixel_size 150 25
+			pixel_position 16 170
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "DarkBlue"
 			border_material "ColourMap"
+			text_material "ColourMap"
 			selected_item_background_material "DarkGreen"
 			selected_item_foreground_material "LightGray"
 			highlighted_item_background_material "DarkerBlue"
-			item "Combo Item 1"
-			item "Combo Item 2"
-			item "Combo Item 3"
+			item "Item 1"
+			item "Item 2"
+			item "Item 3"
 		}
 
 		edit "FT TestSingleLineEdit"
 		{
-			pixel_position 0 205
-			pixel_size 150 25
+			pixel_position 16 205
+			pixel_size 128 25
+			pixel_border_size 1 1 1 1
 			background_material "White"
 			border_material "ColourMap"
 		}
 
 		edit "FT TestMultiLineEdit"
 		{
-			pixel_position 0 240
-			pixel_size 150 50
+			pixel_position 16 240
+			pixel_size 128 50
+			pixel_border_size 1 1 1 1
 			background_material "White"
 			border_material "ColourMap"
 			multiline true
@@ -320,8 +344,9 @@ gui
 
 		static "FT TestStatic"
 		{
-			pixel_position 0 300
-			pixel_size 150 50
+			pixel_position 16 300
+			pixel_size 128 50
+			pixel_border_size 1 1 1 1
 			background_material "White"
 			border_material "ColourMap"
 			caption "Test static"
@@ -331,8 +356,8 @@ gui
 
 scene "Scene"
 {
-	background_image "Textures/background.jpg"
-	ambient_light 0.2 0.2 0.2
+	background_image "Textures/backgroundImage.hdr"
+	ambient_light 0.0 0.0 0.0
 
 	scene_node "MainCameraNode"
 	{
@@ -348,7 +373,7 @@ scene "Scene"
 			fov_y 45.0
 			aspect_ratio 1.333
 			near 0.1
-			far 20000
+			far 100
 		}
 	}
 }
@@ -358,7 +383,7 @@ window "Window"
 	render_target
 	{
 		format argb32
-		size 1920 1080
+		size 1024 768
 		scene "Scene"
 		camera "MainCamera"
 	}

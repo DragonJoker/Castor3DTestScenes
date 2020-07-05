@@ -29,7 +29,7 @@ material "Material_#1004/affiche"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/entree_boite_enseigne.jpg"
+			image "Textures/ParkPBRMR/entree_boite_enseigne.jpg" rgb
 		}
 	}
 }
@@ -57,28 +57,28 @@ material "Material_#1004/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg" r
 		}
 	}
 }
@@ -106,7 +106,7 @@ material "Material_#1004/velour"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/entree_boite_velours.jpg"
+			image "Textures/ParkPBRMR/entree_boite_velours.jpg" rgb
 		}
 	}
 }
@@ -123,28 +123,28 @@ material "abris_bus/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/painted_metal_dark_green-albedo.jpg"
+			image "Textures/ParkPBRMR/painted_metal_dark_green-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/painted_metal-normal.png"
+			image "Textures/ParkPBRMR/painted_metal-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+			image "Textures/ParkPBRMR/painted_metal-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+			image "Textures/ParkPBRMR/painted_metal-metallic.png" r
 		}
 	}
 }
@@ -161,7 +161,7 @@ material "abris_bus/plan"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/abris_bus_plan.jpg"
+			image "Textures/ParkPBRMR/abris_bus_plan.jpg" rgb
 		}
 	}
 }
@@ -173,19 +173,20 @@ material "abris_bus/verre"
 		albedo 0.996078 0.996078 0.996078
 		roughness 0.1
 		two_sided true
+		mixed_interpolation true
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/barriere_verre.png"
+			image "Textures/ParkPBRMR/barriere_verre.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/barriere_verre.png"
+			image "Textures/ParkPBRMR/barriere_verre.png" a
 		}
 	}
 }
@@ -202,7 +203,7 @@ material "abris_bus_pub_01"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/abris_bus_pub_01.jpg"
+			image "Textures/ParkPBRMR/abris_bus_pub_01.jpg" rgb
 		}
 	}
 }
@@ -219,7 +220,7 @@ material "abris_bus_pub_02"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/abris_bus_pub_02.jpg"
+			image "Textures/ParkPBRMR/abris_bus_pub_02.jpg" rgb
 		}
 	}
 }
@@ -235,28 +236,28 @@ material "arbre_rue/bac"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/patchy_cement-albedo.png"
+			image "Textures/ParkPBRMR/patchy_cement-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/patchy_cement-normal.png"
+			image "Textures/ParkPBRMR/patchy_cement-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/patchy_cement-roughness.png"
+			image "Textures/ParkPBRMR/patchy_cement-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/patchy_cement-ao.png"
+			image "Textures/ParkPBRMR/patchy_cement-ao.png" r
 		}
 	}
 }
@@ -273,35 +274,35 @@ material "arbre_rue/branches"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/street_tree_leaves-albedo.png"
+			image "Textures/ParkPBRMR/street_tree_leaves-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/street_tree_leaves-albedo.png"
+			image "Textures/ParkPBRMR/street_tree_leaves-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/street_tree_leaves-normal.png"
+			image "Textures/ParkPBRMR/street_tree_leaves-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/street_tree_leaves-roughness.png"
+			image "Textures/ParkPBRMR/street_tree_leaves-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/street_tree_leaves-ao.png"
+			image "Textures/ParkPBRMR/street_tree_leaves-ao.png" r
 		}
 	}
 }
@@ -317,28 +318,28 @@ material "arbre_rue/terre"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/dirt-albedo.png"
+			image "Textures/ParkPBRMR/dirt-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/dirt-ao.png"
+			image "Textures/ParkPBRMR/dirt-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/dirt-normal.png"
+			image "Textures/ParkPBRMR/dirt-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/dirt-roughness.png"
+			image "Textures/ParkPBRMR/dirt-roughness.png" r
 		}
 	}
 }
@@ -354,28 +355,28 @@ material "arbre_rue/tronc"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bark-albedo.png"
+			image "Textures/ParkPBRMR/bark-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bark-ao.png"
+			image "Textures/ParkPBRMR/bark-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bark-normal.png"
+			image "Textures/ParkPBRMR/bark-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bark-roughness.png"
+			image "Textures/ParkPBRMR/bark-roughness.png" r
 		}
 	}
 }
@@ -391,28 +392,28 @@ material "banc/bois"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bamboo_wood-albedo.png"
+			image "Textures/ParkPBRMR/bamboo_wood-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bamboo_wood-ao.png"
+			image "Textures/ParkPBRMR/bamboo_wood-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bamboo_wood-normal.png"
+			image "Textures/ParkPBRMR/bamboo_wood-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bamboo_wood-roughness.png"
+			image "Textures/ParkPBRMR/bamboo_wood-roughness.png" r
 		}
 	}
 }
@@ -429,28 +430,28 @@ material "banc/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/painted_metal-normal.png"
+			image "Textures/ParkPBRMR/painted_metal-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+			image "Textures/ParkPBRMR/painted_metal-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+			image "Textures/ParkPBRMR/painted_metal-metallic.png" r
 		}
 	}
 }
@@ -467,7 +468,7 @@ material "banniere"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/banniere_pub.jpg"
+			image "Textures/ParkPBRMR/banniere_pub.jpg" rgb
 		}
 	}
 }
@@ -484,7 +485,7 @@ material "barriere_chantier/bois"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/barriere_chantier_bois.jpg"
+			image "Textures/ParkPBRMR/barriere_chantier_bois.jpg" rgb
 		}
 	}
 }
@@ -500,14 +501,14 @@ material "barriere_chantier/peinture"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/barriere_chantier_peinture-albedo.jpg"
+			image "Textures/ParkPBRMR/barriere_chantier_peinture-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/barriere_chantier_peinture-roughness.png"
+			image "Textures/ParkPBRMR/barriere_chantier_peinture-roughness.png" r
 		}
 	}
 }
@@ -524,28 +525,28 @@ material "barriere_travaux/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg" r
 		}
 	}
 }
@@ -562,7 +563,7 @@ material "barriere_travaux/peinture"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/barriere_travaux_peinture.jpg"
+			image "Textures/ParkPBRMR/barriere_travaux_peinture.jpg" rgb
 		}
 	}
 }
@@ -590,14 +591,14 @@ material "borne_incendie/borne_incendie_gris"
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/painted_metal-normal.png"
+			image "Textures/ParkPBRMR/painted_metal-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+			image "Textures/ParkPBRMR/painted_metal-roughness.png" r
 		}
 	}
 }
@@ -614,28 +615,28 @@ material "borne_incendie/borne_incendie_rouge"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/painted_metal_red-albedo.jpg"
+			image "Textures/ParkPBRMR/painted_metal_red-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/painted_metal-normal.png"
+			image "Textures/ParkPBRMR/painted_metal-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+			image "Textures/ParkPBRMR/painted_metal-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+			image "Textures/ParkPBRMR/painted_metal-metallic.png" r
 		}
 	}
 }
@@ -652,35 +653,35 @@ material "buisson/feuilles"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bush_leaves-normal.png"
+			image "Textures/ParkPBRMR/bush_leaves-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bush_leaves-roughness.png"
+			image "Textures/ParkPBRMR/bush_leaves-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bush_leaves-ao.png"
+			image "Textures/ParkPBRMR/bush_leaves-ao.png" r
 		}
 	}
 }
@@ -696,28 +697,28 @@ material "buisson/tronc"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bark-albedo.png"
+			image "Textures/ParkPBRMR/bark-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bark-ao.png"
+			image "Textures/ParkPBRMR/bark-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bark-normal.png"
+			image "Textures/ParkPBRMR/bark-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bark-roughness.png"
+			image "Textures/ParkPBRMR/bark-roughness.png" r
 		}
 	}
 }
@@ -734,35 +735,35 @@ material "buisson_coin_ext/feuilles"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bush_leaves-normal.png"
+			image "Textures/ParkPBRMR/bush_leaves-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bush_leaves-roughness.png"
+			image "Textures/ParkPBRMR/bush_leaves-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bush_leaves-ao.png"
+			image "Textures/ParkPBRMR/bush_leaves-ao.png" r
 		}
 	}
 }
@@ -778,28 +779,28 @@ material "buisson_coin_ext/tronc"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bark-albedo.png"
+			image "Textures/ParkPBRMR/bark-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bark-ao.png"
+			image "Textures/ParkPBRMR/bark-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bark-normal.png"
+			image "Textures/ParkPBRMR/bark-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bark-roughness.png"
+			image "Textures/ParkPBRMR/bark-roughness.png" r
 		}
 	}
 }
@@ -816,35 +817,35 @@ material "buisson_coin_int/feuilles"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/bush_leaves-albedo.png"
+			image "Textures/ParkPBRMR/bush_leaves-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bush_leaves-normal.png"
+			image "Textures/ParkPBRMR/bush_leaves-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bush_leaves-roughness.png"
+			image "Textures/ParkPBRMR/bush_leaves-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bush_leaves-ao.png"
+			image "Textures/ParkPBRMR/bush_leaves-ao.png" r
 		}
 	}
 }
@@ -860,28 +861,28 @@ material "buisson_coin_int/tronc"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bark-albedo.png"
+			image "Textures/ParkPBRMR/bark-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bark-ao.png"
+			image "Textures/ParkPBRMR/bark-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bark-normal.png"
+			image "Textures/ParkPBRMR/bark-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bark-roughness.png"
+			image "Textures/ParkPBRMR/bark-roughness.png" r
 		}
 	}
 }
@@ -898,28 +899,28 @@ material "cabine_telephone/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg" r
 		}
 	}
 }
@@ -936,7 +937,7 @@ material "cabine_telephone/phone"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/cabine_telephone_phone.jpg"
+			image "Textures/ParkPBRMR/cabine_telephone_phone.jpg" rgb
 		}
 	}
 }
@@ -949,19 +950,20 @@ material "cabine_telephone/verre"
 		roughness 0.5
 		metallic 0.210392
 		two_sided true
+		mixed_interpolation true
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/barriere_verre.png"
+			image "Textures/ParkPBRMR/barriere_verre.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/barriere_verre.png"
+			image "Textures/ParkPBRMR/barriere_verre.png" a
 		}
 	}
 }
@@ -979,7 +981,7 @@ material "cabine_telephone/verre_marron"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/cabine_telephone_verre_opaque.jpg"
+			image "Textures/ParkPBRMR/cabine_telephone_verre_opaque.jpg" rgb
 		}
 	}
 }
@@ -997,7 +999,7 @@ material "cartons"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/cartons.jpg"
+			image "Textures/ParkPBRMR/cartons.jpg" rgb
 		}
 	}
 }
@@ -1014,14 +1016,14 @@ material "chene/feuilles"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/oak_leaves-albedo.png"
+			image "Textures/ParkPBRMR/oak_leaves-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/oak_leaves-albedo.png"
+			image "Textures/ParkPBRMR/oak_leaves-albedo.png" a
 		}
 	}
 }
@@ -1037,28 +1039,28 @@ material "chene/tronc"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bark-albedo.png"
+			image "Textures/ParkPBRMR/bark-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bark-ao.png"
+			image "Textures/ParkPBRMR/bark-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bark-normal.png"
+			image "Textures/ParkPBRMR/bark-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bark-roughness.png"
+			image "Textures/ParkPBRMR/bark-roughness.png" r
 		}
 	}
 }
@@ -1074,21 +1076,21 @@ material "corbeille/bois"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/thrashcan_wood-albedo.jpg"
+			image "Textures/ParkPBRMR/thrashcan_wood-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/thrashcan_wood-normal.png"
+			image "Textures/ParkPBRMR/thrashcan_wood-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/thrashcan_wood-roughness.png"
+			image "Textures/ParkPBRMR/thrashcan_wood-roughness.png" r
 		}
 	}
 }
@@ -1105,28 +1107,28 @@ material "corbeille/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg" r
 		}
 	}
 }
@@ -1144,7 +1146,7 @@ material "corbeille/trash"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/corbeille_trash.jpg"
+			image "Textures/ParkPBRMR/corbeille_trash.jpg" rgb
 		}
 	}
 }
@@ -1162,7 +1164,7 @@ material "distributeur"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/distributeur_face.jpg"
+			image "Textures/ParkPBRMR/distributeur_face.jpg" rgb
 		}
 	}
 }
@@ -1179,21 +1181,21 @@ material "entree_station/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/streakedmetal-albedo.png"
+			image "Textures/ParkPBRMR/streakedmetal-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/streakedmetal-roughness.png"
+			image "Textures/ParkPBRMR/streakedmetal-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/streakedmetal-metallic.png"
+			image "Textures/ParkPBRMR/streakedmetal-metallic.png" r
 		}
 	}
 }
@@ -1210,28 +1212,28 @@ material "entree_station/metal_or"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/gold-albedo.png"
+			image "Textures/ParkPBRMR/gold-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/gold-normal.png"
+			image "Textures/ParkPBRMR/gold-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/gold-roughness.png"
+			image "Textures/ParkPBRMR/gold-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/gold-metallic.png"
+			image "Textures/ParkPBRMR/gold-metallic.png" r
 		}
 	}
 }
@@ -1247,28 +1249,28 @@ material "entree_station/mur"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bricks-albedo.jpg"
+			image "Textures/ParkPBRMR/bricks-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bricks-normal.png"
+			image "Textures/ParkPBRMR/bricks-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bricks-roughness.png"
+			image "Textures/ParkPBRMR/bricks-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bricks-ao.png"
+			image "Textures/ParkPBRMR/bricks-ao.png" r
 		}
 	}
 }
@@ -1284,28 +1286,28 @@ material "entree_station/muret"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bricks-albedo.jpg"
+			image "Textures/ParkPBRMR/bricks-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bricks-normal.png"
+			image "Textures/ParkPBRMR/bricks-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bricks-roughness.png"
+			image "Textures/ParkPBRMR/bricks-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bricks-ao.png"
+			image "Textures/ParkPBRMR/bricks-ao.png" r
 		}
 	}
 }
@@ -1323,7 +1325,7 @@ material "entree_station/nom_station"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/panneau_place_mog.jpg"
+			image "Textures/ParkPBRMR/panneau_place_mog.jpg" rgb
 		}
 	}
 }
@@ -1349,7 +1351,7 @@ material "entree_station/plan"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/plan.jpg"
+			image "Textures/ParkPBRMR/plan.jpg" rgb
 		}
 	}
 }
@@ -1365,28 +1367,28 @@ material "entree_station/sol"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/marble_floor-albedo.jpg"
+			image "Textures/ParkPBRMR/marble_floor-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/marble_floor-normal.jpg"
+			image "Textures/ParkPBRMR/marble_floor-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/marble_floor-roughness.jpg"
+			image "Textures/ParkPBRMR/marble_floor-roughness.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/marble_floor-ao.jpg"
+			image "Textures/ParkPBRMR/marble_floor-ao.jpg" r
 		}
 	}
 }
@@ -1403,7 +1405,7 @@ material "feu_tricolore/feu"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/feu_tricolore_rouge.jpg"
+			image "Textures/ParkPBRMR/feu_tricolore_rouge.jpg" rgb
 		}
 	}
 }
@@ -1420,28 +1422,28 @@ material "feu_tricolore/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg" r
 		}
 	}
 }
@@ -1458,7 +1460,7 @@ material "feu_tricolore/pieton"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/feu_tricolore_pieton_vert.jpg"
+			image "Textures/ParkPBRMR/feu_tricolore_pieton_vert.jpg" rgb
 		}
 	}
 }
@@ -1476,21 +1478,21 @@ material "fontaine/barriere"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/fountain_grid-albedo.png"
+			image "Textures/ParkPBRMR/fountain_grid-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/fountain_grid-albedo.png"
+			image "Textures/ParkPBRMR/fountain_grid-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/fountain_grid-normal.png"
+			image "Textures/ParkPBRMR/fountain_grid-normal.png" rgb
 		}
 	}
 }
@@ -1507,28 +1509,28 @@ material "fontaine/bronze"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bronze-albedo.jpg"
+			image "Textures/ParkPBRMR/bronze-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bronze-normal.jpg"
+			image "Textures/ParkPBRMR/bronze-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bronze-roughness.jpg"
+			image "Textures/ParkPBRMR/bronze-roughness.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/bronze-metallic.jpg"
+			image "Textures/ParkPBRMR/bronze-metallic.jpg" r
 		}
 	}
 }
@@ -1547,7 +1549,7 @@ material "fontaine/eau"
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/fountain_basin-normal.jpg"
+			image "Textures/ParkPBRMR/fountain_basin-normal.jpg" rgb
 		}
 	}
 }
@@ -1566,7 +1568,7 @@ material "fontaine/eau_tombante"
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/falling_water-normal.jpg"
+			image "Textures/ParkPBRMR/falling_water-normal.jpg" rgb
 		}
 	}
 }
@@ -1585,7 +1587,7 @@ material "fontaine/ecume"
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/falling_water-normal.jpg"
+			image "Textures/ParkPBRMR/falling_water-normal.jpg" rgb
 		}
 	}
 }
@@ -1602,28 +1604,28 @@ material "fontaine/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/painted_metal-normal.png"
+			image "Textures/ParkPBRMR/painted_metal-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+			image "Textures/ParkPBRMR/painted_metal-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+			image "Textures/ParkPBRMR/painted_metal-metallic.png" r
 		}
 	}
 }
@@ -1639,28 +1641,28 @@ material "fontaine/metal_or"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/gold-albedo.png"
+			image "Textures/ParkPBRMR/gold-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/gold-normal.png"
+			image "Textures/ParkPBRMR/gold-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/gold-roughness.png"
+			image "Textures/ParkPBRMR/gold-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/gold-metallic.png"
+			image "Textures/ParkPBRMR/gold-metallic.png" r
 		}
 	}
 }
@@ -1679,21 +1681,21 @@ material "fontaine/monnaie_01"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/coin_1f-albedo.png"
+			image "Textures/ParkPBRMR/coin_1f-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/coin_1f-albedo.png"
+			image "Textures/ParkPBRMR/coin_1f-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/coin_1f-normal.png"
+			image "Textures/ParkPBRMR/coin_1f-normal.png" rgb
 		}
 	}
 }
@@ -1712,21 +1714,21 @@ material "fontaine/monnaie_02"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/coin_2e-albedo.png"
+			image "Textures/ParkPBRMR/coin_2e-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/coin_2e-albedo.png"
+			image "Textures/ParkPBRMR/coin_2e-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/coin_2e-normal.png"
+			image "Textures/ParkPBRMR/coin_2e-normal.png" rgb
 		}
 	}
 }
@@ -1745,21 +1747,21 @@ material "fontaine/monnaie_03"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/coin_20ch-albedo.png"
+			image "Textures/ParkPBRMR/coin_20ch-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/coin_20ch-albedo.png"
+			image "Textures/ParkPBRMR/coin_20ch-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/coin_20ch-normal.png"
+			image "Textures/ParkPBRMR/coin_20ch-normal.png" rgb
 		}
 	}
 }
@@ -1778,21 +1780,21 @@ material "fontaine/monnaie_04"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/coin_20ct-albedo.png"
+			image "Textures/ParkPBRMR/coin_20ct-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/coin_20ct-albedo.png"
+			image "Textures/ParkPBRMR/coin_20ct-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/coin_20ct-normal.png"
+			image "Textures/ParkPBRMR/coin_20ct-normal.png" rgb
 		}
 	}
 }
@@ -1808,28 +1810,28 @@ material "fontaine/pierre"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/pocked_concrete-albedo.png"
+			image "Textures/ParkPBRMR/pocked_concrete-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/pocked_concrete-normal.png"
+			image "Textures/ParkPBRMR/pocked_concrete-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/pocked_concrete-roughness.png"
+			image "Textures/ParkPBRMR/pocked_concrete-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/pocked_concrete-ao.png"
+			image "Textures/ParkPBRMR/pocked_concrete-ao.png" r
 		}
 	}
 }
@@ -1847,7 +1849,7 @@ material "fx_selected"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/fx_selected.png"
+			image "Textures/ParkPBRMR/fx_selected.png" rgb
 		}
 	}
 }
@@ -1864,28 +1866,28 @@ material "grille_parc/bareaux"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/painted_metal-normal.png"
+			image "Textures/ParkPBRMR/painted_metal-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+			image "Textures/ParkPBRMR/painted_metal-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+			image "Textures/ParkPBRMR/painted_metal-metallic.png" r
 		}
 	}
 }
@@ -1902,28 +1904,28 @@ material "grille_parc/dorures"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/gold-albedo.png"
+			image "Textures/ParkPBRMR/gold-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/gold-normal.png"
+			image "Textures/ParkPBRMR/gold-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/gold-roughness.png"
+			image "Textures/ParkPBRMR/gold-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/gold-metallic.png"
+			image "Textures/ParkPBRMR/gold-metallic.png" r
 		}
 	}
 }
@@ -1941,21 +1943,21 @@ material "grille_parc/grille_parc"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/park_grid-albedo.png"
+			image "Textures/ParkPBRMR/park_grid-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/park_grid-albedo.png"
+			image "Textures/ParkPBRMR/park_grid-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/park_grid-normal.png"
+			image "Textures/ParkPBRMR/park_grid-normal.png" rgb
 		}
 	}
 }
@@ -1971,28 +1973,28 @@ material "grille_parc/muret"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bricks-albedo.jpg"
+			image "Textures/ParkPBRMR/bricks-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bricks-normal.png"
+			image "Textures/ParkPBRMR/bricks-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bricks-roughness.png"
+			image "Textures/ParkPBRMR/bricks-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bricks-ao.png"
+			image "Textures/ParkPBRMR/bricks-ao.png" r
 		}
 	}
 }
@@ -2010,7 +2012,7 @@ material "horloge"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/horloge.jpg"
+			image "Textures/ParkPBRMR/horloge.jpg" rgb
 		}
 	}
 }
@@ -2061,7 +2063,7 @@ material "immeubles_parc/banderolle"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_banderolle.jpg"
+			image "Textures/ParkPBRMR/immeubles_banderolle.jpg" rgb
 		}
 	}
 }
@@ -2078,21 +2080,21 @@ material "immeubles_parc/fenetre"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/window-albedo.png"
+			image "Textures/ParkPBRMR/window-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/window-normal.png"
+			image "Textures/ParkPBRMR/window-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/window-roughness.png"
+			image "Textures/ParkPBRMR/window-roughness.png" r
 		}
 	}
 }
@@ -2108,21 +2110,21 @@ material "immeubles_parc/fenetre02"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/window2-albedo.png"
+			image "Textures/ParkPBRMR/window2-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/window2-normal.png"
+			image "Textures/ParkPBRMR/window2-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/window2-roughness.png"
+			image "Textures/ParkPBRMR/window2-roughness.png" r
 		}
 	}
 }
@@ -2140,21 +2142,21 @@ material "immeubles_parc/grille"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/building_grid-albedo.png"
+			image "Textures/ParkPBRMR/building_grid-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/building_grid-albedo.png"
+			image "Textures/ParkPBRMR/building_grid-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/building_grid-normal.png"
+			image "Textures/ParkPBRMR/building_grid-normal.png" rgb
 		}
 	}
 }
@@ -2170,28 +2172,28 @@ material "immeubles_parc/pierre_beige"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/building_wall-albedo.jpg"
+			image "Textures/ParkPBRMR/building_wall-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/building_wall-normal.png"
+			image "Textures/ParkPBRMR/building_wall-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/building_wall-roughness.png"
+			image "Textures/ParkPBRMR/building_wall-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/building_wall-ao.png"
+			image "Textures/ParkPBRMR/building_wall-ao.png" r
 		}
 	}
 }
@@ -2207,28 +2209,28 @@ material "immeubles_parc/pierre_rose"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/building_wall2-albedo.jpg"
+			image "Textures/ParkPBRMR/building_wall2-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/building_wall-normal.png"
+			image "Textures/ParkPBRMR/building_wall-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/building_wall-roughness.png"
+			image "Textures/ParkPBRMR/building_wall-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/building_wall-ao.png"
+			image "Textures/ParkPBRMR/building_wall-ao.png" r
 		}
 	}
 }
@@ -2245,7 +2247,7 @@ material "immeubles_parc/porte01"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_porte.jpg"
+			image "Textures/ParkPBRMR/immeubles_porte.jpg" rgb
 		}
 	}
 }
@@ -2262,7 +2264,7 @@ material "immeubles_parc/porte02"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_porte_bis.jpg"
+			image "Textures/ParkPBRMR/immeubles_porte_bis.jpg" rgb
 		}
 	}
 }
@@ -2281,14 +2283,14 @@ material "immeubles_parc/rue"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeuble_rue.png"
+			image "Textures/ParkPBRMR/immeuble_rue.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/immeuble_rue.png"
+			image "Textures/ParkPBRMR/immeuble_rue.png" a
 		}
 	}
 }
@@ -2301,19 +2303,20 @@ material "immeubles_parc/tag_01"
 		roughness 0.5
 		two_sided true
 		alpha_blend_mode interpolative
+		mixed_interpolation true
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_tag_01.png"
+			image "Textures/ParkPBRMR/immeubles_tag_01.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/immeubles_tag_01.png"
+			image "Textures/ParkPBRMR/immeubles_tag_01.png" a
 		}
 	}
 }
@@ -2326,19 +2329,20 @@ material "immeubles_parc/tag_02"
 		roughness 0.5
 		two_sided true
 		alpha_blend_mode interpolative
+		mixed_interpolation true
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_tag_02.png"
+			image "Textures/ParkPBRMR/immeubles_tag_02.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/immeubles_tag_02.png"
+			image "Textures/ParkPBRMR/immeubles_tag_02.png" a
 		}
 	}
 }
@@ -2351,19 +2355,20 @@ material "immeubles_parc/tag_03"
 		roughness 0.5
 		two_sided true
 		alpha_blend_mode interpolative
+		mixed_interpolation true
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_tag_03.png"
+			image "Textures/ParkPBRMR/immeubles_tag_03.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/immeubles_tag_03.png"
+			image "Textures/ParkPBRMR/immeubles_tag_03.png" a
 		}
 	}
 }
@@ -2376,19 +2381,20 @@ material "immeubles_parc/tag_04"
 		roughness 0.5
 		two_sided true
 		alpha_blend_mode interpolative
+		mixed_interpolation true
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_tag_04.png"
+			image "Textures/ParkPBRMR/immeubles_tag_04.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/immeubles_tag_04.png"
+			image "Textures/ParkPBRMR/immeubles_tag_04.png" a
 		}
 	}
 }
@@ -2401,19 +2407,20 @@ material "immeubles_parc/tag_05"
 		roughness 0.5
 		two_sided true
 		alpha_blend_mode interpolative
+		mixed_interpolation true
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_tag_05.png"
+			image "Textures/ParkPBRMR/immeubles_tag_05.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/immeubles_tag_05.png"
+			image "Textures/ParkPBRMR/immeubles_tag_05.png" a
 		}
 	}
 }
@@ -2426,19 +2433,20 @@ material "immeubles_parc/tag_06"
 		roughness 0.5
 		two_sided true
 		alpha_blend_mode interpolative
+		mixed_interpolation true
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_tag_06.png"
+			image "Textures/ParkPBRMR/immeubles_tag_06.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/immeubles_tag_06.png"
+			image "Textures/ParkPBRMR/immeubles_tag_06.png" a
 		}
 	}
 }
@@ -2456,7 +2464,7 @@ material "immeubles_parc/toit_gris"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_toit_bronze_gris.jpg"
+			image "Textures/ParkPBRMR/immeubles_toit_bronze_gris.jpg" rgb
 		}
 	}
 }
@@ -2474,7 +2482,7 @@ material "immeubles_parc/toit_vert"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/immeubles_toit_bronze.jpg"
+			image "Textures/ParkPBRMR/immeubles_toit_bronze.jpg" rgb
 		}
 	}
 }
@@ -2491,7 +2499,7 @@ material "kiosque_park/bois_kiosque_01"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bois_kiosque_01.jpg"
+			image "Textures/ParkPBRMR/bois_kiosque_01.jpg" rgb
 		}
 	}
 }
@@ -2508,7 +2516,7 @@ material "kiosque_park/bois_kiosque_02"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bois_kiosque_02.jpg"
+			image "Textures/ParkPBRMR/bois_kiosque_02.jpg" rgb
 		}
 	}
 }
@@ -2526,14 +2534,14 @@ material "kiosque_park/fleur_kiosque"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/fleur_kiosque.png"
+			image "Textures/ParkPBRMR/fleur_kiosque.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/fleur_kiosque.png"
+			image "Textures/ParkPBRMR/fleur_kiosque.png" a
 		}
 	}
 }
@@ -2551,14 +2559,14 @@ material "kiosque_park/grille_fleur_kiosque"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/fleur_grille_kiosque.png"
+			image "Textures/ParkPBRMR/fleur_grille_kiosque.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/fleur_grille_kiosque.png"
+			image "Textures/ParkPBRMR/fleur_grille_kiosque.png" a
 		}
 	}
 }
@@ -2588,14 +2596,14 @@ material "kiosque_park/pilier_kiosque"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/pilier_kiosque.png"
+			image "Textures/ParkPBRMR/pilier_kiosque.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/pilier_kiosque.png"
+			image "Textures/ParkPBRMR/pilier_kiosque.png" a
 		}
 	}
 }
@@ -2611,28 +2619,28 @@ material "kiosque_park/sol_kiosque"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/oak_floor-albedo.png"
+			image "Textures/ParkPBRMR/oak_floor-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/oak_floor-normal.png"
+			image "Textures/ParkPBRMR/oak_floor-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/oak_floor-roughness.png"
+			image "Textures/ParkPBRMR/oak_floor-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/oak_floor-ao.png"
+			image "Textures/ParkPBRMR/oak_floor-ao.png" r
 		}
 	}
 }
@@ -2648,28 +2656,28 @@ material "kiosque_park/toit_kiosque"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/kiosk_roof-albedo.jpg"
+			image "Textures/ParkPBRMR/kiosk_roof-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/kiosk_roof-normal.png"
+			image "Textures/ParkPBRMR/kiosk_roof-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/kiosk_roof-roughness.png"
+			image "Textures/ParkPBRMR/kiosk_roof-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/kiosk_roof-ao.png"
+			image "Textures/ParkPBRMR/kiosk_roof-ao.png" r
 		}
 	}
 }
@@ -2696,7 +2704,7 @@ material "magasins_parc/dab"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/magasins_dab.jpg"
+			image "Textures/ParkPBRMR/magasins_dab.jpg" rgb
 		}
 	}
 }
@@ -2714,7 +2722,7 @@ material "magasins_parc/enseigne_cb"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/magasins_enseigne_cb.jpg"
+			image "Textures/ParkPBRMR/magasins_enseigne_cb.jpg" rgb
 		}
 	}
 }
@@ -2731,7 +2739,7 @@ material "magasins_parc/enseigne_fashion"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/magasin_enseigne.jpg"
+			image "Textures/ParkPBRMR/magasin_enseigne.jpg" rgb
 		}
 	}
 }
@@ -2749,7 +2757,7 @@ material "magasins_parc/enseigne_snow"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/magasins_enseigne_snow.jpg"
+			image "Textures/ParkPBRMR/magasins_enseigne_snow.jpg" rgb
 		}
 	}
 }
@@ -2766,28 +2774,28 @@ material "magasins_parc/entree_snow"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/metal_shutter-albedo.jpg"
+			image "Textures/ParkPBRMR/metal_shutter-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/metal_shutter-normal.png"
+			image "Textures/ParkPBRMR/metal_shutter-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/metal_shutter-roughness.png"
+			image "Textures/ParkPBRMR/metal_shutter-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/metal_shutter-ao.png"
+			image "Textures/ParkPBRMR/metal_shutter-ao.png" r
 		}
 	}
 }
@@ -2805,7 +2813,7 @@ material "magasins_parc/magasin_enseigne2"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/magasin_enseigne2.jpg"
+			image "Textures/ParkPBRMR/magasin_enseigne2.jpg" rgb
 		}
 	}
 }
@@ -2822,28 +2830,28 @@ material "magasins_parc/metal_bleu"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/painted_metal_blue-albedo.jpg"
+			image "Textures/ParkPBRMR/painted_metal_blue-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/painted_metal-normal.png"
+			image "Textures/ParkPBRMR/painted_metal-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+			image "Textures/ParkPBRMR/painted_metal-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+			image "Textures/ParkPBRMR/painted_metal-metallic.png" r
 		}
 	}
 }
@@ -2860,7 +2868,7 @@ material "magasins_parc/soldes"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/pub_soldes.jpg"
+			image "Textures/ParkPBRMR/pub_soldes.jpg" rgb
 		}
 	}
 }
@@ -2878,7 +2886,7 @@ material "magasins_parc/tabac"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/magasins_tabac.jpg"
+			image "Textures/ParkPBRMR/magasins_tabac.jpg" rgb
 		}
 	}
 }
@@ -2895,7 +2903,7 @@ material "magasins_parc/troquet_enseigne"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/magasins_troquet_enseigne.jpg"
+			image "Textures/ParkPBRMR/magasins_troquet_enseigne.jpg" rgb
 		}
 	}
 }
@@ -2912,7 +2920,7 @@ material "magasins_parc/vetement_3"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/magasin_enseigne3.jpg"
+			image "Textures/ParkPBRMR/magasin_enseigne3.jpg" rgb
 		}
 	}
 }
@@ -2938,28 +2946,28 @@ material "magasins_parc/vitrine_bar"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/pub_entrance-albedo.jpg"
+			image "Textures/ParkPBRMR/pub_entrance-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/pub_entrance-normal.png"
+			image "Textures/ParkPBRMR/pub_entrance-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/pub_entrance-roughness.png"
+			image "Textures/ParkPBRMR/pub_entrance-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/pub_entrance-ao.png"
+			image "Textures/ParkPBRMR/pub_entrance-ao.png" r
 		}
 	}
 }
@@ -2976,35 +2984,35 @@ material "magasins_parc/vitrine_femme"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png" r
 		}
 	}
 }
@@ -3021,35 +3029,35 @@ material "magasins_parc/vitrine_homme"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png" r
 		}
 	}
 }
@@ -3066,35 +3074,35 @@ material "magasins_parc/vitrine_mode2"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png" r
 		}
 	}
 }
@@ -3111,35 +3119,35 @@ material "magasins_parc/vitrine_snow"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png" r
 		}
 	}
 }
@@ -3156,35 +3164,35 @@ material "magasins_parc/vitrine_snow2"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-metallic.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png"
+			image "Textures/ParkPBRMR/reserved_metal_shutter-ao.png" r
 		}
 	}
 }
@@ -3201,28 +3209,28 @@ material "panneau_enfants/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg" r
 		}
 	}
 }
@@ -3240,7 +3248,7 @@ material "panneau_enfants/panneau_enfants"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/panneau_enfants.jpg"
+			image "Textures/ParkPBRMR/panneau_enfants.jpg" rgb
 		}
 	}
 }
@@ -3257,28 +3265,28 @@ material "panneau_mural"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/painted_metal-normal.png"
+			image "Textures/ParkPBRMR/painted_metal-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+			image "Textures/ParkPBRMR/painted_metal-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+			image "Textures/ParkPBRMR/painted_metal-metallic.png" r
 		}
 	}
 }
@@ -3296,7 +3304,7 @@ material "panneau_mural_pub_01"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/panneau_pub_pub_01.jpg"
+			image "Textures/ParkPBRMR/panneau_pub_pub_01.jpg" rgb
 		}
 	}
 }
@@ -3313,28 +3321,28 @@ material "panneau_pub"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/painted_metal-normal.png"
+			image "Textures/ParkPBRMR/painted_metal-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+			image "Textures/ParkPBRMR/painted_metal-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+			image "Textures/ParkPBRMR/painted_metal-metallic.png" r
 		}
 	}
 }
@@ -3352,7 +3360,7 @@ material "panneau_pub_pub_01"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/panneau_pub_pub_01.jpg"
+			image "Textures/ParkPBRMR/panneau_pub_pub_01.jpg" rgb
 		}
 	}
 }
@@ -3370,7 +3378,7 @@ material "panneau_pub_pub_02"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/panneau_pub_pub_02.jpg"
+			image "Textures/ParkPBRMR/panneau_pub_pub_02.jpg" rgb
 		}
 	}
 }
@@ -3387,28 +3395,28 @@ material "panneau_stationnement/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg" r
 		}
 	}
 }
@@ -3435,35 +3443,35 @@ material "piaf_ciel"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bird-albedo.png"
+			image "Textures/ParkPBRMR/bird-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/bird-albedo.png"
+			image "Textures/ParkPBRMR/bird-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bird-normal.png"
+			image "Textures/ParkPBRMR/bird-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bird-roughness.png"
+			image "Textures/ParkPBRMR/bird-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bird-ao.png"
+			image "Textures/ParkPBRMR/bird-ao.png" r
 		}
 	}
 }
@@ -3501,7 +3509,7 @@ material "plot_chantier"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/plot_chantier_plastique.jpg"
+			image "Textures/ParkPBRMR/plot_chantier_plastique.jpg" rgb
 		}
 	}
 }
@@ -3519,7 +3527,7 @@ material "poisson"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/fontaine_poisson.jpg"
+			image "Textures/ParkPBRMR/fontaine_poisson.jpg" rgb
 		}
 	}
 }
@@ -3535,28 +3543,28 @@ material "poubelle/plastique_gris"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/scuffed_plastic-gray-albedo.jpg"
+			image "Textures/ParkPBRMR/scuffed_plastic-gray-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/scuffed_plastic-ao.png"
+			image "Textures/ParkPBRMR/scuffed_plastic-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/scuffed_plastic-normal.png"
+			image "Textures/ParkPBRMR/scuffed_plastic-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/scuffed_plastic-roughness.png"
+			image "Textures/ParkPBRMR/scuffed_plastic-roughness.png" r
 		}
 	}
 }
@@ -3572,28 +3580,28 @@ material "poubelle/plastique_noir"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/scuffed_plastic-black-albedo.jpg"
+			image "Textures/ParkPBRMR/scuffed_plastic-black-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/scuffed_plastic-ao.png"
+			image "Textures/ParkPBRMR/scuffed_plastic-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/scuffed_plastic-normal.png"
+			image "Textures/ParkPBRMR/scuffed_plastic-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/scuffed_plastic-roughness.png"
+			image "Textures/ParkPBRMR/scuffed_plastic-roughness.png" r
 		}
 	}
 }
@@ -3609,28 +3617,28 @@ material "poubelle/plastique_vert"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/scuffed_plastic-green-albedo.jpg"
+			image "Textures/ParkPBRMR/scuffed_plastic-green-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/scuffed_plastic-ao.png"
+			image "Textures/ParkPBRMR/scuffed_plastic-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/scuffed_plastic-normal.png"
+			image "Textures/ParkPBRMR/scuffed_plastic-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/scuffed_plastic-roughness.png"
+			image "Textures/ParkPBRMR/scuffed_plastic-roughness.png" r
 		}
 	}
 }
@@ -3643,40 +3651,41 @@ material "reverbere/lumiere"
 		metallic 1.0
 		roughness 0.2
 		two_sided true
+		mixed_interpolation true
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/reverbere_vitre_albedo.png"
+			image "Textures/ParkPBRMR/reverbere_vitre_albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/reverbere_vitre_albedo.png"
+			image "Textures/ParkPBRMR/reverbere_vitre_albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/reverbere_vitre_roughness.png"
+			image "Textures/ParkPBRMR/reverbere_vitre_roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/reverbere_vitre_metallic.png"
+			image "Textures/ParkPBRMR/reverbere_vitre_metallic.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/reverbere_vitre_normal.png"
+			image "Textures/ParkPBRMR/reverbere_vitre_normal.png" rgb
 		}
 	}
 }
@@ -3693,28 +3702,28 @@ material "reverbere/metal"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg"
+			image "Textures/ParkPBRMR/painted_metal_black-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/painted_metal-normal.png"
+			image "Textures/ParkPBRMR/painted_metal-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/painted_metal-roughness.png"
+			image "Textures/ParkPBRMR/painted_metal-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/painted_metal-metallic.png"
+			image "Textures/ParkPBRMR/painted_metal-metallic.png" r
 		}
 	}
 }
@@ -3731,14 +3740,14 @@ material "saule_pleureur/feuilles"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/willow_leaves-albedo.png"
+			image "Textures/ParkPBRMR/willow_leaves-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/willow_leaves-albedo.png"
+			image "Textures/ParkPBRMR/willow_leaves-albedo.png" a
 		}
 	}
 }
@@ -3754,28 +3763,28 @@ material "saule_pleureur/tronc"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bark-albedo.png"
+			image "Textures/ParkPBRMR/bark-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/bark-ao.png"
+			image "Textures/ParkPBRMR/bark-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/bark-normal.png"
+			image "Textures/ParkPBRMR/bark-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/bark-roughness.png"
+			image "Textures/ParkPBRMR/bark-roughness.png" r
 		}
 	}
 }
@@ -3792,7 +3801,7 @@ material "skycraper"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/skycraper_pub.jpg"
+			image "Textures/ParkPBRMR/skycraper_pub.jpg" rgb
 		}
 	}
 }
@@ -3810,14 +3819,14 @@ material "sol_parc/arret_bus"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/sol_passage_bus.png"
+			image "Textures/ParkPBRMR/sol_passage_bus.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/sol_passage_bus.png"
+			image "Textures/ParkPBRMR/sol_passage_bus.png" a
 		}
 	}
 }
@@ -3834,7 +3843,7 @@ material "sol_parc/bord_herbe"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/bord_herbe.jpg"
+			image "Textures/ParkPBRMR/bord_herbe.jpg" rgb
 		}
 	}
 }
@@ -3851,35 +3860,35 @@ material "sol_parc/egout"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/sewer_cap-albedo.png"
+			image "Textures/ParkPBRMR/sewer_cap-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/sewer_cap-albedo.png"
+			image "Textures/ParkPBRMR/sewer_cap-albedo.png" a
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/sewer_cap-normal.png"
+			image "Textures/ParkPBRMR/sewer_cap-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/sewer_cap-roughness.png"
+			image "Textures/ParkPBRMR/sewer_cap-roughness.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/sewer_cap-ao.png"
+			image "Textures/ParkPBRMR/sewer_cap-ao.png" r
 		}
 	}
 }
@@ -3896,14 +3905,14 @@ material "sol_parc/egout_ouvert"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/sewer_hole-albedo.png"
+			image "Textures/ParkPBRMR/sewer_hole-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/sewer_hole-albedo.png"
+			image "Textures/ParkPBRMR/sewer_hole-albedo.png" a
 		}
 	}
 }
@@ -3920,28 +3929,28 @@ material "sol_parc/metal_cana"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-roughness.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel metallic
-			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg"
+			image "Textures/ParkPBRMR/galvanized_metal-metallic.jpg" r
 		}
 	}
 }
@@ -3959,14 +3968,14 @@ material "sol_parc/passage_pieton"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/sol_passage_pieton.png"
+			image "Textures/ParkPBRMR/sol_passage_pieton.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel opacity
-			image "Textures/ParkPBRMR/sol_passage_pieton.png"
+			image "Textures/ParkPBRMR/sol_passage_pieton.png" a
 		}
 	}
 }
@@ -3984,7 +3993,7 @@ material "sol_parc/rigole"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/sol_rigole.jpg"
+			image "Textures/ParkPBRMR/sol_rigole.jpg" rgb
 		}
 	}
 }
@@ -4000,28 +4009,28 @@ material "sol_parc/route"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/pavement-albedo.png"
+			image "Textures/ParkPBRMR/pavement-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/pavement-ao.png"
+			image "Textures/ParkPBRMR/pavement-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/pavement-normal.png"
+			image "Textures/ParkPBRMR/pavement-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/pavement-roughness.png"
+			image "Textures/ParkPBRMR/pavement-roughness.png" r
 		}
 	}
 }
@@ -4037,21 +4046,21 @@ material "sol_parc/sable_canalisations"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/sand-albedo.png"
+			image "Textures/ParkPBRMR/sand-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/sand-normal.png"
+			image "Textures/ParkPBRMR/sand-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/sand-roughness.png"
+			image "Textures/ParkPBRMR/sand-roughness.png" r
 		}
 	}
 }
@@ -4067,28 +4076,28 @@ material "sol_parc/sol_herbe"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/grass-albedo.png"
+			image "Textures/ParkPBRMR/grass-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/grass-ao.png"
+			image "Textures/ParkPBRMR/grass-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/grass-normal.png"
+			image "Textures/ParkPBRMR/grass-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/grass-roughness.png"
+			image "Textures/ParkPBRMR/grass-roughness.png" r
 		}
 	}
 }
@@ -4104,21 +4113,21 @@ material "sol_parc/sol_sable"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/sand-albedo.png"
+			image "Textures/ParkPBRMR/sand-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/sand-normal.png"
+			image "Textures/ParkPBRMR/sand-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/sand-roughness.png"
+			image "Textures/ParkPBRMR/sand-roughness.png" r
 		}
 	}
 }
@@ -4134,28 +4143,28 @@ material "sol_parc/terre"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/dirt-albedo.png"
+			image "Textures/ParkPBRMR/dirt-albedo.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/dirt-ao.png"
+			image "Textures/ParkPBRMR/dirt-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/dirt-normal.png"
+			image "Textures/ParkPBRMR/dirt-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/dirt-roughness.png"
+			image "Textures/ParkPBRMR/dirt-roughness.png" r
 		}
 	}
 }
@@ -4171,28 +4180,28 @@ material "sol_parc/trottoir"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/sidewalk_pavement-albedo.jpg"
+			image "Textures/ParkPBRMR/sidewalk_pavement-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/sidewalk_pavement-ao.png"
+			image "Textures/ParkPBRMR/sidewalk_pavement-ao.png" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/sidewalk_pavement-normal.png"
+			image "Textures/ParkPBRMR/sidewalk_pavement-normal.png" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/sidewalk_pavement-roughness.png"
+			image "Textures/ParkPBRMR/sidewalk_pavement-roughness.png" r
 		}
 	}
 }
@@ -4210,7 +4219,7 @@ material "table_echec/echiquier_echec"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/echiquier.jpg"
+			image "Textures/ParkPBRMR/echiquier.jpg" rgb
 		}
 	}
 }
@@ -4226,28 +4235,28 @@ material "table_echec/echiquier_table"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/marble-albedo.jpg"
+			image "Textures/ParkPBRMR/marble-albedo.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel occlusion
-			image "Textures/ParkPBRMR/marble-ao.jpg"
+			image "Textures/ParkPBRMR/marble-ao.jpg" r
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel normal
-			image "Textures/ParkPBRMR/marble-normal.jpg"
+			image "Textures/ParkPBRMR/marble-normal.jpg" rgb
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			channel roughness
-			image "Textures/ParkPBRMR/marble-roughness.jpg"
+			image "Textures/ParkPBRMR/marble-roughness.jpg" r
 		}
 	}
 }
@@ -4264,7 +4273,7 @@ material "table_echec/rainure_echiquier"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/rainure_echec.jpg"
+			image "Textures/ParkPBRMR/rainure_echec.jpg" rgb
 		}
 	}
 }
@@ -4294,7 +4303,7 @@ material "z"
 		{
 			sampler "Trilinear"
 			channel albedo
-			image "Textures/ParkPBRMR/fx_pathfinding.png"
+			image "Textures/ParkPBRMR/fx_pathfinding.png" rgb
 		}
 	}
 }

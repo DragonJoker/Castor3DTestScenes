@@ -50,21 +50,21 @@ scene "Scene"
 		type directional
 		colour 1.0 1.0 0.5
 		intensity 8 10
-		// shadows
-		// {
-			// producer true
-			// filter variance
-			// min_offset 0.0001
-			// max_slope_offset 0.00001
-			// variance_max 0.000000001
-			// variance_bias 1.0
-			// layered_lpv
-			// {
-				// intensity 1.0
-				// max_radius 0.03
-				// sample_count 100
-			// }
-		// }
+		shadows
+		{
+			producer true
+			filter variance
+			min_offset 0.0001
+			max_slope_offset 0.00001
+			variance_max 0.000000001
+			variance_bias 1.0
+			layered_lpv
+			{
+				intensity 1.0
+				max_radius 0.03
+				sample_count 100
+			}
+		}
 	}
 
 	/* Hand camera */
@@ -252,8 +252,8 @@ window "Window"
 	{
 		scene "Scene"
 		camera "MainCamera"
-		// size 1280 720
-		size 1920 1080
+		size 1280 720
+		// size 1920 1080
 		format argb32
 		//postfx "bloom" -Size=5
 
