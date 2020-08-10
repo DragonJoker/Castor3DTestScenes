@@ -80,8 +80,8 @@ scene "Relief"
 
 	scene_node "MainCameraNode"
 	{
-		orientation 0 1 0 180
-		position 0.0 0.0 100.0
+		orientation 0.0937565 -0.967943 0.233015 137.442
+		position 36.1581 27.8715 38.8571
 	}
 	camera "MainCamera"
 	{

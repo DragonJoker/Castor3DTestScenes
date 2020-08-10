@@ -42,7 +42,6 @@ scene "MainScene"
 			type perspective
 			near 0.1
 			aspect_ratio 1.333
-			aspect_ratio 1.778
 			far 20000
 			fov_y 45
 		}
@@ -88,7 +87,6 @@ window "MainWindow"
 		scene "MainScene"
 		camera "MainCamera"
 		size 800 600
-		size 1920 1080
 		format argb32
 	}
 }
