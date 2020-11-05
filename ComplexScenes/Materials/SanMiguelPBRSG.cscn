@@ -180,7 +180,7 @@ material "material_1"
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
 		glossiness 0
-		parallax_occlusion true
+		parallax_occlusion repeat
 
 		texture_unit
 		{
@@ -702,7 +702,7 @@ material "material_14"
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
 		glossiness 0
-		parallax_occlusion true
+		parallax_occlusion repeat
 
 		texture_unit
 		{
@@ -4908,7 +4908,7 @@ material "material_48"
 		diffuse 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
 		glossiness 0
-		parallax_occlusion true
+		parallax_occlusion repeat
 
 		texture_unit
 		{

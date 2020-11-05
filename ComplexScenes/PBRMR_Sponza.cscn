@@ -1,11 +1,14 @@
 // debug_overlays true
 materials metallic_roughness
 
+define white 1.0 1.0 1.0
+define sun 1.0 1.0 0.8
+
 scene "Scene"
 {
-	// ambient_light 0.1 0.1 0.1
-	ambient_light 0.0 0.0 0.0
+	ambient_light white
 	include "Materials/SponzaPBRMR.cscn"
+	include "Materials/Castor3D.cscn"
 
 	skybox
 	{
@@ -16,14 +19,14 @@ scene "Scene"
 	{
 		pass
 		{
-			albedo 1.0 1.0 1.0
+			albedo white
 			emissive 1.1
 		}
 	}
 
 	mesh "Sponza"
 	{
-		import "Meshes/Sponza.cmsh" -rescale=0.008
+		import "Meshes/Sponza.cmsh"
 	}
 
 	scene_node "MainCameraNode"
@@ -39,6 +42,7 @@ scene "Scene"
 		position 0 0 0
 	}
 
+	/* Directional Light */
 	scene_node "LightNode"
 	{
 		orientation 1 0 0 100
@@ -48,24 +52,32 @@ scene "Scene"
 	{
 		parent "LightNode"
 		type directional
-		colour 1.0 1.0 0.5
+		colour white
 		intensity 8 10
 		shadows
 		{
 			producer true
-			filter variance
+			filter pcf
+			global_illumination lpv_geometry
 			min_offset 0.0001
 			max_slope_offset 0.00001
 			variance_max 0.000000001
-			variance_bias 1.0
-			layered_lpv
+			volumetric_steps 20
+			volumetric_scattering 0.9
+			rsm_config
 			{
 				intensity 1.0
 				max_radius 0.03
 				sample_count 100
 			}
+			lpv_config
+			{
+				indirect_attenuation 0.1
+				texel_area_modifier 1.0
+			}
 		}
 	}
+	/**/
 
 	/* Hand camera */
 	// scene_node "LightNode"
@@ -109,6 +121,7 @@ scene "Scene"
 			// }
 		// }
 	// }
+	/**/
 
 	/* Spot light */
 	// scene_node "LightNode"
@@ -154,7 +167,9 @@ scene "Scene"
 			// }
 		// }
 	// }
+	/**/
 
+	/* Point light */
 	// scene_node "LightNode"
 	// {
 		// position 10 120 10
@@ -186,7 +201,7 @@ scene "Scene"
 			// filter raw
 			// min_offset 0.00001
 			// max_slope_offset 0.0001
-			// rsm
+			// lpv
 			// {
 				// intensity 1.0
 				// max_radius 0.03
@@ -194,6 +209,7 @@ scene "Scene"
 			// }
 		// }
 	// }
+	/**/
 
 	camera "MainCamera"
 	{
@@ -241,19 +257,53 @@ scene "Scene"
 			material 23 "roof"
 		}
 	}
+
+	mesh "Castor3D"
+	{
+		import "Meshes/Castor3D.cmsh"
+		default_material "CORPS2"
+	}
+
+	scene_node "Castor3D_WALK"
+	{
+		parent "FinalNode"
+		scale 0.02 0.02 0.02
+		orientation 0.0 1.0 0.0 -90.0
+	}
+
+	object "Castor3D_WALK"
+	{
+		parent "Castor3D_WALK"
+		mesh "Castor3D"
+	}
+
+	// Animated object groups
+
+	animated_object_group "Castor3D_WALK_Anim"
+	{
+		animated_object "Castor3D_WALK"
+
+		animation "WALK"
+		{
+			looped true
+			scale 1
+		}
+
+		start_animation "WALK"
+	}
 }
 
 window "Window"
 {
 	vsync false
-	fullscreen false
+	// fullscreen true
 
 	render_target
 	{
 		scene "Scene"
 		camera "MainCamera"
-		size 1280 720
-		// size 1920 1080
+		// size 1280 720
+		size 1920 1080
 		format argb32
 		//postfx "bloom" -Size=5
 
@@ -265,19 +315,22 @@ window "Window"
 			reprojection false
 		}
 
-		// ssao
-		// {
-			// enabled true
-			// high_quality true
-			// use_normals_buffer true
-			// intensity 1.0
-			// min_radius 0.1
-			// radius 7.5
-			// bias 0.23
-			// num_samples 19
-			// edge_sharpness 1.0
-			// blur_step_size 2
-			// blur_radius 4
-		// }
+		ssao
+		{
+			enabled true
+			high_quality true
+			use_normals_buffer true
+			blur_high_quality true
+			intensity 1.0
+			min_radius 0.1
+			radius 0.5
+			bias 0.025
+			num_samples 23
+			edge_sharpness 1.0
+			blur_step_size 2
+			blur_radius 4
+			// bend_step_count 10
+			// bend_step_size 0.5
+		}
 	}
 }
