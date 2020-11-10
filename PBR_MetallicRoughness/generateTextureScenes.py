@@ -4,7 +4,7 @@ startIndex = 100
 
 channels = ["albedo", "roughness", "metallic", "emissive", "opacity", "occlusion", "normal", "height", "reflection", "refraction"]
 extensions = ["png", "png", "png", "png", "png", "png", "png", "png", "", ""]
-options = ["", "", "", "emissive 1.0", 'two_sided true\n			mixed_interpolation true', "", "", "parallax_occlusion true", "", "refraction_ratio 0.92"]
+options = ["", "", "", "emissive 1.0", 'two_sided true\n			mixed_interpolation true', "", "", "parallax_occlusion one", "", "refraction_ratio 0.92"]
 
 def writeChannel( file, channel, extension ):
 	if channel != "reflection" and channel != "refraction":

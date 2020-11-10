@@ -1,5 +1,4 @@
 // Global configuration
-debug_overlays true
 materials phong
 
 scene "Cafe"

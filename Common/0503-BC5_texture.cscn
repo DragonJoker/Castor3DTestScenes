@@ -1,0 +1,621 @@
+materials phong
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+
+	skybox
+	{
+		equirectangular "Textures/backgroundSkyboxEquirectangular.jpg" 1024
+	}
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod 0.0
+		max_lod 0.0
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
+	mesh "Plane"
+	{
+		type "plane" -width_subdiv=1 -depth_subdiv=1 -width=10.0 depth=10.0
+	}
+
+	material "DiffuseMap"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/BC5.dds"
+				channel diffuse
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "Diffuse"
+	{
+		position -10.0 -5.0 0.0
+	}
+	object "Diffuse"
+	{
+		parent "Diffuse"
+		mesh "Plane"
+		material "DiffuseMap"
+	}
+
+	material "SpecularMap"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/Diffuse.jpg"
+				channel diffuse
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Specular.jpg"
+				channel specular
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "Specular"
+	{
+		position 0.0 -5.0 0.0
+	}
+	object "Specular"
+	{
+		parent "Specular"
+		mesh "Plane"
+		material "SpecularMap"
+	}
+
+	material "SpecularGlossMap"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/Diffuse.jpg"
+				channel diffuse
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Specular.jpg"
+				channel specular
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Gloss.jpg"
+				channel shininess
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "SpecularGloss"
+	{
+		position 10.0 -5.0 0.0
+	}
+	object "SpecularGloss"
+	{
+		parent "SpecularGloss"
+		mesh "Plane"
+		material "SpecularGlossMap"
+	}
+
+	// material "ReflectionRefraction"
+	// {
+		// pass
+		// {
+			// diffuse 0.75164	0.75164	0.75164 1.0
+			// emissive 0.0 0.0 0.0 1.0
+			// specular 0.628281 0.628281 0.628281 1.0
+			// shininess 51.2
+			// refraction_ratio 0.92
+			// two_sided true
+			// reflections true
+			// refractions true
+		// }
+	// }
+
+	// scene_node "ReflectionRefraction"
+	// {
+		// position 20.0 -5.0 0.0
+	// }
+	// object "ReflectionRefraction"
+	// {
+		// parent "ReflectionRefraction"
+		// mesh "Plane"
+		// material "ReflectionRefraction"
+	// }
+
+	material "NormalMap"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/Diffuse.jpg"
+				channel diffuse
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Normal.jpg"
+				channel normal
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "Normal"
+	{
+		position -10.0 5.0 0.0
+	}
+	object "Normal"
+	{
+		parent "Normal"
+		mesh "Plane"
+		material "NormalMap"
+	}
+
+	material "NormalSpecularMap"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/Diffuse.jpg"
+				channel diffuse
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Specular.jpg"
+				channel specular
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Normal.jpg"
+				channel normal
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "NormalSpecular"
+	{
+		position 0.0 5.0 0.0
+	}
+	object "NormalSpecular"
+	{
+		parent "NormalSpecular"
+		mesh "Plane"
+		material "NormalSpecularMap"
+	}
+
+	material "NormalOpacityMap"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+			mixed_interpolation true
+
+			texture_unit
+			{
+				image "Textures/Diffuse.jpg"
+				channel diffuse
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Specular.jpg"
+				channel specular
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Normal.jpg"
+				channel normal
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Opacity.png" a
+				channel opacity
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "NormalOpacity"
+	{
+		position 10.0 5.0 0.0
+	}
+	object "NormalOpacity"
+	{
+		parent "NormalOpacity"
+		mesh "Plane"
+		material "NormalOpacityMap"
+	}
+
+	// material "NormalReflectionRefraction"
+	// {
+		// pass
+		// {
+			// diffuse 0.75164	0.75164	0.75164 1.0
+			// emissive 0.0 0.0 0.0 1.0
+			// specular 0.628281 0.628281 0.628281 1.0
+			// shininess 51.2
+			// refraction_ratio 0.92
+			// two_sided true
+			// refractions true
+			// reflections true
+
+			// texture_unit
+			// {
+				// image "Textures/Diffuse.jpg"
+				// channel diffuse
+				// sampler	"Linear"
+			// }
+
+			// texture_unit
+			// {
+				// image "Textures/Specular.jpg"
+				// channel specular
+				// sampler	"Linear"
+			// }
+
+			// texture_unit
+			// {
+				// image "Textures/Normal.jpg"
+				// channel normal
+				// sampler	"Linear"
+			// }
+		// }
+	// }
+
+	// scene_node "NormalReflectionRefraction"
+	// {
+		// position 20.0 5.0 0.0
+	// }
+	// object "NormalReflectionRefraction"
+	// {
+		// parent "NormalReflectionRefraction"
+		// mesh "Plane"
+		// material "NormalReflectionRefraction"
+	// }
+
+	material "ParallaxMap"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+			parallax_occlusion one
+
+			texture_unit
+			{
+				image "Textures/Diffuse.jpg"
+				channel diffuse
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Normal.jpg"
+				channel normal
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Height.jpg"
+				channel height
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "Parallax"
+	{
+		position -10.0 15.0 0.0
+	}
+	object "Parallax"
+	{
+		parent "Parallax"
+		mesh "Plane"
+		material "ParallaxMap"
+	}
+
+	material "ParallaxSpecularMap"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+			parallax_occlusion one
+
+			texture_unit
+			{
+				image "Textures/Diffuse.jpg"
+				channel diffuse
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Specular.jpg"
+				channel specular
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Normal.jpg"
+				channel normal
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Height.jpg"
+				channel height
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "ParallaxSpecular"
+	{
+		position 0.0 15.0 0.0
+	}
+	object "ParallaxSpecular"
+	{
+		parent "ParallaxSpecular"
+		mesh "Plane"
+		material "ParallaxSpecularMap"
+	}
+
+	material "AllMap"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided false
+			parallax_occlusion one
+			bw_accumulation 0
+			mixed_interpolation true
+
+			texture_unit
+			{
+				image "Textures/Diffuse.jpg"
+				channel diffuse
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Specular.jpg"
+				channel specular
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Normal.jpg"
+				channel normal
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Opacity.png" a
+				channel opacity
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Gloss.jpg"
+				channel shininess
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Height.jpg"
+				channel height
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "All"
+	{
+		position 10.0 15.0 0.0
+	}
+	object "All"
+	{
+		parent "All"
+		mesh "Plane"
+		material "AllMap"
+	}
+
+	// material "ParallaxReflectionRefraction"
+	// {
+		// pass
+		// {
+			// diffuse 0.75164	0.75164	0.75164 1.0
+			// emissive 0.0 0.0 0.0 1.0
+			// specular 0.628281 0.628281 0.628281 1.0
+			// shininess 51.2
+			// refraction_ratio 0.92
+			// two_sided true
+			// parallax_occlusion one
+			// refractions true
+			// reflections true
+
+			// texture_unit
+			// {
+				// image "Textures/Diffuse.jpg"
+				// channel diffuse
+				// sampler	"Linear"
+			// }
+
+			// texture_unit
+			// {
+				// image "Textures/Specular.jpg"
+				// channel specular
+				// sampler	"Linear"
+			// }
+
+			// texture_unit
+			// {
+				// image "Textures/Normal.jpg"
+				// channel normal
+				// sampler	"Linear"
+			// }
+
+			// texture_unit
+			// {
+				// image "Textures/Gloss.jpg"
+				// channel shininess
+				// sampler	"Linear"
+			// }
+
+			// texture_unit
+			// {
+				// image "Textures/Height.jpg"
+				// channel height
+				// sampler	"Linear"
+			// }
+		// }
+	// }
+
+	// scene_node "ParallaxReflectionRefraction"
+	// {
+		// position 20.0 15.0 0.0
+	// }
+	// object "ParallaxReflectionRefraction"
+	// {
+		// parent "ParallaxReflectionRefraction"
+		// mesh "Plane"
+		// material "ParallaxReflectionRefraction"
+	// }
+
+	scene_node "SunLightNode1"
+	{
+		orientation 1 0 0 225
+	}
+	light "SunLight1"
+	{
+		parent "SunLightNode1"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	// scene_node "BulbLight1"
+	// {
+		// position  0.0 0.0 -5.0
+	// }
+	// light "BulbLight1"
+	// {
+		// parent "BulbLight1"
+		// type point
+		// colour 1.0 1.0 1.0
+		// intensity 0.1 0.8 1.0
+		// attenuation 0.0 0.25 0.0
+	// }
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0 1.0 0.0 180.0
+		position 0.0 0.0 50.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

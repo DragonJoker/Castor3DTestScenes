@@ -1,0 +1,117 @@
+materials specular_glossiness
+
+scene "Scene"
+{
+	ambient_light 1.0 1.0 1.0
+
+	skybox
+	{
+		equirectangular "Textures/backgroundSkyboxEquirectangular.jpg" 1024
+	}
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod 0.0
+		max_lod 0.0
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
+	mesh "Plane"
+	{
+		type "plane" -width_subdiv=1 -depth_subdiv=1 -width=10.0 depth=10.0
+	}
+
+	material "DiffuseMap"
+	{
+		pass
+		{
+			albedo 0.75164 0.75164 0.75164 1.0
+			specular 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			glossiness 0.2
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/BC3Opa.dds"
+				albedo_mask 0x00ffffff
+				opacity_mask 0xff000000
+				sampler	"Linear"
+			}
+		}
+	}
+
+	scene_node "Diffuse"
+	{
+		position 0.0 0.0 0.0
+	}
+	object "Diffuse"
+	{
+		parent "Diffuse"
+		mesh "Plane"
+		material "DiffuseMap"
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 225
+	}
+	light "SunLight1"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	// scene_node "LightNode"
+	// {
+		// position  0.0 0.0 -5.0
+	// }
+	// light "BulbLight1"
+	// {
+		// parent "LightNode"
+		// type point
+		// colour 1.0 1.0 1.0
+		// intensity 0.1 0.8 1.0
+		// attenuation 0.0 0.25 0.0
+	// }
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0 1.0 0.0 180.0
+		position 0.0 0.0 20.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

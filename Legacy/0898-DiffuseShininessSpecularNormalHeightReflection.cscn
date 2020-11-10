@@ -30,7 +30,7 @@ scene "Scene"
 			specular 0.628281 0.628281 0.628281
 			ambient 1.0
 			shininess 192.0
-			parallax_occlusion true
+			parallax_occlusion one
 
 			texture_unit
 			{

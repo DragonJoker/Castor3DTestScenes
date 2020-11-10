@@ -346,7 +346,7 @@ scene "Scene"
 			emissive 0.0 0.0 0.0 1.0
 			shininess 50.2
 			two_sided true
-			parallax_occlusion true
+			parallax_occlusion one
 
 			texture_unit
 			{
@@ -390,7 +390,7 @@ scene "Scene"
 			emissive 0.0 0.0 0.0 1.0
 			shininess 50.2
 			two_sided true
-			parallax_occlusion true
+			parallax_occlusion one
 
 			texture_unit
 			{
@@ -441,7 +441,7 @@ scene "Scene"
 			emissive 0.0 0.0 0.0 1.0
 			shininess 50.2
 			two_sided false
-			parallax_occlusion true
+			parallax_occlusion one
 			bw_accumulation 0
 			mixed_interpolation true
 
@@ -510,7 +510,7 @@ scene "Scene"
 			// shininess 51.2
 			// refraction_ratio 0.92
 			// two_sided true
-			// parallax_occlusion true
+			// parallax_occlusion one
 			// refractions true
 			// reflections true
 

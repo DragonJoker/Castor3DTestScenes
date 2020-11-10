@@ -31,7 +31,7 @@ scene "Scene"
 			glossiness 0.2
 			two_sided true
 			mixed_interpolation true
-			parallax_occlusion true
+			parallax_occlusion one
 
 			texture_unit
 			{

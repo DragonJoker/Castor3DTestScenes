@@ -32,7 +32,7 @@ scene "Scene"
 			shininess 192.0
 			two_sided true
 			mixed_interpolation true
-			parallax_occlusion true
+			parallax_occlusion one
 			refraction_ratio 0.92
 
 			texture_unit

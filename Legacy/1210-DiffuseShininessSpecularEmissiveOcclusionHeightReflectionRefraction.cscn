@@ -31,7 +31,7 @@ scene "Scene"
 			ambient 1.0
 			shininess 192.0
 			emissive 1.0
-			parallax_occlusion true
+			parallax_occlusion one
 			refraction_ratio 0.92
 
 			texture_unit

@@ -30,7 +30,7 @@ scene "Scene"
 			metallic 0.628281
 			roughness 0.2
 			emissive 1.0
-			parallax_occlusion true
+			parallax_occlusion one
 			refraction_ratio 0.92
 
 			texture_unit

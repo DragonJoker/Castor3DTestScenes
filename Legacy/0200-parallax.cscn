@@ -23,7 +23,7 @@ scene "Relief"
 			emissive 0.0 0.0 0.0 1.0
 			specular 0.1 0.1 0.1 1.0
 			shininess 50.0
-			parallax_occlusion true
+			parallax_occlusion one
 
 			texture_unit
 			{

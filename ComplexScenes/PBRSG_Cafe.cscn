@@ -1,5 +1,5 @@
 // Global configuration
-debug_overlays true
+// debug_overlays true
 materials specular_glossiness
 
 scene "Cafe"

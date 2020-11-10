@@ -43,27 +43,22 @@ scene "Scene"
 		position 0.0 30.0 0.0
 	}
 
+	mesh "Plane"
+	{
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=200 -depth=200
+	}
+
 	object "Plane"
 	{
 		parent "Plane"
-
 		mesh "Plane"
-		{
-			type "plane" -width_subdiv=0 -depth_subdiv=0 -width=200 -depth=200
-		}
-
 		material "Gold"
 	}
 
 	object "Plane2"
 	{
 		parent "Plane2"
-
-		mesh "Plane2"
-		{
-			type "plane" -width_subdiv=0 -depth_subdiv=0 -width=200 -depth=200
-		}
-
+		mesh "Plane"
 		material "Copper"
 	}
 
