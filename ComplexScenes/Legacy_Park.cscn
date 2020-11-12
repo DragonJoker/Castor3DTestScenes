@@ -3725,7 +3725,7 @@ window "Window"
 
 		smaa
 		{
-			mode T2X
+			mode 1X
 			preset ultra
 			edgeDetection luma
 			predication true
