@@ -1663,12 +1663,24 @@ scene "Parc"
 		{
 			producer true
 			filter variance
-			// volumetric_steps 10
-			// volumetric_scattering 0.2
+			global_illumination lpv_geometry
+			volumetric_steps 20
+			volumetric_scattering 0.9
 			min_offset 0.00001
 			max_slope_offset 0.0001
 			variance_max 0.000001
 			variance_bias 0.15
+			rsm_config
+			{
+				intensity 1.0
+				max_radius 0.03
+				sample_count 100
+			}
+			lpv_config
+			{
+				indirect_attenuation 0.1
+				texel_area_modifier 1.0
+			}
 		}
 	}
 
@@ -2895,7 +2907,7 @@ window "Window"
 		size 1280 720
 		// size 1920 1080
 		format argb32
-		// postfx "bloom" -Size=5
+		postfx "bloom" -Size=5
 
 		smaa
 		{

@@ -11,11 +11,6 @@ scene "Scene"
 		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=1000 -depth=1000
 	}
 
-	mesh "Plane2"
-	{
-		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=1000 -depth=1000
-	}
-
 	mesh "Torus"
 	{
 		type "torus" -inner_count=40 -outer_count=40 -inner_size=15 -outer_size=35
@@ -23,22 +18,22 @@ scene "Scene"
 
 	scene_node "LightNode"
 	{
-		orientation 1 0 0 45
+		position 500 250 -170
 	}
-	light "SunLight1"
+	light "Light"
 	{
+		type point
 		parent "LightNode"
-		type directional
 		colour 1.0 1.0 1.0
 		intensity 0.8 1.0
+		attenuation 1.0 0.0 0.0
+		cut_off 20
 		shadows
 		{
 			producer true
 			filter variance
-			min_offset 0.00001
-			max_slope_offset 0.0001
-			variance_max 0.0000001
-			variance_bias 0.15
+			variance_max 0.000001
+			variance_bias 0.0000001
 		}
 	}
 
@@ -63,7 +58,7 @@ scene "Scene"
 	object "Plane2"
 	{
 		parent "Plane2"
-		mesh "Plane2"
+		mesh "Plane"
 		material "Copper"
 	}
 

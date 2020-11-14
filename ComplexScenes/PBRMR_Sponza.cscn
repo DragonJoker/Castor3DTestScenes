@@ -271,26 +271,26 @@ scene "Scene"
 		orientation 0.0 1.0 0.0 -90.0
 	}
 
-	object "Castor3D_WALK"
-	{
-		parent "Castor3D_WALK"
-		mesh "Castor3D"
-	}
+	// object "Castor3D_WALK"
+	// {
+		// parent "Castor3D_WALK"
+		// mesh "Castor3D"
+	// }
 
 	// Animated object groups
 
-	animated_object_group "Castor3D_WALK_Anim"
-	{
-		animated_object "Castor3D_WALK"
+	// animated_object_group "Castor3D_WALK_Anim"
+	// {
+		// animated_object "Castor3D_WALK"
 
-		animation "WALK"
-		{
-			looped true
-			scale 1
-		}
+		// animation "WALK"
+		// {
+			// looped true
+			// scale 1
+		// }
 
-		start_animation "WALK"
-	}
+		// start_animation "WALK"
+	// }
 }
 
 window "Window"

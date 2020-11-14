@@ -21,10 +21,8 @@ scene "Scene"
 		{
 			producer true
 			filter raw
-			min_offset 0.00001
-			max_slope_offset 0.0001
-			variance_max 0.0000001
-			variance_bias 0.15
+			min_offset 0.0001
+			max_slope_offset 0.001
 		}
 	}
 
@@ -45,27 +43,22 @@ scene "Scene"
 		position 0.0 30.0 0.0
 	}
 
+	mesh "Plane"
+	{
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=200 -depth=200
+	}
+
 	object "Plane"
 	{
 		parent "Plane"
-
 		mesh "Plane"
-		{
-			type "plane" -width_subdiv=0 -depth_subdiv=0 -width=200 -depth=200
-		}
-
 		material "AlphaGold"
 	}
 
 	object "Plane2"
 	{
 		parent "Plane2"
-
-		mesh "Plane2"
-		{
-			type "plane" -width_subdiv=0 -depth_subdiv=0 -width=200 -depth=200
-		}
-
+		mesh "Plane"
 		material "AlphaCopper"
 	}
 
@@ -96,8 +89,8 @@ scene "Scene"
 			type perspective
 			fov_y 45.0
 			aspect_ratio 1.333
-			near 0.1
-			far 20000.0
+			near 1
+			far 10000
 		}
 	}
 }

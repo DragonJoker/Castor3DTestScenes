@@ -18,44 +18,44 @@ scene "Scene"
 
 	mesh "Plane"
 	{
-		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=20 -depth=20
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=200 -depth=200
 	}
 
 	mesh "Plane2"
 	{
-		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=20 -depth=20
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=200 -depth=200
 	}
 
 	mesh "Torus"
 	{
-		type "torus" -inner_count=30 -outer_count=30 -inner_size=1.5 -outer_size=3.0
+		type "torus" -inner_count=30 -outer_count=30 -inner_size=15 -outer_size=30
 	}
 
 	scene_node "Plane"
 	{
-		position 0.0 0.0 5.0
+		position 0.0 0.0 50.0
 		orientation 1.0 0.0 0.0 90.0
 	}
 
 	scene_node "Plane2"
 	{
-		position 0.0 5.0 15.0
+		position 0.0 50.0 150.0
 	}
 
 	scene_node "Torus"
 	{
-		position 0.0 3.0 0.0
+		position 0.0 30.0 0.0
 	}
 
 	scene_node "PointLightNode"
 	{
-		position 0.0 10.0 0.0
+		position 0.0 100.0 0.0
 	}
 
 	scene_node "SpotLightNode"
 	{
 		orientation 1 0 0 45
-		position 0.0 10.0 -10.0
+		position 0.0 100.0 -100.0
 	}
 
 	scene_node "LightNode"
@@ -65,8 +65,8 @@ scene "Scene"
 
 	scene_node "MainCameraNode"
 	{
-		position 0.0 18.0 -20.0
-		orientation 0.320588 0 0 40.947219
+		position 0.0 200.0 -200.0
+		orientation 1 0 0 45
 	}
 
 	light "Light"
@@ -100,7 +100,7 @@ scene "Scene"
 			filter variance
 			min_offset 0.00001
 			max_slope_offset 0.0001
-			variance_max 0.0000001
+			variance_max 0.000001
 			variance_bias 0.15
 		}
 	}
@@ -169,8 +169,8 @@ scene "Scene"
 			type perspective
 			fov_y 45.0
 			aspect_ratio 1.333
-			near 0.1
-			far 20000.0
+			near 1
+			far 10000
 		}
 	}
 }
