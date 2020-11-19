@@ -6,6 +6,7 @@ scene "SanMiguel"
 {
 	// Scene configuration
 	ambient_light 1.0 1.0 1.0
+	lpv_indirect_attenuation 0.1
 	include "Materials/SanMiguelPBRSG.cscn"
 
 	// Skybox
@@ -3239,7 +3240,6 @@ scene "SanMiguel"
 			}
 			lpv_config
 			{
-				indirect_attenuation 0.1
 				texel_area_modifier 1.0
 			}
 		}

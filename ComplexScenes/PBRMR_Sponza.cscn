@@ -7,8 +7,47 @@ define sun 1.0 1.0 0.8
 scene "Scene"
 {
 	ambient_light white
+	lpv_indirect_attenuation 0.2
 	include "Materials/SponzaPBRMR.cscn"
 	include "Materials/Castor3D.cscn"
+
+	scene_node "FinalNode"
+	{
+		orientation 1 0 0 0
+		position 0 0 0
+	}
+
+	// mesh "Pufi"
+	// {
+		// import "Meshes/Castor3D.cmsh"
+		// default_material "CORPS2"
+	// }
+
+	// scene_node "Pufi"
+	// {
+		// parent "FinalNode"
+		// scale 0.02 0.02 0.02
+		// orientation 0.0 1.0 0.0 -90.0
+	// }
+
+	// object "Pufi"
+	// {
+		// parent "Pufi"
+		// mesh "Pufi"
+	// }
+
+	// animated_object_group "Pufi_Anim"
+	// {
+		// animated_object "Pufi"
+
+		// animation "WALK"
+		// {
+			// looped true
+			// scale 1
+		// }
+
+		// start_animation "WALK"
+	// }
 
 	skybox
 	{
@@ -34,12 +73,6 @@ scene "Scene"
 		orientation 0.0 1.0 -0.0 90.0
 		position -9.0 0.7 -0.3
 		scale 1 1 1
-	}
-
-	scene_node "FinalNode"
-	{
-		orientation 1 0 0 0
-		position 0 0 0
 	}
 
 	/* Directional Light */
@@ -72,7 +105,6 @@ scene "Scene"
 			}
 			lpv_config
 			{
-				indirect_attenuation 0.1
 				texel_area_modifier 1.0
 			}
 		}
@@ -257,40 +289,6 @@ scene "Scene"
 			material 23 "roof"
 		}
 	}
-
-	mesh "Castor3D"
-	{
-		import "Meshes/Castor3D.cmsh"
-		default_material "CORPS2"
-	}
-
-	scene_node "Castor3D_WALK"
-	{
-		parent "FinalNode"
-		scale 0.02 0.02 0.02
-		orientation 0.0 1.0 0.0 -90.0
-	}
-
-	// object "Castor3D_WALK"
-	// {
-		// parent "Castor3D_WALK"
-		// mesh "Castor3D"
-	// }
-
-	// Animated object groups
-
-	// animated_object_group "Castor3D_WALK_Anim"
-	// {
-		// animated_object "Castor3D_WALK"
-
-		// animation "WALK"
-		// {
-			// looped true
-			// scale 1
-		// }
-
-		// start_animation "WALK"
-	// }
 }
 
 window "Window"

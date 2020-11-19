@@ -6,6 +6,7 @@ scene "Parc"
 	// Scene configuration
 	ambient_light 0.200000 0.200000 0.200000
 	background_colour 0.500000 0.500000 0.500000
+	lpv_indirect_attenuation 0.1
 	include "Materials/ParkLegacy.cscn"
 
 	// Skybox
@@ -1713,7 +1714,6 @@ scene "Parc"
 			}
 			lpv_config
 			{
-				indirect_attenuation 0.1
 				texel_area_modifier 1.0
 			}
 		}

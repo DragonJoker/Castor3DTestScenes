@@ -7,6 +7,7 @@ scene "Parc"
 	// Scene configuration
 	ambient_light 1.00000 1.00000 1.00000
 	background_colour 0.500000 0.500000 0.500000
+	lpv_indirect_attenuation 0.1
 	include "Materials/ParkPBRMR.cscn"
 
 	// Skybox
@@ -14,6 +15,34 @@ scene "Parc"
 	skybox
 	{
 		equirectangular "Textures/ParkPBRMR/skybox.hdr" 1024
+	}
+
+	material "MRBlack"
+	{
+		pass
+		{
+			albedo 0.0 0.0 0.0
+			roughness 1.0
+			metallic 0.0
+			two_sided true
+		}
+	}
+
+	mesh "ground"
+	{
+		type "cube" -width=100000 -height=400 depth=100000
+		default_material "MRBlack"
+	}
+
+	scene_node "ground"
+	{
+		position 0 -220 0
+	}
+
+	object "ground"
+	{
+		parent "ground"
+		mesh "ground"
 	}
 
 	// Meshes
@@ -1678,7 +1707,6 @@ scene "Parc"
 			}
 			lpv_config
 			{
-				indirect_attenuation 0.1
 				texel_area_modifier 1.0
 			}
 		}

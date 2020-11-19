@@ -6,6 +6,7 @@ scene "SanMiguel"
 {
 	// Scene configuration
 	ambient_light 0.0 0.0 0.0
+	lpv_indirect_attenuation 0.1
 	include "Materials/SanMiguelLegacy.cscn"
 
 	// Skybox
@@ -3225,17 +3226,22 @@ scene "SanMiguel"
 		{
 			producer true
 			filter variance
+			global_illumination lpv_geometry
 			min_offset 0.00001
 			max_slope_offset 0.0001
 			// variance_max 0.000001
 			// variance_bias 0.15
 			variance_max 0.0000005
 			variance_bias 0.20
-			lpv
+			rsm_config
 			{
 				intensity 1.0
 				max_radius 0.03
 				sample_count 100
+			}
+			lpv_config
+			{
+				texel_area_modifier 1.0
 			}
 		}
 	}
