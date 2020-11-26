@@ -112,28 +112,28 @@ scene "Scene"
 	/**/
 
 	/* Hand camera */
-	// scene_node "LightNode"
+	scene_node "HandLightNode"
+	{
+		parent "MainCameraNode"
+		position 0.3 -0.3 0.3
+	}
+
+	object "HandLight"
+	{
+		parent "HandLightNode"
+		cast_shadows false
+
+		mesh "SpotLightMesh"
+		{
+			type "cube" -width=0.05 -height=0.05 -depth=0.1
+		}
+
+		material "WhiteEmit"
+	}
+
+	// light "HandLight"
 	// {
-		// parent "MainCameraNode"
-		// position 0.3 -0.3 0.3
-	// }
-
-	// object "SpotLight"
-	// {
-		// parent "LightNode"
-		// cast_shadows false
-
-		// mesh "SpotLightMesh"
-		// {
-			// type "cube" -width=0.05 -height=0.05 -depth=0.1
-		// }
-
-		// material "WhiteEmit"
-	// }
-
-	// light "Light"
-	// {
-		// parent "LightNode"
+		// parent "HandLightNode"
 		// type spot
 		// colour 1.0 1.0 0.5
 		// intensity 8.0 10.0
@@ -143,13 +143,18 @@ scene "Scene"
 		// {
 			// producer true
 			// filter pcf
+			// global_illumination lpv_geometry
 			// min_offset 0.00001
 			// max_slope_offset 0.0001
-			// lpv
+			// rsm_config
 			// {
 				// intensity 1.0
 				// max_radius 0.03
 				// sample_count 100
+			// }
+			// lpv_config
+			// {
+				// texel_area_modifier 1.0
 			// }
 		// }
 	// }
@@ -250,9 +255,9 @@ scene "Scene"
 		viewport
 		{
 			type perspective
-			near 0.1
 			aspect_ratio 1.778
-			far 500
+			near 0.1
+			far 150
 			fov_y 45
 		}
 	}

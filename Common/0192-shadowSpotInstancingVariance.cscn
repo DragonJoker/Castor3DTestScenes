@@ -38,8 +38,11 @@ scene "Scene"
 		{
 			producer true
 			filter variance
-			variance_max 0.0000001
-			variance_bias 0.15
+			vsm_config
+			{
+				variance_max 0.0000001
+				variance_bias 0.15
+			}
 		}
 	}
 
