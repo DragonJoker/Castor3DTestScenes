@@ -118,10 +118,21 @@ scene "BaltardIn"
 		{
 			producer true
 			filter variance
-			min_offset 0.00001
-			max_slope_offset 0.0001
-			variance_max 0.0000005
-			variance_bias 0.20
+			raw_config
+			{
+				min_offset 0.00001
+				max_slope_offset 0.0001
+			}
+			pcf_config
+			{
+				min_offset 0.00001
+				max_slope_offset 0.0001
+			}
+			vsm_config
+			{
+				variance_max 0.0000005
+				variance_bias 0.20
+			}
 		}
 	}
 
@@ -234,12 +245,6 @@ window "Window"
 		size 1920 1080
 		format argb32
 		tone_mapping "linear"
-
-		hdr_config
-		{
-			exposure 1
-			gamma 2.2
-		}
 
 		ssao
 		{

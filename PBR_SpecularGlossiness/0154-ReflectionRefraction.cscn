@@ -31,6 +31,7 @@ scene "Scene"
 			glossiness 0.2
 			refraction_ratio 0.92
 			reflections true
+			transmission 0.75164 0.75164 0.75164
 			refractions true
 		}
 	}

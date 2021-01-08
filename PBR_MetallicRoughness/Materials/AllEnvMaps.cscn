@@ -109,6 +109,7 @@ material "RefrMatBody"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		alpha_func greater 0.5
@@ -139,6 +140,7 @@ material "RefrMatHead"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		two_sided true
@@ -160,6 +162,7 @@ material "RefrCornea"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		two_sided true
@@ -173,6 +176,7 @@ material "RefrDx11Shader6"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		alpha_func greater 0.5
@@ -203,6 +207,7 @@ material "ReflRefrMatBody"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		alpha_func greater 0.5
@@ -234,6 +239,7 @@ material "ReflRefrMatHead"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		two_sided true
@@ -256,6 +262,7 @@ material "ReflRefrCornea"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		two_sided true
@@ -270,6 +277,7 @@ material "ReflRefrDx11Shader6"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		alpha_func greater 0.5

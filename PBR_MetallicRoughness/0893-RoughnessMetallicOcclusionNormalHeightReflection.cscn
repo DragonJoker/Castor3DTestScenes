@@ -26,44 +26,44 @@ scene "Scene"
 	{
 		pass
 		{
-			albedo 0.75164	0.75164	0.75164 1.0
+			albedo 0.75164 0.75164 0.75164 1.0
 			metallic 0.628281
-			roughness 0.2
+			roughness 0.8
 			parallax_occlusion one
 
 			texture_unit
 			{
 				channel roughness
 				sampler "Linear"
-				image "Textures/Rusted/roughness.png"
+				image "Textures/Cube/roughness.jpg"
 			}
 
 			texture_unit
 			{
 				channel metallic
 				sampler "Linear"
-				image "Textures/Rusted/metallic.png"
+				image "Textures/Cube/metallic.jpg"
 			}
 
 			texture_unit
 			{
 				channel occlusion
 				sampler "Linear"
-				image "Textures/Rusted/occlusion.png"
+				image "Textures/Cube/occlusion.jpg"
 			}
 
 			texture_unit
 			{
 				channel normal
 				sampler "Linear"
-				image "Textures/Rusted/normal.png"
+				image "Textures/Cube/normal.jpg"
 			}
 
 			texture_unit
 			{
 				channel height
 				sampler "Linear"
-				image "Textures/Rusted/height.png"
+				image "Textures/Cube/height.jpg"
 			}
 			reflections true
 		}

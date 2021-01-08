@@ -1,4 +1,3 @@
-// debug_overlays true
 materials metallic_roughness
 
 scene "CornellBox"

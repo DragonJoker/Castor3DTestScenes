@@ -52,6 +52,7 @@ scene "Scene"
 				image "Textures/Rusted/normal.jpg"
 			}
 			reflections true
+			transmission 0.75164 0.75164 0.75164
 			refractions true
 		}
 	}

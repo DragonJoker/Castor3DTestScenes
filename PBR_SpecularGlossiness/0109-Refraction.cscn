@@ -30,6 +30,7 @@ scene "Scene"
 			specular 0.628281 0.628281 0.628281
 			glossiness 0.2
 			refraction_ratio 0.92
+			transmission 0.75164 0.75164 0.75164
 			refractions true
 		}
 	}

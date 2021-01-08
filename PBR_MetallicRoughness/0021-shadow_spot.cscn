@@ -66,10 +66,11 @@ scene "Scene"
 		{
 			producer true
 			filter variance
-			min_offset 0.000001
-			max_slope_offset 0.00001
-			variance_max 0.00001
-			variance_bias 0.000001
+			vsm_config
+			{
+				variance_max 0.00001
+				variance_bias 0.15
+			}
 		}
 	}
 

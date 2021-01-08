@@ -19,6 +19,7 @@ material "MatBody"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		alpha_func greater 0.5
@@ -49,6 +50,7 @@ material "MatHead"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		two_sided true
@@ -70,6 +72,7 @@ material "cornea"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		two_sided true
@@ -83,6 +86,7 @@ material "dx11Shader6"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
+		transmission 1.0 1.0 1.0
 		roughness 0.0
 		metallic 1.0
 		alpha_func greater 0.5

@@ -3227,12 +3227,21 @@ scene "SanMiguel"
 			producer true
 			filter variance
 			global_illumination lpv_geometry
-			min_offset 0.00001
-			max_slope_offset 0.0001
-			// variance_max 0.000001
-			// variance_bias 0.15
-			variance_max 0.0000005
-			variance_bias 0.20
+			raw_config
+			{
+				min_offset 0.00001
+				max_slope_offset 0.0001
+			}
+			pcf_config
+			{
+				min_offset 0.00001
+				max_slope_offset 0.0001
+			}
+			vsm_config
+			{
+				variance_max 0.0000005
+				variance_bias 0.15
+			}
 			rsm_config
 			{
 				intensity 1.0
@@ -5271,12 +5280,6 @@ window "SanMiguel"
 		format argb32
 		tone_mapping "linear"
 		// postfx "bloom" -Size=5
-
-		hdr_config
-		{
-			exposure 1.0
-			gamma 2.2
-		}
 
 		smaa
 		{

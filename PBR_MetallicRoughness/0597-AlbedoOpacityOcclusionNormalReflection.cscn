@@ -26,9 +26,9 @@ scene "Scene"
 	{
 		pass
 		{
-			albedo 0.75164	0.75164	0.75164 1.0
+			albedo 0.75164 0.75164 0.75164 1.0
 			metallic 0.628281
-			roughness 0.2
+			roughness 0.8
 			two_sided true
 			mixed_interpolation true
 
@@ -36,28 +36,28 @@ scene "Scene"
 			{
 				channel albedo
 				sampler "Linear"
-				image "Textures/Rusted/albedo.png"
+				image "Textures/Cube/albedo.jpg"
 			}
 
 			texture_unit
 			{
 				channel opacity
 				sampler "Linear"
-				image "Textures/Rusted/opacity.png"
+				image "Textures/Cube/opacity.png"
 			}
 
 			texture_unit
 			{
 				channel occlusion
 				sampler "Linear"
-				image "Textures/Rusted/occlusion.png"
+				image "Textures/Cube/occlusion.jpg"
 			}
 
 			texture_unit
 			{
 				channel normal
 				sampler "Linear"
-				image "Textures/Rusted/normal.png"
+				image "Textures/Cube/normal.jpg"
 			}
 			reflections true
 		}

@@ -100,6 +100,7 @@ material "RefrMatBody"
 {
 	pass
 	{
+		transmission 1.0 1.0 1.0
 		glossiness 1.0
 		alpha_func greater 0.5
 		two_sided true
@@ -128,6 +129,7 @@ material "RefrMatHead"
 {
 	pass
 	{
+		transmission 1.0 1.0 1.0
 		glossiness 1.0
 		two_sided true
 		refraction_ratio 0.92
@@ -147,6 +149,7 @@ material "RefrCornea"
 {
 	pass
 	{
+		transmission 1.0 1.0 1.0
 		glossiness 1.0
 		two_sided true
 		refraction_ratio 0.92
@@ -158,6 +161,7 @@ material "RefrDx11Shader6"
 {
 	pass
 	{
+		transmission 1.0 1.0 1.0
 		glossiness 1.0
 		alpha_func greater 0.5
 		two_sided true
@@ -186,6 +190,7 @@ material "ReflRefrMatBody"
 {
 	pass
 	{
+		transmission 1.0 1.0 1.0
 		glossiness 1.0
 		alpha_func greater 0.5
 		two_sided true
@@ -215,6 +220,7 @@ material "ReflRefrMatHead"
 {
 	pass
 	{
+		transmission 1.0 1.0 1.0
 		glossiness 1.0
 		two_sided true
 		refraction_ratio 0.92
@@ -235,6 +241,7 @@ material "ReflRefrCornea"
 {
 	pass
 	{
+		transmission 1.0 1.0 1.0
 		glossiness 1.0
 		two_sided true
 		refraction_ratio 0.92
@@ -247,6 +254,7 @@ material "ReflRefrDx11Shader6"
 {
 	pass
 	{
+		transmission 1.0 1.0 1.0
 		glossiness 1.0
 		alpha_func greater 0.5
 		two_sided true

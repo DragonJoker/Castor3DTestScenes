@@ -26,9 +26,9 @@ scene "Scene"
 	{
 		pass
 		{
-			albedo 0.75164	0.75164	0.75164 1.0
+			albedo 0.75164 0.75164 0.75164 1.0
 			metallic 0.628281
-			roughness 0.2
+			roughness 0.8
 			emissive 1.0
 			two_sided true
 			mixed_interpolation true
@@ -38,49 +38,49 @@ scene "Scene"
 			{
 				channel albedo
 				sampler "Linear"
-				image "Textures/Rusted/albedo.png"
+				image "Textures/Cube/albedo.jpg"
 			}
 
 			texture_unit
 			{
 				channel roughness
 				sampler "Linear"
-				image "Textures/Rusted/roughness.png"
+				image "Textures/Cube/roughness.jpg"
 			}
 
 			texture_unit
 			{
 				channel metallic
 				sampler "Linear"
-				image "Textures/Rusted/metallic.png"
+				image "Textures/Cube/metallic.jpg"
 			}
 
 			texture_unit
 			{
 				channel emissive
 				sampler "Linear"
-				image "Textures/Rusted/emissive.png"
+				image "Textures/Cube/emissive.png"
 			}
 
 			texture_unit
 			{
 				channel opacity
 				sampler "Linear"
-				image "Textures/Rusted/opacity.png"
+				image "Textures/Cube/opacity.png"
 			}
 
 			texture_unit
 			{
 				channel normal
 				sampler "Linear"
-				image "Textures/Rusted/normal.png"
+				image "Textures/Cube/normal.jpg"
 			}
 
 			texture_unit
 			{
 				channel height
 				sampler "Linear"
-				image "Textures/Rusted/height.png"
+				image "Textures/Cube/height.jpg"
 			}
 		}
 	}

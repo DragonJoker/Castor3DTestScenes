@@ -17,6 +17,8 @@ def writeChannel( file, channel, extension ):
 		file.write( '				image "Textures/Bricks/' + channel.capitalize() + '.' + extension + '"\n' )
 		file.write( '			}\n' )
 	else:
+		if channel != "reflection":
+			file.write( '			transmission 1.0 1.0 1.0\n' )
 		file.write( '			' + channel + 's true\n' )
 
 def writeFile( file, indices ):
@@ -48,7 +50,7 @@ def writeFile( file, indices ):
 	file.write( '	{\n' )
 	file.write( '		pass\n' )
 	file.write( '		{\n' )
-	file.write( '			diffuse 0.75164	0.75164	0.75164\n' )
+	file.write( '			diffuse 0.75164 0.75164 0.75164\n' )
 	file.write( '			specular 0.628281 0.628281 0.628281\n' )
 	file.write( '			ambient 1.0\n' )
 	file.write( '			shininess 192.0\n' )

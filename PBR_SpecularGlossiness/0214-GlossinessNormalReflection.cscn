@@ -13,8 +13,8 @@ scene "Scene"
 	{
 		min_filter linear
 		mag_filter linear
-		min_lod 0.0
-		max_lod 0.0
+		min_lod -1000.0
+		max_lod 1000.0
 		lod_bias 0.0
 		u_wrap_mode clamp_to_edge
 		v_wrap_mode clamp_to_edge
@@ -29,6 +29,7 @@ scene "Scene"
 			albedo 0.75164 0.75164 0.75164 1.0
 			specular 0.628281 0.628281 0.628281
 			glossiness 0.2
+			reflections true
 
 			texture_unit
 			{
@@ -43,7 +44,6 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/normal.jpg"
 			}
-			reflections true
 		}
 	}
 

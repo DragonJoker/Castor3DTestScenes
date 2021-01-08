@@ -1691,15 +1691,6 @@ scene "Parc"
 		type directional
 		colour 1 1 1
 		intensity 0.7 0.8
-		shadows
-		{
-			producer true
-			filter variance
-			min_offset 0.00001
-			max_slope_offset 0.0001
-			variance_max 0.000001
-			variance_bias 0.15
-		}
 	}
 
 	// Geometries
@@ -3705,12 +3696,6 @@ window "Window"
 		size 1920 1080
 		format argb32
 		tone_mapping "linear"
-
-		hdr_config
-		{
-			exposure 1
-			gamma 2.2
-		}
 
 		ssao
 		{

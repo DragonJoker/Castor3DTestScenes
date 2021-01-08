@@ -48,6 +48,7 @@ scene "Scene"
 				image "Textures/Rusted/height.jpg"
 			}
 			reflections true
+			transmission 0.75164 0.75164 0.75164
 			refractions true
 		}
 	}

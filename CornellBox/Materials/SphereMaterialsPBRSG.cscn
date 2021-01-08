@@ -3,9 +3,9 @@ material "leftSphere"
 {
 	pass
 	{
-		diffuse 0.01000 0.01000 0.01000
-		specular 0.95000 0.95000 0.95000
-		glossiness 0.95
+		diffuse 0.55000 0.55000 0.55000
+		specular 0.55000 0.55000 0.55000
+		glossiness 0.90
 		two_sided true
 		reflections true
 	}
@@ -15,9 +15,10 @@ material "rightSphere"
 {
 	pass
 	{
-		diffuse 0.01000 0.01000 0.01000
-		specular 0.30000 0.30000 0.30000
-		glossiness 0.95
+		diffuse 0.55000 0.55000 0.55000
+		specular 0.55000 0.55000 0.55000
+		transmission 1.0 1.0 1.0
+		glossiness 0.90
 		two_sided true
 		reflections true
 		refraction_ratio 0.66

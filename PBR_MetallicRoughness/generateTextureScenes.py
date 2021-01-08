@@ -3,7 +3,7 @@
 startIndex = 100
 
 channels = ["albedo", "roughness", "metallic", "emissive", "opacity", "occlusion", "normal", "height", "reflection", "refraction"]
-extensions = ["png", "png", "png", "png", "png", "png", "png", "png", "", ""]
+extensions = ["jpg", "jpg", "jpg", "png", "png", "jpg", "jpg", "jpg", "", ""]
 options = ["", "", "", "emissive 1.0", 'two_sided true\n			mixed_interpolation true', "", "", "parallax_occlusion one", "", "refraction_ratio 0.92"]
 
 def writeChannel( file, channel, extension ):
@@ -13,9 +13,11 @@ def writeChannel( file, channel, extension ):
 		file.write( '			{\n' )
 		file.write( '				channel ' + channel + '\n' )
 		file.write( '				sampler "Linear"\n' )
-		file.write( '				image "Textures/Rusted/' + channel + '.' + extension + '"\n' )
+		file.write( '				image "Textures/Cube/' + channel + '.' + extension + '"\n' )
 		file.write( '			}\n' )
 	else:
+		if channel != "reflection":
+			file.write( '			transmission 1.0 1.0 1.0\n' )
 		file.write( '			' + channel + 's true\n' )
 
 def writeFile( file, indices ):
@@ -47,9 +49,9 @@ def writeFile( file, indices ):
 	file.write( '	{\n' )
 	file.write( '		pass\n' )
 	file.write( '		{\n' )
-	file.write( '			albedo 0.75164	0.75164	0.75164 1.0\n' )
+	file.write( '			albedo 0.75164 0.75164 0.75164 1.0\n' )
 	file.write( '			metallic 0.628281\n' )
-	file.write( '			roughness 0.2\n' )
+	file.write( '			roughness 0.8\n' )
 	for i in indices:
 		if len( options[i] ) > 0:
 			file.write( '			' + options[i] + '\n' )

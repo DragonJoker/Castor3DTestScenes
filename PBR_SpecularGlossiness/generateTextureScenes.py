@@ -16,6 +16,8 @@ def writeChannel( file, channel, extension ):
 		file.write( '				image "Textures/Rusted/' + channel + '.' + extension + '"\n' )
 		file.write( '			}\n' )
 	else:
+		if channel != "reflection":
+			file.write( '			transmission 1.0 1.0 1.0\n' )
 		file.write( '			' + channel + 's true\n' )
 
 def writeFile( file, indices ):
