@@ -22,7 +22,7 @@ scene "Scene"
 
 	mesh "Sponza"
 	{
-		import "Meshes/Sponza.cmsh" -rescale=0.008
+		import "Meshes/Sponza.cmsh"
 	}
 
 	scene_node "MainCameraNode"
@@ -53,15 +53,33 @@ scene "Scene"
 		{
 			producer true
 			filter variance
-			min_offset 0.0001
-			max_slope_offset 0.00001
-			variance_max 0.000000001
-			variance_bias 1.0
-			layered_lpv
+			// global_illumination lpv_geometry
+			volumetric_steps 20
+			volumetric_scattering 0.9
+			raw_config
+			{
+				min_offset 0.0001
+				max_slope_offset 0.00001
+			}
+			pcf_config
+			{
+				min_offset 0.0001
+				max_slope_offset 0.00001
+			}
+			vsm_config
+			{
+				variance_max 0.0000005
+				variance_bias 0.15
+			}
+			rsm_config
 			{
 				intensity 1.0
 				max_radius 0.03
 				sample_count 100
+			}
+			lpv_config
+			{
+				texel_area_modifier 1.0
 			}
 		}
 	}

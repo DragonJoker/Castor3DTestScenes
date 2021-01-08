@@ -1,0 +1,56 @@
+
+scene_node "leftSphere"
+{
+	position 2.786 -3.333 1.7
+}
+
+scene_node "rightSphere"
+{
+	position -3.0415 -3.333 -1.6359
+}
+
+scene_node "floor"
+{
+	position 0.0 -5.0 0.0
+	orientation 1 0 0 -90
+}
+
+scene_node "ceiling"
+{
+	position 0.0 5.0 0.0
+	orientation 1 0 0 90
+}
+
+scene_node "backWall"
+{
+	position 0.0 0.0 5.0
+	orientation 1 0 0 180
+}
+
+scene_node "rightWall"
+{
+	position 5.0 0.0 0.0
+	orientation 0 1 0 -90
+}
+
+scene_node "leftWall"
+{
+	position -5.0 0.0 0.0
+	orientation 0 1 0 90
+}
+
+scene_node "light"
+{
+	position 0.0 4.95 0.0
+	orientation 1 0 0 -90
+}
+
+scene_node "MainCameraNode"
+{
+	position 0.0 0.0 -20.0
+}
+
+scene_node "LightNode"
+{
+	position 0.0 4.9 0.0
+}

@@ -1084,10 +1084,21 @@ scene "BaltardOut"
 			producer true
 			filter pcf
 			global_illumination lpv_geometry
-			min_offset 0.001
-			max_slope_offset 0.000001
-			variance_max 0.0000001
-			variance_bias 0.15
+			raw_config
+			{
+				min_offset 0.001
+				max_slope_offset 0.000001
+			}
+			pcf_config
+			{
+				min_offset 0.001
+				max_slope_offset 0.000001
+			}
+			vsm_config
+			{
+				variance_max 0.0000001
+				variance_bias 0.15
+			}
 			rsm_config
 			{
 				intensity 1.0

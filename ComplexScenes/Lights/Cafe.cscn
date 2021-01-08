@@ -16,10 +16,21 @@ light "spot_01"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -41,10 +52,21 @@ light "spot_02"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -66,10 +88,21 @@ light "spot_03"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -91,10 +124,21 @@ light "spot_04"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -116,10 +160,21 @@ light "spot_05"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -141,10 +196,21 @@ light "spot_06"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -166,10 +232,21 @@ light "spot_07"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -191,10 +268,21 @@ light "spot_08"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -216,10 +304,21 @@ light "spot_09"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -241,10 +340,21 @@ light "spot_10"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -266,10 +376,21 @@ light "spot_11"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -291,10 +412,21 @@ light "spot_12"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -316,10 +448,21 @@ light "spot_13"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -341,10 +484,21 @@ light "spot_14"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -366,10 +520,21 @@ light "spot_15"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -391,10 +556,21 @@ light "spot_16"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -416,10 +592,21 @@ light "spot_17"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -441,10 +628,21 @@ light "spot_18"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -466,10 +664,21 @@ light "spot_19"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -491,10 +700,21 @@ light "spot_20"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -516,10 +736,21 @@ light "spot_21"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -541,10 +772,21 @@ light "spot_22"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -566,10 +808,21 @@ light "spot_23"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -591,10 +844,21 @@ light "spot_24"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -616,10 +880,21 @@ light "spot_25"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -641,10 +916,21 @@ light "spot_26"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -666,10 +952,21 @@ light "spot_27_bar"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -691,10 +988,21 @@ light "spot_28_bar"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -716,10 +1024,21 @@ light "spot_29_bar"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -741,10 +1060,21 @@ light "spot_30_bar"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -766,10 +1096,21 @@ light "spot_31_bar"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -791,10 +1132,21 @@ light "spot_32_bar"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -816,10 +1168,21 @@ light "spot_33_bar"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -841,10 +1204,21 @@ light "spot_34_bar"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -866,10 +1240,21 @@ light "spot_35_bar"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -891,10 +1276,21 @@ light "spot_36_bar_back"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -916,10 +1312,21 @@ light "spot_37_bar_back"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -941,10 +1348,21 @@ light "spot_38_bar_back"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -966,10 +1384,21 @@ light "spot_39_bar_back"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -991,10 +1420,21 @@ light "spot_40_bar_back"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1016,10 +1456,21 @@ light "spot_41_bar_back"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1041,10 +1492,21 @@ light "spot_42_bar_back"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1066,10 +1528,21 @@ light "spot_43_bar_back"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1091,10 +1564,21 @@ light "spot_44_bar_back_display"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1116,10 +1600,21 @@ light "spot_45_bar_back_display"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1141,10 +1636,21 @@ light "spot_46_billard"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1166,10 +1672,21 @@ light "spot_47_billard"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1191,10 +1708,21 @@ light "spot_48_billard"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1216,10 +1744,21 @@ light "spot_49_billard"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1241,10 +1780,21 @@ light "spot_50_billard"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1266,10 +1816,21 @@ light "spot_51_billard"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1291,10 +1852,21 @@ light "spot_52"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 
@@ -1316,10 +1888,21 @@ light "spot_53"
 	{
 		producer true
 		filter pcf
-		min_offset 0.00001
-		max_slope_offset 0.0001
-		variance_max 0.0000001
-		variance_bias 0.15
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
 	}
 }
 

@@ -28,8 +28,9 @@ scene "Scene"
 		pass
 		{
 			diffuse 0.75164	0.75164	0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
+			transmission 1.0 1.0 1.0
 			specular 0.628281 0.628281 0.628281 1.0
+			ambient 0.01
 			shininess 51.2
 			refraction_ratio 0.92
 			refractions true
@@ -41,8 +42,9 @@ scene "Scene"
 		pass
 		{
 			diffuse 0.75164 0.60648 0.22648 1.0
-			emissive 0.0 0.0 0.0 1.0
+			transmission 1.0 1.0 1.0
 			specular 0.628281 0.555802 0.366065 1.0
+			ambient 0.01
 			shininess 51.2
 			refraction_ratio 0.92
 			refractions true
@@ -54,8 +56,9 @@ scene "Scene"
 		pass
 		{
 			diffuse 0.7038 0.27048 0.0828 1.0
-			emissive 0.0 0.0 0.0 1.0
+			transmission 1.0 1.0 1.0
 			specular 0.256777 0.137622 0.086014 1.0
+			ambient 0.01
 			shininess 51.2
 			refraction_ratio 0.92
 			refractions true

@@ -3226,12 +3226,23 @@ scene "SanMiguel"
 			producer true
 			filter pcf
 			global_illumination lpv_geometry
-			min_offset 0.00001
-			max_slope_offset 0.0001
-			variance_max 0.0000005
-			variance_bias 0.20
 			volumetric_steps 20
 			volumetric_scattering 0.9
+			raw_config
+			{
+				min_offset 0.00001
+				max_slope_offset 0.0001
+			}
+			pcf_config
+			{
+				min_offset 0.00001
+				max_slope_offset 0.0001
+			}
+			vsm_config
+			{
+				variance_max 0.0000005
+				variance_bias 0.20
+			}
 			rsm_config
 			{
 				intensity 1.0

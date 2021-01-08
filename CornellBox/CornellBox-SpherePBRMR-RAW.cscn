@@ -1,0 +1,46 @@
+materials metallic_roughness
+
+scene "CornellBox"
+{
+	ambient_light 0.0 0.0 0.0
+	background_colour 0.0 0.0 0.0
+	include "Materials/SphereMaterialsPBRMR.cscn"
+	include "Meshes/SphereMeshes.cscn"
+	include "Helpers/SphereNodes.cscn"
+	include "Helpers/SphereObjects.cscn"
+	include "Helpers/SphereCamera.cscn"
+	include "Helpers/SphereLight-RAW.cscn"
+}
+
+window "Window"
+{
+	vsync false
+	// fullscreen true
+
+	render_target
+	{
+		scene "CornellBox"
+		camera "MainCamera"
+		// size 1280 720
+		size 1920 1080
+		format argb32
+
+		ssao
+		{
+			enabled false
+			high_quality true
+			use_normals_buffer true
+			blur_high_quality true
+			intensity 10.0
+			min_radius 0.1
+			radius 5.0
+			bias 0.025
+			num_samples 50
+			edge_sharpness 1.0
+			blur_step_size 2
+			blur_radius 4
+			// bend_step_count 10
+			// bend_step_size 0.5
+		}
+	}
+}

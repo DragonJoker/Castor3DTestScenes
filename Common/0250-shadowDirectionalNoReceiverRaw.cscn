@@ -21,10 +21,11 @@ scene "Scene"
 		{
 			producer true
 			filter raw
-			min_offset 0.00001
-			max_slope_offset 0.0001
-			variance_max 0.0000001
-			variance_bias 0.15
+			raw_config
+			{
+				min_offset 0.00001
+				max_slope_offset 0.0001
+			}
 		}
 	}
 

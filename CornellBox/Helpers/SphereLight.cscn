@@ -1,0 +1,13 @@
+// skybox
+// {
+	// equirectangular "Textures/pineTreeSkybox.hdr" 1024 1024
+// }
+
+light "Light"
+{
+	parent "LightNode"
+	type point
+	colour 1.0 1.0 1.0
+	intensity 100.0 80.0
+	attenuation 1.0 1.0 1.0
+}

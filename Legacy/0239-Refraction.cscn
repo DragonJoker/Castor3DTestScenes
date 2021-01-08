@@ -26,11 +26,12 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164	0.75164	0.75164
+			diffuse 0.75164 0.75164 0.75164
 			specular 0.628281 0.628281 0.628281
 			ambient 1.0
 			shininess 192.0
 			refraction_ratio 0.92
+			transmission 0.75164 0.75164 0.75164
 			refractions true
 		}
 	}

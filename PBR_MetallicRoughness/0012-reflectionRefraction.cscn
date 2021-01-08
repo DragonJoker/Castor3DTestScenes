@@ -28,6 +28,7 @@ scene "Scene"
 		pass
 		{
 			albedo 0.75164 0.75164 0.75164 1.0
+			transmission 1.0 1.0 1.0
 			roughness 0.0
 			metallic 1.0
 			refraction_ratio 0.92
@@ -41,6 +42,7 @@ scene "Scene"
 		pass
 		{
 			albedo 0.75164 0.60648 0.22648 1.0
+			transmission 1.0 1.0 1.0
 			roughness 0.0
 			metallic 1.0
 			refraction_ratio 0.92
@@ -54,6 +56,7 @@ scene "Scene"
 		pass
 		{
 			albedo 0.7038 0.27048 0.0828
+			transmission 1.0 1.0 1.0
 			roughness 0.0
 			metallic 1.0
 			refraction_ratio 0.92

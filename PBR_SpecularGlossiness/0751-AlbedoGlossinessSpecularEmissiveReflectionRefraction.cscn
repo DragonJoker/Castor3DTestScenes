@@ -60,6 +60,7 @@ scene "Scene"
 				image "Textures/Rusted/emissive.png"
 			}
 			reflections true
+			transmission 0.75164 0.75164 0.75164
 			refractions true
 		}
 	}

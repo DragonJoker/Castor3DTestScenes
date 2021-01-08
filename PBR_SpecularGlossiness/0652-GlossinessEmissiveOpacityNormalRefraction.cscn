@@ -61,6 +61,7 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/normal.jpg"
 			}
+			transmission 0.75164 0.75164 0.75164
 			refractions true
 		}
 	}

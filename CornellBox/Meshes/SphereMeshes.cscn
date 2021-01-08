@@ -1,0 +1,16 @@
+
+mesh "Sphere"
+{
+	type "sphere" -subdiv=40 -radius=1.6667
+}
+
+mesh "Wall"
+{
+	type "plane" -width_subdiv=0 -depth_subdiv=0 -width=10 -depth=10
+}
+
+mesh "Light"
+{
+	type "plane" -width_subdiv=0 -depth_subdiv=0 -width=4.7 -depth=3.8
+}
+

@@ -88,12 +88,6 @@ window "Window"
 		format argb32
 		tone_mapping "linear"
 
-		hdr_config
-		{
-			exposure 1.0
-			gamma 2.2
-		}
-
 		ssao
 		{
 			enabled true

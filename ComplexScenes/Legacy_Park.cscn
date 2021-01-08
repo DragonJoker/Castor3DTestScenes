@@ -1699,13 +1699,24 @@ scene "Parc"
 		{
 			producer true
 			filter variance
-			global_illumination lpv_geometry
+			// global_illumination lpv_geometry
 			volumetric_steps 20
 			volumetric_scattering 0.01
-			min_offset 0.00001
-			max_slope_offset 0.0001
-			variance_max 0.000001
-			variance_bias 0.15
+			raw_config
+			{
+				min_offset 0.00001
+				max_slope_offset 0.0001
+			}
+			pcf_config
+			{
+				min_offset 0.00001
+				max_slope_offset 0.0001
+			}
+			vsm_config
+			{
+				variance_max 0.0000001
+				variance_bias 0.15
+			}
 			rsm_config
 			{
 				intensity 1.0
