@@ -1,0 +1,1239 @@
+// Objects
+
+object "abris_bus"
+{
+	parent "abris_bus"
+	mesh "abris_bus"
+	materials
+	{
+		material 0 "abris_bus/pub"
+		material 1 "abris_bus/metal"
+		material 2 "abris_bus/verre"
+		material 3 "abris_bus/plan"
+	}
+}
+
+object "arbre_rue"
+{
+	parent "arbre_rue"
+	mesh "arbre_rue"
+	materials
+	{
+		material 0 "arbre_rue/feuilles"
+		material 1 "arbre_rue/tronc"
+		material 2 "arbre_rue/terre"
+		material 3 "arbre_rue/bac"
+	}
+}
+
+object "arbre_rue_1"
+{
+	parent "arbre_rue_1"
+	mesh "arbre_rue"
+	materials
+	{
+		material 0 "arbre_rue/feuilles"
+		material 1 "arbre_rue/tronc"
+		material 2 "arbre_rue/terre"
+		material 3 "arbre_rue/bac"
+	}
+}
+
+object "arbre_rue_2"
+{
+	parent "arbre_rue_2"
+	mesh "arbre_rue"
+	materials
+	{
+		material 0 "arbre_rue/feuilles"
+		material 1 "arbre_rue/tronc"
+		material 2 "arbre_rue/terre"
+		material 3 "arbre_rue/bac"
+	}
+}
+
+object "arbre_rue_3"
+{
+	parent "arbre_rue_3"
+	mesh "arbre_rue"
+	materials
+	{
+		material 0 "arbre_rue/feuilles"
+		material 1 "arbre_rue/tronc"
+		material 2 "arbre_rue/terre"
+		material 3 "arbre_rue/bac"
+	}
+}
+
+object "arbre_rue_4"
+{
+	parent "arbre_rue_4"
+	mesh "arbre_rue"
+	materials
+	{
+		material 0 "arbre_rue/feuilles"
+		material 1 "arbre_rue/tronc"
+		material 2 "arbre_rue/terre"
+		material 3 "arbre_rue/bac"
+	}
+}
+
+object "arbre_rue_5"
+{
+	parent "arbre_rue_5"
+	mesh "arbre_rue"
+	materials
+	{
+		material 0 "arbre_rue/feuilles"
+		material 1 "arbre_rue/tronc"
+		material 2 "arbre_rue/terre"
+		material 3 "arbre_rue/bac"
+	}
+}
+
+object "banc"
+{
+	parent "banc"
+	mesh "banc"
+	materials
+	{
+		material 0 "banc/bois"
+		material 1 "banc/metal"
+	}
+}
+
+object "banc_1"
+{
+	parent "banc_1"
+	mesh "banc"
+	materials
+	{
+		material 0 "banc/bois"
+		material 1 "banc/metal"
+	}
+}
+
+object "banc_2"
+{
+	parent "banc_2"
+	mesh "banc"
+	materials
+	{
+		material 0 "banc/bois"
+		material 1 "banc/metal"
+	}
+}
+
+object "banc_3"
+{
+	parent "banc_3"
+	mesh "banc"
+	materials
+	{
+		material 0 "banc/bois"
+		material 1 "banc/metal"
+	}
+}
+
+object "banc_4"
+{
+	parent "banc_4"
+	mesh "banc"
+	materials
+	{
+		material 0 "banc/bois"
+		material 1 "banc/metal"
+	}
+}
+
+object "banc_5"
+{
+	parent "banc_5"
+	mesh "banc"
+	materials
+	{
+		material 0 "banc/bois"
+		material 1 "banc/metal"
+	}
+}
+
+object "barriere_chantier"
+{
+	parent "barriere_chantier"
+	mesh "barriere_chantier"
+	materials
+	{
+		material 0 "barriere_chantier/bois"
+		material 1 "barriere_chantier/peinture"
+	}
+}
+
+object "barriere_chantier_1"
+{
+	parent "barriere_chantier_1"
+	mesh "barriere_chantier"
+	materials
+	{
+		material 0 "barriere_chantier/bois"
+		material 1 "barriere_chantier/peinture"
+	}
+}
+
+object "barriere_crs"
+{
+	parent "barriere_crs"
+	mesh "barriere_crs"
+	material "barriere_crs/barriere_crs"
+}
+
+object "barriere_crs_1"
+{
+	parent "barriere_crs_1"
+	mesh "barriere_crs"
+	material "barriere_crs/barriere_crs"
+}
+
+object "barriere_crs_2"
+{
+	parent "barriere_crs_2"
+	mesh "barriere_crs"
+	material "barriere_crs/barriere_crs"
+}
+
+object "borne_incendie"
+{
+	parent "borne_incendie"
+	mesh "borne_incendie"
+	materials
+	{
+		material 0 "borne_incendie/borne_incendie_rouge"
+		material 1 "borne_incendie/borne_incendie_gris"
+	}
+}
+
+object "cabine_telephone"
+{
+	parent "cabine_telephone"
+	mesh "cabine_telephone"
+	materials
+	{
+		material 0 "cabine_telephone/metal"
+		material 1 "cabine_telephone/verre"
+		material 2 "cabine_telephone/verre marron"
+		material 3 "cabine_telephone/phone"
+	}
+}
+
+object "cabine_telephone_1"
+{
+	parent "cabine_telephone_1"
+	mesh "cabine_telephone"
+	materials
+	{
+		material 0 "cabine_telephone/metal"
+		material 1 "cabine_telephone/verre"
+		material 2 "cabine_telephone/verre marron"
+		material 3 "cabine_telephone/phone"
+	}
+}
+
+object "cabine_telephone_2"
+{
+	parent "cabine_telephone_2"
+	mesh "cabine_telephone"
+	materials
+	{
+		material 0 "cabine_telephone/metal"
+		material 1 "cabine_telephone/verre"
+		material 2 "cabine_telephone/verre marron"
+		material 3 "cabine_telephone/phone"
+	}
+}
+
+object "camera_surveillance_gauche"
+{
+	parent "camera_surveillance_gauche"
+	mesh "camera_surveillance_gauche"
+	material "camera_surveillance_gauche/camera_surveillance_gauche"
+}
+
+object "cartons"
+{
+	parent "cartons"
+	mesh "cartons"
+	material "cartons/cartons"
+}
+
+object "cartons_1"
+{
+	parent "cartons_1"
+	mesh "cartons"
+	material "cartons/cartons"
+}
+
+object "cartons_2"
+{
+	parent "cartons_2"
+	mesh "cartons"
+	material "cartons/cartons"
+}
+
+object "cartons_3"
+{
+	parent "cartons_3"
+	mesh "cartons"
+	material "cartons/cartons"
+}
+
+object "chene"
+{
+	parent "chene"
+	mesh "chene"
+	materials
+	{
+		material 0 "chene/tronc"
+		material 1 "chene/feuilles"
+	}
+}
+
+object "chene_1"
+{
+	parent "chene_1"
+	mesh "chene"
+	materials
+	{
+		material 0 "chene/tronc"
+		material 1 "chene/feuilles"
+	}
+}
+
+object "chene_2"
+{
+	parent "chene_2"
+	mesh "chene"
+	materials
+	{
+		material 0 "chene/tronc"
+		material 1 "chene/feuilles"
+	}
+}
+
+object "chene_3"
+{
+	parent "chene_3"
+	mesh "chene"
+	materials
+	{
+		material 0 "chene/tronc"
+		material 1 "chene/feuilles"
+	}
+}
+
+object "chene_4"
+{
+	parent "chene_4"
+	mesh "chene"
+	materials
+	{
+		material 0 "chene/tronc"
+		material 1 "chene/feuilles"
+	}
+}
+
+object "corbeille"
+{
+	parent "corbeille"
+	mesh "corbeille"
+	materials
+	{
+		material 0 "corbeille/metal"
+		material 1 "corbeille/bois"
+		material 2 "corbeille/trash"
+	}
+}
+
+object "corbeille_2"
+{
+	parent "corbeille_2"
+	mesh "corbeille"
+	materials
+	{
+		material 0 "corbeille/metal"
+		material 1 "corbeille/bois"
+		material 2 "corbeille/trash"
+	}
+}
+
+object "corbeille_3"
+{
+	parent "corbeille_3"
+	mesh "corbeille"
+	materials
+	{
+		material 0 "corbeille/metal"
+		material 1 "corbeille/bois"
+		material 2 "corbeille/trash"
+	}
+}
+
+object "corbeille_4"
+{
+	parent "corbeille_4"
+	mesh "corbeille"
+	materials
+	{
+		material 0 "corbeille/metal"
+		material 1 "corbeille/bois"
+		material 2 "corbeille/trash"
+	}
+}
+
+object "entree_station"
+{
+	parent "entree_station"
+	mesh "entree_station"
+	materials
+	{
+		material 0 "entree_station/metal"
+		material 1 "entree_station/metal_or"
+		material 2 "entree_station/plan"
+		material 3 "entree_station/muret"
+		material 4 "entree_station/mur"
+		material 5 "entree_station/plafond"
+		material 6 "entree_station/sol"
+		material 7 "entree_station/nom_station"
+	}
+}
+
+object "feu_tricolore"
+{
+	parent "feu_tricolore"
+	mesh "feu_tricolore"
+	materials
+	{
+		material 0 "feu_tricolore/metal"
+		material 1 "feu_tricolore/feu"
+		material 2 "feu_tricolore/pieton"
+	}
+}
+
+object "grille_baltard_out"
+{
+	parent "grille_baltard_out"
+	mesh "grille_baltard_out"
+	materials
+	{
+		material 0 "grille_baltard_out/grille_parc"
+		material 1 "grille_baltard_out/muret"
+		material 2 "grille_baltard_out/bareaux"
+		material 3 "grille_baltard_out/dorures"
+	}
+}
+
+object "interphone"
+{
+	parent "interphone"
+	mesh "interphone"
+	material "interphone/interphone"
+}
+
+object "maison_baltard_01"
+{
+	parent "maison_baltard_01"
+	mesh "maison_baltard_01"
+	material "maison_baltard_01"
+}
+
+object "maison_baltard_01_1"
+{
+	parent "maison_baltard_01_1"
+	mesh "maison_baltard_01"
+	material "maison_baltard_01"
+}
+
+object "maison_baltard_01_2"
+{
+	parent "maison_baltard_01_2"
+	mesh "maison_baltard_01"
+	material "maison_baltard_01"
+}
+
+object "maison_baltard_01_3"
+{
+	parent "maison_baltard_01_3"
+	mesh "maison_baltard_01"
+	material "maison_baltard_01"
+}
+
+object "maison_baltard_01_4"
+{
+	parent "maison_baltard_01_4"
+	mesh "maison_baltard_01"
+	material "maison_baltard_01"
+}
+
+object "maison_baltard_01_5"
+{
+	parent "maison_baltard_01_5"
+	mesh "maison_baltard_01"
+	material "maison_baltard_01"
+}
+
+object "maison_baltard_01_6"
+{
+	parent "maison_baltard_01_6"
+	mesh "maison_baltard_01"
+	material "maison_baltard_01"
+}
+
+object "maison_baltard_02"
+{
+	parent "maison_baltard_02"
+	mesh "maison_baltard_02"
+	material "maison_baltard_02"
+}
+
+object "maison_baltard_02_1"
+{
+	parent "maison_baltard_02_1"
+	mesh "maison_baltard_02"
+	material "maison_baltard_02"
+}
+
+object "maison_baltard_02_2"
+{
+	parent "maison_baltard_02_2"
+	mesh "maison_baltard_02"
+	material "maison_baltard_02"
+}
+
+object "maison_baltard_02_3"
+{
+	parent "maison_baltard_02_3"
+	mesh "maison_baltard_02"
+	material "maison_baltard_02"
+}
+
+object "maison_baltard_02_4"
+{
+	parent "maison_baltard_02_4"
+	mesh "maison_baltard_02"
+	material "maison_baltard_02"
+}
+
+object "maison_baltard_02_5"
+{
+	parent "maison_baltard_02_5"
+	mesh "maison_baltard_02"
+	material "maison_baltard_02"
+}
+
+object "maison_baltard_02_6"
+{
+	parent "maison_baltard_02_6"
+	mesh "maison_baltard_02"
+	material "maison_baltard_02"
+}
+
+object "maison_baltard_02_7"
+{
+	parent "maison_baltard_02_7"
+	mesh "maison_baltard_02"
+	material "maison_baltard_02"
+}
+
+object "maison_baltard_03"
+{
+	parent "maison_baltard_03"
+	mesh "maison_baltard_03"
+	material "maison_baltard_03"
+}
+
+object "maison_baltard_03_1"
+{
+	parent "maison_baltard_03_1"
+	mesh "maison_baltard_03"
+	material "maison_baltard_03"
+}
+
+object "maison_baltard_04"
+{
+	parent "maison_baltard_04"
+	mesh "maison_baltard_04"
+	material "maison_baltard_04"
+}
+
+object "maison_baltard_04_1"
+{
+	parent "maison_baltard_04_1"
+	mesh "maison_baltard_04"
+	material "maison_baltard_04"
+}
+
+object "maison_baltard_04_3"
+{
+	parent "maison_baltard_04_3"
+	mesh "maison_baltard_04"
+	material "maison_baltard_04"
+}
+
+object "maison_baltard_05"
+{
+	parent "maison_baltard_05"
+	mesh "maison_baltard_05"
+	material "maison_baltard_05"
+}
+
+object "maison_baltard_05_1"
+{
+	parent "maison_baltard_05_1"
+	mesh "maison_baltard_05"
+	material "maison_baltard_05"
+}
+
+object "maison_baltard_05_2"
+{
+	parent "maison_baltard_05_2"
+	mesh "maison_baltard_05"
+	material "maison_baltard_05"
+}
+
+object "maison_baltard_05_3"
+{
+	parent "maison_baltard_05_3"
+	mesh "maison_baltard_05"
+	material "maison_baltard_05"
+}
+
+object "maison_baltard_05_4"
+{
+	parent "maison_baltard_05_4"
+	mesh "maison_baltard_05"
+	material "maison_baltard_05"
+}
+
+object "maison_baltard_05_5"
+{
+	parent "maison_baltard_05_5"
+	mesh "maison_baltard_05"
+	material "maison_baltard_05"
+}
+
+object "maison_baltard_06"
+{
+	parent "maison_baltard_06"
+	mesh "maison_baltard_06"
+	material "maison_baltard_06"
+}
+
+object "maison_baltard_07"
+{
+	parent "maison_baltard_07"
+	mesh "maison_baltard_07"
+	material "maison_baltard_07"
+}
+
+object "maison_baltard_07_1"
+{
+	parent "maison_baltard_07_1"
+	mesh "maison_baltard_07"
+	material "maison_baltard_07"
+}
+
+object "maison_baltard_07_2"
+{
+	parent "maison_baltard_07_2"
+	mesh "maison_baltard_07"
+	material "maison_baltard_07"
+}
+
+object "maison_baltard_07_3"
+{
+	parent "maison_baltard_07_3"
+	mesh "maison_baltard_07"
+	material "maison_baltard_07"
+}
+
+object "pavillon_baltard"
+{
+	parent "pavillon_baltard"
+	mesh "pavillon_baltard"
+	materials
+	{
+		material 0 "pavillon_baltard/vitres"
+		material 1 "pavillon_baltard/bord_toit"
+		material 2 "pavillon_baltard/toit"
+		material 3 "pavillon_baltard/bronze_alpha"
+		material 4 "pavillon_baltard/bronze"
+		material 5 "pavillon_baltard/motifs"
+		material 6 "pavillon_baltard/antenne"
+		material 7 "pavillon_baltard/metal_bleu"
+		material 8 "pavillon_baltard/vitres"
+		material 9 "pavillon_baltard/black"
+	}
+}
+
+object "plot_chantier"
+{
+	parent "plot_chantier"
+	mesh "plot_chantier"
+	material "plot_chantier/plot_chantier"
+}
+
+object "plot_chantier_1"
+{
+	parent "plot_chantier_1"
+	mesh "plot_chantier"
+	material "plot_chantier/plot_chantier"
+}
+
+object "plot_chantier_2"
+{
+	parent "plot_chantier_2"
+	mesh "plot_chantier"
+	material "plot_chantier/plot_chantier"
+}
+
+object "plot_chantier_3"
+{
+	parent "plot_chantier_3"
+	mesh "plot_chantier"
+	material "plot_chantier/plot_chantier"
+}
+
+object "plot_chantier_4"
+{
+	parent "plot_chantier_4"
+	mesh "plot_chantier"
+	material "plot_chantier/plot_chantier"
+}
+
+object "plot_chantier_5"
+{
+	parent "plot_chantier_5"
+	mesh "plot_chantier"
+	material "plot_chantier/plot_chantier"
+}
+
+object "plot_chantier_6"
+{
+	parent "plot_chantier_6"
+	mesh "plot_chantier"
+	material "plot_chantier/plot_chantier"
+}
+
+object "poubelle"
+{
+	parent "poubelle"
+	mesh "poubelle"
+	materials
+	{
+		material 0 "poubelle/plastique_gris"
+		material 1 "poubelle/plastique_vert"
+		material 2 "poubelle/plastique_noir"
+	}
+}
+
+object "poubelle_1"
+{
+	parent "poubelle_1"
+	mesh "poubelle"
+	materials
+	{
+		material 0 "poubelle/plastique_gris"
+		material 1 "poubelle/plastique_vert"
+		material 2 "poubelle/plastique_noir"
+	}
+}
+
+object "reverbere"
+{
+	parent "reverbere"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_1"
+{
+	parent "reverbere_1"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_10"
+{
+	parent "reverbere_10"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_10_1"
+{
+	parent "reverbere_10_1"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11"
+{
+	parent "reverbere_11"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_1"
+{
+	parent "reverbere_11_1"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_10"
+{
+	parent "reverbere_11_10"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11"
+{
+	parent "reverbere_11_11"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11_1"
+{
+	parent "reverbere_11_11_1"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11_10"
+{
+	parent "reverbere_11_11_10"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11_2"
+{
+	parent "reverbere_11_11_2"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11_3"
+{
+	parent "reverbere_11_11_3"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11_4"
+{
+	parent "reverbere_11_11_4"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11_5"
+{
+	parent "reverbere_11_11_5"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11_6"
+{
+	parent "reverbere_11_11_6"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11_7"
+{
+	parent "reverbere_11_11_7"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11_8"
+{
+	parent "reverbere_11_11_8"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_11_9"
+{
+	parent "reverbere_11_11_9"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_2"
+{
+	parent "reverbere_11_2"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_3"
+{
+	parent "reverbere_11_3"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_4"
+{
+	parent "reverbere_11_4"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_5"
+{
+	parent "reverbere_11_5"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_6"
+{
+	parent "reverbere_11_6"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_7"
+{
+	parent "reverbere_11_7"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_8"
+{
+	parent "reverbere_11_8"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_11_9"
+{
+	parent "reverbere_11_9"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_12"
+{
+	parent "reverbere_12"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_12_1"
+{
+	parent "reverbere_12_1"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_12_2"
+{
+	parent "reverbere_12_2"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_12_3"
+{
+	parent "reverbere_12_3"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_12_4"
+{
+	parent "reverbere_12_4"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_13"
+{
+	parent "reverbere_13"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_2"
+{
+	parent "reverbere_2"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_3"
+{
+	parent "reverbere_3"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_4"
+{
+	parent "reverbere_4"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_5"
+{
+	parent "reverbere_5"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_6"
+{
+	parent "reverbere_6"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_7"
+{
+	parent "reverbere_7"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_8"
+{
+	parent "reverbere_8"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "reverbere_9"
+{
+	parent "reverbere_9"
+	mesh "reverbere"
+	materials
+	{
+		material 0 "reverbere/metal"
+		material 1 "reverbere/lumiere"
+	}
+}
+
+object "road_structure"
+{
+	parent "road_structure"
+	mesh "road_structure"
+	materials
+	{
+		material 0 "road_structure/herbe"
+		material 1 "road_structure/maison_02"
+		material 2 "road_structure/maison_03"
+		material 3 "road_structure/maison_04"
+		material 4 "road_structure/road"
+		material 5 "road_structure/pave_baltard"
+		material 6 "road_structure/trottoire_baltard"
+		material 7 "road_structure/beton_use"
+		material 8 "road_structure/mur_baltard_01"
+		material 9 "road_structure/mur_baltard_02"
+		material 10 "road_structure/grille_baltard"
+		material 11 "road_structure/portail_baltard"
+		material 12 "road_structure/rembarde_mur"
+		material 13 "road_structure/buisson_baltard"
+		material 14 "road_structure/mur_baltard_03"
+		material 15 "road_structure/mur_baltard_04"
+		material 16 "road_structure/maison_baltard_01"
+		material 17 "road_structure/fond"
+		material 18 "road_structure/porte"
+	}
+}
+
+object "saule_pleureur"
+{
+	parent "saule_pleureur"
+	mesh "saule_pleureur"
+	materials
+	{
+		material 0 "saule_pleureur/tronc"
+		material 1 "saule_pleureur/feuilles"
+	}
+}
+
+object "wet_floor"
+{
+	parent "wet_floor"
+	mesh "wet_floor"
+	materials
+	{
+		material 0 "wet_floor/metal"
+		material 1 "wet_floor/bois"
+		material 2 "wet_floor/eau"
+		material 3 "wet_floor/wet_floor"
+	}
+}

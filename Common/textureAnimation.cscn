@@ -1,0 +1,113 @@
+materials phong
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.5 0.5 0.5 1.0
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	material "AnimTex"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			shininess 50.2
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/diffuse.jpg"
+				channel diffuse
+				sampler	"Linear"
+				animation
+				{
+					translate 0.5 0.5
+					rotate 20.0
+				}
+			}
+		}
+	}
+
+	scene_node "SunLightNode1"
+	{
+		orientation 1 0 0 225
+	}
+	light "SunLight1"
+	{
+		parent "SunLightNode1"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	scene_node "BulbLight1"
+	{
+		position  0.0 0.0 -5.0
+	}
+	light "BulbLight1"
+	{
+		parent "BulbLight1"
+		type point
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+		attenuation 1.0 0.25 0.0
+	}
+
+	scene_node "AnimTex"
+	{
+		position 0 0 0
+	}
+	object "AnimTex"
+	{
+		parent "AnimTex"
+		mesh "Plane"
+		{
+			type "plane" -width_subdiv=1 -depth_subdiv=1 -width=10.0 depth=10.0
+		}
+		material "AnimTex"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0 1.0 0.0 180.0
+		position 0.0 0.0 20.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "Window"
+{
+	fullscreen false
+	vsync false
+
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+}

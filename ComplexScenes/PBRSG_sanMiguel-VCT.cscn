@@ -1,0 +1,141 @@
+// Global configuration
+// debug_overlays true
+materials specular_glossiness
+
+scene "SanMiguel"
+{
+	// Scene configuration
+	ambient_light 1.0 1.0 1.0
+	lpv_indirect_attenuation 0.1
+	include "Materials/SanMiguelPBRSG.cscn"
+	include "Meshes/SanMiguelPBRSG.cscn"
+	include "Nodes/SanMiguelPBRSG.cscn"
+	include "Objects/SanMiguelPBRSG.cscn"
+
+	voxel_cone_tracing
+	{
+		enabled true
+		num_cones 16
+		max_distance 20.0
+		// ray_step_size 0.015625
+		ray_step_size 0.25
+		voxel_size 1
+		conservative_rasterization true
+	}
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/pineTreeSkybox.hdr" 1024
+	}
+
+	// Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		// orientation 0.0338966 0.986528 -0.160044 156.397
+		// position 141.6314 20.0649 70.26671
+		orientation 0.0 1.0 0.0 310.0
+		position 236.159 16.5023 -16.6404
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			aspect_ratio 1.778
+			near 0.1
+			far 1000
+			fov_y 45
+		}
+	}
+
+	// Lights
+
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1 1 1
+		intensity 8 10
+		// shadows
+		// {
+			// producer true
+			// filter pcf
+			// // global_illumination lpv_geometry
+			// // volumetric_steps 20
+			// // volumetric_scattering 0.9
+			// raw_config
+			// {
+				// min_offset 0.00001
+				// max_slope_offset 0.0001
+			// }
+			// pcf_config
+			// {
+				// min_offset 0.00001
+				// max_slope_offset 0.0001
+			// }
+			// vsm_config
+			// {
+				// variance_max 0.0000005
+				// variance_bias 0.20
+			// }
+			// // rsm_config
+			// // {
+				// // intensity 1.0
+				// // max_radius 0.03
+				// // sample_count 100
+			// // }
+			// // lpv_config
+			// // {
+				// // texel_area_modifier 1.0
+			// // }
+		// }
+	}
+}
+
+// Windows
+
+window "SanMiguel"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "SanMiguel"
+		camera "MainCamera"
+		// size 1280 720
+		size 1920 1080
+		format argb32
+		tone_mapping "linear"
+		// postfx "bloom" -Size=5
+
+		smaa
+		{
+			mode 1X
+			edgeDetection colour
+			preset ultra
+			reprojection false
+		}
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			intensity 1
+			radius 0.75
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}

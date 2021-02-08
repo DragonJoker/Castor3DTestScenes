@@ -1218,6 +1218,10 @@ material "fontaine/ecume"
 			channel diffuse
 			sampler "TriLinear"
 			image "Textures/ParkLegacy/fontaine_ecume.png" rgb
+			animation
+			{
+				translate 0.0 1.0
+			}
 		}
 
 		texture_unit

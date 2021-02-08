@@ -9,45 +9,12 @@ scene "Scene"
 	ambient_light white
 	lpv_indirect_attenuation 0.2
 	include "Materials/SponzaPBRMR.cscn"
-	include "Materials/Castor3D.cscn"
 
 	scene_node "FinalNode"
 	{
 		orientation 1 0 0 0
 		position 0 0 0
 	}
-
-	// mesh "Pufi"
-	// {
-		// import "Meshes/Castor3D.cmsh"
-		// default_material "CORPS2"
-	// }
-
-	// scene_node "Pufi"
-	// {
-		// parent "FinalNode"
-		// scale 0.02 0.02 0.02
-		// orientation 0.0 1.0 0.0 -90.0
-	// }
-
-	// object "Pufi"
-	// {
-		// parent "Pufi"
-		// mesh "Pufi"
-	// }
-
-	// animated_object_group "Pufi_Anim"
-	// {
-		// animated_object "Pufi"
-
-		// animation "WALK"
-		// {
-			// looped true
-			// scale 1
-		// }
-
-		// start_animation "WALK"
-	// }
 
 	skybox
 	{
