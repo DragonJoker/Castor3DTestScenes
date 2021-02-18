@@ -1,0 +1,1234 @@
+// Samplers
+
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod 0.00000
+	max_lod 5.00000
+	lod_bias 0.00000
+	border_colour float_opaque_black
+	max_anisotropy 1.00000
+}
+
+// Materials
+
+material "CORPS2"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 0.00000
+		two_sided false
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Pufi/ALLOBJ_CORPS2_BaseColor.exr"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Pufi/ALLOBJ_CORPS2_Roughness.exr"
+			roughness_mask 0x000000ff
+			invert_y true
+		}
+	}
+}
+
+material "DefaultMaterial"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_diffuse.png"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "Material__25"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Lion_Normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Lion_Albedo.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Lion_Roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "Material__298"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Background_Normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Background_Albedo.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Background_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "Material__47"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_diffuse.png"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "Material__57"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_diffuse.png"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "VasePlant"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_diffuse.png"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VasePlant_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "WhiteEmit"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 0.00000
+		emissive 1.10000
+		two_sided false
+	}
+}
+
+material "arch"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Arch_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Arch_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Arch_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "bricks"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Bricks_a_Normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Bricks_a_Albedo.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Bricks_a_Roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "ceiling"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Ceiling_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Ceiling_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Ceiling_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "chain"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/ChainTexture_Normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/ChainTexture_Albedo.png"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/ChainTexture_Metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/ChainTexture_Roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "column_a"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Column_a_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Column_a_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Column_a_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "column_b"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Column_b_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Column_b_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Column_b_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "column_c"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Column_c_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Column_c_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Column_c_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "details"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Details_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Details_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Details_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "fabric_a"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_Red_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_Red_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "fabric_c"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_Red_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_Red_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "fabric_d"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_Blue_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_Blue_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "fabric_e"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_Green_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_Green_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Fabric_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "fabric_f"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_Green_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_Green_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "fabric_g"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_Blue_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_Blue_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Curtain_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "flagpole"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_FlagPole_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_FlagPole_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Metallic_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_FlagPole_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "floor"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Floor_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Floor_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Floor_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "leaf"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Thorn_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Thorn_diffuse.png"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Thorn_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "roof"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Roof_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Roof_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Sponza_Roof_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "vase"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Vase_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Vase_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Vase_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "vase_hanging"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VaseHanging_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VaseHanging_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Metallic_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VaseHanging_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}
+
+material "vase_round"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		roughness 1.00000
+		metallic 1.00000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VaseRound_normal.png"
+			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VaseRound_diffuse.png"
+			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/Dielectric_metallic.png"
+			metalness_mask 0x000000ff
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/PBRMRSponza/VaseRound_roughness.png"
+			roughness_mask 0x000000ff
+		}
+	}
+}

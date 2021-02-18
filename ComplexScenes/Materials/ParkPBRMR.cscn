@@ -1550,6 +1550,10 @@ material "fontaine/eau"
 			sampler "Trilinear"
 			channel normal
 			image "Textures/ParkPBRMR/fountain_basin-normal.jpg" rgb
+			animation
+			{
+				rotate 2.0
+			}
 		}
 	}
 }
@@ -1569,6 +1573,10 @@ material "fontaine/eau_tombante"
 			sampler "Trilinear"
 			channel normal
 			image "Textures/ParkPBRMR/falling_water-normal.jpg" rgb
+				animation
+				{
+					translate 0.0 0.5
+				}
 		}
 	}
 }
@@ -1588,6 +1596,10 @@ material "fontaine/ecume"
 			sampler "Trilinear"
 			channel normal
 			image "Textures/ParkPBRMR/falling_water-normal.jpg" rgb
+			animation
+			{
+				translate 0.0 0.5
+			}
 		}
 	}
 }

@@ -1,0 +1,40 @@
+// Lights
+
+light "light_01"
+{
+	parent "LightNode"
+	type directional
+	colour 1 1 1
+	intensity 0.7 0.8
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination lpv_geometry
+		rsm_config
+		{
+			intensity 1
+			max_radius 0.03
+			sample_count 100
+		}
+		lpv_config
+		{
+			texel_area_modifier 1
+		}
+		raw_config
+		{
+			min_offset 0.000001
+			max_slope_offset 0.0000001
+		}
+		pcf_config
+		{
+			min_offset 0.000001
+			max_slope_offset 0.0000001
+		}
+		vsm_config
+		{
+			variance_max 0.0000001
+			variance_bias 0.15
+		}
+	}
+}

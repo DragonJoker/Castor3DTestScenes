@@ -1,0 +1,45 @@
+// Objects
+
+object "FinalPrimitive"
+{
+	parent "FinalNode"
+	cast_shadows true
+	receive_shadows true
+	mesh "Sponza"
+
+	materials
+	{
+		material 0 "leaf"
+		material 1 "DefaultMaterial"
+		material 2 "vase_round"
+		material 3 "Material__298"
+		material 4 "bricks"
+		material 5 "arch"
+		material 6 "ceiling"
+		material 7 "column_a"
+		material 8 "floor"
+		material 9 "column_c"
+		material 10 "details"
+		material 11 "column_b"
+		material 12 "flagpole"
+		material 13 "fabric_e"
+		material 14 "fabric_d"
+		material 15 "fabric_a"
+		material 16 "fabric_g"
+		material 17 "fabric_c"
+		material 18 "fabric_f"
+		material 19 "chain"
+		material 20 "vase_hanging"
+		material 21 "vase"
+		material 22 "Material__25"
+		material 23 "roof"
+	}
+}
+
+object "Pufi"
+{
+	parent "Pufi"
+	cast_shadows true
+	receive_shadows true
+	mesh "Pufi"
+}

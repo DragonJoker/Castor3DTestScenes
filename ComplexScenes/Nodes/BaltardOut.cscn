@@ -1,0 +1,824 @@
+
+scene_node "LightNode"
+{
+	orientation 1 0 0 38.3301
+	scale 0.05 0.05 0.05
+}
+
+scene_node "abris_bus"
+{
+	orientation 0 1 0 177
+	position 43.5 -67.5 68.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "arbre_rue"
+{
+	orientation 0 1 0 90
+	position -188 -67.75 95.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "arbre_rue_1"
+{
+	orientation 0 -1 0 0.0395647
+	position -114.5 -67.75 95.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "arbre_rue_2"
+{
+	position 51 -67.75 95.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "arbre_rue_3"
+{
+	orientation 0 1 0 90
+	position -27.25 -67.75 95.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "arbre_rue_4"
+{
+	orientation 0 1 0 89
+	position 102.5 11.25 -332
+	scale 0.05 0.05 0.05
+}
+
+scene_node "arbre_rue_5"
+{
+	position 70.25 11.25 -332
+	scale 0.05 0.05 0.05
+}
+
+scene_node "banc"
+{
+	orientation 0 1 0 179
+	position 19.75 -67.75 112.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "banc_1"
+{
+	orientation 0 1 0 179
+	position -146 -67.75 113
+	scale 0.05 0.05 0.05
+}
+
+scene_node "banc_2"
+{
+	orientation 0 1 0 179
+	position -0.75 -67.75 188.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "banc_3"
+{
+	orientation 0 -1 0 90.0001
+	position 65 11.5 -332.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "banc_4"
+{
+	orientation 0 1 0 179
+	position -128.5 -67.75 188.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "banc_5"
+{
+	orientation 0 1 0 90
+	position 108 11.5 -331.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "barriere_chantier"
+{
+	orientation 0 -1 0 15.0001
+	position 76 -68 162
+	scale 0.05 0.05 0.05
+}
+
+scene_node "barriere_chantier_1"
+{
+	orientation 0 1 0 7.00012
+	position 82.5 -68 166.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "barriere_crs"
+{
+	orientation 0 -1 0 8.00005
+	position 41 -68 194.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "barriere_crs_1"
+{
+	orientation 0 1 0 8.00005
+	position 51.5 -68 194.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "barriere_crs_2"
+{
+	orientation 0 -1 0 4.00054
+	position 61 -68 193.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "borne_incendie"
+{
+	position -140.75 -67.75 60.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "cabine_telephone"
+{
+	orientation 0 -1 0 1.00014
+	position -165.75 -67.25 59.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "cabine_telephone_1"
+{
+	orientation 0 -1 0 1.00014
+	position -155.5 -67.25 59.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "cabine_telephone_2"
+{
+	orientation 0 -1 0 1.00014
+	position 72.5 11.5 -261.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "camera_surveillance_gauche"
+{
+	orientation 0 -1 0 65
+	position 183 -65.25 -13.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "cartons"
+{
+	position -161.5 -61.5 175.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "cartons_1"
+{
+	orientation 0 1 0 50.0005
+	position -163.5 -64.75 153.25
+	scale 0.026025 0.026025 0.026025
+}
+
+scene_node "cartons_2"
+{
+	orientation 0 1 0 50.0005
+	position -198.75 -63.75 132.75
+	scale 0.026025 0.026025 0.026025
+}
+
+scene_node "cartons_3"
+{
+	orientation 0 -1 0 49
+	position -187.5 -61.75 146.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "chene"
+{
+	position 50.75 10.5 -531.75
+	scale 0.088912 0.088912 0.088912
+}
+
+scene_node "chene_1"
+{
+	position -99.5 10.5 -327
+	scale 0.088912 0.088912 0.088912
+}
+
+scene_node "chene_2"
+{
+	position 19.5 -28.5 -80.25
+	scale 0.111584 0.111584 0.111584
+}
+
+scene_node "chene_3"
+{
+	position 197.5 -94.75 150
+	scale 0.111584 0.111584 0.111584
+}
+
+scene_node "chene_4"
+{
+	position 172.75 6 -223.5
+	scale 0.0760025 0.0760025 0.0760025
+}
+
+scene_node "corbeille"
+{
+	position -45.75 -67.75 111
+	scale 0.05 0.05 0.05
+}
+
+scene_node "corbeille_2"
+{
+	position 54.75 -67.75 67.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "corbeille_3"
+{
+	position 98.5 11.75 -287
+	scale 0.05 0.05 0.05
+}
+
+scene_node "corbeille_4"
+{
+	position 70.75 11.75 -307.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "enseigne_studio"
+{
+	orientation 0 1 0 147
+	position 142.25 -44.5 6.25
+	scale 0.00561775 0.00561775 0.00561775
+}
+
+scene_node "entree_station"
+{
+	position 107 11.75 -299.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "feu_tricolore"
+{
+	orientation 0 -1 0 66
+	position 77.75 5.5 -212
+	scale 0.05 0.05 0.05
+}
+
+scene_node "grille_baltard_out"
+{
+	orientation 0 1 0 180
+	position -70.5 -68 305
+	scale 0.05 0.05 0.05
+}
+
+scene_node "interphone"
+{
+	orientation 0 -1 0 167
+	position 173.5 -72.5 -0.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_01"
+{
+	orientation 0 1 0 90
+	position 206.5 -131 456.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_01_1"
+{
+	orientation 0 -1 0 96
+	position -35.5 -62 -46.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_01_2"
+{
+	orientation 0 1 0 353
+	position 230.25 -2.25 -198.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_01_3"
+{
+	orientation 0 -1 0 259
+	position -33 -7.5 -206
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_01_4"
+{
+	orientation 0 -1 0 174
+	position 204 -94.75 98
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_01_5"
+{
+	orientation 0 -1 0 308
+	position -52.5 18 -693
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_01_6"
+{
+	orientation 0 -1 0 187
+	position -202.5 12.5 -484.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_02"
+{
+	orientation 0 1 0 171
+	position 186.5 -52.5 -50
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_02_1"
+{
+	orientation 0 1 0 1.00092
+	position -20.75 -28.25 -131.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_02_2"
+{
+	orientation 0 1 0 174
+	position 226.25 -126 380
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_02_3"
+{
+	orientation 0 -1 0 84
+	position -149.5 8.75 -294.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_02_4"
+{
+	orientation 0 -1 0 229
+	position 25.25 12.25 -611.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_02_5"
+{
+	orientation 0 -1 0 334
+	position 332.75 12.25 -635.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_02_6"
+{
+	orientation 0 -1 0 84
+	position -218.5 21.75 -589.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_02_7"
+{
+	orientation 0 1 0 1.00092
+	position 200.5 -31.25 -126
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_03"
+{
+	orientation 0 1 0 35
+	position -123.25 -56.75 -23.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_03_1"
+{
+	orientation 0 1 0 90.0001
+	position -139 8.75 -413.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_04"
+{
+	orientation 0 1 0 74
+	position 241.5 9.75 -538
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_04_1"
+{
+	orientation 0 -1 0 10.0004
+	position 227.75 3 -272
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_04_3"
+{
+	orientation 0 1 0 2.00029
+	position 83.25 9.75 -729.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_05"
+{
+	orientation 0 1 0 78.0002
+	position 233.75 8.5 -386.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_05_1"
+{
+	orientation 0 1 0 208
+	position 229.25 7.5 -723.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_05_2"
+{
+	orientation 0 1 0 157
+	position -166.5 15.5 -774.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_05_3"
+{
+	orientation 0 1 0 90.0003
+	position 205.5 -175 569.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_05_4"
+{
+	orientation 0 1 0 235
+	position 145 -200.25 696.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_05_5"
+{
+	orientation 0 1 0 15.0002
+	position 84.25 -205.5 802.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_06"
+{
+	orientation 0 1 0 90.0001
+	position -49 9.5 -373
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_07"
+{
+	orientation 0 -1 0 272
+	position 211.25 -121.75 255.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_07_1"
+{
+	orientation 0 1 0 312
+	position -109 12.25 -522.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_07_2"
+{
+	orientation 0 -1 0 272
+	position -118.25 -37.5 -159
+	scale 0.05 0.05 0.05
+}
+
+scene_node "maison_baltard_07_3"
+{
+	orientation 0 -1 0 290
+	position 126 12.25 -597
+	scale 0.05 0.05 0.05
+}
+
+scene_node "pavillon_baltard"
+{
+	orientation 0 1 0 180
+	position -68.25 -67.75 324.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "plot_chantier"
+{
+	orientation 0.642414 -0.75794 -0.113275 26.1926
+	position 107.25 -67 71.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "plot_chantier_1"
+{
+	orientation 0.942216 -0.334684 -0.014673 18.0085
+	position 116.75 -68.25 73.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "plot_chantier_2"
+{
+	orientation 0.552262 -0.83005 0.0776153 21.6058
+	position 126 -68 72.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "plot_chantier_3"
+{
+	orientation 0.483366 -0.872779 0.0679327 20.5713
+	position 135 -68.5 72.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "plot_chantier_4"
+{
+	orientation 0.997772 -0.0661395 -0.00870743 15.0331
+	position 144 -68.5 72.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "plot_chantier_5"
+{
+	orientation 0.642414 -0.75794 -0.113275 26.1926
+	position 98.75 -67 74.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "plot_chantier_6"
+{
+	orientation 0.616731 -0.781759 0.0921711 24.1647
+	position 152.75 -65.75 70.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "poubelle"
+{
+	orientation 0 -1 0 28
+	position -216.25 -68 117
+	scale 0.05 0.05 0.05
+}
+
+scene_node "poubelle_1"
+{
+	orientation 0 -1 0 2.99997
+	position -223 -69 123.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere"
+{
+	position 100.25 10.25 -248.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_1"
+{
+	position 66.75 10.25 -247.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_10"
+{
+	position 46.25 10.25 -423.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_10_1"
+{
+	position 41 10.25 -489.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11"
+{
+	position 7.75 10.25 -291
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_1"
+{
+	position 10 10.25 -257.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_10"
+{
+	position -121.5 -64.75 17.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11"
+{
+	position 134.75 -60.25 -5.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11_1"
+{
+	position 152.75 -68.75 48.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11_10"
+{
+	position 212 36 -537.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11_2"
+{
+	position 122.5 -38 -58
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11_3"
+{
+	position 125.25 -20.75 -115.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11_4"
+{
+	position 136.5 -1.25 -176.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11_5"
+{
+	position 147.5 7.75 -241
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11_6"
+{
+	position 162.5 10.25 -299.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11_7"
+{
+	position 177.5 10.25 -362.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11_8"
+{
+	position 187.25 10.25 -422.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_11_9"
+{
+	position 196 10.25 -480.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_2"
+{
+	position 5.5 10.25 -353.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_3"
+{
+	position -0.5 10.25 -423
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_4"
+{
+	position 29.5 1 -187.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_5"
+{
+	position 45.25 -18.5 -123.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_6"
+{
+	position 51.75 -34.75 -66.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_7"
+{
+	position 48.5 -60.25 -8.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_8"
+{
+	position 5 -62.5 1
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_11_9"
+{
+	position -59 -63.25 9.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_12"
+{
+	position 92.75 -68 82
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_12_1"
+{
+	position 29.75 -68 65.5
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_12_2"
+{
+	position -19.75 -68 63
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_12_3"
+{
+	position -76.25 -68 59
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_12_4"
+{
+	position -132.75 -68 57.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_13"
+{
+	position 87.75 6.25 -213.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_2"
+{
+	position 111.25 10.75 -292.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_3"
+{
+	position 121.25 10.25 -341.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_4"
+{
+	position 130.25 10.25 -397.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_5"
+{
+	position 140 10.25 -464
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_6"
+{
+	position 160 10.25 -542.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_7"
+{
+	position 181.5 10.25 -610.75
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_8"
+{
+	position 57.75 10.25 -303.25
+	scale 0.05 0.05 0.05
+}
+
+scene_node "road_structure"
+{
+	scale 0.05 0.05 0.05
+}
+
+scene_node "reverbere_9"
+{
+	position 50 10.25 -357
+	scale 0.05 0.05 0.05
+}
+
+scene_node "saule_pleureur"
+{
+	position 166.25 -2 -176.75
+	scale 0.0863185 0.0863185 0.0863185
+}
+
+scene_node "wet_floor"
+{
+	orientation 0 1 0 27
+	position 29.75 -67.75 181.75
+	scale 0.05 0.05 0.05
+}

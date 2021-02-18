@@ -1,0 +1,24 @@
+// Meshes
+
+mesh "Pufi"
+{
+	import "Meshes/Pufi/Pufi.cmsh"
+
+	default_materials
+	{
+		material 0 "CORPS2"
+		material 1 "CORPS2"
+		material 2 "CORPS2"
+		material 3 "CORPS2"
+		material 4 "CORPS2"
+		material 5 "CORPS2"
+		material 6 "CORPS2"
+		material 7 "CORPS2"
+		material 8 "CORPS2"
+	}
+}
+
+mesh "Sponza"
+{
+	import "Meshes/PBRMRSponza/Sponza.cmsh"
+}

@@ -1,0 +1,126 @@
+// Global configuration
+materials metallic_roughness
+
+scene "Scene"
+{
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.00000 0.00000 0.00000
+	lpv_indirect_attenuation 0.200000
+	include "Helpers/PBRMR_Sponza-Materials.cscn"
+	include "Helpers/PBRMR_Sponza-Meshes.cscn"
+	include "Helpers/PBRMR_Sponza-Nodes.cscn"
+	include "Helpers/PBRMR_Sponza-Objects.cscn"
+	include "Helpers/Sponza-VCT-Lights.cscn"
+
+	//Skybox
+
+	skybox
+	{
+		equirectangular "Textures/pineTreeSkybox.hdr" 1024
+	}
+
+	//Voxel Cone Tracing
+
+	voxel_cone_tracing
+	{
+		enabled true
+		conservative_rasterization true
+		temporal_smoothing false
+		occlusion false
+		secondary_bounce true
+		num_cones 16
+		max_distance 20.0000
+		ray_step_size 0.250000
+		voxel_size 1.00000
+	}
+
+	//Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 -0 90
+		position -9.00000 0.700000 -0.300000
+	}
+
+	//Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.100000
+			far 50.0000
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+
+	//Animated object groups
+
+	animated_object_group "Pufi_Anim"
+	{
+		animated_object "Pufi"
+
+		animation "WALK"
+		{
+			looped true
+			scale 1.00000
+			start_at 0.00000
+			stop_at 0.00000
+		}
+
+		start_animation "WALK"
+	}
+}
+
+//Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		scene "Scene"
+		camera "MainCamera"
+		size 1920 1080
+		format argb32
+		tone_mapping "linear"
+
+		// smaa
+		// {
+			// mode 1X
+			// preset ultra
+			// edgeDetection colour
+		// }
+
+
+		// ssao
+		// {
+			// enabled true
+			// high_quality true
+			// use_normals_buffer true
+			// blur_high_quality true
+			// intensity 1.00000
+			// radius 0.500000
+			// bias 0.0250000
+			// num_samples 23
+			// edge_sharpness 1.00000
+			// blur_step_size 2
+			// blur_radius 4
+			// bend_step_count 4
+			// bend_step_size 0.500000
+		// }
+	}
+}

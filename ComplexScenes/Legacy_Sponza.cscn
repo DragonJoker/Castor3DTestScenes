@@ -5,6 +5,56 @@ scene "Scene"
 {
 	ambient_light 0.0 0.0 0.0
 	include "Materials/SponzaLegacy.cscn"
+	include "Materials/PufiPhong.cscn"
+
+	voxel_cone_tracing
+	{
+		enabled true
+		grid_size 256
+		num_cones 5
+		max_distance 20.0
+		ray_step_size 0.25
+		voxel_size 1
+		conservative_rasterization true
+	}
+
+	scene_node "FinalNode"
+	{
+		orientation 1 0 0 0
+		position 0 0 0
+	}
+
+	mesh "Pufi"
+	{
+		import "Meshes/Castor3D.cmsh"
+		default_material "CORPS2"
+	}
+
+	scene_node "Pufi"
+	{
+		parent "FinalNode"
+		scale 0.02 0.02 0.02
+		orientation 0.0 1.0 0.0 -90.0
+	}
+
+	object "Pufi"
+	{
+		parent "Pufi"
+		mesh "Pufi"
+	}
+
+	animated_object_group "Pufi_Anim"
+	{
+		animated_object "Pufi"
+
+		animation "WALK"
+		{
+			looped true
+			scale 1
+		}
+
+		start_animation "WALK"
+	}
 
 	skybox
 	{
@@ -30,12 +80,6 @@ scene "Scene"
 		orientation 0.0 1.0 -0.0 90.0
 		position -9.0 0.7 -0.3
 		scale 1 1 1
-	}
-
-	scene_node "FinalNode"
-	{
-		orientation 1 0 0 0
-		position 0 0 0
 	}
 
 	scene_node "LightNode"
@@ -71,16 +115,16 @@ scene "Scene"
 				variance_max 0.0000005
 				variance_bias 0.15
 			}
-			rsm_config
-			{
-				intensity 1.0
-				max_radius 0.03
-				sample_count 100
-			}
-			lpv_config
-			{
-				texel_area_modifier 1.0
-			}
+			// rsm_config
+			// {
+				// intensity 1.0
+				// max_radius 0.03
+				// sample_count 100
+			// }
+			// lpv_config
+			// {
+				// texel_area_modifier 1.0
+			// }
 		}
 	}
 
@@ -274,27 +318,27 @@ window "Window"
 		format argb32
 		//postfx "bloom" -Size=5
 
-		smaa
-		{
-			mode 1X
-			edgeDetection colour
-			preset ultra
-			reprojection false
-		}
+		// smaa
+		// {
+			// mode 1X
+			// edgeDetection colour
+			// preset ultra
+			// reprojection false
+		// }
 
-		ssao
-		{
-			enabled true
-			high_quality true
-			use_normals_buffer true
-			intensity 1.0
-			min_radius 0.1
-			radius 7.5
-			bias 0.23
-			num_samples 19
-			edge_sharpness 1.0
-			blur_step_size 2
-			blur_radius 4
-		}
+		// ssao
+		// {
+			// enabled true
+			// high_quality true
+			// use_normals_buffer true
+			// intensity 1.0
+			// min_radius 0.1
+			// radius 7.5
+			// bias 0.23
+			// num_samples 19
+			// edge_sharpness 1.0
+			// blur_step_size 2
+			// blur_radius 4
+		// }
 	}
 }
