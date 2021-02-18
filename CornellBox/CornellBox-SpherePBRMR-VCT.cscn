@@ -20,6 +20,7 @@ scene "CornellBox"
 		ray_step_size 0.015625
 		voxel_size 1
 		conservative_rasterization true
+		secondary_bounce true
 	}
 }
 

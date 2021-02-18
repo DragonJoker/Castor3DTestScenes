@@ -1,0 +1,11 @@
+
+scene_node "FinalNode"
+{
+}
+
+scene_node "Pufi"
+{
+	parent "FinalNode"
+	orientation -0 -1 -0 90
+	scale 0.0200000 0.0200000 0.0200000
+}

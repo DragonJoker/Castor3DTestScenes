@@ -1,230 +1,49 @@
-// debug_overlays true
+// Global configuration
 materials metallic_roughness
-
-define white 1.0 1.0 1.0
-define sun 1.0 1.0 0.8
 
 scene "Scene"
 {
-	ambient_light white
-	lpv_indirect_attenuation 0.2
-	include "Materials/SponzaPBRMR.cscn"
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.00000 0.00000 0.00000
+	lpv_indirect_attenuation 0.200000
+	include "Helpers/PBRMR_Sponza-Materials.cscn"
+	include "Helpers/PBRMR_Sponza-Meshes.cscn"
+	include "Helpers/PBRMR_Sponza-Nodes.cscn"
+	include "Helpers/PBRMR_Sponza-Objects.cscn"
+	include "Helpers/Sponza-Lights.cscn"
 
-	scene_node "FinalNode"
-	{
-		orientation 1 0 0 0
-		position 0 0 0
-	}
+	//Skybox
 
 	skybox
 	{
-		equirectangular "Textures/pineTreeSkybox.hdr" 1024 1024
+		equirectangular "Textures/pineTreeSkybox.hdr" 1024
 	}
 
-	material "WhiteEmit"
+	//Voxel Cone Tracing
+
+	voxel_cone_tracing
 	{
-		pass
-		{
-			albedo white
-			emissive 1.1
-		}
+		enabled false
+		conservative_rasterization true
+		temporal_smoothing false
+		occlusion false
+		secondary_bounce true
+		num_cones 16
+		max_distance 20.0000
+		ray_step_size 0.250000
+		voxel_size 1.00000
 	}
 
-	mesh "Sponza"
-	{
-		import "Meshes/Sponza.cmsh"
-	}
+	//Cameras nodes
 
 	scene_node "MainCameraNode"
 	{
-		orientation 0.0 1.0 -0.0 90.0
-		position -9.0 0.7 -0.3
-		scale 1 1 1
+		orientation 0 1 -0 90
+		position -9.00000 0.700000 -0.300000
 	}
 
-	/* Directional Light */
-	scene_node "LightNode"
-	{
-		orientation 1 0 0 100
-	}
-
-	light "Light"
-	{
-		parent "LightNode"
-		type directional
-		colour white
-		intensity 8 10
-		shadows
-		{
-			producer true
-			filter pcf
-			global_illumination lpv_geometry
-			volumetric_steps 20
-			volumetric_scattering 0.9
-			raw_config
-			{
-				min_offset 0.0001
-				max_slope_offset 0.00001
-			}
-			pcf_config
-			{
-				min_offset 0.0001
-				max_slope_offset 0.00001
-			}
-			vsm_config
-			{
-				variance_max 0.000000001
-			}
-			rsm_config
-			{
-				intensity 1.0
-				max_radius 0.03
-				sample_count 100
-			}
-			lpv_config
-			{
-				texel_area_modifier 1.0
-			}
-		}
-	}
-	/**/
-
-	/* Hand camera */
-	scene_node "HandLightNode"
-	{
-		parent "MainCameraNode"
-		position 0.3 -0.3 0.3
-	}
-
-	object "HandLight"
-	{
-		parent "HandLightNode"
-		cast_shadows false
-
-		mesh "SpotLightMesh"
-		{
-			type "cube" -width=0.05 -height=0.05 -depth=0.1
-		}
-
-		material "WhiteEmit"
-	}
-
-	// light "HandLight"
-	// {
-		// parent "HandLightNode"
-		// type spot
-		// colour 1.0 1.0 0.5
-		// intensity 8.0 10.0
-		// attenuation 1.0 0.5 0.0
-		// cut_off 10.0
-		// shadows
-		// {
-			// producer true
-			// filter pcf
-			// global_illumination lpv_geometry
-			// min_offset 0.00001
-			// max_slope_offset 0.0001
-			// rsm_config
-			// {
-				// intensity 1.0
-				// max_radius 0.03
-				// sample_count 100
-			// }
-			// lpv_config
-			// {
-				// texel_area_modifier 1.0
-			// }
-		// }
-	// }
-	/**/
-
-	/* Spot light */
-	// scene_node "LightNode"
-	// {
-		// orientation 0.743296 -0.667922 0.0372979 8.59274
-		// position -3.81611 10.8762 -2.00082
-	// }
-
-	// object "SpotLight"
-	// {
-		// parent "LightNode"
-		// cast_shadows false
-
-		// mesh "SpotLightMesh"
-		// {
-			// type "cube" -width=0.25 -height=0.25 -depth=0.5
-		// }
-
-		// material "WhiteEmit"
-	// }
-
-	// light "Light"
-	// {
-		// parent "LightNode"
-		// type spot
-		// colour 1.0 1.0 0.5
-		// intensity 40.0 50.0
-		// attenuation 1.0 0.2 0.0
-		// cut_off 45.0
-		// shadows
-		// {
-			// producer true
-			// filter pcf
-			// min_offset 0.00001
-			// max_slope_offset 0.0001
-			// variance_max 0.0000001
-			// variance_bias 0.15
-			// lpv
-			// {
-				// intensity 1.0
-				// max_radius 0.03
-				// sample_count 100
-			// }
-		// }
-	// }
-	/**/
-
-	/* Point light */
-	// scene_node "LightNode"
-	// {
-		// position 10 120 10
-	// }
-
-	// object "PointLight"
-	// {
-		// parent "LightNode"
-		// cast_shadows false
-
-		// mesh "PointLightMesh"
-		// {
-			// type "sphere" -subdiv=20 -radius=1
-		// }
-
-		// material "WhiteEmit"
-	// }
-
-	// light "Light"
-	// {
-		// parent "LightNode"
-		// type point
-		// colour 1.0 1.0 0.5
-		// intensity 8.0 10.0
-		// attenuation 1 0.02 0
-		// shadows
-		// {
-			// producer true
-			// filter raw
-			// min_offset 0.00001
-			// max_slope_offset 0.0001
-			// lpv
-			// {
-				// intensity 1.0
-				// max_radius 0.03
-				// sample_count 100
-			// }
-		// }
-	// }
-	/**/
+	//Cameras
 
 	camera "MainCamera"
 	{
@@ -233,68 +52,59 @@ scene "Scene"
 		viewport
 		{
 			type perspective
-			aspect_ratio 1.778
-			near 0.1
-			far 150
-			fov_y 45
+			near 0.100000
+			far 50.0000
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
 		}
 	}
 
-	object "FinalPrimitive"
+	//Animated object groups
+
+	animated_object_group "Pufi_Anim"
 	{
-		parent "FinalNode"
-		mesh "Sponza"
-		materials
+		animated_object "Pufi"
+
+		animation "WALK"
 		{
-			material 0 "leaf"
-			material 1 "DefaultMaterial"
-			material 2 "vase_round"
-			material 3 "Material__298"
-			material 4 "bricks"
-			material 5 "arch"
-			material 6 "ceiling"
-			material 7 "column_a"
-			material 8 "floor"
-			material 9 "column_c"
-			material 10 "details"
-			material 11 "column_b"
-			material 12 "flagpole"
-			material 13 "fabric_e"
-			material 14 "fabric_d"
-			material 15 "fabric_a"
-			material 16 "fabric_g"
-			material 17 "fabric_c"
-			material 18 "fabric_f"
-			material 19 "chain"
-			material 20 "vase_hanging"
-			material 21 "vase"
-			material 22 "Material__25"
-			material 23 "roof"
+			looped true
+			scale 1.00000
+			start_at 0.00000
+			stop_at 0.00000
 		}
+
+		start_animation "WALK"
 	}
 }
+
+//Windows
 
 window "Window"
 {
 	vsync false
-	// fullscreen true
+	fullscreen false
 
 	render_target
 	{
 		scene "Scene"
 		camera "MainCamera"
-		// size 1280 720
 		size 1920 1080
 		format argb32
-		//postfx "bloom" -Size=5
+		tone_mapping "linear"
 
 		smaa
 		{
 			mode 1X
-			edgeDetection colour
 			preset ultra
-			reprojection false
+			edgeDetection colour
 		}
+
 
 		ssao
 		{
@@ -302,16 +112,15 @@ window "Window"
 			high_quality true
 			use_normals_buffer true
 			blur_high_quality true
-			intensity 1.0
-			min_radius 0.1
-			radius 0.5
-			bias 0.025
+			intensity 1.00000
+			radius 0.500000
+			bias 0.0250000
 			num_samples 23
-			edge_sharpness 1.0
+			edge_sharpness 1.00000
 			blur_step_size 2
 			blur_radius 4
-			// bend_step_count 10
-			// bend_step_size 0.5
+			bend_step_count 4
+			bend_step_size 0.500000
 		}
 	}
 }

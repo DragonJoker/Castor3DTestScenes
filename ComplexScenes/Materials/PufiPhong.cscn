@@ -27,7 +27,7 @@ material "CORPS2"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			image "Textures/ALLOBJ_CORPS2_BaseColor.exr"
+			image "Textures/Pufi/ALLOBJ_CORPS2_BaseColor.exr"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		} // texture_unit
@@ -36,7 +36,7 @@ material "CORPS2"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			image "Textures/ALLOBJ_CORPS2_Roughness.exr"
+			image "Textures/Pufi/ALLOBJ_CORPS2_Roughness.exr"
 			shininess_mask 0x000000ff
 			invert_y true
 		} // texture_unit
