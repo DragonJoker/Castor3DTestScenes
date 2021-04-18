@@ -1,0 +1,51 @@
+// Lights
+
+scene_node "LightNode"
+{
+	orientation 0.636294 -0.431266 0.63964 134.761
+}
+
+light "SunLight"
+{
+	parent "LightNode"
+	type directional
+	colour 1.00000 1.00000 1.00000
+	intensity 8.00000 10.0000
+	shadow_producer true
+
+	shadows
+	{
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 1.00000e-05
+			max_slope_offset 0.000100000
+		}
+
+		pcf_config
+		{
+			min_offset 1.00000e-05
+			max_slope_offset 0.000100000
+		}
+
+		vsm_config
+		{
+			variance_max 5.00000e-07
+			variance_bias 0.200000
+		}
+
+		rsm_config
+		{
+			intensity 1.00000
+			max_radius 0.0300000
+			sample_count 100
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}

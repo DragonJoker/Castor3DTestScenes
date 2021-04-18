@@ -1,35 +1,50 @@
 // Global configuration
-// debug_overlays true
 materials specular_glossiness
 
 scene "SanMiguel"
 {
 	// Scene configuration
-	ambient_light 1.0 1.0 1.0
-	lpv_indirect_attenuation 0.1
-	include "Materials/SanMiguelPBRSG.cscn"
-	include "Meshes/SanMiguelPBRSG.cscn"
-	include "Nodes/SanMiguelPBRSG.cscn"
-	include "Objects/SanMiguelPBRSG.cscn"
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.00000 0.00000 0.00000
+	lpv_indirect_attenuation 1.70000
+	include "Helpers/PBRSG_sanMiguel-Materials.cscn"
+	include "Helpers/PBRSG_sanMiguel-Meshes.cscn"
+	include "Helpers/PBRSG_sanMiguel-Nodes.cscn"
+	include "Helpers/PBRSG_sanMiguel-Objects.cscn"
+	include "Helpers/PBRSG_sanMiguel-Lights.cscn"
 
-	// Skybox
+	//Skybox
 
 	skybox
 	{
 		equirectangular "Textures/pineTreeSkybox.hdr" 1024
 	}
 
-	// Cameras nodes
+	//Voxel Cone Tracing
+
+	voxel_cone_tracing
+	{
+		enabled true
+		grid_size 256
+		conservative_rasterization true
+		temporal_smoothing false
+		occlusion false
+		secondary_bounce true
+		num_cones 16
+		max_distance 20.0000
+		ray_step_size 0.250000
+		voxel_size 1.00000
+	}
+
+	//Cameras nodes
 
 	scene_node "MainCameraNode"
 	{
-		// orientation 0.0338966 0.986528 -0.160044 156.397
-		// position 141.6314 20.0649 70.26671
-		orientation 0.0 1.0 0.0 310.0
-		position 236.159 16.5023 -16.6404
+		orientation 0 1 0 310
+		position 23.6159 1.65023 -1.66404
 	}
 
-	// Cameras
+	//Cameras
 
 	camera "MainCamera"
 	{
@@ -38,51 +53,16 @@ scene "SanMiguel"
 		viewport
 		{
 			type perspective
-			aspect_ratio 1.778
-			near 1
-			far 1000
-			fov_y 45
+			near 0.100000
+			far 1000.00
+			aspect_ratio 1.77800
+			fov_y 45.0000
 		}
-	}
 
-	// Lights
-
-	light "SunLight"
-	{
-		parent "LightNode"
-		type directional
-		colour 1 1 1
-		intensity 8 10
-		shadows
+		hdr_config
 		{
-			producer true
-			// global_illumination layered_lpv
-			filter pcf
-			raw_config
-			{
-				min_offset 0.00001
-				max_slope_offset 0.0001
-			}
-			pcf_config
-			{
-				min_offset 0.00001
-				max_slope_offset 0.0001
-			}
-			vsm_config
-			{
-				variance_max 0.0000005
-				variance_bias 0.20
-			}
-			rsm_config
-			{
-				intensity 1.0
-				max_radius 0.03
-				sample_count 100
-			}
-			lpv_config
-			{
-				texel_area_modifier 1.0
-			}
+			exposure 1.00000
+			gamma 2.20000
 		}
 	}
 }
@@ -98,11 +78,9 @@ window "SanMiguel"
 	{
 		scene "SanMiguel"
 		camera "MainCamera"
-		// size 1280 720
 		size 1920 1080
-		format argb32
+		format rgba32
 		tone_mapping "linear"
-		// postfx "bloom" -Size=5
 
 		smaa
 		{
@@ -116,13 +94,17 @@ window "SanMiguel"
 		{
 			enabled true
 			high_quality true
-			intensity 1
-			radius 0.75
-			bias 0.023
+			use_normals_buffer true
+			blur_high_quality true
+			intensity 1.00000
+			radius 0.750000
+			bias 0.0230000
 			num_samples 19
-			edge_sharpness 1
+			edge_sharpness 1.00000
 			blur_step_size 2
 			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
 		}
 	}
 }

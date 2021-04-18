@@ -53,7 +53,7 @@ scene "Scene"
 		{
 			type perspective
 			near 0.100000
-			far 50.0000
+			far 500.0000
 			aspect_ratio 1.77800
 			fov_y 45.0000
 		}
@@ -98,29 +98,29 @@ window "Window"
 		format argb32
 		tone_mapping "linear"
 
-		// smaa
-		// {
-			// mode 1X
-			// preset ultra
-			// edgeDetection colour
-		// }
+		smaa
+		{
+			mode 1X
+			preset ultra
+			edgeDetection colour
+		}
 
 
-		// ssao
-		// {
-			// enabled true
-			// high_quality true
-			// use_normals_buffer true
-			// blur_high_quality true
-			// intensity 1.00000
-			// radius 0.500000
-			// bias 0.0250000
-			// num_samples 23
-			// edge_sharpness 1.00000
-			// blur_step_size 2
-			// blur_radius 4
-			// bend_step_count 4
-			// bend_step_size 0.500000
-		// }
+		ssao
+		{
+			enabled true
+			high_quality true
+			use_normals_buffer true
+			blur_high_quality true
+			intensity 1.00000
+			radius 0.500000
+			bias 0.0250000
+			num_samples 23
+			edge_sharpness 1.00000
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
+		}
 	}
 }
