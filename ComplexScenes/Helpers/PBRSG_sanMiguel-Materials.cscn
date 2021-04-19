@@ -53,6 +53,12 @@ material "material_032"
 			image "Textures/SanMiguel/individual_b.png"
 			albedo_mask 0x00ffffff
 		}
+
+		texture_unit
+		{
+			image "Textures/SanMiguel/N_individual_bump.png"
+			normal_mask 0x00ffffff
+		}
 	}
 }
 
@@ -614,11 +620,19 @@ material "material_14"
 		albedo 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
 		glossiness 0.0625000
+		parallax_occlusion repeat
 
 		texture_unit
 		{
 			image "Textures/SanMiguel/N_piso_rustico_displace2.png"
 			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			image "Textures/SanMiguel/piso_rustico_displace2.png"
+			height_mask 0x00ff0000
+			height_factor 0.01000
 		}
 
 		texture_unit
@@ -719,6 +733,12 @@ material "material_144"
 			image "Textures/SanMiguel/FL16lef3.png"
 			albedo_mask 0x00ffffff
 			opacity_mask 0xff000000
+		}
+
+		texture_unit
+		{
+			image "Textures/SanMiguel/N_fl16lef3_bump.png"
+			normal_mask 0x00ffffff
 		}
 	}
 }
@@ -1740,6 +1760,12 @@ material "material_192"
 			image "Textures/SanMiguel/citrus_limon_leaf.png"
 			albedo_mask 0x00ffffff
 			opacity_mask 0xff000000
+		}
+
+		texture_unit
+		{
+			image "Textures/SanMiguel/N_citrus_limon_leaf_Bump.png"
+			normal_mask 0x00ffffff
 		}
 	}
 }
@@ -4079,11 +4105,19 @@ material "material_48"
 		albedo 1.00000 1.00000 1.00000
 		specular 0.0400000 0.0400000 0.0400000
 		glossiness 0.0625000
+		parallax_occlusion repeat
 
 		texture_unit
 		{
 			image "Textures/SanMiguel/N_piso_patio_exterior_displace_inv.png"
 			normal_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			image "Textures/SanMiguel/piso_patio_exterior_displace_inv.png"
+			height_mask 0x00ff0000
+			height_factor 0.01000
 		}
 
 		texture_unit
@@ -4510,6 +4544,19 @@ material "material_70"
 		{
 			image "Textures/SanMiguel/piso_patio_exterior2.png"
 			albedo_mask 0x00ffffff
+		}
+
+		texture_unit
+		{
+			image "Textures/SanMiguel/piso_patio_exterior_displace_inv.png"
+			height_mask 0x00ff0000
+			height_factor 0.01000
+		}
+
+		texture_unit
+		{
+			image "Textures/SanMiguel/N_piso_patio_exterior_displace_inv.png"
+			normal_mask 0x00ffffff
 		}
 	}
 }
