@@ -167,6 +167,7 @@ material "material_041"
 		glossiness 1.00000
 		alpha 0.500000
 		bw_accumulation 1
+		alpha_blend_mode interpolative
 	}
 }
 

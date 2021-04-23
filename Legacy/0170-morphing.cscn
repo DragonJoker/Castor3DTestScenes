@@ -27,7 +27,7 @@ scene "Scene"
 		parent "FinalNode"
 		mesh "Mesh"
 		{
-			import "Meshes/Morphing/untitled_0_000001.obj"
+			import "Meshes/Morphing/untitled_0_000001.obj" -no_optimisations
 			morph_import "Meshes/Morphing/untitled_0_000001.obj" 0.1
 			morph_import "Meshes/Morphing/untitled_0_000002.obj" 0.2
 			morph_import "Meshes/Morphing/untitled_0_000003.obj" 0.3

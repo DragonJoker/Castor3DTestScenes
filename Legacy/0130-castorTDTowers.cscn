@@ -5,6 +5,18 @@ scene "MyScene"
 	background_colour 0.5 0.5 0.5 1.0
 	ambient_light 0.2 0.2 0.2
 
+	scene_node "LightNode"
+	{
+		orientation -1 0 0 155.727
+	}
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
 	material "splash_accessories"
 	{
 		pass
@@ -43,7 +55,6 @@ scene "MyScene"
 			}
 		}
 	}
-
 	material "splash_body"
 	{
 		pass
@@ -81,6 +92,36 @@ scene "MyScene"
 				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Normal_0.png"
 			}
 		}
+	}
+	scene_node "HeavySplash"
+	{
+		position -200 0 0
+	}
+	object "HeavySplash"
+	{
+		parent "HeavySplash"
+		mesh "HeavySplash"
+		{
+			import "Meshes/CastorTD/tower1_heavy_splash.fbx"
+		}
+
+		materials
+		{
+			material 0 "splash_accessories"
+			material 1 "splash_accessories"
+			material 2 "splash_body"
+		}
+	}
+	animated_object_group "HeavySplash"
+	{
+		animated_object "HeavySplash"
+
+		animation "armature_short_range.1|attack"
+		{
+			looped true
+		}
+
+		start_animation "armature_short_range.1|attack"
 	}
 
 	material "inventor_accessories"
@@ -121,7 +162,6 @@ scene "MyScene"
 			}
 		}
 	}
-
 	material "inventor_body"
 	{
 		pass
@@ -159,6 +199,36 @@ scene "MyScene"
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_Normal_0.png"
 			}
 		}
+	}
+	scene_node "Inventor"
+	{
+		position 0 0 0
+	}
+	object "Inventor"
+	{
+		parent "Inventor"
+		mesh "Inventor"
+		{
+			import "Meshes/CastorTD/tower1_inventor.fbx"
+		}
+
+		materials
+		{
+			material 0 "inventor_accessories"
+			material 1 "inventor_accessories"
+			material 2 "inventor_body"
+		}
+	}
+	animated_object_group "Inventor"
+	{
+		animated_object "Inventor"
+
+		animation "armature_inventor.1|Action"
+		{
+			looped true
+		}
+
+		start_animation "armature_inventor.1|Action"
 	}
 
 	material "short_range_accessories"
@@ -199,7 +269,6 @@ scene "MyScene"
 			}
 		}
 	}
-
 	material "short_range_body"
 	{
 		pass
@@ -238,82 +307,6 @@ scene "MyScene"
 			}
 		}
 	}
-
-	scene_node "LightNode"
-	{
-		orientation -1 0 0 155.727
-	}
-
-	light "SunLight"
-	{
-		parent "LightNode"
-		type directional
-		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
-	}
-
-	scene_node "HeavySplash"
-	{
-		position -200 0 0
-	}
-	object "HeavySplash"
-	{
-		parent "HeavySplash"
-		mesh "HeavySplash"
-		{
-			import "Meshes/CastorTD/tower1_heavy_splash.fbx"
-		}
-
-		materials
-		{
-			material 0 "splash_accessories"
-			material 1 "splash_accessories"
-			material 2 "splash_body"
-		}
-	}
-	animated_object_group "HeavySplash"
-	{
-		animated_object "HeavySplash"
-
-		animation "armature_short_range.1|attack"
-		{
-			looped true
-		}
-
-		start_animation "armature_short_range.1|attack"
-	}
-
-	scene_node "Inventor"
-	{
-		position 0 0 0
-	}
-	object "Inventor"
-	{
-		parent "Inventor"
-		mesh "Inventor"
-		{
-			import "Meshes/CastorTD/tower1_inventor.fbx"
-		}
-
-		materials
-		{
-			material 0 "inventor_accessories"
-			material 1 "inventor_accessories"
-			material 2 "inventor_body"
-		}
-	}
-	animated_object_group "Inventor"
-	{
-		animated_object "Inventor"
-
-		animation "armature_inventor.1|Action"
-		{
-			looped true
-		}
-
-		start_animation "armature_inventor.1|Action"
-	}
-
 	scene_node "ShortRange"
 	{
 		position 200 0 0
