@@ -26,8 +26,7 @@ scene "Billboards"
 			emissive 0.0 0.0 0.0 1.0
 			specular 1.0 1.0 1.0 1.0
 			shininess 50.0
-			two_sided true
-			alpha_func greater 0.5
+			mixed_interpolation true
 
 			texture_unit
 			{
@@ -134,8 +133,8 @@ scene "Billboards"
 
 	scene_node "MainCameraNode"
 	{
-		orientation 0 1 0 180
-		position 0.0 0.0 100.0
+		orientation -0.00738793 -0.882799 0.469694 181.591
+		position 26.7132 69.2972 55.3972
 	}
 	camera "MainCamera"
 	{

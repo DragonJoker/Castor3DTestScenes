@@ -1,4 +1,4 @@
-debug_overlays true
+// debug_overlays true
 materials phong
 
 scene "Scene"
@@ -27,7 +27,7 @@ scene "Scene"
 			emissive 1.1
 			specular 0 0 0
 			shininess 50
-			two_sided true
+			mixed_interpolation true
 
 			texture_unit
 			{

@@ -54,10 +54,8 @@ vec3 GetRandomDir( float p_uv )
 void EmitParticle( in float p_type, in vec3 p_position, in vec3 p_velocity, in float p_age )
 {
 	uint l_index = atomicAdd( out_index, 1u );
-	particles_out[l_index].positionType.w = p_type;
-	particles_out[l_index].positionType.xyz = p_position;
-	particles_out[l_index].velocityAge.xyz = p_velocity;
-	particles_out[l_index].velocityAge.w = p_age;
+	particles_out[l_index].positionType = vec4( p_position, p_type );
+	particles_out[l_index].velocityAge = vec4( p_velocity, p_age );
 }
 
 void main()
