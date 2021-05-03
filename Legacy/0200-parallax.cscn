@@ -53,7 +53,7 @@ scene "Relief"
 
 	scene_node "LightNode"
 	{
-    orientation 0 1 0 180
+		orientation 0 1 0 180
 	}
 
 	light "Light0"
