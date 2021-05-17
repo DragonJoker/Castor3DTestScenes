@@ -1,0 +1,514 @@
+// FONTS
+
+font "Dbbrnms_25"
+{
+	file "Textures/Gui/Dbbrnms.ttf"
+	height 25
+}
+
+// MATERIALS
+
+material "Titre"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/titre.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/titre.png" a
+		}
+	}
+}
+
+material "BasDroite"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/bord_droit.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/bord_droit.png" a
+		}
+	}
+}
+
+material "BaseMenu"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/bord_gauche.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/bord_gauche.png" a
+		}
+	}
+}
+
+material "MenuInGame"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/menu.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/menu.png" a
+		}
+	}
+}
+
+material "MenuInGameMO"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/menumo.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/menumo.png" a
+		}
+	}
+}
+
+material "Retour"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/retour.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/retour.png" a
+		}
+	}
+}
+
+material "RetourMO"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/retourmo.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/retourmo.png" a
+		}
+	}
+}
+
+material "Frame"
+{
+	pass
+	{
+		albedo 1.0 1.0 0.0
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/frame.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/frame.png" a
+		}
+	}
+}
+
+material "FrameMO"
+{
+	pass
+	{
+		albedo 1.0 0.0 1.0
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/frame.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/frame.png" a
+		}
+	}
+}
+
+material "FrameMP"
+{
+	pass
+	{
+		albedo 0.0 1.0 1.0
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/frame.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/frame.png" a
+		}
+	}
+}
+
+material "FrameCenter"
+{
+	pass
+	{
+		albedo 1.0 1.0 0.0
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/frame_center.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/frame_center.png" a
+		}
+	}
+}
+
+material "FrameCenterMO"
+{
+	pass
+	{
+		albedo 1.0 0.0 1.0
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/frame_center.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/frame_center.png" a
+		}
+	}
+}
+
+material "FrameCenterMP"
+{
+	pass
+	{
+		albedo 0.0 1.0 1.0
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/frame_center.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/frame_center.png" a
+		}
+	}
+}
+
+material "Commencer"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/commencer.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/commencer.png" a
+		}
+	}
+}
+
+material "CommencerMO"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/commencermo.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/commencermo.png" a
+		}
+	}
+}
+
+material "Recommencer"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/recommencer.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/recommencer.png" a
+		}
+	}
+}
+
+material "RecommencerMO"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/recommencermo.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/recommencermo.png" a
+		}
+	}
+}
+
+material "Continuer"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/continuer.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/continuer.png" a
+		}
+	}
+}
+
+material "ContinuerMO"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/continuermo.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/continuermo.png" a
+		}
+	}
+}
+
+material "Regles"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/regles.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/regles.png" a
+		}
+	}
+}
+
+material "ReglesMO"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/reglesmo.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/reglesmo.png" a
+		}
+	}
+}
+
+material "Gagne"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/gagne.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/gagne.png" a
+		}
+	}
+}
+
+material "Perdu"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/perdu.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/perdu.png" a
+		}
+	}
+}
+
+material "NoBorderMenu"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/nobordermenu.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/nobordermenu.png" a
+		}
+	}
+}
+
+material "NoBorderMenuCenter"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/nobordermenucenter.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/nobordermenucenter.png" a
+		}
+	}
+}
+
+material "HorizSeparator"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/horiz_separator.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/horiz_separator.png" a
+		}
+	}
+}
+
+material "VerticSeparator"
+{
+	pass
+	{
+		texture_unit
+		{
+			channel albedo
+			image "Textures/Gui/vertic_separator.png" rgb
+		}
+		texture_unit
+		{
+			channel opacity
+			image "Textures/Gui/vertic_separator.png" a
+		}
+	}
+}
+
+material "Base/Invisible"
+{
+	pass
+	{
+		alpha 0.0
+	}
+}
+
+material "Base/Blue"
+{
+	pass
+	{
+		albedo 0.0 0.0 1.0
+	}
+}
+
+material "Base/Red"
+{
+	pass
+	{
+		albedo 1.0 0.0 0.0
+	}
+}
+
+material "Base/Black"
+{
+	pass
+	{
+		albedo 0.0 0.0 0.0
+	}
+}
+
+material "DarkerBlue"
+{
+	pass
+	{
+		albedo 0.0 0.0 0.25
+	}
+}

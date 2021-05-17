@@ -64,13 +64,6 @@ scene "BaltardIn"
 
 	// Objects nodes
 
-	scene_node "LightNode"
-	{
-		orientation 1 0 0 90
-		position 0 0 0
-		scale 1 1 1
-	}
-
 	scene_node "boule_facettes"
 	{
 		orientation 1 0 0 0
@@ -104,36 +97,6 @@ scene "BaltardIn"
 		orientation 0 -1 0 212
 		position -1250 755 1230
 		scale 1.07744 1.07744 1.07744
-	}
-
-	// Lights
-
-	light "light_01"
-	{
-		parent "LightNode"
-		type directional
-		colour 1 1 1
-		intensity 0.7 0.8
-		shadows
-		{
-			producer true
-			filter variance
-			raw_config
-			{
-				min_offset 0.00001
-				max_slope_offset 0.0001
-			}
-			pcf_config
-			{
-				min_offset 0.00001
-				max_slope_offset 0.0001
-			}
-			vsm_config
-			{
-				variance_max 0.0000005
-				variance_bias 0.20
-			}
-		}
 	}
 
 	// Geometries

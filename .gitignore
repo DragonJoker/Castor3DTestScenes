@@ -1,11 +1,2 @@
-/Common/Compare
-/ComplexScenes/Compare
-/Legacy/Compare
-/PBR_MetallicRoughness/Compare
-/PBR_SpecularGlossiness/Compare
-/Common/Materials/Compare
-/ComplexScenes/Materials/Compare
-/Legacy/Materials/Compare
-/PBR_MetallicRoughness/Materials/Compare
-/PBR_SpecularGlossiness/Materials/Compare
+/*/Compare/
 .DS_Store
