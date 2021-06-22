@@ -31,7 +31,7 @@ scene "Scene"
 			transmission 1.0 1.0 1.0
 			specular 0.628281 0.628281 0.628281 1.0
 			ambient 0.01
-			shininess 256
+			shininess 98.0
 			refraction_ratio 0.92
 			reflections true
 			refractions true
@@ -46,7 +46,7 @@ scene "Scene"
 			transmission 1.0 1.0 1.0
 			specular 0.628281 0.555802 0.366065 1.0
 			ambient 0.01
-			shininess 256
+			shininess 256.0
 			refraction_ratio 0.92
 			reflections true
 			refractions true
@@ -61,7 +61,7 @@ scene "Scene"
 			transmission 1.0 1.0 1.0
 			specular 0.256777 0.137622 0.086014 1.0
 			ambient 0.01
-			shininess 256
+			shininess 160.0
 			refraction_ratio 0.92
 			reflections true
 			refractions true
@@ -105,14 +105,15 @@ scene "Scene"
 		parent "Cube"
 		mesh "Cube"
 		{
-			type "cube" -width=25 -height=25 -depth=25
+			type "cube" -width=50 -height=50 -depth=50
 		}
 		material "Copper"
 	}
 
 	scene_node "Camera"
 	{
-		position 0.0 60.0 -200.0
+		position -42.4948 -1.21124 -179.291
+		orientation -0.464761 0.879857 0.09924 27.2823
 	}
 	camera "Camera"
 	{

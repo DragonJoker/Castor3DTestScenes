@@ -4,6 +4,18 @@ scene "Scene"
 {
 	ambient_light 0.2 0.2 0.2
 
+	material "Textured"
+	{
+		pass
+		{
+			diffuse 0.75164 0.75164 0.75164
+			specular 0.628281 0.628281 0.628281
+			ambient 1.0
+			shininess 192.0
+			reflections true
+		}
+	}
+
 	skybox
 	{
 		equirectangular "Textures/equirectangularSkybox.hdr" 512
@@ -20,18 +32,6 @@ scene "Scene"
 		v_wrap_mode clamp_to_edge
 		w_wrap_mode clamp_to_edge
 		border_colour float_opaque_black
-	}
-
-	material "Textured"
-	{
-		pass
-		{
-			diffuse 0.75164 0.75164 0.75164
-			specular 0.628281 0.628281 0.628281
-			ambient 1.0
-			shininess 192.0
-			reflections true
-		}
 	}
 
 	scene_node "SunLightNode1"

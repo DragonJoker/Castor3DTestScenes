@@ -92,9 +92,9 @@ window "Window"
 
 	render_target
 	{
-		scene "Nyra"
-		camera "MainCamera"
 		size 800 600
 		format argb32
+		scene "Nyra"
+		camera "MainCamera"
 	}
 }

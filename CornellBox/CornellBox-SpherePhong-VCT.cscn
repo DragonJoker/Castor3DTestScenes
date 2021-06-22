@@ -15,6 +15,7 @@ scene "CornellBox"
 	voxel_cone_tracing
 	{
 		enabled true
+		grid_size 256
 		num_cones 16
 		max_distance 20.0
 		ray_step_size 0.015625
@@ -30,11 +31,11 @@ window "Window"
 
 	render_target
 	{
-		scene "CornellBox"
-		camera "MainCamera"
 		// size 1280 720
 		size 1920 1080
 		format argb32
+		scene "CornellBox"
+		camera "MainCamera"
 
 		ssao
 		{

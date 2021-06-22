@@ -3155,10 +3155,10 @@ window "Window"
 
 	render_target
 	{
-		scene "Parc"
-		camera "MainCamera"
 		size 1920 1080
 		format argb32
+		scene "Parc"
+		camera "MainCamera"
 		tone_mapping "linear"
 
 		ssao

@@ -60,10 +60,10 @@ window "Window"
 
 	render_target
 	{
-		scene "BaltardOut"
-		camera "MainCamera"
 		size 1920 1080
 		format argb32
+		scene "BaltardOut"
+		camera "MainCamera"
 		tone_mapping "linear"
 
 		ssao

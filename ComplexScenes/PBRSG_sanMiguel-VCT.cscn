@@ -76,10 +76,10 @@ window "SanMiguel"
 
 	render_target
 	{
-		scene "SanMiguel"
-		camera "MainCamera"
 		size 1920 1080
 		format rgba32
+		scene "SanMiguel"
+		camera "MainCamera"
 		tone_mapping "linear"
 
 		smaa

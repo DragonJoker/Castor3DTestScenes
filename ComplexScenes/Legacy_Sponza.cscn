@@ -311,11 +311,11 @@ window "Window"
 
 	render_target
 	{
-		scene "Scene"
-		camera "MainCamera"
 		// size 1280 720
 		size 1920 1080
 		format argb32
+		scene "Scene"
+		camera "MainCamera"
 		//postfx "bloom" -Size=5
 
 		// smaa

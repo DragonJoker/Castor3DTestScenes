@@ -1664,10 +1664,10 @@ window "Window"
 
 	render_target
 	{
-		scene "Cafe"
-		camera "MainCamera"
 		size 1920 1080
 		format argb32
+		scene "Cafe"
+		camera "MainCamera"
 		tone_mapping "linear"
 
 		ssao

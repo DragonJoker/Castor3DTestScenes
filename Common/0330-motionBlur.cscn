@@ -69,7 +69,7 @@ window "Window"
 		size 800 600
 		scene "Scene"
 		camera "MainCamera"
-		postfx "motion_blur"
+		postfx "linear_motion_blur"
 	}
 	fullscreen false
 	vsync false

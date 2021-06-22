@@ -125,10 +125,10 @@ window "MainWindow"
 
 	render_target
 	{
-		scene "AnimScene"
-		camera "AnimCamera"
 		size 800 600
 		format argb32
+		scene "AnimScene"
+		camera "AnimCamera"
 		tone_mapping "linear" -Exposure=1 -Gamma=2.2
 	}
 }

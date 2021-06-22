@@ -151,7 +151,7 @@ scene "TextureScene"
 			position 0.0 0.0
 			material "ColourMap"
 			font "Arial100"
-			text "Coucou !! La vie est belle? Ici Ã§a va"
+			text "Coucou !! La vie est belle? Ici ça va"
 			text_wrapping break
 			texturing_mode letter
 		}
@@ -232,18 +232,6 @@ scene "FinalScene"
 	light "SunLight1"
 	{
 		parent "SunLightNode1"
-		type directional
-		colour 1 1 1
-		intensity 0.8 1.0
-	}
-
-	scene_node "SunLightNode2"
-	{
-		orientation 1 0 0 135
-	}
-	light "SunLight2"
-	{
-		parent "SunLightNode2"
 		type directional
 		colour 1 1 1
 		intensity 0.8 1.0

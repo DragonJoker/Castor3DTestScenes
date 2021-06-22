@@ -25,6 +25,7 @@ scene "Scene"
 	voxel_cone_tracing
 	{
 		enabled true
+		grid_size 256
 		conservative_rasterization true
 		temporal_smoothing false
 		occlusion false
@@ -92,10 +93,10 @@ window "Window"
 
 	render_target
 	{
-		scene "Scene"
-		camera "MainCamera"
 		size 1920 1080
 		format argb32
+		scene "Scene"
+		camera "MainCamera"
 		tone_mapping "linear"
 
 		smaa
