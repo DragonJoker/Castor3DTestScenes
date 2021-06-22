@@ -17,6 +17,22 @@ scene "Parc"
 		equirectangular "Textures/ParkPBRMR/skybox.hdr" 1024
 	}
 
+	//Voxel Cone Tracing
+
+	voxel_cone_tracing
+	{
+		enabled false
+		grid_size 256
+		conservative_rasterization true
+		temporal_smoothing false
+		occlusion false
+		secondary_bounce true
+		num_cones 16
+		max_distance 20.0000
+		ray_step_size 0.250000
+		voxel_size 1.00000
+	}
+
 	material "MRBlack"
 	{
 		pass

@@ -25,6 +25,7 @@ scene "Scene"
 	voxel_cone_tracing
 	{
 		enabled false
+		grid_size 256
 		conservative_rasterization true
 		temporal_smoothing false
 		occlusion false
