@@ -28,7 +28,7 @@ scene "Scene"
 		{
 			albedo 0.75164 0.75164 0.75164 1.0
 			specular 0.628281 0.628281 0.628281
-			glossiness 0.2
+			glossiness 0.6
 			two_sided true
 			mixed_interpolation true
 			parallax_occlusion one

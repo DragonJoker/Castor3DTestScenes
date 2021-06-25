@@ -29,7 +29,7 @@ scene "Scene"
 		{
 			albedo 0.75164	0.75164	0.75164 1.0
 			transmission 1.0 1.0 1.0
-			roughness 0.0
+			roughness 0.6171875
 			metallic 1.0
 			refraction_ratio 0.92
 			two_sided true
@@ -57,7 +57,7 @@ scene "Scene"
 		{
 			albedo 0.7038 0.27048 0.0828 1.0
 			transmission 1.0 1.0 1.0
-			roughness 0.0
+			roughness 0.375
 			metallic 1.0
 			refraction_ratio 0.92
 			two_sided true
@@ -102,14 +102,15 @@ scene "Scene"
 		parent "Cube"
 		mesh "Cube"
 		{
-			type "cube" -width=25 -height=25 -depth=25
+			type "cube" -width=50 -height=50 -depth=50
 		}
 		material "Copper"
 	}
 
 	scene_node "Camera"
 	{
-		position 0.0 60.0 -200.0
+		position -42.4948 -1.21124 -179.291
+		orientation -0.464761 0.879857 0.09924 27.2823
 	}
 	camera "Camera"
 	{

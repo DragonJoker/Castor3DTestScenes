@@ -30,7 +30,7 @@ scene "Scene"
 		{
 			diffuse 0.75164 0.75164 0.75164 1.0
 			specular 0.75164 0.75164 0.75164 1.0
-			glossiness 1.0
+			glossiness 0.3828125
 			reflections true
 		}
 	}
@@ -52,7 +52,7 @@ scene "Scene"
 		{
 			diffuse 0.7038 0.27048 0.0828 1.0
 			specular 0.7038 0.27048 0.0828 1.0
-			glossiness 1.0
+			glossiness 0.625
 			reflections true
 		}
 	}
@@ -94,14 +94,15 @@ scene "Scene"
 		parent "Cube"
 		mesh "Cube"
 		{
-			type "cube" -width=25 -height=25 -depth=25
+			type "cube" -width=50 -height=50 -depth=50
 		}
 		material "Copper"
 	}
 
 	scene_node "Camera"
 	{
-		position 0.0 60.0 -200.0
+		position -42.4948 -1.21124 -179.291
+		orientation -0.464761 0.879857 0.09924 27.2823
 	}
 	camera "Camera"
 	{
