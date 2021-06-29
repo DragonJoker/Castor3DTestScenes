@@ -40,7 +40,7 @@ material "CORPS2"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/Pufi/ALLOBJ_CORPS2_Roughness.exr"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ffffff
 		}
 	}
 }
@@ -977,7 +977,7 @@ material "floor"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
-		roughness 1.00000
+		roughness 0.50000
 		metallic 1.00000
 
 		texture_unit
@@ -986,6 +986,7 @@ material "floor"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Floor_normal.png"
 			normal_mask 0x00ffffff
+			normal_directx true
 		}
 
 		texture_unit

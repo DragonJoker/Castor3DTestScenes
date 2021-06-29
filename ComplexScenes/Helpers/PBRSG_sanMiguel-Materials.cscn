@@ -5197,10 +5197,10 @@ material "materialo"
 
 	pass
 	{
-		albedo 0.100000 0.100000 0.100000
+		albedo 0.000000 0.000000 0.010000
 		specular 0.250000 0.250000 0.250000
 		glossiness 4.00000
-		alpha 0.200000
+		alpha 0.500000
 		bw_accumulation 1
 		two_sided true
 	}

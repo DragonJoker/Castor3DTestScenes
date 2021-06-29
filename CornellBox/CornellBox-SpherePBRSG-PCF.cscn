@@ -3,7 +3,7 @@ materials specular_glossiness
 
 scene "CornellBox"
 {
-	ambient_light 0.0 0.0 0.0
+	ambient_light 1.0 1.0 1.0
 	background_colour 0.0 0.0 0.0
 	include "Materials/SphereMaterialsPBRSG.cscn"
 	include "Meshes/SphereMeshes.cscn"

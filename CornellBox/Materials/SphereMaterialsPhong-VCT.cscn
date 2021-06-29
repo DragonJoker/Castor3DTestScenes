@@ -6,7 +6,7 @@ material "leftSphere"
 		diffuse 0.55000 0.55000 0.55000
 		specular 0.55000 0.55000 0.55000
 		ambient 0.01
-		shininess 256
+		shininess 230
 		two_sided true
 	}
 }
@@ -19,7 +19,7 @@ material "rightSphere"
 		specular 0.55000 0.55000 0.55000
 		transmission 1.0 1.0 1.0
 		ambient 0.01
-		shininess 256
+		shininess 230
 		two_sided true
 		refraction_ratio 0.66
 		refractions true
