@@ -50,7 +50,7 @@ scene "Scene"
 			raw_config
 			{
 				min_offset 0.00001
-				max_slope_offset 0.0001
+				max_slope_offset 0.0005
 			}
 		}
 	}

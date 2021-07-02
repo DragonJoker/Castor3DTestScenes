@@ -25,7 +25,7 @@ scene "Scene"
 			filter raw
 			raw_config
 			{
-				min_offset 0.00001
+				min_offset 0.000001
 				max_slope_offset 0.00001
 			}
 		}
