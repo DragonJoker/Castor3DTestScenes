@@ -1,27 +1,16 @@
 // debug_overlays true
-materials phong
+materials specular_glossiness
 
 scene "CornellBox"
 {
 	ambient_light 1.0 1.0 1.0
 	background_colour 0.0 0.0 0.0
-	include "Materials/SphereMaterialsPhong-VCT.cscn"
+	include "Materials/SphereMaterialsPBRSG.cscn"
 	include "Meshes/SphereMeshes.cscn"
 	include "Helpers/SphereNodes.cscn"
 	include "Helpers/SphereObjects.cscn"
 	include "Helpers/SphereCamera.cscn"
-	include "Helpers/SphereLight.cscn"
-
-	voxel_cone_tracing
-	{
-		enabled true
-		grid_size 256
-		num_cones 16
-		max_distance 20.0
-		ray_step_size 0.015625
-		voxel_size 1
-		conservative_rasterization true
-	}
+	include "Helpers/SphereLight-RAW-LPV.cscn"
 }
 
 window "Window"

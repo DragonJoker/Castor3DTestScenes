@@ -1,0 +1,22 @@
+// skybox
+// {
+	// equirectangular "Textures/pineTreeSkybox.hdr" 1024 1024
+// }
+
+scene_node "SpotLightNode"
+{
+	parent "LightNode"
+	position 0.0 0.0 0.0
+	orientation 1.0 0.0 0.0 90.0
+}
+
+light "Light"
+{
+	parent "SpotLightNode"
+	type spot
+	colour 1.0 1.0 1.0
+	intensity 100.0 80.0
+	attenuation 0.01 0.01 0.01
+	cut_off 45.0
+	exponent 1.0
+}
