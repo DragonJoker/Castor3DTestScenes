@@ -1,2 +1,12 @@
 /*/Compare/
+ComplexScenes/Textures/bumps/
+CornellBox/Textures/
+Shadows/Helpers/
 .DS_Store
+
+db-test.sqlite
+db-v1.sqlite
+db-v2.sqlite
+/Common/simplexIsland.cscn
+/ComplexScenes/PBRMR_ParkFountain.cscn
+/ComplexScenes/Textures/Pufi/ALLOBJ_CORPS2_Glossiness.exr
