@@ -4,6 +4,7 @@ CornellBox/Textures/
 Shadows/Helpers/
 .DS_Store
 
+*.dot
 db-test.sqlite
 db-v1.sqlite
 db-v2.sqlite
