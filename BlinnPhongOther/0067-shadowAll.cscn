@@ -20,11 +20,11 @@ scene "Scene"
 		shadows
 		{
 			producer true
-			filter variance
-			vsm_config
+			filter raw
+			raw_config
 			{
-				variance_max 0.0000001
-				variance_bias 0.15
+				min_offset 0.00001
+				max_slope_offset 0.0001
 			}
 		}
 	}
@@ -39,18 +39,18 @@ scene "Scene"
 	{
 		type spot
 		parent "SpotLightNode"
-		colour 1.0 1.0 1.0
+		colour 1.0 0.0 0.0
 		intensity 0.8 1.0
 		attenuation 1.0 0.01 0.0
 		cut_off 20
 		shadows
 		{
 			producer true
-			filter variance
-			vsm_config
+			filter raw
+			raw_config
 			{
-				variance_max 0.0000001
-				variance_bias 0.15
+				min_offset 0.00001
+				max_slope_offset 0.0005
 			}
 		}
 	}
@@ -64,17 +64,17 @@ scene "Scene"
 	{
 		type point
 		parent "PointLightNode"
-		colour 1.0 1.0 1.0
+		colour 0.0 1.0 0.0
 		intensity 0.8 1.0
 		attenuation 1.0 0.01 0.0
 		shadows
 		{
 			producer true
-			filter variance
-			vsm_config
+			filter raw
+			raw_config
 			{
-				variance_max 0.00001
-				variance_bias 0.15
+				min_offset 0.00001
+				max_slope_offset 0.0001
 			}
 		}
 	}
@@ -82,7 +82,7 @@ scene "Scene"
 	scene_node "Plane"
 	{
 		position 0.0 0.0 0.0
-		orientation 1.0 0.0 0.0 90.0
+		orientation 1.0 0.0 0.0 -90.0
 	}
 
 	scene_node "Torus"
@@ -100,7 +100,7 @@ scene "Scene"
 			type "cube" -width=1 -height=1 -depth=4
 		}
 
-		material "WhiteEmit"
+		material "RedEmit"
 	}
 
 	object "PointLight"
@@ -113,7 +113,7 @@ scene "Scene"
 			type "sphere" -subdiv=20 -radius=1
 		}
 
-		material "WhiteEmit"
+		material "GreenEmit"
 	}
 
 	object "Plane"
