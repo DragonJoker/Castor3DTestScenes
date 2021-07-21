@@ -1,0 +1,91 @@
+// Meshes
+
+mesh "barriere_bar"
+{
+	import "Meshes/Cafe/barriere_bar.cmsh"
+}
+
+mesh "billard"
+{
+	import "Meshes/Cafe/billard.cmsh"
+}
+
+mesh "cafe"
+{
+	import "Meshes/Cafe/cafe.cmsh"
+}
+
+mesh "canape_demi_cercle"
+{
+	import "Meshes/Cafe/canape_demi_cercle.cmsh"
+}
+
+mesh "canape_triple"
+{
+	import "Meshes/Cafe/canape_triple.cmsh"
+}
+
+mesh "fauteuil"
+{
+	import "Meshes/Cafe/fauteuil.cmsh"
+}
+
+mesh "objets_billard"
+{
+	import "Meshes/Cafe/objets_billard.cmsh"
+}
+
+mesh "plante_01"
+{
+	import "Meshes/Cafe/plante_01.cmsh"
+}
+
+mesh "plante_02"
+{
+	import "Meshes/Cafe/plante_02.cmsh"
+}
+
+mesh "plante_03"
+{
+	import "Meshes/Cafe/plante_03.cmsh"
+}
+
+mesh "plante_05"
+{
+	import "Meshes/Cafe/plante_05.cmsh"
+}
+
+mesh "pouf"
+{
+	import "Meshes/Cafe/pouf.cmsh"
+}
+
+mesh "table_bar"
+{
+	import "Meshes/Cafe/table_bar.cmsh"
+}
+
+mesh "table_basse"
+{
+	import "Meshes/Cafe/table_basse.cmsh"
+}
+
+mesh "table_verre"
+{
+	import "Meshes/Cafe/table_verre.cmsh"
+}
+
+mesh "tableau_myt"
+{
+	import "Meshes/Cafe/tableau_myt.cmsh"
+}
+
+mesh "tabouret_bar"
+{
+	import "Meshes/Cafe/tabouret_bar.cmsh"
+}
+
+mesh "tv_bar"
+{
+	import "Meshes/Cafe/tv_bar.cmsh"
+}
