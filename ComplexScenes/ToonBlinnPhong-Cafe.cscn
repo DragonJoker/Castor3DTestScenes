@@ -1,0 +1,71 @@
+// Global configuration
+materials toon_blinn_phong
+
+scene "Cafe"
+{
+	// Scene configuration
+
+	background_colour 0.01 0.01 0.01
+	ambient_light 0.1 0.1 0.1
+	include "Helpers/Cafe-Materials-BlinnPhong-Toon.cscn"
+	include "Helpers/Cafe-Meshes.cscn"
+	include "Helpers/Cafe-Nodes.cscn"
+	include "Helpers/Cafe-Lights.cscn"
+	include "Helpers/Cafe-Objects.cscn"
+
+	// Cameras nodes
+
+	scene_node "CameraNode"
+	{
+		orientation 0 1 0 200
+		position 467 191 1327
+		scale 1 1 1
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "CameraNode"
+
+		viewport
+		{
+			type perspective
+			near 5
+			aspect_ratio 1.778
+			far 12000
+			fov_y 45
+		}
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format argb32
+		scene "Cafe"
+		camera "MainCamera"
+		tone_mapping "linear"
+		postfx "draw_edges"
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			intensity 1.0
+			radius 50.0
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1.0
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}
