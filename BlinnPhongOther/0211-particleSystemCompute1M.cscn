@@ -1,5 +1,5 @@
 // debug_overlays true
-materials phong
+materials blinn_phong
 
 scene "Scene"
 {

@@ -1,4 +1,4 @@
-materials phong
+materials blinn_phong
 
 scene "Relief"
 {

@@ -1,4 +1,4 @@
-materials phong
+materials blinn_phong
 
 scene "Parc"
 {
@@ -6,7 +6,7 @@ scene "Parc"
 	ambient_light 0.2 0.2 0.2
 	fog_type squared_exponential
 	fog_density 1
-	include "Materials/ParkLegacy.cscn"
+	include "Helpers/Park-Materials-BlinnPhong.cscn"
 
 	// Skybox
 
