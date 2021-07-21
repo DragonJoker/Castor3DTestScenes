@@ -1526,7 +1526,7 @@ material "tableau_myt/tableau_myt_graff_03"
 	}
 }
 
-material "tabouret_bar/tabouret_bar_cuir"
+material "tabouret_bar/cuir"
 {
 
 	pass
@@ -1545,7 +1545,7 @@ material "tabouret_bar/tabouret_bar_cuir"
 	}
 }
 
-material "tabouret_bar/tabouret_bar_metal"
+material "tabouret_bar/metal"
 {
 
 	pass

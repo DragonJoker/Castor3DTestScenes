@@ -1,5 +1,3 @@
-// Materials
-
 material "DefaultMaterial"
 {
 
@@ -7,7 +5,8 @@ material "DefaultMaterial"
 	{
 		diffuse 0.600000 0.600000 0.600000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -19,7 +18,10 @@ material "barriere_bar/barriere_bar"
 
 	pass
 	{
-		glossiness 0.5
+		diffuse 0.588235 0.588235 0.588235 0.00392157
+		specular 0.423000 0.423000 0.423000 0.00392157
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -27,13 +29,7 @@ material "barriere_bar/barriere_bar"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/barriere_metal.jpg" rgb
-		}
-
-		texture_unit
-		{
-			channel specular
-			image "Textures/CafePBRSG/barriere_metal.jpg" rgb
+			image "Textures/CafeLegacy/barriere_metal.jpg" rgb
 		}
 	}
 }
@@ -43,8 +39,10 @@ material "billard/bleu"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -52,7 +50,7 @@ material "billard/bleu"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/billard_bleu.jpg" rgb
+			image "Textures/CafeLegacy/billard_bleu.jpg" rgb
 		}
 	}
 }
@@ -64,7 +62,8 @@ material "billard/bois"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.189000 0.189000 0.189000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 256
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -72,7 +71,7 @@ material "billard/bois"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/billard_bois.jpg" rgb
+			image "Textures/CafeLegacy/billard_bois.jpg" rgb
 		}
 	}
 }
@@ -82,7 +81,10 @@ material "billard/dorure"
 
 	pass
 	{
-		glossiness 0.1
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -90,13 +92,7 @@ material "billard/dorure"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/billard_dorure.jpg" rgb
-		}
-
-		texture_unit
-		{
-			channel specular
-			image "Textures/CafePBRSG/billard_dorure.jpg" rgb
+			image "Textures/CafeLegacy/billard_dorure.jpg" rgb
 		}
 	}
 }
@@ -106,31 +102,33 @@ material "billard/light"
 
 	pass
 	{
-		diffuse 0 0 0
+		diffuse 1.00000 1.00000 0.752941 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
-		alpha_func greater 0.5
-		alpha 0.0
+		two_sided true
+		emissive 0.5
+		alpha_blend_mode interpolative
 
-		// texture_unit
-		// {
-			// channel diffuse
-			// image "Textures/CafePBRSG/billard_light.png" rgb
-		// }
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafeLegacy/billard_light.png" rgb
+		}
 
-		// texture_unit
-		// {
-			// channel emissive
-			// image "Textures/CafePBRSG/billard_light.png" rgb
-		// }
+		texture_unit
+		{
+			channel emissive
+			image "Textures/CafeLegacy/billard_light.png" rgb
+		}
 
-		// texture_unit
-		// {
-			// channel opacity
-			// image "Textures/CafePBRSG/billard_light.png" a
-		// }
+		texture_unit
+		{
+			channel opacity
+			image "Textures/CafeLegacy/billard_light.png" a
+		}
 	}
 }
 
@@ -141,7 +139,8 @@ material "billard/noir"
 	{
 		diffuse 1.00000 1.00000 1.00000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -155,7 +154,8 @@ material "billard/queue"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -163,7 +163,7 @@ material "billard/queue"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/billard_queue.jpg" rgb
+			image "Textures/CafeLegacy/billard_queue.jpg" rgb
 		}
 	}
 }
@@ -175,7 +175,8 @@ material "billard/tapis"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -183,7 +184,7 @@ material "billard/tapis"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/billard_tapis.jpg" rgb
+			image "Textures/CafeLegacy/billard_tapis.jpg" rgb
 		}
 	}
 }
@@ -194,22 +195,23 @@ material "cafe/cafe_aqua_coffre"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
-		emissive 0.5
 		two_sided true
+		emissive 0.5
 
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_coffre.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_coffre.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_coffre.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_coffre.jpg" rgb
 		}
 	}
 }
@@ -220,7 +222,8 @@ material "cafe/cafe_aqua_coquillage_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -229,13 +232,13 @@ material "cafe/cafe_aqua_coquillage_01"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_coquillage_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_coquillage_01.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_coquillage_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_coquillage_01.jpg" rgb
 		}
 	}
 }
@@ -246,7 +249,8 @@ material "cafe/cafe_aqua_coquillage_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -255,13 +259,13 @@ material "cafe/cafe_aqua_coquillage_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_coquillage_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_coquillage_02.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_coquillage_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_coquillage_02.jpg" rgb
 		}
 	}
 }
@@ -272,7 +276,8 @@ material "cafe/cafe_aqua_fond"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -281,13 +286,13 @@ material "cafe/cafe_aqua_fond"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_fond.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_fond.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_fond.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_fond.jpg" rgb
 		}
 	}
 }
@@ -298,7 +303,8 @@ material "cafe/cafe_aqua_pierre_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -307,13 +313,13 @@ material "cafe/cafe_aqua_pierre_01"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_pierre_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_pierre_01.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_pierre_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_pierre_01.jpg" rgb
 		}
 	}
 }
@@ -324,7 +330,8 @@ material "cafe/cafe_aqua_pierre_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -333,13 +340,13 @@ material "cafe/cafe_aqua_pierre_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_pierre_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_pierre_02.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_pierre_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_pierre_02.jpg" rgb
 		}
 	}
 }
@@ -350,7 +357,8 @@ material "cafe/cafe_aqua_pierre_03"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -359,13 +367,13 @@ material "cafe/cafe_aqua_pierre_03"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_pierre_03.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_pierre_03.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_pierre_03.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_pierre_03.jpg" rgb
 		}
 	}
 }
@@ -376,7 +384,8 @@ material "cafe/cafe_aqua_plafond"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -385,13 +394,13 @@ material "cafe/cafe_aqua_plafond"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_plafond.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plafond.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_plafond.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plafond.jpg" rgb
 		}
 	}
 }
@@ -402,7 +411,8 @@ material "cafe/cafe_aqua_plante_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -412,19 +422,19 @@ material "cafe/cafe_aqua_plante_01"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_plante_01.png" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plante_01.png" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_plante_01.png" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plante_01.png" rgb
 		}
 
 		texture_unit
 		{
 			channel opacity
-			image "Textures/CafePBRSG/cafe_aqua_plante_01.png" a
+			image "Textures/CafeLegacy/cafe_aqua_plante_01.png" a
 		}
 	}
 }
@@ -435,7 +445,8 @@ material "cafe/cafe_aqua_plante_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -445,19 +456,19 @@ material "cafe/cafe_aqua_plante_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_plante_02.png" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plante_02.png" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_plante_02.png" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plante_02.png" rgb
 		}
 
 		texture_unit
 		{
 			channel opacity
-			image "Textures/CafePBRSG/cafe_aqua_plante_02.png" a
+			image "Textures/CafeLegacy/cafe_aqua_plante_02.png" a
 		}
 	}
 }
@@ -468,7 +479,8 @@ material "cafe/cafe_aqua_plante_03"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -478,19 +490,19 @@ material "cafe/cafe_aqua_plante_03"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_plante_03.png" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plante_03.png" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_plante_03.png" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plante_03.png" rgb
 		}
 
 		texture_unit
 		{
 			channel opacity
-			image "Textures/CafePBRSG/cafe_aqua_plante_03.png" a
+			image "Textures/CafeLegacy/cafe_aqua_plante_03.png" a
 		}
 	}
 }
@@ -501,7 +513,8 @@ material "cafe/cafe_aqua_sol_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -510,13 +523,13 @@ material "cafe/cafe_aqua_sol_01"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_sol_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_sol_01.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_sol_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_sol_01.jpg" rgb
 		}
 	}
 }
@@ -527,7 +540,8 @@ material "cafe/cafe_aqua_sol_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -536,13 +550,13 @@ material "cafe/cafe_aqua_sol_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_sol_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_sol_02.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_sol_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_sol_02.jpg" rgb
 		}
 	}
 }
@@ -553,7 +567,8 @@ material "cafe/cafe_aqua_tube"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -562,13 +577,13 @@ material "cafe/cafe_aqua_tube"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_aqua_tube.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_tube.jpg" rgb
 		}
 
 		texture_unit
 		{
 			channel emissive
-			image "Textures/CafePBRSG/cafe_aqua_tube.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_tube.jpg" rgb
 		}
 	}
 }
@@ -578,7 +593,10 @@ material "cafe/cafe_bar_alu"
 
 	pass
 	{
-		glossiness 0.5
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.156863 0.156863 0.156863 0.00392157
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -586,13 +604,7 @@ material "cafe/cafe_bar_alu"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_bar_alu.jpg" rgb
-		}
-
-		texture_unit
-		{
-			channel specular
-			image "Textures/CafePBRSG/cafe_bar_alu.jpg" rgb
+			image "Textures/CafeLegacy/cafe_bar_alu.jpg" rgb
 		}
 	}
 }
@@ -602,8 +614,10 @@ material "cafe/cafe_bar_gris"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -611,7 +625,7 @@ material "cafe/cafe_bar_gris"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_bar_gris.jpg" rgb
+			image "Textures/CafeLegacy/cafe_bar_gris.jpg" rgb
 		}
 	}
 }
@@ -621,8 +635,10 @@ material "cafe/cafe_bar_light"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -630,7 +646,7 @@ material "cafe/cafe_bar_light"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_bar_light.jpg" rgb
+			image "Textures/CafeLegacy/cafe_bar_light.jpg" rgb
 		}
 	}
 }
@@ -640,8 +656,10 @@ material "cafe/cafe_bar_marbre"
 
 	pass
 	{
-		specular 0.2196 0.2196 0.2196 1.0
-		glossiness 0.9215
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.235294 0.235294 0.235294 0.00392157
+		ambient 1.0
+		shininess 1024
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -649,7 +667,7 @@ material "cafe/cafe_bar_marbre"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_bar_marbre.jpg" rgb
+			image "Textures/CafeLegacy/cafe_bar_marbre.jpg" rgb
 		}
 	}
 }
@@ -659,8 +677,10 @@ material "cafe/cafe_bois"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -668,7 +688,7 @@ material "cafe/cafe_bois"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_bois.jpg" rgb
+			image "Textures/CafeLegacy/cafe_bois.jpg" rgb
 		}
 	}
 }
@@ -678,8 +698,10 @@ material "cafe/cafe_bouteilles_01"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -687,7 +709,7 @@ material "cafe/cafe_bouteilles_01"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_bouteilles_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_bouteilles_01.jpg" rgb
 		}
 	}
 }
@@ -697,8 +719,10 @@ material "cafe/cafe_bouteilles_02"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -706,7 +730,7 @@ material "cafe/cafe_bouteilles_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_bouteilles_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_bouteilles_02.jpg" rgb
 		}
 	}
 }
@@ -716,8 +740,10 @@ material "cafe/cafe_bouteilles_03"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -725,7 +751,7 @@ material "cafe/cafe_bouteilles_03"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_bouteilles_03.jpg" rgb
+			image "Textures/CafeLegacy/cafe_bouteilles_03.jpg" rgb
 		}
 	}
 }
@@ -735,8 +761,10 @@ material "cafe/cafe_bouteilles_04"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -744,7 +772,7 @@ material "cafe/cafe_bouteilles_04"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_bouteilles_04.jpg" rgb
+			image "Textures/CafeLegacy/cafe_bouteilles_04.jpg" rgb
 		}
 	}
 }
@@ -754,28 +782,18 @@ material "cafe/cafe_carelage"
 
 	pass
 	{
-		glossiness 1.0
+		diffuse 0.843137 0.843137 0.843137 0.00392157
+		specular 0.0784314 0.0784314 0.0784314 0.00392157
+		ambient 1.0
+		shininess 1024
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
-		specular 0.0784314 0.0784314 0.0784314 0.00392157
 		two_sided true
 
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_carelage.jpg" rgb
-		}
-
-		// texture_unit
-		// {
-			// channel normal
-			// image "Textures/CafePBRSG/cafe_carelage-normal.jpg" rgb
-		// }
-
-		texture_unit
-		{
-			channel glossiness
-			image "Textures/CafePBRSG/cafe_carelage-glossiness.jpg" rgb
+			image "Textures/CafeLegacy/cafe_carelage.jpg" rgb
 		}
 	}
 }
@@ -787,7 +805,8 @@ material "cafe/cafe_chrome"
 	{
 		diffuse 0.337255 0.337255 0.337255 0.00392157
 		specular 0.603000 0.603000 0.603000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -799,8 +818,10 @@ material "cafe/cafe_deco_01"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -808,7 +829,7 @@ material "cafe/cafe_deco_01"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_deco_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_deco_01.jpg" rgb
 		}
 	}
 }
@@ -818,8 +839,10 @@ material "cafe/cafe_deco_02"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -827,7 +850,7 @@ material "cafe/cafe_deco_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_deco_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_deco_02.jpg" rgb
 		}
 	}
 }
@@ -837,8 +860,10 @@ material "cafe/cafe_deco_03"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -846,7 +871,7 @@ material "cafe/cafe_deco_03"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_deco_03.jpg" rgb
+			image "Textures/CafeLegacy/cafe_deco_03.jpg" rgb
 		}
 	}
 }
@@ -856,8 +881,10 @@ material "cafe/cafe_deco_04"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -865,7 +892,7 @@ material "cafe/cafe_deco_04"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_deco_04.jpg" rgb
+			image "Textures/CafeLegacy/cafe_deco_04.jpg" rgb
 		}
 	}
 }
@@ -875,8 +902,10 @@ material "cafe/cafe_entree"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -884,7 +913,7 @@ material "cafe/cafe_entree"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/magasins_vitrine_bar.jpg" rgb
+			image "Textures/CafeLegacy/magasins_vitrine_bar.jpg" rgb
 		}
 	}
 }
@@ -894,8 +923,10 @@ material "cafe/cafe_exit"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -904,13 +935,7 @@ material "cafe/cafe_exit"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_exit.jpg" rgb
-		}
-
-		texture_unit
-		{
-			channel emissive
-			image "Textures/CafePBRSG/cafe_exit.jpg" rgb
+			image "Textures/CafeLegacy/cafe_exit.jpg" rgb
 		}
 	}
 }
@@ -920,8 +945,10 @@ material "cafe/cafe_frigo_bar"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -929,13 +956,7 @@ material "cafe/cafe_frigo_bar"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_frigo_bar.jpg" rgb
-		}
-
-		texture_unit
-		{
-			channel emissive
-			image "Textures/CafePBRSG/cafe_frigo_bar.jpg" rgb
+			image "Textures/CafeLegacy/cafe_frigo_bar.jpg" rgb
 		}
 	}
 }
@@ -945,8 +966,10 @@ material "cafe/cafe_grille_bar"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -954,7 +977,7 @@ material "cafe/cafe_grille_bar"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_grille_bar.jpg" rgb
+			image "Textures/CafeLegacy/cafe_grille_bar.jpg" rgb
 		}
 	}
 }
@@ -964,8 +987,10 @@ material "cafe/cafe_grille_bar_02"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -973,7 +998,7 @@ material "cafe/cafe_grille_bar_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_grille_bar_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_grille_bar_02.jpg" rgb
 		}
 	}
 }
@@ -983,8 +1008,10 @@ material "cafe/cafe_mur_01"
 
 	pass
 	{
+		diffuse 0.843137 0.843137 0.843137 0.00392157
 		specular 0.156863 0.156863 0.156863 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -992,7 +1019,7 @@ material "cafe/cafe_mur_01"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_mur_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_mur_01.jpg" rgb
 		}
 	}
 }
@@ -1002,8 +1029,10 @@ material "cafe/cafe_mur_02"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1012,7 +1041,7 @@ material "cafe/cafe_mur_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_mur_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_mur_02.jpg" rgb
 		}
 	}
 }
@@ -1022,8 +1051,10 @@ material "cafe/cafe_neon"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.313726 0.313726 0.313726 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1032,7 +1063,7 @@ material "cafe/cafe_neon"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_carelage.jpg" rgb
+			image "Textures/CafeLegacy/cafe_carelage.jpg" rgb
 		}
 	}
 }
@@ -1042,8 +1073,10 @@ material "cafe/cafe_porte"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1051,7 +1084,7 @@ material "cafe/cafe_porte"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_porte.jpg" rgb
+			image "Textures/CafeLegacy/cafe_porte.jpg" rgb
 		}
 	}
 }
@@ -1061,8 +1094,10 @@ material "cafe/cafe_poteau"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1070,7 +1105,7 @@ material "cafe/cafe_poteau"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_poteau.jpg" rgb
+			image "Textures/CafeLegacy/cafe_poteau.jpg" rgb
 		}
 	}
 }
@@ -1080,8 +1115,10 @@ material "cafe/cafe_rideau"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1089,7 +1126,7 @@ material "cafe/cafe_rideau"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_rideau.jpg" rgb
+			image "Textures/CafeLegacy/cafe_rideau.jpg" rgb
 		}
 	}
 }
@@ -1099,8 +1136,10 @@ material "cafe/cafe_roof_01"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1108,7 +1147,7 @@ material "cafe/cafe_roof_01"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_roof_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_roof_01.jpg" rgb
 		}
 	}
 }
@@ -1118,8 +1157,10 @@ material "cafe/cafe_roof_02"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1127,7 +1168,7 @@ material "cafe/cafe_roof_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_roof_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_roof_02.jpg" rgb
 		}
 	}
 }
@@ -1137,28 +1178,18 @@ material "cafe/cafe_sol_01"
 
 	pass
 	{
-		glossiness 1.0
+		diffuse 0.996078 0.996078 0.996078 0.00392157
+		specular 0.0823529 0.0823529 0.0823529 0.00392157
+		ambient 1.0
+		shininess 128
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
-		specular 0.0823529 0.0823529 0.0823529 0.00392157
 		two_sided true
 
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_sol_01.jpg" rgb
-		}
-
-		texture_unit
-		{
-			channel diffuse
-			image "Textures/CafePBRSG/cafe_sol_01-normal.png" rgb
-		}
-
-		texture_unit
-		{
-			channel glossiness
-			image "Textures/CafePBRSG/cafe_sol_01-glossiness.jpg" rgb
+			image "Textures/CafeLegacy/cafe_sol_01.jpg" rgb
 		}
 	}
 }
@@ -1168,22 +1199,25 @@ material "cafe/cafe_vitre"
 
 	pass
 	{
+		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.588235 0.588235 0.588235 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 512
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
+		two_sided true
 		alpha_blend_mode interpolative
 
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/cafe_vitre.png" rgb
+			image "Textures/CafeLegacy/cafe_vitre.png" rgb
 		}
 
 		texture_unit
 		{
 			channel opacity
-			image "Textures/CafePBRSG/cafe_vitre.png" a
+			image "Textures/CafeLegacy/cafe_vitre.png" a
 		}
 	}
 }
@@ -1193,8 +1227,10 @@ material "canape_demi_cercle/canape_demi_cercle"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1202,79 +1238,49 @@ material "canape_demi_cercle/canape_demi_cercle"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/canape_demi_cercle.jpg" rgb
+			image "Textures/CafeLegacy/canape_demi_cercle.jpg" rgb
 		}
 	}
 }
 
 material "canape_triple/canape_triple"
 {
+
 	pass
 	{
-		glossiness 1.0
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
-		specular 0.05 0.05 0.05
 		two_sided true
 
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/canape_bar.jpg" rgb
-		}
-
-		texture_unit
-		{
-			channel occlusion
-			image "Textures/CafePBRSG/cuir-ao.png" rgb
-		}
-
-		texture_unit
-		{
-			channel glossiness
-			image "Textures/CafePBRSG/cuir-glossiness.png" rgb
-		}
-
-		texture_unit
-		{
-			channel normal
-			image "Textures/CafePBRSG/cuir-normal.png" rgb
+			image "Textures/CafeLegacy/canape_bar.jpg" rgb
 		}
 	}
 }
 
 material "fauteuil/gros_fauteuil_bar"
 {
+
 	pass
 	{
-		glossiness 1.0
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
-		specular 0.05 0.05 0.05
 		two_sided true
 
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/canape_bar.jpg" rgb
-		}
-
-		texture_unit
-		{
-			channel occlusion
-			image "Textures/CafePBRSG/cuir-ao.png" rgb
-		}
-
-		texture_unit
-		{
-			channel glossiness
-			image "Textures/CafePBRSG/cuir-glossiness.png" rgb
-		}
-
-		texture_unit
-		{
-			channel normal
-			image "Textures/CafePBRSG/cuir-normal.png" rgb
+			image "Textures/CafeLegacy/canape_bar.jpg" rgb
 		}
 	}
 }
@@ -1284,8 +1290,10 @@ material "plante_01/plante_01"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1294,13 +1302,13 @@ material "plante_01/plante_01"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/plante_01.png" rgb
+			image "Textures/CafeLegacy/plante_01.png" rgb
 		}
 
 		texture_unit
 		{
 			channel opacity
-			image "Textures/CafePBRSG/plante_01.png" a
+			image "Textures/CafeLegacy/plante_01.png" a
 		}
 	}
 }
@@ -1310,8 +1318,10 @@ material "plante_01/plante_pot"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1319,7 +1329,7 @@ material "plante_01/plante_pot"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/plante_pot.jpg" rgb
+			image "Textures/CafeLegacy/plante_pot.jpg" rgb
 		}
 	}
 }
@@ -1329,8 +1339,10 @@ material "plante_02/plante_02"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1339,13 +1351,13 @@ material "plante_02/plante_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/plante_02.png" rgb
+			image "Textures/CafeLegacy/plante_02.png" rgb
 		}
 
 		texture_unit
 		{
 			channel opacity
-			image "Textures/CafePBRSG/plante_02.png" a
+			image "Textures/CafeLegacy/plante_02.png" a
 		}
 	}
 }
@@ -1355,8 +1367,10 @@ material "plante_02/plante_pot"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1364,7 +1378,7 @@ material "plante_02/plante_pot"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/plante_pot.jpg" rgb
+			image "Textures/CafeLegacy/plante_pot.jpg" rgb
 		}
 	}
 }
@@ -1374,8 +1388,10 @@ material "plante_03/plante_03"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1384,13 +1400,13 @@ material "plante_03/plante_03"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/plante_03.png" rgb
+			image "Textures/CafeLegacy/plante_03.png" rgb
 		}
 
 		texture_unit
 		{
 			channel opacity
-			image "Textures/CafePBRSG/plante_03.png" a
+			image "Textures/CafeLegacy/plante_03.png" a
 		}
 	}
 }
@@ -1400,8 +1416,10 @@ material "plante_03/plante_pot"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1409,7 +1427,7 @@ material "plante_03/plante_pot"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/plante_pot.jpg" rgb
+			image "Textures/CafeLegacy/plante_pot.jpg" rgb
 		}
 	}
 }
@@ -1419,8 +1437,10 @@ material "plante_05/plante_05"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1429,13 +1449,13 @@ material "plante_05/plante_05"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/plante_05.png" rgb
+			image "Textures/CafeLegacy/plante_05.png" rgb
 		}
 
 		texture_unit
 		{
 			channel opacity
-			image "Textures/CafePBRSG/plante_05.png" a
+			image "Textures/CafeLegacy/plante_05.png" a
 		}
 	}
 }
@@ -1445,8 +1465,10 @@ material "plante_05/plante_pot"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1454,7 +1476,7 @@ material "plante_05/plante_pot"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/plante_pot.jpg" rgb
+			image "Textures/CafeLegacy/plante_pot.jpg" rgb
 		}
 	}
 }
@@ -1464,34 +1486,18 @@ material "pouf/pouf"
 
 	pass
 	{
-		glossiness 1.0
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.000000 0.000000 0.000000 0.00392157
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
-		specular 0.05 0.05 0.05
 		two_sided true
 
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/pouf.jpg" rgb
-		}
-
-		texture_unit
-		{
-			channel occlusion
-			image "Textures/CafePBRSG/cuir-ao.png" rgb
-		}
-
-		texture_unit
-		{
-			channel glossiness
-			image "Textures/CafePBRSG/cuir-glossiness.png" rgb
-		}
-
-		texture_unit
-		{
-			channel normal
-			image "Textures/CafePBRSG/cuir-normal.png" rgb
+			image "Textures/CafeLegacy/pouf.jpg" rgb
 		}
 	}
 }
@@ -1501,9 +1507,10 @@ material "table_bar/cuivre"
 
 	pass
 	{
-		diffuse 0.984314 0.647059 0.545098
-		specular 0.984314 0.647059 0.545098
-		glossiness 0.9
+		diffuse 0.666667 0.501961 0.00392157 0.00392157
+		specular 0.459000 0.459000 0.459000 0.00392157
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1515,9 +1522,10 @@ material "table_bar/laque"
 
 	pass
 	{
-		diffuse 0.000000 0.000000 0.000000
-		specular 0.1 0.1 0.1
-		glossiness 0.8
+		diffuse 0.000000 0.000000 0.000000 0.00392157
+		specular 0.315000 0.315000 0.315000 0.00392157
+		ambient 1.0
+		shininess 1024
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1529,9 +1537,10 @@ material "table_basse/table_basse_cuivre"
 
 	pass
 	{
-		diffuse 0.984314 0.647059 0.545098
-		specular 0.984314 0.647059 0.545098
-		glossiness 0.9
+		diffuse 0.666667 0.501961 0.00392157 0.00392157
+		specular 0.459000 0.459000 0.459000 0.00392157
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1543,9 +1552,10 @@ material "table_basse/table_basse_laque"
 
 	pass
 	{
-		diffuse 0.000000 0.000000 0.000000
-		specular 0.1 0.1 0.1
-		glossiness 0.8
+		diffuse 0.000000 0.000000 0.000000 0.00392157
+		specular 0.315000 0.315000 0.315000 0.00392157
+		ambient 1.0
+		shininess 1024
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1557,8 +1567,10 @@ material "table_verre/table_bar_fer_forge"
 
 	pass
 	{
+		diffuse 0.588235 0.588235 0.588235 0.00392157
 		specular 0.360000 0.360000 0.360000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1566,7 +1578,7 @@ material "table_verre/table_bar_fer_forge"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/table_bar_fer_forge.jpg" rgb
+			image "Textures/CafeLegacy/table_bar_fer_forge.jpg" rgb
 		}
 	}
 }
@@ -1576,22 +1588,25 @@ material "table_verre/table_bar_verre"
 
 	pass
 	{
+		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 0.270000 0.270000 0.270000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
+		two_sided true
 		alpha_blend_mode interpolative
 
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/table_bar_verre.png" rgb
+			image "Textures/CafeLegacy/table_bar_verre.png" rgb
 		}
 
 		texture_unit
 		{
 			channel opacity
-			image "Textures/CafePBRSG/table_bar_verre.png" a
+			image "Textures/CafeLegacy/table_bar_verre.png" a
 		}
 	}
 }
@@ -1601,8 +1616,10 @@ material "tableau_myt/tableau_myt_graff_01"
 
 	pass
 	{
+		diffuse 0.588235 0.588235 0.588235 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1610,7 +1627,7 @@ material "tableau_myt/tableau_myt_graff_01"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/tableau_myt_graff_01.jpg" rgb
+			image "Textures/CafeLegacy/tableau_myt_graff_01.jpg" rgb
 		}
 	}
 }
@@ -1620,8 +1637,10 @@ material "tableau_myt/tableau_myt_graff_02"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1629,7 +1648,7 @@ material "tableau_myt/tableau_myt_graff_02"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/tableau_myt_graff_02.jpg" rgb
+			image "Textures/CafeLegacy/tableau_myt_graff_02.jpg" rgb
 		}
 	}
 }
@@ -1639,8 +1658,10 @@ material "tableau_myt/tableau_myt_graff_03"
 
 	pass
 	{
+		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1648,7 +1669,7 @@ material "tableau_myt/tableau_myt_graff_03"
 		texture_unit
 		{
 			channel diffuse
-			image "Textures/CafePBRSG/tableau_myt_graff_03.jpg" rgb
+			image "Textures/CafeLegacy/tableau_myt_graff_03.jpg" rgb
 		}
 	}
 }
@@ -1658,34 +1679,18 @@ material "tabouret_bar/cuir"
 
 	pass
 	{
-		glossiness 1.0
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.108000 0.108000 0.108000 0.00392157
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
-		diffuse 0.0 0.0 0.0
 		two_sided true
 
 		texture_unit
 		{
-			channel occlusion
-			image "Textures/CafePBRSG/leather-ao.png"
-		}
-
-		texture_unit
-		{
-			channel glossiness
-			image "Textures/CafePBRSG/leather-glossiness.png"
-		}
-
-		texture_unit
-		{
-			channel specular
-			image "Textures/CafePBRSG/leather-specular.png"
-		}
-
-		texture_unit
-		{
-			channel normal
-			image "Textures/CafePBRSG/leather-normal.png"
+			channel diffuse
+			image "Textures/CafeLegacy/tabouret_cuir.jpg" rgb
 		}
 	}
 }
@@ -1695,12 +1700,19 @@ material "tabouret_bar/metal"
 
 	pass
 	{
-		diffuse 0.196078 0.196078 0.196078 0.00392157
-		specular 0.196078 0.196078 0.196078 0.00392157
-		glossiness 0.9
+		diffuse 0.588000 0.588000 0.588000 0.00392157
+		specular 0.360000 0.360000 0.360000 0.00392157
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
+
+		texture_unit
+		{
+			channel diffuse
+			image "Textures/CafeLegacy/tabouret_metal.jpg" rgb
+		}
 	}
 }
 
@@ -1711,7 +1723,8 @@ material "tv_bar/ecran"
 	{
 		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 0.360000 0.360000 0.360000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true
@@ -1725,7 +1738,8 @@ material "tv_bar/plasma"
 	{
 		diffuse 0.156863 0.156863 0.156863 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		glossiness 0.5
+		ambient 1.0
+		shininess 64
 		edge_colour 0.0 0.0 0.0 0.2
 		smooth_band_width 4.0
 		two_sided true

@@ -74,78 +74,91 @@ scene_node "canape_triple"
 {
 	orientation 1 0 0 0
 	position 665 0 165
+	scale 1 1 1
 }
 
 scene_node "canape_triple_1"
 {
 	orientation 1 0 0 0
 	position 665 0 570
+	scale 1 1 1
 }
 
 scene_node "canape_triple_10_1"
 {
 	orientation 0 -1 0 90
 	position -455 0 90
+	scale 1 1 1
 }
 
 scene_node "canape_triple_10_2"
 {
 	orientation 1 0 0 0
 	position -545 0 -1415
+	scale 1 1 1
 }
 
 scene_node "canape_triple_10_3"
 {
 	orientation 1 0 0 0
 	position 545 0 -1420
+	scale 1 1 1
 }
 
 scene_node "canape_triple_2"
 {
 	orientation 0 -1 0 180
 	position 665 0 485
+	scale 1 1 1
 }
 
 scene_node "canape_triple_3"
 {
 	orientation 0 -1 0 180
 	position 670 0 930
+	scale 1 1 1
 }
 
 scene_node "canape_triple_4"
 {
 	orientation 0 -1 0 270
 	position -135 0 1420
+	scale 1 1 1
 }
 
 scene_node "canape_triple_5"
 {
 	orientation 0 1 0 270
 	position 190 0 1420
+	scale 1 1 1
 }
 
 scene_node "canape_triple_6"
 {
 	orientation 0 1 0 270
 	position 585 0 1420
+	scale 1 1 1
 }
 
 scene_node "canape_triple_7"
 {
 	orientation 0 -1 0 270
 	position -525 0 1420
+	scale 1 1 1
 }
 
 scene_node "canape_triple_8"
 {
 	orientation 0 -1 0 270
 	position 275 0 1420
+	scale 1 1 1
 }
 
 scene_node "canape_triple_9"
 {
 	orientation 0 1 0 270
 	position -220 0 1420
+	scale 1 1 1
 }
 
 scene_node "fauteuil"
@@ -230,46 +243,55 @@ scene_node "plante_05"
 scene_node "pouf"
 {
 	position -675 0 -1200
+	scale 1 1 1
 }
 
 scene_node "pouf_1"
 {
 	position -595 0 -1095
+	scale 1 1 1
 }
 
 scene_node "pouf_2"
 {
 	position -440 0 -1175
+	scale 1 1 1
 }
 
 scene_node "pouf_3"
 {
 	position 760 0 -705
+	scale 1 1 1
 }
 
 scene_node "pouf_4"
 {
 	position 770 0 -875
+	scale 1 1 1
 }
 
 scene_node "pouf_5"
 {
 	position 515 0 -75
+	scale 1 1 1
 }
 
 scene_node "pouf_6"
 {
 	position 510 0 -330
+	scale 1 1 1
 }
 
 scene_node "pouf_7"
 {
 	position 700 1.19209e-07 -1235
+	scale 1 1 1
 }
 
 scene_node "pouf_9"
 {
 	position 415 0 -1250
+	scale 1 1 1
 }
 
 scene_node "spot_cafe"
