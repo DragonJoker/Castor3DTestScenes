@@ -89,7 +89,7 @@ scene "Scene"
 		{
 			diffuse 0.75164 0.75164 0.75164 1.0
 			emissive 0.0 0.0 0.0 1.0
-			specular 0.628281 0.628281 0.628281 1.0
+			specular 0.0 0.0 0.0 1.0
 			shininess 50.2
 	
 			texture_unit
@@ -107,7 +107,7 @@ scene "Scene"
 		{
 			diffuse 0.75164 0.75164 0.75164 1.0
 			emissive 0.0 0.0 0.0 1.0
-			specular 0.628281 0.628281 0.628281 1.0
+			specular 0.0 0.0 0.0 1.0
 			shininess 50.2
 	
 			texture_unit
@@ -125,7 +125,7 @@ scene "Scene"
 		{
 			diffuse 0.75164 0.75164 0.75164 1.0
 			emissive 0.0 0.0 0.0 1.0
-			specular 0.628281 0.628281 0.628281 1.0
+			specular 0.0 0.0 0.0 1.0
 			shininess 50.2
 	
 			texture_unit
@@ -143,7 +143,7 @@ scene "Scene"
 		{
 			diffuse 0.75164 0.75164 0.75164 1.0
 			emissive 0.0 0.0 0.0 1.0
-			specular 0.628281 0.628281 0.628281 1.0
+			specular 0.0 0.0 0.0 1.0
 			shininess 50.2
 	
 			texture_unit
@@ -161,7 +161,7 @@ scene "Scene"
 		{
 			diffuse 0.75164 0.75164 0.75164 1.0
 			emissive 0.0 0.0 0.0 1.0
-			specular 0.628281 0.628281 0.628281 1.0
+			specular 0.0 0.0 0.0 1.0
 			shininess 50.2
 	
 			texture_unit
@@ -179,7 +179,7 @@ scene "Scene"
 		{
 			diffuse 0.75164 0.75164 0.75164 1.0
 			emissive 0.0 0.0 0.0 1.0
-			specular 0.628281 0.628281 0.628281 1.0
+			specular 0.0 0.0 0.0 1.0
 			shininess 50.2
 	
 			texture_unit
@@ -386,7 +386,7 @@ scene "Scene"
 	scene_node "MainCameraNode"
 	{
 		orientation 0 1 0 180
-		position 0.0 0.0 10.0
+		position 0 0 5
 	}
 	camera "MainCamera"
 	{

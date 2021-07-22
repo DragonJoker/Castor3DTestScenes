@@ -27,7 +27,7 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Billboards/Diffuse.bmp"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}

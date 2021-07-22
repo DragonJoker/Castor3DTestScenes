@@ -46,7 +46,7 @@ scene "TextureScene"
 	
 			texture_unit
 			{
-				image "Textures/diffuse.jpg" rgb
+				image "Textures/Bricks/Diffuse.jpg" rgb
 				channel diffuse
 				sampler	"Default"
 			}

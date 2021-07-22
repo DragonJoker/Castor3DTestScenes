@@ -38,7 +38,7 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
@@ -67,14 +67,14 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
@@ -103,21 +103,21 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Gloss.jpg"
+				image "Textures/Bricks/Gloss.jpg"
 				channel shininess
 				sampler	"Linear"
 			}
@@ -172,14 +172,14 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
@@ -208,21 +208,21 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
@@ -252,28 +252,28 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Opacity.png" a
+				image "Textures/Bricks/Opacity.png" a
 				channel opacity
 				sampler	"Linear"
 			}
@@ -306,21 +306,21 @@ scene "Scene"
 
 			// texture_unit
 			// {
-				// image "Textures/Diffuse.jpg"
+				// image "Textures/Bricks/Diffuse.jpg"
 				// channel diffuse
 				// sampler	"Linear"
 			// }
 
 			// texture_unit
 			// {
-				// image "Textures/Specular.jpg"
+				// image "Textures/Bricks/Specular.jpg"
 				// channel specular
 				// sampler	"Linear"
 			// }
 
 			// texture_unit
 			// {
-				// image "Textures/Normal.jpg"
+				// image "Textures/Bricks/Normal.jpg"
 				// channel normal
 				// sampler	"Linear"
 			// }
@@ -350,21 +350,21 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Height.jpg"
+				image "Textures/Bricks/Height.jpg"
 				channel height
 				sampler	"Linear"
 			}
@@ -394,28 +394,28 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Height.jpg"
+				image "Textures/Bricks/Height.jpg"
 				channel height
 				sampler	"Linear"
 			}
@@ -447,42 +447,42 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Opacity.png" a
+				image "Textures/Bricks/Opacity.png" a
 				channel opacity
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Gloss.jpg"
+				image "Textures/Bricks/Gloss.jpg"
 				channel shininess
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Height.jpg"
+				image "Textures/Bricks/Height.jpg"
 				channel height
 				sampler	"Linear"
 			}
@@ -516,35 +516,35 @@ scene "Scene"
 
 			// texture_unit
 			// {
-				// image "Textures/Diffuse.jpg"
+				// image "Textures/Bricks/Diffuse.jpg"
 				// channel diffuse
 				// sampler	"Linear"
 			// }
 
 			// texture_unit
 			// {
-				// image "Textures/Specular.jpg"
+				// image "Textures/Bricks/Specular.jpg"
 				// channel specular
 				// sampler	"Linear"
 			// }
 
 			// texture_unit
 			// {
-				// image "Textures/Normal.jpg"
+				// image "Textures/Bricks/Normal.jpg"
 				// channel normal
 				// sampler	"Linear"
 			// }
 
 			// texture_unit
 			// {
-				// image "Textures/Gloss.jpg"
+				// image "Textures/Bricks/Gloss.jpg"
 				// channel shininess
 				// sampler	"Linear"
 			// }
 
 			// texture_unit
 			// {
-				// image "Textures/Height.jpg"
+				// image "Textures/Bricks/Height.jpg"
 				// channel height
 				// sampler	"Linear"
 			// }

@@ -67,14 +67,14 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
@@ -103,21 +103,21 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Gloss.jpg"
+				image "Textures/Bricks/Gloss.jpg"
 				channel shininess
 				sampler	"Linear"
 			}
@@ -135,32 +135,6 @@ scene "Scene"
 		material "SpecularGlossMap"
 	}
 
-	// material "ReflectionRefraction"
-	// {
-		// pass
-		// {
-			// diffuse 0.75164	0.75164	0.75164 1.0
-			// emissive 0.0 0.0 0.0 1.0
-			// specular 0.628281 0.628281 0.628281 1.0
-			// shininess 51.2
-			// refraction_ratio 0.92
-			// two_sided true
-			// reflections true
-			// refractions true
-		// }
-	// }
-
-	// scene_node "ReflectionRefraction"
-	// {
-		// position 20.0 -5.0 0.0
-	// }
-	// object "ReflectionRefraction"
-	// {
-		// parent "ReflectionRefraction"
-		// mesh "Plane"
-		// material "ReflectionRefraction"
-	// }
-
 	material "NormalMap"
 	{
 		pass
@@ -172,14 +146,14 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
@@ -208,21 +182,21 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
@@ -252,28 +226,28 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Opacity.png" a
+				image "Textures/Bricks/Opacity.png" a
 				channel opacity
 				sampler	"Linear"
 			}
@@ -291,53 +265,6 @@ scene "Scene"
 		material "NormalOpacityMap"
 	}
 
-	// material "NormalReflectionRefraction"
-	// {
-		// pass
-		// {
-			// diffuse 0.75164	0.75164	0.75164 1.0
-			// emissive 0.0 0.0 0.0 1.0
-			// specular 0.628281 0.628281 0.628281 1.0
-			// shininess 51.2
-			// refraction_ratio 0.92
-			// two_sided true
-			// refractions true
-			// reflections true
-
-			// texture_unit
-			// {
-				// image "Textures/Diffuse.jpg"
-				// channel diffuse
-				// sampler	"Linear"
-			// }
-
-			// texture_unit
-			// {
-				// image "Textures/Specular.jpg"
-				// channel specular
-				// sampler	"Linear"
-			// }
-
-			// texture_unit
-			// {
-				// image "Textures/Normal.jpg"
-				// channel normal
-				// sampler	"Linear"
-			// }
-		// }
-	// }
-
-	// scene_node "NormalReflectionRefraction"
-	// {
-		// position 20.0 5.0 0.0
-	// }
-	// object "NormalReflectionRefraction"
-	// {
-		// parent "NormalReflectionRefraction"
-		// mesh "Plane"
-		// material "NormalReflectionRefraction"
-	// }
-
 	material "ParallaxMap"
 	{
 		pass
@@ -350,21 +277,21 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Height.jpg"
+				image "Textures/Bricks/Height.jpg"
 				channel height
 				sampler	"Linear"
 			}
@@ -394,28 +321,28 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Height.jpg"
+				image "Textures/Bricks/Height.jpg"
 				channel height
 				sampler	"Linear"
 			}
@@ -447,42 +374,42 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Diffuse.jpg"
+				image "Textures/Bricks/Diffuse.jpg"
 				channel diffuse
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Specular.jpg"
+				image "Textures/Bricks/Specular.jpg"
 				channel specular
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Normal.jpg"
+				image "Textures/Bricks/Normal.jpg"
 				channel normal
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Opacity.png" a
+				image "Textures/Bricks/Opacity.png" a
 				channel opacity
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Gloss.jpg"
+				image "Textures/Bricks/Gloss.jpg"
 				channel shininess
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Height.jpg"
+				image "Textures/Bricks/Height.jpg"
 				channel height
 				sampler	"Linear"
 			}
@@ -499,68 +426,6 @@ scene "Scene"
 		mesh "Plane"
 		material "AllMap"
 	}
-
-	// material "ParallaxReflectionRefraction"
-	// {
-		// pass
-		// {
-			// diffuse 0.75164	0.75164	0.75164 1.0
-			// emissive 0.0 0.0 0.0 1.0
-			// specular 0.628281 0.628281 0.628281 1.0
-			// shininess 51.2
-			// refraction_ratio 0.92
-			// two_sided true
-			// parallax_occlusion one
-			// refractions true
-			// reflections true
-
-			// texture_unit
-			// {
-				// image "Textures/Diffuse.jpg"
-				// channel diffuse
-				// sampler	"Linear"
-			// }
-
-			// texture_unit
-			// {
-				// image "Textures/Specular.jpg"
-				// channel specular
-				// sampler	"Linear"
-			// }
-
-			// texture_unit
-			// {
-				// image "Textures/Normal.jpg"
-				// channel normal
-				// sampler	"Linear"
-			// }
-
-			// texture_unit
-			// {
-				// image "Textures/Gloss.jpg"
-				// channel shininess
-				// sampler	"Linear"
-			// }
-
-			// texture_unit
-			// {
-				// image "Textures/Height.jpg"
-				// channel height
-				// sampler	"Linear"
-			// }
-		// }
-	// }
-
-	// scene_node "ParallaxReflectionRefraction"
-	// {
-		// position 20.0 15.0 0.0
-	// }
-	// object "ParallaxReflectionRefraction"
-	// {
-		// parent "ParallaxReflectionRefraction"
-		// mesh "Plane"
-		// material "ParallaxReflectionRefraction"
-	// }
 
 	scene_node "SunLightNode1"
 	{

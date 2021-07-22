@@ -29,7 +29,7 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Bricks/opacity.png"
+				image "Textures/Opacity.png"
 				channel opacity
 				sampler	"Linear"
 			}
