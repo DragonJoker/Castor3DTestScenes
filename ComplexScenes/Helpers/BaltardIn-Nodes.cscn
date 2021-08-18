@@ -1,0 +1,36 @@
+// Objects nodes
+
+scene_node "boule_facettes"
+{
+	orientation 1 0 0 0
+	position 0 985 -75
+	scale 1.60588 1.60588 1.60588
+}
+
+scene_node "plasma"
+{
+	orientation 0 -1 0 180
+	position -4690 620 -54180
+	scale 2.32381 2.32381 2.32381
+}
+
+scene_node "plasma_1"
+{
+	orientation 0 -1 0 180
+	position 5 595 1970
+	scale 3.12889 3.12889 3.12889
+}
+
+scene_node "plasma_2"
+{
+	orientation 0 -1 0 148
+	position 1280 755 1225
+	scale 1.07744 1.07744 1.07744
+}
+
+scene_node "plasma_3"
+{
+	orientation 0 -1 0 212
+	position -1250 755 1230
+	scale 1.07744 1.07744 1.07744
+}

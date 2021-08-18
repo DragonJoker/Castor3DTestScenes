@@ -1,0 +1,57 @@
+// Meshes
+
+mesh "baltard_in_ns"
+{
+	import "Meshes/BaltardIn/baltard_in_ns.cmsh"
+	default_materials
+	{
+		material 0 "baltard_in_ns/piste_ns_01"
+		material 1 "baltard_in_ns/noir_laque"
+		material 2 "baltard_in_ns/piste_ns_02"
+		material 3 "baltard_in_ns/gradin_ns"
+		material 4 "baltard_in_ns/bois_ns"
+		material 5 "baltard_in_ns/metal_cable"
+		material 6 "baltard_in_ns/metal_spot"
+		material 7 "baltard_in_ns/lumiere"
+		material 8 "baltard_in_ns/light"
+		material 9 "baltard_in_ns/ns_bg"
+		material 10 "baltard_in_ns/armature"
+		material 11 "baltard_in_ns/verre_baltard_in"
+		material 12 "baltard_in_ns/cube_ns_01"
+		material 13 "baltard_in_ns/cube_ns_02"
+		material 14 "baltard_in_ns/screen_ns_04"
+		material 15 "baltard_in_ns/baffles"
+		material 16 "baltard_in_ns/marche_ns"
+		material 17 "baltard_in_ns/piste_ns_03"
+	}
+}
+
+mesh "pavillon_baltard_in"
+{
+	import "Meshes/BaltardIn/pavillon_baltard_in.cmsh"
+	default_materials
+	{
+		material 0 "pavillon_baltard_in/vitres"
+		material 1 "pavillon_baltard_in/bord_toit"
+		material 2 "pavillon_baltard_in/toit"
+		material 3 "pavillon_baltard_in/grilles deco"
+		material 4 "pavillon_baltard_in/ciment"
+		material 5 "pavillon_baltard_in/motifs"
+		material 6 "pavillon_baltard_in/bronze"
+		material 7 "pavillon_baltard_in/grilles deco"
+		material 8 "pavillon_baltard_in/vitres"
+		material 9 "pavillon_baltard_in/light"
+		material 10 "pavillon_baltard_in/metal_bleu"
+		material 11 "pavillon_baltard_in/black"
+	}
+}
+
+mesh "plasma"
+{
+	import "Meshes/BaltardIn/plasma.cmsh"
+	default_materials
+	{
+		material 0 "plasma/ecran"
+		material 1 "plasma/plasma"
+	}
+}

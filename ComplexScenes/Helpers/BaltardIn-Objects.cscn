@@ -1,0 +1,37 @@
+// Geometries
+
+object "baltard_in_ns"
+{
+	parent "CameraRootNode"
+	mesh "baltard_in_ns"
+}
+
+object "pavillon_baltard_in"
+{
+	parent "CameraRootNode"
+	mesh "pavillon_baltard_in"
+}
+
+object "plasma"
+{
+	parent "plasma"
+	mesh "plasma"
+}
+
+object "plasma_1"
+{
+	parent "plasma_1"
+	mesh "plasma"
+}
+
+object "plasma_2"
+{
+	parent "plasma_2"
+	mesh "plasma"
+}
+
+object "plasma_3"
+{
+	parent "plasma_3"
+	mesh "plasma"
+}
