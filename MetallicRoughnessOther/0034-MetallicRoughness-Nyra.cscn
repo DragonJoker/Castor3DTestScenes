@@ -101,11 +101,11 @@ window "Window"
 			blur_radius 4
 		}
 
-		// smaa
-		// {
-			// mode T2X
-			// preset ultra
-			// reprojection false
-		// }
+		smaa
+		{
+			mode T2X
+			preset ultra
+			reprojection false
+		}
 	}
 }
