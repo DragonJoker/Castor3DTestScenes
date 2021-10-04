@@ -67,12 +67,5 @@ window "Window"
 			blur_step_size 2
 			blur_radius 4
 		}
-
-		ssao
-		{
-			enabled true
-			radius 50
-			bias 0.025
-		}
 	}
 }

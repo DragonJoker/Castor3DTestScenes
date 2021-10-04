@@ -35,9 +35,9 @@ material "baltard_in_ns/baffles"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/baffles.jpg" rgb
+			image "Textures/BaltardIn/baffles.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -53,9 +53,9 @@ material "baltard_in_ns/bois_ns"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/bois_ns.jpg" rgb
+			image "Textures/BaltardIn/bois_ns.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -73,17 +73,10 @@ material "baltard_in_ns/cube_ns_01"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/cube_ns_01.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 8
-			channel opacity
-			sampler "TriLinear"
-			image "Textures/BaltardIn/cube_ns_01.png" a
+			image "Textures/BaltardIn/cube_ns_01.png"
+			albedo_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -101,17 +94,10 @@ material "baltard_in_ns/cube_ns_02"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/cube_ns_02.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 8
-			channel opacity
-			sampler "TriLinear"
-			image "Textures/BaltardIn/cube_ns_02.png" a
+			image "Textures/BaltardIn/cube_ns_02.png"
+			albedo_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -127,9 +113,9 @@ material "baltard_in_ns/gradin_ns"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/gradin_ns.jpg" rgb
+			image "Textures/BaltardIn/gradin_ns.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -145,25 +131,11 @@ material "baltard_in_ns/light"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/spot_light.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			channel emissive
-			sampler "TriLinear"
-			image "Textures/BaltardIn/spot_light.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			channel opacity
-			sampler "TriLinear"
-			image "Textures/BaltardIn/spot_light.png" a
+			image "Textures/BaltardIn/spot_light.png"
+			albedo_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
+			emissive_mask 0x00FFFFFF
 		}
 	}
 }
@@ -179,17 +151,11 @@ material "baltard_in_ns/lumiere"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/spot_light.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			channel opacity
-			sampler "TriLinear"
-			image "Textures/BaltardIn/spot_light.png" a
+			image "Textures/BaltardIn/spot_light.png"
+			albedo_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
+			emissive_mask 0x00FFFFFF
 		}
 	}
 }
@@ -205,9 +171,9 @@ material "baltard_in_ns/marche_ns"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/marche_ns.jpg" rgb
+			image "Textures/BaltardIn/marche_ns.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -224,9 +190,9 @@ material "baltard_in_ns/metal_cable"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
+			image "Textures/BaltardIn/spot_simple_metal.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -243,9 +209,9 @@ material "baltard_in_ns/metal_spot"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
+			image "Textures/BaltardIn/spot_simple_metal.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -274,15 +240,9 @@ material "baltard_in_ns/ns_bg"
 			levels_count 9
 			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/ns_bg.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			channel emissive
-			sampler "TriLinear"
-			image "Textures/BaltardIn/ns_bg.jpg" rgb
+			image "Textures/BaltardIn/ns_bg.jpg"
+			albedo_mask 0x00FFFFFF
+			emissive_mask 0x00FFFFFF
 		}
 	}
 }
@@ -298,9 +258,9 @@ material "baltard_in_ns/piste_ns_01"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/piste_ns.jpg" rgb
+			image "Textures/BaltardIn/piste_ns.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -316,9 +276,9 @@ material "baltard_in_ns/piste_ns_02"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/piste_ns_02.jpg" rgb
+			image "Textures/BaltardIn/piste_ns_02.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -334,9 +294,9 @@ material "baltard_in_ns/piste_ns_03"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/piste_ns.jpg" rgb
+			image "Textures/BaltardIn/piste_ns.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -366,17 +326,10 @@ material "baltard_in_ns/verre_baltard_in"
 		texture_unit
 		{
 			levels_count 6
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/barriere_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel opacity
-			sampler "TriLinear"
-			image "Textures/BaltardIn/barriere_verre.png" a
+			image "Textures/BaltardIn/barriere_verre.png"
+			albedo_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -400,9 +353,9 @@ material "pavillon_baltard_in/bord_toit"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/baltar_int_bois.jpg" rgb
+			image "Textures/BaltardIn/baltar_int_bois.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -417,9 +370,9 @@ material "pavillon_baltard_in/bronze"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/baltar_bronze.jpg" rgb
+			image "Textures/BaltardIn/baltar_bronze.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -434,9 +387,9 @@ material "pavillon_baltard_in/ciment"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/baltar_int_ciment.jpg" rgb
+			image "Textures/BaltardIn/baltar_int_ciment.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -453,17 +406,10 @@ material "pavillon_baltard_in/grilles deco"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/baltar_int_grille.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			channel opacity
-			sampler "TriLinear"
-			image "Textures/BaltardIn/baltar_int_grille.png" a
+			image "Textures/BaltardIn/baltar_int_grille.png"
+			albedo_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -490,9 +436,9 @@ material "pavillon_baltard_in/metal_bleu"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/baltar_metal_bleu.jpg" rgb
+			image "Textures/BaltardIn/baltar_metal_bleu.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -507,9 +453,9 @@ material "pavillon_baltard_in/motifs"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/baltar_int_sol.jpg" rgb
+			image "Textures/BaltardIn/baltar_int_sol.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -525,9 +471,9 @@ material "pavillon_baltard_in/toit"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/baltar_int_mur.jpg" rgb
+			image "Textures/BaltardIn/baltar_int_mur.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }
@@ -537,23 +483,16 @@ material "pavillon_baltard_in/vitres"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
-		roughness 0.73
+		roughness 0.27
 		alpha_blend_mode interpolative
 
 		texture_unit
 		{
 			levels_count 6
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/baltar_int_vitre.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel opacity
-			sampler "TriLinear"
-			image "Textures/BaltardIn/baltar_int_vitre.png" a
+			image "Textures/BaltardIn/baltar_int_vitre.png"
+			albedo_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -579,9 +518,9 @@ material "plasma/plasma"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
 			sampler "TriLinear"
-			image "Textures/BaltardIn/plasma.jpg" rgb
+			image "Textures/BaltardIn/plasma.jpg"
+			albedo_mask 0x00FFFFFF
 		}
 	}
 }

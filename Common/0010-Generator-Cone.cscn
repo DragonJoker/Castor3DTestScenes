@@ -3,7 +3,17 @@ materials blinn_phong
 scene "Scene"
 {
 	ambient_light 0.2 0.2 0.2
-	include "Materials/Common.cscn"
+
+	material "Silver"
+	{
+		pass
+		{
+			diffuse 0.75164	0.75164	0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.628281 0.628281 1.0
+			shininess 51.2
+		}
+	}
 
 	skybox
 	{
@@ -31,14 +41,15 @@ scene "Scene"
 	{
 		position 0.0 0.0 0.0
 	}
+	mesh "Mesh"
+	{
+		type "cone" -faces=40 -radius=12.5 -height=50
+		default_material "Silver"
+	}
 	object "FinalPrimitive"
 	{
 		parent "FinalNode"
 		mesh "Mesh"
-		{
-			type "cone" -faces=40 -radius=12.5 -height=50
-		}
-		material "Silver"
 	}
 
 	scene_node "MainCameraNode"

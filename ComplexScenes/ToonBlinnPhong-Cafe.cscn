@@ -54,6 +54,7 @@ window "Window"
 		camera "MainCamera"
 		tone_mapping "linear"
 		postfx "draw_edges"
+		postfx "linear_motion_blur"
 
 		ssao
 		{

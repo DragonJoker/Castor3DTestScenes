@@ -4,7 +4,41 @@ scene "Scene"
 {
 	ambient_light 0.2 0.2 0.2
 	background_colour 0.5 0.5 0.5 1.0
-	include "Materials/Common.cscn"
+
+	material "Silver"
+	{
+		pass
+		{
+			diffuse 0.75164	0.75164	0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.628281 0.628281 1.0
+			shininess 51.2
+		}
+	}
+
+	material "Gold"
+	{
+		pass
+		{
+			diffuse 0.75164 0.60648 0.22648 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.555802 0.366065 1.0
+			ambient 1.0
+			shininess 51.2
+		}
+	}
+
+	material "Copper"
+	{
+		pass
+		{
+			diffuse 0.7038 0.27048 0.0828 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.256777 0.137622 0.086014 1.0
+			ambient 1.0
+			shininess 51.2
+		}
+	}
 
 	scene_node "LightNode"
 	{
@@ -22,10 +56,25 @@ scene "Scene"
 			filter raw
 			raw_config
 			{
-				min_offset 0.00001
-				max_slope_offset 0.0001
+				min_offset 0.0001
+				max_slope_offset 0.005
 			}
 		}
+	}
+
+	mesh "Plane"
+	{
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=1000 -depth=1000
+	}
+
+	mesh "Plane2"
+	{
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=1000 -depth=1000
+	}
+
+	mesh "Torus"
+	{
+		type "torus" -inner_count=40 -outer_count=40 -inner_size=15 -outer_size=35
 	}
 
 	scene_node "Plane"
@@ -36,12 +85,7 @@ scene "Scene"
 	object "Plane"
 	{
 		parent "Plane"
-
 		mesh "Plane"
-		{
-			type "plane" -width_subdiv=0 -depth_subdiv=0 -width=1000 -depth=1000
-		}
-
 		material "Gold"
 	}
 
@@ -53,12 +97,7 @@ scene "Scene"
 	object "Plane2"
 	{
 		parent "Plane2"
-
 		mesh "Plane2"
-		{
-			type "plane" -width_subdiv=0 -depth_subdiv=0 -width=1000 -depth=1000
-		}
-
 		material "Copper"
 	}
 
@@ -68,10 +107,7 @@ scene "Scene"
 	object "FinalPrimitive0"
 	{
 		parent "FinalNode0"
-		mesh "Mesh"
-		{
-			type "torus" -inner_count=40 -outer_count=40 -inner_size=15 -outer_size=35
-		}
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -82,7 +118,7 @@ scene "Scene"
 	object "FinalPrimitive1"
 	{
 		parent "FinalNode1"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -93,7 +129,7 @@ scene "Scene"
 	object "FinalPrimitive2"
 	{
 		parent "FinalNode2"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -104,7 +140,7 @@ scene "Scene"
 	object "FinalPrimitive3"
 	{
 		parent "FinalNode3"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -115,7 +151,7 @@ scene "Scene"
 	object "FinalPrimitive4"
 	{
 		parent "FinalNode4"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -126,7 +162,7 @@ scene "Scene"
 	object "FinalPrimitive5"
 	{
 		parent "FinalNode5"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -137,7 +173,7 @@ scene "Scene"
 	object "FinalPrimitive6"
 	{
 		parent "FinalNode6"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -148,7 +184,7 @@ scene "Scene"
 	object "FinalPrimitive7"
 	{
 		parent "FinalNode7"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -159,7 +195,7 @@ scene "Scene"
 	object "FinalPrimitive8"
 	{
 		parent "FinalNode8"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -170,7 +206,7 @@ scene "Scene"
 	object "FinalPrimitive9"
 	{
 		parent "FinalNode9"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -181,7 +217,7 @@ scene "Scene"
 	object "FinalPrimitive10"
 	{
 		parent "FinalNode10"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -192,7 +228,7 @@ scene "Scene"
 	object "FinalPrimitive11"
 	{
 		parent "FinalNode11"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -203,7 +239,7 @@ scene "Scene"
 	object "FinalPrimitive12"
 	{
 		parent "FinalNode12"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -214,7 +250,7 @@ scene "Scene"
 	object "FinalPrimitive13"
 	{
 		parent "FinalNode13"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -225,7 +261,7 @@ scene "Scene"
 	object "FinalPrimitive14"
 	{
 		parent "FinalNode14"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -236,7 +272,7 @@ scene "Scene"
 	object "FinalPrimitive15"
 	{
 		parent "FinalNode15"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -247,7 +283,7 @@ scene "Scene"
 	object "FinalPrimitive16"
 	{
 		parent "FinalNode16"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -258,7 +294,7 @@ scene "Scene"
 	object "FinalPrimitive17"
 	{
 		parent "FinalNode17"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -269,7 +305,7 @@ scene "Scene"
 	object "FinalPrimitive18"
 	{
 		parent "FinalNode18"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -280,7 +316,7 @@ scene "Scene"
 	object "FinalPrimitive19"
 	{
 		parent "FinalNode19"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -291,10 +327,7 @@ scene "Scene"
 	object "FinalPrimitive20"
 	{
 		parent "FinalNode20"
-		mesh "Mesh"
-		{
-			type "torus" -inner_count=40 -outer_count=40 -inner_size=25 -outer_size=50
-		}
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -305,7 +338,7 @@ scene "Scene"
 	object "FinalPrimitive21"
 	{
 		parent "FinalNode21"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -316,7 +349,7 @@ scene "Scene"
 	object "FinalPrimitive22"
 	{
 		parent "FinalNode22"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -327,7 +360,7 @@ scene "Scene"
 	object "FinalPrimitive23"
 	{
 		parent "FinalNode23"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -338,7 +371,7 @@ scene "Scene"
 	object "FinalPrimitive24"
 	{
 		parent "FinalNode24"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -349,7 +382,7 @@ scene "Scene"
 	object "FinalPrimitive25"
 	{
 		parent "FinalNode25"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -360,7 +393,7 @@ scene "Scene"
 	object "FinalPrimitive26"
 	{
 		parent "FinalNode26"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -371,7 +404,7 @@ scene "Scene"
 	object "FinalPrimitive27"
 	{
 		parent "FinalNode27"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -382,7 +415,7 @@ scene "Scene"
 	object "FinalPrimitive28"
 	{
 		parent "FinalNode28"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -393,7 +426,7 @@ scene "Scene"
 	object "FinalPrimitive29"
 	{
 		parent "FinalNode29"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -404,7 +437,7 @@ scene "Scene"
 	object "FinalPrimitive30"
 	{
 		parent "FinalNode30"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -415,7 +448,7 @@ scene "Scene"
 	object "FinalPrimitive31"
 	{
 		parent "FinalNode31"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -426,7 +459,7 @@ scene "Scene"
 	object "FinalPrimitive32"
 	{
 		parent "FinalNode32"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -437,7 +470,7 @@ scene "Scene"
 	object "FinalPrimitive33"
 	{
 		parent "FinalNode33"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -448,7 +481,7 @@ scene "Scene"
 	object "FinalPrimitive34"
 	{
 		parent "FinalNode34"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -459,7 +492,7 @@ scene "Scene"
 	object "FinalPrimitive35"
 	{
 		parent "FinalNode35"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -470,7 +503,7 @@ scene "Scene"
 	object "FinalPrimitive36"
 	{
 		parent "FinalNode36"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -481,7 +514,7 @@ scene "Scene"
 	object "FinalPrimitive37"
 	{
 		parent "FinalNode37"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 
@@ -492,7 +525,7 @@ scene "Scene"
 	object "FinalPrimitive38"
 	{
 		parent "FinalNode38"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Silver"
 	}
 
@@ -503,7 +536,7 @@ scene "Scene"
 	object "FinalPrimitive39"
 	{
 		parent "FinalNode39"
-		mesh "Mesh"
+		mesh "Torus"
 		material "Gold"
 	}
 

@@ -43,7 +43,7 @@ material "CORPS2"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/Pufi/ALLOBJ_CORPS2_Roughness.exr"
-			roughness_mask 0x00ffffff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -83,7 +83,7 @@ material "DefaultMaterial"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -91,7 +91,7 @@ material "DefaultMaterial"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/VasePlant_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -129,7 +129,7 @@ material "Material__25"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -137,7 +137,7 @@ material "Material__25"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Lion_Roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -175,7 +175,7 @@ material "Material__298"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -183,7 +183,7 @@ material "Material__298"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Background_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -223,7 +223,7 @@ material "Material__47"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -231,7 +231,7 @@ material "Material__47"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/VasePlant_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -271,7 +271,7 @@ material "Material__57"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -279,7 +279,7 @@ material "Material__57"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/VasePlant_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -319,7 +319,7 @@ material "VasePlant"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -327,7 +327,7 @@ material "VasePlant"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/VasePlant_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -381,7 +381,7 @@ material "arch"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -389,7 +389,7 @@ material "arch"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Arch_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -427,7 +427,7 @@ material "bricks"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -435,7 +435,7 @@ material "bricks"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Bricks_a_Roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -473,7 +473,7 @@ material "ceiling"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -481,7 +481,7 @@ material "ceiling"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Ceiling_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -521,7 +521,7 @@ material "chain"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/ChainTexture_Metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -529,7 +529,7 @@ material "chain"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/ChainTexture_Roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -567,7 +567,7 @@ material "column_a"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -575,7 +575,7 @@ material "column_a"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Column_a_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -613,7 +613,7 @@ material "column_b"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -621,7 +621,7 @@ material "column_b"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Column_b_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -659,7 +659,7 @@ material "column_c"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -667,7 +667,7 @@ material "column_c"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Column_c_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -705,7 +705,7 @@ material "details"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -713,7 +713,7 @@ material "details"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Details_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -751,7 +751,7 @@ material "fabric_a"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Fabric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -759,7 +759,7 @@ material "fabric_a"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Fabric_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -797,7 +797,7 @@ material "fabric_c"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Curtain_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -805,7 +805,7 @@ material "fabric_c"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Curtain_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -843,7 +843,7 @@ material "fabric_d"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Fabric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -851,7 +851,7 @@ material "fabric_d"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Fabric_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -889,7 +889,7 @@ material "fabric_e"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Fabric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -897,7 +897,7 @@ material "fabric_e"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Fabric_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -935,7 +935,7 @@ material "fabric_f"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Curtain_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -943,7 +943,7 @@ material "fabric_f"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Curtain_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -981,7 +981,7 @@ material "fabric_g"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Curtain_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -989,7 +989,7 @@ material "fabric_g"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Curtain_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -1027,7 +1027,7 @@ material "flagpole"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Metallic_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -1035,7 +1035,7 @@ material "flagpole"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_FlagPole_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -1074,7 +1074,7 @@ material "floor"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -1082,7 +1082,7 @@ material "floor"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Floor_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -1122,7 +1122,7 @@ material "leaf"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -1130,7 +1130,7 @@ material "leaf"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Thorn_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -1168,7 +1168,7 @@ material "roof"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -1176,7 +1176,7 @@ material "roof"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Sponza_Roof_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -1214,7 +1214,7 @@ material "vase"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -1222,7 +1222,7 @@ material "vase"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Vase_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -1260,7 +1260,7 @@ material "vase_hanging"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Metallic_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -1268,7 +1268,7 @@ material "vase_hanging"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/VaseHanging_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }
@@ -1306,7 +1306,7 @@ material "vase_round"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/Dielectric_metallic.png"
-			metalness_mask 0x000000ff
+			metalness_mask 0x00ff0000
 		}
 
 		texture_unit
@@ -1314,7 +1314,7 @@ material "vase_round"
 			sampler "Trilinear"
 			levels_count 11
 			image "Textures/PBRMRSponza/VaseRound_roughness.png"
-			roughness_mask 0x000000ff
+			roughness_mask 0x00ff0000
 		}
 	}
 }

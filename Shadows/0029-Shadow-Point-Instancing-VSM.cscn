@@ -6,14 +6,39 @@ scene "Scene"
 	background_colour 0.5 0.5 0.5 1.0
 	include "Materials/Common.cscn"
 
-	mesh "Plane"
+	material "Silver"
 	{
-		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=1000 -depth=1000
+		pass
+		{
+			diffuse 0.75164	0.75164	0.75164 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.628281 0.628281 1.0
+			shininess 51.2
+		}
 	}
 
-	mesh "Torus"
+	material "Gold"
 	{
-		type "torus" -inner_count=40 -outer_count=40 -inner_size=15 -outer_size=35
+		pass
+		{
+			diffuse 0.75164 0.60648 0.22648 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.628281 0.555802 0.366065 1.0
+			ambient 1.0
+			shininess 51.2
+		}
+	}
+
+	material "Copper"
+	{
+		pass
+		{
+			diffuse 0.7038 0.27048 0.0828 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 0.256777 0.137622 0.086014 1.0
+			ambient 1.0
+			shininess 51.2
+		}
 	}
 
 	scene_node "LightNode"
@@ -38,6 +63,16 @@ scene "Scene"
 				variance_bias 0.0000001
 			}
 		}
+	}
+
+	mesh "Plane"
+	{
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=1000 -depth=1000
+	}
+
+	mesh "Torus"
+	{
+		type "torus" -inner_count=40 -outer_count=40 -inner_size=15 -outer_size=35
 	}
 
 	scene_node "Plane"
@@ -292,9 +327,6 @@ scene "Scene"
 	{
 		parent "FinalNode20"
 		mesh "Torus"
-		{
-			type "torus" -inner_count=40 -outer_count=40 -inner_size=25 -outer_size=50
-		}
 		material "Silver"
 	}
 

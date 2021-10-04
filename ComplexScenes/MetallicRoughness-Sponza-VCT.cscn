@@ -98,6 +98,7 @@ window "Window"
 		scene "Scene"
 		camera "MainCamera"
 		tone_mapping "linear"
+		// postfx "bloom"
 
 		smaa
 		{
