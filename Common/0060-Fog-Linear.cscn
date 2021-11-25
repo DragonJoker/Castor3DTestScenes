@@ -5,6 +5,7 @@ scene "Scene"
 	ambient_light 0.2 0.2 0.2
 	background_colour 0.5 0.5 0.5 1.0
 	fog_type linear
+	fog_density 1.0
 	include "Materials/Common.cscn"
 
 	scene_node "SunLightNode1"
