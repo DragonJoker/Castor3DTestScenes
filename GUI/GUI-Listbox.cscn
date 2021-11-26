@@ -1,0 +1,140 @@
+materials metallic_roughness
+include "Materials/Gui.cscn"
+
+gui
+{
+	default_font "Dbbrnms_25"
+
+	static "TestColours"
+	{
+		background_material "DarkRed"
+		border_material "DarkBlue"
+		pixel_position 48 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		listbox "TestList"
+		{
+			pixel_position 16 60
+			pixel_size 128 100
+			pixel_border_size 4 4 4 4
+			background_material "DarkBlue"
+			border_material "White"
+			selected_item_background_material "DarkGreen"
+			selected_item_foreground_material "LightGray"
+			highlighted_item_background_material "DarkerBlue"
+			item "Item 1"
+			item "Item 2"
+			item "Item 3"
+		}
+	}
+
+	static "TestBackgroundTexture"
+	{
+		background_material "FrameCenter"
+		border_material "DarkRed"
+		pixel_position 304 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		listbox "BT TestList"
+		{
+			pixel_position 16 60
+			pixel_size 128 100
+			pixel_border_size 4 4 4 4
+			background_material "FrameCenterMP"
+			border_material "White"
+			selected_item_background_material "FrameCenterMO"
+			selected_item_foreground_material "LightGray"
+			highlighted_item_background_material "NoBorderMenuCenter"
+			item "Item 1"
+			item "Item 2"
+			item "Item 3"
+		}
+	}
+
+	static "TestForegroundTexture"
+	{
+		background_material "DarkRed"
+		border_material "Frame"
+		pixel_position 560 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		listbox "FT TestList"
+		{
+			pixel_position 16 60
+			pixel_size 128 100
+			pixel_border_size 4 4 4 4
+			background_material "DarkBlue"
+			border_material "FrameMP"
+			selected_item_background_material "DarkGreen"
+			selected_item_foreground_material "FrameMO"
+			highlighted_item_background_material "DarkerBlue"
+			item "Item 1"
+			item "Item 2"
+			item "Item 3"
+		}
+	}
+
+	static "TestBothTextures"
+	{
+		background_material "FrameCenter"
+		border_material "Frame"
+		pixel_position 816 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		listbox "BFT TestList"
+		{
+			pixel_position 16 60
+			pixel_size 128 100
+			pixel_border_size 4 4 4 4
+			background_material "FrameCenterMP"
+			border_material "FrameMP"
+			selected_item_background_material "FrameCenterMO"
+			selected_item_foreground_material "FrameMO"
+			highlighted_item_background_material "NoBorderMenuCenter"
+			item "Item 1"
+			item "Item 2"
+			item "Item 3"
+		}
+	}
+}
+
+scene "Scene"
+{
+	background_image "Textures/backgroundImage.hdr"
+	ambient_light 0.0 0.0 0.0
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.0 -100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 1
+			far 100
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 1024 768
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}
