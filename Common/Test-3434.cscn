@@ -7,7 +7,7 @@ scene "Scene"
 
 	skybox
 	{
-		equirectangular "Textures/pineTreeSkybox.hdr" 2048 2048
+		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 2048 2048
 	}
 
 	sampler "TriLinear"
