@@ -24,10 +24,11 @@ scene "Scene"
 			emissive 0.0
 			shininess 50.2
 			two_sided true
+			mixed_interpolation true
 
 			texture_unit
 			{
-				image "Textures/PufiAnimHR.dds"
+				image "Textures/PufiAnimAlpha800x800.dds"
 				diffuse_mask 0x00FFFFFF
 				opacity_mask 0xFF000000
 				sampler	"Linear"
