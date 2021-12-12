@@ -1,0 +1,106 @@
+// Global configuration
+materials blinn_phong
+
+scene "Parc"
+{
+	// Scene configuration
+	ambient_light 0.200000 0.200000 0.200000
+	background_colour 0.500000 0.500000 0.500000
+	lpv_indirect_attenuation 0.1
+	include "Helpers/Park-Materials-BlinnPhong.cscn"
+	include "Helpers/Park-Meshes.cscn"
+	include "Helpers/Park-Nodes.cscn"
+	include "Helpers/Park-Lights.cscn"
+	include "Helpers/Park-Objects.cscn"
+
+	// Skybox
+
+	skybox
+	{
+		right "Textures/ParkLegacy/skydome.jpg"
+		left "Textures/ParkLegacy/skydome.jpg"
+		bottom "Textures/ParkLegacy/skydome.jpg"
+		top "Textures/ParkLegacy/skydome.jpg"
+		back "Textures/ParkLegacy/skydome.jpg"
+		front "Textures/ParkLegacy/skydome.jpg"
+	}
+
+	//Voxel Cone Tracing
+
+	voxel_cone_tracing
+	{
+		enabled true
+		grid_size 512
+		conservative_rasterization true
+		temporal_smoothing false
+		occlusion false
+		secondary_bounce true
+		num_cones 16
+		max_distance 32.0000
+		ray_step_size 0.250000
+		voxel_size 2.00000
+	}
+
+	// Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 90
+		position -995 293 0
+		scale 1 1 1
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 5
+			aspect_ratio 1.778
+			far 12000
+			fov_y 45
+		}
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format argb32
+		scene "Parc"
+		camera "MainCamera"
+		// postfx "bloom" -Size=5
+
+		smaa
+		{
+			mode 1X
+			edgeDetection colour
+			preset ultra
+			reprojection false
+		}
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			intensity 1.0
+			radius 325
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1.0
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}

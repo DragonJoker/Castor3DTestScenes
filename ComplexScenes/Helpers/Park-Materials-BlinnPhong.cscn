@@ -235,7 +235,6 @@ material "arbre_rue/branches"
 		specular 0.156863 0.156863 0.156863
 		ambient 1.0
 		shininess 10.0
-		emissive 0.392157
 		two_sided true
 		alpha_func greater 0.5
 
@@ -1418,7 +1417,6 @@ material "fx_selected"
 		specular 0.000000 0.000000 0.000000
 		ambient 1.0
 		shininess 64.0
-		emissive 1
 		two_sided true
 		alpha_blend_mode interpolative
 
@@ -3013,27 +3011,6 @@ material "skycraper"
 	}
 }
 
-material "skydome"
-{
-	pass
-	{
-		diffuse 0.996078 0.996078 0.996078
-		specular 0.000000 0.000000 0.000000
-		ambient 1.0
-		shininess 0.0
-		emissive 0.588235
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			channel diffuse
-			sampler "TriLinear"
-			image "Textures/ParkLegacy/skydome.jpg" rgb
-		}
-	}
-}
-
 material "sol_parc/arret_bus"
 {
 	pass
@@ -3398,7 +3375,6 @@ material "trigger"
 		specular 0.180000 0.180000 0.180000
 		ambient 1.0
 		shininess 8.0
-		emissive 0.294118
 		two_sided true
 	}
 }
@@ -3411,7 +3387,6 @@ material "z"
 		specular 0.000000 0.000000 0.000000
 		ambient 1.0
 		shininess 8.0
-		emissive 0.1
 		two_sided true
 		alpha_blend_mode interpolative
 

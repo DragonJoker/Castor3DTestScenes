@@ -865,7 +865,7 @@ material "floor"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
-		roughness 0.50000
+		roughness 1.00000
 		metallic 0.00000
 
 		texture_unit

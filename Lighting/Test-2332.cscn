@@ -3,13 +3,13 @@ materials specular_glossiness
 scene "MainScene"
 {
 	ambient_light 1.0 1.0 1.0
-	include "Materials/Lightning.cscn"
+	include "Helpers/SpecularGlossiness-Lightning.cscn"
 
 	// Skybox
 
 	skybox
 	{
-		equirectangular "Textures/cityCenterSkybox.hdr" 1024
+		equirectangular "Textures/equirectangularSkybox.hdr" 1024
 	}
 
 	scene_node "MainCameraNode"

@@ -1046,7 +1046,7 @@ material "floor"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
-		roughness 0.50000
+		roughness 1.00000
 		metallic 1.00000
 		smooth_band_width 4.0
 		edge_width 1.0
