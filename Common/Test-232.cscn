@@ -1,10 +1,67 @@
-materials blinn_phong
+materials metallic_roughness
 
 scene "Scene"
 {
 	ambient_light 0.2 0.2 0.2
 	background_colour 0.5 0.5 0.5 1.0
-	include "Materials/Common.cscn"
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	material "FloorMaterial"
+	{
+		pass
+		{
+			albedo 1.0 1.0 1.0
+			emissive 0.0
+			metallic 0.0
+			roughness 0.0
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/Rock/eroded-layered-rockface_albedo.png"
+				albedo_mask 0x00FFFFFF
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Rock/eroded-layered-rockface_normal-ogl.png"
+				normal_mask 0x00FFFFFF
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Rock/eroded-layered-rockface_ao.png"
+				occlusion_mask 0x00FF0000
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Rock/eroded-layered-rockface_height.png"
+				height_mask 0x00FF0000
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Rock/eroded-layered-rockface_roughness.png"
+				roughness_mask 0x00FF0000
+				sampler	"Linear"
+			}
+		}
+	}
 
 	scene_node "SunLightNode1"
 	{
@@ -23,19 +80,21 @@ scene "Scene"
 		position 0.0 0.0 0.0
 		scale 10 10 10
 	}
+	mesh "Mesh"
+	{
+		type "diamond_square_terrain" -detail=10 -roughness=0.3 -disableRandomSeed
+	}
 	object "FinalPrimitive"
 	{
 		parent "FinalNode"
 		mesh "Mesh"
-		{
-			type "diamond_square_terrain" -detail=10 -roughness=0.3
-		}
-		material "Silver"
+		material "FloorMaterial"
 	}
 
 	scene_node "MainCameraNode"
 	{
-		position 0.0 0.0 -200.0
+		position -2386.53 3540.84 5085.33
+		orientation -0.0299468 -0.946933 0.320032 190.127
 	}
 	camera "MainCamera"
 	{

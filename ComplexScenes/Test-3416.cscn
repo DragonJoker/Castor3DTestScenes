@@ -36,16 +36,15 @@ scene "Parc"
 		voxel_size 1.00000
 	}
 
-	// Cameras nodes
+	//Cameras nodes
 
 	scene_node "MainCameraNode"
 	{
 		orientation 0 1 0 90
-		position -995 293 0
-		scale 1 1 1
+		position -66.3337 19.5334 0.00000
 	}
 
-	// Cameras
+	//Cameras
 
 	camera "MainCamera"
 	{
@@ -54,17 +53,23 @@ scene "Parc"
 		viewport
 		{
 			type perspective
-			near 5
-			aspect_ratio 1.778
-			far 12000
-			fov_y 45
+			near 1.00000
+			far 2000.0
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
 		}
 	}
 }
 
-// Windows
+//Windows
 
-window "Window"
+window "RenderPanel"
 {
 	vsync false
 	fullscreen false
@@ -72,36 +77,39 @@ window "Window"
 	render_target
 	{
 		size 1920 1080
-		format argb32
+		format rgba32
+		tone_mapping "linear"
 		scene "Parc"
 		camera "MainCamera"
-		// postfx "bloom" -Size=5
-
-		draw_edges
-		{
-			normalDepthWidth 1.0
-			objectWidth 1.0
-		}
 
 		smaa
 		{
 			mode 1X
-			edgeDetection colour
 			preset ultra
-			reprojection false
+			edgeDetection colour
 		}
 
 		ssao
 		{
 			enabled true
 			high_quality true
-			intensity 1.0
-			radius 325
-			bias 0.023
+			use_normals_buffer false
+			blur_high_quality false
+			intensity 1.00000
+			radius 1.000
+			bias 0.0230000
 			num_samples 19
-			edge_sharpness 1.0
+			edge_sharpness 1.00000
 			blur_step_size 2
 			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
+		}
+
+		draw_edges
+		{
+			normalDepthWidth 1.0
+			objectWidth 1.0
 		}
 	}
 }

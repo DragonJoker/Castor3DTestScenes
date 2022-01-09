@@ -9,6 +9,17 @@ scene "Scene"
 		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
 	}
 
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
 	material "FloorMaterial"
 	{
 		pass
@@ -17,6 +28,27 @@ scene "Scene"
 			emissive 0.0
 			metallic 0.0
 			roughness 0.8
+
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				channel albedo
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Bricks/Normal.jpg"
+				channel normal
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Bricks/Height.jpg"
+				channel roughness
+				sampler	"Linear"
+			}
 		}
 	}
 	mesh "FloorMesh"
@@ -37,7 +69,7 @@ scene "Scene"
 
 	material "WaterMaterial"
 	{
-		water true
+		render_pass "c3d.water"
 
 		pass
 		{
@@ -114,11 +146,14 @@ window "Window"
 			depthSofteningDistance 0.5
 			refractionRatio 1.2
 			refractionDistortionFactor 0.04
-			refractionHeightFactor 5.0
-			refractionDistanceFactor 15.0
+			refractionHeightFactor 2.5
+			refractionDistanceFactor 0.05
 			normalMapScrollSpeed 0.01 0.01
 			normalMapScroll 1.0 0.0 0.0 1.0
-			ssrSettings 0.5 20.0 10.0 20.0
+			ssrStepSize 0.5
+			ssrForwardStepsCount 20.0
+			ssrBackwardStepsCount 10.0
+			ssrDepthMult 20.0
 			normals1 "Textures/Waves/waterNM1.dds"
 			normals2 "Textures/Waves/waterNM2.dds"
 			noise "Textures/Waves/waterNoise.dds"

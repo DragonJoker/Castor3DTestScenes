@@ -107,7 +107,6 @@ window "Window"
 			edgeDetection colour
 		}
 
-
 		ssao
 		{
 			enabled true

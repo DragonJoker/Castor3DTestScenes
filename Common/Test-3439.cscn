@@ -9,6 +9,17 @@ scene "Scene"
 		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
 	}
 
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
 	material "FloorMaterial"
 	{
 		pass
@@ -17,11 +28,32 @@ scene "Scene"
 			emissive 0.0
 			metallic 0.0
 			roughness 0.8
+
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				channel albedo
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Bricks/Normal.jpg"
+				channel normal
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Bricks/Height.jpg"
+				channel roughness
+				sampler	"Linear"
+			}
 		}
 	}
 	mesh "FloorMesh"
 	{
-		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=600 -depth=600
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=200 -depth=200
 		default_material "FloorMaterial"
 	}
 	scene_node "FloorNode"
@@ -37,7 +69,7 @@ scene "Scene"
 
 	material "OceanMaterial"
 	{
-		waves true
+		render_pass "c3d.ocean"
 
 		pass
 		{
@@ -50,13 +82,13 @@ scene "Scene"
 	}
 	mesh "OceanMesh"
 	{
-		type "plane" -width_subdiv=50 -depth_subdiv=50 -width=1000 -depth=1000 -tile_uv
+		type "plane" -width_subdiv=50 -depth_subdiv=50 -width=250 -depth=250 -tile_uv -flipYZ
 		default_material "OceanMaterial"
 	}
 	scene_node "OceanNode"
 	{
-		position 0.0 10.0 0.0
-		orientation 1.0 0.0 0.0 270.0
+		position 0.0 2.0 0.0
+		//orientation 1.0 0.0 0.0 270.0
 	}
 	object "Ocean"
 	{
@@ -78,8 +110,8 @@ scene "Scene"
 
 	scene_node "MainCameraNode"
 	{
-		position -302.572 171.991 -357.361
-		orientation -0.36224 -0.904546 0.224896 291.071
+		position -37.2316 3.88 -38.2203
+		orientation 0.314755 0.935508 -0.160479 57.1808
 	}
 	camera "MainCamera"
 	{
@@ -90,7 +122,7 @@ scene "Scene"
 			type perspective
 			fov_y 45.0
 			aspect_ratio 1.333
-			near 0.1
+			near 1.0
 			far 20000.0
 		}
 	}
@@ -98,29 +130,35 @@ scene "Scene"
 
 window "Window"
 {
+	fullscreen false
+	vsync false
+
 	render_target
 	{
 		format argb32
-		size 800 600
+		size 1920 1080
 		scene "Scene"
 		camera "MainCamera"
 
-		wave_rendering
+		ocean_rendering
 		{
 			tessellationFactor 7
 			dampeningFactor 5.0
 			refractionDistortionFactor 0.04
-			refractionHeightFactor 2.5
-			refractionDistanceFactor 15.0
-			depthSofteningDistance 20.0
+			refractionHeightFactor 0.0005
+			refractionDistanceFactor 0.0005
+			depthSofteningDistance 0.5
 			foamHeightStart 0.8
 			foamFadeDistance 0.4
 			foamTiling 2.0
 			foamAngleExponent 80.0
 			foamBrightness 4.0
-			normalMapScrollSpeed 0.01 0.01
+			normalMapScrollSpeed 0.0001 0.0001
 			normalMapScroll 1.0 0.0 0.0 1.0
-			ssrSettings 0.5 20.0 10.0 20.0
+			ssrStepSize 0.5
+			ssrForwardStepsCount 20.0
+			ssrBackwardStepsCount 10.0
+			ssrDepthMult 20.0
 			foam "Textures/Waves/waterFoam.dds"
 			normals1 "Textures/Waves/waterNM1.dds"
 			normals2 "Textures/Waves/waterNM2.dds"
@@ -134,7 +172,7 @@ window "Window"
 					steepness 1.79
 					length 3.75
 					amplitude 0.85
-					speed 1.21
+					speed 3.63
 				}
 				wave
 				{
@@ -142,11 +180,9 @@ window "Window"
 					steepness 1.79
 					length 4.1
 					amplitude 0.52
-					speed 1.03
+					speed 3.09
 				}
 			}
 		}
 	}
-	fullscreen false
-	vsync false
 }

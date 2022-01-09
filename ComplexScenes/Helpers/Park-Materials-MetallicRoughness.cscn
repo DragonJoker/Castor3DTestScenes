@@ -1952,7 +1952,7 @@ material "fontaine/bronze"
 
 material "fontaine/eau"
 {
-	water true
+	render_pass "c3d.water"
 
 	pass
 	{
@@ -1960,20 +1960,6 @@ material "fontaine/eau"
 		transmission 0.8 0.8 0.8
 		roughness 0.08
 		metallic 0.00000
-/*
-		texture_unit
-		{
-			sampler "Trilinear"
-			levels_count 10
-			image "Textures/ParkPBRMR/fountain_basin-normal.ktx"
-			normal_mask 0x00ffffff
-
-			animation
-			{
-				rotate 2.00000
-			}
-		}
-*/
 	}
 }
 

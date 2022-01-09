@@ -14,7 +14,7 @@ scene "Parc"
 	include "Helpers/Park-Lights-VCT.cscn"
 	include "Helpers/Park-Objects.cscn"
 
-	// Skybox
+	//Skybox
 
 	skybox
 	{
@@ -32,9 +32,9 @@ scene "Parc"
 		occlusion false
 		secondary_bounce true
 		num_cones 16
-		max_distance 64.0000
-		ray_step_size 0.1250000
-		voxel_size 2.00000
+		max_distance 4.0000
+		ray_step_size 0.015625
+		voxel_size 1.00000
 	}
 
 	//Cameras nodes
@@ -42,7 +42,7 @@ scene "Parc"
 	scene_node "MainCameraNode"
 	{
 		orientation 0 1 0 90
-		position -995.000 293.000 0.00000
+		position -66.3337 19.5334 0.00000
 	}
 
 	//Cameras
@@ -54,8 +54,8 @@ scene "Parc"
 		viewport
 		{
 			type perspective
-			near 5.00000
-			far 12000.0
+			near 1.00000
+			far 2000.0
 			aspect_ratio 1.77800
 			fov_y 45.0000
 		}
@@ -98,7 +98,7 @@ window "RenderPanel"
 			use_normals_buffer false
 			blur_high_quality false
 			intensity 1.00000
-			radius 325.000
+			radius 1.000
 			bias 0.0230000
 			num_samples 19
 			edge_sharpness 1.00000
@@ -111,10 +111,10 @@ window "RenderPanel"
 		water_rendering
 		{
 			dampeningFactor 5.0
-			depthSofteningDistance 40.0
+			depthSofteningDistance 5.0
 			refractionRatio 1.2
 			refractionDistortionFactor 0.04
-			refractionHeightFactor 50000.0
+			refractionHeightFactor 2.5
 			refractionDistanceFactor 15.0
 			normalMapScrollSpeed 0.001 0.001
 			normalMapScroll 1.0 0.0 0.0 1.0

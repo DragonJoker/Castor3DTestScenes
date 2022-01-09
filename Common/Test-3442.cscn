@@ -1,0 +1,140 @@
+materials metallic_roughness
+
+scene "Scene"
+{
+	ambient_light 1.0 1.0 1.0
+	background_colour 0.8 0.8 0.8
+/*
+	skybox
+	{
+		equirectangular "Textures/005.hdr" 1024
+	}
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	material "FloorMaterial"
+	{
+		pass
+		{
+			albedo 1.0 1.0 1.0
+			emissive 0.0
+			metallic 0.0
+			roughness 0.0
+			two_sided true
+
+			texture_unit
+			{
+				image "Textures/Rock/eroded-layered-rockface_albedo.png"
+				albedo_mask 0x00FFFFFF
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Rock/eroded-layered-rockface_normal-ogl.png"
+				normal_mask 0x00FFFFFF
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Rock/eroded-layered-rockface_ao.png"
+				occlusion_mask 0x00FF0000
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Rock/eroded-layered-rockface_height.png"
+				height_mask 0x00FF0000
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Rock/eroded-layered-rockface_roughness.png"
+				roughness_mask 0x00FF0000
+				sampler	"Linear"
+			}
+		}
+	}
+	mesh "FloorMesh"
+	{
+		type "diamond_square_terrain" -detail=10 -roughness=0.3 -disableRandomSeed
+		default_material "FloorMaterial"
+	}
+	scene_node "FloorNode"
+	{
+		position 0.0 -20.0 0.0
+	}
+	object "Floor"
+	{
+		parent "FloorNode"
+		mesh "FloorMesh"
+	}
+/**/
+	scene_node "MainCameraNode"
+	{
+		position -135.745 22.4645 -329.16
+		orientation 0.0 1.0 0.0 338
+		//position -607.11 17.5754 -379.806
+		//orientation 0.0 1.0 0.0 63
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 1.0
+			far 10000.0
+		}
+	}
+}
+
+window "Window"
+{
+	fullscreen false
+	vsync false
+
+	render_target
+	{
+		format argb32
+		size 1920 1080
+		scene "Scene"
+		camera "MainCamera"
+		//postfx "bloom"
+/*
+		bruneton_ocean_rendering
+		{
+			choppy true
+			irradiance "Textures/Ocean/irradiance.raw" -w=64 -h=16 -f=rgb96f
+			inscatter "Textures/Ocean/inscatter.raw" -w=256 -h=128 -d=32 -f=rgba128f
+			transmittance "Textures/Ocean/transmittance.raw" -w=256 -h=64 -f=rgb96f
+			seaColour 0.465 0.797 0.991
+			fft_config
+			{
+				windDirection 0.76339 -0.64594
+				gridSizes 5488.0 392.0 28.0 2.0
+				slopeVarianceCount 10
+				passes 8
+				amplitude 1.0
+				windVelocity 5.0
+				gridSize 8.0
+			}
+		}
+*/
+	}
+}

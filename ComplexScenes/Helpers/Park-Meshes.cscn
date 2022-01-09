@@ -1,14 +1,27 @@
 // Meshes
 
+mesh "abris_bus_pub_01"
+{
+	import "Meshes/Park/abris_bus_pub_01.cmsh"
+	default_material "abris_bus_pub_01"
+}
+
 mesh "Fx_Selected"
 {
 	import "Meshes/Park/Fx_Selected.cmsh"
 	default_material "fx_selected"
 }
 
+mesh "skycraper"
+{
+	import "Meshes/Park/skycraper.cmsh"
+	default_material "skycraper"
+}
+
 mesh "abris_bus"
 {
 	import "Meshes/Park/abris_bus.cmsh"
+
 	default_materials
 	{
 		material 0 "abris_bus/metal"
@@ -17,10 +30,26 @@ mesh "abris_bus"
 	}
 }
 
-mesh "abris_bus_pub_01"
+mesh "saule_pleureur"
 {
-	import "Meshes/Park/abris_bus_pub_01.cmsh"
-	default_material "abris_bus_pub_01"
+	import "Meshes/Park/saule_pleureur.cmsh"
+
+	default_materials
+	{
+		material 0 "saule_pleureur/tronc"
+		material 1 "saule_pleureur/feuilles"
+	}
+}
+
+mesh "barriere_chantier"
+{
+	import "Meshes/Park/barriere_chantier.cmsh"
+
+	default_materials
+	{
+		material 0 "barriere_chantier/bois"
+		material 1 "barriere_chantier/peinture"
+	}
 }
 
 mesh "abris_bus_pub_02"
@@ -32,6 +61,7 @@ mesh "abris_bus_pub_02"
 mesh "arbre_rue"
 {
 	import "Meshes/Park/arbre_rue.cmsh"
+
 	default_materials
 	{
 		material 0 "arbre_rue/branches"
@@ -41,9 +71,16 @@ mesh "arbre_rue"
 	}
 }
 
+mesh "panneau_pub"
+{
+	import "Meshes/Park/panneau_pub.cmsh"
+	default_material "panneau_pub"
+}
+
 mesh "banc"
 {
 	import "Meshes/Park/banc.cmsh"
+
 	default_materials
 	{
 		material 0 "banc/bois"
@@ -57,23 +94,76 @@ mesh "banniere"
 	default_material "banniere"
 }
 
-mesh "barriere_chantier"
+mesh "poubelle"
 {
-	import "Meshes/Park/barriere_chantier.cmsh"
+	import "Meshes/Park/poubelle.cmsh"
+
 	default_materials
 	{
-		material 0 "barriere_chantier/bois"
-		material 1 "barriere_chantier/peinture"
+		material 0 "poubelle/plastique_gris"
+		material 1 "poubelle/plastique_vert"
+		material 2 "poubelle/plastique_noir"
 	}
+}
+
+mesh "horloge_aiguille_secondes"
+{
+	import "Meshes/Park/horloge_aiguille_secondes.cmsh"
+	default_material "horloge_aiguilles_secondes"
+}
+
+mesh "distributeur"
+{
+	import "Meshes/Park/distributeur.cmsh"
+	default_material "distributeur"
 }
 
 mesh "barriere_travaux"
 {
 	import "Meshes/Park/barriere_travaux.cmsh"
+
 	default_materials
 	{
 		material 0 "barriere_travaux/metal"
 		material 1 "barriere_travaux/peinture"
+	}
+}
+
+mesh "immeubles_parc"
+{
+	import "Meshes/Park/immeubles_parc.cmsh"
+
+	default_materials
+	{
+		material 0 "immeubles_parc/pierre_rose"
+		material 1 "immeubles_parc/toit_vert"
+		material 2 "immeubles_parc/fenetre"
+		material 3 "immeubles_parc/grille"
+		material 4 "immeubles_parc/porte01"
+		material 5 "immeubles_parc/toit_gris"
+		material 6 "immeubles_parc/fenetre02"
+		material 7 "immeubles_parc/porte02"
+		material 8 "immeubles_parc/pierre_beige"
+		material 9 "immeubles_parc/rue"
+		material 10 "immeubles_parc/tag_01"
+		material 11 "immeubles_parc/tag_02"
+		material 12 "immeubles_parc/tag_03"
+		material 13 "immeubles_parc/tag_04"
+		material 14 "immeubles_parc/tag_05"
+		material 15 "immeubles_parc/tag_06"
+		material 16 "immeubles_parc/banderolle"
+	}
+}
+
+mesh "feu_tricolore"
+{
+	import "Meshes/Park/feu_tricolore.cmsh"
+
+	default_materials
+	{
+		material 0 "feu_tricolore/metal"
+		material 1 "feu_tricolore/feu"
+		material 2 "feu_tricolore/pieton"
 	}
 }
 
@@ -83,9 +173,16 @@ mesh "bite"
 	default_material "bite"
 }
 
+mesh "horloge_aiguille_heures"
+{
+	import "Meshes/Park/horloge_aiguille_heures.cmsh"
+	default_material "horloge_aiguilles_heures"
+}
+
 mesh "borne_incendie"
 {
 	import "Meshes/Park/borne_incendie.cmsh"
+
 	default_materials
 	{
 		material 0 "borne_incendie/borne_incendie_rouge"
@@ -96,6 +193,7 @@ mesh "borne_incendie"
 mesh "buisson_coin_ext"
 {
 	import "Meshes/Park/buisson_coin_ext.cmsh"
+
 	default_materials
 	{
 		material 0 "buisson_coin_ext/feuilles"
@@ -106,6 +204,7 @@ mesh "buisson_coin_ext"
 mesh "buisson_coin_int"
 {
 	import "Meshes/Park/buisson_coin_int.cmsh"
+
 	default_materials
 	{
 		material 0 "buisson_coin_int/feuilles"
@@ -116,6 +215,7 @@ mesh "buisson_coin_int"
 mesh "buisson_droit"
 {
 	import "Meshes/Park/buisson_droit.cmsh"
+
 	default_materials
 	{
 		material 0 "buisson/feuilles"
@@ -123,9 +223,16 @@ mesh "buisson_droit"
 	}
 }
 
+mesh "horloge_aiguille_minutes"
+{
+	import "Meshes/Park/horloge_aiguille_minutes.cmsh"
+	default_material "horloge_aiguilles_minutes"
+}
+
 mesh "cabine_telephone"
 {
 	import "Meshes/Park/cabine_telephone.cmsh"
+
 	default_materials
 	{
 		material 0 "cabine_telephone/metal"
@@ -133,6 +240,12 @@ mesh "cabine_telephone"
 		material 2 "cabine_telephone/verre_marron"
 		material 3 "cabine_telephone/phone"
 	}
+}
+
+mesh "panneau_pub_pub_01"
+{
+	import "Meshes/Park/panneau_pub_pub_01.cmsh"
+	default_material "panneau_pub_pub_01"
 }
 
 mesh "cartons"
@@ -144,6 +257,7 @@ mesh "cartons"
 mesh "chene"
 {
 	import "Meshes/Park/chene.cmsh"
+
 	default_materials
 	{
 		material 0 "chene/tronc"
@@ -151,9 +265,16 @@ mesh "chene"
 	}
 }
 
+mesh "fx_pathfinding"
+{
+	import "Meshes/Park/fx_pathfinding.cmsh"
+	default_material "z"
+}
+
 mesh "corbeille"
 {
 	import "Meshes/Park/corbeille.cmsh"
+
 	default_materials
 	{
 		material 0 "corbeille/metal"
@@ -162,15 +283,10 @@ mesh "corbeille"
 	}
 }
 
-mesh "distributeur"
-{
-	import "Meshes/Park/distributeur.cmsh"
-	default_material "distributeur"
-}
-
 mesh "entree_boite_parc"
 {
 	import "Meshes/Park/entree_boite_parc.cmsh"
+
 	default_materials
 	{
 		material 0 "Material_#1004/metal"
@@ -184,6 +300,7 @@ mesh "entree_boite_parc"
 mesh "entree_station"
 {
 	import "Meshes/Park/entree_station.cmsh"
+
 	default_materials
 	{
 		material 0 "entree_station/metal"
@@ -197,20 +314,10 @@ mesh "entree_station"
 	}
 }
 
-mesh "feu_tricolore"
-{
-	import "Meshes/Park/feu_tricolore.cmsh"
-	default_materials
-	{
-		material 0 "feu_tricolore/metal"
-		material 1 "feu_tricolore/feu"
-		material 2 "feu_tricolore/pieton"
-	}
-}
-
 mesh "fontaine"
 {
 	import "Meshes/Park/fontaine.cmsh"
+
 	default_materials
 	{
 		material 0 "fontaine/pierre"
@@ -234,15 +341,10 @@ mesh "fontaine_eau_tombante"
 	default_material "fontaine/ecume"
 }
 
-mesh "fx_pathfinding"
-{
-	import "Meshes/Park/fx_pathfinding.cmsh"
-	default_material "z"
-}
-
 mesh "grille_parc"
 {
 	import "Meshes/Park/grille_parc.cmsh"
+
 	default_materials
 	{
 		material 0 "grille_parc/grille_parc"
@@ -258,52 +360,10 @@ mesh "horloge"
 	default_material "horloge"
 }
 
-mesh "horloge_aiguille_heures"
-{
-	import "Meshes/Park/horloge_aiguille_heures.cmsh"
-	default_material "horloge_aiguilles_heures"
-}
-
-mesh "horloge_aiguille_minutes"
-{
-	import "Meshes/Park/horloge_aiguille_minutes.cmsh"
-	default_material "horloge_aiguilles_minutes"
-}
-
-mesh "horloge_aiguille_secondes"
-{
-	import "Meshes/Park/horloge_aiguille_secondes.cmsh"
-	default_material "horloge_aiguilles_secondes"
-}
-
-mesh "immeubles_parc"
-{
-	import "Meshes/Park/immeubles_parc.cmsh"
-	default_materials
-	{
-		material 0 "immeubles_parc/pierre_rose"
-		material 1 "immeubles_parc/toit_vert"
-		material 2 "immeubles_parc/fenetre"
-		material 3 "immeubles_parc/grille"
-		material 4 "immeubles_parc/porte01"
-		material 5 "immeubles_parc/toit_gris"
-		material 6 "immeubles_parc/fenetre02"
-		material 7 "immeubles_parc/porte02"
-		material 8 "immeubles_parc/pierre_beige"
-		material 9 "immeubles_parc/rue"
-		material 10 "immeubles_parc/tag_01"
-		material 11 "immeubles_parc/tag_02"
-		material 12 "immeubles_parc/tag_03"
-		material 13 "immeubles_parc/tag_04"
-		material 14 "immeubles_parc/tag_05"
-		material 15 "immeubles_parc/tag_06"
-		material 16 "immeubles_parc/banderolle"
-	}
-}
-
 mesh "kiosque_park"
 {
 	import "Meshes/Park/kiosque_park.cmsh"
+
 	default_materials
 	{
 		material 0 "kiosque_park/toit_kiosque"
@@ -320,6 +380,7 @@ mesh "kiosque_park"
 mesh "magasins_parc"
 {
 	import "Meshes/Park/magasins_parc.cmsh"
+
 	default_materials
 	{
 		material 0 "magasins_parc/enseigne_fashion"
@@ -345,9 +406,16 @@ mesh "magasins_parc"
 	}
 }
 
+mesh "panneau_mural"
+{
+	import "Meshes/Park/panneau_mural.cmsh"
+	default_material "panneau_mural"
+}
+
 mesh "panneau_enfants"
 {
 	import "Meshes/Park/panneau_enfants.cmsh"
+
 	default_materials
 	{
 		material 0 "panneau_enfants/metal"
@@ -355,28 +423,10 @@ mesh "panneau_enfants"
 	}
 }
 
-mesh "panneau_mural"
-{
-	import "Meshes/Park/panneau_mural.cmsh"
-	default_material "panneau_mural"
-}
-
 mesh "panneau_mural_pub_01"
 {
 	import "Meshes/Park/panneau_mural_pub_01.cmsh"
 	default_material "panneau_mural_pub_01"
-}
-
-mesh "panneau_pub"
-{
-	import "Meshes/Park/panneau_pub.cmsh"
-	default_material "panneau_pub"
-}
-
-mesh "panneau_pub_pub_01"
-{
-	import "Meshes/Park/panneau_pub_pub_01.cmsh"
-	default_material "panneau_pub_pub_01"
 }
 
 mesh "panneau_pub_pub_02"
@@ -388,6 +438,7 @@ mesh "panneau_pub_pub_02"
 mesh "panneau_stationnement"
 {
 	import "Meshes/Park/panneau_stationnement.cmsh"
+
 	default_materials
 	{
 		material 0 "panneau_stationnement/metal"
@@ -398,11 +449,18 @@ mesh "panneau_stationnement"
 mesh "panneau_velo"
 {
 	import "Meshes/Park/panneau_velo.cmsh"
+
 	default_materials
 	{
 		material 0 "panneau_stationnement/metal"
 		material 1 "panneau_stationnement/panneau_velo"
 	}
+}
+
+mesh "plot_chantier"
+{
+	import "Meshes/Park/plot_chantier.cmsh"
+	default_material "plot_chantier"
 }
 
 mesh "piaf_ciel"
@@ -423,32 +481,16 @@ mesh "plasma_pub"
 	default_material "plasma_pub"
 }
 
-mesh "plot_chantier"
-{
-	import "Meshes/Park/plot_chantier.cmsh"
-	default_material "plot_chantier"
-}
-
 mesh "poisson"
 {
 	import "Meshes/Park/poisson.cmsh"
 	default_material "poisson"
 }
 
-mesh "poubelle"
-{
-	import "Meshes/Park/poubelle.cmsh"
-	default_materials
-	{
-		material 0 "poubelle/plastique_gris"
-		material 1 "poubelle/plastique_vert"
-		material 2 "poubelle/plastique_noir"
-	}
-}
-
 mesh "reverbere"
 {
 	import "Meshes/Park/reverbere.cmsh"
+
 	default_materials
 	{
 		material 0 "reverbere/metal"
@@ -456,25 +498,10 @@ mesh "reverbere"
 	}
 }
 
-mesh "saule_pleureur"
-{
-	import "Meshes/Park/saule_pleureur.cmsh"
-	default_materials
-	{
-		material 0 "saule_pleureur/tronc"
-		material 1 "saule_pleureur/feuilles"
-	}
-}
-
-mesh "skycraper"
-{
-	import "Meshes/Park/skycraper.cmsh"
-	default_material "skycraper"
-}
-
 mesh "sol_parc"
 {
 	import "Meshes/Park/sol_parc.cmsh"
+
 	default_materials
 	{
 		material 0 "sol_parc/route"
@@ -496,6 +523,7 @@ mesh "sol_parc"
 mesh "table_echec"
 {
 	import "Meshes/Park/table_echec.cmsh"
+
 	default_materials
 	{
 		material 0 "table_echec/echiquier_table"

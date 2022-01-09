@@ -7,7 +7,7 @@ scene "Parc"
 	ambient_light 1.00000 1.00000 1.00000
 	background_colour 0.500000 0.500000 0.500000
 	fog_type linear
-	fog_density 1
+	fog_density 1.7
 	include "Helpers/Park-Materials-MetallicRoughness.cscn"
 	include "Helpers/Park-Meshes.cscn"
 	include "Helpers/Park-Nodes.cscn"
@@ -26,7 +26,7 @@ scene "Parc"
 	scene_node "MainCameraNode"
 	{
 		orientation 0 1 0 90
-		position -995.000 293.000 0.00000
+		position -66.3337 19.5334 0.00000
 	}
 
 	//Cameras
@@ -38,8 +38,8 @@ scene "Parc"
 		viewport
 		{
 			type perspective
-			near 5.00000
-			far 12000.0
+			near 1.00000
+			far 2000.0
 			aspect_ratio 1.77800
 			fov_y 45.0000
 		}
@@ -67,34 +67,37 @@ window "RenderPanel"
 		scene "Parc"
 		camera "MainCamera"
 
-		ssao
-		{
-			enabled true
-			high_quality true
-			intensity 1.0
-			radius 325
-			bias 0.023
-			num_samples 19
-			edge_sharpness 1.0
-			blur_step_size 2
-			blur_radius 4
-		}
-
 		smaa
 		{
 			mode 1X
 			preset ultra
-			edgeDetection luma
-			predication true
+			edgeDetection colour
+		}
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			use_normals_buffer false
+			blur_high_quality false
+			intensity 1.00000
+			radius 1.000
+			bias 0.0230000
+			num_samples 19
+			edge_sharpness 1.00000
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
 		}
 
 		water_rendering
 		{
 			dampeningFactor 5.0
-			depthSofteningDistance 40.0
+			depthSofteningDistance 5.0
 			refractionRatio 1.2
 			refractionDistortionFactor 0.04
-			refractionHeightFactor 50000.0
+			refractionHeightFactor 2.5
 			refractionDistanceFactor 15.0
 			normalMapScrollSpeed 0.001 0.001
 			normalMapScroll 1.0 0.0 0.0 1.0
