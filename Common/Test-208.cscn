@@ -129,6 +129,6 @@ window "MainWindow"
 		format argb32
 		scene "AnimScene"
 		camera "AnimCamera"
-		tone_mapping "linear" -Exposure=1 -Gamma=2.2
+		tone_mapping "linear"
 	}
 }

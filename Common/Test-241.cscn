@@ -42,15 +42,9 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Billboards/AlphaRejection.png" rgb
-				channel diffuse
-				sampler	"Linear"
-			}
-
-			texture_unit
-			{
-				image "Textures/Billboards/AlphaRejection.png" a
-				channel opacity
+				image "Textures/Billboards/AlphaRejection.png"
+				diffuse_mask 0x00FFFFFF
+				opacity_mask 0xFF000000
 				sampler	"Linear"
 			}
 		}

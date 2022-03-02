@@ -67,7 +67,7 @@ window "Window"
 			mode T2X
 			preset high
 			edgeDetection colour
-			predication true
+			enablePredication true
 		}
 	}
 	fullscreen false

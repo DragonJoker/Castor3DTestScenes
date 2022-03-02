@@ -28,8 +28,8 @@ material "ColourMap"
 
 		texture_unit
 		{
-			image "Textures/Gui/Diffuse.jpg" rgb
-			channel diffuse
+			image "Textures/Gui/Diffuse.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -38,18 +38,13 @@ material "BtnTexture"
 {
 	pass
 	{
-		diffuse 0.0745 0.0745 0.0745 1.0
+		diffuse 1.0 1.0 1.0
 
 		texture_unit
 		{
-			image "Textures/Gui/button.png" rgb
-			channel diffuse
-		}
-
-		texture_unit
-		{
-			image "Textures/Gui/button.png" a
-			channel opacity
+			image "Textures/Gui/button.png"
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -58,18 +53,13 @@ material "BtnHighlightedTexture"
 {
 	pass
 	{
-		diffuse 0.0745 0.0745 0.0745 1.0
+		diffuse 1.0 1.0 1.0
 
 		texture_unit
 		{
-			image "Textures/Gui/button_mo.png" rgb
-			channel diffuse
-		}
-
-		texture_unit
-		{
-			image "Textures/Gui/button_mo.png" a
-			channel opacity
+			image "Textures/Gui/button_mo.png"
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -78,74 +68,186 @@ material "BtnPushedTexture"
 {
 	pass
 	{
-		diffuse 0.0745 0.0745 0.0745 1.0
+		diffuse 1.0 1.0 1.0
 
 		texture_unit
 		{
-			image "Textures/Gui/button_push.png" rgb
-			channel diffuse
-		}
-
-		texture_unit
-		{
-			image "Textures/Gui/button_push.png" a
-			channel opacity
+			image "Textures/Gui/button_push.png"
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
 
 gui
 {
-	default_font "Arial_20"
+	theme "SingleButton"
+	{
+		default_font "Arial_22"
+
+		button_style
+		{
+			background_material "BtnTexture"
+			border_material "BtnTexture"
+			text_material "DarkGray"
+			highlighted_background_material "BtnHighlightedTexture"
+			highlighted_foreground_material "BtnHighlightedTexture"
+			highlighted_text_material "Black"
+			pushed_background_material "BtnPushedTexture"
+			pushed_foreground_material "BtnPushedTexture"
+			pushed_text_material "DarkGray"
+		}
+	}
 
 	button "TestButton"
 	{
+		theme "SingleButton"
 		pixel_position 372 693
 		pixel_size 300 50
 		center_uv 0.025 0.875 0.975 0.125
 		border_inner_uv 0.025 0.125 0.975 0.875
-		background_material "BtnTexture"
-		border_material "BtnTexture"
-		text_material "DarkGray"
-		highlighted_background_material "BtnHighlightedTexture"
-		highlighted_foreground_material "BtnHighlightedTexture"
-		highlighted_text_material "Black"
-		pushed_background_material "BtnPushedTexture"
-		pushed_foreground_material "BtnPushedTexture"
-		pushed_text_material "DarkGray"
 		pixel_border_size 6 6 6 6
 		caption "Click Me!!"
-		font "Arial_22"
+	}
+
+	theme "Frame"
+	{
+		default_font "Arial_20"
+
+		static_style
+		{
+			background_material "DarkRed"
+			border_material "DarkBlue"
+			text_material "White"
+		}
+	}
+
+	theme "Colours"
+	{
+		default_font "Arial_20"
+
+		static_style
+		{
+			background_material "White"
+			border_material "DarkBlue"
+			text_material "DarkBlue"
+		}
+
+		button_style
+		{
+			background_material "Yellow"
+			border_material "Black"
+			text_material "Black"
+			highlighted_background_material "Yellow"
+			highlighted_foreground_material "DarkGray"
+			highlighted_text_material "DarkGray"
+			pushed_background_material "Yellow"
+			pushed_foreground_material "LightGray"
+			pushed_text_material "LightGray"
+		}
+
+		listbox_style
+		{
+			background_material "DarkBlue"
+			border_material "White"
+
+			item_style
+			{
+				background_material "DarkBlue"
+				border_material "White"
+				text_material "White"
+			}
+
+			selected_item_style
+			{
+				background_material "DarkGreen"
+				border_material "LightGray"
+				text_material "LightGray"
+			}
+
+			highlighted_item_style
+			{
+				background_material "DarkerBlue"
+				border_material "White"
+				text_material "White"
+			}
+		}
+
+		edit_style
+		{
+			background_material "White"
+			border_material "DarkBlue"
+			text_material "DarkBlue"
+		}
+
+		combobox_style
+		{
+			background_material "DarkBlue"
+			border_material "White"
+
+			button_style
+			{
+				background_material "DarkBlue"
+				border_material "White"
+				text_material "White"
+				highlighted_background_material "DarkRed"
+				highlighted_foreground_material "White"
+				highlighted_text_material "White"
+				pushed_background_material "DarkGreen"
+				pushed_foreground_material "LightGray"
+				pushed_text_material "LightGray"
+			}
+
+			listbox_style
+			{
+				background_material "DarkBlue"
+				border_material "White"
+
+				item_style
+				{
+					background_material "DarkBlue"
+					border_material "White"
+					text_material "White"
+				}
+
+				selected_item_style
+				{
+					background_material "DarkGreen"
+					border_material "LightGray"
+					text_material "LightGray"
+				}
+
+				highlighted_item_style
+				{
+					background_material "DarkRed"
+					border_material "White"
+					text_material "White"
+				}
+			}
+		}
 	}
 
 	static "TestColours"
 	{
-		background_material "DarkRed"
+		theme "Frame"
 		pixel_position 48 0
 		pixel_size 160 668
 
 		button "Coin!!"
 		{
+			theme "Colours"
 			pixel_position 16 25
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "Yellow"
-			border_material "Black"
-			text_material "Black"
 			caption "Click Me!!"
 		}
 
 		listbox "TestList"
 		{
+			theme "Colours"
 			pixel_position 16 60
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "DarkBlue"
-			border_material "White"
-			text_material "White"
-			selected_item_background_material "DarkGreen"
-			selected_item_foreground_material "LightGray"
-			highlighted_item_background_material "DarkerBlue"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
@@ -153,15 +255,10 @@ gui
 
 		combobox "TestCombo"
 		{
+			theme "Colours"
 			pixel_position 16 170
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "DarkBlue"
-			border_material "White"
-			text_material "White"
-			selected_item_background_material "DarkGreen"
-			selected_item_foreground_material "LightGray"
-			highlighted_item_background_material "DarkerBlue"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
@@ -169,63 +266,157 @@ gui
 
 		edit "TestSingleLineEdit"
 		{
+			theme "Colours"
 			pixel_position 16 205
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "White"
-			border_material "DarkBlue"
-			text_material "DarkBlue"
 		}
 
 		edit "TestMultiLineEdit"
 		{
+			theme "Colours"
 			pixel_position 16 240
 			pixel_size 128 50
 			pixel_border_size 1 1 1 1
-			background_material "White"
-			border_material "DarkBlue"
-			text_material "DarkBlue"
 			multiline true
 		}
 
 		static "TestStatic"
 		{
+			theme "Colours"
 			pixel_position 16 300
 			pixel_size 128 50
 			pixel_border_size 1 1 1 1
-			background_material "White"
-			border_material "DarkBlue"
-			text_material "DarkBlue"
 			caption "Test static"
+		}
+	}
+
+	theme "BackgroundTexture"
+	{
+		default_font "Arial_20"
+
+		static_style
+		{
+			background_material "ColourMap"
+			border_material "DarkBlue"
+			text_material "White"
+		}
+
+		button_style
+		{
+			background_material "ColourMap"
+			border_material "White"
+			text_material "White"
+			highlighted_background_material "ColourMap"
+			highlighted_foreground_material "DarkGray"
+			highlighted_text_material "DarkGray"
+			pushed_background_material "ColourMap"
+			pushed_foreground_material "LightGray"
+			pushed_text_material "LightGray"
+		}
+
+		listbox_style
+		{
+			background_material "ColourMap"
+			border_material "White"
+
+			item_style
+			{
+				background_material "ColourMap"
+				border_material "White"
+				text_material "White"
+			}
+
+			selected_item_style
+			{
+				background_material "ColourMap"
+				border_material "LightGray"
+				text_material "LightGray"
+			}
+
+			highlighted_item_style
+			{
+				background_material "ColourMap"
+				border_material "DarkGray"
+				text_material "DarkGray"
+			}
+		}
+
+		edit_style
+		{
+			background_material "ColourMap"
+			border_material "DarkBlue"
+			text_material "White"
+		}
+
+		combobox_style
+		{
+			background_material "ColourMap"
+			border_material "White"
+
+			button_style
+			{
+				background_material "ColourMap"
+				border_material "White"
+				text_material "White"
+				highlighted_background_material "ColourMap"
+				highlighted_foreground_material "White"
+				highlighted_text_material "White"
+				pushed_background_material "ColourMap"
+				pushed_foreground_material "LightGray"
+				pushed_text_material "LightGray"
+			}
+
+			listbox_style
+			{
+				background_material "ColourMap"
+				border_material "White"
+
+				item_style
+				{
+					background_material "ColourMap"
+					border_material "White"
+					text_material "White"
+				}
+
+				selected_item_style
+				{
+					background_material "ColourMap"
+					border_material "LightGray"
+					text_material "LightGray"
+				}
+
+				highlighted_item_style
+				{
+					background_material "ColourMap"
+					border_material "White"
+					text_material "White"
+				}
+			}
 		}
 	}
 
 	static "TestBackgroundTexture"
 	{
-		background_material "DarkRed"
+		theme "Frame"
 		pixel_position 304 0
 		pixel_size 160 668
 
 		button "BT Coin!!"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 25
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "ColourMap"
-			border_material "White"
 			caption "Click Me!!"
 		}
 
 		listbox "BT TestList"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 60
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "ColourMap"
-			border_material "White"
-			selected_item_background_material "DarkGreen"
-			selected_item_foreground_material "LightGray"
-			highlighted_item_background_material "DarkerBlue"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
@@ -233,14 +424,10 @@ gui
 
 		combobox "BT TestCombo"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 170
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "ColourMap"
-			border_material "White"
-			selected_item_background_material "DarkGreen"
-			selected_item_foreground_material "LightGray"
-			highlighted_item_background_material "DarkerBlue"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
@@ -248,60 +435,157 @@ gui
 
 		edit "BT TestSingleLineEdit"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 205
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "ColourMap"
-			border_material "DarkBlue"
 		}
 
 		edit "BT TestMultiLineEdit"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 240
 			pixel_size 128 50
 			pixel_border_size 1 1 1 1
-			background_material "ColourMap"
-			border_material "DarkBlue"
 			multiline true
 		}
 
 		static "BT TestStatic"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 300
 			pixel_size 128 50
 			pixel_border_size 1 1 1 1
-			background_material "ColourMap"
-			border_material "DarkBlue"
 			caption "Test static"
+		}
+	}
+
+	theme "ForegroundTexture"
+	{
+		default_font "Arial_20"
+
+		static_style
+		{
+			background_material "White"
+			border_material "ColourMap"
+			text_material "ColourMap"
+		}
+
+		button_style
+		{
+			background_material "Yellow"
+			border_material "ColourMap"
+			text_material "ColourMap"
+			highlighted_background_material "Green"
+			highlighted_foreground_material "ColourMap"
+			highlighted_text_material "ColourMap"
+			pushed_background_material "Red"
+			pushed_foreground_material "ColourMap"
+			pushed_text_material "ColourMap"
+		}
+
+		listbox_style
+		{
+			background_material "DarkBlue"
+			border_material "ColourMap"
+
+			item_style
+			{
+				background_material "DarkBlue"
+				border_material "ColourMap"
+				text_material "ColourMap"
+			}
+
+			selected_item_style
+			{
+				background_material "DarkGreen"
+				border_material "ColourMap"
+				text_material "ColourMap"
+			}
+
+			highlighted_item_style
+			{
+				background_material "DarkRed"
+				border_material "ColourMap"
+				text_material "ColourMap"
+			}
+		}
+
+		edit_style
+		{
+			background_material "White"
+			border_material "ColourMap"
+			text_material "ColourMap"
+		}
+
+		combobox_style
+		{
+			background_material "DarkBlue"
+			border_material "ColourMap"
+
+			button_style
+			{
+				background_material "DarkBlue"
+				border_material "ColourMap"
+				text_material "ColourMap"
+				highlighted_background_material "DarkRed"
+				highlighted_foreground_material "ColourMap"
+				highlighted_text_material "ColourMap"
+				pushed_background_material "DarkGreen"
+				pushed_foreground_material "ColourMap"
+				pushed_text_material "ColourMap"
+			}
+
+			listbox_style
+			{
+				background_material "DarkBlue"
+				border_material "ColourMap"
+
+				item_style
+				{
+					background_material "DarkBlue"
+					border_material "ColourMap"
+					text_material "ColourMap"
+				}
+
+				selected_item_style
+				{
+					background_material "DarkGreen"
+					border_material "ColourMap"
+					text_material "ColourMap"
+				}
+
+				highlighted_item_style
+				{
+					background_material "DarkRed"
+					border_material "ColourMap"
+					text_material "ColourMap"
+				}
+			}
 		}
 	}
 
 	static "TestForegroundTexture"
 	{
-		background_material "DarkRed"
+		theme "Frame"
 		pixel_position 560 0
 		pixel_size 160 668
 
 		button "FT Coin!!"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 25
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "Yellow"
-			border_material "ColourMap"
 			caption "Click Me!!"
 		}
 
 		listbox "FT TestList"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 60
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "DarkBlue"
-			border_material "ColourMap"
-			selected_item_background_material "DarkGreen"
-			selected_item_foreground_material "LightGray"
-			highlighted_item_background_material "DarkerBlue"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
@@ -309,15 +593,10 @@ gui
 
 		combobox "FT TestCombo"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 170
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "DarkBlue"
-			border_material "ColourMap"
-			text_material "ColourMap"
-			selected_item_background_material "DarkGreen"
-			selected_item_foreground_material "LightGray"
-			highlighted_item_background_material "DarkerBlue"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
@@ -325,30 +604,27 @@ gui
 
 		edit "FT TestSingleLineEdit"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 205
 			pixel_size 128 25
 			pixel_border_size 1 1 1 1
-			background_material "White"
-			border_material "ColourMap"
 		}
 
 		edit "FT TestMultiLineEdit"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 240
 			pixel_size 128 50
 			pixel_border_size 1 1 1 1
-			background_material "White"
-			border_material "ColourMap"
 			multiline true
 		}
 
 		static "FT TestStatic"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 300
 			pixel_size 128 50
 			pixel_border_size 1 1 1 1
-			background_material "White"
-			border_material "ColourMap"
 			caption "Test static"
 		}
 	}

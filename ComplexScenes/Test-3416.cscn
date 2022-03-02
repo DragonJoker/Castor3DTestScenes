@@ -25,7 +25,7 @@ scene "Parc"
 	voxel_cone_tracing
 	{
 		enabled false
-		grid_size 512
+		grid_size 256
 		conservative_rasterization true
 		temporal_smoothing false
 		occlusion false
@@ -33,7 +33,7 @@ scene "Parc"
 		num_cones 16
 		max_distance 10.0000
 		ray_step_size 0.1250000
-		voxel_size 1.00000
+		voxel_size 2.00000
 	}
 
 	//Cameras nodes

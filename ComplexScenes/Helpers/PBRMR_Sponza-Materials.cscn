@@ -54,6 +54,7 @@ material "DefaultMaterial"
 		roughness 1.00000
 		metallic 0.00000
 		alpha_func greater 0.500000
+		two_sided true
 
 		texture_unit
 		{
@@ -161,6 +162,7 @@ material "Material__47"
 		roughness 1.00000
 		metallic 0.00000
 		alpha_func greater 0.500000
+		two_sided true
 
 		texture_unit
 		{
@@ -198,6 +200,7 @@ material "Material__57"
 		roughness 1.00000
 		metallic 0.00000
 		alpha_func greater 0.500000
+		two_sided true
 
 		texture_unit
 		{
@@ -235,6 +238,7 @@ material "VasePlant"
 		roughness 1.00000
 		metallic 0.00000
 		alpha_func greater 0.500000
+		two_sided true
 
 		texture_unit
 		{
@@ -272,7 +276,6 @@ material "WhiteEmit"
 		roughness 1.00000
 		metallic 0.00000
 		emissive 1.10000
-		two_sided false
 	}
 }
 
@@ -390,6 +393,7 @@ material "chain"
 		roughness 1.00000
 		metallic 1.00000
 		alpha_func greater 0.500000
+		two_sided true
 
 		texture_unit
 		{
@@ -904,6 +908,7 @@ material "leaf"
 		roughness 1.00000
 		metallic 0.00000
 		alpha_func greater 0.500000
+		two_sided true
 
 		texture_unit
 		{

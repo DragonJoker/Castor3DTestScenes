@@ -67,8 +67,8 @@ window "Window"
 			mode T2X
 			preset ultra
 			edgeDetection luma
-			predication true
-			reprojection true
+			enablePredication true
+			enableReprojection true
 		}
 	}
 	fullscreen false

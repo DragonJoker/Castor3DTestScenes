@@ -3,21 +3,18 @@ include "Materials/Gui.cscn"
 
 gui
 {
-	default_font "Dbbrnms_25"
-
-	static "TestColours"
+	theme "Colours"
 	{
-		background_material "DarkRed"
-		border_material "DarkBlue"
-		pixel_position 48 0
-		pixel_size 160 768
-		pixel_border_size 16 16 16 16
+		default_font "Dbbrnms_25"
 
-		button "Menu/Jouer"
+		static_style
 		{
-			pixel_position 16 192
-			pixel_size 128 64
-			pixel_border_size 4 4 4 4
+			background_material "DarkRed"
+			border_material "DarkBlue"
+		}
+
+		button_style
+		{
 			background_material "DarkBlue"
 			border_material "DarkGreen"
 			text_material "DarkRed"
@@ -27,6 +24,22 @@ gui
 			pushed_background_material "Red"
 			pushed_foreground_material "Green"
 			pushed_text_material "Blue"
+		}
+	}
+
+	static "TestColours"
+	{
+		theme "Colours"
+		pixel_position 48 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		button "Menu/Jouer"
+		{
+			theme "Colours"
+			pixel_position 16 192
+			pixel_size 128 64
+			pixel_border_size 4 4 4 4
 			caption "Play"
 			horizontal_align left
 			vertical_align top
@@ -34,18 +47,10 @@ gui
 
 		button "Menu/Regles"
 		{
+			theme "Colours"
 			pixel_position 16 288
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "DarkGreen"
-			text_material "DarkRed"
-			highlighted_background_material "Blue"
-			highlighted_foreground_material "Green"
-			highlighted_text_material "Red"
-			pushed_background_material "Red"
-			pushed_foreground_material "Green"
-			pushed_text_material "Blue"
 			caption "Rules"
 			horizontal_align left
 			vertical_align bottom
@@ -53,18 +58,10 @@ gui
 
 		button "Menu/Retour"
 		{
+			theme "Colours"
 			pixel_position 16 384
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "DarkGreen"
-			text_material "DarkRed"
-			highlighted_background_material "Blue"
-			highlighted_foreground_material "Green"
-			highlighted_text_material "Red"
-			pushed_background_material "Red"
-			pushed_foreground_material "Green"
-			pushed_text_material "Blue"
 			caption "Back"
 			horizontal_align right
 			vertical_align top
@@ -72,18 +69,10 @@ gui
 
 		button "Menu/Continuer"
 		{
+			theme "Colours"
 			pixel_position 16 480
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "DarkGreen"
-			text_material "DarkRed"
-			highlighted_background_material "Blue"
-			highlighted_foreground_material "Green"
-			highlighted_text_material "Red"
-			pushed_background_material "Red"
-			pushed_foreground_material "Green"
-			pushed_text_material "Blue"
 			caption "Continue"
 			horizontal_align right
 			vertical_align bottom
@@ -91,37 +80,28 @@ gui
 
 		button "Menu/Recommencer"
 		{
+			theme "Colours"
 			pixel_position 16 576
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "DarkGreen"
-			text_material "DarkRed"
-			highlighted_background_material "Blue"
-			highlighted_foreground_material "Green"
-			highlighted_text_material "Red"
-			pushed_background_material "Red"
-			pushed_foreground_material "Green"
-			pushed_text_material "Blue"
 			caption "Restart"
 			horizontal_align center
 			vertical_align center
 		}
 	}
 
-	static "TestBackgroundTexture"
+	theme "BackgroundTexture"
 	{
-		background_material "FrameCenter"
-		border_material "DarkBlue"
-		pixel_position 304 0
-		pixel_size 160 768
-		pixel_border_size 16 16 16 16
+		default_font "Dbbrnms_25"
 
-		button "Back/Menu/Jouer"
+		static_style
 		{
-			pixel_position 16 192
-			pixel_size 128 64
-			pixel_border_size 4 4 4 4
+			background_material "FrameCenter"
+			border_material "DarkBlue"
+		}
+
+		button_style
+		{
 			background_material "FrameCenter"
 			border_material "DarkGreen"
 			text_material "DarkRed"
@@ -131,6 +111,22 @@ gui
 			pushed_background_material "FrameCenterMP"
 			pushed_foreground_material "Green"
 			pushed_text_material "Blue"
+		}
+	}
+
+	static "TestBackgroundTexture"
+	{
+		theme "BackgroundTexture"
+		pixel_position 304 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		button "Back/Menu/Jouer"
+		{
+			theme "BackgroundTexture"
+			pixel_position 16 192
+			pixel_size 128 64
+			pixel_border_size 4 4 4 4
 			caption "Play"
 			horizontal_align left
 			vertical_align top
@@ -138,18 +134,10 @@ gui
 
 		button "Back/Menu/Regles"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 288
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenter"
-			border_material "DarkGreen"
-			text_material "DarkRed"
-			highlighted_background_material "FrameCenterMO"
-			highlighted_foreground_material "Green"
-			highlighted_text_material "Red"
-			pushed_background_material "FrameCenterMP"
-			pushed_foreground_material "Green"
-			pushed_text_material "Blue"
 			caption "Rules"
 			horizontal_align left
 			vertical_align bottom
@@ -157,18 +145,10 @@ gui
 
 		button "Back/Menu/Retour"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 384
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenter"
-			border_material "DarkGreen"
-			text_material "DarkRed"
-			highlighted_background_material "FrameCenterMO"
-			highlighted_foreground_material "Green"
-			highlighted_text_material "Red"
-			pushed_background_material "FrameCenterMP"
-			pushed_foreground_material "Green"
-			pushed_text_material "Blue"
 			caption "Back"
 			horizontal_align right
 			vertical_align top
@@ -176,18 +156,10 @@ gui
 
 		button "Back/Menu/Continuer"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 480
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenter"
-			border_material "DarkGreen"
-			text_material "DarkRed"
-			highlighted_background_material "FrameCenterMO"
-			highlighted_foreground_material "Green"
-			highlighted_text_material "Red"
-			pushed_background_material "FrameCenterMP"
-			pushed_foreground_material "Green"
-			pushed_text_material "Blue"
 			caption "Continue"
 			horizontal_align right
 			vertical_align bottom
@@ -195,37 +167,28 @@ gui
 
 		button "Back/Menu/Recommencer"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 576
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenter"
-			border_material "DarkGreen"
-			text_material "DarkRed"
-			highlighted_background_material "FrameCenterMO"
-			highlighted_foreground_material "Green"
-			pushed_background_material "FrameCenterMP"
-			highlighted_text_material "Red"
-			pushed_foreground_material "Green"
-			pushed_text_material "Blue"
 			caption "Restart"
 			horizontal_align center
 			vertical_align center
 		}
 	}
 
-	static "TestForegroundTexture"
+	theme "ForegroundTexture"
 	{
-		background_material "DarkRed"
-		border_material "Frame"
-		pixel_position 560 0
-		pixel_size 160 768
-		pixel_border_size 16 16 16 16
+		default_font "Dbbrnms_25"
 
-		button "Fore/Menu/Jouer"
+		static_style
 		{
-			pixel_position 16 192
-			pixel_size 128 64
-			pixel_border_size 4 4 4 4
+			background_material "DarkRed"
+			border_material "Frame"
+		}
+
+		button_style
+		{
 			background_material "DarkBlue"
 			border_material "Frame"
 			text_material "DarkRed"
@@ -235,6 +198,22 @@ gui
 			pushed_background_material "Red"
 			pushed_foreground_material "FrameMP"
 			pushed_text_material "Blue"
+		}
+	}
+
+	static "TestForegroundTexture"
+	{
+		theme "ForegroundTexture"
+		pixel_position 560 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		button "Fore/Menu/Jouer"
+		{
+			theme "ForegroundTexture"
+			pixel_position 16 192
+			pixel_size 128 64
+			pixel_border_size 4 4 4 4
 			caption "Play"
 			horizontal_align left
 			vertical_align top
@@ -242,18 +221,10 @@ gui
 
 		button "Fore/Menu/Regles"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 288
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "Frame"
-			text_material "DarkRed"
-			highlighted_background_material "Blue"
-			highlighted_foreground_material "FrameMO"
-			highlighted_text_material "Red"
-			pushed_background_material "Red"
-			pushed_foreground_material "FrameMP"
-			pushed_text_material "Blue"
 			caption "Rules"
 			horizontal_align left
 			vertical_align bottom
@@ -261,18 +232,10 @@ gui
 
 		button "Fore/Menu/Retour"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 384
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "Frame"
-			text_material "DarkRed"
-			highlighted_background_material "Blue"
-			highlighted_foreground_material "FrameMO"
-			highlighted_text_material "Red"
-			pushed_background_material "Red"
-			pushed_foreground_material "FrameMP"
-			pushed_text_material "Blue"
 			caption "Back"
 			horizontal_align right
 			vertical_align top
@@ -280,18 +243,10 @@ gui
 
 		button "Fore/Menu/Continuer"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 480
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "Frame"
-			text_material "DarkRed"
-			highlighted_background_material "Blue"
-			highlighted_foreground_material "FrameMO"
-			highlighted_text_material "Red"
-			pushed_background_material "Red"
-			pushed_foreground_material "FrameMP"
-			pushed_text_material "Blue"
 			caption "Continue"
 			horizontal_align right
 			vertical_align bottom
@@ -299,37 +254,28 @@ gui
 
 		button "Fore/Menu/Recommencer"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 576
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "Frame"
-			text_material "DarkRed"
-			highlighted_background_material "Blue"
-			highlighted_foreground_material "FrameMO"
-			highlighted_text_material "Red"
-			pushed_background_material "Red"
-			pushed_foreground_material "FrameMP"
-			pushed_text_material "Blue"
 			caption "Restart"
 			horizontal_align center
 			vertical_align center
 		}
 	}
 
-	static "TestBothTextures"
+	theme "BothTextures"
 	{
-		background_material "FrameCenter"
-		border_material "Frame"
-		pixel_position 816 0
-		pixel_size 160 768
-		pixel_border_size 16 16 16 16
+		default_font "Dbbrnms_25"
 
-		button "Both/Menu/Jouer"
+		static_style
 		{
-			pixel_position 16 192
-			pixel_size 128 64
-			pixel_border_size 4 4 4 4
+			background_material "FrameCenter"
+			border_material "Frame"
+		}
+
+		button_style
+		{
 			background_material "FrameCenter"
 			border_material "Frame"
 			text_material "DarkRed"
@@ -339,6 +285,22 @@ gui
 			pushed_background_material "FrameCenterMP"
 			pushed_foreground_material "FrameMP"
 			pushed_text_material "Blue"
+		}
+	}
+
+	static "TestBothTextures"
+	{
+		theme "BothTextures"
+		pixel_position 816 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		button "Both/Menu/Jouer"
+		{
+			theme "BothTextures"
+			pixel_position 16 192
+			pixel_size 128 64
+			pixel_border_size 4 4 4 4
 			caption "Play"
 			horizontal_align left
 			vertical_align top
@@ -346,18 +308,10 @@ gui
 
 		button "Both/Menu/Regles"
 		{
+			theme "BothTextures"
 			pixel_position 16 288
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenter"
-			border_material "Frame"
-			text_material "DarkRed"
-			highlighted_background_material "FrameCenterMO"
-			highlighted_foreground_material "FrameMO"
-			highlighted_text_material "Red"
-			pushed_background_material "FrameCenterMP"
-			pushed_foreground_material "FrameMP"
-			pushed_text_material "Blue"
 			caption "Rules"
 			horizontal_align left
 			vertical_align bottom
@@ -365,18 +319,10 @@ gui
 
 		button "Both/Menu/Retour"
 		{
+			theme "BothTextures"
 			pixel_position 16 384
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenter"
-			border_material "Frame"
-			text_material "DarkRed"
-			highlighted_background_material "FrameCenterMO"
-			highlighted_foreground_material "FrameMO"
-			highlighted_text_material "Red"
-			pushed_background_material "FrameCenterMP"
-			pushed_foreground_material "FrameMP"
-			pushed_text_material "Blue"
 			caption "Back"
 			horizontal_align right
 			vertical_align top
@@ -384,18 +330,10 @@ gui
 
 		button "Both/Menu/Continuer"
 		{
+			theme "BothTextures"
 			pixel_position 16 480
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenter"
-			border_material "Frame"
-			text_material "DarkRed"
-			highlighted_background_material "FrameCenterMO"
-			highlighted_foreground_material "FrameMO"
-			highlighted_text_material "Red"
-			pushed_background_material "FrameCenterMP"
-			pushed_foreground_material "FrameMP"
-			pushed_text_material "Blue"
 			caption "Continue"
 			horizontal_align right
 			vertical_align bottom
@@ -403,18 +341,10 @@ gui
 
 		button "Both/Menu/Recommencer"
 		{
+			theme "BothTextures"
 			pixel_position 16 576
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenter"
-			border_material "Frame"
-			text_material "DarkRed"
-			highlighted_background_material "FrameCenterMO"
-			highlighted_foreground_material "FrameMO"
-			highlighted_text_material "Red"
-			pushed_background_material "FrameCenterMP"
-			pushed_foreground_material "FrameMP"
-			pushed_text_material "Blue"
 			caption "Restart"
 			horizontal_align center
 			vertical_align center

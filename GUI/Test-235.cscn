@@ -3,98 +3,229 @@ include "Materials/Gui.cscn"
 
 gui
 {
-	default_font "Dbbrnms_25"
+	theme "Colours"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "DarkRed"
+			border_material "DarkBlue"
+		}
+
+		listbox_style
+		{
+			background_material "DarkBlue"
+			border_material "White"
+
+			item_style
+			{
+				background_material "DarkBlue"
+				border_material "White"
+				text_material "White"
+			}
+
+			selected_item_style
+			{
+				background_material "DarkGreen"
+				border_material "LightGray"
+				text_material "LightGray"
+			}
+
+			highlighted_item_style
+			{
+				background_material "DarkerBlue"
+				border_material "White"
+				text_material "White"
+			}
+		}
+	}
 
 	static "TestColours"
 	{
-		background_material "DarkRed"
-		border_material "DarkBlue"
+		theme "Colours"
 		pixel_position 48 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		listbox "TestList"
 		{
+			theme "Colours"
 			pixel_position 16 60
 			pixel_size 128 100
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "White"
-			selected_item_background_material "DarkGreen"
-			selected_item_foreground_material "LightGray"
-			highlighted_item_background_material "DarkerBlue"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
 		}
 	}
 
+	theme "BackgroundTexture"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "FrameCenter"
+			border_material "DarkRed"
+		}
+
+		listbox_style
+		{
+			background_material "FrameCenterMP"
+			border_material "White"
+			text_material "White"
+
+			item_style
+			{
+				background_material "FrameCenterMP"
+				border_material "White"
+				text_material "White"
+			}
+
+			selected_item_style
+			{
+				background_material "FrameCenterMO"
+				border_material "LightGray"
+				text_material "LightGray"
+			}
+
+			highlighted_item_style
+			{
+				background_material "NoBorderMenuCenter"
+				border_material "White"
+				text_material "White"
+			}
+		}
+	}
+
 	static "TestBackgroundTexture"
 	{
-		background_material "FrameCenter"
-		border_material "DarkRed"
+		theme "BackgroundTexture"
 		pixel_position 304 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		listbox "BT TestList"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 60
 			pixel_size 128 100
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenterMP"
-			border_material "White"
-			selected_item_background_material "FrameCenterMO"
-			selected_item_foreground_material "LightGray"
-			highlighted_item_background_material "NoBorderMenuCenter"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
 		}
 	}
 
+	theme "ForegroundTexture"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "DarkRed"
+			border_material "Frame"
+		}
+
+		listbox_style
+		{
+			background_material "DarkBlue"
+			border_material "FrameMP"
+
+			item_style
+			{
+				background_material "DarkBlue"
+				border_material "FrameMP"
+				text_material "FrameMP"
+			}
+
+			selected_item_style
+			{
+				background_material "DarkGreen"
+				border_material "FrameMO"
+				text_material "FrameMO"
+			}
+
+			highlighted_item_style
+			{
+				background_material "DarkBlue"
+				border_material "FrameMP"
+				text_material "FrameMP"
+			}
+		}
+	}
+
 	static "TestForegroundTexture"
 	{
-		background_material "DarkRed"
-		border_material "Frame"
+		theme "ForegroundTexture"
 		pixel_position 560 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		listbox "FT TestList"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 60
 			pixel_size 128 100
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "FrameMP"
-			selected_item_background_material "DarkGreen"
-			selected_item_foreground_material "FrameMO"
-			highlighted_item_background_material "DarkerBlue"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
 		}
 	}
 
+	theme "BothTextures"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "FrameCenter"
+			border_material "Frame"
+		}
+
+		listbox_style
+		{
+			background_material "FrameCenterMP"
+			border_material "FrameMP"
+
+			item_style
+			{
+				background_material "FrameCenterMP"
+				border_material "FrameMP"
+				text_material "FrameMP"
+			}
+
+			selected_item_style
+			{
+				background_material "FrameCenterMO"
+				border_material "FrameMO"
+				text_material "FrameMO"
+			}
+
+			highlighted_item_style
+			{
+				background_material "NoBorderMenuCenter"
+				border_material "FrameMP"
+				text_material "FrameMP"
+			}
+		}
+	}
+
 	static "TestBothTextures"
 	{
-		background_material "FrameCenter"
-		border_material "Frame"
+		theme "BothTextures"
 		pixel_position 816 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		listbox "BFT TestList"
 		{
+			theme "BothTextures"
 			pixel_position 16 60
 			pixel_size 128 100
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenterMP"
-			border_material "FrameMP"
-			selected_item_background_material "FrameCenterMO"
-			selected_item_foreground_material "FrameMO"
-			highlighted_item_background_material "NoBorderMenuCenter"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"

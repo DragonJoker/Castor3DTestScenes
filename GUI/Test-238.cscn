@@ -5,17 +5,113 @@ include "Materials/Gui.cscn"
 
 gui
 {
-	default_font "Dbbrnms_25"
+	theme "Menu/Jouer"
+	{
+		default_font "Dbbrnms_25"
+
+		button_style
+		{
+			background_material "Commencer"
+			highlighted_background_material "CommencerMO"
+			pushed_background_material "CommencerMO"
+		}
+	}
+
+	theme "Menu/Regles"
+	{
+		default_font "Dbbrnms_25"
+
+		button_style
+		{
+			background_material "Regles"
+			highlighted_background_material "ReglesMO"
+			pushed_background_material "ReglesMO"
+		}
+	}
+
+	theme "Menu/Retour"
+	{
+		default_font "Dbbrnms_25"
+
+		button_style
+		{
+			background_material "Retour"
+			highlighted_background_material "RetourMO"
+			pushed_background_material "RetourMO"
+		}
+	}
+
+	theme "Menu/Continuer"
+	{
+		default_font "Dbbrnms_25"
+
+		button_style
+		{
+			background_material "Continuer"
+			highlighted_background_material "ContinuerMO"
+			pushed_background_material "ContinuerMO"
+		}
+	}
+
+	theme "Menu/Recommencer"
+	{
+		default_font "Dbbrnms_25"
+
+		button_style
+		{
+			background_material "Recommencer"
+			highlighted_background_material "RecommencerMO"
+			pushed_background_material "RecommencerMO"
+		}
+	}
+
+	theme "Menu/Menu"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "BaseMenu"
+		}
+
+		button_style
+		{
+			background_material "MenuInGame"
+			highlighted_background_material "MenuInGameMO"
+			pushed_background_material "MenuInGameMO"
+		}
+	}
+
+	theme "Title"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "Titre"
+		}
+	}
+
+	theme "BottomRightCorner"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "BasDroite"
+		}
+	}
 
 	static "Title"
 	{
-		background_material "Titre"
+		theme "Title"
 		pixel_position 256 192
 		pixel_size 512 384
 	}
 
 	static "BottomRightCorner"
 	{
+		theme "BottomRightCorner"
 		background_material "BasDroite"
 		pixel_position 768 512
 		pixel_size 256 256
@@ -23,67 +119,55 @@ gui
 
 	static "Menu"
 	{
-		background_material "BaseMenu"
+		theme "Menu/Menu"
 		pixel_position 0 0
 		pixel_size 341 1024
 
 		button "Menu/Jouer"
 		{
+			theme "Menu/Jouer"
 			pixel_position 32 192
 			pixel_size 128 64
-			background_material "Commencer"
-			highlighted_background_material "CommencerMO"
-			pushed_background_material "CommencerMO"
 			pixel_border_size 0 0 0 0
 		}
 
 		button "Menu/Regles"
 		{
+			theme "Menu/Regles"
 			pixel_position 32 288
 			pixel_size 128 64
-			background_material "Regles"
-			highlighted_background_material "ReglesMO"
-			pushed_background_material "ReglesMO"
 			pixel_border_size 0 0 0 0
 		}
 
 		button "Menu/Retour"
 		{
+			theme "Menu/Retour"
 			pixel_position 32 384
 			pixel_size 128 64
-			background_material "Retour"
-			highlighted_background_material "RetourMO"
-			pushed_background_material "RetourMO"
 			pixel_border_size 0 0 0 0
 		}
 
 		button "Menu/Continuer"
 		{
+			theme "Menu/Continuer"
 			pixel_position 32 480
 			pixel_size 128 64
-			background_material "Continuer"
-			highlighted_background_material "ContinuerMO"
-			pushed_background_material "ContinuerMO"
 			pixel_border_size 0 0 0 0
 		}
 
 		button "Menu/Recommencer"
 		{
+			theme "Menu/Recommencer"
 			pixel_position 32 576
 			pixel_size 128 64
-			background_material "Recommencer"
-			highlighted_background_material "RecommencerMO"
-			pushed_background_material "RecommencerMO"
 			pixel_border_size 0 0 0 0
 		}
 
 		button "Menu/Menu"
 		{
+			theme "Menu/Menu"
 			pixel_position 32 576
 			pixel_size 128 64
-			background_material "MenuInGame"
-			highlighted_background_material "MenuInGameMO"
-			pushed_background_material "MenuInGameMO"
 			pixel_border_size 0 0 0 0
 		}
 	}

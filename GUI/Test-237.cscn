@@ -9,124 +9,174 @@ font "Arial_20"
 
 gui
 {
-	default_font "Arial_20"
+	theme "Colours"
+	{
+		default_font "Arial_20"
+
+		static_style
+		{
+			background_material "DarkRed"
+			border_material "DarkBlue"
+		}
+
+		edit_style
+		{
+			background_material "DarkBlue"
+			border_material "DarkGreen"
+			text_material "White"
+		}
+	}
 
 	static "TestColours"
 	{
-		background_material "DarkRed"
-		border_material "DarkBlue"
+		theme "Colours"
 		pixel_position 48 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		edit "TestSingleLineEdit"
 		{
+			theme "Colours"
 			pixel_position 16 205
 			pixel_size 128 25
 			pixel_border_size 0 0 0 0
-			background_material "DarkBlue"
-			border_material "DarkGreen"
-			text_material "White"
 		}
 
 		edit "TestMultiLineEdit"
 		{
+			theme "Colours"
 			pixel_position 16 240
 			pixel_size 128 200
 			pixel_border_size 0 0 0 0
-			background_material "DarkBlue"
+			multiline true
+		}
+	}
+
+	theme "BackgroundTexture"
+	{
+		default_font "Arial_20"
+
+		static_style
+		{
+			background_material "FrameCenter"
+			border_material "DarkRed"
+		}
+
+		edit_style
+		{
+			background_material "FrameCenterMO"
 			border_material "DarkGreen"
 			text_material "White"
-			multiline true
 		}
 	}
 
 	static "TestBackgroundTexture"
 	{
-		background_material "FrameCenter"
-		border_material "DarkRed"
+		theme "BackgroundTexture"
 		pixel_position 304 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		edit "BT TestSingleLineEdit"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 205
 			pixel_size 128 25
 			pixel_border_size 0 0 0 0
-			background_material "FrameCenterMO"
-			border_material "DarkGreen"
-			text_material "White"
 		}
 
 		edit "BT TestMultiLineEdit"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 240
 			pixel_size 128 200
 			pixel_border_size 0 0 0 0
-			background_material "FrameCenterMO"
-			border_material "DarkGreen"
-			text_material "White"
 			multiline true
+		}
+	}
+
+	theme "ForegroundTexture"
+	{
+		default_font "Arial_20"
+
+		static_style
+		{
+			background_material "DarkRed"
+			border_material "Frame"
+		}
+
+		edit_style
+		{
+			background_material "DarkGreen"
+			border_material "FrameMO"
+			text_material "White"
 		}
 	}
 
 	static "TestForegroundTexture"
 	{
-		background_material "DarkRed"
-		border_material "Frame"
+		theme "ForegroundTexture"
 		pixel_position 560 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		edit "FT TestSingleLineEdit"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 205
 			pixel_size 128 25
 			pixel_border_size 0 0 0 0
-			background_material "DarkGreen"
-			border_material "FrameMO"
-			text_material "White"
 		}
 
 		edit "FT TestMultiLineEdit"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 240
 			pixel_size 128 200
 			pixel_border_size 0 0 0 0
-			background_material "DarkGreen"
+			multiline true
+		}
+	}
+
+	theme "BothTextures"
+	{
+		default_font "Arial_20"
+
+		static_style
+		{
+			background_material "FrameCenter"
+			border_material "Frame"
+		}
+
+		edit_style
+		{
+			background_material "FrameCenterMO"
 			border_material "FrameMO"
 			text_material "White"
-			multiline true
 		}
 	}
 
 	static "TestBothTextures"
 	{
-		background_material "FrameCenter"
-		border_material "Frame"
+		theme "BothTextures"
 		pixel_position 816 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		edit "BFT TestSingleLineEdit"
 		{
+			theme "BothTextures"
 			pixel_position 16 205
 			pixel_size 128 25
 			pixel_border_size 0 0 0 0
-			background_material "FrameCenterMO"
-			border_material "FrameMO"
-			text_material "White"
 		}
 
 		edit "BFT TestMultiLineEdit"
 		{
+			theme "BothTextures"
 			pixel_position 16 240
 			pixel_size 128 200
 			pixel_border_size 0 0 0 0
-			background_material "FrameCenterMO"
-			border_material "FrameMO"
-			text_material "White"
 			multiline true
 		}
 	}

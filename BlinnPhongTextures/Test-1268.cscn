@@ -118,7 +118,7 @@ scene "Scene"
 		parent "FinalNode"
 		mesh "Mesh"
 		{
-			type "cube" -width=50 -height=50 depth=50
+			type "cube" -width=50 -height=50 -depth=50
 		}
 		material "Textured"
 	}

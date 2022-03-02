@@ -67,7 +67,7 @@ window "Window"
 			mode 1X
 			preset ultra
 			edgeDetection colour
-			predication true
+			enablePredication true
 		}
 	}
 	fullscreen false

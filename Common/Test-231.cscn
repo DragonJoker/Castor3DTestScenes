@@ -38,14 +38,9 @@ scene "MyScene"
 
 			texture_unit
 			{
-				channel specular
-				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss.png" rgb
-			}
-
-			texture_unit
-			{
-				channel shininess
-				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss.png" a
+				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss.png"
+				specular_mask 0x00FFFFFF
+				shininess_mask 0xFF000000
 			}
 
 			texture_unit
@@ -76,14 +71,9 @@ scene "MyScene"
 
 			texture_unit
 			{
-				channel specular
-				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss_0.png" rgb
-			}
-
-			texture_unit
-			{
-				channel shininess
-				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss_0.png" a
+				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss_0.png"
+				specular_mask 0x00FFFFFF
+				shininess_mask 0xFF000000
 			}
 
 			texture_unit
@@ -145,14 +135,9 @@ scene "MyScene"
 
 			texture_unit
 			{
-				channel specular
-				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss.png" rgb
-			}
-
-			texture_unit
-			{
-				channel shininess
-				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss.png" a
+				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss.png"
+				specular_mask 0x00FFFFFF
+				shininess_mask 0xFF000000
 			}
 
 			texture_unit
@@ -183,14 +168,9 @@ scene "MyScene"
 
 			texture_unit
 			{
-				channel specular
-				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss_0.png" rgb
-			}
-
-			texture_unit
-			{
-				channel shininess
-				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss_0.png" a
+				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss_0.png"
+				specular_mask 0x00FFFFFF
+				shininess_mask 0xFF000000
 			}
 
 			texture_unit
@@ -252,14 +232,9 @@ scene "MyScene"
 
 			texture_unit
 			{
-				channel specular
-				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss_0.png" rgb
-			}
-
-			texture_unit
-			{
-				channel shininess
-				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss_0.png" a
+				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss_0.png"
+				specular_mask 0x00FFFFFF
+				shininess_mask 0xFF000000
 			}
 
 			texture_unit
@@ -290,14 +265,9 @@ scene "MyScene"
 
 			texture_unit
 			{
-				channel specular
-				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss.png" rgb
-			}
-
-			texture_unit
-			{
-				channel shininess
-				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss.png" a
+				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss.png"
+				specular_mask 0x00FFFFFF
+				shininess_mask 0xFF000000
 			}
 
 			texture_unit

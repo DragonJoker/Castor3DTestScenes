@@ -3,98 +3,305 @@ include "Materials/Gui.cscn"
 
 gui
 {
-	default_font "Dbbrnms_25"
+	theme "Colours"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "DarkRed"
+			border_material "DarkBlue"
+		}
+
+		combobox_style
+		{
+			background_material "DarkBlue"
+			border_material "White"
+
+			button_style
+			{
+				background_material "DarkBlue"
+				border_material "White"
+				text_material "White"
+				highlighted_background_material "DarkerBlue"
+				highlighted_foreground_material "White"
+				highlighted_text_material "White"
+				pushed_background_material "DarkGreen"
+				pushed_foreground_material "LightGray"
+				pushed_text_material "LightGray"
+			}
+
+			listbox_style
+			{
+				background_material "DarkBlue"
+				border_material "White"
+
+				item_style
+				{
+					background_material "DarkBlue"
+					border_material "White"
+					text_material "White"
+				}
+
+				selected_item_style
+				{
+					background_material "DarkGreen"
+					border_material "LightGray"
+					text_material "LightGray"
+				}
+
+				highlighted_item_style
+				{
+					background_material "DarkRed"
+					border_material "White"
+					text_material "White"
+				}
+			}
+		}
+	}
 
 	static "TestColours"
 	{
-		background_material "DarkRed"
-		border_material "DarkBlue"
+		theme "Colours"
 		pixel_position 48 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		combobox "TestCombo"
 		{
+			theme "Colours"
 			pixel_position 16 170
 			pixel_size 128 25
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "White"
-			selected_item_background_material "DarkGreen"
-			selected_item_foreground_material "LightGray"
-			highlighted_item_background_material "DarkerBlue"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
 		}
 	}
 
+	theme "BackgroundTexture"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "FrameCenter"
+			border_material "DarkRed"
+		}
+
+		combobox_style
+		{
+			background_material "FrameCenterMP"
+			border_material "White"
+
+			button_style
+			{
+				background_material "FrameCenterMP"
+				border_material "White"
+				text_material "Black"
+				highlighted_background_material "NoBorderMenuCenter"
+				highlighted_foreground_material "White"
+				highlighted_text_material "White"
+				pushed_background_material "FrameCenterMO"
+				pushed_foreground_material "LightGray"
+				pushed_text_material "LightGray"
+			}
+
+			listbox_style
+			{
+				background_material "FrameCenterMP"
+				border_material "White"
+				text_material "Black"
+
+				item_style
+				{
+					background_material "FrameCenterMP"
+					border_material "White"
+					text_material "Black"
+				}
+
+				selected_item_style
+				{
+					background_material "FrameCenterMO"
+					border_material "LightGray"
+					text_material "DarkGray"
+				}
+
+				highlighted_item_style
+				{
+					background_material "NoBorderMenuCenter"
+					border_material "White"
+					text_material "Black"
+				}
+			}
+		}
+	}
+
 	static "TestBackgroundTexture"
 	{
-		background_material "FrameCenter"
-		border_material "DarkRed"
+		theme "BackgroundTexture"
 		pixel_position 304 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		combobox "BT TestCombo"
 		{
+			theme "BackgroundTexture"
 			pixel_position 16 170
 			pixel_size 128 25
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenterMP"
-			border_material "White"
-			selected_item_background_material "FrameCenterMO"
-			selected_item_foreground_material "LightGray"
-			highlighted_item_background_material "NoBorderMenuCenter"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
 		}
 	}
 
+	theme "ForegroundTexture"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "DarkRed"
+			border_material "Frame"
+		}
+
+		combobox_style
+		{
+			background_material "DarkBlue"
+			border_material "FrameMP"
+
+			button_style
+			{
+				background_material "DarkBlue"
+				border_material "FrameMP"
+				text_material "FrameMP"
+				highlighted_background_material "DarkerBlue"
+				highlighted_foreground_material "FrameMP"
+				highlighted_text_material "FrameMP"
+				pushed_background_material "DarkGreen"
+				pushed_foreground_material "FrameMO"
+				pushed_text_material "FrameMO"
+			}
+
+			listbox_style
+			{
+				background_material "DarkBlue"
+				border_material "FrameMP"
+
+				item_style
+				{
+					background_material "DarkBlue"
+					border_material "FrameMP"
+					text_material "FrameMP"
+				}
+
+				selected_item_style
+				{
+					background_material "DarkGreen"
+					border_material "FrameMO"
+					text_material "FrameMO"
+				}
+
+				highlighted_item_style
+				{
+					background_material "DarkRed"
+					border_material "FrameMP"
+					text_material "FrameMP"
+				}
+			}
+		}
+	}
+
 	static "TestForegroundTexture"
 	{
-		background_material "DarkRed"
-		border_material "Frame"
+		theme "ForegroundTexture"
 		pixel_position 560 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		combobox "FT TestCombo"
 		{
+			theme "ForegroundTexture"
 			pixel_position 16 170
 			pixel_size 128 25
 			pixel_border_size 4 4 4 4
-			background_material "DarkBlue"
-			border_material "FrameMP"
-			selected_item_background_material "DarkGreen"
-			selected_item_foreground_material "FrameMO"
-			highlighted_item_background_material "DarkerBlue"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"
 		}
 	}
 
+	theme "BothTextures"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "FrameCenter"
+			border_material "Frame"
+		}
+
+		combobox_style
+		{
+			background_material "FrameCenterMP"
+			border_material "FrameMP"
+
+			button_style
+			{
+				background_material "FrameCenterMP"
+				border_material "FrameMP"
+				text_material "Black"
+				highlighted_background_material "NoBorderMenuCenter"
+				highlighted_foreground_material "FrameMP"
+				highlighted_text_material "FrameMP"
+				pushed_background_material "FrameCenterMO"
+				pushed_foreground_material "FrameMO"
+				pushed_text_material "FrameMO"
+			}
+
+			listbox_style
+			{
+				background_material "FrameCenterMP"
+				border_material "FrameMP"
+
+				item_style
+				{
+					background_material "FrameCenterMP"
+					border_material "FrameMP"
+					text_material "Black"
+				}
+
+				selected_item_style
+				{
+					background_material "FrameCenterMO"
+					border_material "FrameMO"
+					text_material "DarkGray"
+				}
+
+				highlighted_item_style
+				{
+					background_material "NoBorderMenuCenter"
+					border_material "FrameMP"
+					text_material "Black"
+				}
+			}
+		}
+	}
+
 	static "TestBothTextures"
 	{
-		background_material "FrameCenter"
-		border_material "Frame"
+		theme "BothTextures"
 		pixel_position 816 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
 
 		combobox "BFT TestCombo"
 		{
+			theme "BothTextures"
 			pixel_position 16 170
 			pixel_size 128 25
 			pixel_border_size 4 4 4 4
-			background_material "FrameCenterMP"
-			border_material "FrameMP"
-			selected_item_background_material "FrameCenterMO"
-			selected_item_foreground_material "FrameMO"
-			highlighted_item_background_material "NoBorderMenuCenter"
 			item "Item 1"
 			item "Item 2"
 			item "Item 3"

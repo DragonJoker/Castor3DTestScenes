@@ -31,43 +31,37 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Dragon/albedo.png" rgb
-				channel diffuse
+				image "Textures/Dragon/albedo.png"
+				albedo_mask 0x00FFFFFF
 				sampler	"TriLinear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Dragon/normal.png" rgb
-				channel normal
+				image "Textures/Dragon/normal.png"
+				normal_mask 0x00FFFFFF
+				sampler "TriLinear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Dragon/specular_smoothness.png"
+				specular_mask 0x00FFFFFF
+				glossiness_mask 0xFF000000
 				sampler	"TriLinear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Dragon/specular_smoothness.png" rgb
-				channel specular
+				image "Textures/Dragon/ambient_occlusion.png"
+				occlusion_mask 0x00FFFFFF
 				sampler	"TriLinear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Dragon/specular_smoothness.png" a
-				channel gloss
-				sampler	"TriLinear"
-			}
-
-			texture_unit
-			{
-				image "Textures/Dragon/occlusion.png" rgb
-				channel occlusion
-				sampler	"TriLinear"
-			}
-
-			texture_unit
-			{
-				image "Textures/Dragon/emissive.png" rgb
-				channel emissive
+				image "Textures/Dragon/emissive.png"
+				emissive_mask 0x00FFFFFF
 				sampler	"TriLinear"
 			}
 		}
@@ -108,6 +102,21 @@ scene "Scene"
 			far 2000.0
 		}
 	}
+
+	// Animated object groups
+
+	// animated_object_group "FinalPrimitive_Anim"
+	// {
+		// animated_object "FinalPrimitive"
+
+		// animation "Take 001"
+		// {
+			// looped true
+			// scale 1
+		// }
+
+		// start_animation "Take 001"
+	// }
 }
 
 window "Window"
