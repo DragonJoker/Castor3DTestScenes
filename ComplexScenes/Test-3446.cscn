@@ -1,0 +1,108 @@
+// Global configuration
+materials blinn_phong
+
+scene "SanMiguel"
+{
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.00000 0.00000 0.00000
+	lpv_indirect_attenuation 1.70000
+	include "Helpers/SanMiguel-Materials-BlinnPhong.cscn"
+	include "Helpers/SanMiguel-Meshes.cscn"
+	include "Helpers/SanMiguel-Nodes.cscn"
+	include "Helpers/SanMiguel-Objects.cscn"
+	include "Helpers/SanMiguel-Lights.cscn"
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/pineTreeSkybox.hdr" 1024
+	}
+
+	//Voxel Cone Tracing
+
+	voxel_cone_tracing
+	{
+		enabled true
+		grid_size 256
+		conservative_rasterization true
+		temporal_smoothing false
+		occlusion false
+		secondary_bounce true
+		num_cones 16
+		max_distance 5.0000
+		ray_step_size 0.1250000
+		voxel_size 2.00000
+	}
+
+	// Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 310
+		position 23.6159 1.65023 -1.66404
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			aspect_ratio 1.778
+			near 0.1
+			far 1000
+			fov_y 45
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+}
+
+window "SanMiguel"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format argb32
+		scene "SanMiguel"
+		camera "MainCamera"
+		tone_mapping "linear"
+
+		smaa
+		{
+			mode 1X
+			edgeDetection colour
+			preset ultra
+			reprojection true
+		}
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			use_normals_buffer true
+			blur_high_quality true
+			intensity 1.00000
+			radius 0.750000
+			bias 0.0230000
+			num_samples 19
+			edge_sharpness 1.00000
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
+		}
+	}
+}

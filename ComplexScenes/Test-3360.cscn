@@ -7,11 +7,11 @@ scene "SanMiguel"
 	ambient_light 1.00000 1.00000 1.00000
 	background_colour 0.00000 0.00000 0.00000
 	lpv_indirect_attenuation 1.70000
-	include "Helpers/PBRSG_sanMiguel-Materials.cscn"
-	include "Helpers/PBRSG_sanMiguel-Meshes.cscn"
-	include "Helpers/PBRSG_sanMiguel-Nodes.cscn"
-	include "Helpers/PBRSG_sanMiguel-Objects.cscn"
-	include "Helpers/PBRSG_sanMiguel-Lights.cscn"
+	include "Helpers/SanMiguel-Materials-SpecularGlossiness.cscn"
+	include "Helpers/SanMiguel-Meshes.cscn"
+	include "Helpers/SanMiguel-Nodes.cscn"
+	include "Helpers/SanMiguel-Objects.cscn"
+	include "Helpers/SanMiguel-Lights.cscn"
 
 	//Skybox
 
