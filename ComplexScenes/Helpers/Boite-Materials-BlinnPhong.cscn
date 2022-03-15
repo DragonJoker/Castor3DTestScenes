@@ -1,0 +1,1233 @@
+// Samplers
+
+sampler "TriLinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod -1000.00
+	max_lod 1000.00
+	lod_bias 0.00000
+	border_colour float_opaque_black
+	max_anisotropy 1.00000
+}
+
+// Materials
+
+material "baffles_boite/baffles"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.0900000 0.0900000 0.0900000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/baffles.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "barriere_verre/metal"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.486000 0.486000 0.486000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/barriere_metal.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "barriere_verre/verre"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.324000 0.324000 0.324000
+		ambient 1.00000
+		shininess 64.0000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 4
+			image "Textures/BlinnPhong-Boite/barriere_verre.dds"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/bois"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.126000 0.126000 0.126000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/bar_bois.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/bois_noir"
+{
+
+	pass
+	{
+		diffuse 0.0470588 0.0470588 0.0470588
+		specular 0.333000 0.333000 0.333000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/bar_bois_noir.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/bouteilles"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/bar_bouteille_01.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/bouteilles02"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/bar_bouteille_02.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/bouteilles03"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/bar_bouteille_03.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/bouteilles04"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/bar_bouteille_04.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/distrib_biere"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			image "Textures/BlinnPhong-Boite/distrib_biere.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/grille_biere"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/grille_biere.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/lumiere"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/bar_lumiere.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/metal"
+{
+
+	pass
+	{
+		diffuse 0.525490 0.525490 0.525490
+		specular 0.585000 0.585000 0.585000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/bar_metal.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/porte_bar"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/bar_porte.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "bars_boite/verre"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.270000 0.270000 0.270000
+		ambient 1.00000
+		shininess 64.0000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 4
+			image "Textures/BlinnPhong-Boite/bar_verre.dds"
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "boite/murs"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/mur_boite.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "boite/noir"
+{
+
+	pass
+	{
+		diffuse 0.00000 0.00000 0.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+	}
+}
+
+material "boite/parquet 1"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/parquet_boite.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "boite/parquet 2"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/parquet_boite.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "boite/plafond"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.117000 0.117000 0.117000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/plafond_boite.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "boite/porte"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			image "Textures/BlinnPhong-Boite/porte_boite.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "boite/sol 1"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			image "Textures/BlinnPhong-Boite/beton_boite.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "boite/sol 2"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			image "Textures/BlinnPhong-Boite/beton_boite.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "boite/sol 3"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			image "Textures/BlinnPhong-Boite/beton_boite.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "canape_triple/canape_triple"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			image "Textures/BlinnPhong-Boite/canape_bar.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "dj_boite/bloc"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.117000 0.117000 0.117000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/dj_beton.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "dj_boite/metal"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.540000 0.540000 0.540000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/dj_metal.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "dj_boite/piste"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/dj_piste.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "dj_boite/table"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.588235 0.588235 0.588235
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/dj_table.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "dj_boite/vinyle"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			image "Textures/BlinnPhong-Boite/dj_vinyle.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "escaliers_boite/metal"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.486000 0.486000 0.486000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/barriere_metal.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "escaliers_boite/verre"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.600000 0.600000 0.600000
+		ambient 1.00000
+		shininess 64.0000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 4
+			image "Textures/BlinnPhong-Boite/bar_verre.dds"
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "fauteuil/gros_fauteuil_bar"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			image "Textures/BlinnPhong-Boite/canape_bar.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "panneau_mural/panneau_pub"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/panneau_pub_metal.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "panneau_mural/pub"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/panneau_pub_pub_01.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "plante_05/plante_05"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/plante_05.dds"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "plante_05/plante_pot"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/plante_pot.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "plasma/ecran"
+{
+
+	pass
+	{
+		diffuse 0.0392157 0.0392157 0.0392157
+		specular 0.135000 0.135000 0.135000
+		ambient 1.00000
+		shininess 64.0000
+	}
+}
+
+material "plasma/plasma"
+{
+
+	pass
+	{
+		diffuse 0.117647 0.117647 0.117647
+		specular 0.0540000 0.0540000 0.0540000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/plasma.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "pouf/pouf"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 8
+			image "Textures/BlinnPhong-Boite/pouf.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "spot_couleur/light bleu"
+{
+
+	pass
+	{
+		diffuse 0.00000 0.00000 1.00000
+		specular 0.00000 0.00000 1.00000
+		ambient 1.00000
+		shininess 64.0000
+		emissive 5.00000
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/spot_light.dds"
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "spot_couleur/light jaune"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 0.00000
+		specular 1.00000 1.00000 0.00000
+		ambient 1.00000
+		shininess 64.0000
+		emissive 5.00000
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/spot_light.dds"
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "spot_couleur/light rouge"
+{
+
+	pass
+	{
+		diffuse 1.00000 0.00000 0.00000
+		specular 1.00000 0.00000 0.00000
+		ambient 1.00000
+		shininess 64.0000
+		emissive 5.00000
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/spot_light.dds"
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "spot_couleur/light vert"
+{
+
+	pass
+	{
+		diffuse 0.00000 1.00000 0.00000
+		specular 0.00000 1.00000 0.00000
+		ambient 1.00000
+		shininess 64.0000
+		emissive 5.00000
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/spot_light.dds"
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "spot_couleur/lumiere"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		emissive 5.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			image "Textures/BlinnPhong-Boite/spot_couleur_lumiere.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "spot_couleur/metal"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.630000 0.630000 0.630000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/spot_couleur_metal.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "spot_simple/light"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 64.0000
+		emissive 5.00000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/spot_light.dds"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "spot_simple/lumiere"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.588000 0.588000 0.588000
+		ambient 1.00000
+		shininess 64.0000
+		emissive 5.00000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 6
+			image "Textures/BlinnPhong-Boite/spot_simple_lumiere.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "spot_simple/metal"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.369000 0.369000 0.369000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 5
+			image "Textures/BlinnPhong-Boite/spot_simple_metal.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "table_basse/table_basse_cuivre"
+{
+
+	pass
+	{
+		diffuse 0.666667 0.501961 0.00392157
+		specular 0.459000 0.459000 0.459000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+	}
+}
+
+material "table_basse/table_basse_laque"
+{
+
+	pass
+	{
+		diffuse 0.00000 0.00000 0.00000
+		specular 0.315000 0.315000 0.315000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+	}
+}
+
+material "table_haute/cuivre"
+{
+
+	pass
+	{
+		diffuse 0.666667 0.501961 0.00392157
+		specular 0.459000 0.459000 0.459000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+	}
+}
+
+material "table_haute/laque"
+{
+
+	pass
+	{
+		diffuse 0.00000 0.00000 0.00000
+		specular 0.315000 0.315000 0.315000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+	}
+}
+
+material "table_verre/table_bar_fer_forge"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.360000 0.360000 0.360000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/table_bar_fer_forge.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "table_verre/table_bar_verre"
+{
+
+	pass
+	{
+		diffuse 0.00000 0.00000 0.00000
+		specular 0.270000 0.270000 0.270000
+		ambient 1.00000
+		shininess 64.0000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/table_bar_verre.dds"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "tabouret_boite/cuir"
+{
+
+	pass
+	{
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/tabouret_cuir.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "tabouret_boite/metal"
+{
+
+	pass
+	{
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.342000 0.342000 0.342000
+		ambient 1.00000
+		shininess 64.0000
+		two_sided true
+
+		texture_unit
+		{
+			sampler "TriLinear"
+			levels_count 7
+			image "Textures/BlinnPhong-Boite/tabouret_metal.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
