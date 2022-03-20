@@ -17,7 +17,7 @@ scene "SanMiguel"
 
 	skybox
 	{
-		equirectangular "Textures/pineTreeSkybox.hdr" 1024
+		equirectangular "Textures/pineTreeSkybox.hdr" 512
 	}
 
 	//Voxel Cone Tracing
@@ -54,7 +54,7 @@ scene "SanMiguel"
 		{
 			type perspective
 			near 0.100000
-			far 1000.00
+			far 100.00
 			aspect_ratio 1.77800
 			fov_y 45.0000
 		}
@@ -76,7 +76,7 @@ window "SanMiguel"
 
 	render_target
 	{
-		size 1920 1080
+		size 1280 720
 		format rgba32
 		scene "SanMiguel"
 		camera "MainCamera"

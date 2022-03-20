@@ -42,34 +42,27 @@ scene "Scene"
 
 			texture_unit
 			{
-				channel normal
 				sampler "Trilinear"
 				levels_count 6
-				image "Textures/LeePerrySmithHead/face-normal.png" rgb
+				image "Textures/LeePerrySmithHead/face-normal.png"
+				normal_mask 0x00FFFFFF
 			}
 
 			texture_unit
 			{
 				sampler "Trilinear"
-				channel albedo
 				levels_count 6
-				image "Textures/LeePerrySmithHead/face-albedo.png" rgb
+				image "Textures/LeePerrySmithHead/face-albedo.png"
+				albedo_mask 0x00FFFFFF
+				transmittance_mask 0xFF000000
 			}
 
 			texture_unit
 			{
 				sampler "Trilinear"
-				channel height
 				levels_count 6
-				image "Textures/LeePerrySmithHead/face-height.jpg" rgb
-			}
-
-			texture_unit
-			{
-				sampler "Trilinear"
-				channel transmittance
-				levels_count 6
-				image "Textures/LeePerrySmithHead/face-albedo.png" a
+				image "Textures/LeePerrySmithHead/face-height.jpg"
+				height_mask 0x00FF0000
 			}
 
 			subsurface_scattering
@@ -107,9 +100,14 @@ scene "Scene"
 		import "Meshes/LeePerrySmithHead.cmsh"
 	}
 
-	mesh "LightMesh"
+	mesh "SpotLightMesh"
 	{
 		type "cube" -width=0.1 -height=0.1 -depth=0.4
+	}
+
+	mesh "PointLightMesh"
+	{
+		type "sphere" -subdiv=40 -radius=0.05
 	}
 
 	// Cameras nodes
@@ -145,36 +143,97 @@ scene "Scene"
 		scale 10 10 10
 	}
 
-	scene_node "LightNode"
-	{
-		orientation -0.0903325 -0.995532 0.0274958 325.998
-		position 0 0 0
-	}
-
-	scene_node "SpotLightNode"
+	scene_node "LightNodeA"
 	{
 		orientation 0 1 0 19.0076
+		//orientation 0 1 0 31.3147
 		position -1.16929 2.86268 -2.35752
 	}
 
-	// Lights
-
-	light "SpotLight"
+	light "LightA"
 	{
-		parent "SpotLightNode"
+		parent "LightNodeA"
 		type spot
 		colour 1 1 1
 		intensity 0.8 1.0
 		attenuation 1 0.1 0
 		exponent 1.000000
 		cut_off 20.000000
-		// shadows
-		// {
-			// producer true
-			// filter variance
-		// }
+		shadows
+		{
+			producer false
+			filter variance
+			raw_config
+			{
+				min_offset 0.000000001
+				max_slope_offset 0.000001
+			}
+			pcf_config
+			{
+				min_offset 0.000000001
+				max_slope_offset 0.000001
+			}
+			vsm_config
+			{
+				variance_max 0.000000000001
+				variance_bias 0.15
+			}
+		}
 	}
 
+	object "LightObjectA"
+	{
+		parent "LightNodeA"
+		cast_shadows false
+		mesh "SpotLightMesh"
+		material "WhiteEmit"
+	}
+/*
+	scene_node "LightNodeB"
+	{
+		orientation 0 1 0 180
+		position -1.12927 2.99098 3.22912
+	}
+
+	light "LightB"
+	{
+		type spot
+		parent "LightNodeB"
+		colour 1 1 1
+		intensity 8.0 10.0
+		attenuation 1.0 0.1 0.0
+		exponent 1.000000
+		cut_off 20.000000
+		shadows
+		{
+			producer true
+			filter variance
+			raw_config
+			{
+				min_offset 0.000000001
+				max_slope_offset 0.000001
+			}
+			pcf_config
+			{
+				min_offset 0.000000001
+				max_slope_offset 0.000001
+			}
+			vsm_config
+			{
+				variance_max 0.000000000001
+				variance_bias 0.15
+			}
+		}
+	}
+
+	object "LightObjectB"
+	{
+		parent "LightNodeB"
+		cast_shadows false
+		mesh "SpotLightMesh"
+		material "WhiteEmit"
+	}
+*/
 	// Geometries
 
 	object "FinalPrimitive"
@@ -182,14 +241,6 @@ scene "Scene"
 		parent "FinalNode"
 		mesh "LeePerrySmithHead"
 		material "Skin"
-	}
-
-	object "SpotLight"
-	{
-		parent "SpotLightNode"
-		cast_shadows false
-		mesh "LightMesh"
-		material "WhiteEmit"
 	}
 }
 

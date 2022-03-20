@@ -45,7 +45,7 @@ scene "BaltardIn"
 	scene_node "MainCameraNode"
 	{
 		orientation 1 0 0 0
-		position 74.5687 341.209 -1135
+		position 7.45687 34.1209 -113.5
 		scale 1 1 1
 	}
 
@@ -58,9 +58,9 @@ scene "BaltardIn"
 		viewport
 		{
 			type perspective
-			near 5
+			near 0.5
 			aspect_ratio 1.778
-			far 12000
+			far 1200.0
 			fov_y 45
 		}
 	}
@@ -86,7 +86,7 @@ window "Window"
 			enabled true
 			high_quality true
 			intensity 1
-			radius 50
+			radius 5
 			bias 0.023
 			num_samples 19
 			edge_sharpness 1

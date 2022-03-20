@@ -11,8 +11,8 @@ light "SunLight"
 {
 	parent "LightNode"
 	type directional
-	colour 5.00000 5.00000 5.00000
-	intensity 4.00000 5.00000
+	colour 1.00000 1.00000 1.00000
+	intensity 8.00000 10.00000
 	shadow_producer true
 
 	shadows

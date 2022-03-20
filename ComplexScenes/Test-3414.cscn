@@ -17,7 +17,7 @@ scene "Scene"
 
 	skybox
 	{
-		equirectangular "Textures/pineTreeSkybox.hdr" 1024
+		equirectangular "Textures/pineTreeSkybox.hdr" 512
 	}
 
 	//Voxel Cone Tracing

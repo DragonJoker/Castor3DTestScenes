@@ -20,23 +20,23 @@ light "SunLight"
 		filter pcf
 		global_illumination lpv_geometry
 		volumetric_steps 20
-		volumetric_scattering 0.9
+		volumetric_scattering 0.01
 
 		raw_config
 		{
-			min_offset 1.00000e-05
-			max_slope_offset 0.000100000
+			min_offset 0.0
+			max_slope_offset 0.01
 		}
 
 		pcf_config
 		{
-			min_offset 1.00000e-05
-			max_slope_offset 0.000100000
+			min_offset 0.0
+			max_slope_offset 0.00001
 		}
 
 		vsm_config
 		{
-			variance_max 5.00000e-07
+			variance_max 1.00000e-07
 			variance_bias 0.200000
 		}
 

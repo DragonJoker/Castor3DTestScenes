@@ -32,7 +32,7 @@ material "baffles_boite/baffles"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/baffles.dds"
+			image "Textures/BoiteLegacy/baffles.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -54,7 +54,7 @@ material "barriere_verre/metal"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/barriere_metal.dds"
+			image "Textures/BoiteLegacy/barriere_metal.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -76,7 +76,7 @@ material "barriere_verre/verre"
 		{
 			sampler "TriLinear"
 			levels_count 4
-			image "Textures/BlinnPhong-Boite/barriere_verre.dds"
+			image "Textures/BoiteLegacy/barriere_verre.dds"
 			diffuse_mask 0x00ffffff
 			opacity_mask 0xff000000
 			invert_y true
@@ -99,7 +99,7 @@ material "bars_boite/bois"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/bar_bois.dds"
+			image "Textures/BoiteLegacy/bar_bois.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -121,7 +121,7 @@ material "bars_boite/bois_noir"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/bar_bois_noir.dds"
+			image "Textures/BoiteLegacy/bar_bois_noir.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -143,7 +143,7 @@ material "bars_boite/bouteilles"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/bar_bouteille_01.dds"
+			image "Textures/BoiteLegacy/bar_bouteille_01.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -165,7 +165,7 @@ material "bars_boite/bouteilles02"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/bar_bouteille_02.dds"
+			image "Textures/BoiteLegacy/bar_bouteille_02.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -187,7 +187,7 @@ material "bars_boite/bouteilles03"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/bar_bouteille_03.dds"
+			image "Textures/BoiteLegacy/bar_bouteille_03.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -209,7 +209,7 @@ material "bars_boite/bouteilles04"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/bar_bouteille_04.dds"
+			image "Textures/BoiteLegacy/bar_bouteille_04.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -231,7 +231,7 @@ material "bars_boite/distrib_biere"
 		{
 			sampler "TriLinear"
 			levels_count 6
-			image "Textures/BlinnPhong-Boite/distrib_biere.dds"
+			image "Textures/BoiteLegacy/distrib_biere.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -253,7 +253,7 @@ material "bars_boite/grille_biere"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/grille_biere.dds"
+			image "Textures/BoiteLegacy/grille_biere.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -275,7 +275,7 @@ material "bars_boite/lumiere"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/bar_lumiere.dds"
+			image "Textures/BoiteLegacy/bar_lumiere.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -297,7 +297,7 @@ material "bars_boite/metal"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/bar_metal.dds"
+			image "Textures/BoiteLegacy/bar_metal.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -319,7 +319,7 @@ material "bars_boite/porte_bar"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/bar_porte.dds"
+			image "Textures/BoiteLegacy/bar_porte.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -341,7 +341,7 @@ material "bars_boite/verre"
 		{
 			sampler "TriLinear"
 			levels_count 4
-			image "Textures/BlinnPhong-Boite/bar_verre.dds"
+			image "Textures/BoiteLegacy/bar_verre.dds"
 			opacity_mask 0xff000000
 			invert_y true
 		}
@@ -363,7 +363,7 @@ material "boite/murs"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/mur_boite.dds"
+			image "Textures/BoiteLegacy/mur_boite.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -398,7 +398,7 @@ material "boite/parquet 1"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/parquet_boite.dds"
+			image "Textures/BoiteLegacy/parquet_boite.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -420,7 +420,7 @@ material "boite/parquet 2"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/parquet_boite.dds"
+			image "Textures/BoiteLegacy/parquet_boite.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -442,7 +442,7 @@ material "boite/plafond"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/plafond_boite.dds"
+			image "Textures/BoiteLegacy/plafond_boite.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -464,7 +464,7 @@ material "boite/porte"
 		{
 			sampler "TriLinear"
 			levels_count 6
-			image "Textures/BlinnPhong-Boite/porte_boite.dds"
+			image "Textures/BoiteLegacy/porte_boite.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -486,7 +486,7 @@ material "boite/sol 1"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			image "Textures/BlinnPhong-Boite/beton_boite.dds"
+			image "Textures/BoiteLegacy/beton_boite.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -508,7 +508,7 @@ material "boite/sol 2"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			image "Textures/BlinnPhong-Boite/beton_boite.dds"
+			image "Textures/BoiteLegacy/beton_boite.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -530,7 +530,7 @@ material "boite/sol 3"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			image "Textures/BlinnPhong-Boite/beton_boite.dds"
+			image "Textures/BoiteLegacy/beton_boite.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -552,7 +552,7 @@ material "canape_triple/canape_triple"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			image "Textures/BlinnPhong-Boite/canape_bar.dds"
+			image "Textures/BoiteLegacy/canape_bar.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -574,7 +574,7 @@ material "dj_boite/bloc"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/dj_beton.dds"
+			image "Textures/BoiteLegacy/dj_beton.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -596,7 +596,7 @@ material "dj_boite/metal"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/dj_metal.dds"
+			image "Textures/BoiteLegacy/dj_metal.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -618,7 +618,7 @@ material "dj_boite/piste"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/dj_piste.dds"
+			image "Textures/BoiteLegacy/dj_piste.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -640,7 +640,7 @@ material "dj_boite/table"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/dj_table.dds"
+			image "Textures/BoiteLegacy/dj_table.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -662,7 +662,7 @@ material "dj_boite/vinyle"
 		{
 			sampler "TriLinear"
 			levels_count 6
-			image "Textures/BlinnPhong-Boite/dj_vinyle.dds"
+			image "Textures/BoiteLegacy/dj_vinyle.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -684,7 +684,7 @@ material "escaliers_boite/metal"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/barriere_metal.dds"
+			image "Textures/BoiteLegacy/barriere_metal.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -706,7 +706,7 @@ material "escaliers_boite/verre"
 		{
 			sampler "TriLinear"
 			levels_count 4
-			image "Textures/BlinnPhong-Boite/bar_verre.dds"
+			image "Textures/BoiteLegacy/bar_verre.dds"
 			opacity_mask 0xff000000
 			invert_y true
 		}
@@ -728,7 +728,7 @@ material "fauteuil/gros_fauteuil_bar"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			image "Textures/BlinnPhong-Boite/canape_bar.dds"
+			image "Textures/BoiteLegacy/canape_bar.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -750,7 +750,7 @@ material "panneau_mural/panneau_pub"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/panneau_pub_metal.dds"
+			image "Textures/BoiteLegacy/panneau_pub_metal.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -772,7 +772,7 @@ material "panneau_mural/pub"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/panneau_pub_pub_01.dds"
+			image "Textures/BoiteLegacy/panneau_pub_pub_01.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -795,7 +795,7 @@ material "plante_05/plante_05"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/plante_05.dds"
+			image "Textures/BoiteLegacy/plante_05.dds"
 			diffuse_mask 0x00ffffff
 			opacity_mask 0xff000000
 			invert_y true
@@ -818,7 +818,7 @@ material "plante_05/plante_pot"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/plante_pot.dds"
+			image "Textures/BoiteLegacy/plante_pot.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -852,7 +852,7 @@ material "plasma/plasma"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/plasma.dds"
+			image "Textures/BoiteLegacy/plasma.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -874,7 +874,7 @@ material "pouf/pouf"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			image "Textures/BlinnPhong-Boite/pouf.dds"
+			image "Textures/BoiteLegacy/pouf.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -898,7 +898,7 @@ material "spot_couleur/light bleu"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/spot_light.dds"
+			image "Textures/BoiteLegacy/spot_light.dds"
 			opacity_mask 0xff000000
 			invert_y true
 		}
@@ -922,7 +922,7 @@ material "spot_couleur/light jaune"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/spot_light.dds"
+			image "Textures/BoiteLegacy/spot_light.dds"
 			opacity_mask 0xff000000
 			invert_y true
 		}
@@ -946,7 +946,7 @@ material "spot_couleur/light rouge"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/spot_light.dds"
+			image "Textures/BoiteLegacy/spot_light.dds"
 			opacity_mask 0xff000000
 			invert_y true
 		}
@@ -970,7 +970,7 @@ material "spot_couleur/light vert"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/spot_light.dds"
+			image "Textures/BoiteLegacy/spot_light.dds"
 			opacity_mask 0xff000000
 			invert_y true
 		}
@@ -993,7 +993,7 @@ material "spot_couleur/lumiere"
 		{
 			sampler "TriLinear"
 			levels_count 6
-			image "Textures/BlinnPhong-Boite/spot_couleur_lumiere.dds"
+			image "Textures/BoiteLegacy/spot_couleur_lumiere.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -1015,7 +1015,7 @@ material "spot_couleur/metal"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/spot_couleur_metal.dds"
+			image "Textures/BoiteLegacy/spot_couleur_metal.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -1038,7 +1038,7 @@ material "spot_simple/light"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/spot_light.dds"
+			image "Textures/BoiteLegacy/spot_light.dds"
 			diffuse_mask 0x00ffffff
 			opacity_mask 0xff000000
 			invert_y true
@@ -1062,7 +1062,7 @@ material "spot_simple/lumiere"
 		{
 			sampler "TriLinear"
 			levels_count 6
-			image "Textures/BlinnPhong-Boite/spot_simple_lumiere.dds"
+			image "Textures/BoiteLegacy/spot_simple_lumiere.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -1084,7 +1084,7 @@ material "spot_simple/metal"
 		{
 			sampler "TriLinear"
 			levels_count 5
-			image "Textures/BlinnPhong-Boite/spot_simple_metal.dds"
+			image "Textures/BoiteLegacy/spot_simple_metal.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -1158,7 +1158,7 @@ material "table_verre/table_bar_fer_forge"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/table_bar_fer_forge.dds"
+			image "Textures/BoiteLegacy/table_bar_fer_forge.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -1180,7 +1180,7 @@ material "table_verre/table_bar_verre"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/table_bar_verre.dds"
+			image "Textures/BoiteLegacy/table_bar_verre.dds"
 			diffuse_mask 0x00ffffff
 			opacity_mask 0xff000000
 			invert_y true
@@ -1203,7 +1203,7 @@ material "tabouret_boite/cuir"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/tabouret_cuir.dds"
+			image "Textures/BoiteLegacy/tabouret_cuir.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}
@@ -1225,7 +1225,7 @@ material "tabouret_boite/metal"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			image "Textures/BlinnPhong-Boite/tabouret_metal.dds"
+			image "Textures/BoiteLegacy/tabouret_metal.dds"
 			diffuse_mask 0x00ffffff
 			invert_y true
 		}

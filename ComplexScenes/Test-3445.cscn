@@ -1,5 +1,6 @@
 // Global configuration
 materials blinn_phong
+max_image_size 512
 
 scene "SanMiguel"
 {
@@ -17,7 +18,7 @@ scene "SanMiguel"
 
 	skybox
 	{
-		equirectangular "Textures/pineTreeSkybox.hdr" 1024
+		equirectangular "Textures/pineTreeSkybox.hdr" 512
 	}
 
 	// Cameras nodes
@@ -39,7 +40,7 @@ scene "SanMiguel"
 			type perspective
 			aspect_ratio 1.778
 			near 0.1
-			far 1000
+			far 100
 			fov_y 45
 		}
 
@@ -58,7 +59,7 @@ window "SanMiguel"
 
 	render_target
 	{
-		size 1920 1080
+		size 1280 720
 		format argb32
 		scene "SanMiguel"
 		camera "MainCamera"

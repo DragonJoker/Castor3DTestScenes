@@ -2,7 +2,7 @@
 
 mesh "boite"
 {
-	import "Meshes/BlinnPhong-Boite/boite.cmsh"
+	import "Meshes/Boite/boite.cmsh"
 
 	default_materials
 	{
@@ -20,7 +20,7 @@ mesh "boite"
 
 mesh "table_basse"
 {
-	import "Meshes/BlinnPhong-Boite/table_basse.cmsh"
+	import "Meshes/Boite/table_basse.cmsh"
 
 	default_materials
 	{
@@ -31,13 +31,13 @@ mesh "table_basse"
 
 mesh "baffles_boite"
 {
-	import "Meshes/BlinnPhong-Boite/baffles_boite.cmsh"
+	import "Meshes/Boite/baffles_boite.cmsh"
 	default_material "C3D_DefaultMaterial"
 }
 
 mesh "barriere_verre"
 {
-	import "Meshes/BlinnPhong-Boite/barriere_verre.cmsh"
+	import "Meshes/Boite/barriere_verre.cmsh"
 
 	default_materials
 	{
@@ -48,7 +48,7 @@ mesh "barriere_verre"
 
 mesh "dj_boite"
 {
-	import "Meshes/BlinnPhong-Boite/dj_boite.cmsh"
+	import "Meshes/Boite/dj_boite.cmsh"
 
 	default_materials
 	{
@@ -63,7 +63,7 @@ mesh "dj_boite"
 
 mesh "bars_boite"
 {
-	import "Meshes/BlinnPhong-Boite/bars_boite.cmsh"
+	import "Meshes/Boite/bars_boite.cmsh"
 
 	default_materials
 	{
@@ -84,7 +84,7 @@ mesh "bars_boite"
 
 mesh "escaliers_boite"
 {
-	import "Meshes/BlinnPhong-Boite/escaliers_boite.cmsh"
+	import "Meshes/Boite/escaliers_boite.cmsh"
 
 	default_materials
 	{
@@ -95,19 +95,19 @@ mesh "escaliers_boite"
 
 mesh "canape_triple"
 {
-	import "Meshes/BlinnPhong-Boite/canape_triple.cmsh"
+	import "Meshes/Boite/canape_triple.cmsh"
 	default_material "C3D_DefaultMaterial"
 }
 
 mesh "fauteuil"
 {
-	import "Meshes/BlinnPhong-Boite/fauteuil.cmsh"
+	import "Meshes/Boite/fauteuil.cmsh"
 	default_material "C3D_DefaultMaterial"
 }
 
 mesh "panneau_mural"
 {
-	import "Meshes/BlinnPhong-Boite/panneau_mural.cmsh"
+	import "Meshes/Boite/panneau_mural.cmsh"
 
 	default_materials
 	{
@@ -118,7 +118,7 @@ mesh "panneau_mural"
 
 mesh "plante_05"
 {
-	import "Meshes/BlinnPhong-Boite/plante_05.cmsh"
+	import "Meshes/Boite/plante_05.cmsh"
 
 	default_materials
 	{
@@ -129,7 +129,7 @@ mesh "plante_05"
 
 mesh "plasma"
 {
-	import "Meshes/BlinnPhong-Boite/plasma.cmsh"
+	import "Meshes/Boite/plasma.cmsh"
 
 	default_materials
 	{
@@ -140,13 +140,13 @@ mesh "plasma"
 
 mesh "pouf"
 {
-	import "Meshes/BlinnPhong-Boite/pouf.cmsh"
+	import "Meshes/Boite/pouf.cmsh"
 	default_material "C3D_DefaultMaterial"
 }
 
 mesh "spot_couleur"
 {
-	import "Meshes/BlinnPhong-Boite/spot_couleur.cmsh"
+	import "Meshes/Boite/spot_couleur.cmsh"
 
 	default_materials
 	{
@@ -161,7 +161,7 @@ mesh "spot_couleur"
 
 mesh "spot_simple"
 {
-	import "Meshes/BlinnPhong-Boite/spot_simple.cmsh"
+	import "Meshes/Boite/spot_simple.cmsh"
 
 	default_materials
 	{
@@ -173,7 +173,7 @@ mesh "spot_simple"
 
 mesh "table_haute"
 {
-	import "Meshes/BlinnPhong-Boite/table_haute.cmsh"
+	import "Meshes/Boite/table_haute.cmsh"
 
 	default_materials
 	{
@@ -184,7 +184,7 @@ mesh "table_haute"
 
 mesh "table_verre"
 {
-	import "Meshes/BlinnPhong-Boite/table_verre.cmsh"
+	import "Meshes/Boite/table_verre.cmsh"
 
 	default_materials
 	{
@@ -195,7 +195,7 @@ mesh "table_verre"
 
 mesh "tabouret_boite"
 {
-	import "Meshes/BlinnPhong-Boite/tabouret_boite.cmsh"
+	import "Meshes/Boite/tabouret_boite.cmsh"
 
 	default_materials
 	{

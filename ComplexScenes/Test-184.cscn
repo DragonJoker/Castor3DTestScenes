@@ -1,5 +1,6 @@
 // Global configuration
 materials specular_glossiness
+max_image_size 512
 
 scene "SanMiguel"
 {
@@ -17,23 +18,7 @@ scene "SanMiguel"
 
 	skybox
 	{
-		equirectangular "Textures/pineTreeSkybox.hdr" 1024
-	}
-
-	//Voxel Cone Tracing
-
-	voxel_cone_tracing
-	{
-		enabled false
-		grid_size 256
-		conservative_rasterization true
-		temporal_smoothing false
-		occlusion false
-		secondary_bounce true
-		num_cones 16
-		max_distance 20.0000
-		ray_step_size 0.250000
-		voxel_size 1.00000
+		equirectangular "Textures/pineTreeSkybox.hdr" 512
 	}
 
 	// Cameras nodes
@@ -56,7 +41,7 @@ scene "SanMiguel"
 		{
 			type perspective
 			near 0.100000
-			far 1000.00
+			far 100.000
 			aspect_ratio 1.77800
 			fov_y 45.0000
 		}
@@ -78,7 +63,7 @@ window "SanMiguel"
 
 	render_target
 	{
-		size 1920 1080
+		size 1280 720
 		format argb32
 		scene "SanMiguel"
 		camera "MainCamera"

@@ -2,13 +2,13 @@
 
 object "baltard_in_ns"
 {
-	parent "CameraRootNode"
+	parent "main"
 	mesh "baltard_in_ns"
 }
 
 object "pavillon_baltard_in"
 {
-	parent "CameraRootNode"
+	parent "main"
 	mesh "pavillon_baltard_in"
 }
 

@@ -9,7 +9,7 @@ scene "Scene"
 
 	skybox
 	{
-		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 4096
+		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
 	}
 
 	scene_node "LightNode"
@@ -448,7 +448,7 @@ scene "Scene"
 	}
 
 	/**
-	*	INSTANCING OPAQUE
+	*	INSTANCING
 	*/
 
 	mesh "InstOpqMesh"

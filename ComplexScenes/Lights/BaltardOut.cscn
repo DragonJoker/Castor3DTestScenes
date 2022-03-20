@@ -10,7 +10,7 @@ light "light_01"
 	{
 		producer true
 		filter pcf
-		global_illumination lpv_geometry
+		global_illumination lpv
 		rsm_config
 		{
 			intensity 1
@@ -23,13 +23,13 @@ light "light_01"
 		}
 		raw_config
 		{
-			min_offset 0.000001
-			max_slope_offset 0.0000001
+			min_offset 0.0
+			max_slope_offset 0.0001
 		}
 		pcf_config
 		{
-			min_offset 0.000001
-			max_slope_offset 0.0000001
+			min_offset 0.0
+			max_slope_offset 0.0001
 		}
 		vsm_config
 		{

@@ -77,16 +77,16 @@ scene "Scene"
 	{
 	}
 
+	mesh "LightMesh"
+	{
+		type "sphere" -subdiv=20 -radius=1
+	}
+
 	object "PointLight1"
 	{
 		parent "PointLightNode1"
 		cast_shadows false
-
 		mesh "LightMesh"
-		{
-			type "sphere" -subdiv=20 -radius=1
-		}
-
 		material "WhiteEmit"
 	}
 

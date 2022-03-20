@@ -8,7 +8,8 @@ material "DefaultMaterial"
 		albedo 0.600000 0.600000 0.600000 0.00392157
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 	}
@@ -21,7 +22,8 @@ material "barriere_bar/barriere_bar"
 	{
 		metallic 1.0
 		roughness 0.2
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -46,7 +48,8 @@ material "billard/bleu"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -65,7 +68,8 @@ material "billard/bois"
 	{
 		metallic 0.000000
 		roughness 0.3
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -84,7 +88,8 @@ material "billard/dorure"
 	{
 		metallic 1.0
 		roughness 0.1
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -110,7 +115,8 @@ material "billard/light"
 		albedo 0 0 0
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		alpha_func greater 0.5
 		alpha 0.0
@@ -125,7 +131,8 @@ material "billard/noir"
 		albedo 1.00000 1.00000 1.00000 0.00392157
 		metallic 0.000000
 		roughness 0.3
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 	}
@@ -139,7 +146,8 @@ material "billard/queue"
 		albedo 0.588000 0.588000 0.588000 0.00392157
 		metallic 0.000000
 		roughness 0.3
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -157,7 +165,8 @@ material "billard/tapis"
 	pass
 	{
 		metallic 0.000000
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -194,7 +203,8 @@ material "cafe/cafe_aqua_coffre"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -220,7 +230,8 @@ material "cafe/cafe_aqua_coquillage_01"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -246,7 +257,8 @@ material "cafe/cafe_aqua_coquillage_02"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -272,7 +284,8 @@ material "cafe/cafe_aqua_fond"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -298,7 +311,8 @@ material "cafe/cafe_aqua_pierre_01"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -324,7 +338,8 @@ material "cafe/cafe_aqua_pierre_02"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -350,7 +365,8 @@ material "cafe/cafe_aqua_pierre_03"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -376,7 +392,8 @@ material "cafe/cafe_aqua_plafond"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -402,7 +419,8 @@ material "cafe/cafe_aqua_plante_01"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -435,7 +453,8 @@ material "cafe/cafe_aqua_plante_02"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -468,7 +487,8 @@ material "cafe/cafe_aqua_plante_03"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -501,7 +521,8 @@ material "cafe/cafe_aqua_sol_01"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -527,7 +548,8 @@ material "cafe/cafe_aqua_sol_02"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -553,7 +575,8 @@ material "cafe/cafe_aqua_tube"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.5
@@ -579,7 +602,8 @@ material "cafe/cafe_bar_alu"
 	{
 		metallic 1.0
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -604,7 +628,8 @@ material "cafe/cafe_bar_gris"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -623,7 +648,8 @@ material "cafe/cafe_bar_light"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -640,9 +666,10 @@ material "cafe/cafe_bar_marbre"
 
 	pass
 	{
-		metallic 0.2196
+		metallic 0.000000
 		roughness 0.0785
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -661,7 +688,8 @@ material "cafe/cafe_bois"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -678,9 +706,10 @@ material "cafe/cafe_bouteilles_01"
 
 	pass
 	{
-		metallic 0.352941
+		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -697,9 +726,10 @@ material "cafe/cafe_bouteilles_02"
 
 	pass
 	{
-		metallic 0.352941
+		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -716,9 +746,10 @@ material "cafe/cafe_bouteilles_03"
 
 	pass
 	{
-		metallic 0.352941
+		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -735,9 +766,10 @@ material "cafe/cafe_bouteilles_04"
 
 	pass
 	{
-		metallic 0.352941
+		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -754,8 +786,9 @@ material "cafe/cafe_carelage"
 
 	pass
 	{
-		metallic 0.0784314
-		edge_colour 0.0 0.0 0.0 0.2
+		metallic 0.000000
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -787,7 +820,8 @@ material "cafe/cafe_chrome"
 		albedo 0.337255 0.337255 0.337255 0.00392157
 		metallic 1.0
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 	}
@@ -800,7 +834,8 @@ material "cafe/cafe_deco_01"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -819,7 +854,8 @@ material "cafe/cafe_deco_02"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -838,7 +874,8 @@ material "cafe/cafe_deco_03"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -857,7 +894,8 @@ material "cafe/cafe_deco_04"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -876,7 +914,8 @@ material "cafe/cafe_entree"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -895,7 +934,8 @@ material "cafe/cafe_exit"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.815082
@@ -921,7 +961,8 @@ material "cafe/cafe_frigo_bar"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -946,7 +987,8 @@ material "cafe/cafe_grille_bar"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -965,7 +1007,8 @@ material "cafe/cafe_grille_bar_02"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -982,9 +1025,10 @@ material "cafe/cafe_mur_01"
 
 	pass
 	{
-		metallic 0.156863
+		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1003,7 +1047,8 @@ material "cafe/cafe_mur_02"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 0.271695
@@ -1021,9 +1066,10 @@ material "cafe/cafe_neon"
 
 	pass
 	{
-		metallic 0.313726
+		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		emissive 1.35847
@@ -1043,7 +1089,8 @@ material "cafe/cafe_porte"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1062,7 +1109,8 @@ material "cafe/cafe_poteau"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1081,7 +1129,8 @@ material "cafe/cafe_rideau"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1100,7 +1149,8 @@ material "cafe/cafe_roof_01"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1119,7 +1169,8 @@ material "cafe/cafe_roof_02"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1136,8 +1187,9 @@ material "cafe/cafe_sol_01"
 
 	pass
 	{
-		metallic 0.0823529
-		edge_colour 0.0 0.0 0.0 0.2
+		metallic 0.0
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1166,9 +1218,10 @@ material "cafe/cafe_vitre"
 
 	pass
 	{
-		metallic 0.588235
+		metallic 0.0
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		alpha_blend_mode interpolative
 
@@ -1193,7 +1246,8 @@ material "canape_demi_cercle/canape_demi_cercle"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1228,7 +1282,8 @@ material "canape_triple/canape_triple"
 	pass
 	{
 		metallic 0.0
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1263,7 +1318,8 @@ material "pouf/pouf"
 	pass
 	{
 		metallic 0.0
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1298,7 +1354,8 @@ material "fauteuil/gros_fauteuil_bar"
 	pass
 	{
 		metallic 0.0
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1335,7 +1392,8 @@ material "plante_01/plante_01"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1361,7 +1419,8 @@ material "plante_01/plante_pot"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1380,7 +1439,8 @@ material "plante_02/plante_02"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1406,7 +1466,8 @@ material "plante_02/plante_pot"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1425,7 +1486,8 @@ material "plante_03/plante_03"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1451,7 +1513,8 @@ material "plante_03/plante_pot"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1470,7 +1533,8 @@ material "plante_05/plante_05"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 		alpha_func greater 0.5
@@ -1496,7 +1560,8 @@ material "plante_05/plante_pot"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1516,7 +1581,8 @@ material "table_bar/cuivre"
 		albedo 1.00000 0.65882 0.54509 1.0
 		metallic 1.0
 		roughness 0.1
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 	}
@@ -1530,7 +1596,8 @@ material "table_bar/laque"
 		albedo 0.000000 0.000000 0.000000 0.00392157
 		metallic 0.0
 		roughness 0.2
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 	}
@@ -1544,7 +1611,8 @@ material "table_basse/table_basse_cuivre"
 		albedo 1.00000 0.65882 0.54509 1.0
 		metallic 1.0
 		roughness 0.1
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 	}
@@ -1558,7 +1626,8 @@ material "table_basse/table_basse_laque"
 		albedo 0.000000 0.000000 0.000000 0.00392157
 		metallic 0.0
 		roughness 0.2
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 	}
@@ -1569,9 +1638,10 @@ material "table_verre/table_bar_fer_forge"
 
 	pass
 	{
-		metallic 0.360000
+		metallic 1.0
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1588,9 +1658,10 @@ material "table_verre/table_bar_verre"
 
 	pass
 	{
-		metallic 0.270000
+		metallic 0.0
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		alpha_blend_mode interpolative
 
@@ -1615,7 +1686,8 @@ material "tableau_myt/tableau_myt_graff_01"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1634,7 +1706,8 @@ material "tableau_myt/tableau_myt_graff_02"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1653,7 +1726,8 @@ material "tableau_myt/tableau_myt_graff_03"
 	{
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1672,7 +1746,8 @@ material "tabouret_bar/cuir"
 	{
 		albedo 0.0 0.0 0.0
 		metallic 0.0
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 
@@ -1704,7 +1779,8 @@ material "tabouret_bar/metal"
 		albedo 0.196078 0.196078 0.196078 0.00392157
 		metallic 1.0
 		roughness 0.1
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 	}
@@ -1718,7 +1794,8 @@ material "tv_bar/ecran"
 		albedo 0.000000 0.000000 0.000000 0.00392157
 		metallic 0.360000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 	}
@@ -1732,7 +1809,8 @@ material "tv_bar/plasma"
 		albedo 0.156863 0.156863 0.156863 0.00392157
 		metallic 0.000000
 		roughness 0.5
-		edge_colour 0.0 0.0 0.0 0.2
+		edge_width 1.0
+		edge_normal_factor 1.0
 		smooth_band_width 4.0
 		two_sided true
 	}

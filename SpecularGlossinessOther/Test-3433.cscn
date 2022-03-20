@@ -50,14 +50,14 @@ scene "Scene"
 				glossiness_mask 0xFF000000
 				sampler	"TriLinear"
 			}
-
+/*
 			texture_unit
 			{
 				image "Textures/Dragon/ambient_occlusion.png"
-				occlusion_mask 0x00FFFFFF
+				occlusion_mask 0x00FF0000
 				sampler	"TriLinear"
 			}
-
+*/
 			texture_unit
 			{
 				image "Textures/Dragon/emissive.png"

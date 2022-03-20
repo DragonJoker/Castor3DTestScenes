@@ -45,7 +45,9 @@ scene "Scene"
 	scene_node "SpotLightNode"
 	{
 		orientation 1 0 0 45
+		//orientation 0.910897 -0.370289 0.182078 56.7218
 		position 0.0 10.0 -10.0
+		//position 3.50104 6.47584 -5.61502
 	}
 
 	scene_node "MainCameraNode"
@@ -66,9 +68,19 @@ scene "Scene"
 		{
 			producer true
 			filter variance
+			raw_config
+			{
+				min_offset 0.0003
+				max_slope_offset 0.0001
+			}
+			pcf_config
+			{
+				min_offset 0.0003
+				max_slope_offset 0.0001
+			}
 			vsm_config
 			{
-				variance_max 0.00002
+				variance_max 0.00000001
 				variance_bias 0.15
 			}
 		}
