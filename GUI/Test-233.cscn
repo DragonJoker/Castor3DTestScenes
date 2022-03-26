@@ -1,0 +1,202 @@
+materials metallic_roughness
+include "Materials/Gui.cscn"
+
+gui
+{
+	theme "Colours"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "DarkRed"
+			border_material "DarkBlue"
+			text_material "DarkBlue"
+		}
+	}
+
+	theme "ColoursInner"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "DarkGreen"
+			border_material "DarkBlue"
+			text_material "DarkBlue"
+		}
+	}
+
+	static "TestColours"
+	{
+		theme "Colours"
+		pixel_position 48 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		static "TestStatic"
+		{
+			theme "ColoursInner"
+			pixel_position 16 300
+			pixel_size 128 50
+			pixel_border_size 4 4 4 4
+			caption "Test static"
+			horizontal_align left
+			vertical_align top
+		}
+	}
+
+	theme "BackgroundTexture"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "FrameCenter"
+			border_material "DarkRed"
+			text_material "DarkBlue"
+		}
+	}
+
+	theme "BackgroundTextureInner"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "FrameCenter"
+			border_material "DarkBlue"
+			text_material "DarkBlue"
+		}
+	}
+
+	static "TestBackgroundTexture"
+	{
+		theme "BackgroundTexture"
+		pixel_position 304 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		static "BT TestStatic"
+		{
+			theme "BackgroundTextureInner"
+			pixel_position 16 300
+			pixel_size 128 50
+			pixel_border_size 4 4 4 4
+			caption "Test static"
+			horizontal_align right
+			vertical_align bottom
+		}
+	}
+
+	theme "ForegroundTexture"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "DarkRed"
+			border_material "Frame"
+			text_material "DarkBlue"
+		}
+	}
+
+	theme "ForegroundTextureInner"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "DarkGreen"
+			border_material "Frame"
+			text_material "DarkBlue"
+		}
+	}
+
+	static "TestForegroundTexture"
+	{
+		theme "ForegroundTexture"
+		pixel_position 560 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		static "FT TestStatic"
+		{
+			theme "ForegroundTextureInner"
+			pixel_position 16 300
+			pixel_size 128 50
+			pixel_border_size 4 4 4 4
+			caption "Test static"
+			horizontal_align center
+			vertical_align center
+		}
+	}
+
+	theme "BothTextures"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "FrameCenter"
+			border_material "Frame"
+			text_material "DarkBlue"
+		}
+	}
+
+	static "TestBothTextures"
+	{
+		theme "BothTextures"
+		pixel_position 816 0
+		pixel_size 160 768
+		pixel_border_size 16 16 16 16
+
+		static "BFT TestStatic"
+		{
+			theme "BothTextures"
+			pixel_position 16 300
+			pixel_size 128 50
+			pixel_border_size 4 4 4 4
+			caption "Test static"
+			horizontal_align center
+			vertical_align center
+		}
+	}
+}
+
+scene "Scene"
+{
+	background_image "Textures/backgroundImage.hdr"
+	ambient_light 0.0 0.0 0.0
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.0 -100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 1
+			far 100
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 1024 768
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

@@ -1,0 +1,276 @@
+// Global configuration
+// debug_overlays true
+materials metallic_roughness
+
+scene "Scene"
+{
+	// Scene configuration
+
+	ambient_light 1 1 1
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/nightSkybox.hdr" 1024 1024
+	}
+
+	// Samplers
+
+	sampler "Trilinear"
+	{
+		min_filter linear
+		mag_filter linear
+		mip_filter linear
+		u_wrap_mode clamp_to_border
+		v_wrap_mode clamp_to_border
+		w_wrap_mode clamp_to_border
+		min_lod 0.0
+		max_lod 5.0
+		lod_bias 0.00
+		border_colour float_opaque_black
+		max_anisotropy 1.0
+	}
+
+	// Materials
+
+	material "Skin"
+	{
+		pass
+		{
+			roughness 0.5
+
+			texture_unit
+			{
+				sampler "Trilinear"
+				levels_count 6
+				image "Textures/LeePerrySmithHead/face-normal.png"
+				normal_mask 0x00FFFFFF
+			}
+
+			texture_unit
+			{
+				sampler "Trilinear"
+				levels_count 6
+				image "Textures/LeePerrySmithHead/face-albedo.png"
+				albedo_mask 0x00FFFFFF
+				transmittance_mask 0xFF000000
+			}
+
+			texture_unit
+			{
+				sampler "Trilinear"
+				levels_count 6
+				image "Textures/LeePerrySmithHead/face-height.jpg"
+				height_mask 0x00FF0000
+			}
+
+			subsurface_scattering
+			{
+				strength 1
+				gaussian_width 20
+
+				transmittance_profile
+				{
+					factor 0.233 0.455 0.649 0.0064
+					factor 0.1 0.336 0.344 0.0484
+					factor 0.118 0.198 0.0 0.187
+					factor 0.113 0.007 0.007 0.567
+					factor 0.358 0.004 0.0 1.99
+					factor 0.078 0.0 0.0 7.41
+				}
+			}
+		}
+	}
+
+	material "WhiteEmit"
+	{
+		pass
+		{
+			albedo 1 1 1
+			emissive 1
+			two_sided true
+		}
+	}
+
+	// Meshes
+
+	mesh "LeePerrySmithHead"
+	{
+		import "Meshes/LeePerrySmithHead.cmsh"
+	}
+
+	mesh "SpotLightMesh"
+	{
+		type "cube" -width=0.1 -height=0.1 -depth=0.4
+	}
+
+	mesh "PointLightMesh"
+	{
+		type "sphere" -subdiv=40 -radius=0.05
+	}
+
+	// Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0305798 0.999499 -0.00818503 29.9836
+		position -2.27493 2.91548 -3.25698
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			aspect_ratio 1.333
+			fov_y 45
+			near 0.1
+			far 2000.0
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "FinalNode"
+	{
+		orientation 0 1 0 180
+		position 0 0 0
+		scale 10 10 10
+	}
+
+	scene_node "LightNodeA"
+	{
+		orientation 0 1 0 19.0076
+		//orientation 0 1 0 31.3147
+		position -1.16929 2.86268 -2.35752
+	}
+
+	light "LightA"
+	{
+		parent "LightNodeA"
+		type spot
+		colour 1 1 1
+		intensity 0.8 1.0
+		attenuation 1 0.1 0
+		exponent 1.000000
+		cut_off 20.000000
+		shadows
+		{
+			producer false
+			filter variance
+			raw_config
+			{
+				min_offset 0.000000001
+				max_slope_offset 0.000001
+			}
+			pcf_config
+			{
+				min_offset 0.000000001
+				max_slope_offset 0.000001
+			}
+			vsm_config
+			{
+				variance_max 0.000000000001
+				variance_bias 0.15
+			}
+		}
+	}
+
+	object "LightObjectA"
+	{
+		parent "LightNodeA"
+		cast_shadows false
+		mesh "SpotLightMesh"
+		material "WhiteEmit"
+	}
+/*
+	scene_node "LightNodeB"
+	{
+		orientation 0 1 0 180
+		position -1.12927 2.99098 3.22912
+	}
+
+	light "LightB"
+	{
+		type spot
+		parent "LightNodeB"
+		colour 1 1 1
+		intensity 8.0 10.0
+		attenuation 1.0 0.1 0.0
+		exponent 1.000000
+		cut_off 20.000000
+		shadows
+		{
+			producer true
+			filter variance
+			raw_config
+			{
+				min_offset 0.000000001
+				max_slope_offset 0.000001
+			}
+			pcf_config
+			{
+				min_offset 0.000000001
+				max_slope_offset 0.000001
+			}
+			vsm_config
+			{
+				variance_max 0.000000000001
+				variance_bias 0.15
+			}
+		}
+	}
+
+	object "LightObjectB"
+	{
+		parent "LightNodeB"
+		cast_shadows false
+		mesh "SpotLightMesh"
+		material "WhiteEmit"
+	}
+*/
+	// Geometries
+
+	object "FinalPrimitive"
+	{
+		parent "FinalNode"
+		mesh "LeePerrySmithHead"
+		material "Skin"
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 800 600
+		format argb32
+		scene "Scene"
+		camera "MainCamera"
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			blur_high_quality true
+			use_normals_buffer true
+			intensity 1.0
+			radius 0.75
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1.0
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}

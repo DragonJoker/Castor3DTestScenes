@@ -29,8 +29,8 @@ material "baffles_boite/baffles"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/baffles.jpg" rgb
+			image "Textures/BoiteLegacy/baffles.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -49,8 +49,8 @@ material "barriere_verre/metal"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/barriere_metal.jpg" rgb
+			image "Textures/BoiteLegacy/barriere_metal.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -69,16 +69,9 @@ material "barriere_verre/verre"
 		{
 			sampler "TriLinear"
 			levels_count 6
-			channel diffuse
-			image "Textures/BoiteLegacy/barriere_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			sampler "TriLinear"
-			levels_count 6
-			channel opacity
-			image "Textures/BoiteLegacy/barriere_verre.png" a
+			image "Textures/BoiteLegacy/barriere_verre.png"
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -97,8 +90,8 @@ material "bars_boite/bois"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_bois.jpg" rgb
+			image "Textures/BoiteLegacy/bar_bois.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -117,8 +110,8 @@ material "bars_boite/bois_noir"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_bois_noir.jpg" rgb
+			image "Textures/BoiteLegacy/bar_bois_noir.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -137,8 +130,8 @@ material "bars_boite/bouteilles"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_bouteille_01.jpg" rgb
+			image "Textures/BoiteLegacy/bar_bouteille_01.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -157,8 +150,8 @@ material "bars_boite/bouteilles02"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_bouteille_02.jpg" rgb
+			image "Textures/BoiteLegacy/bar_bouteille_02.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -177,8 +170,8 @@ material "bars_boite/bouteilles03"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_bouteille_03.jpg" rgb
+			image "Textures/BoiteLegacy/bar_bouteille_03.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -197,8 +190,8 @@ material "bars_boite/bouteilles04"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_bouteille_04.jpg" rgb
+			image "Textures/BoiteLegacy/bar_bouteille_04.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -217,8 +210,8 @@ material "bars_boite/distrib_biere"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			channel diffuse
-			image "Textures/BoiteLegacy/distrib_biere.jpg" rgb
+			image "Textures/BoiteLegacy/distrib_biere.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -237,8 +230,8 @@ material "bars_boite/grille_biere"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/grille_biere.jpg" rgb
+			image "Textures/BoiteLegacy/grille_biere.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -257,8 +250,8 @@ material "bars_boite/lumiere"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_lumiere.jpg" rgb
+			image "Textures/BoiteLegacy/bar_lumiere.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -277,8 +270,8 @@ material "bars_boite/metal"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_metal.jpg" rgb
+			image "Textures/BoiteLegacy/bar_metal.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -297,8 +290,8 @@ material "bars_boite/porte_bar"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_porte.jpg" rgb
+			image "Textures/BoiteLegacy/bar_porte.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -317,16 +310,8 @@ material "bars_boite/verre"
 		{
 			sampler "TriLinear"
 			levels_count 6
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			sampler "TriLinear"
-			levels_count 6
-			channel opacity
-			image "Textures/BoiteLegacy/bar_verre.png" a
+			image "Textures/BoiteLegacy/bar_verre.png"
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -345,8 +330,8 @@ material "boite/murs"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/mur_boite.jpg" rgb
+			image "Textures/BoiteLegacy/mur_boite.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -377,8 +362,8 @@ material "boite/parquet 1"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/parquet_boite.jpg" rgb
+			image "Textures/BoiteLegacy/parquet_boite.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -397,8 +382,8 @@ material "boite/parquet 2"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/parquet_boite.jpg" rgb
+			image "Textures/BoiteLegacy/parquet_boite.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -417,8 +402,8 @@ material "boite/plafond"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/plafond_boite.jpg" rgb
+			image "Textures/BoiteLegacy/plafond_boite.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -437,8 +422,8 @@ material "boite/porte"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			channel diffuse
-			image "Textures/BoiteLegacy/porte_boite.jpg" rgb
+			image "Textures/BoiteLegacy/porte_boite.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -457,8 +442,8 @@ material "boite/sol 1"
 		{
 			sampler "TriLinear"
 			levels_count 10
-			channel diffuse
-			image "Textures/BoiteLegacy/beton_boite.jpg" rgb
+			image "Textures/BoiteLegacy/beton_boite.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -477,8 +462,8 @@ material "boite/sol 2"
 		{
 			sampler "TriLinear"
 			levels_count 10
-			channel diffuse
-			image "Textures/BoiteLegacy/beton_boite.jpg" rgb
+			image "Textures/BoiteLegacy/beton_boite.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -497,8 +482,8 @@ material "boite/sol 3"
 		{
 			sampler "TriLinear"
 			levels_count 10
-			channel diffuse
-			image "Textures/BoiteLegacy/beton_boite.jpg" rgb
+			image "Textures/BoiteLegacy/beton_boite.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -517,8 +502,8 @@ material "canape_triple/canape_triple"
 		{
 			sampler "TriLinear"
 			levels_count 10
-			channel diffuse
-			image "Textures/BoiteLegacy/canape_bar.jpg" rgb
+			image "Textures/BoiteLegacy/canape_bar.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -537,8 +522,8 @@ material "dj_boite/bloc"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/dj_beton.jpg" rgb
+			image "Textures/BoiteLegacy/dj_beton.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -557,8 +542,8 @@ material "dj_boite/metal"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/dj_metal.jpg" rgb
+			image "Textures/BoiteLegacy/dj_metal.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -577,8 +562,8 @@ material "dj_boite/piste"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/dj_piste.jpg" rgb
+			image "Textures/BoiteLegacy/dj_piste.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -597,8 +582,8 @@ material "dj_boite/table"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/dj_table.JPG" rgb
+			image "Textures/BoiteLegacy/dj_table.JPG"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -617,8 +602,8 @@ material "dj_boite/vinyle"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			channel diffuse
-			image "Textures/BoiteLegacy/dj_vinyle.jpg" rgb
+			image "Textures/BoiteLegacy/dj_vinyle.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -637,8 +622,8 @@ material "escaliers_boite/metal"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/barriere_metal.jpg" rgb
+			image "Textures/BoiteLegacy/barriere_metal.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -657,16 +642,8 @@ material "escaliers_boite/verre"
 		{
 			sampler "TriLinear"
 			levels_count 6
-			channel diffuse
-			image "Textures/BoiteLegacy/bar_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			sampler "TriLinear"
-			levels_count 6
-			channel opacity
-			image "Textures/BoiteLegacy/bar_verre.png" a
+			image "Textures/BoiteLegacy/bar_verre.png"
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -685,8 +662,8 @@ material "fauteuil/gros_fauteuil_bar"
 		{
 			sampler "TriLinear"
 			levels_count 10
-			channel diffuse
-			image "Textures/BoiteLegacy/canape_bar.jpg" rgb
+			image "Textures/BoiteLegacy/canape_bar.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -705,8 +682,8 @@ material "panneau_mural/panneau_pub"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/panneau_pub_metal.jpg" rgb
+			image "Textures/BoiteLegacy/panneau_pub_metal.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -725,8 +702,8 @@ material "panneau_mural/pub"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/panneau_pub_pub_01.jpg" rgb
+			image "Textures/BoiteLegacy/panneau_pub_pub_01.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -746,16 +723,9 @@ material "plante_05/plante_05"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/plante_05.png" rgb
-		}
-
-		texture_unit
-		{
-			sampler "TriLinear"
-			levels_count 9
-			channel opacity
-			image "Textures/BoiteLegacy/plante_05.png" a
+			image "Textures/BoiteLegacy/plante_05.png"
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -774,8 +744,8 @@ material "plante_05/plante_pot"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/plante_pot.jpg" rgb
+			image "Textures/BoiteLegacy/plante_pot.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -805,8 +775,8 @@ material "plasma/plasma"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/plasma.jpg" rgb
+			image "Textures/BoiteLegacy/plasma.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -825,8 +795,8 @@ material "pouf/pouf"
 		{
 			sampler "TriLinear"
 			levels_count 10
-			channel diffuse
-			image "Textures/BoiteLegacy/pouf.jpg" rgb
+			image "Textures/BoiteLegacy/pouf.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -847,8 +817,8 @@ material "spot_couleur/light bleu"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel opacity
-			image "Textures/BoiteLegacy/spot_light.png" a
+			image "Textures/BoiteLegacy/spot_light.png"
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -869,8 +839,8 @@ material "spot_couleur/light jaune"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel opacity
-			image "Textures/BoiteLegacy/spot_light.png" a
+			image "Textures/BoiteLegacy/spot_light.png"
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -891,8 +861,8 @@ material "spot_couleur/light rouge"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel opacity
-			image "Textures/BoiteLegacy/spot_light.png" a
+			image "Textures/BoiteLegacy/spot_light.png"
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -913,8 +883,8 @@ material "spot_couleur/light vert"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel opacity
-			image "Textures/BoiteLegacy/spot_light.png" a
+			image "Textures/BoiteLegacy/spot_light.png"
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -934,8 +904,8 @@ material "spot_couleur/lumiere"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			channel diffuse
-			image "Textures/BoiteLegacy/spot_couleur_lumiere.jpg" rgb
+			image "Textures/BoiteLegacy/spot_couleur_lumiere.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -954,8 +924,8 @@ material "spot_couleur/metal"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/spot_couleur_metal.jpg" rgb
+			image "Textures/BoiteLegacy/spot_couleur_metal.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -975,16 +945,9 @@ material "spot_simple/light"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/spot_light.png" rgb
-		}
-
-		texture_unit
-		{
-			sampler "TriLinear"
-			levels_count 9
-			channel opacity
-			image "Textures/BoiteLegacy/spot_light.png" a
+			image "Textures/BoiteLegacy/spot_light.png"
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -1004,8 +967,8 @@ material "spot_simple/lumiere"
 		{
 			sampler "TriLinear"
 			levels_count 8
-			channel diffuse
-			image "Textures/BoiteLegacy/spot_simple_lumiere.jpg" rgb
+			image "Textures/BoiteLegacy/spot_simple_lumiere.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -1024,8 +987,8 @@ material "spot_simple/metal"
 		{
 			sampler "TriLinear"
 			levels_count 7
-			channel diffuse
-			image "Textures/BoiteLegacy/spot_simple_metal.jpg" rgb
+			image "Textures/BoiteLegacy/spot_simple_metal.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -1092,8 +1055,8 @@ material "table_verre/table_bar_fer_forge"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/table_bar_fer_forge.jpg" rgb
+			image "Textures/BoiteLegacy/table_bar_fer_forge.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -1112,16 +1075,9 @@ material "table_verre/table_bar_verre"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/table_bar_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			sampler "TriLinear"
-			levels_count 9
-			channel opacity
-			image "Textures/BoiteLegacy/table_bar_verre.png" a
+			image "Textures/BoiteLegacy/table_bar_verre.png"
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -1140,8 +1096,8 @@ material "tabouret_boite/cuir"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/tabouret_cuir.jpg" rgb
+			image "Textures/BoiteLegacy/tabouret_cuir.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }
@@ -1160,8 +1116,8 @@ material "tabouret_boite/metal"
 		{
 			sampler "TriLinear"
 			levels_count 9
-			channel diffuse
-			image "Textures/BoiteLegacy/tabouret_metal.jpg" rgb
+			image "Textures/BoiteLegacy/tabouret_metal.jpg"
+			diffuse_mask 0x00FFFFFF
 		}
 	}
 }

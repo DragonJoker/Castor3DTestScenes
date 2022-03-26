@@ -1,0 +1,90 @@
+
+material "leftSphere"
+{
+	pass
+	{
+		albedo 0.55000 0.55000 0.55000
+		roughness 0.1
+		metallic 1.0
+		two_sided true
+	}
+}
+
+material "rightSphere"
+{
+	pass
+	{
+		albedo 0.55000 0.55000 0.55000
+		transmission 1.0 1.0 1.0
+		roughness 0.1
+		metallic 1.0
+		two_sided true
+		refraction_ratio 0.66
+		refractions true
+	}
+}
+
+material "light"
+{
+	pass
+	{
+		albedo 0.780000 0.780000 0.780000
+		emissive 10.0
+		roughness 0.95
+		two_sided true
+	}
+}
+
+material "backWall"
+{
+	pass
+	{
+		albedo 0.725000 0.710000 0.680000
+		roughness 0.95
+	}
+}
+
+material "ceiling"
+{
+	pass
+	{
+		albedo 0.725000 0.710000 0.680000
+		roughness 0.95
+	}
+}
+
+material "floor"
+{
+	pass
+	{
+		albedo 0.725000 0.710000 0.680000
+		roughness 0.95
+	}
+}
+
+material "leftWall"
+{
+	pass
+	{
+		albedo 0.630000 0.0650000 0.0500000
+		roughness 0.95
+	}
+}
+
+material "rightWall"
+{
+	pass
+	{
+		albedo 0.14000 0.45000 0.09100
+		roughness 0.95
+	}
+}
+
+material "WhiteEmit"
+{
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 1.1
+	}
+}

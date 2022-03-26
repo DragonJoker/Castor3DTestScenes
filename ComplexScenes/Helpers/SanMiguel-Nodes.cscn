@@ -1,0 +1,1728 @@
+// Nodes
+
+scene_node "ObjectNode"
+{
+	scale 100.000 100.000 100.000
+}
+
+scene_node "ObjectNode_ObjectMesh-S0_material_287"
+{
+	parent "ObjectNode"
+	position 0.163642 0.00776218 0.0500679
+}
+
+scene_node "ObjectNode_ObjectMesh-S1_material_033"
+{
+	parent "ObjectNode"
+	position 0.164625 0.00774329 0.0499925
+}
+
+scene_node "ObjectNode_ObjectMesh-S2_material_035"
+{
+	parent "ObjectNode"
+	position 0.163964 0.00839706 0.0497308
+}
+
+scene_node "ObjectNode_ObjectMesh-S3_material_036"
+{
+	parent "ObjectNode"
+	position 0.163979 0.00902388 0.0497339
+}
+
+scene_node "ObjectNode_ObjectMesh-S4_material_034"
+{
+	parent "ObjectNode"
+	position 0.163955 0.00795215 0.0497345
+}
+
+scene_node "ObjectNode_ObjectMesh-S5_material_041"
+{
+	parent "ObjectNode"
+	position 0.163864 0.00949678 0.0500305
+}
+
+scene_node "ObjectNode_ObjectMesh-S6_material_039"
+{
+	parent "ObjectNode"
+	position 0.164451 0.00782656 0.0502942
+}
+
+scene_node "ObjectNode_ObjectMesh-S7_material_038"
+{
+	parent "ObjectNode"
+	position 0.164314 0.00798438 0.0499742
+}
+
+scene_node "ObjectNode_ObjectMesh-S8_material_042"
+{
+	parent "ObjectNode"
+	position 0.164457 0.0078574 0.0502954
+}
+
+scene_node "ObjectNode_ObjectMesh-S9_material_040"
+{
+	parent "ObjectNode"
+	position 0.164174 0.00767302 0.0500278
+}
+
+scene_node "ObjectNode_ObjectMesh-S10_CafeChair_Metal"
+{
+	parent "ObjectNode"
+	position 0.152124 -0.00103501 0.0704923
+}
+
+scene_node "ObjectNode_ObjectMesh-S11_material_285"
+{
+	parent "ObjectNode"
+	position 0.152019 0.00417431 0.0704162
+}
+
+scene_node "ObjectNode_ObjectMesh-S12_material_286"
+{
+	parent "ObjectNode"
+	position 0.151969 0.00450252 0.0703792
+}
+
+scene_node "ObjectNode_ObjectMesh-S13_material_79"
+{
+	parent "ObjectNode"
+	position 0.182517 0.0840489 0.0409379
+}
+
+scene_node "ObjectNode_ObjectMesh-S14_material_032"
+{
+	parent "ObjectNode"
+	position 0.152483 0.00697239 0.0708488
+}
+
+scene_node "ObjectNode_ObjectMesh-S15_material_271"
+{
+	parent "ObjectNode"
+	position 0.164948 0.00328808 0.0493665
+}
+
+scene_node "ObjectNode_ObjectMesh-S16_material_163"
+{
+	parent "ObjectNode"
+	position 0.130134 0.0144178 -0.0264789
+}
+
+scene_node "ObjectNode_ObjectMesh-S17_material_166"
+{
+	parent "ObjectNode"
+	position 0.22226 0.0675666 0.00184395
+}
+
+scene_node "ObjectNode_ObjectMesh-S18_material_161"
+{
+	parent "ObjectNode"
+	position 0.129501 0.0172515 -0.025541
+}
+
+scene_node "ObjectNode_ObjectMesh-S19_material_175"
+{
+	parent "ObjectNode"
+	position 0.222439 0.0692056 0.0016748
+}
+
+scene_node "ObjectNode_ObjectMesh-S20_material_176"
+{
+	parent "ObjectNode"
+	position 0.2224 0.0692644 0.00184351
+}
+
+scene_node "ObjectNode_ObjectMesh-S21_material_164"
+{
+	parent "ObjectNode"
+	position 0.130044 0.010595 -0.0280739
+}
+
+scene_node "ObjectNode_ObjectMesh-S22_material_169"
+{
+	parent "ObjectNode"
+	position 0.222196 0.0675947 0.00175453
+}
+
+scene_node "ObjectNode_ObjectMesh-S23_material_170"
+{
+	parent "ObjectNode"
+	position 0.222186 0.0663584 0.0017978
+}
+
+scene_node "ObjectNode_ObjectMesh-S24_material_173"
+{
+	parent "ObjectNode"
+	position 0.222396 0.0691797 0.00209976
+}
+
+scene_node "ObjectNode_ObjectMesh-S25_material_281"
+{
+	parent "ObjectNode"
+	position 0.139473 0.00405252 0.073191
+}
+
+scene_node "ObjectNode_ObjectMesh-S26_material_174"
+{
+	parent "ObjectNode"
+	position 0.222548 0.0692081 0.00198166
+}
+
+scene_node "ObjectNode_ObjectMesh-S27_material_280"
+{
+	parent "ObjectNode"
+	position 0.151991 0.00457874 0.070444
+}
+
+scene_node "ObjectNode_ObjectMesh-S28_material_284"
+{
+	parent "ObjectNode"
+	position 0.152702 0.00673884 0.071009
+}
+
+scene_node "ObjectNode_ObjectMesh-S29_material_165"
+{
+	parent "ObjectNode"
+	position 0.222213 0.0675662 0.0018742
+}
+
+scene_node "ObjectNode_ObjectMesh-S30_material_168"
+{
+	parent "ObjectNode"
+	position 0.222262 0.0675575 0.00169508
+}
+
+scene_node "ObjectNode_ObjectMesh-S31_material_172"
+{
+	parent "ObjectNode"
+	position 0.222551 0.0667104 0.00177028
+}
+
+scene_node "ObjectNode_ObjectMesh-S32_material_181"
+{
+	parent "ObjectNode"
+	position 0.164592 0.0350692 0.00700945
+}
+
+scene_node "ObjectNode_ObjectMesh-S33_material_218"
+{
+	parent "ObjectNode"
+	position 0.168826 0.0311708 0.0494667
+}
+
+scene_node "ObjectNode_ObjectMesh-S34_material_186"
+{
+	parent "ObjectNode"
+	position 0.152394 0.0579275 0.0025758
+}
+
+scene_node "ObjectNode_ObjectMesh-S35_material_212"
+{
+	parent "ObjectNode"
+	position 0.168764 0.0317398 0.0491805
+}
+
+scene_node "ObjectNode_ObjectMesh-S36_material_209"
+{
+	parent "ObjectNode"
+	position 0.168832 0.034841 0.0494727
+}
+
+scene_node "ObjectNode_ObjectMesh-S37_material_210"
+{
+	parent "ObjectNode"
+	position 0.168218 0.0388019 0.0491729
+}
+
+scene_node "ObjectNode_ObjectMesh-S38_material_81"
+{
+	parent "ObjectNode"
+	position 0.164442 0.0718992 0.0012649
+}
+
+scene_node "ObjectNode_ObjectMesh-S39_material_205"
+{
+	parent "ObjectNode"
+	position 0.222659 0.0675799 0.00112333
+}
+
+scene_node "ObjectNode_ObjectMesh-S40_material_279"
+{
+	parent "ObjectNode"
+	position 0.152812 0.00593297 0.070985
+}
+
+scene_node "ObjectNode_ObjectMesh-S41_material_0"
+{
+	parent "ObjectNode"
+	position 0.164557 0.0427644 0.0362257
+}
+
+scene_node "ObjectNode_ObjectMesh-S42_material_52"
+{
+	parent "ObjectNode"
+	position 0.164522 0.0375933 0.0307218
+}
+
+scene_node "ObjectNode_ObjectMesh-S43_material_202"
+{
+	parent "ObjectNode"
+	position 0.222645 0.0680337 0.00101945
+}
+
+scene_node "ObjectNode_ObjectMesh-S44_material_201"
+{
+	parent "ObjectNode"
+	position 0.222538 0.0665649 0.00129771
+}
+
+scene_node "ObjectNode_ObjectMesh-S45_materiald"
+{
+	parent "ObjectNode"
+	position 0.16468 0.0422406 0.0368538
+}
+
+scene_node "ObjectNode_ObjectMesh-S46_material_185"
+{
+	parent "ObjectNode"
+	position 0.152367 0.0604317 0.00232444
+}
+
+scene_node "ObjectNode_ObjectMesh-S47_material_177"
+{
+	parent "ObjectNode"
+	position 0.222637 0.0671763 0.00186209
+}
+
+scene_node "ObjectNode_ObjectMesh-S48_material_215"
+{
+	parent "ObjectNode"
+	position 0.168787 0.0314899 0.0491805
+}
+
+scene_node "ObjectNode_ObjectMesh-S49_material_282"
+{
+	parent "ObjectNode"
+	position 0.13948 0.00449685 0.0731898
+}
+
+scene_node "ObjectNode_ObjectMesh-S50_material_51"
+{
+	parent "ObjectNode"
+	position 0.165595 0.0661343 0.0037704
+}
+
+scene_node "ObjectNode_ObjectMesh-S51_material_272"
+{
+	parent "ObjectNode"
+	position 0.164942 0.00794211 -0.0171005
+}
+
+scene_node "ObjectNode_ObjectMesh-S52_material_46"
+{
+	parent "ObjectNode"
+	position 0.0671746 0.102016 0.0186659
+}
+
+scene_node "ObjectNode_ObjectMesh-S53_material_268"
+{
+	parent "ObjectNode"
+	position 0.163046 0.00499877 -0.0176861
+}
+
+scene_node "ObjectNode_ObjectMesh-S54_material_211"
+{
+	parent "ObjectNode"
+	position 0.169029 0.0322502 0.0493793
+}
+
+scene_node "ObjectNode_ObjectMesh-S55_material_213"
+{
+	parent "ObjectNode"
+	position 0.168871 0.0319232 0.0492422
+}
+
+scene_node "ObjectNode_ObjectMesh-S56_material_269"
+{
+	parent "ObjectNode"
+	position 0.163094 0.00502355 -0.0176814
+}
+
+scene_node "ObjectNode_ObjectMesh-S57_material_250"
+{
+	parent "ObjectNode"
+	position 0.0749517 0.0674773 0.0582443
+}
+
+scene_node "ObjectNode_ObjectMesh-S58_material_236"
+{
+	parent "ObjectNode"
+	position 0.113573 0.0665613 0.00195139
+}
+
+scene_node "ObjectNode_ObjectMesh-S59_material_262"
+{
+	parent "ObjectNode"
+	position 0.15397 0.0624162 0.0106071
+}
+
+scene_node "ObjectNode_ObjectMesh-S60_material_255"
+{
+	parent "ObjectNode"
+	position 0.153661 0.0628269 0.0110225
+}
+
+scene_node "ObjectNode_ObjectMesh-S61_material_258"
+{
+	parent "ObjectNode"
+	position 0.153736 0.0631237 0.010108
+}
+
+scene_node "ObjectNode_ObjectMesh-S62_material_214"
+{
+	parent "ObjectNode"
+	position 0.168879 0.0361121 0.0494283
+}
+
+scene_node "ObjectNode_ObjectMesh-S63_material_276"
+{
+	parent "ObjectNode"
+	position 0.157199 0.0600173 -0.0208264
+}
+
+scene_node "ObjectNode_ObjectMesh-S64_material_194"
+{
+	parent "ObjectNode"
+	position 0.156092 0.0335224 0.0605792
+}
+
+scene_node "ObjectNode_ObjectMesh-S65_material_259"
+{
+	parent "ObjectNode"
+	position 0.153746 0.0611334 0.0104976
+}
+
+scene_node "ObjectNode_ObjectMesh-S66_material_270"
+{
+	parent "ObjectNode"
+	position 0.163164 0.0057717 -0.017675
+}
+
+scene_node "ObjectNode_ObjectMesh-S67_material_222"
+{
+	parent "ObjectNode"
+	position 0.222051 0.0669466 0.00114067
+}
+
+scene_node "ObjectNode_ObjectMesh-S68_material_196"
+{
+	parent "ObjectNode"
+	position 0.109572 0.0619141 0.0116356
+}
+
+scene_node "ObjectNode_ObjectMesh-S69_material_200"
+{
+	parent "ObjectNode"
+	position 0.0696348 0.0686074 0.115734
+}
+
+scene_node "ObjectNode_ObjectMesh-S70_material_227"
+{
+	parent "ObjectNode"
+	position 0.071661 0.0358404 0.0431755
+}
+
+scene_node "ObjectNode_ObjectMesh-S71_material_247"
+{
+	parent "ObjectNode"
+	position 0.0749785 0.0662251 0.0580489
+}
+
+scene_node "ObjectNode_ObjectMesh-S72_material_246"
+{
+	parent "ObjectNode"
+	position 0.146726 0.0623785 0.030159
+}
+
+scene_node "ObjectNode_ObjectMesh-S73_material_80"
+{
+	parent "ObjectNode"
+	position 0.182509 0.0808144 0.040924
+}
+
+scene_node "ObjectNode_ObjectMesh-S74_material_190"
+{
+	parent "ObjectNode"
+	position 0.147967 0.0350807 0.0372405
+}
+
+scene_node "ObjectNode_ObjectMesh-S75_material_254"
+{
+	parent "ObjectNode"
+	position 0.153685 0.0613809 0.0110014
+}
+
+scene_node "ObjectNode_ObjectMesh-S76_material_76"
+{
+	parent "ObjectNode"
+	position 0.164799 0.0723072 0.0412875
+}
+
+scene_node "ObjectNode_ObjectMesh-S77_material_277"
+{
+	parent "ObjectNode"
+	position 0.157197 0.0617734 -0.0208194
+}
+
+scene_node "ObjectNode_ObjectMesh-S78_material_256"
+{
+	parent "ObjectNode"
+	position 0.153687 0.0626757 0.0109975
+}
+
+scene_node "ObjectNode_ObjectMesh-S79_material_238"
+{
+	parent "ObjectNode"
+	position 0.198056 0.0632406 -0.0273957
+}
+
+scene_node "ObjectNode_ObjectMesh-S80_material_197"
+{
+	parent "ObjectNode"
+	position 0.142609 0.0618818 0.00119459
+}
+
+scene_node "ObjectNode_ObjectMesh-S81_material_274"
+{
+	parent "ObjectNode"
+	position 0.165017 0.00725558 -0.0172108
+}
+
+scene_node "ObjectNode_ObjectMesh-S82_materiali"
+{
+	parent "ObjectNode"
+	position 0.164792 0.0421774 0.0170943
+}
+
+scene_node "ObjectNode_ObjectMesh-S83_material_220"
+{
+	parent "ObjectNode"
+	position 0.222213 0.0657148 0.00129128
+}
+
+scene_node "ObjectNode_ObjectMesh-S84_material_261"
+{
+	parent "ObjectNode"
+	position 0.153725 0.063004 0.0104426
+}
+
+scene_node "ObjectNode_ObjectMesh-S85_material_240"
+{
+	parent "ObjectNode"
+	position 0.146696 0.063843 0.0302147
+}
+
+scene_node "ObjectNode_ObjectMesh-S86_materials"
+{
+	parent "ObjectNode"
+	position 0.148643 0.0658569 0.0827188
+}
+
+scene_node "ObjectNode_ObjectMesh-S87_material_260"
+{
+	parent "ObjectNode"
+	position 0.153767 0.0627797 0.0105139
+}
+
+scene_node "ObjectNode_ObjectMesh-S88_material_183"
+{
+	parent "ObjectNode"
+	position 0.152297 0.0604661 0.00229952
+}
+
+scene_node "ObjectNode_ObjectMesh-S89_materialy"
+{
+	parent "ObjectNode"
+	position 0.0751496 0.055404 0.0337733
+}
+
+scene_node "ObjectNode_ObjectMesh-S90_material_147"
+{
+	parent "ObjectNode"
+	position 0.150369 0.0358547 -0.0080615
+}
+
+scene_node "ObjectNode_ObjectMesh-S91_material_182"
+{
+	parent "ObjectNode"
+	position 0.164839 0.0406799 0.00721785
+}
+
+scene_node "ObjectNode_ObjectMesh-S92_material_184"
+{
+	parent "ObjectNode"
+	position 0.152288 0.0604902 0.0023331
+}
+
+scene_node "ObjectNode_ObjectMesh-S93_material_278"
+{
+	parent "ObjectNode"
+	position 0.156724 0.0629868 -0.0209266
+}
+
+scene_node "ObjectNode_ObjectMesh-S94_material_187"
+{
+	parent "ObjectNode"
+	position 0.152466 0.0599628 0.00234599
+}
+
+scene_node "ObjectNode_ObjectMesh-S95_material_143"
+{
+	parent "ObjectNode"
+	position 0.17721 0.0616589 0.0150952
+}
+
+scene_node "ObjectNode_ObjectMesh-S96_material_188"
+{
+	parent "ObjectNode"
+	position 0.152335 0.0603865 0.00229702
+}
+
+scene_node "ObjectNode_ObjectMesh-S97_materialo"
+{
+	parent "ObjectNode"
+	position 0.151076 0.00965377 0.0376197
+}
+
+scene_node "ObjectNode_ObjectMesh-S98_material_134"
+{
+	parent "ObjectNode"
+	position 0.0706066 0.0166629 0.0836238
+}
+
+scene_node "ObjectNode_ObjectMesh-S99_material_145"
+{
+	parent "ObjectNode"
+	position 0.136763 0.0356613 0.0185657
+}
+
+scene_node "ObjectNode_ObjectMesh-S100_material_83"
+{
+	parent "ObjectNode"
+	position 0.16447 0.0624673 0.00125415
+}
+
+scene_node "ObjectNode_ObjectMesh-S101_material_243"
+{
+	parent "ObjectNode"
+	position 0.183066 0.0625549 0.00271366
+}
+
+scene_node "ObjectNode_ObjectMesh-S102_material_131"
+{
+	parent "ObjectNode"
+	position 0.11157 0.0619686 0.00319144
+}
+
+scene_node "ObjectNode_ObjectMesh-S103_material_142"
+{
+	parent "ObjectNode"
+	position 0.177187 0.0598741 0.0147868
+}
+
+scene_node "ObjectNode_ObjectMesh-S104_material_148"
+{
+	parent "ObjectNode"
+	position 0.149457 0.0309664 -0.00905259
+}
+
+scene_node "ObjectNode_ObjectMesh-S105_material_135"
+{
+	parent "ObjectNode"
+	position 0.0702748 0.0166021 0.084077
+}
+
+scene_node "ObjectNode_ObjectMesh-S106_material_150"
+{
+	parent "ObjectNode"
+	position 0.161419 0.0368296 -0.0085441
+}
+
+scene_node "ObjectNode_ObjectMesh-S107_material_265"
+{
+	parent "ObjectNode"
+	position 0.232767 0.0660781 0.0183221
+}
+
+scene_node "ObjectNode_ObjectMesh-S108_materialn"
+{
+	parent "ObjectNode"
+	position 0.164442 0.0615532 0.00125735
+}
+
+scene_node "ObjectNode_ObjectMesh-S109_materialw"
+{
+	parent "ObjectNode"
+	position 0.0710551 0.0441447 0.0351401
+}
+
+scene_node "ObjectNode_ObjectMesh-S110_material_138"
+{
+	parent "ObjectNode"
+	position 0.225218 0.0379393 0.0633392
+}
+
+scene_node "ObjectNode_ObjectMesh-S111_material_162"
+{
+	parent "ObjectNode"
+	position 0.129999 0.00883321 -0.0274792
+}
+
+scene_node "ObjectNode_ObjectMesh-S112_material_132"
+{
+	parent "ObjectNode"
+	position 0.0704693 0.0158285 0.083977
+}
+
+scene_node "ObjectNode_ObjectMesh-S113_material_179"
+{
+	parent "ObjectNode"
+	position 0.0946727 0.0363704 0.0438719
+}
+
+scene_node "ObjectNode_ObjectMesh-S114_material_180"
+{
+	parent "ObjectNode"
+	position 0.0946796 0.0364629 0.0438673
+}
+
+scene_node "ObjectNode_ObjectMesh-S115_material_149"
+{
+	parent "ObjectNode"
+	position 0.120558 0.0685651 -0.0117407
+}
+
+scene_node "ObjectNode_ObjectMesh-S116_material_178"
+{
+	parent "ObjectNode"
+	position 0.192011 0.06294 0.00231713
+}
+
+scene_node "ObjectNode_ObjectMesh-S117_material_151"
+{
+	parent "ObjectNode"
+	position 0.231008 0.0659513 0.00933696
+}
+
+scene_node "ObjectNode_ObjectMesh-S118_material_77"
+{
+	parent "ObjectNode"
+	position 0.182515 0.0803176 0.0409312
+}
+
+scene_node "ObjectNode_ObjectMesh-S119_material_230"
+{
+	parent "ObjectNode"
+	position 0.232858 0.0668952 0.0220018
+}
+
+scene_node "ObjectNode_ObjectMesh-S120_material_193"
+{
+	parent "ObjectNode"
+	position 0.155921 0.0331453 0.0605354
+}
+
+scene_node "ObjectNode_ObjectMesh-S121_material_198"
+{
+	parent "ObjectNode"
+	position 0.0692282 0.0710634 0.11574
+}
+
+scene_node "ObjectNode_ObjectMesh-S122_material_195"
+{
+	parent "ObjectNode"
+	position 0.109659 0.0618136 0.0115284
+}
+
+scene_node "ObjectNode_ObjectMesh-S123_material_216"
+{
+	parent "ObjectNode"
+	position 0.149458 0.0590689 0.0478306
+}
+
+scene_node "ObjectNode_ObjectMesh-S124_material_219"
+{
+	parent "ObjectNode"
+	position 0.168688 0.0358121 0.0495611
+}
+
+scene_node "ObjectNode_ObjectMesh-S125_material_226"
+{
+	parent "ObjectNode"
+	position 0.0715844 0.0357004 0.0432609
+}
+
+scene_node "ObjectNode_ObjectMesh-S126_material_233"
+{
+	parent "ObjectNode"
+	position 0.233654 0.0667009 0.0217028
+}
+
+scene_node "ObjectNode_ObjectMesh-S127_material_199"
+{
+	parent "ObjectNode"
+	position 0.0695475 0.0713437 0.116052
+}
+
+scene_node "ObjectNode_ObjectMesh-S128_material_217"
+{
+	parent "ObjectNode"
+	position 0.148705 0.0598721 0.0477281
+}
+
+scene_node "ObjectNode_ObjectMesh-S129_material_82"
+{
+	parent "ObjectNode"
+	position 0.164446 0.0634286 0.0012556
+}
+
+scene_node "ObjectNode_ObjectMesh-S130_material_192"
+{
+	parent "ObjectNode"
+	position 0.147932 0.0353882 0.0373649
+}
+
+scene_node "ObjectNode_ObjectMesh-S131_material_232"
+{
+	parent "ObjectNode"
+	position 0.233095 0.0663517 0.0219282
+}
+
+scene_node "ObjectNode_ObjectMesh-S132_material_208"
+{
+	parent "ObjectNode"
+	position 0.222547 0.0664608 0.001255
+}
+
+scene_node "ObjectNode_ObjectMesh-S133_material_234"
+{
+	parent "ObjectNode"
+	position 0.232961 0.0663497 0.0217819
+}
+
+scene_node "ObjectNode_ObjectMesh-S134_material_242"
+{
+	parent "ObjectNode"
+	position 0.182845 0.0617588 0.00244382
+}
+
+scene_node "ObjectNode_ObjectMesh-S135_material_249"
+{
+	parent "ObjectNode"
+	position 0.0747454 0.0659984 0.0580533
+}
+
+scene_node "ObjectNode_ObjectMesh-S136_material_273"
+{
+	parent "ObjectNode"
+	position 0.165043 0.00747592 -0.0170861
+}
+
+scene_node "ObjectNode_ObjectMesh-S137_material_251"
+{
+	parent "ObjectNode"
+	position 0.153789 0.0616525 0.0109422
+}
+
+scene_node "ObjectNode_ObjectMesh-S138_material_78"
+{
+	parent "ObjectNode"
+	position 0.182518 0.083253 0.0409341
+}
+
+scene_node "ObjectNode_ObjectMesh-S139_material_155"
+{
+	parent "ObjectNode"
+	position 0.172787 0.0612883 0.00533887
+}
+
+scene_node "ObjectNode_ObjectMesh-S140_material_252"
+{
+	parent "ObjectNode"
+	position 0.153729 0.0616912 0.010995
+}
+
+scene_node "ObjectNode_ObjectMesh-S141_material_253"
+{
+	parent "ObjectNode"
+	position 0.153639 0.0629784 0.0110624
+}
+
+scene_node "ObjectNode_ObjectMesh-S142_material_257"
+{
+	parent "ObjectNode"
+	position 0.153971 0.0616399 0.0105926
+}
+
+scene_node "ObjectNode_ObjectMesh-S143_materialq"
+{
+	parent "ObjectNode"
+	position 0.15108 0.000948234 0.037618
+}
+
+scene_node "ObjectNode_ObjectMesh-S144_material_154"
+{
+	parent "ObjectNode"
+	position 0.202202 0.0616364 0.0128852
+}
+
+scene_node "ObjectNode_ObjectMesh-S145_material_275"
+{
+	parent "ObjectNode"
+	position 0.164272 0.00682975 -0.017232
+}
+
+scene_node "ObjectNode_ObjectMesh-S146_material_235"
+{
+	parent "ObjectNode"
+	position 0.233132 0.0660372 0.0219354
+}
+
+scene_node "ObjectNode_ObjectMesh-S147_material_263"
+{
+	parent "ObjectNode"
+	position 0.153988 0.0634392 0.0105917
+}
+
+scene_node "ObjectNode_ObjectMesh-S148_material_191"
+{
+	parent "ObjectNode"
+	position 0.147863 0.0360734 0.0372813
+}
+
+scene_node "ObjectNode_ObjectMesh-S149_material_133"
+{
+	parent "ObjectNode"
+	position 0.0703392 0.0158801 0.0839047
+}
+
+scene_node "ObjectNode_ObjectMesh-S150_material_156"
+{
+	parent "ObjectNode"
+	position 0.172704 0.061303 0.00533862
+}
+
+scene_node "ObjectNode_ObjectMesh-S151_material_189"
+{
+	parent "ObjectNode"
+	position 0.152226 0.0585258 0.00247119
+}
+
+scene_node "ObjectNode_ObjectMesh-S152_material_94"
+{
+	parent "ObjectNode"
+	position 0.1716 -0.000424138 0.0514893
+}
+
+scene_node "ObjectNode_ObjectMesh-S153_materialt"
+{
+	parent "ObjectNode"
+	position 0.127487 0.0617048 0.0776854
+}
+
+scene_node "ObjectNode_ObjectMesh-S154_material_72"
+{
+	parent "ObjectNode"
+	position 0.121038 0.0381437 0.0649529
+}
+
+scene_node "ObjectNode_ObjectMesh-S155_material_36"
+{
+	parent "ObjectNode"
+	position 0.127905 0.00308483 0.0613927
+}
+
+scene_node "ObjectNode_ObjectMesh-S156_material_123"
+{
+	parent "ObjectNode"
+	position 0.166964 0.0318122 0.0492773
+}
+
+scene_node "ObjectNode_ObjectMesh-S157_material_167"
+{
+	parent "ObjectNode"
+	position 0.222398 0.0683109 0.00185557
+}
+
+scene_node "ObjectNode_ObjectMesh-S158_material_125"
+{
+	parent "ObjectNode"
+	position 0.180809 0.0560647 0.00185145
+}
+
+scene_node "ObjectNode_ObjectMesh-S159_material_204"
+{
+	parent "ObjectNode"
+	position 0.222664 0.0680653 0.000981318
+}
+
+scene_node "ObjectNode_ObjectMesh-S160_material_93"
+{
+	parent "ObjectNode"
+	position 0.165116 -0.000323917 0.0583076
+}
+
+scene_node "ObjectNode_ObjectMesh-S161_material_67"
+{
+	parent "ObjectNode"
+	position 0.218982 0.0725114 -0.0325207
+}
+
+scene_node "ObjectNode_ObjectMesh-S162_material_57"
+{
+	parent "ObjectNode"
+	position 0.266896 0.0781824 0.0564997
+}
+
+scene_node "ObjectNode_ObjectMesh-S163_material_59"
+{
+	parent "ObjectNode"
+	position 0.260906 0.029709 0.0435858
+}
+
+scene_node "ObjectNode_ObjectMesh-S164_material_60"
+{
+	parent "ObjectNode"
+	position 0.26687 0.0273739 -0.0175535
+}
+
+scene_node "ObjectNode_ObjectMesh-S165_material_62"
+{
+	parent "ObjectNode"
+	position 0.266797 0.0539493 0.109265
+}
+
+scene_node "ObjectNode_ObjectMesh-S166_material_61"
+{
+	parent "ObjectNode"
+	position 0.203296 0.080669 -0.0323555
+}
+
+scene_node "ObjectNode_ObjectMesh-S167_material_65"
+{
+	parent "ObjectNode"
+	position 0.206042 0.0270965 -0.0323943
+}
+
+scene_node "ObjectNode_ObjectMesh-S168_material_63"
+{
+	parent "ObjectNode"
+	position 0.237884 0.0370926 0.0721561
+}
+
+scene_node "ObjectNode_ObjectMesh-S169_material_66"
+{
+	parent "ObjectNode"
+	position 0.260276 0.0215827 0.0436225
+}
+
+scene_node "ObjectNode_ObjectMesh-S170_material_53"
+{
+	parent "ObjectNode"
+	position 0.224187 0.0282843 -0.0324972
+}
+
+scene_node "ObjectNode_ObjectMesh-S171_material_56"
+{
+	parent "ObjectNode"
+	position 0.225291 0.0858179 -0.0324731
+}
+
+scene_node "ObjectNode_ObjectMesh-S172_material_207"
+{
+	parent "ObjectNode"
+	position 0.222508 0.0680002 0.0012025
+}
+
+scene_node "ObjectNode_ObjectMesh-S173_material_55"
+{
+	parent "ObjectNode"
+	position 0.26689 0.0661824 0.0818258
+}
+
+scene_node "ObjectNode_ObjectMesh-S174_material_58"
+{
+	parent "ObjectNode"
+	position 0.237863 0.0493833 0.119017
+}
+
+scene_node "ObjectNode_ObjectMesh-S175_material_64"
+{
+	parent "ObjectNode"
+	position 0.252926 0.0309587 0.0621252
+}
+
+scene_node "ObjectNode_ObjectMesh-S176_material_54"
+{
+	parent "ObjectNode"
+	position 0.259205 0.0398468 0.043533
+}
+
+scene_node "ObjectNode_ObjectMesh-S177_material_68"
+{
+	parent "ObjectNode"
+	position 0.232163 0.055415 0.0450571
+}
+
+scene_node "ObjectNode_ObjectMesh-S178_materialz"
+{
+	parent "ObjectNode"
+	position 0.0713901 0.0455095 0.0352213
+}
+
+scene_node "ObjectNode_ObjectMesh-S179_material_206"
+{
+	parent "ObjectNode"
+	position 0.222526 0.0679192 0.00119832
+}
+
+scene_node "ObjectNode_ObjectMesh-S180_material_92"
+{
+	parent "ObjectNode"
+	position 0.165736 -0.000520605 0.0487064
+}
+
+scene_node "ObjectNode_ObjectMesh-S181_material_73"
+{
+	parent "ObjectNode"
+	position 0.115089 0.0462914 0.0579531
+}
+
+scene_node "ObjectNode_ObjectMesh-S182_materialx"
+{
+	parent "ObjectNode"
+	position 0.0708329 0.0449004 0.0352155
+}
+
+scene_node "ObjectNode_ObjectMesh-S183_material_241"
+{
+	parent "ObjectNode"
+	position 0.183064 0.0638472 0.00278012
+}
+
+scene_node "ObjectNode_ObjectMesh-S184_material_74"
+{
+	parent "ObjectNode"
+	position 0.252349 0.038143 0.0890004
+}
+
+scene_node "ObjectNode_ObjectMesh-S185_material_49"
+{
+	parent "ObjectNode"
+	position 0.151185 0.00206499 0.0936145
+}
+
+scene_node "ObjectNode_ObjectMesh-S186_material_126"
+{
+	parent "ObjectNode"
+	position 0.15523 0.0328273 0.0174502
+}
+
+scene_node "ObjectNode_ObjectMesh-S187_materialv"
+{
+	parent "ObjectNode"
+	position 0.149127 0.059963 0.0827004
+}
+
+scene_node "ObjectNode_ObjectMesh-S188_material_90"
+{
+	parent "ObjectNode"
+	position 0.146997 0.106884 0.046814
+}
+
+scene_node "ObjectNode_ObjectMesh-S189_material_124"
+{
+	parent "ObjectNode"
+	position 0.155996 0.0328137 0.0484955
+}
+
+scene_node "ObjectNode_ObjectMesh-S190_materialu"
+{
+	parent "ObjectNode"
+	position 0.153963 0.0736385 0.0827813
+}
+
+scene_node "ObjectNode_ObjectMesh-S191_material_264"
+{
+	parent "ObjectNode"
+	position 0.232679 0.0665077 0.0184215
+}
+
+scene_node "ObjectNode_ObjectMesh-S192_material_171"
+{
+	parent "ObjectNode"
+	position 0.222216 0.0674632 0.00181253
+}
+
+scene_node "ObjectNode_ObjectMesh-S193_material_69"
+{
+	parent "ObjectNode"
+	position 0.246995 0.0469505 0.0787684
+}
+
+scene_node "ObjectNode_ObjectMesh-S194_material_1"
+{
+	parent "ObjectNode"
+	position 0.0672764 0.00161875 0.0572291
+}
+
+scene_node "ObjectNode_ObjectMesh-S195_material_267"
+{
+	parent "ObjectNode"
+	position 0.116153 0.0612093 0.0273213
+}
+
+scene_node "ObjectNode_ObjectMesh-S196_material_203"
+{
+	parent "ObjectNode"
+	position 0.222692 0.0679649 0.000926575
+}
+
+scene_node "ObjectNode_ObjectMesh-S197_material_266"
+{
+	parent "ObjectNode"
+	position 0.11635 0.0619963 0.0270568
+}
+
+scene_node "ObjectNode_ObjectMesh-S198_material_130"
+{
+	parent "ObjectNode"
+	position 0.165415 0.0326216 0.0489086
+}
+
+scene_node "ObjectNode_ObjectMesh-S199_material_129"
+{
+	parent "ObjectNode"
+	position 0.146133 0.0293249 -0.001975
+}
+
+scene_node "ObjectNode_ObjectMesh-S200_material_128"
+{
+	parent "ObjectNode"
+	position 0.177093 0.0560279 0.0148664
+}
+
+scene_node "ObjectNode_ObjectMesh-S201_material_127"
+{
+	parent "ObjectNode"
+	position 0.149698 0.0563434 -0.0121945
+}
+
+scene_node "ObjectNode_ObjectMesh-S202_materialp"
+{
+	parent "ObjectNode"
+	position 0.15108 0.00753754 0.037569
+}
+
+scene_node "ObjectNode_ObjectMesh-S203_material_141"
+{
+	parent "ObjectNode"
+	position 0.182308 0.0374439 0.0633205
+}
+
+scene_node "ObjectNode_ObjectMesh-S204_material_146"
+{
+	parent "ObjectNode"
+	position 0.136185 0.0353829 0.0188859
+}
+
+scene_node "ObjectNode_ObjectMesh-S205_material_224"
+{
+	parent "ObjectNode"
+	position 0.222066 0.0668642 0.00116292
+}
+
+scene_node "ObjectNode_ObjectMesh-S206_material_158"
+{
+	parent "ObjectNode"
+	position 0.230678 0.0661066 0.0218142
+}
+
+scene_node "ObjectNode_ObjectMesh-S207_material_157"
+{
+	parent "ObjectNode"
+	position 0.2012 0.0636241 0.013534
+}
+
+scene_node "ObjectNode_ObjectMesh-S208_material_139"
+{
+	parent "ObjectNode"
+	position 0.225199 0.039925 0.0630484
+}
+
+scene_node "ObjectNode_ObjectMesh-S209_material_136"
+{
+	parent "ObjectNode"
+	position 0.163814 0.0670161 -0.0295116
+}
+
+scene_node "ObjectNode_ObjectMesh-S210_material_221"
+{
+	parent "ObjectNode"
+	position 0.222207 0.0657337 0.00123945
+}
+
+scene_node "ObjectNode_ObjectMesh-S211_material_137"
+{
+	parent "ObjectNode"
+	position 0.163912 0.0646022 -0.0293471
+}
+
+scene_node "ObjectNode_ObjectMesh-S212_material_223"
+{
+	parent "ObjectNode"
+	position 0.22217 0.0658304 0.00117961
+}
+
+scene_node "ObjectNode_ObjectMesh-S213_material_159"
+{
+	parent "ObjectNode"
+	position 0.229605 0.0659759 0.0218861
+}
+
+scene_node "ObjectNode_ObjectMesh-S214_materialr"
+{
+	parent "ObjectNode"
+	position 0.15107 0.0157889 0.0376181
+}
+
+scene_node "ObjectNode_ObjectMesh-S215_material_16"
+{
+	parent "ObjectNode"
+	position 0.0597819 0.030409 0.0611164
+}
+
+scene_node "ObjectNode_ObjectMesh-S216_material_15"
+{
+	parent "ObjectNode"
+	position 0.059381 0.0222563 0.0612739
+}
+
+scene_node "ObjectNode_ObjectMesh-S217_material_153"
+{
+	parent "ObjectNode"
+	position 0.201202 0.0636286 0.0135289
+}
+
+scene_node "ObjectNode_ObjectMesh-S218_material_229"
+{
+	parent "ObjectNode"
+	position 0.232827 0.0670256 0.0219609
+}
+
+scene_node "ObjectNode_ObjectMesh-S219_material_244"
+{
+	parent "ObjectNode"
+	position 0.182946 0.0631244 0.00274768
+}
+
+scene_node "ObjectNode_ObjectMesh-S220_material_140"
+{
+	parent "ObjectNode"
+	position 0.225196 0.0396733 0.0634449
+}
+
+scene_node "ObjectNode_ObjectMesh-S221_material_239"
+{
+	parent "ObjectNode"
+	position 0.197976 0.0622489 -0.0277486
+}
+
+scene_node "ObjectNode_ObjectMesh-S222_material_20"
+{
+	parent "ObjectNode"
+	position 0.246687 0.0400673 0.0786043
+}
+
+scene_node "ObjectNode_ObjectMesh-S223_material_10"
+{
+	parent "ObjectNode"
+	position 0.0678672 0.105483 0.0178578
+}
+
+scene_node "ObjectNode_ObjectMesh-S224_material_26"
+{
+	parent "ObjectNode"
+	position 0.164652 0.0695698 -0.00314902
+}
+
+scene_node "ObjectNode_ObjectMesh-S225_material_27"
+{
+	parent "ObjectNode"
+	position 0.252362 0.0670038 0.130828
+}
+
+scene_node "ObjectNode_ObjectMesh-S226_material_87"
+{
+	parent "ObjectNode"
+	position 0.238041 0.0810528 0.039888
+}
+
+scene_node "ObjectNode_ObjectMesh-S227_material_88"
+{
+	parent "ObjectNode"
+	position 0.0626676 0.0260527 -0.0003538
+}
+
+scene_node "ObjectNode_ObjectMesh-S228_material_84"
+{
+	parent "ObjectNode"
+	position 0.266657 0.026075 -0.0003538
+}
+
+scene_node "ObjectNode_ObjectMesh-S229_material_47"
+{
+	parent "ObjectNode"
+	position 0.0272654 0.078254 0.0666356
+}
+
+scene_node "ObjectNode_ObjectMesh-S230_material_2"
+{
+	parent "ObjectNode"
+	position 0.234661 0.0468026 0.0938969
+}
+
+scene_node "ObjectNode_ObjectMesh-S231_material_7"
+{
+	parent "ObjectNode"
+	position 0.147902 0.0822085 0.0126515
+}
+
+scene_node "ObjectNode_ObjectMesh-S232_material_35"
+{
+	parent "ObjectNode"
+	position 0.164649 0.0828812 0.0488647
+}
+
+scene_node "ObjectNode_ObjectMesh-S233_material_18"
+{
+	parent "ObjectNode"
+	position 0.164661 0.0265062 -0.0330407
+}
+
+scene_node "ObjectNode_ObjectMesh-S234_material_25"
+{
+	parent "ObjectNode"
+	position 0.252352 0.0679955 0.0456759
+}
+
+scene_node "ObjectNode_ObjectMesh-S235_material_28"
+{
+	parent "ObjectNode"
+	position 0.246683 0.040057 0.0786192
+}
+
+scene_node "ObjectNode_ObjectMesh-S236_material_6"
+{
+	parent "ObjectNode"
+	position 0.147902 0.0725 0.014123
+}
+
+scene_node "ObjectNode_ObjectMesh-S237_material_34"
+{
+	parent "ObjectNode"
+	position 0.316244 0.0205 0.0214853
+}
+
+scene_node "ObjectNode_ObjectMesh-S238_material_91"
+{
+	parent "ObjectNode"
+	position 0.234797 0.0467921 0.0938697
+}
+
+scene_node "ObjectNode_ObjectMesh-S239_material_42"
+{
+	parent "ObjectNode"
+	position 0.165424 0.0821211 0.0478355
+}
+
+scene_node "ObjectNode_ObjectMesh-S240_material_96"
+{
+	parent "ObjectNode"
+	position 0.164664 0.0425004 0.0370829
+}
+
+scene_node "ObjectNode_ObjectMesh-S241_material_43"
+{
+	parent "ObjectNode"
+	position 0.164664 0.0817305 0.0490159
+}
+
+scene_node "ObjectNode_ObjectMesh-S242_material_41"
+{
+	parent "ObjectNode"
+	position 0.164661 0.0820016 -0.033036
+}
+
+scene_node "ObjectNode_ObjectMesh-S243_materiale"
+{
+	parent "ObjectNode"
+	position 0.0688308 0.105981 0.0187099
+}
+
+scene_node "ObjectNode_ObjectMesh-S244_material_98"
+{
+	parent "ObjectNode"
+	position 0.067817 0.0534251 0.0780552
+}
+
+scene_node "ObjectNode_ObjectMesh-S245_material_8"
+{
+	parent "ObjectNode"
+	position 0.0653747 0.0494916 0.0783792
+}
+
+scene_node "ObjectNode_ObjectMesh-S246_material_86"
+{
+	parent "ObjectNode"
+	position 0.266654 0.0810466 0.0398865
+}
+
+scene_node "ObjectNode_ObjectMesh-S247_material_4"
+{
+	parent "ObjectNode"
+	position 0.146973 0.116133 0.0666206
+}
+
+scene_node "ObjectNode_ObjectMesh-S248_material_12"
+{
+	parent "ObjectNode"
+	position 0.147522 0.028 0.012677
+}
+
+scene_node "ObjectNode_ObjectMesh-S249_material_14"
+{
+	parent "ObjectNode"
+	position 0.121887 0.0270057 0.0066388
+}
+
+scene_node "ObjectNode_ObjectMesh-S250_material_5"
+{
+	parent "ObjectNode"
+	position 0.252347 0.0274983 0.089957
+}
+
+scene_node "ObjectNode_ObjectMesh-S251_material_9"
+{
+	parent "ObjectNode"
+	position 0.0688114 0.104257 0.0188091
+}
+
+scene_node "ObjectNode_ObjectMesh-S252_material_237"
+{
+	parent "ObjectNode"
+	position 0.113674 0.0662996 0.0019455
+}
+
+scene_node "ObjectNode_ObjectMesh-S253_material_11"
+{
+	parent "ObjectNode"
+	position 0.149903 0.0538489 0.0183341
+}
+
+scene_node "ObjectNode_ObjectMesh-S254_material_248"
+{
+	parent "ObjectNode"
+	position 0.0749576 0.0674445 0.0582937
+}
+
+scene_node "ObjectNode_ObjectMesh-S255_material_13"
+{
+	parent "ObjectNode"
+	position 0.147902 0.0576359 0.0111345
+}
+
+scene_node "ObjectNode_ObjectMesh-S256_material_97"
+{
+	parent "ObjectNode"
+	position 0.0604868 0.0467858 0.0427779
+}
+
+scene_node "ObjectNode_ObjectMesh-S257_material_3"
+{
+	parent "ObjectNode"
+	position 0.147902 0.138016 0.13248
+}
+
+scene_node "ObjectNode_ObjectMesh-S258_material_95"
+{
+	parent "ObjectNode"
+	position 0.164664 0.0455915 0.0408749
+}
+
+scene_node "ObjectNode_ObjectMesh-S259_material_29"
+{
+	parent "ObjectNode"
+	position 0.147835 0.072 0.132472
+}
+
+scene_node "ObjectNode_ObjectMesh-S260_material_144"
+{
+	parent "ObjectNode"
+	position 0.177226 0.0612893 0.0152237
+}
+
+scene_node "ObjectNode_ObjectMesh-S261_material_24"
+{
+	parent "ObjectNode"
+	position 0.232055 0.0570491 0.0489607
+}
+
+scene_node "ObjectNode_ObjectMesh-S262_material_19"
+{
+	parent "ObjectNode"
+	position 0.252279 0.0531553 0.0404096
+}
+
+scene_node "ObjectNode_ObjectMesh-S263_material_22"
+{
+	parent "ObjectNode"
+	position 0.267227 0.0540083 0.0490093
+}
+
+scene_node "ObjectNode_ObjectMesh-S264_material_31"
+{
+	parent "ObjectNode"
+	position 0.270398 0.014486 0.021485
+}
+
+scene_node "ObjectNode_ObjectMesh-S265_material_85"
+{
+	parent "ObjectNode"
+	position 0.266654 0.0810466 -0.000353795
+}
+
+scene_node "ObjectNode_ObjectMesh-S266_material_21"
+{
+	parent "ObjectNode"
+	position 0.253521 0.0267811 0.0773627
+}
+
+scene_node "ObjectNode_ObjectMesh-S267_material_23"
+{
+	parent "ObjectNode"
+	position 0.237336 0.054002 0.0489597
+}
+
+scene_node "ObjectNode_ObjectMesh-S268_material_32"
+{
+	parent "ObjectNode"
+	position 0.273398 0.0205 0.0214853
+}
+
+scene_node "ObjectNode_ObjectMesh-S269_material_30"
+{
+	parent "ObjectNode"
+	position 0.245402 0.0310391 0.0463816
+}
+
+scene_node "ObjectNode_ObjectMesh-S270_material_17"
+{
+	parent "ObjectNode"
+	position 0.0619306 0.05705 0.0490514
+}
+
+scene_node "ObjectNode_ObjectMesh-S271_material_40"
+{
+	parent "ObjectNode"
+	position 0.0604472 0.022729 0.0612739
+}
+
+scene_node "ObjectNode_ObjectMesh-S272_material_225"
+{
+	parent "ObjectNode"
+	position 0.222209 0.0656185 0.00121788
+}
+
+scene_node "ObjectNode_ObjectMesh-S273_material_37"
+{
+	parent "ObjectNode"
+	position -0.123736 0.0332534 0.0130085
+}
+
+scene_node "ObjectNode_ObjectMesh-S274_material_39"
+{
+	parent "ObjectNode"
+	position 0.0604373 0.0420945 0.0146118
+}
+
+scene_node "ObjectNode_ObjectMesh-S275_material_44"
+{
+	parent "ObjectNode"
+	position 0.164652 0.0726178 0.00226309
+}
+
+scene_node "ObjectNode_ObjectMesh-S276_material_33"
+{
+	parent "ObjectNode"
+	position 0.294821 0.0205 0.0214853
+}
+
+scene_node "ObjectNode_ObjectMesh-S277_material_45"
+{
+	parent "ObjectNode"
+	position 0.220546 0.00109729 0.0169545
+}
+
+scene_node "ObjectNode_ObjectMesh-S278_material_48"
+{
+	parent "ObjectNode"
+	position 0.164721 -0.0010012 0.0671713
+}
+
+scene_node "ObjectNode_ObjectMesh-S279_material_245"
+{
+	parent "ObjectNode"
+	position 0.183105 0.0637542 0.00275759
+}
+
+scene_node "ObjectNode_ObjectMesh-S280_material_228"
+{
+	parent "ObjectNode"
+	position 0.232872 0.067014 0.0219669
+}
+
+scene_node "ObjectNode_ObjectMesh-S281_material_231"
+{
+	parent "ObjectNode"
+	position 0.232782 0.066899 0.0219166
+}
+
+scene_node "ObjectNode_ObjectMesh-S282_material_70"
+{
+	parent "ObjectNode"
+	position -0.12386 -0.000278806 0.00828701
+}
+
+scene_node "ObjectNode_ObjectMesh-S283_material_160"
+{
+	parent "ObjectNode"
+	position 0.229614 0.0659444 0.0219466
+}
+
+scene_node "ObjectNode_ObjectMesh-S284_material_152"
+{
+	parent "ObjectNode"
+	position 0.171952 0.0590444 0.00444354
+}
+
+scene_node "ObjectNode_ObjectMesh-S285_material_89"
+{
+	parent "ObjectNode"
+	position 0.0626676 0.0810466 -0.000353795
+}
+
+scene_node "ObjectNode_ObjectMesh-S286_material_75"
+{
+	parent "ObjectNode"
+	position 0.467409 0.0425719 0.016971
+}

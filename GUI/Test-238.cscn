@@ -1,0 +1,215 @@
+materials metallic_roughness
+include "Materials/Gui.cscn"
+
+// GUI
+
+gui
+{
+	theme "Menu/Jouer"
+	{
+		default_font "Dbbrnms_25"
+
+		button_style
+		{
+			background_material "Commencer"
+			highlighted_background_material "CommencerMO"
+			pushed_background_material "CommencerMO"
+		}
+	}
+
+	theme "Menu/Regles"
+	{
+		default_font "Dbbrnms_25"
+
+		button_style
+		{
+			background_material "Regles"
+			highlighted_background_material "ReglesMO"
+			pushed_background_material "ReglesMO"
+		}
+	}
+
+	theme "Menu/Retour"
+	{
+		default_font "Dbbrnms_25"
+
+		button_style
+		{
+			background_material "Retour"
+			highlighted_background_material "RetourMO"
+			pushed_background_material "RetourMO"
+		}
+	}
+
+	theme "Menu/Continuer"
+	{
+		default_font "Dbbrnms_25"
+
+		button_style
+		{
+			background_material "Continuer"
+			highlighted_background_material "ContinuerMO"
+			pushed_background_material "ContinuerMO"
+		}
+	}
+
+	theme "Menu/Recommencer"
+	{
+		default_font "Dbbrnms_25"
+
+		button_style
+		{
+			background_material "Recommencer"
+			highlighted_background_material "RecommencerMO"
+			pushed_background_material "RecommencerMO"
+		}
+	}
+
+	theme "Menu/Menu"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "BaseMenu"
+		}
+
+		button_style
+		{
+			background_material "MenuInGame"
+			highlighted_background_material "MenuInGameMO"
+			pushed_background_material "MenuInGameMO"
+		}
+	}
+
+	theme "Title"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "Titre"
+		}
+	}
+
+	theme "BottomRightCorner"
+	{
+		default_font "Dbbrnms_25"
+
+		static_style
+		{
+			background_material "BasDroite"
+		}
+	}
+
+	static "Title"
+	{
+		theme "Title"
+		pixel_position 256 192
+		pixel_size 512 384
+	}
+
+	static "BottomRightCorner"
+	{
+		theme "BottomRightCorner"
+		background_material "BasDroite"
+		pixel_position 768 512
+		pixel_size 256 256
+	}
+
+	static "Menu"
+	{
+		theme "Menu/Menu"
+		pixel_position 0 0
+		pixel_size 341 1024
+
+		button "Menu/Jouer"
+		{
+			theme "Menu/Jouer"
+			pixel_position 32 192
+			pixel_size 128 64
+			pixel_border_size 0 0 0 0
+		}
+
+		button "Menu/Regles"
+		{
+			theme "Menu/Regles"
+			pixel_position 32 288
+			pixel_size 128 64
+			pixel_border_size 0 0 0 0
+		}
+
+		button "Menu/Retour"
+		{
+			theme "Menu/Retour"
+			pixel_position 32 384
+			pixel_size 128 64
+			pixel_border_size 0 0 0 0
+		}
+
+		button "Menu/Continuer"
+		{
+			theme "Menu/Continuer"
+			pixel_position 32 480
+			pixel_size 128 64
+			pixel_border_size 0 0 0 0
+		}
+
+		button "Menu/Recommencer"
+		{
+			theme "Menu/Recommencer"
+			pixel_position 32 576
+			pixel_size 128 64
+			pixel_border_size 0 0 0 0
+		}
+
+		button "Menu/Menu"
+		{
+			theme "Menu/Menu"
+			pixel_position 32 576
+			pixel_size 128 64
+			pixel_border_size 0 0 0 0
+		}
+	}
+}
+
+// SCENE
+
+scene "Scene"
+{
+	background_image "Textures/backgroundImage.hdr"
+	ambient_light 0.0 0.0 0.0
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.0 -100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+// WINDOW
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 1024 768
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

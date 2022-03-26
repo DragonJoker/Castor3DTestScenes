@@ -1,0 +1,534 @@
+// Geometries
+
+object "barriere_bar"
+{
+	parent "barriere_bar"
+	mesh "barriere_bar"
+}
+
+object "barriere_bar_1"
+{
+	parent "barriere_bar_1"
+	mesh "barriere_bar"
+}
+
+object "barriere_bar_10"
+{
+	parent "barriere_bar_10"
+	mesh "barriere_bar"
+}
+
+object "barriere_bar_5"
+{
+	parent "barriere_bar_5"
+	mesh "barriere_bar"
+}
+
+object "barriere_bar_7"
+{
+	parent "barriere_bar_7"
+	mesh "barriere_bar"
+}
+
+object "barriere_bar_8"
+{
+	parent "barriere_bar_8"
+	mesh "barriere_bar"
+}
+
+object "billard_1"
+{
+	parent "billard_1"
+	mesh "billard"
+}
+
+object "billard_2"
+{
+	parent "billard_2"
+	mesh "billard"
+}
+
+object "cafe"
+{
+	parent "ObjectRootNode"
+	mesh "cafe"
+}
+
+object "canape_demi_cercle"
+{
+	parent "canape_demi_cercle"
+	mesh "canape_demi_cercle"
+}
+
+object "canape_triple"
+{
+	parent "canape_triple"
+	mesh "canape_triple"
+}
+
+object "canape_triple_1"
+{
+	parent "canape_triple_1"
+}
+
+object "canape_triple_10_1"
+{
+	parent "canape_triple_10_1"
+	mesh "canape_triple"
+}
+
+object "canape_triple_10_2"
+{
+	parent "canape_triple_10_2"
+	mesh "canape_triple"
+}
+
+object "canape_triple_10_3"
+{
+	parent "canape_triple_10_3"
+	mesh "canape_triple"
+}
+
+object "canape_triple_2"
+{
+	parent "canape_triple_2"
+	mesh "canape_triple"
+}
+
+object "canape_triple_3"
+{
+	parent "canape_triple_3"
+	mesh "canape_triple"
+}
+
+object "canape_triple_4"
+{
+	parent "canape_triple_4"
+	mesh "canape_triple"
+}
+
+object "canape_triple_5"
+{
+	parent "canape_triple_5"
+	mesh "canape_triple"
+}
+
+object "canape_triple_6"
+{
+	parent "canape_triple_6"
+	mesh "canape_triple"
+}
+
+object "canape_triple_7"
+{
+	parent "canape_triple_7"
+	mesh "canape_triple"
+}
+
+object "canape_triple_8"
+{
+	parent "canape_triple_8"
+	mesh "canape_triple"
+}
+
+object "canape_triple_9"
+{
+	parent "canape_triple_9"
+	mesh "canape_triple"
+}
+
+object "fauteuil"
+{
+	parent "fauteuil"
+	mesh "fauteuil"
+}
+
+object "fauteuil_1"
+{
+	parent "fauteuil_1"
+	mesh "fauteuil"
+}
+
+object "fauteuil_2"
+{
+	parent "fauteuil_2"
+	mesh "fauteuil"
+}
+
+object "fauteuil_3"
+{
+	parent "fauteuil_3"
+	mesh "fauteuil"
+}
+
+object "fauteuil_4"
+{
+	parent "fauteuil_4"
+	mesh "fauteuil"
+}
+
+object "objets_billard"
+{
+	parent "objets_billard"
+	mesh "objets_billard"
+}
+
+object "plante_01_4"
+{
+	parent "plante_01_4"
+	mesh "plante_01"
+}
+
+object "plante_02"
+{
+	parent "plante_02"
+	mesh "plante_02"
+}
+
+object "plante_03"
+{
+	parent "plante_03"
+	mesh "plante_03"
+}
+
+object "plante_05"
+{
+	parent "plante_05"
+	mesh "plante_05"
+}
+
+object "pouf"
+{
+	parent "pouf"
+	mesh "pouf"
+}
+
+object "pouf_1"
+{
+	parent "pouf_1"
+	mesh "pouf"
+}
+
+object "pouf_2"
+{
+	parent "pouf_2"
+	mesh "pouf"
+}
+
+object "pouf_3"
+{
+	parent "pouf_3"
+	mesh "pouf"
+}
+
+object "pouf_4"
+{
+	parent "pouf_4"
+	mesh "pouf"
+}
+
+object "pouf_5"
+{
+	parent "pouf_5"
+	mesh "pouf"
+}
+
+object "pouf_6"
+{
+	parent "pouf_6"
+	mesh "pouf"
+}
+
+object "pouf_7"
+{
+	parent "pouf_7"
+	mesh "pouf"
+}
+
+object "pouf_9"
+{
+	parent "pouf_9"
+	mesh "pouf"
+}
+
+object "table_bar"
+{
+	parent "table_bar"
+	mesh "table_bar"
+}
+
+object "table_bar_1"
+{
+	parent "table_bar_1"
+	mesh "table_bar"
+}
+
+object "table_bar_2"
+{
+	parent "table_bar_2"
+	mesh "table_bar"
+}
+
+object "table_bar_3"
+{
+	parent "table_bar_3"
+	mesh "table_bar"
+}
+
+object "table_bar_4"
+{
+	parent "table_bar_4"
+	mesh "table_bar"
+}
+
+object "table_bar_5"
+{
+	parent "table_bar_5"
+	mesh "table_bar"
+}
+
+object "table_basse"
+{
+	parent "table_basse"
+	mesh "table_basse"
+}
+
+object "table_basse_1"
+{
+	parent "table_basse_1"
+	mesh "table_basse"
+}
+
+object "table_basse_2"
+{
+	parent "table_basse_2"
+	mesh "table_basse"
+}
+
+object "table_basse_4"
+{
+	parent "table_basse_4"
+	mesh "table_basse"
+}
+
+object "table_basse_5"
+{
+	parent "table_basse_5"
+	mesh "table_basse"
+}
+
+object "table_verre"
+{
+	parent "table_verre"
+	mesh "table_verre"
+}
+
+object "table_verre_1"
+{
+	parent "table_verre_1"
+	mesh "table_verre"
+}
+
+object "table_verre_2"
+{
+	parent "table_verre_2"
+	mesh "table_verre"
+}
+
+object "table_verre_3"
+{
+	parent "table_verre_3"
+	mesh "table_verre"
+}
+
+object "table_verre_4"
+{
+	parent "table_verre_4"
+	mesh "table_verre"
+}
+
+object "tableau_myt"
+{
+	parent "tableau_myt"
+	mesh "tableau_myt"
+}
+
+object "tabouret_bar"
+{
+	parent "tabouret_bar"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_1"
+{
+	parent "tabouret_bar_1"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_10"
+{
+	parent "tabouret_bar_10"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_13"
+{
+	parent "tabouret_bar_13"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_14"
+{
+	parent "tabouret_bar_14"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_14_1"
+{
+	parent "tabouret_bar_14_1"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_16"
+{
+	parent "tabouret_bar_16"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_17"
+{
+	parent "tabouret_bar_17"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_18"
+{
+	parent "tabouret_bar_18"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_18_1"
+{
+	parent "tabouret_bar_18_1"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_19"
+{
+	parent "tabouret_bar_19"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_19_1"
+{
+	parent "tabouret_bar_19_1"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_19_2"
+{
+	parent "tabouret_bar_19_2"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_2"
+{
+	parent "tabouret_bar_2"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_20"
+{
+	parent "tabouret_bar_20"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_20_1"
+{
+	parent "tabouret_bar_20_1"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_20_3"
+{
+	parent "tabouret_bar_20_3"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_20_4"
+{
+	parent "tabouret_bar_20_4"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_20_6"
+{
+	parent "tabouret_bar_20_6"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_20_7"
+{
+	parent "tabouret_bar_20_7"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_21"
+{
+	parent "tabouret_bar_21"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_21_1"
+{
+	parent "tabouret_bar_21_1"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_21_2"
+{
+	parent "tabouret_bar_21_2"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_21_3"
+{
+	parent "tabouret_bar_21_3"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_21_5"
+{
+	parent "tabouret_bar_21_5"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_3"
+{
+	parent "tabouret_bar_3"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_5"
+{
+	parent "tabouret_bar_5"
+	mesh "tabouret_bar"
+}
+
+object "tabouret_bar_7"
+{
+	parent "tabouret_bar_7"
+	mesh "tabouret_bar"
+}
+
+object "tv_bar"
+{
+	parent "tv_bar"
+	mesh "tv_bar"
+}
+
+object "tv_bar_01"
+{
+	parent "tv_bar_01"
+	mesh "tv_bar"
+}

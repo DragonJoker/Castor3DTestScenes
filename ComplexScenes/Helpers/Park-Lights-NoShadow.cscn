@@ -1,0 +1,9 @@
+// Lights
+
+light "light_01"
+{
+	parent "LightNode"
+	type directional
+	colour 1 1 1
+	intensity 0.7 0.8
+}

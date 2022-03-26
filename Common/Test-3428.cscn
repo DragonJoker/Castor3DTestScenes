@@ -1,0 +1,113 @@
+// Global configuration
+materials toon_metallic_roughness
+
+scene "Pufi"
+{
+	// Scene configuration
+	ambient_light 1.0 1.0 1.0
+	background_colour 0.5 0.5 0.5
+	include "Materials/Castor3D-Toon.cscn"
+
+	//Skybox
+
+	skybox
+	{
+		equirectangular "Textures/skybox-01-blue.jpg" 1024
+	}
+
+	// Meshes
+
+	mesh "Pufi"
+	{
+		import "Meshes/Pufi/Pufi.cmsh"
+		default_material "Pufi"
+	}
+
+	// Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 320
+		position 71 47 -131
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.1
+			aspect_ratio 1.0
+			far 20000
+			fov_y 45
+		}
+	}
+
+	// Light nodes
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 100
+	}
+
+	light "Light"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.00000 1.00000 1.00000
+		intensity 8.00000 10.0000
+	}
+
+	// Objects nodes
+
+	scene_node "FinalNode"
+	{
+		orientation 0 1 0 180
+	}
+
+	scene_node "Pufi_WALK"
+	{
+		parent "FinalNode"
+		position 50 0 0
+	}
+
+	object "Pufi_WALK"
+	{
+		parent "Pufi_WALK"
+		mesh "Pufi"
+	}
+
+	animated_object_group "Pufi_WALK_Anim"
+	{
+		animated_object "Pufi_WALK"
+
+		animation "WALK"
+		{
+			looped true
+		}
+
+		start_animation "WALK"
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1024 1024
+		format argb32
+		scene "Pufi"
+		camera "MainCamera"
+		tone_mapping "linear"
+		postfx "draw_edges"
+	}
+}

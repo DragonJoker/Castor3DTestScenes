@@ -1,0 +1,81 @@
+// Global configuration
+materials blinn_phong
+
+scene "BaltardIn"
+{
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.500000 0.500000 0.500000
+	include "Helpers/BaltardIn-Materials-BlinnPhong.cscn"
+	include "Helpers/BaltardIn-Meshes.cscn"
+	include "Helpers/BaltardIn-Nodes.cscn"
+	include "Helpers/BaltardIn-Objects.cscn"
+	include "Helpers/BaltardIn-Lights.cscn"
+
+	// Skybox
+
+	skybox
+	{
+		right "Textures/BaltardIn/cube_map_baltard_ns_RT.jpg"
+		left "Textures/BaltardIn/cube_map_baltard_ns_LF.jpg"
+		bottom "Textures/BaltardIn/cube_map_baltard_ns_DN.jpg"
+		top "Textures/BaltardIn/cube_map_baltard_ns_UP.jpg"
+		back "Textures/BaltardIn/cube_map_baltard_ns_FR.jpg"
+		front "Textures/BaltardIn/cube_map_baltard_ns_BK.jpg"
+	}
+
+	// Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 1 0 0 0
+		position 7.45687 34.1209 -113.5
+		scale 1 1 1
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.5
+			aspect_ratio 1.778
+			far 1200.0
+			fov_y 45
+		}
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format argb32
+		scene "BaltardIn"
+		camera "MainCamera"
+		tone_mapping "linear"
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			intensity 1
+			radius 5
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1
+			blur_step_size 2
+			blur_radius 4
+		}
+	}
+}

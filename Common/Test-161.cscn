@@ -1,0 +1,125 @@
+// materials phong
+materials specular_glossiness
+// materials metallic_roughness
+
+scene "Scene"
+{
+	ambient_light 0.0 0.0 0.0
+
+	skybox
+	{
+		equirectangular "Textures/backgroundSkyboxEquirectangular.jpg" 1024
+	}
+
+	sampler "Trilinear"
+	{
+		min_filter linear
+		mag_filter linear
+		mip_filter linear
+		min_lod 0.0
+		max_lod 12.0
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
+	mesh "Plane"
+	{
+		type "plane" -width_subdiv=1 -depth_subdiv=1 -width=10.0 depth=10.0
+	}
+
+	material "DiffuseMap"
+	{
+		pass
+		{
+			// diffuse 1.0 1.0 1.0
+			albedo 1.0 1.0 1.0
+			specular 0.0 0.0 0.0
+			emissive 0.0 0.0 0.0
+			// shininess 20.0
+			glossiness 0.1
+			// roughness 0.9
+			two_sided true
+
+			texture_unit
+			{
+				// image "Textures/bronze.jpg" rgb
+				// image "Textures/VasePlant_diffuse.png" rgb
+				image "Textures/BC1.dds"
+				// diffuse_mask 0x00ffffff
+				albedo_mask 0x00ffffff
+				sampler	"Trilinear"
+			}
+		}
+	}
+
+	scene_node "Diffuse"
+	{
+		position 0.0 0.0 0.0
+	}
+	object "Diffuse"
+	{
+		parent "Diffuse"
+		mesh "Plane"
+		material "DiffuseMap"
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 225
+	}
+	light "SunLight1"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
+	}
+
+	// scene_node "LightNode"
+	// {
+		// position  0.0 0.0 -5.0
+	// }
+	// light "BulbLight1"
+	// {
+		// parent "LightNode"
+		// type point
+		// colour 1.0 1.0 1.0
+		// intensity 0.1 0.8 1.0
+		// attenuation 0.0 0.25 0.0
+	// }
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0 1.0 0.0 180.0
+		position 0.0 0.0 20.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

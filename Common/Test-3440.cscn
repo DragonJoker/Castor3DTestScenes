@@ -1,0 +1,162 @@
+materials metallic_roughness
+
+scene "Scene"
+{
+	ambient_light 1.0 1.0 1.0
+
+	skybox
+	{
+		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
+	}
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	material "FloorMaterial"
+	{
+		pass
+		{
+			albedo 1.0 1.0 1.0
+			emissive 0.0
+			metallic 0.0
+			roughness 0.8
+
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				channel albedo
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Bricks/Normal.jpg"
+				channel normal
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Bricks/Height.jpg"
+				channel roughness
+				sampler	"Linear"
+			}
+		}
+	}
+	mesh "FloorMesh"
+	{
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=600 -depth=600
+		default_material "FloorMaterial"
+	}
+	scene_node "FloorNode"
+	{
+		position 0.0 0.0 0.0
+		orientation 1.0 0.0 0.0 270.0
+	}
+	object "Floor"
+	{
+		parent "FloorNode"
+		mesh "FloorMesh"
+	}
+
+	material "WaterMaterial"
+	{
+		render_pass "c3d.water"
+
+		pass
+		{
+			albedo 0.465 0.797 0.991
+			emissive 0.0
+			transmission 0.003 0.599 0.812
+			metallic 0.0
+			roughness 0.08
+		}
+	}
+	mesh "WaterMesh"
+	{
+		type "plane" -width_subdiv=1000 -depth_subdiv=1000 -width=1000 -depth=1000
+		default_material "WaterMaterial"
+	}
+	scene_node "WaterNode"
+	{
+		position 0.0 2.0 0.0
+		orientation 1.0 0.0 0.0 270.0
+	}
+	object "Water"
+	{
+		parent "WaterNode"
+		mesh "WaterMesh"
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 0.497314 0.68907 -0.527125 210.623
+	}
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 8.0 10.0
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position -439.625 139.968 -507.437
+		orientation 0.501137 0.847037 -0.177171 45.3094
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 1.0
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	fullscreen false
+	vsync false
+
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+
+		water_rendering
+		{
+			dampeningFactor 5.0
+			depthSofteningDistance 0.5
+			refractionRatio 1.2
+			refractionDistortionFactor 0.04
+			refractionHeightFactor 2.5
+			refractionDistanceFactor 0.05
+			normalMapScrollSpeed 0.01 0.01
+			normalMapScroll 1.0 0.0 0.0 1.0
+			ssrStepSize 0.5
+			ssrForwardStepsCount 20.0
+			ssrBackwardStepsCount 10.0
+			ssrDepthMult 20.0
+			normals1 "Textures/Waves/waterNM1.dds"
+			normals2 "Textures/Waves/waterNM2.dds"
+			noise "Textures/Waves/waterNoise.dds"
+		}
+	}
+}

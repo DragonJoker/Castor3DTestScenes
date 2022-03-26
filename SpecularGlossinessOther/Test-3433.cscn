@@ -1,0 +1,133 @@
+materials specular_glossiness
+
+scene "Scene"
+{
+	ambient_light 1.0 1.0 1.0
+	background_colour 0.5 0.5 0.5 1.0
+
+	skybox
+	{
+		// equirectangular "Textures/pineTreeSkybox.hdr" 1024
+		equirectangular "Textures/nightSkybox.hdr" 1024
+	}
+
+	sampler "TriLinear"
+	{
+		min_filter linear
+		mag_filter linear
+		mip_filter linear
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
+	material "Dragon"
+	{
+		pass
+		{
+			emissive 8.0
+
+			texture_unit
+			{
+				image "Textures/Dragon/albedo.png"
+				albedo_mask 0x00FFFFFF
+				sampler	"TriLinear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Dragon/normal.png"
+				normal_mask 0x00FFFFFF
+				sampler "TriLinear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Dragon/specular_smoothness.png"
+				specular_mask 0x00FFFFFF
+				glossiness_mask 0xFF000000
+				sampler	"TriLinear"
+			}
+/*
+			texture_unit
+			{
+				image "Textures/Dragon/ambient_occlusion.png"
+				occlusion_mask 0x00FF0000
+				sampler	"TriLinear"
+			}
+*/
+			texture_unit
+			{
+				image "Textures/Dragon/emissive.png"
+				emissive_mask 0x00FFFFFF
+				sampler	"TriLinear"
+			}
+		}
+	}
+
+	mesh "Dragon"
+	{
+		import "Meshes/Dragon.fbx"
+	}
+
+	scene_node "FinalNode"
+	{
+		position 0.0 0.0 0.0
+		scale 0.1 0.1 0.1
+	}
+	object "FinalPrimitive"
+	{
+		parent "FinalNode"
+		mesh "Dragon"
+		material "Dragon"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0.0 1.0 0.0 200.0
+		position 22.0 16.0 63.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 2000.0
+		}
+	}
+
+	// Animated object groups
+
+	// animated_object_group "FinalPrimitive_Anim"
+	// {
+		// animated_object "FinalPrimitive"
+
+		// animation "Take 001"
+		// {
+			// looped true
+			// scale 1
+		// }
+
+		// start_animation "Take 001"
+	// }
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

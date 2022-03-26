@@ -1,0 +1,1449 @@
+// Objects
+
+object "barriere_verre_12"
+{
+	parent "barriere_verre_12"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "tabouret_boite_13"
+{
+	parent "tabouret_boite_13"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "table_basse_1"
+{
+	parent "table_basse_1"
+	mesh "table_basse"
+
+	materials
+	{
+		material 0 "table_basse/table_basse_laque"
+		material 1 "table_basse/table_basse_cuivre"
+	}
+}
+
+object "baffles_boite"
+{
+	parent "boite"
+	mesh "baffles_boite"
+	material "baffles_boite/baffles"
+}
+
+object "pouf_11_1"
+{
+	parent "pouf_11_1"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "table_basse"
+{
+	parent "table_basse"
+	mesh "table_basse"
+
+	materials
+	{
+		material 0 "table_basse/table_basse_laque"
+		material 1 "table_basse/table_basse_cuivre"
+	}
+}
+
+object "pouf_11"
+{
+	parent "pouf_11"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "barriere_verre_10"
+{
+	parent "barriere_verre_10"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "tabouret_boite_15_11"
+{
+	parent "tabouret_boite_15_11"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "pouf_9"
+{
+	parent "pouf_9"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "barriere_verre_11"
+{
+	parent "barriere_verre_11"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "barriere_verre_13_1"
+{
+	parent "barriere_verre_13_1"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "dj_boite"
+{
+	parent "boite"
+	mesh "dj_boite"
+
+	materials
+	{
+		material 0 "dj_boite/bloc"
+		material 1 "dj_boite/bloc"
+		material 2 "dj_boite/metal"
+		material 3 "dj_boite/table"
+		material 4 "dj_boite/vinyle"
+		material 5 "dj_boite/piste"
+	}
+}
+
+object "barriere_verre_13"
+{
+	parent "barriere_verre_13"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "barriere_verre_7"
+{
+	parent "barriere_verre_7"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "barriere_verre_13_4"
+{
+	parent "barriere_verre_13_4"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "barriere_verre_6"
+{
+	parent "barriere_verre_6"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "barriere_verre_13_5"
+{
+	parent "barriere_verre_13_5"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "barriere_verre_14"
+{
+	parent "barriere_verre_14"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "barriere_verre_3"
+{
+	parent "barriere_verre_3"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "barriere_verre_4"
+{
+	parent "barriere_verre_4"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "barriere_verre_5"
+{
+	parent "barriere_verre_5"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "barriere_verre_8"
+{
+	parent "barriere_verre_8"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "canape_triple"
+{
+	parent "canape_triple"
+	mesh "canape_triple"
+	material "canape_triple/canape_triple"
+}
+
+object "barriere_verre_9"
+{
+	parent "barriere_verre_9"
+	mesh "barriere_verre"
+
+	materials
+	{
+		material 0 "barriere_verre/metal"
+		material 1 "barriere_verre/verre"
+	}
+}
+
+object "bars_boite"
+{
+	parent "bars_boite"
+	mesh "bars_boite"
+
+	materials
+	{
+		material 0 "bars_boite/bois"
+		material 1 "bars_boite/bois_noir"
+		material 2 "bars_boite/metal"
+		material 3 "bars_boite/porte_bar"
+		material 4 "bars_boite/grille_biere"
+		material 5 "bars_boite/distrib_biere"
+		material 6 "bars_boite/bouteilles"
+		material 7 "bars_boite/bouteilles02"
+		material 8 "bars_boite/bouteilles03"
+		material 9 "bars_boite/bouteilles04"
+		material 10 "bars_boite/verre"
+		material 11 "bars_boite/lumiere"
+	}
+}
+
+object "boite"
+{
+	parent "boite"
+	mesh "boite"
+
+	materials
+	{
+		material 0 "boite/sol 1"
+		material 1 "boite/murs"
+		material 2 "boite/plafond"
+		material 3 "boite/parquet 1"
+		material 4 "boite/parquet 2"
+		material 5 "boite/porte"
+		material 6 "boite/noir"
+		material 7 "boite/sol 2"
+		material 8 "boite/sol 3"
+	}
+}
+
+object "spot_simple_10"
+{
+	parent "spot_simple_10"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "canape_triple_1"
+{
+	parent "canape_triple_1"
+	mesh "canape_triple"
+	material "canape_triple/canape_triple"
+}
+
+object "spot_simple_13"
+{
+	parent "spot_simple_13"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "canape_triple_2"
+{
+	parent "canape_triple_2"
+	mesh "canape_triple"
+	material "canape_triple/canape_triple"
+}
+
+object "spot_simple_12"
+{
+	parent "spot_simple_12"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "canape_triple_3"
+{
+	parent "canape_triple_3"
+	mesh "canape_triple"
+	material "canape_triple/canape_triple"
+}
+
+object "spot_simple_15"
+{
+	parent "spot_simple_15"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "canape_triple_4"
+{
+	parent "canape_triple_4"
+	mesh "canape_triple"
+	material "canape_triple/canape_triple"
+}
+
+object "spot_simple_14"
+{
+	parent "spot_simple_14"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "canape_triple_5"
+{
+	parent "canape_triple_5"
+	mesh "canape_triple"
+	material "canape_triple/canape_triple"
+}
+
+object "spot_simple_17"
+{
+	parent "spot_simple_17"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "canape_triple_6"
+{
+	parent "canape_triple_6"
+	mesh "canape_triple"
+	material "canape_triple/canape_triple"
+}
+
+object "escaliers_boite"
+{
+	parent "boite"
+	mesh "escaliers_boite"
+
+	materials
+	{
+		material 0 "escaliers_boite/metal"
+		material 1 "escaliers_boite/verre"
+	}
+}
+
+object "fauteuil"
+{
+	parent "fauteuil"
+	mesh "fauteuil"
+	material "fauteuil/gros_fauteuil_bar"
+}
+
+object "fauteuil_1"
+{
+	parent "fauteuil_1"
+	mesh "fauteuil"
+	material "fauteuil/gros_fauteuil_bar"
+}
+
+object "fauteuil_2"
+{
+	parent "fauteuil_2"
+	mesh "fauteuil"
+	material "fauteuil/gros_fauteuil_bar"
+}
+
+object "fauteuil_3"
+{
+	parent "fauteuil_3"
+	mesh "fauteuil"
+	material "fauteuil/gros_fauteuil_bar"
+}
+
+object "plante_05"
+{
+	parent "plante_05"
+	mesh "plante_05"
+
+	materials
+	{
+		material 0 "plante_05/plante_05"
+		material 1 "plante_05/plante_pot"
+	}
+}
+
+object "fauteuil_4"
+{
+	parent "fauteuil_4"
+	mesh "fauteuil"
+	material "fauteuil/gros_fauteuil_bar"
+}
+
+object "fauteuil_5"
+{
+	parent "fauteuil_5"
+	mesh "fauteuil"
+	material "fauteuil/gros_fauteuil_bar"
+}
+
+object "panneau_mural"
+{
+	parent "panneau_mural"
+	mesh "panneau_mural"
+
+	materials
+	{
+		material 0 "panneau_mural/pub"
+		material 1 "panneau_mural/panneau_pub"
+	}
+}
+
+object "tabouret_boite_10"
+{
+	parent "tabouret_boite_10"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "table_haute_3"
+{
+	parent "table_haute_3"
+	mesh "table_haute"
+
+	materials
+	{
+		material 0 "table_haute/laque"
+		material 1 "table_haute/cuivre"
+	}
+}
+
+object "table_basse_2"
+{
+	parent "table_basse_2"
+	mesh "table_basse"
+
+	materials
+	{
+		material 0 "table_basse/table_basse_laque"
+		material 1 "table_basse/table_basse_cuivre"
+	}
+}
+
+object "pouf_11_2"
+{
+	parent "pouf_11_2"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "plasma"
+{
+	parent "plasma"
+	mesh "plasma"
+
+	materials
+	{
+		material 0 "plasma/ecran"
+		material 1 "plasma/plasma"
+	}
+}
+
+object "table_haute_7"
+{
+	parent "table_haute_7"
+	mesh "table_haute"
+
+	materials
+	{
+		material 0 "table_haute/laque"
+		material 1 "table_haute/cuivre"
+	}
+}
+
+object "pouf_11_6"
+{
+	parent "pouf_11_6"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "plasma_01"
+{
+	parent "plasma_01"
+	mesh "plasma"
+
+	materials
+	{
+		material 0 "plasma/ecran"
+		material 1 "plasma/plasma"
+	}
+}
+
+object "pouf_5"
+{
+	parent "pouf_5"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "pouf"
+{
+	parent "pouf"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "pouf_1"
+{
+	parent "pouf_1"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "tabouret_boite_11"
+{
+	parent "tabouret_boite_11"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "table_haute_2"
+{
+	parent "table_haute_2"
+	mesh "table_haute"
+
+	materials
+	{
+		material 0 "table_haute/laque"
+		material 1 "table_haute/cuivre"
+	}
+}
+
+object "table_basse_3"
+{
+	parent "table_basse_3"
+	mesh "table_basse"
+
+	materials
+	{
+		material 0 "table_basse/table_basse_laque"
+		material 1 "table_basse/table_basse_cuivre"
+	}
+}
+
+object "pouf_11_3"
+{
+	parent "pouf_11_3"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "tabouret_boite_16"
+{
+	parent "tabouret_boite_16"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "table_haute_5"
+{
+	parent "table_haute_5"
+	mesh "table_haute"
+
+	materials
+	{
+		material 0 "table_haute/laque"
+		material 1 "table_haute/cuivre"
+	}
+}
+
+object "table_basse_4"
+{
+	parent "table_basse_4"
+	mesh "table_basse"
+
+	materials
+	{
+		material 0 "table_basse/table_basse_laque"
+		material 1 "table_basse/table_basse_cuivre"
+	}
+}
+
+object "pouf_11_4"
+{
+	parent "pouf_11_4"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "tabouret_boite_17"
+{
+	parent "tabouret_boite_17"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "table_haute_4"
+{
+	parent "table_haute_4"
+	mesh "table_haute"
+
+	materials
+	{
+		material 0 "table_haute/laque"
+		material 1 "table_haute/cuivre"
+	}
+}
+
+object "pouf_11_5"
+{
+	parent "pouf_11_5"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "spot_simple_18"
+{
+	parent "spot_simple_18"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "tabouret_boite_15"
+{
+	parent "tabouret_boite_15"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "table_haute_6"
+{
+	parent "table_haute_6"
+	mesh "table_haute"
+
+	materials
+	{
+		material 0 "table_haute/laque"
+		material 1 "table_haute/cuivre"
+	}
+}
+
+object "pouf_11_7"
+{
+	parent "pouf_11_7"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "pouf_12_1"
+{
+	parent "pouf_12_1"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "pouf_2"
+{
+	parent "pouf_2"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "pouf_4"
+{
+	parent "pouf_4"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "pouf_6"
+{
+	parent "pouf_6"
+	mesh "pouf"
+	material "pouf/pouf"
+}
+
+object "spot_couleur"
+{
+	parent "spot_couleur"
+	cast_shadows false
+	mesh "spot_couleur"
+
+	materials
+	{
+		material 0 "spot_couleur/metal"
+		material 1 "spot_couleur/lumiere"
+		material 2 "spot_couleur/light vert"
+		material 3 "spot_couleur/light rouge"
+		material 4 "spot_couleur/light bleu"
+		material 5 "spot_couleur/light jaune"
+	}
+}
+
+object "spot_simple"
+{
+	parent "spot_simple"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "spot_simple_11"
+{
+	parent "spot_simple_11"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "spot_simple_16"
+{
+	parent "spot_simple_16"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "spot_simple_2"
+{
+	parent "spot_simple_2"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "spot_simple_3"
+{
+	parent "spot_simple_3"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "spot_simple_4"
+{
+	parent "spot_simple_4"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "spot_simple_5"
+{
+	parent "spot_simple_5"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "spot_simple_6"
+{
+	parent "spot_simple_6"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "spot_simple_7"
+{
+	parent "spot_simple_7"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "spot_simple_8"
+{
+	parent "spot_simple_8"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "table_verre"
+{
+	parent "table_verre"
+	mesh "table_verre"
+
+	materials
+	{
+		material 0 "table_verre/table_bar_fer_forge"
+		material 1 "table_verre/table_bar_verre"
+	}
+}
+
+object "spot_simple_9"
+{
+	parent "spot_simple_9"
+	cast_shadows false
+	mesh "spot_simple"
+
+	materials
+	{
+		material 0 "spot_simple/metal"
+		material 1 "spot_simple/lumiere"
+		material 2 "spot_simple/light"
+	}
+}
+
+object "tabouret_boite_15_10_6"
+{
+	parent "tabouret_boite_15_10_6"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "table_haute"
+{
+	parent "table_haute"
+	mesh "table_haute"
+
+	materials
+	{
+		material 0 "table_haute/laque"
+		material 1 "table_haute/cuivre"
+	}
+}
+
+object "tabouret_boite_12"
+{
+	parent "tabouret_boite_12"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "table_haute_1"
+{
+	parent "table_haute_1"
+	mesh "table_haute"
+
+	materials
+	{
+		material 0 "table_haute/laque"
+		material 1 "table_haute/cuivre"
+	}
+}
+
+object "table_verre_1"
+{
+	parent "table_verre_1"
+	mesh "table_verre"
+
+	materials
+	{
+		material 0 "table_verre/table_bar_fer_forge"
+		material 1 "table_verre/table_bar_verre"
+	}
+}
+
+object "table_verre_2"
+{
+	parent "table_verre_2"
+	mesh "table_verre"
+
+	materials
+	{
+		material 0 "table_verre/table_bar_fer_forge"
+		material 1 "table_verre/table_bar_verre"
+	}
+}
+
+object "tabouret_boite"
+{
+	parent "tabouret_boite"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_1"
+{
+	parent "tabouret_boite_1"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_1"
+{
+	parent "tabouret_boite_15_1"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_10"
+{
+	parent "tabouret_boite_15_10"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_10_1"
+{
+	parent "tabouret_boite_15_10_1"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_10_2"
+{
+	parent "tabouret_boite_15_10_2"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_10_3"
+{
+	parent "tabouret_boite_15_10_3"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_10_4"
+{
+	parent "tabouret_boite_15_10_4"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_10_5"
+{
+	parent "tabouret_boite_15_10_5"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_10_7"
+{
+	parent "tabouret_boite_15_10_7"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_10_8"
+{
+	parent "tabouret_boite_15_10_8"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_10_9"
+{
+	parent "tabouret_boite_15_10_9"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_7"
+{
+	parent "tabouret_boite_7"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_11_1"
+{
+	parent "tabouret_boite_15_11_1"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_4"
+{
+	parent "tabouret_boite_4"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_11_2"
+{
+	parent "tabouret_boite_15_11_2"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_5"
+{
+	parent "tabouret_boite_5"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_11_3"
+{
+	parent "tabouret_boite_15_11_3"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_2"
+{
+	parent "tabouret_boite_15_2"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_3"
+{
+	parent "tabouret_boite_15_3"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_4"
+{
+	parent "tabouret_boite_15_4"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_5"
+{
+	parent "tabouret_boite_15_5"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_6"
+{
+	parent "tabouret_boite_15_6"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_7"
+{
+	parent "tabouret_boite_15_7"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_8"
+{
+	parent "tabouret_boite_15_8"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_15_9"
+{
+	parent "tabouret_boite_15_9"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_2"
+{
+	parent "tabouret_boite_2"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_3"
+{
+	parent "tabouret_boite_3"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_6"
+{
+	parent "tabouret_boite_6"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_8"
+{
+	parent "tabouret_boite_8"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}
+
+object "tabouret_boite_9"
+{
+	parent "tabouret_boite_9"
+	mesh "tabouret_boite"
+
+	materials
+	{
+		material 0 "tabouret_boite/metal"
+		material 1 "tabouret_boite/cuir"
+	}
+}

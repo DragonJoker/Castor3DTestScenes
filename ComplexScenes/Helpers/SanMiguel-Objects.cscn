@@ -1,0 +1,2009 @@
+
+object "Object_ObjectMesh-S0_material_287"
+{
+	parent "ObjectNode_ObjectMesh-S0_material_287"
+	mesh "Mesh_ObjectMesh-S0_material_287"
+	material "material_287"
+}
+
+object "Object_ObjectMesh-S1_material_033"
+{
+	parent "ObjectNode_ObjectMesh-S1_material_033"
+	mesh "Mesh_ObjectMesh-S1_material_033"
+	material "material_033"
+}
+
+object "Object_ObjectMesh-S2_material_035"
+{
+	parent "ObjectNode_ObjectMesh-S2_material_035"
+	mesh "Mesh_ObjectMesh-S2_material_035"
+	material "material_035"
+}
+
+object "Object_ObjectMesh-S3_material_036"
+{
+	parent "ObjectNode_ObjectMesh-S3_material_036"
+	mesh "Mesh_ObjectMesh-S3_material_036"
+	material "material_036"
+}
+
+object "Object_ObjectMesh-S4_material_034"
+{
+	parent "ObjectNode_ObjectMesh-S4_material_034"
+	mesh "Mesh_ObjectMesh-S4_material_034"
+	material "material_034"
+}
+
+object "Object_ObjectMesh-S5_material_041"
+{
+	parent "ObjectNode_ObjectMesh-S5_material_041"
+	mesh "Mesh_ObjectMesh-S5_material_041"
+	material "material_041"
+}
+
+object "Object_ObjectMesh-S6_material_039"
+{
+	parent "ObjectNode_ObjectMesh-S6_material_039"
+	mesh "Mesh_ObjectMesh-S6_material_039"
+	material "material_039"
+}
+
+object "Object_ObjectMesh-S7_material_038"
+{
+	parent "ObjectNode_ObjectMesh-S7_material_038"
+	mesh "Mesh_ObjectMesh-S7_material_038"
+	material "material_038"
+}
+
+object "Object_ObjectMesh-S8_material_042"
+{
+	parent "ObjectNode_ObjectMesh-S8_material_042"
+	mesh "Mesh_ObjectMesh-S8_material_042"
+	material "material_042"
+}
+
+object "Object_ObjectMesh-S9_material_040"
+{
+	parent "ObjectNode_ObjectMesh-S9_material_040"
+	mesh "Mesh_ObjectMesh-S9_material_040"
+	material "material_040"
+}
+
+object "Object_ObjectMesh-S10_CafeChair_Metal"
+{
+	parent "ObjectNode_ObjectMesh-S10_CafeChair_Metal"
+	mesh "Mesh_ObjectMesh-S10_CafeChair_Metal"
+	material "CafeChair_Metal"
+}
+
+object "Object_ObjectMesh-S11_material_285"
+{
+	parent "ObjectNode_ObjectMesh-S11_material_285"
+	mesh "Mesh_ObjectMesh-S11_material_285"
+	material "material_285"
+}
+
+object "Object_ObjectMesh-S12_material_286"
+{
+	parent "ObjectNode_ObjectMesh-S12_material_286"
+	mesh "Mesh_ObjectMesh-S12_material_286"
+	material "material_286"
+}
+
+object "Object_ObjectMesh-S13_material_79"
+{
+	parent "ObjectNode_ObjectMesh-S13_material_79"
+	mesh "Mesh_ObjectMesh-S13_material_79"
+	material "material_79"
+}
+
+object "Object_ObjectMesh-S14_material_032"
+{
+	parent "ObjectNode_ObjectMesh-S14_material_032"
+	mesh "Mesh_ObjectMesh-S14_material_032"
+	material "material_032"
+}
+
+object "Object_ObjectMesh-S15_material_271"
+{
+	parent "ObjectNode_ObjectMesh-S15_material_271"
+	mesh "Mesh_ObjectMesh-S15_material_271"
+	material "material_271"
+}
+
+object "Object_ObjectMesh-S16_material_163"
+{
+	parent "ObjectNode_ObjectMesh-S16_material_163"
+	mesh "Mesh_ObjectMesh-S16_material_163"
+	material "material_163"
+}
+
+object "Object_ObjectMesh-S17_material_166"
+{
+	parent "ObjectNode_ObjectMesh-S17_material_166"
+	mesh "Mesh_ObjectMesh-S17_material_166"
+	material "material_166"
+}
+
+object "Object_ObjectMesh-S18_material_161"
+{
+	parent "ObjectNode_ObjectMesh-S18_material_161"
+	mesh "Mesh_ObjectMesh-S18_material_161"
+	material "material_161"
+}
+
+object "Object_ObjectMesh-S19_material_175"
+{
+	parent "ObjectNode_ObjectMesh-S19_material_175"
+	mesh "Mesh_ObjectMesh-S19_material_175"
+	material "material_175"
+}
+
+object "Object_ObjectMesh-S20_material_176"
+{
+	parent "ObjectNode_ObjectMesh-S20_material_176"
+	mesh "Mesh_ObjectMesh-S20_material_176"
+	material "material_176"
+}
+
+object "Object_ObjectMesh-S21_material_164"
+{
+	parent "ObjectNode_ObjectMesh-S21_material_164"
+	mesh "Mesh_ObjectMesh-S21_material_164"
+	material "material_164"
+}
+
+object "Object_ObjectMesh-S22_material_169"
+{
+	parent "ObjectNode_ObjectMesh-S22_material_169"
+	mesh "Mesh_ObjectMesh-S22_material_169"
+	material "material_169"
+}
+
+object "Object_ObjectMesh-S23_material_170"
+{
+	parent "ObjectNode_ObjectMesh-S23_material_170"
+	mesh "Mesh_ObjectMesh-S23_material_170"
+	material "material_170"
+}
+
+object "Object_ObjectMesh-S24_material_173"
+{
+	parent "ObjectNode_ObjectMesh-S24_material_173"
+	mesh "Mesh_ObjectMesh-S24_material_173"
+	material "material_173"
+}
+
+object "Object_ObjectMesh-S25_material_281"
+{
+	parent "ObjectNode_ObjectMesh-S25_material_281"
+	mesh "Mesh_ObjectMesh-S25_material_281"
+	material "material_281"
+}
+
+object "Object_ObjectMesh-S26_material_174"
+{
+	parent "ObjectNode_ObjectMesh-S26_material_174"
+	mesh "Mesh_ObjectMesh-S26_material_174"
+	material "material_174"
+}
+
+object "Object_ObjectMesh-S27_material_280"
+{
+	parent "ObjectNode_ObjectMesh-S27_material_280"
+	mesh "Mesh_ObjectMesh-S27_material_280"
+	material "material_280"
+}
+
+object "Object_ObjectMesh-S28_material_284"
+{
+	parent "ObjectNode_ObjectMesh-S28_material_284"
+	mesh "Mesh_ObjectMesh-S28_material_284"
+	material "material_284"
+}
+
+object "Object_ObjectMesh-S29_material_165"
+{
+	parent "ObjectNode_ObjectMesh-S29_material_165"
+	mesh "Mesh_ObjectMesh-S29_material_165"
+	material "material_165"
+}
+
+object "Object_ObjectMesh-S30_material_168"
+{
+	parent "ObjectNode_ObjectMesh-S30_material_168"
+	mesh "Mesh_ObjectMesh-S30_material_168"
+	material "material_168"
+}
+
+object "Object_ObjectMesh-S31_material_172"
+{
+	parent "ObjectNode_ObjectMesh-S31_material_172"
+	mesh "Mesh_ObjectMesh-S31_material_172"
+	material "material_172"
+}
+
+object "Object_ObjectMesh-S32_material_181"
+{
+	parent "ObjectNode_ObjectMesh-S32_material_181"
+	mesh "Mesh_ObjectMesh-S32_material_181"
+	material "material_181"
+}
+
+object "Object_ObjectMesh-S33_material_218"
+{
+	parent "ObjectNode_ObjectMesh-S33_material_218"
+	mesh "Mesh_ObjectMesh-S33_material_218"
+	material "material_218"
+}
+
+object "Object_ObjectMesh-S34_material_186"
+{
+	parent "ObjectNode_ObjectMesh-S34_material_186"
+	mesh "Mesh_ObjectMesh-S34_material_186"
+	material "material_186"
+}
+
+object "Object_ObjectMesh-S35_material_212"
+{
+	parent "ObjectNode_ObjectMesh-S35_material_212"
+	mesh "Mesh_ObjectMesh-S35_material_212"
+	material "material_212"
+}
+
+object "Object_ObjectMesh-S36_material_209"
+{
+	parent "ObjectNode_ObjectMesh-S36_material_209"
+	mesh "Mesh_ObjectMesh-S36_material_209"
+	material "material_209"
+}
+
+object "Object_ObjectMesh-S37_material_210"
+{
+	parent "ObjectNode_ObjectMesh-S37_material_210"
+	mesh "Mesh_ObjectMesh-S37_material_210"
+	material "material_210"
+}
+
+object "Object_ObjectMesh-S38_material_81"
+{
+	parent "ObjectNode_ObjectMesh-S38_material_81"
+	mesh "Mesh_ObjectMesh-S38_material_81"
+	material "material_81"
+}
+
+object "Object_ObjectMesh-S39_material_205"
+{
+	parent "ObjectNode_ObjectMesh-S39_material_205"
+	mesh "Mesh_ObjectMesh-S39_material_205"
+	material "material_205"
+}
+
+object "Object_ObjectMesh-S40_material_279"
+{
+	parent "ObjectNode_ObjectMesh-S40_material_279"
+	mesh "Mesh_ObjectMesh-S40_material_279"
+	material "material_279"
+}
+
+object "Object_ObjectMesh-S41_material_0"
+{
+	parent "ObjectNode_ObjectMesh-S41_material_0"
+	mesh "Mesh_ObjectMesh-S41_material_0"
+	material "material_0"
+}
+
+object "Object_ObjectMesh-S42_material_52"
+{
+	parent "ObjectNode_ObjectMesh-S42_material_52"
+	mesh "Mesh_ObjectMesh-S42_material_52"
+	material "material_52"
+}
+
+object "Object_ObjectMesh-S43_material_202"
+{
+	parent "ObjectNode_ObjectMesh-S43_material_202"
+	mesh "Mesh_ObjectMesh-S43_material_202"
+	material "material_202"
+}
+
+object "Object_ObjectMesh-S44_material_201"
+{
+	parent "ObjectNode_ObjectMesh-S44_material_201"
+	mesh "Mesh_ObjectMesh-S44_material_201"
+	material "material_201"
+}
+
+object "Object_ObjectMesh-S45_materiald"
+{
+	parent "ObjectNode_ObjectMesh-S45_materiald"
+	mesh "Mesh_ObjectMesh-S45_materiald"
+	material "materiald"
+}
+
+object "Object_ObjectMesh-S46_material_185"
+{
+	parent "ObjectNode_ObjectMesh-S46_material_185"
+	mesh "Mesh_ObjectMesh-S46_material_185"
+	material "material_185"
+}
+
+object "Object_ObjectMesh-S47_material_177"
+{
+	parent "ObjectNode_ObjectMesh-S47_material_177"
+	mesh "Mesh_ObjectMesh-S47_material_177"
+	material "material_177"
+}
+
+object "Object_ObjectMesh-S48_material_215"
+{
+	parent "ObjectNode_ObjectMesh-S48_material_215"
+	mesh "Mesh_ObjectMesh-S48_material_215"
+	material "material_215"
+}
+
+object "Object_ObjectMesh-S49_material_282"
+{
+	parent "ObjectNode_ObjectMesh-S49_material_282"
+	mesh "Mesh_ObjectMesh-S49_material_282"
+	material "material_282"
+}
+
+object "Object_ObjectMesh-S50_material_51"
+{
+	parent "ObjectNode_ObjectMesh-S50_material_51"
+	mesh "Mesh_ObjectMesh-S50_material_51"
+	material "material_51"
+}
+
+object "Object_ObjectMesh-S51_material_272"
+{
+	parent "ObjectNode_ObjectMesh-S51_material_272"
+	mesh "Mesh_ObjectMesh-S51_material_272"
+	material "material_272"
+}
+
+object "Object_ObjectMesh-S52_material_46"
+{
+	parent "ObjectNode_ObjectMesh-S52_material_46"
+	mesh "Mesh_ObjectMesh-S52_material_46"
+	material "material_46"
+}
+
+object "Object_ObjectMesh-S53_material_268"
+{
+	parent "ObjectNode_ObjectMesh-S53_material_268"
+	mesh "Mesh_ObjectMesh-S53_material_268"
+	material "material_268"
+}
+
+object "Object_ObjectMesh-S54_material_211"
+{
+	parent "ObjectNode_ObjectMesh-S54_material_211"
+	mesh "Mesh_ObjectMesh-S54_material_211"
+	material "material_211"
+}
+
+object "Object_ObjectMesh-S55_material_213"
+{
+	parent "ObjectNode_ObjectMesh-S55_material_213"
+	mesh "Mesh_ObjectMesh-S55_material_213"
+	material "material_213"
+}
+
+object "Object_ObjectMesh-S56_material_269"
+{
+	parent "ObjectNode_ObjectMesh-S56_material_269"
+	mesh "Mesh_ObjectMesh-S56_material_269"
+	material "material_269"
+}
+
+object "Object_ObjectMesh-S57_material_250"
+{
+	parent "ObjectNode_ObjectMesh-S57_material_250"
+	mesh "Mesh_ObjectMesh-S57_material_250"
+	material "material_250"
+}
+
+object "Object_ObjectMesh-S58_material_236"
+{
+	parent "ObjectNode_ObjectMesh-S58_material_236"
+	mesh "Mesh_ObjectMesh-S58_material_236"
+	material "material_236"
+}
+
+object "Object_ObjectMesh-S59_material_262"
+{
+	parent "ObjectNode_ObjectMesh-S59_material_262"
+	mesh "Mesh_ObjectMesh-S59_material_262"
+	material "material_262"
+}
+
+object "Object_ObjectMesh-S60_material_255"
+{
+	parent "ObjectNode_ObjectMesh-S60_material_255"
+	mesh "Mesh_ObjectMesh-S60_material_255"
+	material "material_255"
+}
+
+object "Object_ObjectMesh-S61_material_258"
+{
+	parent "ObjectNode_ObjectMesh-S61_material_258"
+	mesh "Mesh_ObjectMesh-S61_material_258"
+	material "material_258"
+}
+
+object "Object_ObjectMesh-S62_material_214"
+{
+	parent "ObjectNode_ObjectMesh-S62_material_214"
+	mesh "Mesh_ObjectMesh-S62_material_214"
+	material "material_214"
+}
+
+object "Object_ObjectMesh-S63_material_276"
+{
+	parent "ObjectNode_ObjectMesh-S63_material_276"
+	mesh "Mesh_ObjectMesh-S63_material_276"
+	material "material_276"
+}
+
+object "Object_ObjectMesh-S64_material_194"
+{
+	parent "ObjectNode_ObjectMesh-S64_material_194"
+	mesh "Mesh_ObjectMesh-S64_material_194"
+	material "material_194"
+}
+
+object "Object_ObjectMesh-S65_material_259"
+{
+	parent "ObjectNode_ObjectMesh-S65_material_259"
+	mesh "Mesh_ObjectMesh-S65_material_259"
+	material "material_259"
+}
+
+object "Object_ObjectMesh-S66_material_270"
+{
+	parent "ObjectNode_ObjectMesh-S66_material_270"
+	mesh "Mesh_ObjectMesh-S66_material_270"
+	material "material_270"
+}
+
+object "Object_ObjectMesh-S67_material_222"
+{
+	parent "ObjectNode_ObjectMesh-S67_material_222"
+	mesh "Mesh_ObjectMesh-S67_material_222"
+	material "material_222"
+}
+
+object "Object_ObjectMesh-S68_material_196"
+{
+	parent "ObjectNode_ObjectMesh-S68_material_196"
+	mesh "Mesh_ObjectMesh-S68_material_196"
+	material "material_196"
+}
+
+object "Object_ObjectMesh-S69_material_200"
+{
+	parent "ObjectNode_ObjectMesh-S69_material_200"
+	mesh "Mesh_ObjectMesh-S69_material_200"
+	material "material_200"
+}
+
+object "Object_ObjectMesh-S70_material_227"
+{
+	parent "ObjectNode_ObjectMesh-S70_material_227"
+	mesh "Mesh_ObjectMesh-S70_material_227"
+	material "material_227"
+}
+
+object "Object_ObjectMesh-S71_material_247"
+{
+	parent "ObjectNode_ObjectMesh-S71_material_247"
+	mesh "Mesh_ObjectMesh-S71_material_247"
+	material "material_247"
+}
+
+object "Object_ObjectMesh-S72_material_246"
+{
+	parent "ObjectNode_ObjectMesh-S72_material_246"
+	mesh "Mesh_ObjectMesh-S72_material_246"
+	material "material_246"
+}
+
+object "Object_ObjectMesh-S73_material_80"
+{
+	parent "ObjectNode_ObjectMesh-S73_material_80"
+	mesh "Mesh_ObjectMesh-S73_material_80"
+	material "material_80"
+}
+
+object "Object_ObjectMesh-S74_material_190"
+{
+	parent "ObjectNode_ObjectMesh-S74_material_190"
+	mesh "Mesh_ObjectMesh-S74_material_190"
+	material "material_190"
+}
+
+object "Object_ObjectMesh-S75_material_254"
+{
+	parent "ObjectNode_ObjectMesh-S75_material_254"
+	mesh "Mesh_ObjectMesh-S75_material_254"
+	material "material_254"
+}
+
+object "Object_ObjectMesh-S76_material_76"
+{
+	parent "ObjectNode_ObjectMesh-S76_material_76"
+	mesh "Mesh_ObjectMesh-S76_material_76"
+	material "material_76"
+}
+
+object "Object_ObjectMesh-S77_material_277"
+{
+	parent "ObjectNode_ObjectMesh-S77_material_277"
+	mesh "Mesh_ObjectMesh-S77_material_277"
+	material "material_277"
+}
+
+object "Object_ObjectMesh-S78_material_256"
+{
+	parent "ObjectNode_ObjectMesh-S78_material_256"
+	mesh "Mesh_ObjectMesh-S78_material_256"
+	material "material_256"
+}
+
+object "Object_ObjectMesh-S79_material_238"
+{
+	parent "ObjectNode_ObjectMesh-S79_material_238"
+	mesh "Mesh_ObjectMesh-S79_material_238"
+	material "material_238"
+}
+
+object "Object_ObjectMesh-S80_material_197"
+{
+	parent "ObjectNode_ObjectMesh-S80_material_197"
+	mesh "Mesh_ObjectMesh-S80_material_197"
+	material "material_197"
+}
+
+object "Object_ObjectMesh-S81_material_274"
+{
+	parent "ObjectNode_ObjectMesh-S81_material_274"
+	mesh "Mesh_ObjectMesh-S81_material_274"
+	material "material_274"
+}
+
+object "Object_ObjectMesh-S82_materiali"
+{
+	parent "ObjectNode_ObjectMesh-S82_materiali"
+	mesh "Mesh_ObjectMesh-S82_materiali"
+	material "materiali"
+}
+
+object "Object_ObjectMesh-S83_material_220"
+{
+	parent "ObjectNode_ObjectMesh-S83_material_220"
+	mesh "Mesh_ObjectMesh-S83_material_220"
+	material "material_220"
+}
+
+object "Object_ObjectMesh-S84_material_261"
+{
+	parent "ObjectNode_ObjectMesh-S84_material_261"
+	mesh "Mesh_ObjectMesh-S84_material_261"
+	material "material_261"
+}
+
+object "Object_ObjectMesh-S85_material_240"
+{
+	parent "ObjectNode_ObjectMesh-S85_material_240"
+	mesh "Mesh_ObjectMesh-S85_material_240"
+	material "material_240"
+}
+
+object "Object_ObjectMesh-S86_materials"
+{
+	parent "ObjectNode_ObjectMesh-S86_materials"
+	mesh "Mesh_ObjectMesh-S86_materials"
+	material "materials"
+}
+
+object "Object_ObjectMesh-S87_material_260"
+{
+	parent "ObjectNode_ObjectMesh-S87_material_260"
+	mesh "Mesh_ObjectMesh-S87_material_260"
+	material "material_260"
+}
+
+object "Object_ObjectMesh-S88_material_183"
+{
+	parent "ObjectNode_ObjectMesh-S88_material_183"
+	mesh "Mesh_ObjectMesh-S88_material_183"
+	material "material_183"
+}
+
+object "Object_ObjectMesh-S89_materialy"
+{
+	parent "ObjectNode_ObjectMesh-S89_materialy"
+	mesh "Mesh_ObjectMesh-S89_materialy"
+	material "materialy"
+}
+
+object "Object_ObjectMesh-S90_material_147"
+{
+	parent "ObjectNode_ObjectMesh-S90_material_147"
+	mesh "Mesh_ObjectMesh-S90_material_147"
+	material "material_147"
+}
+
+object "Object_ObjectMesh-S91_material_182"
+{
+	parent "ObjectNode_ObjectMesh-S91_material_182"
+	mesh "Mesh_ObjectMesh-S91_material_182"
+	material "material_182"
+}
+
+object "Object_ObjectMesh-S92_material_184"
+{
+	parent "ObjectNode_ObjectMesh-S92_material_184"
+	mesh "Mesh_ObjectMesh-S92_material_184"
+	material "material_184"
+}
+
+object "Object_ObjectMesh-S93_material_278"
+{
+	parent "ObjectNode_ObjectMesh-S93_material_278"
+	mesh "Mesh_ObjectMesh-S93_material_278"
+	material "material_278"
+}
+
+object "Object_ObjectMesh-S94_material_187"
+{
+	parent "ObjectNode_ObjectMesh-S94_material_187"
+	mesh "Mesh_ObjectMesh-S94_material_187"
+	material "material_187"
+}
+
+object "Object_ObjectMesh-S95_material_143"
+{
+	parent "ObjectNode_ObjectMesh-S95_material_143"
+	mesh "Mesh_ObjectMesh-S95_material_143"
+	material "material_143"
+}
+
+object "Object_ObjectMesh-S96_material_188"
+{
+	parent "ObjectNode_ObjectMesh-S96_material_188"
+	mesh "Mesh_ObjectMesh-S96_material_188"
+	material "material_188"
+}
+
+object "Object_ObjectMesh-S97_materialo"
+{
+	parent "ObjectNode_ObjectMesh-S97_materialo"
+	mesh "Mesh_ObjectMesh-S97_materialo"
+	material "materialo"
+}
+
+object "Object_ObjectMesh-S98_material_134"
+{
+	parent "ObjectNode_ObjectMesh-S98_material_134"
+	mesh "Mesh_ObjectMesh-S98_material_134"
+	material "material_134"
+}
+
+object "Object_ObjectMesh-S99_material_145"
+{
+	parent "ObjectNode_ObjectMesh-S99_material_145"
+	mesh "Mesh_ObjectMesh-S99_material_145"
+	material "material_145"
+}
+
+object "Object_ObjectMesh-S100_material_83"
+{
+	parent "ObjectNode_ObjectMesh-S100_material_83"
+	mesh "Mesh_ObjectMesh-S100_material_83"
+	material "material_83"
+}
+
+object "Object_ObjectMesh-S101_material_243"
+{
+	parent "ObjectNode_ObjectMesh-S101_material_243"
+	mesh "Mesh_ObjectMesh-S101_material_243"
+	material "material_243"
+}
+
+object "Object_ObjectMesh-S102_material_131"
+{
+	parent "ObjectNode_ObjectMesh-S102_material_131"
+	mesh "Mesh_ObjectMesh-S102_material_131"
+	material "material_131"
+}
+
+object "Object_ObjectMesh-S103_material_142"
+{
+	parent "ObjectNode_ObjectMesh-S103_material_142"
+	mesh "Mesh_ObjectMesh-S103_material_142"
+	material "material_142"
+}
+
+object "Object_ObjectMesh-S104_material_148"
+{
+	parent "ObjectNode_ObjectMesh-S104_material_148"
+	mesh "Mesh_ObjectMesh-S104_material_148"
+	material "material_148"
+}
+
+object "Object_ObjectMesh-S105_material_135"
+{
+	parent "ObjectNode_ObjectMesh-S105_material_135"
+	mesh "Mesh_ObjectMesh-S105_material_135"
+	material "material_135"
+}
+
+object "Object_ObjectMesh-S106_material_150"
+{
+	parent "ObjectNode_ObjectMesh-S106_material_150"
+	mesh "Mesh_ObjectMesh-S106_material_150"
+	material "material_150"
+}
+
+object "Object_ObjectMesh-S107_material_265"
+{
+	parent "ObjectNode_ObjectMesh-S107_material_265"
+	mesh "Mesh_ObjectMesh-S107_material_265"
+	material "material_265"
+}
+
+object "Object_ObjectMesh-S108_materialn"
+{
+	parent "ObjectNode_ObjectMesh-S108_materialn"
+	mesh "Mesh_ObjectMesh-S108_materialn"
+	material "materialn"
+}
+
+object "Object_ObjectMesh-S109_materialw"
+{
+	parent "ObjectNode_ObjectMesh-S109_materialw"
+	mesh "Mesh_ObjectMesh-S109_materialw"
+	material "materialw"
+}
+
+object "Object_ObjectMesh-S110_material_138"
+{
+	parent "ObjectNode_ObjectMesh-S110_material_138"
+	mesh "Mesh_ObjectMesh-S110_material_138"
+	material "material_138"
+}
+
+object "Object_ObjectMesh-S111_material_162"
+{
+	parent "ObjectNode_ObjectMesh-S111_material_162"
+	mesh "Mesh_ObjectMesh-S111_material_162"
+	material "material_162"
+}
+
+object "Object_ObjectMesh-S112_material_132"
+{
+	parent "ObjectNode_ObjectMesh-S112_material_132"
+	mesh "Mesh_ObjectMesh-S112_material_132"
+	material "material_132"
+}
+
+object "Object_ObjectMesh-S113_material_179"
+{
+	parent "ObjectNode_ObjectMesh-S113_material_179"
+	mesh "Mesh_ObjectMesh-S113_material_179"
+	material "material_179"
+}
+
+object "Object_ObjectMesh-S114_material_180"
+{
+	parent "ObjectNode_ObjectMesh-S114_material_180"
+	mesh "Mesh_ObjectMesh-S114_material_180"
+	material "material_180"
+}
+
+object "Object_ObjectMesh-S115_material_149"
+{
+	parent "ObjectNode_ObjectMesh-S115_material_149"
+	mesh "Mesh_ObjectMesh-S115_material_149"
+	material "material_149"
+}
+
+object "Object_ObjectMesh-S116_material_178"
+{
+	parent "ObjectNode_ObjectMesh-S116_material_178"
+	mesh "Mesh_ObjectMesh-S116_material_178"
+	material "material_178"
+}
+
+object "Object_ObjectMesh-S117_material_151"
+{
+	parent "ObjectNode_ObjectMesh-S117_material_151"
+	mesh "Mesh_ObjectMesh-S117_material_151"
+	material "material_151"
+}
+
+object "Object_ObjectMesh-S118_material_77"
+{
+	parent "ObjectNode_ObjectMesh-S118_material_77"
+	mesh "Mesh_ObjectMesh-S118_material_77"
+	material "material_77"
+}
+
+object "Object_ObjectMesh-S119_material_230"
+{
+	parent "ObjectNode_ObjectMesh-S119_material_230"
+	mesh "Mesh_ObjectMesh-S119_material_230"
+	material "material_230"
+}
+
+object "Object_ObjectMesh-S120_material_193"
+{
+	parent "ObjectNode_ObjectMesh-S120_material_193"
+	mesh "Mesh_ObjectMesh-S120_material_193"
+	material "material_193"
+}
+
+object "Object_ObjectMesh-S121_material_198"
+{
+	parent "ObjectNode_ObjectMesh-S121_material_198"
+	mesh "Mesh_ObjectMesh-S121_material_198"
+	material "material_198"
+}
+
+object "Object_ObjectMesh-S122_material_195"
+{
+	parent "ObjectNode_ObjectMesh-S122_material_195"
+	mesh "Mesh_ObjectMesh-S122_material_195"
+	material "material_195"
+}
+
+object "Object_ObjectMesh-S123_material_216"
+{
+	parent "ObjectNode_ObjectMesh-S123_material_216"
+	mesh "Mesh_ObjectMesh-S123_material_216"
+	material "material_216"
+}
+
+object "Object_ObjectMesh-S124_material_219"
+{
+	parent "ObjectNode_ObjectMesh-S124_material_219"
+	mesh "Mesh_ObjectMesh-S124_material_219"
+	material "material_219"
+}
+
+object "Object_ObjectMesh-S125_material_226"
+{
+	parent "ObjectNode_ObjectMesh-S125_material_226"
+	mesh "Mesh_ObjectMesh-S125_material_226"
+	material "material_226"
+}
+
+object "Object_ObjectMesh-S126_material_233"
+{
+	parent "ObjectNode_ObjectMesh-S126_material_233"
+	mesh "Mesh_ObjectMesh-S126_material_233"
+	material "material_233"
+}
+
+object "Object_ObjectMesh-S127_material_199"
+{
+	parent "ObjectNode_ObjectMesh-S127_material_199"
+	mesh "Mesh_ObjectMesh-S127_material_199"
+	material "material_199"
+}
+
+object "Object_ObjectMesh-S128_material_217"
+{
+	parent "ObjectNode_ObjectMesh-S128_material_217"
+	mesh "Mesh_ObjectMesh-S128_material_217"
+	material "material_217"
+}
+
+object "Object_ObjectMesh-S129_material_82"
+{
+	parent "ObjectNode_ObjectMesh-S129_material_82"
+	mesh "Mesh_ObjectMesh-S129_material_82"
+	material "material_82"
+}
+
+object "Object_ObjectMesh-S130_material_192"
+{
+	parent "ObjectNode_ObjectMesh-S130_material_192"
+	mesh "Mesh_ObjectMesh-S130_material_192"
+	material "material_192"
+}
+
+object "Object_ObjectMesh-S131_material_232"
+{
+	parent "ObjectNode_ObjectMesh-S131_material_232"
+	mesh "Mesh_ObjectMesh-S131_material_232"
+	material "material_232"
+}
+
+object "Object_ObjectMesh-S132_material_208"
+{
+	parent "ObjectNode_ObjectMesh-S132_material_208"
+	mesh "Mesh_ObjectMesh-S132_material_208"
+	material "material_208"
+}
+
+object "Object_ObjectMesh-S133_material_234"
+{
+	parent "ObjectNode_ObjectMesh-S133_material_234"
+	mesh "Mesh_ObjectMesh-S133_material_234"
+	material "material_234"
+}
+
+object "Object_ObjectMesh-S134_material_242"
+{
+	parent "ObjectNode_ObjectMesh-S134_material_242"
+	mesh "Mesh_ObjectMesh-S134_material_242"
+	material "material_242"
+}
+
+object "Object_ObjectMesh-S135_material_249"
+{
+	parent "ObjectNode_ObjectMesh-S135_material_249"
+	mesh "Mesh_ObjectMesh-S135_material_249"
+	material "material_249"
+}
+
+object "Object_ObjectMesh-S136_material_273"
+{
+	parent "ObjectNode_ObjectMesh-S136_material_273"
+	mesh "Mesh_ObjectMesh-S136_material_273"
+	material "material_273"
+}
+
+object "Object_ObjectMesh-S137_material_251"
+{
+	parent "ObjectNode_ObjectMesh-S137_material_251"
+	mesh "Mesh_ObjectMesh-S137_material_251"
+	material "material_251"
+}
+
+object "Object_ObjectMesh-S138_material_78"
+{
+	parent "ObjectNode_ObjectMesh-S138_material_78"
+	mesh "Mesh_ObjectMesh-S138_material_78"
+	material "material_78"
+}
+
+object "Object_ObjectMesh-S139_material_155"
+{
+	parent "ObjectNode_ObjectMesh-S139_material_155"
+	mesh "Mesh_ObjectMesh-S139_material_155"
+	material "material_155"
+}
+
+object "Object_ObjectMesh-S140_material_252"
+{
+	parent "ObjectNode_ObjectMesh-S140_material_252"
+	mesh "Mesh_ObjectMesh-S140_material_252"
+	material "material_252"
+}
+
+object "Object_ObjectMesh-S141_material_253"
+{
+	parent "ObjectNode_ObjectMesh-S141_material_253"
+	mesh "Mesh_ObjectMesh-S141_material_253"
+	material "material_253"
+}
+
+object "Object_ObjectMesh-S142_material_257"
+{
+	parent "ObjectNode_ObjectMesh-S142_material_257"
+	mesh "Mesh_ObjectMesh-S142_material_257"
+	material "material_257"
+}
+
+object "Object_ObjectMesh-S143_materialq"
+{
+	parent "ObjectNode_ObjectMesh-S143_materialq"
+	mesh "Mesh_ObjectMesh-S143_materialq"
+	material "materialq"
+}
+
+object "Object_ObjectMesh-S144_material_154"
+{
+	parent "ObjectNode_ObjectMesh-S144_material_154"
+	mesh "Mesh_ObjectMesh-S144_material_154"
+	material "material_154"
+}
+
+object "Object_ObjectMesh-S145_material_275"
+{
+	parent "ObjectNode_ObjectMesh-S145_material_275"
+	mesh "Mesh_ObjectMesh-S145_material_275"
+	material "material_275"
+}
+
+object "Object_ObjectMesh-S146_material_235"
+{
+	parent "ObjectNode_ObjectMesh-S146_material_235"
+	mesh "Mesh_ObjectMesh-S146_material_235"
+	material "material_235"
+}
+
+object "Object_ObjectMesh-S147_material_263"
+{
+	parent "ObjectNode_ObjectMesh-S147_material_263"
+	mesh "Mesh_ObjectMesh-S147_material_263"
+	material "material_263"
+}
+
+object "Object_ObjectMesh-S148_material_191"
+{
+	parent "ObjectNode_ObjectMesh-S148_material_191"
+	mesh "Mesh_ObjectMesh-S148_material_191"
+	material "material_191"
+}
+
+object "Object_ObjectMesh-S149_material_133"
+{
+	parent "ObjectNode_ObjectMesh-S149_material_133"
+	mesh "Mesh_ObjectMesh-S149_material_133"
+	material "material_133"
+}
+
+object "Object_ObjectMesh-S150_material_156"
+{
+	parent "ObjectNode_ObjectMesh-S150_material_156"
+	mesh "Mesh_ObjectMesh-S150_material_156"
+	material "material_156"
+}
+
+object "Object_ObjectMesh-S151_material_189"
+{
+	parent "ObjectNode_ObjectMesh-S151_material_189"
+	mesh "Mesh_ObjectMesh-S151_material_189"
+	material "material_189"
+}
+
+object "Object_ObjectMesh-S152_material_94"
+{
+	parent "ObjectNode_ObjectMesh-S152_material_94"
+	mesh "Mesh_ObjectMesh-S152_material_94"
+	material "material_94"
+}
+
+object "Object_ObjectMesh-S153_materialt"
+{
+	parent "ObjectNode_ObjectMesh-S153_materialt"
+	mesh "Mesh_ObjectMesh-S153_materialt"
+	material "materialt"
+}
+
+object "Object_ObjectMesh-S154_material_72"
+{
+	parent "ObjectNode_ObjectMesh-S154_material_72"
+	mesh "Mesh_ObjectMesh-S154_material_72"
+	material "material_72"
+}
+
+object "Object_ObjectMesh-S155_material_36"
+{
+	parent "ObjectNode_ObjectMesh-S155_material_36"
+	mesh "Mesh_ObjectMesh-S155_material_36"
+	material "material_36"
+}
+
+object "Object_ObjectMesh-S156_material_123"
+{
+	parent "ObjectNode_ObjectMesh-S156_material_123"
+	mesh "Mesh_ObjectMesh-S156_material_123"
+	material "material_123"
+}
+
+object "Object_ObjectMesh-S157_material_167"
+{
+	parent "ObjectNode_ObjectMesh-S157_material_167"
+	mesh "Mesh_ObjectMesh-S157_material_167"
+	material "material_167"
+}
+
+object "Object_ObjectMesh-S158_material_125"
+{
+	parent "ObjectNode_ObjectMesh-S158_material_125"
+	mesh "Mesh_ObjectMesh-S158_material_125"
+	material "material_125"
+}
+
+object "Object_ObjectMesh-S159_material_204"
+{
+	parent "ObjectNode_ObjectMesh-S159_material_204"
+	mesh "Mesh_ObjectMesh-S159_material_204"
+	material "material_204"
+}
+
+object "Object_ObjectMesh-S160_material_93"
+{
+	parent "ObjectNode_ObjectMesh-S160_material_93"
+	mesh "Mesh_ObjectMesh-S160_material_93"
+	material "material_93"
+}
+
+object "Object_ObjectMesh-S161_material_67"
+{
+	parent "ObjectNode_ObjectMesh-S161_material_67"
+	mesh "Mesh_ObjectMesh-S161_material_67"
+	material "material_67"
+}
+
+object "Object_ObjectMesh-S162_material_57"
+{
+	parent "ObjectNode_ObjectMesh-S162_material_57"
+	mesh "Mesh_ObjectMesh-S162_material_57"
+	material "material_57"
+}
+
+object "Object_ObjectMesh-S163_material_59"
+{
+	parent "ObjectNode_ObjectMesh-S163_material_59"
+	mesh "Mesh_ObjectMesh-S163_material_59"
+	material "material_59"
+}
+
+object "Object_ObjectMesh-S164_material_60"
+{
+	parent "ObjectNode_ObjectMesh-S164_material_60"
+	mesh "Mesh_ObjectMesh-S164_material_60"
+	material "material_60"
+}
+
+object "Object_ObjectMesh-S165_material_62"
+{
+	parent "ObjectNode_ObjectMesh-S165_material_62"
+	mesh "Mesh_ObjectMesh-S165_material_62"
+	material "material_62"
+}
+
+object "Object_ObjectMesh-S166_material_61"
+{
+	parent "ObjectNode_ObjectMesh-S166_material_61"
+	mesh "Mesh_ObjectMesh-S166_material_61"
+	material "material_61"
+}
+
+object "Object_ObjectMesh-S167_material_65"
+{
+	parent "ObjectNode_ObjectMesh-S167_material_65"
+	mesh "Mesh_ObjectMesh-S167_material_65"
+	material "material_65"
+}
+
+object "Object_ObjectMesh-S168_material_63"
+{
+	parent "ObjectNode_ObjectMesh-S168_material_63"
+	mesh "Mesh_ObjectMesh-S168_material_63"
+	material "material_63"
+}
+
+object "Object_ObjectMesh-S169_material_66"
+{
+	parent "ObjectNode_ObjectMesh-S169_material_66"
+	mesh "Mesh_ObjectMesh-S169_material_66"
+	material "material_66"
+}
+
+object "Object_ObjectMesh-S170_material_53"
+{
+	parent "ObjectNode_ObjectMesh-S170_material_53"
+	mesh "Mesh_ObjectMesh-S170_material_53"
+	material "material_53"
+}
+
+object "Object_ObjectMesh-S171_material_56"
+{
+	parent "ObjectNode_ObjectMesh-S171_material_56"
+	mesh "Mesh_ObjectMesh-S171_material_56"
+	material "material_56"
+}
+
+object "Object_ObjectMesh-S172_material_207"
+{
+	parent "ObjectNode_ObjectMesh-S172_material_207"
+	mesh "Mesh_ObjectMesh-S172_material_207"
+	material "material_207"
+}
+
+object "Object_ObjectMesh-S173_material_55"
+{
+	parent "ObjectNode_ObjectMesh-S173_material_55"
+	mesh "Mesh_ObjectMesh-S173_material_55"
+	material "material_55"
+}
+
+object "Object_ObjectMesh-S174_material_58"
+{
+	parent "ObjectNode_ObjectMesh-S174_material_58"
+	mesh "Mesh_ObjectMesh-S174_material_58"
+	material "material_58"
+}
+
+object "Object_ObjectMesh-S175_material_64"
+{
+	parent "ObjectNode_ObjectMesh-S175_material_64"
+	mesh "Mesh_ObjectMesh-S175_material_64"
+	material "material_64"
+}
+
+object "Object_ObjectMesh-S176_material_54"
+{
+	parent "ObjectNode_ObjectMesh-S176_material_54"
+	mesh "Mesh_ObjectMesh-S176_material_54"
+	material "material_54"
+}
+
+object "Object_ObjectMesh-S177_material_68"
+{
+	parent "ObjectNode_ObjectMesh-S177_material_68"
+	mesh "Mesh_ObjectMesh-S177_material_68"
+	material "material_68"
+}
+
+object "Object_ObjectMesh-S178_materialz"
+{
+	parent "ObjectNode_ObjectMesh-S178_materialz"
+	mesh "Mesh_ObjectMesh-S178_materialz"
+	material "materialz"
+}
+
+object "Object_ObjectMesh-S179_material_206"
+{
+	parent "ObjectNode_ObjectMesh-S179_material_206"
+	mesh "Mesh_ObjectMesh-S179_material_206"
+	material "material_206"
+}
+
+object "Object_ObjectMesh-S180_material_92"
+{
+	parent "ObjectNode_ObjectMesh-S180_material_92"
+	mesh "Mesh_ObjectMesh-S180_material_92"
+	material "material_92"
+}
+
+object "Object_ObjectMesh-S181_material_73"
+{
+	parent "ObjectNode_ObjectMesh-S181_material_73"
+	mesh "Mesh_ObjectMesh-S181_material_73"
+	material "material_73"
+}
+
+object "Object_ObjectMesh-S182_materialx"
+{
+	parent "ObjectNode_ObjectMesh-S182_materialx"
+	mesh "Mesh_ObjectMesh-S182_materialx"
+	material "materialx"
+}
+
+object "Object_ObjectMesh-S183_material_241"
+{
+	parent "ObjectNode_ObjectMesh-S183_material_241"
+	mesh "Mesh_ObjectMesh-S183_material_241"
+	material "material_241"
+}
+
+object "Object_ObjectMesh-S184_material_74"
+{
+	parent "ObjectNode_ObjectMesh-S184_material_74"
+	mesh "Mesh_ObjectMesh-S184_material_74"
+	material "material_74"
+}
+
+object "Object_ObjectMesh-S185_material_49"
+{
+	parent "ObjectNode_ObjectMesh-S185_material_49"
+	mesh "Mesh_ObjectMesh-S185_material_49"
+	material "material_49"
+}
+
+object "Object_ObjectMesh-S186_material_126"
+{
+	parent "ObjectNode_ObjectMesh-S186_material_126"
+	mesh "Mesh_ObjectMesh-S186_material_126"
+	material "material_126"
+}
+
+object "Object_ObjectMesh-S187_materialv"
+{
+	parent "ObjectNode_ObjectMesh-S187_materialv"
+	mesh "Mesh_ObjectMesh-S187_materialv"
+	material "materialv"
+}
+
+object "Object_ObjectMesh-S188_material_90"
+{
+	parent "ObjectNode_ObjectMesh-S188_material_90"
+	mesh "Mesh_ObjectMesh-S188_material_90"
+	material "material_90"
+}
+
+object "Object_ObjectMesh-S189_material_124"
+{
+	parent "ObjectNode_ObjectMesh-S189_material_124"
+	mesh "Mesh_ObjectMesh-S189_material_124"
+	material "material_124"
+}
+
+object "Object_ObjectMesh-S190_materialu"
+{
+	parent "ObjectNode_ObjectMesh-S190_materialu"
+	mesh "Mesh_ObjectMesh-S190_materialu"
+	material "materialu"
+}
+
+object "Object_ObjectMesh-S191_material_264"
+{
+	parent "ObjectNode_ObjectMesh-S191_material_264"
+	mesh "Mesh_ObjectMesh-S191_material_264"
+	material "material_264"
+}
+
+object "Object_ObjectMesh-S192_material_171"
+{
+	parent "ObjectNode_ObjectMesh-S192_material_171"
+	mesh "Mesh_ObjectMesh-S192_material_171"
+	material "material_171"
+}
+
+object "Object_ObjectMesh-S193_material_69"
+{
+	parent "ObjectNode_ObjectMesh-S193_material_69"
+	mesh "Mesh_ObjectMesh-S193_material_69"
+	material "material_69"
+}
+
+object "Object_ObjectMesh-S194_material_1"
+{
+	parent "ObjectNode_ObjectMesh-S194_material_1"
+	mesh "Mesh_ObjectMesh-S194_material_1"
+	material "material_1"
+}
+
+object "Object_ObjectMesh-S195_material_267"
+{
+	parent "ObjectNode_ObjectMesh-S195_material_267"
+	mesh "Mesh_ObjectMesh-S195_material_267"
+	material "material_267"
+}
+
+object "Object_ObjectMesh-S196_material_203"
+{
+	parent "ObjectNode_ObjectMesh-S196_material_203"
+	mesh "Mesh_ObjectMesh-S196_material_203"
+	material "material_203"
+}
+
+object "Object_ObjectMesh-S197_material_266"
+{
+	parent "ObjectNode_ObjectMesh-S197_material_266"
+	mesh "Mesh_ObjectMesh-S197_material_266"
+	material "material_266"
+}
+
+object "Object_ObjectMesh-S198_material_130"
+{
+	parent "ObjectNode_ObjectMesh-S198_material_130"
+	mesh "Mesh_ObjectMesh-S198_material_130"
+	material "material_130"
+}
+
+object "Object_ObjectMesh-S199_material_129"
+{
+	parent "ObjectNode_ObjectMesh-S199_material_129"
+	mesh "Mesh_ObjectMesh-S199_material_129"
+	material "material_129"
+}
+
+object "Object_ObjectMesh-S200_material_128"
+{
+	parent "ObjectNode_ObjectMesh-S200_material_128"
+	mesh "Mesh_ObjectMesh-S200_material_128"
+	material "material_128"
+}
+
+object "Object_ObjectMesh-S201_material_127"
+{
+	parent "ObjectNode_ObjectMesh-S201_material_127"
+	mesh "Mesh_ObjectMesh-S201_material_127"
+	material "material_127"
+}
+
+object "Object_ObjectMesh-S202_materialp"
+{
+	parent "ObjectNode_ObjectMesh-S202_materialp"
+	mesh "Mesh_ObjectMesh-S202_materialp"
+	material "materialp"
+}
+
+object "Object_ObjectMesh-S203_material_141"
+{
+	parent "ObjectNode_ObjectMesh-S203_material_141"
+	mesh "Mesh_ObjectMesh-S203_material_141"
+	material "material_141"
+}
+
+object "Object_ObjectMesh-S204_material_146"
+{
+	parent "ObjectNode_ObjectMesh-S204_material_146"
+	mesh "Mesh_ObjectMesh-S204_material_146"
+	material "material_146"
+}
+
+object "Object_ObjectMesh-S205_material_224"
+{
+	parent "ObjectNode_ObjectMesh-S205_material_224"
+	mesh "Mesh_ObjectMesh-S205_material_224"
+	material "material_224"
+}
+
+object "Object_ObjectMesh-S206_material_158"
+{
+	parent "ObjectNode_ObjectMesh-S206_material_158"
+	mesh "Mesh_ObjectMesh-S206_material_158"
+	material "material_158"
+}
+
+object "Object_ObjectMesh-S207_material_157"
+{
+	parent "ObjectNode_ObjectMesh-S207_material_157"
+	mesh "Mesh_ObjectMesh-S207_material_157"
+	material "material_157"
+}
+
+object "Object_ObjectMesh-S208_material_139"
+{
+	parent "ObjectNode_ObjectMesh-S208_material_139"
+	mesh "Mesh_ObjectMesh-S208_material_139"
+	material "material_139"
+}
+
+object "Object_ObjectMesh-S209_material_136"
+{
+	parent "ObjectNode_ObjectMesh-S209_material_136"
+	mesh "Mesh_ObjectMesh-S209_material_136"
+	material "material_136"
+}
+
+object "Object_ObjectMesh-S210_material_221"
+{
+	parent "ObjectNode_ObjectMesh-S210_material_221"
+	mesh "Mesh_ObjectMesh-S210_material_221"
+	material "material_221"
+}
+
+object "Object_ObjectMesh-S211_material_137"
+{
+	parent "ObjectNode_ObjectMesh-S211_material_137"
+	mesh "Mesh_ObjectMesh-S211_material_137"
+	material "material_137"
+}
+
+object "Object_ObjectMesh-S212_material_223"
+{
+	parent "ObjectNode_ObjectMesh-S212_material_223"
+	mesh "Mesh_ObjectMesh-S212_material_223"
+	material "material_223"
+}
+
+object "Object_ObjectMesh-S213_material_159"
+{
+	parent "ObjectNode_ObjectMesh-S213_material_159"
+	mesh "Mesh_ObjectMesh-S213_material_159"
+	material "material_159"
+}
+
+object "Object_ObjectMesh-S214_materialr"
+{
+	parent "ObjectNode_ObjectMesh-S214_materialr"
+	mesh "Mesh_ObjectMesh-S214_materialr"
+	material "materialr"
+}
+
+object "Object_ObjectMesh-S215_material_16"
+{
+	parent "ObjectNode_ObjectMesh-S215_material_16"
+	mesh "Mesh_ObjectMesh-S215_material_16"
+	material "material_16"
+}
+
+object "Object_ObjectMesh-S216_material_15"
+{
+	parent "ObjectNode_ObjectMesh-S216_material_15"
+	mesh "Mesh_ObjectMesh-S216_material_15"
+	material "material_15"
+}
+
+object "Object_ObjectMesh-S217_material_153"
+{
+	parent "ObjectNode_ObjectMesh-S217_material_153"
+	mesh "Mesh_ObjectMesh-S217_material_153"
+	material "material_153"
+}
+
+object "Object_ObjectMesh-S218_material_229"
+{
+	parent "ObjectNode_ObjectMesh-S218_material_229"
+	mesh "Mesh_ObjectMesh-S218_material_229"
+	material "material_229"
+}
+
+object "Object_ObjectMesh-S219_material_244"
+{
+	parent "ObjectNode_ObjectMesh-S219_material_244"
+	mesh "Mesh_ObjectMesh-S219_material_244"
+	material "material_244"
+}
+
+object "Object_ObjectMesh-S220_material_140"
+{
+	parent "ObjectNode_ObjectMesh-S220_material_140"
+	mesh "Mesh_ObjectMesh-S220_material_140"
+	material "material_140"
+}
+
+object "Object_ObjectMesh-S221_material_239"
+{
+	parent "ObjectNode_ObjectMesh-S221_material_239"
+	mesh "Mesh_ObjectMesh-S221_material_239"
+	material "material_239"
+}
+
+object "Object_ObjectMesh-S222_material_20"
+{
+	parent "ObjectNode_ObjectMesh-S222_material_20"
+	mesh "Mesh_ObjectMesh-S222_material_20"
+	material "material_20"
+}
+
+object "Object_ObjectMesh-S223_material_10"
+{
+	parent "ObjectNode_ObjectMesh-S223_material_10"
+	mesh "Mesh_ObjectMesh-S223_material_10"
+	material "material_10"
+}
+
+object "Object_ObjectMesh-S224_material_26"
+{
+	parent "ObjectNode_ObjectMesh-S224_material_26"
+	mesh "Mesh_ObjectMesh-S224_material_26"
+	material "material_26"
+}
+
+object "Object_ObjectMesh-S225_material_27"
+{
+	parent "ObjectNode_ObjectMesh-S225_material_27"
+	mesh "Mesh_ObjectMesh-S225_material_27"
+	material "material_27"
+}
+
+object "Object_ObjectMesh-S226_material_87"
+{
+	parent "ObjectNode_ObjectMesh-S226_material_87"
+	mesh "Mesh_ObjectMesh-S226_material_87"
+	material "material_87"
+}
+
+object "Object_ObjectMesh-S227_material_88"
+{
+	parent "ObjectNode_ObjectMesh-S227_material_88"
+	mesh "Mesh_ObjectMesh-S227_material_88"
+	material "material_88"
+}
+
+object "Object_ObjectMesh-S228_material_84"
+{
+	parent "ObjectNode_ObjectMesh-S228_material_84"
+	mesh "Mesh_ObjectMesh-S228_material_84"
+	material "material_84"
+}
+
+object "Object_ObjectMesh-S229_material_47"
+{
+	parent "ObjectNode_ObjectMesh-S229_material_47"
+	mesh "Mesh_ObjectMesh-S229_material_47"
+	material "material_47"
+}
+
+object "Object_ObjectMesh-S230_material_2"
+{
+	parent "ObjectNode_ObjectMesh-S230_material_2"
+	mesh "Mesh_ObjectMesh-S230_material_2"
+	material "material_2"
+}
+
+object "Object_ObjectMesh-S231_material_7"
+{
+	parent "ObjectNode_ObjectMesh-S231_material_7"
+	mesh "Mesh_ObjectMesh-S231_material_7"
+	material "material_7"
+}
+
+object "Object_ObjectMesh-S232_material_35"
+{
+	parent "ObjectNode_ObjectMesh-S232_material_35"
+	mesh "Mesh_ObjectMesh-S232_material_35"
+	material "material_35"
+}
+
+object "Object_ObjectMesh-S233_material_18"
+{
+	parent "ObjectNode_ObjectMesh-S233_material_18"
+	mesh "Mesh_ObjectMesh-S233_material_18"
+	material "material_18"
+}
+
+object "Object_ObjectMesh-S234_material_25"
+{
+	parent "ObjectNode_ObjectMesh-S234_material_25"
+	mesh "Mesh_ObjectMesh-S234_material_25"
+	material "material_25"
+}
+
+object "Object_ObjectMesh-S235_material_28"
+{
+	parent "ObjectNode_ObjectMesh-S235_material_28"
+	mesh "Mesh_ObjectMesh-S235_material_28"
+	material "material_28"
+}
+
+object "Object_ObjectMesh-S236_material_6"
+{
+	parent "ObjectNode_ObjectMesh-S236_material_6"
+	mesh "Mesh_ObjectMesh-S236_material_6"
+	material "material_6"
+}
+
+object "Object_ObjectMesh-S237_material_34"
+{
+	parent "ObjectNode_ObjectMesh-S237_material_34"
+	mesh "Mesh_ObjectMesh-S237_material_34"
+	material "material_34"
+}
+
+object "Object_ObjectMesh-S238_material_91"
+{
+	parent "ObjectNode_ObjectMesh-S238_material_91"
+	mesh "Mesh_ObjectMesh-S238_material_91"
+	material "material_91"
+}
+
+object "Object_ObjectMesh-S239_material_42"
+{
+	parent "ObjectNode_ObjectMesh-S239_material_42"
+	mesh "Mesh_ObjectMesh-S239_material_42"
+	material "material_42"
+}
+
+object "Object_ObjectMesh-S240_material_96"
+{
+	parent "ObjectNode_ObjectMesh-S240_material_96"
+	mesh "Mesh_ObjectMesh-S240_material_96"
+	material "material_96"
+}
+
+object "Object_ObjectMesh-S241_material_43"
+{
+	parent "ObjectNode_ObjectMesh-S241_material_43"
+	mesh "Mesh_ObjectMesh-S241_material_43"
+	material "material_43"
+}
+
+object "Object_ObjectMesh-S242_material_41"
+{
+	parent "ObjectNode_ObjectMesh-S242_material_41"
+	mesh "Mesh_ObjectMesh-S242_material_41"
+	material "material_41"
+}
+
+object "Object_ObjectMesh-S243_materiale"
+{
+	parent "ObjectNode_ObjectMesh-S243_materiale"
+	mesh "Mesh_ObjectMesh-S243_materiale"
+	material "materiale"
+}
+
+object "Object_ObjectMesh-S244_material_98"
+{
+	parent "ObjectNode_ObjectMesh-S244_material_98"
+	mesh "Mesh_ObjectMesh-S244_material_98"
+	material "material_98"
+}
+
+object "Object_ObjectMesh-S245_material_8"
+{
+	parent "ObjectNode_ObjectMesh-S245_material_8"
+	mesh "Mesh_ObjectMesh-S245_material_8"
+	material "material_8"
+}
+
+object "Object_ObjectMesh-S246_material_86"
+{
+	parent "ObjectNode_ObjectMesh-S246_material_86"
+	mesh "Mesh_ObjectMesh-S246_material_86"
+	material "material_86"
+}
+
+object "Object_ObjectMesh-S247_material_4"
+{
+	parent "ObjectNode_ObjectMesh-S247_material_4"
+	mesh "Mesh_ObjectMesh-S247_material_4"
+	material "material_4"
+}
+
+object "Object_ObjectMesh-S248_material_12"
+{
+	parent "ObjectNode_ObjectMesh-S248_material_12"
+	mesh "Mesh_ObjectMesh-S248_material_12"
+	material "material_12"
+}
+
+object "Object_ObjectMesh-S249_material_14"
+{
+	parent "ObjectNode_ObjectMesh-S249_material_14"
+	mesh "Mesh_ObjectMesh-S249_material_14"
+	material "material_14"
+}
+
+object "Object_ObjectMesh-S250_material_5"
+{
+	parent "ObjectNode_ObjectMesh-S250_material_5"
+	mesh "Mesh_ObjectMesh-S250_material_5"
+	material "material_5"
+}
+
+object "Object_ObjectMesh-S251_material_9"
+{
+	parent "ObjectNode_ObjectMesh-S251_material_9"
+	mesh "Mesh_ObjectMesh-S251_material_9"
+	material "material_9"
+}
+
+object "Object_ObjectMesh-S252_material_237"
+{
+	parent "ObjectNode_ObjectMesh-S252_material_237"
+	mesh "Mesh_ObjectMesh-S252_material_237"
+	material "material_237"
+}
+
+object "Object_ObjectMesh-S253_material_11"
+{
+	parent "ObjectNode_ObjectMesh-S253_material_11"
+	mesh "Mesh_ObjectMesh-S253_material_11"
+	material "material_11"
+}
+
+object "Object_ObjectMesh-S254_material_248"
+{
+	parent "ObjectNode_ObjectMesh-S254_material_248"
+	mesh "Mesh_ObjectMesh-S254_material_248"
+	material "material_248"
+}
+
+object "Object_ObjectMesh-S255_material_13"
+{
+	parent "ObjectNode_ObjectMesh-S255_material_13"
+	mesh "Mesh_ObjectMesh-S255_material_13"
+	material "material_13"
+}
+
+object "Object_ObjectMesh-S256_material_97"
+{
+	parent "ObjectNode_ObjectMesh-S256_material_97"
+	mesh "Mesh_ObjectMesh-S256_material_97"
+	material "material_97"
+}
+
+object "Object_ObjectMesh-S257_material_3"
+{
+	parent "ObjectNode_ObjectMesh-S257_material_3"
+	mesh "Mesh_ObjectMesh-S257_material_3"
+	material "material_3"
+}
+
+object "Object_ObjectMesh-S258_material_95"
+{
+	parent "ObjectNode_ObjectMesh-S258_material_95"
+	mesh "Mesh_ObjectMesh-S258_material_95"
+	material "material_95"
+}
+
+object "Object_ObjectMesh-S259_material_29"
+{
+	parent "ObjectNode_ObjectMesh-S259_material_29"
+	mesh "Mesh_ObjectMesh-S259_material_29"
+	material "material_29"
+}
+
+object "Object_ObjectMesh-S260_material_144"
+{
+	parent "ObjectNode_ObjectMesh-S260_material_144"
+	mesh "Mesh_ObjectMesh-S260_material_144"
+	material "material_144"
+}
+
+object "Object_ObjectMesh-S261_material_24"
+{
+	parent "ObjectNode_ObjectMesh-S261_material_24"
+	mesh "Mesh_ObjectMesh-S261_material_24"
+	material "material_24"
+}
+
+object "Object_ObjectMesh-S262_material_19"
+{
+	parent "ObjectNode_ObjectMesh-S262_material_19"
+	mesh "Mesh_ObjectMesh-S262_material_19"
+	material "material_19"
+}
+
+object "Object_ObjectMesh-S263_material_22"
+{
+	parent "ObjectNode_ObjectMesh-S263_material_22"
+	mesh "Mesh_ObjectMesh-S263_material_22"
+	material "material_22"
+}
+
+object "Object_ObjectMesh-S264_material_31"
+{
+	parent "ObjectNode_ObjectMesh-S264_material_31"
+	mesh "Mesh_ObjectMesh-S264_material_31"
+	material "material_31"
+}
+
+object "Object_ObjectMesh-S265_material_85"
+{
+	parent "ObjectNode_ObjectMesh-S265_material_85"
+	mesh "Mesh_ObjectMesh-S265_material_85"
+	material "material_85"
+}
+
+object "Object_ObjectMesh-S266_material_21"
+{
+	parent "ObjectNode_ObjectMesh-S266_material_21"
+	mesh "Mesh_ObjectMesh-S266_material_21"
+	material "material_21"
+}
+
+object "Object_ObjectMesh-S267_material_23"
+{
+	parent "ObjectNode_ObjectMesh-S267_material_23"
+	mesh "Mesh_ObjectMesh-S267_material_23"
+	material "material_23"
+}
+
+object "Object_ObjectMesh-S268_material_32"
+{
+	parent "ObjectNode_ObjectMesh-S268_material_32"
+	mesh "Mesh_ObjectMesh-S268_material_32"
+	material "material_32"
+}
+
+object "Object_ObjectMesh-S269_material_30"
+{
+	parent "ObjectNode_ObjectMesh-S269_material_30"
+	mesh "Mesh_ObjectMesh-S269_material_30"
+	material "material_30"
+}
+
+object "Object_ObjectMesh-S270_material_17"
+{
+	parent "ObjectNode_ObjectMesh-S270_material_17"
+	mesh "Mesh_ObjectMesh-S270_material_17"
+	material "material_17"
+}
+
+object "Object_ObjectMesh-S271_material_40"
+{
+	parent "ObjectNode_ObjectMesh-S271_material_40"
+	mesh "Mesh_ObjectMesh-S271_material_40"
+	material "material_40"
+}
+
+object "Object_ObjectMesh-S272_material_225"
+{
+	parent "ObjectNode_ObjectMesh-S272_material_225"
+	mesh "Mesh_ObjectMesh-S272_material_225"
+	material "material_225"
+}
+
+object "Object_ObjectMesh-S273_material_37"
+{
+	parent "ObjectNode_ObjectMesh-S273_material_37"
+	mesh "Mesh_ObjectMesh-S273_material_37"
+	material "material_37"
+}
+
+object "Object_ObjectMesh-S274_material_39"
+{
+	parent "ObjectNode_ObjectMesh-S274_material_39"
+	mesh "Mesh_ObjectMesh-S274_material_39"
+	material "material_39"
+}
+
+object "Object_ObjectMesh-S275_material_44"
+{
+	parent "ObjectNode_ObjectMesh-S275_material_44"
+	mesh "Mesh_ObjectMesh-S275_material_44"
+	material "material_44"
+}
+
+object "Object_ObjectMesh-S276_material_33"
+{
+	parent "ObjectNode_ObjectMesh-S276_material_33"
+	mesh "Mesh_ObjectMesh-S276_material_33"
+	material "material_33"
+}
+
+object "Object_ObjectMesh-S277_material_45"
+{
+	parent "ObjectNode_ObjectMesh-S277_material_45"
+	mesh "Mesh_ObjectMesh-S277_material_45"
+	material "material_45"
+}
+
+object "Object_ObjectMesh-S278_material_48"
+{
+	parent "ObjectNode_ObjectMesh-S278_material_48"
+	mesh "Mesh_ObjectMesh-S278_material_48"
+	material "material_48"
+}
+
+object "Object_ObjectMesh-S279_material_245"
+{
+	parent "ObjectNode_ObjectMesh-S279_material_245"
+	mesh "Mesh_ObjectMesh-S279_material_245"
+	material "material_245"
+}
+
+object "Object_ObjectMesh-S280_material_228"
+{
+	parent "ObjectNode_ObjectMesh-S280_material_228"
+	mesh "Mesh_ObjectMesh-S280_material_228"
+	material "material_228"
+}
+
+object "Object_ObjectMesh-S281_material_231"
+{
+	parent "ObjectNode_ObjectMesh-S281_material_231"
+	mesh "Mesh_ObjectMesh-S281_material_231"
+	material "material_231"
+}
+
+object "Object_ObjectMesh-S282_material_70"
+{
+	parent "ObjectNode_ObjectMesh-S282_material_70"
+	mesh "Mesh_ObjectMesh-S282_material_70"
+	material "material_70"
+}
+
+object "Object_ObjectMesh-S283_material_160"
+{
+	parent "ObjectNode_ObjectMesh-S283_material_160"
+	mesh "Mesh_ObjectMesh-S283_material_160"
+	material "material_160"
+}
+
+object "Object_ObjectMesh-S284_material_152"
+{
+	parent "ObjectNode_ObjectMesh-S284_material_152"
+	mesh "Mesh_ObjectMesh-S284_material_152"
+	material "material_152"
+}
+
+object "Object_ObjectMesh-S285_material_89"
+{
+	parent "ObjectNode_ObjectMesh-S285_material_89"
+	mesh "Mesh_ObjectMesh-S285_material_89"
+	material "material_89"
+}
+
+object "Object_ObjectMesh-S286_material_75"
+{
+	parent "ObjectNode_ObjectMesh-S286_material_75"
+	mesh "Mesh_ObjectMesh-S286_material_75"
+	material "material_75"
+}

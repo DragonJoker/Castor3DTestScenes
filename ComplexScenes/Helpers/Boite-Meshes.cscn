@@ -1,0 +1,205 @@
+// Meshes
+
+mesh "boite"
+{
+	import "Meshes/Boite/boite.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+		material 4 "C3D_DefaultMaterial"
+		material 5 "C3D_DefaultMaterial"
+		material 6 "C3D_DefaultMaterial"
+		material 7 "C3D_DefaultMaterial"
+		material 8 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "table_basse"
+{
+	import "Meshes/Boite/table_basse.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "baffles_boite"
+{
+	import "Meshes/Boite/baffles_boite.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "barriere_verre"
+{
+	import "Meshes/Boite/barriere_verre.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "dj_boite"
+{
+	import "Meshes/Boite/dj_boite.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+		material 4 "C3D_DefaultMaterial"
+		material 5 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "bars_boite"
+{
+	import "Meshes/Boite/bars_boite.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+		material 4 "C3D_DefaultMaterial"
+		material 5 "C3D_DefaultMaterial"
+		material 6 "C3D_DefaultMaterial"
+		material 7 "C3D_DefaultMaterial"
+		material 8 "C3D_DefaultMaterial"
+		material 9 "C3D_DefaultMaterial"
+		material 10 "C3D_DefaultMaterial"
+		material 11 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "escaliers_boite"
+{
+	import "Meshes/Boite/escaliers_boite.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "canape_triple"
+{
+	import "Meshes/Boite/canape_triple.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "fauteuil"
+{
+	import "Meshes/Boite/fauteuil.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "panneau_mural"
+{
+	import "Meshes/Boite/panneau_mural.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "plante_05"
+{
+	import "Meshes/Boite/plante_05.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "plasma"
+{
+	import "Meshes/Boite/plasma.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "pouf"
+{
+	import "Meshes/Boite/pouf.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "spot_couleur"
+{
+	import "Meshes/Boite/spot_couleur.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+		material 4 "C3D_DefaultMaterial"
+		material 5 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "spot_simple"
+{
+	import "Meshes/Boite/spot_simple.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "table_haute"
+{
+	import "Meshes/Boite/table_haute.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "table_verre"
+{
+	import "Meshes/Boite/table_verre.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "tabouret_boite"
+{
+	import "Meshes/Boite/tabouret_boite.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}

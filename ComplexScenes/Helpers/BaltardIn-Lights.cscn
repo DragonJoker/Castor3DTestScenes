@@ -1,0 +1,17 @@
+// // Lights
+
+//scene_node "point_light_01"
+//{
+//	orientation 1 0 0 0
+//	position 107.212 40.2634 48.1299
+//	scale 1 1 1
+//}
+
+//light "point_light_01"
+//{
+//	parent "point_light_01"
+//	type point
+//	colour 1 1 1
+//	intensity 0.7 0.8
+//	attenuation 1 0.1 0
+//}

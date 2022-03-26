@@ -1,0 +1,1207 @@
+// Objects
+
+object "corbeille"
+{
+	parent "corbeille"
+	mesh "corbeille"
+}
+
+object "buisson_droit_10_8"
+{
+	parent "buisson_droit_10_8"
+	mesh "buisson_droit"
+}
+
+object "arbre_rue_3"
+{
+	parent "arbre_rue_3"
+	mesh "arbre_rue"
+}
+
+object "Fx_Pathfinding"
+{
+	parent "Fx_Pathfinding"
+	mesh "fx_pathfinding"
+}
+
+object "abris_bus_pub_01"
+{
+	parent "abris_bus"
+	mesh "abris_bus_pub_01"
+}
+
+object "Fx_Selected"
+{
+	parent "Fx_Selected"
+	mesh "Fx_Selected"
+}
+
+object "abris_bus_pub_02"
+{
+	parent "abris_bus"
+	mesh "abris_bus_pub_02"
+}
+
+object "poisson"
+{
+	parent "poisson"
+	mesh "poisson"
+}
+
+object "Rond_Fx_Pathfinding"
+{
+	parent "Fx_Pathfinding"
+	mesh "fx_pathfinding"
+}
+
+object "abris_bus"
+{
+	parent "abris_bus"
+	mesh "abris_bus"
+}
+
+object "arbre_rue"
+{
+	parent "arbre_rue"
+	mesh "arbre_rue"
+}
+
+object "buisson_droit_10_9"
+{
+	parent "buisson_droit_10_9"
+	mesh "buisson_droit"
+}
+
+object "arbre_rue_2"
+{
+	parent "arbre_rue_2"
+	mesh "arbre_rue"
+}
+
+object "bite_27"
+{
+	parent "bite_27"
+	mesh "bite"
+}
+
+object "banc_12"
+{
+	parent "banc_12"
+	mesh "banc"
+}
+
+object "banc_1"
+{
+	parent "banc_1"
+	mesh "banc"
+}
+
+object "bite_25"
+{
+	parent "bite_25"
+	mesh "bite"
+}
+
+object "banc_3"
+{
+	parent "banc_3"
+	mesh "banc"
+}
+
+object "banc_10"
+{
+	parent "banc_10"
+	mesh "banc"
+}
+
+object "bite_20"
+{
+	parent "bite_20"
+	mesh "bite"
+}
+
+object "banc_15"
+{
+	parent "banc_15"
+	mesh "banc"
+}
+
+object "fontaine"
+{
+	parent "fontaine"
+	mesh "fontaine"
+}
+
+object "bite_23"
+{
+	parent "bite_23"
+	mesh "bite"
+}
+
+object "banc_5"
+{
+	parent "banc_5"
+	mesh "banc"
+}
+
+object "banc_16"
+{
+	parent "banc_16"
+	mesh "banc"
+}
+
+object "bite_24"
+{
+	parent "bite_24"
+	mesh "bite"
+}
+
+object "banc_2"
+{
+	parent "banc_2"
+	mesh "banc"
+}
+
+object "bite_21"
+{
+	parent "bite_21"
+	mesh "bite"
+}
+
+object "banc_7"
+{
+	parent "banc_7"
+	mesh "banc"
+}
+
+object "panneau_pub_pub_01"
+{
+	parent "panneau_pub"
+	mesh "panneau_pub_pub_01"
+}
+
+object "barriere_chantier_11"
+{
+	parent "barriere_chantier_11"
+	mesh "barriere_chantier"
+}
+
+object "banc_9"
+{
+	parent "banc_9"
+	mesh "banc"
+}
+
+object "bite_16"
+{
+	parent "bite_16"
+	mesh "bite"
+}
+
+object "barriere_travaux_7"
+{
+	parent "barriere_travaux_7"
+	mesh "barriere_travaux"
+}
+
+object "buisson_droit_10_5"
+{
+	parent "buisson_droit_10_5"
+	mesh "buisson_droit"
+}
+
+object "banniere"
+{
+	parent "banniere"
+	mesh "banniere"
+}
+
+object "bite_17"
+{
+	parent "bite_17"
+	mesh "bite"
+}
+
+object "barriere_travaux_6"
+{
+	parent "barriere_travaux_6"
+	mesh "barriere_travaux"
+}
+
+object "barriere_chantier"
+{
+	parent "barriere_chantier"
+	mesh "barriere_chantier"
+}
+
+object "barriere_chantier_10"
+{
+	parent "barriere_chantier_10"
+	mesh "barriere_chantier"
+}
+
+object "barriere_chantier_11_1"
+{
+	parent "barriere_chantier_11_1"
+	mesh "barriere_chantier"
+}
+
+object "buisson_coin_int"
+{
+	parent "buisson_coin_int"
+	mesh "buisson_coin_int"
+}
+
+object "barriere_chantier_12_1"
+{
+	parent "barriere_chantier_12_1"
+	mesh "barriere_chantier"
+}
+
+object "barriere_chantier_2"
+{
+	parent "barriere_chantier_2"
+	mesh "barriere_chantier"
+}
+
+object "barriere_chantier_3"
+{
+	parent "barriere_chantier_3"
+	mesh "barriere_chantier"
+}
+
+object "plasma_pub"
+{
+	parent "plasma"
+	mesh "plasma_pub"
+}
+
+object "barriere_chantier_4"
+{
+	parent "barriere_chantier_4"
+	mesh "barriere_chantier"
+}
+
+object "fontaine_eau_tombante"
+{
+	parent "fontaine"
+	mesh "fontaine_eau_tombante"
+}
+
+object "barriere_chantier_5"
+{
+	parent "barriere_chantier_5"
+	mesh "barriere_chantier"
+}
+
+object "barriere_chantier_6"
+{
+	parent "barriere_chantier_6"
+	mesh "barriere_chantier"
+}
+
+object "barriere_chantier_8"
+{
+	parent "barriere_chantier_8"
+	mesh "barriere_chantier"
+}
+
+object "bite_10"
+{
+	parent "bite_10"
+	mesh "bite"
+}
+
+object "barriere_travaux_1"
+{
+	parent "barriere_travaux_1"
+	mesh "barriere_travaux"
+}
+
+object "poubelle_1"
+{
+	parent "poubelle_1"
+	mesh "poubelle"
+}
+
+object "horloge_aiguille_secondes"
+{
+	parent "horloge_aiguille_secondes"
+	mesh "horloge_aiguille_secondes"
+}
+
+object "distributeur_1"
+{
+	parent "distributeur_1"
+	mesh "distributeur"
+}
+
+object "barriere_travaux"
+{
+	parent "barriere_travaux"
+	mesh "barriere_travaux"
+}
+
+object "barriere_travaux_10"
+{
+	parent "barriere_travaux_10"
+	mesh "barriere_travaux"
+}
+
+object "barriere_travaux_10_1"
+{
+	parent "barriere_travaux_10_1"
+	mesh "barriere_travaux"
+}
+
+object "barriere_travaux_10_2"
+{
+	parent "barriere_travaux_10_2"
+	mesh "barriere_travaux"
+}
+
+object "bite_13"
+{
+	parent "bite_13"
+	mesh "bite"
+}
+
+object "barriere_travaux_2"
+{
+	parent "barriere_travaux_2"
+	mesh "barriere_travaux"
+}
+
+object "feu_tricolore_1"
+{
+	parent "feu_tricolore_1"
+	mesh "feu_tricolore"
+}
+
+object "bite_12"
+{
+	parent "bite_12"
+	mesh "bite"
+}
+
+object "bite_1"
+{
+	parent "bite_1"
+	mesh "bite"
+}
+
+object "horloge"
+{
+	parent "horloge"
+	mesh "horloge"
+}
+
+object "barriere_travaux_3"
+{
+	parent "barriere_travaux_3"
+	mesh "barriere_travaux"
+}
+
+object "bite_15"
+{
+	parent "bite_15"
+	mesh "bite"
+}
+
+object "barriere_travaux_4"
+{
+	parent "barriere_travaux_4"
+	mesh "barriere_travaux"
+}
+
+object "bite_14"
+{
+	parent "bite_14"
+	mesh "bite"
+}
+
+object "barriere_travaux_5"
+{
+	parent "barriere_travaux_5"
+	mesh "barriere_travaux"
+}
+
+object "bite_19"
+{
+	parent "bite_19"
+	mesh "bite"
+}
+
+object "barriere_travaux_8"
+{
+	parent "barriere_travaux_8"
+	mesh "barriere_travaux"
+}
+
+object "bite_18"
+{
+	parent "bite_18"
+	mesh "bite"
+}
+
+object "barriere_travaux_9"
+{
+	parent "barriere_travaux_9"
+	mesh "barriere_travaux"
+}
+
+object "bite"
+{
+	parent "bite"
+	mesh "bite"
+}
+
+object "bite_11"
+{
+	parent "bite_11"
+	mesh "bite"
+}
+
+object "bite_22"
+{
+	parent "bite_22"
+	mesh "bite"
+}
+
+object "bite_28"
+{
+	parent "bite_28"
+	mesh "bite"
+}
+
+object "bite_29"
+{
+	parent "bite_29"
+	mesh "bite"
+}
+
+object "buisson_droit_10_10_1"
+{
+	parent "buisson_droit_10_10_1"
+	mesh "buisson_droit"
+}
+
+object "bite_3"
+{
+	parent "bite_3"
+	mesh "bite"
+}
+
+object "bite_31"
+{
+	parent "bite_31"
+	mesh "bite"
+}
+
+object "bite_32"
+{
+	parent "bite_32"
+	mesh "bite"
+}
+
+object "bite_34"
+{
+	parent "bite_34"
+	mesh "bite"
+}
+
+object "bite_36"
+{
+	parent "bite_36"
+	mesh "bite"
+}
+
+object "bite_37"
+{
+	parent "bite_37"
+	mesh "bite"
+}
+
+object "reverbere_21"
+{
+	parent "reverbere_21"
+	mesh "reverbere"
+}
+
+object "bite_38"
+{
+	parent "bite_38"
+	mesh "bite"
+}
+
+object "bite_41"
+{
+	parent "bite_41"
+	mesh "bite"
+}
+
+object "bite_43"
+{
+	parent "bite_43"
+	mesh "bite"
+}
+
+object "bite_44"
+{
+	parent "bite_44"
+	mesh "bite"
+}
+
+object "bite_5"
+{
+	parent "bite_5"
+	mesh "bite"
+}
+
+object "bite_6"
+{
+	parent "bite_6"
+	mesh "bite"
+}
+
+object "bite_8"
+{
+	parent "bite_8"
+	mesh "bite"
+}
+
+object "horloge_aiguille_heures"
+{
+	parent "horloge_aiguille_heures"
+	mesh "horloge_aiguille_heures"
+}
+
+object "borne_incendie"
+{
+	parent "borne_incendie"
+	mesh "borne_incendie"
+}
+
+object "borne_incendie_1"
+{
+	parent "borne_incendie_1"
+	mesh "borne_incendie"
+}
+
+object "borne_incendie_2"
+{
+	parent "borne_incendie_2"
+	mesh "borne_incendie"
+}
+
+object "buisson_coin_ext"
+{
+	parent "buisson_coin_ext"
+	mesh "buisson_coin_ext"
+}
+
+object "buisson_coin_ext_1"
+{
+	parent "buisson_coin_ext_1"
+	mesh "buisson_coin_ext"
+}
+
+object "entree_station"
+{
+	parent "entree_station"
+	mesh "entree_station"
+}
+
+object "buisson_coin_ext_2"
+{
+	parent "buisson_coin_ext_2"
+	mesh "buisson_coin_ext"
+}
+
+object "buisson_coin_ext_3"
+{
+	parent "buisson_coin_ext_3"
+	mesh "buisson_coin_ext"
+}
+
+object "buisson_coin_int_1"
+{
+	parent "buisson_coin_int_1"
+	mesh "buisson_coin_int"
+}
+
+object "buisson_coin_int_2"
+{
+	parent "buisson_coin_int_2"
+	mesh "buisson_coin_int"
+}
+
+object "buisson_coin_int_3"
+{
+	parent "buisson_coin_int_3"
+	mesh "buisson_coin_int"
+}
+
+object "reverbere_11_2"
+{
+	parent "reverbere_11_2"
+	mesh "reverbere"
+}
+
+object "kiosque_park"
+{
+	parent "kiosque_park"
+	mesh "kiosque_park"
+}
+
+object "buisson_droit_1"
+{
+	parent "buisson_droit_1"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_10"
+{
+	parent "buisson_droit_10"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_10_1"
+{
+	parent "buisson_droit_10_1"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_10_10"
+{
+	parent "buisson_droit_10_10"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_10_10_2"
+{
+	parent "buisson_droit_10_10_2"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_10_2"
+{
+	parent "buisson_droit_10_2"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_10_3"
+{
+	parent "buisson_droit_10_3"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_10_4"
+{
+	parent "buisson_droit_10_4"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_10_6"
+{
+	parent "buisson_droit_10_6"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_10_7"
+{
+	parent "buisson_droit_10_7"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_11"
+{
+	parent "buisson_droit_11"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_12"
+{
+	parent "buisson_droit_12"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_13"
+{
+	parent "buisson_droit_13"
+	mesh "buisson_droit"
+}
+
+object "reverbere_11_1"
+{
+	parent "reverbere_11_1"
+	mesh "reverbere"
+}
+
+object "buisson_droit_2"
+{
+	parent "buisson_droit_2"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_4"
+{
+	parent "buisson_droit_4"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_5"
+{
+	parent "buisson_droit_5"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_6"
+{
+	parent "buisson_droit_6"
+	mesh "buisson_droit"
+}
+
+object "reverbere_11_4"
+{
+	parent "reverbere_11_4"
+	mesh "reverbere"
+}
+
+object "buisson_droit_7"
+{
+	parent "buisson_droit_7"
+	mesh "buisson_droit"
+}
+
+object "buisson_droit_8"
+{
+	parent "buisson_droit_8"
+	mesh "buisson_droit"
+}
+
+object "panneau_mural_pub_01"
+{
+	parent "panneau_mural"
+	mesh "panneau_mural_pub_01"
+}
+
+object "buisson_droit_9"
+{
+	parent "buisson_droit_9"
+	mesh "buisson_droit"
+}
+
+object "cabine_telephone"
+{
+	parent "cabine_telephone"
+	mesh "cabine_telephone"
+}
+
+object "cabine_telephone_1"
+{
+	parent "cabine_telephone_1"
+	mesh "cabine_telephone"
+}
+
+object "cartons"
+{
+	parent "cartons"
+	mesh "cartons"
+}
+
+object "chene"
+{
+	parent "chene"
+	mesh "chene"
+}
+
+object "chene_1"
+{
+	parent "chene_1"
+	mesh "chene"
+}
+
+object "chene_2"
+{
+	parent "chene_2"
+	mesh "chene"
+}
+
+object "chene_3"
+{
+	parent "chene_3"
+	mesh "chene"
+}
+
+object "corbeille_1"
+{
+	parent "corbeille_1"
+	mesh "corbeille"
+}
+
+object "corbeille_2"
+{
+	parent "corbeille_2"
+	mesh "corbeille"
+}
+
+object "corbeille_4"
+{
+	parent "corbeille_4"
+	mesh "corbeille"
+}
+
+object "corbeille_6"
+{
+	parent "corbeille_6"
+	mesh "corbeille"
+}
+
+object "corbeille_7"
+{
+	parent "corbeille_7"
+	mesh "corbeille"
+}
+
+object "poubelle"
+{
+	parent "poubelle"
+	mesh "poubelle"
+}
+
+object "distributeur"
+{
+	parent "distributeur"
+	mesh "distributeur"
+}
+
+object "entree_boite_parc"
+{
+	parent "base_node"
+	mesh "entree_boite_parc"
+}
+
+object "feu_tricolore"
+{
+	parent "feu_tricolore"
+	mesh "feu_tricolore"
+}
+
+object "grille_parc"
+{
+	parent "base_node"
+	mesh "grille_parc"
+}
+
+object "horloge_aiguille_minutes"
+{
+	parent "horloge_aiguille_minutes"
+	mesh "horloge_aiguille_minutes"
+}
+
+object "immeubles_parc"
+{
+	parent "base_node"
+	mesh "immeubles_parc"
+}
+
+object "magasins_parc"
+{
+	parent "base_node"
+	mesh "magasins_parc"
+}
+
+object "panneau_enfants"
+{
+	parent "panneau_enfants"
+	mesh "panneau_enfants"
+}
+
+object "panneau_mural"
+{
+	parent "panneau_mural"
+	mesh "panneau_mural"
+}
+
+object "trigger_1"
+{
+	parent "trigger_1"
+	mesh "trigger"
+}
+
+object "panneau_pub"
+{
+	parent "panneau_pub"
+	mesh "panneau_pub"
+}
+
+object "panneau_pub_pub_02"
+{
+	parent "panneau_pub"
+	mesh "panneau_pub_pub_02"
+}
+
+object "panneau_stationnement"
+{
+	parent "panneau_stationnement"
+	mesh "panneau_stationnement"
+}
+
+object "panneau_stationnement_1"
+{
+	parent "panneau_stationnement_1"
+	mesh "panneau_velo"
+}
+
+object "panneau_stationnement_2"
+{
+	parent "panneau_stationnement_2"
+	mesh "panneau_velo"
+}
+
+object "panneau_velo"
+{
+	parent "panneau_velo"
+	mesh "panneau_velo"
+}
+
+object "panneau_velo_1"
+{
+	parent "panneau_velo_1"
+	mesh "panneau_velo"
+}
+
+object "piaf_ciel"
+{
+	parent "piaf_ciel"
+	mesh "piaf_ciel"
+}
+
+object "plasma"
+{
+	parent "plasma"
+	mesh "plasma"
+}
+
+object "plot_chantier_1"
+{
+	parent "plot_chantier_1"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_10"
+{
+	parent "plot_chantier_10"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_11"
+{
+	parent "plot_chantier_11"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_12_1"
+{
+	parent "plot_chantier_12_1"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_13"
+{
+	parent "plot_chantier_13"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_13_1"
+{
+	parent "plot_chantier_13_1"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_13_2"
+{
+	parent "plot_chantier_13_2"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_16"
+{
+	parent "plot_chantier_16"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_3"
+{
+	parent "plot_chantier_3"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_4"
+{
+	parent "plot_chantier_4"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_5"
+{
+	parent "plot_chantier_5"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_6"
+{
+	parent "plot_chantier_6"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_7"
+{
+	parent "plot_chantier_7"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_8"
+{
+	parent "plot_chantier_8"
+	mesh "plot_chantier"
+}
+
+object "plot_chantier_9"
+{
+	parent "plot_chantier_9"
+	mesh "plot_chantier"
+}
+
+object "poisson_1"
+{
+	parent "poisson_1"
+	mesh "poisson"
+}
+
+object "poisson_2"
+{
+	parent "poisson_2"
+	mesh "poisson"
+}
+
+object "poisson_3"
+{
+	parent "poisson_3"
+	mesh "poisson"
+}
+
+object "trigger_4"
+{
+	parent "trigger_4"
+	mesh "trigger"
+}
+
+object "poubelle_2"
+{
+	parent "poubelle_2"
+	mesh "poubelle"
+}
+
+object "poubelle_3"
+{
+	parent "poubelle_3"
+	mesh "poubelle"
+}
+
+object "reverbere"
+{
+	parent "reverbere"
+	mesh "reverbere"
+}
+
+object "reverbere_11"
+{
+	parent "reverbere_11"
+	mesh "reverbere"
+}
+
+object "reverbere_11_3"
+{
+	parent "reverbere_11_3"
+	mesh "reverbere"
+}
+
+object "reverbere_13"
+{
+	parent "reverbere_13"
+	mesh "reverbere"
+}
+
+object "reverbere_15"
+{
+	parent "reverbere_15"
+	mesh "reverbere"
+}
+
+object "reverbere_16"
+{
+	parent "reverbere_16"
+	mesh "reverbere"
+}
+
+object "reverbere_19"
+{
+	parent "reverbere_19"
+	mesh "reverbere"
+}
+
+object "reverbere_4"
+{
+	parent "reverbere_4"
+	mesh "reverbere"
+}
+
+object "reverbere_8"
+{
+	parent "reverbere_8"
+	mesh "reverbere"
+}
+
+object "saule_pleureur_1"
+{
+	parent "saule_pleureur_1"
+	mesh "saule_pleureur"
+}
+
+object "saule_pleureur_2"
+{
+	parent "saule_pleureur_2"
+	mesh "saule_pleureur"
+}
+
+object "skycraper"
+{
+	parent "skycraper"
+	mesh "skycraper"
+}
+
+object "sol_parc"
+{
+	parent "base_node"
+	mesh "sol_parc"
+}
+
+object "table_echec"
+{
+	parent "table_echec"
+	mesh "table_echec"
+}
+
+object "trigger_2"
+{
+	parent "trigger_2"
+	mesh "trigger"
+}
+
+object "trigger_3"
+{
+	parent "trigger_3"
+	mesh "trigger"
+}

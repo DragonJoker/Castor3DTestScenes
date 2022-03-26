@@ -1,1758 +1,1687 @@
+
 // Materials
 
 material "abris_bus/metal"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.432000 0.432000 0.432000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.432000 0.432000 0.432000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/abris_bus_metal.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/abris_bus_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "abris_bus/plan"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/abris_bus_plan.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/abris_bus_plan.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "abris_bus/pub"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/abris_bus_pub_02.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/abris_bus_pub_02.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "abris_bus/verre"
 {
-
 	pass
 	{
-		diffuse 0.686275 0.686275 0.686275 0.00392157
-		specular 0.297000 0.297000 0.297000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.686275 0.686275 0.686275
+		specular 0.297000 0.297000 0.297000
+		ambient 1
+		shininess 192.0
 		alpha_blend_mode interpolative
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/barriere_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/barriere_verre.png" a
-		}
+			levels_count 6
+			image "Textures/BaltardOutLegacy/barriere_verre.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "arbre_rue/bac"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.0720000 0.0720000 0.0720000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.0720000 0.0720000 0.0720000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/arbre_rue_bac.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/arbre_rue_bac.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "arbre_rue/feuilles"
 {
-
 	pass
 	{
-		diffuse 0.588235 0.588235 0.588235 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
-		alpha_func greater 0.5
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
+		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/arbre_rue_branche.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/arbre_rue_branche.png" a
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/arbre_rue_branche.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "arbre_rue/terre"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/arbre_rue_terre.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/arbre_rue_terre.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "arbre_rue/tronc"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.0810000 0.0810000 0.0810000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.0810000 0.0810000 0.0810000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/arbre_rue_tronc.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/arbre_rue_tronc.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "banc/bois"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/banc_bois.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/banc_bois.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "banc/metal"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.234000 0.234000 0.234000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.234000 0.234000 0.234000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/banc_metal.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/banc_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "barriere_chantier/bois"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/barriere_chantier_bois.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/barriere_chantier_bois.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "barriere_chantier/peinture"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/barriere_chantier_peinture.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/barriere_chantier_peinture.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "barriere_crs/barriere_crs"
 {
-
 	pass
 	{
-		diffuse 0.588235 0.588235 0.588235 0.00392157
-		specular 0.504000 0.504000 0.504000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.504000 0.504000 0.504000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/barriere_metal.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/barriere_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "borne_incendie/borne_incendie_gris"
 {
-
 	pass
 	{
-		specular 0.351000 0.351000 0.351000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.351000 0.351000 0.351000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/borne_metal_gris.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/borne_metal_gris.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "borne_incendie/borne_incendie_rouge"
 {
-
 	pass
 	{
-		specular 0.351000 0.351000 0.351000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.351000 0.351000 0.351000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/borne_metal.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/borne_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "cabine_telephone/metal"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.333000 0.333000 0.333000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.333000 0.333000 0.333000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/cabine_telephone_metal.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/cabine_telephone_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "cabine_telephone/phone"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.135000 0.135000 0.135000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.135000 0.135000 0.135000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/cabine_telephone_phone.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/cabine_telephone_phone.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "cabine_telephone/verre"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.210392 0.210392 0.210392 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.210392 0.210392 0.210392
+		ambient 1
+		shininess 192.0
 		alpha_blend_mode interpolative
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/barriere_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/barriere_verre.png" a
-		}
+			levels_count 6
+			image "Textures/BaltardOutLegacy/barriere_verre.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "cabine_telephone/verre marron"
 {
-
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 	}
 }
 
 material "camera_surveillance_gauche/camera_surveillance_gauche"
 {
-
 	pass
 	{
-		diffuse 0.588235 0.588235 0.588235 0.00392157
-		specular 0.0990000 0.0990000 0.0990000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.0990000 0.0990000 0.0990000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/camera.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/camera.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "cartons/cartons"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/cartons.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/cartons.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "chene/feuilles"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/feuille_chene.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/feuille_chene.png" a
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/feuille_chene.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "chene/tronc"
 {
-
 	pass
 	{
-		diffuse 0.588235 0.588235 0.588235 0.00392157
-		specular 0.0900000 0.0900000 0.0900000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.0900000 0.0900000 0.0900000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/tronc_chene.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/tronc_chene.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "corbeille/bois"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.0720000 0.0720000 0.0720000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.0720000 0.0720000 0.0720000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/corbeille_bois.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/corbeille_bois.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "corbeille/metal"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.288000 0.288000 0.288000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.288000 0.288000 0.288000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/corbeille_metal.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/corbeille_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "corbeille/trash"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/corbeille_trash.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/corbeille_trash.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "entree_station/metal"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.180000 0.180000 0.180000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.180000 0.180000 0.180000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/bite_metal.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/bite_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "entree_station/metal_or"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.315000 0.315000 0.315000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.315000 0.315000 0.315000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/metal_or.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/metal_or.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "entree_station/mur"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/briques.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/briques.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "entree_station/muret"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/briques.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/briques.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "entree_station/nom_station"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.189000 0.189000 0.189000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.189000 0.189000 0.189000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/panneau_place_mog.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/panneau_place_mog.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "entree_station/plafond"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 	}
 }
 
 material "entree_station/plan"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/plan.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/plan.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "entree_station/sol"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.216000 0.216000 0.216000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.216000 0.216000 0.216000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/sol_carrele.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/sol_carrele.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "feu_tricolore/feu"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/feu_tricolore_rouge.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/feu_tricolore_rouge.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "feu_tricolore/metal"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.315000 0.315000 0.315000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.315000 0.315000 0.315000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/feu_tricolore_metal.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/feu_tricolore_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "feu_tricolore/pieton"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/feu_tricolore_pieton_vert.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/feu_tricolore_pieton_vert.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "grille_baltard_out/bareaux"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.207000 0.207000 0.207000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.207000 0.207000 0.207000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/metal_noir.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/metal_noir.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "grille_baltard_out/dorures"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.459000 0.459000 0.459000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.459000 0.459000 0.459000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/metal_or.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/metal_or.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "grille_baltard_out/grille_parc"
 {
-
 	pass
 	{
-		specular 0.156863 0.156863 0.156863 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.156863 0.156863 0.156863
+		ambient 1
+		shininess 192.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/grille_parc.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/grille_parc.png" a
-		}
+			levels_count 7
+			image "Textures/BaltardOutLegacy/grille_parc.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "grille_baltard_out/muret"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.0900000 0.0900000 0.0900000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0900000 0.0900000 0.0900000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/briques.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/briques.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "interphone/interphone"
 {
-
 	pass
 	{
-		diffuse 0.588235 0.588235 0.588235 0.00392157
-		specular 0.0990000 0.0990000 0.0990000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.0990000 0.0990000 0.0990000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/visiophone.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/visiophone.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "maison_baltard_01"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/maison_01.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/maison_01.png" a
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/maison_01.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "maison_baltard_02"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/maison_01.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/maison_01.png" a
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/maison_01.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "maison_baltard_03"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/maison_01.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/maison_01.png" a
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/maison_01.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "maison_baltard_04"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/maison_01.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/maison_01.png" a
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/maison_01.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "maison_baltard_05"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/maison_01.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/maison_01.png" a
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/maison_01.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "maison_baltard_06"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 0.0001
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/maison_01.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/maison_01.png" a
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/maison_01.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "maison_baltard_07"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/maison_01.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/maison_01.png" a
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/maison_01.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "pavillon_baltard/antenne"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.784314 0.784314 0.784314 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.784314 0.784314 0.784314
+		ambient 1
+		shininess 128.0
 		two_sided true
 	}
 }
 
 material "pavillon_baltard/black"
 {
-
 	pass
 	{
-		diffuse 0.00000 0.00000 0.00000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.00000 0.00000 0.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 	}
 }
 
 material "pavillon_baltard/bord_toit"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.0784314 0.0784314 0.0784314 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.0784314 0.0784314 0.0784314
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/baltar_ciment.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/baltar_ciment.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "pavillon_baltard/bronze"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.196078 0.196078 0.196078 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.196078 0.196078 0.196078
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/baltar_bronze.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/baltar_bronze.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "pavillon_baltard/bronze_alpha"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 192.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/baltar_bronze_alpha.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/baltar_bronze_alpha.png" a
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/baltar_bronze_alpha.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "pavillon_baltard/metal_bleu"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.156863 0.156863 0.156863 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.156863 0.156863 0.156863
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/baltar_metal_bleu.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/baltar_metal_bleu.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "pavillon_baltard/motifs"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.117647 0.117647 0.117647 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.117647 0.117647 0.117647
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/baltar_mur.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/baltar_mur.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "pavillon_baltard/toit"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.288000 0.288000 0.288000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.288000 0.288000 0.288000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/baltar_tuiles.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/baltar_tuiles.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "pavillon_baltard/vitres"
 {
-
 	pass
 	{
-		diffuse 0.000000 0.000000 0.000000 0.00392157
-		specular 0.117647 0.117647 0.117647 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.00000 0.00000 0.00000
+		specular 0.117647 0.117647 0.117647
+		ambient 1
+		shininess 192.0
 		two_sided true
 	}
 }
 
 material "plot_chantier/plot_chantier"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.180000 0.180000 0.180000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.180000 0.180000 0.180000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/plot_chantier_plastique.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/plot_chantier_plastique.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "poubelle/plastique_gris"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/poubelle_plastik_gris.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/poubelle_plastik_gris.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "poubelle/plastique_noir"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/poubelle_plastik_noir.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/poubelle_plastik_noir.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "poubelle/plastique_vert"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/poubelle_plastik_vert.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/poubelle_plastik_vert.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "reverbere/lumiere"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 192.0
 		two_sided true
+		mixed_interpolation true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/reverbere_vitre.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/reverbere_vitre.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "reverbere/metal"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.144000 0.144000 0.144000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.144000 0.144000 0.144000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/reverbere_metal.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/reverbere_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/beton_use"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/beton_use.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/beton_use.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/buisson_baltard"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/buisson.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/buisson.png" a
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/buisson.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "road_structure/fond"
 {
-
 	pass
 	{
-		diffuse 0.996078 0.996078 0.996078 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.996078 0.996078 0.996078
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/font_bois_baltard.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/font_bois_baltard.png" a
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/font_bois_baltard.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "road_structure/grille_baltard"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 192.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/grille_parc.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/grille_parc.png" a
-		}
+			levels_count 7
+			image "Textures/BaltardOutLegacy/grille_parc.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "road_structure/herbe"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/herbe.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/herbe.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/maison_02"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/maison_02.jpg" rgb
-		}
+			levels_count 11
+			image "Textures/BaltardOutLegacy/maison_02.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/maison_03"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/maison_03.jpg" rgb
-		}
+			levels_count 11
+			image "Textures/BaltardOutLegacy/maison_03.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/maison_04"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/maison_04.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/maison_04.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/maison_baltard_01"
 {
-
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 	}
 }
 
 material "road_structure/mur_baltard_01"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/mur_baltard_01.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/mur_baltard_01.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/mur_baltard_02"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/024briques.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/024briques.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/mur_baltard_03"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/brick047.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/brick047.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/mur_baltard_04"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/brick008.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/brick008.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/pave_baltard"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/brick040+.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/brick040+.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/portail_baltard"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 192.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/grille.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/grille.png" a
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/grille.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "road_structure/porte"
 {
-
 	pass
 	{
-		specular 0.0588235 0.0588235 0.0588235 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.0588235 0.0588235 0.0588235
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/porte_metal.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/porte_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/rembarde_mur"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/rembarde_muret.jpg" rgb
-		}
+			levels_count 6
+			image "Textures/BaltardOutLegacy/rembarde_muret.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/road"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/road12.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/road12.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "road_structure/trottoire_baltard"
 {
-
 	pass
 	{
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/murcim001.jpg" rgb
-		}
+			levels_count 10
+			image "Textures/BaltardOutLegacy/murcim001.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "saule_pleureur/feuilles"
 {
-
 	pass
 	{
-		diffuse 0.588235 0.588235 0.588235 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.00000 0.00000 0.00000
+		ambient 1
+		shininess 128.0
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/feuille_saule.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/feuille_saule.png" a
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/feuille_saule.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "saule_pleureur/tronc"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.108000 0.108000 0.108000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.108000 0.108000 0.108000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/tronc_saule.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/tronc_saule.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "wet_floor/bois"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.144000 0.144000 0.144000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.144000 0.144000 0.144000
+		ambient 1
+		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/bois_balais.jpg" rgb
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/bois_balais.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "wet_floor/eau"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.522000 0.522000 0.522000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.522000 0.522000 0.522000
+		ambient 1
+		shininess 128.0
 		alpha_blend_mode interpolative
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/eau_sceau.png" rgb
-		}
-
-		texture_unit
-		{
-			channel opacity
-			image "Textures/BaltardOutLegacy/eau_sceau.png" a
-		}
+			levels_count 9
+			image "Textures/BaltardOutLegacy/eau_sceau.png"
+			diffuse_mask 0x00ffffff
+			opacity_mask 0xff000000
+		} // texture_unit
 	}
 }
 
 material "wet_floor/metal"
 {
-
 	pass
 	{
-		diffuse 0.588235 0.588235 0.588235 0.00392157
-		specular 0.414000 0.414000 0.414000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588235 0.588235 0.588235
+		specular 0.414000 0.414000 0.414000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/corbeille_metal.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/corbeille_metal.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }
 
 material "wet_floor/wet_floor"
 {
-
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		specular 0.126000 0.126000 0.126000 0.00392157
-		ambient 1.0
-		shininess 0.5
+		diffuse 0.588000 0.588000 0.588000
+		specular 0.126000 0.126000 0.126000
+		ambient 1
+		shininess 192.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/BaltardOutLegacy/wet_floor.jpg" rgb
-		}
+			levels_count 8
+			image "Textures/BaltardOutLegacy/wet_floor.jpg"
+			diffuse_mask 0x00ffffff
+		} // texture_unit
 	}
 }

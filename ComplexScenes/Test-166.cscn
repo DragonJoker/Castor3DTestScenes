@@ -1,0 +1,86 @@
+// Global configuration
+materials blinn_phong
+
+scene "BaltardOut"
+{
+	// Scene configuration
+	ambient_light 0.200000 0.200000 0.200000
+	background_colour 0.500000 0.500000 0.500000
+	lpv_indirect_attenuation 1.7
+	include "Materials/BaltardOutLegacy.cscn"
+	include "Meshes/BaltardOut.cscn"
+	include "Nodes/BaltardOut.cscn"
+	include "Objects/BaltardOut.cscn"
+	include "Lights/BaltardOut.cscn"
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/BaltardOutLegacy/skybox.hdr" 1024
+	}
+
+	// Cameras nodes
+
+	scene_node "CameraNode"
+	{
+		orientation 0.479944 -0.846948 0.228763 58.7399
+		position 110 46.2 -31.8
+	}
+
+	// Cameras
+
+	camera "MainCamera"
+	{
+		parent "CameraNode"
+
+		viewport
+		{
+			type perspective
+			near 1.0
+			far 1100.0
+			aspect_ratio 1.778
+			fov_y 45
+		}
+
+		hdr_config
+		{
+			exposure 1
+			gamma 2.2
+		}
+	}
+}
+
+// Windows
+
+window "Window"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format argb32
+		scene "BaltardOut"
+		camera "MainCamera"
+		tone_mapping "linear"
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			use_normals_buffer false
+			blur_high_quality false
+			intensity 1
+			radius 50
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.5
+		}
+	}
+}

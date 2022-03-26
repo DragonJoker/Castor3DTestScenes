@@ -1,0 +1,33 @@
+// skybox
+// {
+	// equirectangular "Textures/pineTreeSkybox.hdr" 1024 1024
+// }
+
+light "Light"
+{
+	parent "LightNode"
+	type point
+	colour 1.0 1.0 1.0
+	intensity 100.0 80.0
+	attenuation 1.0 1.0 1.0
+	shadows
+	{
+		producer true
+		filter variance
+		raw_config
+		{
+			min_offset 0.00001
+			max_slope_offset 0.0001
+		}
+		pcf_config
+		{
+			min_offset 0.0005
+			max_slope_offset 0.001
+		}
+		vsm_config
+		{
+			variance_max 0.0000015
+			variance_bias 0.015
+		}
+	}
+}

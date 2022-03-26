@@ -1,0 +1,146 @@
+// Meshes
+
+mesh "abris_bus"
+{
+	import "Meshes/BaltardOut/abris_bus.cmsh"
+}
+
+mesh "arbre_rue"
+{
+	import "Meshes/BaltardOut/arbre_rue.cmsh"
+}
+
+mesh "banc"
+{
+	import "Meshes/BaltardOut/banc.cmsh"
+}
+
+mesh "barriere_chantier"
+{
+	import "Meshes/BaltardOut/barriere_chantier.cmsh"
+}
+
+mesh "barriere_crs"
+{
+	import "Meshes/BaltardOut/barriere_crs.cmsh"
+}
+
+mesh "borne_incendie"
+{
+	import "Meshes/BaltardOut/borne_incendie.cmsh"
+}
+
+mesh "cabine_telephone"
+{
+	import "Meshes/BaltardOut/cabine_telephone.cmsh"
+}
+
+mesh "camera_surveillance_gauche"
+{
+	import "Meshes/BaltardOut/camera_surveillance_gauche.cmsh"
+}
+
+mesh "cartons"
+{
+	import "Meshes/BaltardOut/cartons.cmsh"
+}
+
+mesh "chene"
+{
+	import "Meshes/BaltardOut/chene.cmsh"
+}
+
+mesh "corbeille"
+{
+	import "Meshes/BaltardOut/corbeille.cmsh"
+}
+
+mesh "entree_station"
+{
+	import "Meshes/BaltardOut/entree_station.cmsh"
+}
+
+mesh "feu_tricolore"
+{
+	import "Meshes/BaltardOut/feu_tricolore.cmsh"
+}
+
+mesh "grille_baltard_out"
+{
+	import "Meshes/BaltardOut/grille_baltard_out.cmsh"
+}
+
+mesh "interphone"
+{
+	import "Meshes/BaltardOut/interphone.cmsh"
+}
+
+mesh "maison_baltard_01"
+{
+	import "Meshes/BaltardOut/maison_baltard_01.cmsh"
+}
+
+mesh "maison_baltard_02"
+{
+	import "Meshes/BaltardOut/maison_baltard_02.cmsh"
+}
+
+mesh "maison_baltard_03"
+{
+	import "Meshes/BaltardOut/maison_baltard_03.cmsh"
+}
+
+mesh "maison_baltard_04"
+{
+	import "Meshes/BaltardOut/maison_baltard_04.cmsh"
+}
+
+mesh "maison_baltard_05"
+{
+	import "Meshes/BaltardOut/maison_baltard_05.cmsh"
+}
+
+mesh "maison_baltard_06"
+{
+	import "Meshes/BaltardOut/maison_baltard_06.cmsh"
+}
+
+mesh "maison_baltard_07"
+{
+	import "Meshes/BaltardOut/maison_baltard_07.cmsh"
+}
+
+mesh "pavillon_baltard"
+{
+	import "Meshes/BaltardOut/pavillon_baltard.cmsh"
+}
+
+mesh "plot_chantier"
+{
+	import "Meshes/BaltardOut/plot_chantier.cmsh"
+}
+
+mesh "poubelle"
+{
+	import "Meshes/BaltardOut/poubelle.cmsh"
+}
+
+mesh "reverbere"
+{
+	import "Meshes/BaltardOut/reverbere.cmsh"
+}
+
+mesh "road_structure"
+{
+	import "Meshes/BaltardOut/road_structure.cmsh"
+}
+
+mesh "saule_pleureur"
+{
+	import "Meshes/BaltardOut/saule_pleureur.cmsh"
+}
+
+mesh "wet_floor"
+{
+	import "Meshes/BaltardOut/wet_floor.cmsh"
+}

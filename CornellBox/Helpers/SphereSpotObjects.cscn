@@ -1,0 +1,56 @@
+
+object "leftSphere"
+{
+	parent "leftSphere"
+	mesh "Sphere"
+	material "leftSphere"
+}
+
+object "rightSphere"
+{
+	parent "rightSphere"
+	mesh "Sphere"
+	material "rightSphere"
+}
+
+object "floor"
+{
+	parent "floor"
+	mesh "Wall"
+	material "floor"
+}
+
+object "ceiling"
+{
+	parent "ceiling"
+	mesh "Wall"
+	material "ceiling"
+}
+
+object "backWall"
+{
+	parent "backWall"
+	mesh "Wall"
+	material "backWall"
+}
+
+object "rightWall"
+{
+	parent "rightWall"
+	mesh "Wall"
+	material "rightWall"
+}
+
+object "leftWall"
+{
+	parent "leftWall"
+	mesh "Wall"
+	material "leftWall"
+}
+
+object "light"
+{
+	parent "light"
+	mesh "Light"
+	material "light"
+}

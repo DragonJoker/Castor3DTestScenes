@@ -1,0 +1,18 @@
+camera "MainCamera"
+{
+	parent "MainCameraNode"
+
+	viewport
+	{
+		type perspective
+		aspect_ratio 1.778
+		near 1.0
+		far 1500.0
+		fov_y 45
+	}
+	hdr_config
+	{
+		gamma 2.2
+		exposure 1.0
+	}
+}

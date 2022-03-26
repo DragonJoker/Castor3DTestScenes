@@ -1,0 +1,110 @@
+// Global configuration
+materials metallic_roughness
+
+scene "Parc"
+{
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.500000 0.500000 0.500000
+	fog_type linear
+	fog_density 1.7
+	include "Helpers/Park-Materials-MetallicRoughness.cscn"
+	include "Helpers/Park-Meshes.cscn"
+	include "Helpers/Park-Nodes.cscn"
+	include "Helpers/Park-Lights-NoShadow.cscn"
+	include "Helpers/Park-Objects.cscn"
+
+	// Skybox
+
+	skybox
+	{
+		equirectangular "Textures/citySkybox.hdr" 1024
+	}
+
+	//Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 90
+		position -66.3337 19.5334 0.00000
+	}
+
+	//Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 1.00000
+			far 2000.0
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+}
+
+//Windows
+
+window "RenderPanel"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format rgba32
+		tone_mapping "linear"
+		scene "Parc"
+		camera "MainCamera"
+
+		smaa
+		{
+			mode 1X
+			preset ultra
+			edgeDetection colour
+		}
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			use_normals_buffer false
+			blur_high_quality false
+			intensity 1.00000
+			radius 1.000
+			bias 0.0230000
+			num_samples 19
+			edge_sharpness 1.00000
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
+		}
+
+		water_rendering
+		{
+			dampeningFactor 5.0
+			depthSofteningDistance 5.0
+			refractionRatio 1.2
+			refractionDistortionFactor 0.04
+			refractionHeightFactor 2.5
+			refractionDistanceFactor 15.0
+			normalMapScrollSpeed 0.001 0.001
+			normalMapScroll 1.0 0.0 0.0 1.0
+			ssrSettings 0.5 20.0 10.0 20.0
+			normals1 "Textures/Waves/waterNM1.dds"
+			normals2 "Textures/Waves/waterNM2.dds"
+			noise "Textures/Waves/waterNoise.dds"
+		}
+	}
+}
