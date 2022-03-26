@@ -292,8 +292,7 @@ scene "MyScene"
 		materials
 		{
 			material 0 "short_range_accessories"
-			material 1 "short_range_accessories"
-			material 2 "short_range_body"
+			material 1 "short_range_body"
 		}
 	}
 	animated_object_group "ShortRange"

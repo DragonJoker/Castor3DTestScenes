@@ -25,13 +25,13 @@ light "SunLight"
 		raw_config
 		{
 			min_offset 0.0
-			max_slope_offset 0.01
+			max_slope_offset 0.002
 		}
 
 		pcf_config
 		{
 			min_offset 0.0
-			max_slope_offset 0.00001
+			max_slope_offset 0.001
 		}
 
 		vsm_config

@@ -23,13 +23,13 @@ light "SunLight"
 		volumetric_scattering 0.9
 		raw_config
 		{
-			min_offset 0.00001
-			max_slope_offset 0.0001
+			min_offset 0.0
+			max_slope_offset 0.00055
 		}
 		pcf_config
 		{
-			min_offset 0.00001
-			max_slope_offset 0.0001
+			min_offset 0.0
+			max_slope_offset 0.00055
 		}
 		vsm_config
 		{

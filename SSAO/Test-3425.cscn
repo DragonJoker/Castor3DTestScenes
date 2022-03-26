@@ -92,7 +92,7 @@ window "Window"
 			blur_high_quality false
 			intensity 100.000
 			radius 20.0000
-			bias 0.0250000
+			bias 2.50000
 			num_samples 19
 			edge_sharpness 1.00000
 			blur_step_size 2

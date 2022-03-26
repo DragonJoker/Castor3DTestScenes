@@ -16,20 +16,20 @@ light "light_01"
 
 		raw_config
 		{
-			min_offset 1.00000e-05
-			max_slope_offset 0.000100000
+			min_offset 0.0
+			max_slope_offset 0.001
 		}
 
 		pcf_config
 		{
-			min_offset 1.00000e-05
-			max_slope_offset 0.000100000
+			min_offset 0.0
+			max_slope_offset 0.0005
 		}
 
 		vsm_config
 		{
 			variance_max 1.00000e-06
-			variance_bias 0.150000
+			variance_bias 0.15
 		}
 
 		rsm_config

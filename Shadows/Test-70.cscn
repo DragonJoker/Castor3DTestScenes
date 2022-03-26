@@ -57,7 +57,7 @@ scene "Scene"
 			raw_config
 			{
 				min_offset 0.0001
-				max_slope_offset 0.005
+				max_slope_offset 0.002
 			}
 		}
 	}
@@ -555,7 +555,7 @@ scene "Scene"
 			fov_y 45.0
 			aspect_ratio 1.333
 			near 0.1
-			far 20000.0
+			far 2000.0
 		}
 	}
 }
