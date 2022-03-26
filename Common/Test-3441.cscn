@@ -108,7 +108,7 @@ scene "Scene"
 	{
 		parent "OceanNode"
 		mesh "OceanMesh"
-		culled false
+		cullable false
 	}
 
 	scene_node "MainCameraNode"

@@ -66,6 +66,7 @@ material "abris_bus/verre"
 		specular 0.297000 0.297000 0.297000
 		ambient 1
 		shininess 192.0
+		two_sided true
 		alpha_blend_mode interpolative
 
 		texture_unit
@@ -335,6 +336,7 @@ material "cabine_telephone/verre"
 		specular 0.210392 0.210392 0.210392
 		ambient 1
 		shininess 192.0
+		two_sided true
 		alpha_blend_mode interpolative
 
 		texture_unit
@@ -405,6 +407,7 @@ material "chene/feuilles"
 		specular 0.00000 0.00000 0.00000
 		ambient 1
 		shininess 128.0
+		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
@@ -1636,6 +1639,7 @@ material "wet_floor/eau"
 		specular 0.522000 0.522000 0.522000
 		ambient 1
 		shininess 128.0
+		two_sided true
 		alpha_blend_mode interpolative
 
 		texture_unit

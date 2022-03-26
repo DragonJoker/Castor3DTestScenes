@@ -52,7 +52,8 @@ scene "Scene"
 		colour 1.0 1.0 1.0
 		intensity 0.8 1.0
 		attenuation 1.0 0.0 0.0
-		cut_off 20
+		inner_cut_off 10
+		outer_cut_off 20
 		shadows
 		{
 			producer true

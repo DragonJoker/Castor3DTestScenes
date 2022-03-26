@@ -1,0 +1,21 @@
+// Nodes
+
+scene_node "exteriorScaleNode"
+{
+	scale 0.0100000 0.0100000 0.0100000
+}
+
+scene_node "Exterior-$MergedNode_0"
+{
+	parent "exteriorScaleNode"
+}
+
+scene_node "interiorScaleNode"
+{
+	scale 0.0100000 0.0100000 0.0100000
+}
+
+scene_node "Interior-$MergedNode_0"
+{
+	parent "interiorScaleNode"
+}

@@ -50,7 +50,6 @@ object "billard_2"
 
 object "cafe"
 {
-	parent "ObjectRootNode"
 	mesh "cafe"
 }
 
