@@ -1,107 +1,66 @@
+// Global configuration
 materials blinn_phong
 
 scene "MyScene"
 {
-	background_colour 0.5 0.5 0.5 1.0
-	ambient_light 0.2 0.2 0.2
+	// Scene configuration
+	ambient_light 0.200000 0.200000 0.200000
+	background_colour 0.500000 0.500000 0.500000
+	lpv_indirect_attenuation 1.70000
+	include "Helpers/Towers-Materials.cscn"
+	include "Helpers/Towers-Meshes.cscn"
+	include "Helpers/Towers-Nodes.cscn"
+	include "Helpers/Towers-Objects.cscn"
+	include "Helpers/Towers-Lights.cscn"
 
-	scene_node "LightNode"
+	//Voxel Cone Tracing
+
+	voxel_cone_tracing
 	{
-		orientation -1 0 0 155.727
-	}
-	light "SunLight"
-	{
-		parent "LightNode"
-		type directional
-		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
+		enabled false
+		grid_size 2
+		conservative_rasterization false
+		temporal_smoothing false
+		occlusion false
+		secondary_bounce false
+		num_cones 2
+		max_distance 20.0000
+		ray_step_size 0.750000
+		voxel_size 1.00000
 	}
 
-	material "splash_accessories"
+	//Cameras nodes
+
+	scene_node "MainCameraNode"
 	{
-		pass
+		orientation 0 1 0 180
+		position 0.00000 0.00000 1000.00
+	}
+
+	//Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
 		{
-			diffuse 0.640000 0.406873 0.176735 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
-			ambient 0
-			emissive 0
-			shininess 9.60784
-			two_sided false
-			colour_blend_mode none
-			alpha_blend_mode none
-
-			texture_unit
-			{
-				channel diffuse
-				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Diffuse.png"
-			}
-
-			texture_unit
-			{
-				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss.png"
-				specular_mask 0x00FFFFFF
-				shininess_mask 0xFF000000
-			}
-
-			texture_unit
-			{
-				channel normal
-				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Normal.png"
-			}
-		}
-	}
-	material "splash_body"
-	{
-		pass
-		{
-			diffuse 0.400000 0.400000 0.400000 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
-			ambient 0
-			emissive 0
-			shininess 9.41177
-			two_sided false
-			colour_blend_mode none
-			alpha_blend_mode none
-
-			texture_unit
-			{
-				channel diffuse
-				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Diffuse_0.png"
-			}
-
-			texture_unit
-			{
-				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss_0.png"
-				specular_mask 0x00FFFFFF
-				shininess_mask 0xFF000000
-			}
-
-			texture_unit
-			{
-				channel normal
-				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Normal_0.png"
-			}
-		}
-	}
-	scene_node "HeavySplash"
-	{
-		position -200 0 0
-	}
-	object "HeavySplash"
-	{
-		parent "HeavySplash"
-		mesh "HeavySplash"
-		{
-			import "Meshes/CastorTD/tower1_heavy_splash.fbx"
+			type perspective
+			near 0.100000
+			far 20000.0
+			aspect_ratio 1.33300
+			fov_y 45.0000
 		}
 
-		materials
+		hdr_config
 		{
-			material 0 "splash_accessories"
-			material 1 "splash_accessories"
-			material 2 "splash_body"
+			exposure 1.00000
+			gamma 2.20000
 		}
 	}
+
+	//Animated object groups
+
 	animated_object_group "HeavySplash"
 	{
 		animated_object "HeavySplash"
@@ -114,91 +73,6 @@ scene "MyScene"
 		start_animation "armature_short_range.1|attack"
 	}
 
-	material "inventor_accessories"
-	{
-		pass
-		{
-			diffuse 0.640000 0.406873 0.176735 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
-			ambient 0
-			emissive 0
-			shininess 9.60784
-			two_sided false
-			colour_blend_mode none
-			alpha_blend_mode none
-
-			texture_unit
-			{
-				channel diffuse
-				image "Textures/CastorTD/inventor_tower_tower1_inventor_Diffuse.png"
-			}
-
-			texture_unit
-			{
-				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss.png"
-				specular_mask 0x00FFFFFF
-				shininess_mask 0xFF000000
-			}
-
-			texture_unit
-			{
-				channel normal
-				image "Textures/CastorTD/inventor_tower_tower1_inventor_Normal.png"
-			}
-		}
-	}
-	material "inventor_body"
-	{
-		pass
-		{
-			diffuse 0.400000 0.400000 0.400000 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
-			ambient 0
-			emissive 0
-			shininess 9.41177
-			two_sided false
-			colour_blend_mode none
-			alpha_blend_mode none
-
-			texture_unit
-			{
-				channel diffuse
-				image "Textures/CastorTD/inventor_tower_tower1_inventor_Diffuse_0.png"
-			}
-
-			texture_unit
-			{
-				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss_0.png"
-				specular_mask 0x00FFFFFF
-				shininess_mask 0xFF000000
-			}
-
-			texture_unit
-			{
-				channel normal
-				image "Textures/CastorTD/inventor_tower_tower1_inventor_Normal_0.png"
-			}
-		}
-	}
-	scene_node "Inventor"
-	{
-		position 0 0 0
-	}
-	object "Inventor"
-	{
-		parent "Inventor"
-		mesh "Inventor"
-		{
-			import "Meshes/CastorTD/tower1_inventor.fbx"
-		}
-
-		materials
-		{
-			material 0 "inventor_accessories"
-			material 1 "inventor_accessories"
-			material 2 "inventor_body"
-		}
-	}
 	animated_object_group "Inventor"
 	{
 		animated_object "Inventor"
@@ -211,90 +85,6 @@ scene "MyScene"
 		start_animation "armature_inventor.1|Action"
 	}
 
-	material "short_range_accessories"
-	{
-		pass
-		{
-			diffuse 0.640000 0.406873 0.176735 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
-			ambient 0
-			emissive 0
-			shininess 9.60784
-			two_sided false
-			colour_blend_mode none
-			alpha_blend_mode none
-
-			texture_unit
-			{
-				channel diffuse
-				image "Textures/CastorTD/short_range_tower_tower1_quick_short_Diffuse_0.png"
-			}
-
-			texture_unit
-			{
-				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss_0.png"
-				specular_mask 0x00FFFFFF
-				shininess_mask 0xFF000000
-			}
-
-			texture_unit
-			{
-				channel normal
-				image "Textures/CastorTD/short_range_tower_tower1_quick_short_Normal_0.png"
-			}
-		}
-	}
-	material "short_range_body"
-	{
-		pass
-		{
-			diffuse 0.400000 0.400000 0.400000 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
-			ambient 0
-			emissive 0
-			shininess 9.41177
-			two_sided false
-			colour_blend_mode none
-			alpha_blend_mode none
-
-			texture_unit
-			{
-				channel diffuse
-				image "Textures/CastorTD/short_range_tower_tower1_quick_short_Diffuse.png"
-			}
-
-			texture_unit
-			{
-				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss.png"
-				specular_mask 0x00FFFFFF
-				shininess_mask 0xFF000000
-			}
-
-			texture_unit
-			{
-				channel normal
-				image "Textures/CastorTD/short_range_tower_tower1_quick_short_Normal.png"
-			}
-		}
-	}
-	scene_node "ShortRange"
-	{
-		position 200 0 0
-	}
-	object "ShortRange"
-	{
-		parent "ShortRange"
-		mesh "ShortRange"
-		{
-			import "Meshes/CastorTD/tower1_quick_short.fbx"
-		}
-
-		materials
-		{
-			material 0 "short_range_accessories"
-			material 1 "short_range_body"
-		}
-	}
 	animated_object_group "ShortRange"
 	{
 		animated_object "ShortRange"
@@ -306,36 +96,38 @@ scene "MyScene"
 
 		start_animation "armature_short_range.1|attack"
 	}
-
-	scene_node "MainCameraNode"
-	{
-		orientation 0 1 0 180
-		position 0.0 0.0 1000.0
-	}
-	camera "MainCamera"
-	{
-		parent "MainCameraNode"
-		primitive triangle_list
-		viewport "MainViewport"
-		{
-			type perspective
-			fov_y 45.0
-			aspect_ratio 1.333
-			near 0.1
-			far 20000
-		}
-	}
 }
 
-window "MyWindow"
+//Windows
+
+window "RenderPanel"
 {
+	vsync false
+	fullscreen false
+
 	render_target
 	{
-		format argb32
 		size 800 600
+		format rgba32
+		tone_mapping "linear"
 		scene "MyScene"
 		camera "MainCamera"
+
+		ssao
+		{
+			enabled false
+			high_quality false
+			use_normals_buffer false
+			blur_high_quality false
+			intensity 1.00000
+			radius 0.500000
+			bias 0.0250000
+			num_samples 19
+			edge_sharpness 1.00000
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
+		}
 	}
-	fullscreen false
-	vsync false
 }

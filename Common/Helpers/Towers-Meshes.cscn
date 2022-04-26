@@ -1,0 +1,36 @@
+// Meshes
+
+mesh "HeavySplash"
+{
+	import "Meshes/Towers/HeavySplash.cmsh"
+
+	default_materials
+	{
+		material 0 "Imp-accessories"
+		material 1 "Imp-accessories"
+		material 2 "Imp-body"
+	}
+}
+
+mesh "Inventor"
+{
+	import "Meshes/Towers/Inventor.cmsh"
+
+	default_materials
+	{
+		material 0 "Imp-accessories"
+		material 1 "Imp-accessories"
+		material 2 "Imp-body"
+	}
+}
+
+mesh "ShortRange"
+{
+	import "Meshes/Towers/ShortRange.cmsh"
+
+	default_materials
+	{
+		material 0 "Imp-Material"
+		material 1 "Imp-lambert1"
+	}
+}

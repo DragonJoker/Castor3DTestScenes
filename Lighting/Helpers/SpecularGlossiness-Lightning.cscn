@@ -19,7 +19,7 @@ material "Clothes"
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		emissive 0.0
 		specular 0.0 0.0 0.0
-		glossiness 0.1
+		glossiness 1.0
 		two_sided false
 		colour_blend_mode none
 
@@ -34,16 +34,16 @@ material "Clothes"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
-			image "Textures/Lightning/clothes_N.tga"
+			channel glossiness
+			image "Textures/Lightning/clothes_G.tga"
 			sampler	"Trilinear"
 		}
 
 		texture_unit
 		{
 			levels_count 6
-			channel specular
-			image "Textures/Lightning/clothes_S.tga"
+			channel normal
+			image "Textures/Lightning/clothes_N.tga"
 			sampler	"Trilinear"
 		}
 	}
@@ -86,14 +86,6 @@ material "Face"
 			levels_count 6
 			channel diffuse
 			image "Textures/Lightning/face_D.tga"
-			sampler	"Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel specular
-			image "Textures/Lightning/face_S.tga"
 			sampler	"Trilinear"
 		}
 
@@ -232,7 +224,7 @@ material "Weapon"
 		{
 			levels_count 6
 			channel specular
-			image "Textures/Lightning/weapon_S.png" rgb
+			image "Textures/Lightning/weapon_SG.png" rgb
 			sampler	"Trilinear"
 		}
 
@@ -240,7 +232,7 @@ material "Weapon"
 		{
 			levels_count 6
 			channel glossiness
-			image "Textures/Lightning/weapon_S.png" a
+			image "Textures/Lightning/weapon_SG.png" a
 			sampler	"Trilinear"
 		}
 

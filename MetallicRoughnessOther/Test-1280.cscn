@@ -81,7 +81,7 @@ scene "Scene"
 			}
 			vsm_config
 			{
-				variance_max 0.00000001
+				variance_max 0.000000001
 				variance_bias 0.15
 			}
 		}

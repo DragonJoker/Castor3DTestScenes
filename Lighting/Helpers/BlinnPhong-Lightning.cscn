@@ -16,10 +16,10 @@ material "Clothes"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		emissive 0.000000 0.000000 0.000000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
-		shininess 40
+		diffuse 0.588000 0.588000 0.588000
+		emissive 0.000000
+		specular 0.000000 0.000000 0.000000
+		shininess 256
 		two_sided false
 		colour_blend_mode none
 
@@ -28,6 +28,14 @@ material "Clothes"
 			levels_count 6
 			channel diffuse
 			image "Textures/Lightning/clothes_D.tga"
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel shininess
+			image "Textures/Lightning/clothes_G.tga"
 			sampler	"Trilinear"
 		}
 
@@ -45,9 +53,9 @@ material "Eye"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		emissive 0.000000 0.000000 0.000000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
+		diffuse 0.588000 0.588000 0.588000
+		emissive 0.000000
+		specular 0.000000 0.000000 0.000000
 		shininess 40
 		two_sided false
 		colour_blend_mode none
@@ -66,9 +74,9 @@ material "Face"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		emissive 0.000000 0.000000 0.000000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
+		diffuse 0.588000 0.588000 0.588000
+		emissive 0.000000
+		specular 0.000000 0.000000 0.000000
 		shininess 40
 		two_sided false
 		colour_blend_mode none
@@ -95,9 +103,9 @@ material "Hair"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		emissive 0.000000 0.000000 0.000000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
+		diffuse 0.588000 0.588000 0.588000
+		emissive 0.000000
+		specular 0.000000 0.000000 0.000000
 		shininess 40
 		two_sided true
 		colour_blend_mode none
@@ -125,9 +133,9 @@ material "Pendant"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		emissive 0.000000 0.000000 0.000000 0.00392157
-		specular 0.588000 0.588000 0.588000 0.00392157
+		diffuse 0.588000 0.588000 0.588000
+		emissive 0.000000
+		specular 0.588000 0.588000 0.588000
 		shininess 40
 		two_sided false
 		colour_blend_mode none
@@ -154,9 +162,8 @@ material "Stuff"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
-		emissive 0.000000 0.000000 0.000000 0.00392157
-		specular 0.000000 0.000000 0.000000 0.00392157
+		diffuse 0.588000 0.588000 0.588000
+		emissive 0.0
 		shininess 40
 		two_sided false
 		colour_blend_mode none
@@ -206,7 +213,7 @@ material "Weapon"
 		{
 			levels_count 6
 			channel specular
-			image "Textures/Lightning/weapon_S.png" rgb
+			image "Textures/Lightning/weapon_SG.png" rgb
 			sampler	"Trilinear"
 		}
 
@@ -214,7 +221,7 @@ material "Weapon"
 		{
 			levels_count 6
 			channel shininess
-			image "Textures/Lightning/weapon_S.png" a
+			image "Textures/Lightning/weapon_SG.png" a
 			sampler	"Trilinear"
 		}
 

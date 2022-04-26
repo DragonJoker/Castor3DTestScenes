@@ -1,0 +1,290 @@
+// Samplers
+
+sampler "Default"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter nearest
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod -1000.00
+	max_lod 1000.00
+	lod_bias 0.00000
+	border_colour float_opaque_black
+	max_anisotropy 1.00000
+}
+
+// Materials
+
+material "Imp-Material"
+{
+
+	pass
+	{
+		diffuse 0.640000 0.640000 0.640000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 50.0000
+		alpha 0.00000
+		bw_accumulation 1
+	}
+}
+
+material "Imp-accessories"
+{
+
+	pass
+	{
+		diffuse 0.640000 0.406873 0.176735
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 50.0000
+		alpha 0.00000
+		bw_accumulation 1
+	}
+}
+
+material "Imp-body"
+{
+
+	pass
+	{
+		diffuse 0.400000 0.400000 0.400000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 50.0000
+		alpha 0.00000
+		bw_accumulation 1
+	}
+}
+
+material "Imp-lambert1"
+{
+
+	pass
+	{
+		diffuse 0.400000 0.400000 0.400000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 50.0000
+		alpha 0.00000
+		bw_accumulation 1
+	}
+}
+
+material "inventor_accessories"
+{
+
+	pass
+	{
+		diffuse 0.640000 0.406873 0.176735
+		specular 0.00000 0.00000 0.00000
+		ambient 0.00000
+		shininess 9.60784
+
+		texture_unit
+		{
+			image "Textures/Towers/inventor_tower_tower1_inventor_Normal.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/inventor_tower_tower1_inventor_Diffuse.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/inventor_tower_tower1_inventor_SpecularGloss.dds"
+			specular_mask 0x00ffffff
+			shininess_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "inventor_body"
+{
+
+	pass
+	{
+		diffuse 0.400000 0.400000 0.400000
+		specular 0.00000 0.00000 0.00000
+		ambient 0.00000
+		shininess 9.41177
+
+		texture_unit
+		{
+			image "Textures/Towers/inventor_tower_tower1_inventor_Normal_0.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/inventor_tower_tower1_inventor_Diffuse_0.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/inventor_tower_tower1_inventor_SpecularGloss_0.dds"
+			specular_mask 0x00ffffff
+			shininess_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "short_range_accessories"
+{
+
+	pass
+	{
+		diffuse 0.640000 0.406873 0.176735
+		specular 0.00000 0.00000 0.00000
+		ambient 0.00000
+		shininess 9.60784
+
+		texture_unit
+		{
+			image "Textures/Towers/short_range_tower_tower1_quick_short_Normal_0.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/short_range_tower_tower1_quick_short_Diffuse_0.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/short_range_tower_tower1_quick_short_SpecularGloss_0.dds"
+			specular_mask 0x00ffffff
+			shininess_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "short_range_body"
+{
+
+	pass
+	{
+		diffuse 0.400000 0.400000 0.400000
+		specular 0.00000 0.00000 0.00000
+		ambient 0.00000
+		shininess 9.41177
+
+		texture_unit
+		{
+			image "Textures/Towers/short_range_tower_tower1_quick_short_Normal.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/short_range_tower_tower1_quick_short_Diffuse.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/short_range_tower_tower1_quick_short_SpecularGloss.dds"
+			specular_mask 0x00ffffff
+			shininess_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "splash_accessories"
+{
+
+	pass
+	{
+		diffuse 0.640000 0.406873 0.176735
+		specular 0.00000 0.00000 0.00000
+		ambient 0.00000
+		shininess 9.60784
+
+		texture_unit
+		{
+			image "Textures/Towers/splash_tower_tower1_heavy_splash_Normal.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/splash_tower_tower1_heavy_splash_Diffuse.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/splash_tower_tower1_heavy_splash_SpecularGloss.dds"
+			specular_mask 0x00ffffff
+			shininess_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "splash_body"
+{
+
+	pass
+	{
+		diffuse 0.400000 0.400000 0.400000
+		specular 0.00000 0.00000 0.00000
+		ambient 0.00000
+		shininess 9.41177
+
+		texture_unit
+		{
+			image "Textures/Towers/splash_tower_tower1_heavy_splash_Normal_0.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/splash_tower_tower1_heavy_splash_Diffuse_0.dds"
+			diffuse_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Towers/splash_tower_tower1_heavy_splash_SpecularGloss_0.dds"
+			specular_mask 0x00ffffff
+			shininess_mask 0xff000000
+			invert_y true
+		}
+	}
+}

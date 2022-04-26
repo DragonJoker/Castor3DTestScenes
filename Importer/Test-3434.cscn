@@ -77,17 +77,17 @@ scene "Scene"
 
 	scene_node "FinalNode"
 	{
-		position 0.0 0.0 0.0
-		orientation 1 0 0 -90
+		position -2.25598e-06 0.0 93.7202
+	}
+	mesh "Mesh"
+	{
+		import "Meshes/Cerberus_LP.FBX"
+		default_material "Cerberus"
 	}
 	object "FinalPrimitive"
 	{
 		parent "FinalNode"
 		mesh "Mesh"
-		{
-			import "Meshes/Cerberus_LP.FBX"
-		}
-		material "Cerberus"
 	}
 
 	scene_node "MainCameraNode"

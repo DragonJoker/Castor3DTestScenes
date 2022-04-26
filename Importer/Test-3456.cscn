@@ -1,0 +1,82 @@
+materials blinn_phong
+
+scene "AnimScene"
+{
+	// Scene configuration
+
+	background_colour 0.5 0.5 0.5
+	ambient_light 0.1 0.1 0.1
+
+	// Objects nodes
+
+	scene_node "LightNode"
+	{
+		orientation -0.707107 0.707107 0.0 270.0
+	}
+
+	// Lights
+
+	light "SunLight1"
+	{
+		parent "LightNode"
+		type directional
+		colour 1 1 1
+		intensity 0.8 1
+	}
+
+	// Cameras nodes
+
+	scene_node "AnimCameraNode"
+	{
+		position 250 50 0
+		orientation 0 1 0 270
+	}
+
+	// Cameras
+
+	camera "AnimCamera"
+	{
+		parent "AnimCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.1
+			aspect_ratio 1.7778
+			far 20000
+			fov_y 45
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+
+	import
+	{
+		anim_file "Meshes/HellKnight/attack2.md5anim"
+		anim_file "Meshes/HellKnight/idle2.md5anim"
+		file "Meshes/HellKnight/hellknight.md5mesh"
+	}
+	animated_object_group "<MD5_Mesh>0Skin"
+	{
+		start_animation "attack2"
+	}
+}
+
+window "MainWindow"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format argb32
+		scene "AnimScene"
+		camera "AnimCamera"
+		tone_mapping "aces"
+	}
+}

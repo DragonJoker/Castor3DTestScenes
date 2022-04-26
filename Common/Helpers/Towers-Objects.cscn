@@ -1,0 +1,39 @@
+// Objects
+
+object "HeavySplash"
+{
+	parent "HeavySplash"
+	mesh "HeavySplash"
+
+	materials
+	{
+		material 0 "splash_accessories"
+		material 1 "splash_accessories"
+		material 2 "splash_body"
+	}
+}
+
+object "Inventor"
+{
+	parent "Inventor"
+	mesh "Inventor"
+
+	materials
+	{
+		material 0 "inventor_accessories"
+		material 1 "inventor_accessories"
+		material 2 "inventor_body"
+	}
+}
+
+object "ShortRange"
+{
+	parent "ShortRange"
+	mesh "ShortRange"
+
+	materials
+	{
+		material 0 "short_range_accessories"
+		material 1 "short_range_body"
+	}
+}

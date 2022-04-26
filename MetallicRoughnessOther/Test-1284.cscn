@@ -78,7 +78,8 @@ scene "Scene"
 
 	scene_node "MainCameraNode"
 	{
-		position 0.0 8.0 -10.0
+		position 19.9072 19.4354 -19.8059
+		orientation 0.585751 -0.772777 0.244357 56.723
 	}
 
 	light "PointLight1"
@@ -239,8 +240,8 @@ scene "Scene"
 			type perspective
 			fov_y 45.0
 			aspect_ratio 1.333
-			near 0.1
-			far 20000.0
+			near 1
+			far 10000
 		}
 	}
 }

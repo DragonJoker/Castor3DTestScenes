@@ -1,0 +1,226 @@
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	min_lod 0.0
+	max_lod 5.0
+	lod_bias 0.0
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	border_colour float_opaque_black
+}
+
+material "Clothes"
+{
+	pass
+	{
+		albedo 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		roughness 0.9
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/clothes_D.tga"
+			albedo_mask 0x00FFFFFF
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/clothes_R.tga"
+			roughness_mask 0x00FF0000
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/clothes_N.tga"
+			normal_mask 0x00FFFFFF
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Eye"
+{
+	pass
+	{
+		albedo 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		metallic 0.0
+		roughness 0.3
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/eye_D.tga"
+			albedo_mask 0x00FFFFFF
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Face"
+{
+	pass
+	{
+		albedo 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		metallic 0.0
+		roughness 0.9
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/face_D.tga"
+			albedo_mask 0x00FFFFFF
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/face_N.tga"
+			normal_mask 0x00FFFFFF
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Hair"
+{
+	pass
+	{
+		albedo 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		metallic 0.0
+		roughness 0.9
+		two_sided false
+		mixed_interpolation true
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/hair_D.tga"
+			albedo_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/hair_R.tga"
+			roughness_mask 0x00FF0000
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Pendant"
+{
+	pass
+	{
+		albedo 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		metallic 1.0
+		roughness 0.1
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/pendant_D.tga"
+			albedo_mask 0x00FFFFFF
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/pendant_N.tga"
+			normal_mask 0x00FFFFFF
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Stuff"
+{
+	pass
+	{
+		albedo 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		roughness 0.9
+		metallic 0.0
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/stuff_D.tga"
+			albedo_mask 0x00FFFFFF
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/stuff_N.tga"
+			normal_mask 0x00FFFFFF
+			sampler	"Trilinear"
+		}
+	}
+}
+
+material "Weapon"
+{
+	pass
+	{
+		albedo 0.588000 0.588000 0.588000 0.00392157
+		emissive 0.0
+		roughness 0.2
+		metallic 1.0
+		two_sided false
+		colour_blend_mode none
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/weapon_D.png"
+			albedo_mask 0x00FFFFFF
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "Textures/Lightning/weapon_R.png"
+			roughness_mask 0xFF000000
+			sampler	"Trilinear"
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			channel occlusion
+			image "Textures/Lightning/weapon_N.png"
+			normal_mask 0x00FFFFFF
+			occlusion_mask 0xFF000000
+			sampler	"Trilinear"
+		}
+	}
+}

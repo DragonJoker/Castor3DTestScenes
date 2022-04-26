@@ -14,15 +14,13 @@ scene "MainScene"
 
 	scene_node "MainCameraNode"
 	{
-		parent "CameraRootNode"
-		orientation 0 1 0 180
-		position 0 25 100
+		orientation 0.00668748 -0.999235 0.0385239 160.319
+		position 15.3058 56.4662 38.0419
 		scale 1 1 1
 	}
 
 	scene_node "GeomNode"
 	{
-		parent "ObjectRootNode"
 		orientation 1 0 0 0
 		position 0 0 0
 		scale 1 1 1
@@ -53,7 +51,7 @@ scene "MainScene"
 		parent "LightNode"
 		type directional
 		colour 1.0 1.0 1.0
-		intensity 1.0 1.0
+		intensity 10.0 10.0
 	}
 
 	mesh "GeomMesh"
