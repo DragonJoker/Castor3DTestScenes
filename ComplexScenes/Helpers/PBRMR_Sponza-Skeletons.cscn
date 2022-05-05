@@ -1,0 +1,6 @@
+// Skeletons
+
+skeleton "Pufi"
+{
+	import "Skeletons/Pufi/Pufi.cskl"
+}

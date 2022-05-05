@@ -84,5 +84,14 @@ window "MainWindow"
 		scene "Scene"
 		camera "MainCamera"
 		tone_mapping "linear"
+
+		smaa
+		{
+			mode 1X
+			preset ultra
+			edgeDetection colour
+			enablePredication true
+			enableReprojection false
+		}
 	}
 }

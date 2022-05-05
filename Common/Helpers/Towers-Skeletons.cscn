@@ -1,0 +1,16 @@
+// Skeletons
+
+skeleton "HeavySplash-RootNode"
+{
+	import "Skeletons/Towers/HeavySplash-RootNode.cskl"
+}
+
+skeleton "Inventor-RootNode"
+{
+	import "Skeletons/Towers/Inventor-RootNode.cskl"
+}
+
+skeleton "ShortRange-RootNode"
+{
+	import "Skeletons/Towers/ShortRange-RootNode.cskl"
+}

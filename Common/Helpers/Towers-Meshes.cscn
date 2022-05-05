@@ -3,34 +3,37 @@
 mesh "HeavySplash"
 {
 	import "Meshes/Towers/HeavySplash.cmsh"
+	skeleton "HeavySplash-RootNode"
 
 	default_materials
 	{
-		material 0 "Imp-accessories"
-		material 1 "Imp-accessories"
-		material 2 "Imp-body"
+		material 0 "splash_accessories"
+		material 1 "splash_accessories"
+		material 2 "splash_body"
 	}
 }
 
 mesh "Inventor"
 {
 	import "Meshes/Towers/Inventor.cmsh"
+	skeleton "Inventor-RootNode"
 
 	default_materials
 	{
-		material 0 "Imp-accessories"
-		material 1 "Imp-accessories"
-		material 2 "Imp-body"
+		material 0 "inventor_accessories"
+		material 1 "inventor_accessories"
+		material 2 "inventor_body"
 	}
 }
 
 mesh "ShortRange"
 {
 	import "Meshes/Towers/ShortRange.cmsh"
+	skeleton "ShortRange-RootNode"
 
 	default_materials
 	{
-		material 0 "Imp-Material"
-		material 1 "Imp-lambert1"
+		material 0 "short_range_accessories"
+		material 1 "short_range_body"
 	}
 }

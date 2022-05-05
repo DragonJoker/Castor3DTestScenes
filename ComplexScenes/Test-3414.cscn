@@ -8,6 +8,7 @@ scene "Scene"
 	background_colour 0.00000 0.00000 0.00000
 	lpv_indirect_attenuation 0.200000
 	include "Helpers/PBRMR_Sponza-Materials-Toon.cscn"
+	include "Helpers/PBRMR_Sponza-Skeletons.cscn"
 	include "Helpers/PBRMR_Sponza-Meshes.cscn"
 	include "Helpers/PBRMR_Sponza-Nodes.cscn"
 	include "Helpers/PBRMR_Sponza-Objects.cscn"

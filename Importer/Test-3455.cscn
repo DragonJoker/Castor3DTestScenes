@@ -4,7 +4,7 @@ materials metallic_roughness
 scene "Scene"
 {
 	// Scene configuration
-	ambient_light 0.1 0.1 0.1
+	ambient_light 1.0 1.0 1.0
 	background_colour 0.00000 0.00000 0.00000
 
 	//Skybox

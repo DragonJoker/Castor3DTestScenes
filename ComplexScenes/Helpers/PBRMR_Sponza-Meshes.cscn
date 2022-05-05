@@ -3,6 +3,7 @@
 mesh "Pufi"
 {
 	import "Meshes/Pufi/Pufi.cmsh"
+	skeleton "Pufi"
 
 	default_materials
 	{

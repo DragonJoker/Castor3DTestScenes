@@ -85,7 +85,7 @@ scene "MyScene"
 	}
 	mesh "HeavySplash"
 	{
-		import "Meshes/tower1_heavy_splash.fbx"
+		import "Meshes/tower1_heavy_splash.fbx" -prefix="HeavySplash"
 		default_materials
 		{
 			material 0 "splash_accessories"
@@ -182,7 +182,7 @@ scene "MyScene"
 	}
 	mesh "Inventor"
 	{
-		import "Meshes/tower1_inventor.fbx"
+		import "Meshes/tower1_inventor.fbx" -prefix="Inventor"
 		default_materials
 		{
 			material 0 "inventor_accessories"
@@ -279,7 +279,7 @@ scene "MyScene"
 	}
 	mesh "ShortRange"
 	{
-		import "Meshes/tower1_quick_short.fbx"
+		import "Meshes/tower1_quick_short.fbx" -prefix="ShortRange"
 		default_materials
 		{
 			material 0 "short_range_accessories"

@@ -8,6 +8,7 @@ scene "MyScene"
 	background_colour 0.500000 0.500000 0.500000
 	lpv_indirect_attenuation 1.70000
 	include "Helpers/Towers-Materials.cscn"
+	include "Helpers/Towers-Skeletons.cscn"
 	include "Helpers/Towers-Meshes.cscn"
 	include "Helpers/Towers-Nodes.cscn"
 	include "Helpers/Towers-Objects.cscn"
