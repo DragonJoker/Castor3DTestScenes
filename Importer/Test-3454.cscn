@@ -64,7 +64,7 @@ scene "Scene"
 		file "Meshes/MorphStressTest/MorphStressTest.gltf"
 	}
 
-	animated_object_group "Main0Morph"
+	animated_object_group "MainCube-1"
 	{
 		start_animation "TheWave"
 	}

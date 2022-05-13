@@ -1,0 +1,96 @@
+// Global configuration
+materials metallic_roughness
+
+scene "Scene"
+{
+	// Scene configuration
+	ambient_light 1.0 1.0 1.0
+	background_colour 0.00000 0.00000 0.00000
+
+	//Skybox
+
+	skybox
+	{
+		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 2048
+	}
+
+	// Samplers
+
+	sampler "Trilinear"
+	{
+		min_filter linear
+		mag_filter linear
+		mip_filter linear
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		lod_bias 0.00000
+		border_colour float_opaque_black
+		max_anisotropy 1.00000
+	}
+
+	//Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 200
+		position 9.58944 1.0 19.5107
+	}
+
+	//Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.100000
+			far 1000.00
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 90
+	}
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.00000 1.00000 1.00000
+		intensity 8.0 10.0
+	}
+
+	import
+	{
+		rescale 0.01
+		file "Meshes/DeccerCubesTextured/SM_Deccer_Cubes_Textured.fbx"
+	}
+}
+
+//Windows
+
+window "MainWindow"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format argb32
+		scene "Scene"
+		camera "MainCamera"
+		tone_mapping "linear"
+	}
+}

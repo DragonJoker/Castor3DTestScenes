@@ -3,14 +3,17 @@
 skeleton "HeavySplash-RootNode"
 {
 	import "Skeletons/Towers/HeavySplash-RootNode.cskl"
+	import_anim "Skeletons/Towers/HeavySplash-RootNode-armature_short_range.1-attack.cska"
 }
 
 skeleton "Inventor-RootNode"
 {
 	import "Skeletons/Towers/Inventor-RootNode.cskl"
+	import_anim "Skeletons/Towers/Inventor-RootNode-armature_inventor.1-Action.cska"
 }
 
 skeleton "ShortRange-RootNode"
 {
 	import "Skeletons/Towers/ShortRange-RootNode.cskl"
+	import_anim "Skeletons/Towers/ShortRange-RootNode-armature_short_range.1-attack.cska"
 }

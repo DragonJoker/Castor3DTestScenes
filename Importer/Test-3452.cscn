@@ -83,9 +83,15 @@ scene "MyScene"
 			}
 		}
 	}
+	skeleton "HeavySplash"
+	{
+		import "Meshes/tower1_heavy_splash.fbx" -prefix="HeavySplash"
+		import_anim "Meshes/tower1_heavy_splash.fbx" -prefix="HeavySplash"
+	}
 	mesh "HeavySplash"
 	{
 		import "Meshes/tower1_heavy_splash.fbx" -prefix="HeavySplash"
+		skeleton "HeavySplash"
 		default_materials
 		{
 			material 0 "splash_accessories"
@@ -180,9 +186,15 @@ scene "MyScene"
 			}
 		}
 	}
+	skeleton "Inventor"
+	{
+		import "Meshes/tower1_inventor.fbx" -prefix="Inventor"
+		import_anim "Meshes/tower1_inventor.fbx" -prefix="Inventor"
+	}
 	mesh "Inventor"
 	{
 		import "Meshes/tower1_inventor.fbx" -prefix="Inventor"
+		skeleton "Inventor"
 		default_materials
 		{
 			material 0 "inventor_accessories"
@@ -277,9 +289,15 @@ scene "MyScene"
 			}
 		}
 	}
+	skeleton "ShortRange"
+	{
+		import "Meshes/tower1_quick_short.fbx" -prefix="ShortRange"
+		import_anim "Meshes/tower1_quick_short.fbx" -prefix="ShortRange"
+	}
 	mesh "ShortRange"
 	{
 		import "Meshes/tower1_quick_short.fbx" -prefix="ShortRange"
+		skeleton "ShortRange"
 		default_materials
 		{
 			material 0 "short_range_accessories"

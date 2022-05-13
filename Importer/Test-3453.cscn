@@ -76,12 +76,7 @@ scene "Scene"
 
 	//Animated object groups
 
-	animated_object_group "nodes[8]0Morph"
-	{
-		start_animation "walk0518"
-	}
-
-	animated_object_group "nodes[8]0Skin"
+	animated_object_group "nodes[8]0"
 	{
 		start_animation "walk0518"
 	}

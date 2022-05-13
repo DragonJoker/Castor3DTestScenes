@@ -56,11 +56,11 @@ scene "AnimScene"
 
 	import
 	{
-		anim_file "Meshes/HellKnight/attack2.md5anim"
-		anim_file "Meshes/HellKnight/idle2.md5anim"
 		file "Meshes/HellKnight/hellknight.md5mesh"
+		file_anim "Meshes/HellKnight/attack2.md5anim"
+		file_anim "Meshes/HellKnight/idle2.md5anim"
 	}
-	animated_object_group "<MD5_Mesh>0Skin"
+	animated_object_group "<MD5_Mesh>hellknight_models_msh"
 	{
 		start_animation "attack2"
 	}

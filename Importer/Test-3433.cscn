@@ -67,21 +67,36 @@ scene "Scene"
 		}
 	}
 
+	skeleton "Dragon"
+	{
+		import "Meshes/Dragon.fbx" --rescale=10.0
+		import_anim "Meshes/Dragon.fbx" --rescale=10.0
+	}
 	mesh "Dragon"
 	{
-		import "Meshes/Dragon.fbx"
+		import "Meshes/Dragon.fbx" --rescale=10.0
+		skeleton "Dragon"
 	}
-
 	scene_node "FinalNode"
 	{
 		position 0.0 0.0 0.0
-		scale 0.1 0.1 0.1
 	}
 	object "FinalPrimitive"
 	{
 		parent "FinalNode"
 		mesh "Dragon"
 		material "Dragon"
+	}
+	animated_object_group "FinalPrimitive"
+	{
+		animated_object "FinalPrimitive"
+
+		animation "Take 001"
+		{
+			looped true
+		}
+
+		start_animation "Take 001"
 	}
 
 	scene_node "MainCameraNode"
@@ -102,21 +117,6 @@ scene "Scene"
 			far 2000.0
 		}
 	}
-
-	// Animated object groups
-
-	// animated_object_group "FinalPrimitive_Anim"
-	// {
-		// animated_object "FinalPrimitive"
-
-		// animation "Take 001"
-		// {
-			// looped true
-			// scale 1
-		// }
-
-		// start_animation "Take 001"
-	// }
 }
 
 window "Window"

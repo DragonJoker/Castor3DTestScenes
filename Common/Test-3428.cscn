@@ -20,6 +20,7 @@ scene "Pufi"
 	skeleton "Pufi"
 	{
 		import "Skeletons/Pufi/Pufi.cskl"
+		import_anim "Skeletons/Pufi/Pufi_WALK.cska"
 	}
 
 	// Meshes
