@@ -1,0 +1,27 @@
+// Samplers
+
+// Materials
+
+material "BoxVertexColors-1"
+{
+
+	pass
+	{
+		diffuse 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 50.0000
+	}
+}
+
+material "Default"
+{
+
+	pass
+	{
+		diffuse 0.800000 0.800000 0.800000
+		specular 1.00000 1.00000 1.00000
+		ambient 1.00000
+		shininess 50.0000
+	}
+}

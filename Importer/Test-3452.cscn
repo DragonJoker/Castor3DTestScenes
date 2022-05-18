@@ -112,12 +112,12 @@ scene "MyScene"
 	{
 		animated_object "HeavySplash"
 
-		animation "armature_short_range.1|attack"
+		animation "armature_short_range.1-attack"
 		{
 			looped true
 		}
 
-		start_animation "armature_short_range.1|attack"
+		start_animation "armature_short_range.1-attack"
 	}
 
 	material "inventor_accessories"
@@ -215,12 +215,12 @@ scene "MyScene"
 	{
 		animated_object "Inventor"
 
-		animation "armature_inventor.1|Action"
+		animation "armature_inventor.1-Action"
 		{
 			looped true
 		}
 
-		start_animation "armature_inventor.1|Action"
+		start_animation "armature_inventor.1-Action"
 	}
 
 	material "short_range_accessories"
@@ -317,12 +317,12 @@ scene "MyScene"
 	{
 		animated_object "ShortRange"
 
-		animation "armature_short_range.1|attack"
+		animation "armature_short_range.1-attack"
 		{
 			looped true
 		}
 
-		start_animation "armature_short_range.1|attack"
+		start_animation "armature_short_range.1-attack"
 	}
 
 	scene_node "MainCameraNode"

@@ -1,0 +1,7 @@
+// Meshes
+
+mesh "Cube"
+{
+	import "Meshes/BoxVertexColors/Cube.cmsh"
+	default_material "Default"
+}

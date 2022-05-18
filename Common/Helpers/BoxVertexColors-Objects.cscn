@@ -1,0 +1,7 @@
+// Objects
+
+object "Cube"
+{
+	parent "Cube"
+	mesh "Cube"
+}

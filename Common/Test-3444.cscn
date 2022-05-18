@@ -59,106 +59,207 @@ scene "Scene"
 	mesh "Morphing"
 	{
 		import "Meshes/Morphing/untitled_0_000001.obj" -no_optimisations
-		import_morph "Meshes/Morphing/untitled_0_000001.obj" 0.1
-		import_morph "Meshes/Morphing/untitled_0_000002.obj" 0.2
-		import_morph "Meshes/Morphing/untitled_0_000003.obj" 0.3
-		import_morph "Meshes/Morphing/untitled_0_000004.obj" 0.4
-		import_morph "Meshes/Morphing/untitled_0_000005.obj" 0.5
-		import_morph "Meshes/Morphing/untitled_0_000006.obj" 0.6
-		import_morph "Meshes/Morphing/untitled_0_000007.obj" 0.7
-		import_morph "Meshes/Morphing/untitled_0_000008.obj" 0.8
-		import_morph "Meshes/Morphing/untitled_0_000009.obj" 0.9
-		import_morph "Meshes/Morphing/untitled_0_000010.obj" 1.0
-		import_morph "Meshes/Morphing/untitled_0_000011.obj" 1.1
-		import_morph "Meshes/Morphing/untitled_0_000012.obj" 1.2
-		import_morph "Meshes/Morphing/untitled_0_000013.obj" 1.3
-		import_morph "Meshes/Morphing/untitled_0_000014.obj" 1.4
-		import_morph "Meshes/Morphing/untitled_0_000015.obj" 1.5
-		import_morph "Meshes/Morphing/untitled_0_000016.obj" 1.6
-		import_morph "Meshes/Morphing/untitled_0_000017.obj" 1.7
-		import_morph "Meshes/Morphing/untitled_0_000018.obj" 1.8
-		import_morph "Meshes/Morphing/untitled_0_000019.obj" 1.9
-		import_morph "Meshes/Morphing/untitled_0_000020.obj" 2.0
-		import_morph "Meshes/Morphing/untitled_0_000021.obj" 2.1
-		import_morph "Meshes/Morphing/untitled_0_000022.obj" 2.2
-		import_morph "Meshes/Morphing/untitled_0_000023.obj" 2.3
-		import_morph "Meshes/Morphing/untitled_0_000024.obj" 2.4
-		import_morph "Meshes/Morphing/untitled_0_000025.obj" 2.5
-		import_morph "Meshes/Morphing/untitled_0_000026.obj" 2.6
-		import_morph "Meshes/Morphing/untitled_0_000027.obj" 2.7
-		import_morph "Meshes/Morphing/untitled_0_000028.obj" 2.8
-		import_morph "Meshes/Morphing/untitled_0_000029.obj" 2.9
-		import_morph "Meshes/Morphing/untitled_0_000030.obj" 3.0
-		import_morph "Meshes/Morphing/untitled_0_000031.obj" 3.1
-		import_morph "Meshes/Morphing/untitled_0_000032.obj" 3.2
-		import_morph "Meshes/Morphing/untitled_0_000033.obj" 3.3
-		import_morph "Meshes/Morphing/untitled_0_000034.obj" 3.4
-		import_morph "Meshes/Morphing/untitled_0_000035.obj" 3.5
-		import_morph "Meshes/Morphing/untitled_0_000036.obj" 3.6
-		import_morph "Meshes/Morphing/untitled_0_000037.obj" 3.7
-		import_morph "Meshes/Morphing/untitled_0_000038.obj" 3.8
-		import_morph "Meshes/Morphing/untitled_0_000039.obj" 3.9
-		import_morph "Meshes/Morphing/untitled_0_000040.obj" 4.0
-		import_morph "Meshes/Morphing/untitled_0_000041.obj" 4.1
-		import_morph "Meshes/Morphing/untitled_0_000042.obj" 4.2
-		import_morph "Meshes/Morphing/untitled_0_000043.obj" 4.3
-		import_morph "Meshes/Morphing/untitled_0_000044.obj" 4.4
-		import_morph "Meshes/Morphing/untitled_0_000045.obj" 4.5
-		import_morph "Meshes/Morphing/untitled_0_000046.obj" 4.6
-		import_morph "Meshes/Morphing/untitled_0_000047.obj" 4.7
-		import_morph "Meshes/Morphing/untitled_0_000048.obj" 4.8
-		import_morph "Meshes/Morphing/untitled_0_000049.obj" 4.9
-		import_morph "Meshes/Morphing/untitled_0_000050.obj" 5.0
-		import_morph "Meshes/Morphing/untitled_0_000051.obj" 5.1
-		import_morph "Meshes/Morphing/untitled_0_000052.obj" 5.2
-		import_morph "Meshes/Morphing/untitled_0_000053.obj" 5.3
-		import_morph "Meshes/Morphing/untitled_0_000054.obj" 5.4
-		import_morph "Meshes/Morphing/untitled_0_000055.obj" 5.5
-		import_morph "Meshes/Morphing/untitled_0_000056.obj" 5.6
-		import_morph "Meshes/Morphing/untitled_0_000057.obj" 5.7
-		import_morph "Meshes/Morphing/untitled_0_000058.obj" 5.8
-		import_morph "Meshes/Morphing/untitled_0_000059.obj" 5.9
-		import_morph "Meshes/Morphing/untitled_0_000060.obj" 6.0
-		import_morph "Meshes/Morphing/untitled_0_000061.obj" 6.1
-		import_morph "Meshes/Morphing/untitled_0_000062.obj" 6.2
-		import_morph "Meshes/Morphing/untitled_0_000063.obj" 6.3
-		import_morph "Meshes/Morphing/untitled_0_000064.obj" 6.4
-		import_morph "Meshes/Morphing/untitled_0_000065.obj" 6.5
-		import_morph "Meshes/Morphing/untitled_0_000066.obj" 6.6
-		import_morph "Meshes/Morphing/untitled_0_000067.obj" 6.7
-		import_morph "Meshes/Morphing/untitled_0_000068.obj" 6.8
-		import_morph "Meshes/Morphing/untitled_0_000069.obj" 6.9
-		import_morph "Meshes/Morphing/untitled_0_000070.obj" 7.0
-		import_morph "Meshes/Morphing/untitled_0_000071.obj" 7.1
-		import_morph "Meshes/Morphing/untitled_0_000072.obj" 7.2
-		import_morph "Meshes/Morphing/untitled_0_000073.obj" 7.3
-		import_morph "Meshes/Morphing/untitled_0_000074.obj" 7.4
-		import_morph "Meshes/Morphing/untitled_0_000075.obj" 7.5
-		import_morph "Meshes/Morphing/untitled_0_000076.obj" 7.6
-		import_morph "Meshes/Morphing/untitled_0_000077.obj" 7.7
-		import_morph "Meshes/Morphing/untitled_0_000078.obj" 7.8
-		import_morph "Meshes/Morphing/untitled_0_000079.obj" 7.9
-		import_morph "Meshes/Morphing/untitled_0_000080.obj" 8.0
-		import_morph "Meshes/Morphing/untitled_0_000081.obj" 8.1
-		import_morph "Meshes/Morphing/untitled_0_000082.obj" 8.2
-		import_morph "Meshes/Morphing/untitled_0_000083.obj" 8.3
-		import_morph "Meshes/Morphing/untitled_0_000084.obj" 8.4
-		import_morph "Meshes/Morphing/untitled_0_000085.obj" 8.5
-		import_morph "Meshes/Morphing/untitled_0_000086.obj" 8.6
-		import_morph "Meshes/Morphing/untitled_0_000087.obj" 8.7
-		import_morph "Meshes/Morphing/untitled_0_000088.obj" 8.8
-		import_morph "Meshes/Morphing/untitled_0_000089.obj" 8.9
-		import_morph "Meshes/Morphing/untitled_0_000090.obj" 9.0
-		import_morph "Meshes/Morphing/untitled_0_000091.obj" 9.1
-		import_morph "Meshes/Morphing/untitled_0_000092.obj" 9.2
-		import_morph "Meshes/Morphing/untitled_0_000093.obj" 9.3
-		import_morph "Meshes/Morphing/untitled_0_000094.obj" 9.4
-		import_morph "Meshes/Morphing/untitled_0_000095.obj" 9.5
-		import_morph "Meshes/Morphing/untitled_0_000096.obj" 9.6
-		import_morph "Meshes/Morphing/untitled_0_000097.obj" 9.7
-		import_morph "Meshes/Morphing/untitled_0_000098.obj" 9.8
-		import_morph "Meshes/Morphing/untitled_0_000099.obj" 9.9
-		import_morph "Meshes/Morphing/untitled_0_000100.obj" 10.0
+		import_morph_target "Meshes/Morphing/untitled_0_000002.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000003.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000004.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000005.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000006.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000007.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000008.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000009.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000010.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000011.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000012.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000013.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000014.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000015.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000016.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000017.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000018.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000019.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000020.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000021.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000022.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000023.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000024.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000025.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000026.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000027.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000028.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000029.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000030.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000031.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000032.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000033.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000034.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000035.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000036.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000037.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000038.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000039.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000040.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000041.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000042.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000043.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000044.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000045.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000046.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000047.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000048.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000049.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000050.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000051.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000052.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000053.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000054.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000055.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000056.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000057.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000058.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000059.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000060.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000061.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000062.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000063.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000064.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000065.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000066.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000067.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000068.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000069.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000070.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000071.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000072.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000073.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000074.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000075.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000076.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000077.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000078.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000079.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000080.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000081.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000082.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000083.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000084.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000085.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000086.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000087.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000088.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000089.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000090.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000091.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000092.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000093.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000094.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000095.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000096.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000097.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000098.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000099.obj" -no_optimisations
+		import_morph_target "Meshes/Morphing/untitled_0_000100.obj" -no_optimisations
+		morph_animation "Morph"
+		{
+			target_weight 0.1 0 1.0
+			target_weight 0.2 1 1.0
+			target_weight 0.3 2 1.0
+			target_weight 0.4 3 1.0
+			target_weight 0.5 4 1.0
+			target_weight 0.6 5 1.0
+			target_weight 0.7 6 1.0
+			target_weight 0.8 7 1.0
+			target_weight 0.9 8 1.0
+			target_weight 1.0 9 1.0
+			target_weight 1.1 10 1.0
+			target_weight 1.2 11 1.0
+			target_weight 1.3 12 1.0
+			target_weight 1.4 13 1.0
+			target_weight 1.5 14 1.0
+			target_weight 1.6 15 1.0
+			target_weight 1.7 16 1.0
+			target_weight 1.8 17 1.0
+			target_weight 1.9 18 1.0
+			target_weight 2.0 19 1.0
+			target_weight 2.1 20 1.0
+			target_weight 2.2 21 1.0
+			target_weight 2.3 22 1.0
+			target_weight 2.4 23 1.0
+			target_weight 2.5 24 1.0
+			target_weight 2.6 25 1.0
+			target_weight 2.7 26 1.0
+			target_weight 2.8 27 1.0
+			target_weight 2.9 28 1.0
+			target_weight 3.0 29 1.0
+			target_weight 3.1 30 1.0
+			target_weight 3.2 31 1.0
+			target_weight 3.3 32 1.0
+			target_weight 3.4 33 1.0
+			target_weight 3.5 34 1.0
+			target_weight 3.6 35 1.0
+			target_weight 3.7 36 1.0
+			target_weight 3.8 37 1.0
+			target_weight 3.9 38 1.0
+			target_weight 4.0 39 1.0
+			target_weight 4.1 40 1.0
+			target_weight 4.2 41 1.0
+			target_weight 4.3 42 1.0
+			target_weight 4.4 43 1.0
+			target_weight 4.5 44 1.0
+			target_weight 4.6 45 1.0
+			target_weight 4.7 46 1.0
+			target_weight 4.8 47 1.0
+			target_weight 4.9 48 1.0
+			target_weight 5.0 49 1.0
+			target_weight 5.1 50 1.0
+			target_weight 5.2 51 1.0
+			target_weight 5.3 52 1.0
+			target_weight 5.4 53 1.0
+			target_weight 5.5 54 1.0
+			target_weight 5.6 55 1.0
+			target_weight 5.7 56 1.0
+			target_weight 5.8 57 1.0
+			target_weight 5.9 58 1.0
+			target_weight 6.0 59 1.0
+			target_weight 6.1 60 1.0
+			target_weight 6.2 61 1.0
+			target_weight 6.3 62 1.0
+			target_weight 6.4 63 1.0
+			target_weight 6.5 64 1.0
+			target_weight 6.6 65 1.0
+			target_weight 6.7 66 1.0
+			target_weight 6.8 67 1.0
+			target_weight 6.9 68 1.0
+			target_weight 7.0 69 1.0
+			target_weight 7.1 70 1.0
+			target_weight 7.2 71 1.0
+			target_weight 7.3 72 1.0
+			target_weight 7.4 73 1.0
+			target_weight 7.5 74 1.0
+			target_weight 7.6 75 1.0
+			target_weight 7.7 76 1.0
+			target_weight 7.8 77 1.0
+			target_weight 7.9 78 1.0
+			target_weight 8.0 79 1.0
+			target_weight 8.1 80 1.0
+			target_weight 8.2 81 1.0
+			target_weight 8.3 82 1.0
+			target_weight 8.4 83 1.0
+			target_weight 8.5 84 1.0
+			target_weight 8.6 85 1.0
+			target_weight 8.7 86 1.0
+			target_weight 8.8 87 1.0
+			target_weight 8.9 88 1.0
+			target_weight 9.0 89 1.0
+			target_weight 9.1 90 1.0
+			target_weight 9.2 91 1.0
+			target_weight 9.3 92 1.0
+			target_weight 9.4 93 1.0
+			target_weight 9.5 94 1.0
+			target_weight 9.6 95 1.0
+			target_weight 9.7 96 1.0
+			target_weight 9.8 97 1.0
+			target_weight 9.9 98 1.0
+		}
 		default_material "Morphing"
 	}
 	scene_node "MorphingNode"
