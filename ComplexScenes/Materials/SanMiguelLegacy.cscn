@@ -146,7 +146,7 @@ material "material_039"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_PITTED.png" rgb
 		}
@@ -206,7 +206,7 @@ material "material_1"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_jardinera_1_displacement_2.png" rgb
 		}
@@ -249,7 +249,7 @@ material "material_11"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_moldura2piso_bump.png" rgb
 		}
@@ -285,7 +285,7 @@ material "material_123"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Forja_Macetas_bump.png" rgb
 		}
@@ -310,7 +310,7 @@ material "material_124"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Maceta_A_Bump.png" rgb
 		}
@@ -335,7 +335,7 @@ material "material_125"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Maceta_A_Bump.png" rgb
 		}
@@ -360,7 +360,7 @@ material "material_126"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Maceta_B_Bump.png" rgb
 		}
@@ -385,7 +385,7 @@ material "material_127"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Maceta_B_Bump.png" rgb
 		}
@@ -410,7 +410,7 @@ material "material_128"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Maceta_C_Bump.png" rgb
 		}
@@ -435,7 +435,7 @@ material "material_129"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Maceta_C_Bump.png" rgb
 		}
@@ -471,7 +471,7 @@ material "material_130"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Maceta_D_Bump_0.png" rgb
 		}
@@ -721,14 +721,14 @@ material "material_14"
 
 		texture_unit
 		{
-			channel specular
+			specular_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/piso_rustico_Spec.png" rgb
 		}
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_piso_rustico_displace2.png" rgb
 		}
@@ -1781,7 +1781,7 @@ material "material_18"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_muros_b1.png" rgb
 		}
@@ -1824,7 +1824,7 @@ material "material_181"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_HP11stm.png" rgb
 		}
@@ -4027,14 +4027,14 @@ material "material_268"
 
 		texture_unit
 		{
-			channel specular
+			specular_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/Fierro_A_Bump.png" rgb
 		}
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Fierro_A_Bump.png" rgb
 		}
@@ -4059,7 +4059,7 @@ material "material_269"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_silla_d_piel_bump.png" rgb
 		}
@@ -4102,7 +4102,7 @@ material "material_270"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_WOOD08_Bump.png" rgb
 		}
@@ -4127,7 +4127,7 @@ material "material_271"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_WOOD08_Bump.png" rgb
 		}
@@ -4170,7 +4170,7 @@ material "material_273"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_WOOD08_Bump.png" rgb
 		}
@@ -4231,7 +4231,7 @@ material "material_276"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_WOOD08_Bump.png" rgb
 		}
@@ -4256,7 +4256,7 @@ material "material_277"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Finishes.Flooring.Carpet.Loop.5.png" rgb
 		}
@@ -4281,14 +4281,14 @@ material "material_278"
 
 		texture_unit
 		{
-			channel specular
+			specular_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/bwk_1024_Spec2.png" rgb
 		}
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_bwk_1024_Bump.png" rgb
 		}
@@ -4313,7 +4313,7 @@ material "material_279"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_tela_blanca.png" rgb
 		}
@@ -4356,7 +4356,7 @@ material "material_280"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_Fierro_A_Bump.png" rgb
 		}
@@ -4669,7 +4669,7 @@ material "material_39"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_arcos_lisos_2_bump.png" rgb
 		}
@@ -4694,7 +4694,7 @@ material "material_4"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_moldura_techo_bump.png" rgb
 		}
@@ -4719,7 +4719,7 @@ material "material_40"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_arcos_lisos_3_bump_1.png" rgb
 		}
@@ -4798,7 +4798,7 @@ material "material_44"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/Maceta_D_Bump_0.png" rgb
 		}
@@ -4841,7 +4841,7 @@ material "material_46"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_vigas_a2_bump.png" rgb
 		}
@@ -4884,7 +4884,7 @@ material "material_48"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_piso_patio_exterior_displace_inv.png" rgb
 		}
@@ -4927,7 +4927,7 @@ material "material_5"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_escalera_bump.png" rgb
 		}
@@ -4952,7 +4952,7 @@ material "material_51"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_arco_frente_displace_inv.png" rgb
 		}
@@ -5294,7 +5294,7 @@ material "material_69"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_postes_barandal_bump.png" rgb
 		}
@@ -5373,7 +5373,7 @@ material "material_73"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_rust_detalle_bump.png" rgb
 		}
@@ -5528,7 +5528,7 @@ material "material_81"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_metal_viejo_2.png" rgb
 		}
@@ -5576,7 +5576,7 @@ material "material_84"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_detmoldura_06_bump.png" rgb
 		}
@@ -5601,7 +5601,7 @@ material "material_85"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_detmoldura_05_bump.png" rgb
 		}
@@ -5626,7 +5626,7 @@ material "material_86"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_detmoldura_04_bump.png" rgb
 		}
@@ -5651,7 +5651,7 @@ material "material_87"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_detmoldura_03_bump.png" rgb
 		}
@@ -5676,7 +5676,7 @@ material "material_88"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_detmoldura_02_bump.png" rgb
 		}
@@ -5701,7 +5701,7 @@ material "material_89"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_detmoldura_01_bump.png" rgb
 		}
@@ -5744,7 +5744,7 @@ material "material_90"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_escurridera_bump.png" rgb
 		}
@@ -5868,7 +5868,7 @@ material "material_95"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_marco_puerta_1_bump.png" rgb
 		}
@@ -5893,7 +5893,7 @@ material "material_96"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_madera_barandal_esc_2_bump.png" rgb
 		}
@@ -5918,7 +5918,7 @@ material "material_97"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_mold_arco_01_bump.png" rgb
 		}
@@ -5943,7 +5943,7 @@ material "material_98"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_molduraterraza_bump.png" rgb
 		}
@@ -5968,7 +5968,7 @@ material "materiald"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_puerta_bump.png" rgb
 		}
@@ -6011,7 +6011,7 @@ material "materiali"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_columna_b_displacement_3_inv.png" rgb
 		}
@@ -6041,7 +6041,7 @@ material "materialo"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/water_bump.png" rgb
 		}
@@ -6113,7 +6113,7 @@ material "materials"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_sm_tronco_bump.png" rgb
 		}
@@ -6147,7 +6147,7 @@ material "materialt"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_sm_leaf_02_bump.png" rgb
 		}
@@ -6181,7 +6181,7 @@ material "materialu"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_sm_leaf_02_bump.png" rgb
 		}
@@ -6215,7 +6215,7 @@ material "materialv"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_sm_leaf_02_bump.png" rgb
 		}
@@ -6240,7 +6240,7 @@ material "materialw"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_bark06mi.png" rgb
 		}
@@ -6274,7 +6274,7 @@ material "materialx"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_l33-upper.png" rgb
 		}
@@ -6308,7 +6308,7 @@ material "materialy"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_l37-upper.png" rgb
 		}
@@ -6342,7 +6342,7 @@ material "materialz"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/SanMiguel/N_l04-upper.png" rgb
 		}

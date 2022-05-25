@@ -1,4 +1,4 @@
-materials specular_glossiness
+materials pbr
 
 scene "Scene"
 {
@@ -27,6 +27,7 @@ scene "Scene"
 	{
 		pass
 		{
+			specular 1.0 1.0 1.0
 			emissive 8.0
 
 			texture_unit

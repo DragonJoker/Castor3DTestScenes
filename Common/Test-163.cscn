@@ -75,7 +75,7 @@ scene "Scene"
 			texture_unit
 			{
 				image "Textures/Bricks/Specular.jpg"
-				channel specular
+				specular_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 		}
@@ -111,7 +111,7 @@ scene "Scene"
 			texture_unit
 			{
 				image "Textures/Bricks/Specular.jpg"
-				channel specular
+				specular_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 
@@ -154,7 +154,7 @@ scene "Scene"
 			texture_unit
 			{
 				image "Textures/Bricks/Normal.jpg"
-				channel normal
+				normal_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 		}
@@ -190,14 +190,14 @@ scene "Scene"
 			texture_unit
 			{
 				image "Textures/Bricks/Specular.jpg"
-				channel specular
+				specular_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
 				image "Textures/Bricks/Normal.jpg"
-				channel normal
+				normal_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 		}
@@ -234,14 +234,14 @@ scene "Scene"
 			texture_unit
 			{
 				image "Textures/Bricks/Specular.jpg"
-				channel specular
+				specular_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
 				image "Textures/Bricks/Normal.jpg"
-				channel normal
+				normal_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 
@@ -285,7 +285,7 @@ scene "Scene"
 			texture_unit
 			{
 				image "Textures/Bricks/Normal.jpg"
-				channel normal
+				normal_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 
@@ -329,14 +329,14 @@ scene "Scene"
 			texture_unit
 			{
 				image "Textures/Bricks/Specular.jpg"
-				channel specular
+				specular_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
 				image "Textures/Bricks/Normal.jpg"
-				channel normal
+				normal_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 
@@ -381,14 +381,14 @@ scene "Scene"
 			texture_unit
 			{
 				image "Textures/Bricks/Specular.jpg"
-				channel specular
+				specular_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
 				image "Textures/Bricks/Normal.jpg"
-				channel normal
+				normal_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 

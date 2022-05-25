@@ -1,6 +1,6 @@
 // Global configuration
 // debug_overlays true
-materials specular_glossiness
+materials pbr
 
 scene "Cafe"
 {

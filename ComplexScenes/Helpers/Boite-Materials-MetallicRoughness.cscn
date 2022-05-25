@@ -28,7 +28,7 @@ material "baffles_boite/baffles"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/baffles.jpg" rgb
 		}
@@ -40,13 +40,14 @@ material "barriere_verre/metal"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		metalness 1.0
 		roughness 0.2
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/barriere_metal.jpg" rgb
 		}
@@ -72,7 +73,7 @@ material "barriere_verre/verre"
 		texture_unit
 		{
 			levels_count 6
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/barriere_verre.png" rgb
 		}
@@ -98,7 +99,7 @@ material "bars_boite/bois"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_bois.jpg" rgb
 		}
@@ -116,7 +117,7 @@ material "bars_boite/bois_noir"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_bois_noir.jpg" rgb
 		}
@@ -134,7 +135,7 @@ material "bars_boite/bouteilles"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_bouteille_01.jpg" rgb
 		}
@@ -152,7 +153,7 @@ material "bars_boite/bouteilles02"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_bouteille_02.jpg" rgb
 		}
@@ -170,7 +171,7 @@ material "bars_boite/bouteilles03"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_bouteille_03.jpg" rgb
 		}
@@ -188,7 +189,7 @@ material "bars_boite/bouteilles04"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_bouteille_04.jpg" rgb
 		}
@@ -201,13 +202,13 @@ material "bars_boite/distrib_biere"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.5
-		metallic 1
+		metalness 1
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/distrib_biere.jpg" rgb
 		}
@@ -220,13 +221,13 @@ material "bars_boite/grille_biere"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.5
-		metallic 1
+		metalness 1
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/grille_biere.jpg" rgb
 		}
@@ -245,7 +246,7 @@ material "bars_boite/lumiere"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_lumiere.jpg" rgb
 		}
@@ -258,13 +259,13 @@ material "bars_boite/metal"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.2
-		metallic 1
+		metalness 1
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_metal.jpg" rgb
 		}
@@ -282,7 +283,7 @@ material "bars_boite/porte_bar"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_porte.jpg" rgb
 		}
@@ -301,7 +302,7 @@ material "bars_boite/verre"
 		texture_unit
 		{
 			levels_count 6
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_verre.png" rgb
 		}
@@ -319,7 +320,7 @@ material "boite/murs"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/mur_boite.jpg" rgb
 		}
@@ -346,7 +347,7 @@ material "boite/parquet 1"
 		texture_unit
 		{
 			levels_count 12
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/oak_floor-albedo.png" rgb
 		}
@@ -362,7 +363,7 @@ material "boite/parquet 1"
 		texture_unit
 		{
 			levels_count 12
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/oak_floor-normal.png" rgb
 		}
@@ -388,7 +389,7 @@ material "boite/parquet 2"
 		texture_unit
 		{
 			levels_count 12
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/oak_floor-albedo.png" rgb
 		}
@@ -404,7 +405,7 @@ material "boite/parquet 2"
 		texture_unit
 		{
 			levels_count 12
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/oak_floor-normal.png" rgb
 		}
@@ -430,7 +431,7 @@ material "boite/plafond"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/plafond_boite.jpg" rgb
 		}
@@ -448,7 +449,7 @@ material "boite/porte"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/porte_boite.jpg" rgb
 		}
@@ -466,7 +467,7 @@ material "boite/sol 1"
 		texture_unit
 		{
 			levels_count 10
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/beton_boite.jpg" rgb
 		}
@@ -484,7 +485,7 @@ material "boite/sol 2"
 		texture_unit
 		{
 			levels_count 10
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/beton_boite.jpg" rgb
 		}
@@ -502,7 +503,7 @@ material "boite/sol 3"
 		texture_unit
 		{
 			levels_count 10
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/beton_boite.jpg" rgb
 		}
@@ -520,7 +521,7 @@ material "canape_triple/canape_triple"
 		texture_unit
 		{
 			levels_count 10
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/canape_bar.jpg" rgb
 		}
@@ -538,7 +539,7 @@ material "dj_boite/bloc"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/dj_beton.jpg" rgb
 		}
@@ -551,13 +552,13 @@ material "dj_boite/metal"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.2
-		metallic 1
+		metalness 1
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/dj_metal.jpg" rgb
 		}
@@ -575,7 +576,7 @@ material "dj_boite/piste"
 		texture_unit
 		{
 			levels_count 12
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/oak_floor-black-albedo.png" rgb
 		}
@@ -591,7 +592,7 @@ material "dj_boite/piste"
 		texture_unit
 		{
 			levels_count 12
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/oak_floor-normal.png" rgb
 		}
@@ -617,7 +618,7 @@ material "dj_boite/table"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/dj_table.JPG" rgb
 		}
@@ -635,7 +636,7 @@ material "dj_boite/vinyle"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/dj_vinyle.jpg" rgb
 		}
@@ -648,13 +649,13 @@ material "escaliers_boite/metal"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.2
-		metallic 1
+		metalness 1.0
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/barriere_metal.jpg" rgb
 		}
@@ -672,7 +673,7 @@ material "escaliers_boite/verre"
 		texture_unit
 		{
 			levels_count 6
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/barriere_verre.png" rgb
 		}
@@ -698,7 +699,7 @@ material "fauteuil/gros_fauteuil_bar"
 		texture_unit
 		{
 			levels_count 10
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/canape_bar.jpg" rgb
 		}
@@ -711,13 +712,13 @@ material "panneau_mural/panneau_pub"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.5
-		metallic 1
+		metalness 1
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/panneau_pub_metal.jpg" rgb
 		}
@@ -735,7 +736,7 @@ material "panneau_mural/pub"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/panneau_pub_pub_01.jpg" rgb
 		}
@@ -754,7 +755,7 @@ material "plante_05/plante_05"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/plante_05.png" rgb
 		}
@@ -780,7 +781,7 @@ material "plante_05/plante_pot"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/plante_pot.jpg" rgb
 		}
@@ -807,7 +808,7 @@ material "plasma/plasma"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/plasma.jpg" rgb
 		}
@@ -825,7 +826,7 @@ material "pouf/pouf"
 		texture_unit
 		{
 			levels_count 10
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/pouf.jpg" rgb
 		}
@@ -924,7 +925,7 @@ material "spot_couleur/lumiere"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/spot_couleur_lumiere.jpg" rgb
 		}
@@ -937,13 +938,13 @@ material "spot_couleur/metal"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.2
-		metallic 1
+		metalness 1
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/spot_couleur_metal.jpg" rgb
 		}
@@ -982,7 +983,7 @@ material "spot_simple/lumiere"
 		texture_unit
 		{
 			levels_count 8
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/spot_simple_lumiere.jpg" rgb
 		}
@@ -995,13 +996,13 @@ material "spot_simple/metal"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.2
-		metallic 1
+		metalness 1
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 7
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/spot_simple_metal.jpg" rgb
 		}
@@ -1014,7 +1015,7 @@ material "table_basse/table_basse_cuivre"
 	{
 		albedo 0.666667 0.501961 0.00392157
 		roughness 0.2
-		metallic 1
+		metalness 1
 		two_sided true
 	}
 }
@@ -1035,7 +1036,7 @@ material "table_haute/cuivre"
 	{
 		albedo 0.666667 0.501961 0.00392157
 		roughness 0.2
-		metallic 1
+		metalness 1
 		two_sided true
 	}
 }
@@ -1056,13 +1057,13 @@ material "table_verre/table_bar_fer_forge"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.5
-		metallic 1
+		metalness 1
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/table_bar_fer_forge.jpg" rgb
 		}
@@ -1080,7 +1081,7 @@ material "table_verre/table_bar_verre"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/table_bar_verre.png" rgb
 		}
@@ -1106,7 +1107,7 @@ material "tabouret_boite/cuir"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/tabouret_cuir.jpg" rgb
 		}
@@ -1119,13 +1120,13 @@ material "tabouret_boite/metal"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.5
-		metallic 1
+		metalness 1
 		two_sided true
 
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/tabouret_metal.jpg" rgb
 		}

@@ -1,6 +1,6 @@
 // Global configuration
 // debug_overlays true
-materials toon_metallic_roughness
+materials toon_pbr
 
 scene "Cafe"
 {

@@ -1819,7 +1819,7 @@ material "immeubles_parc/fenetre02"
 		texture_unit
 		{
 			levels_count 9
-			channel normal
+			normal_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/ParkLegacy/window-normal.png" rgb
 		}

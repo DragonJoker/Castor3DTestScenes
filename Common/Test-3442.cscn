@@ -1,4 +1,4 @@
-materials metallic_roughness
+materials pbr
 
 scene "Scene"
 {
@@ -27,7 +27,7 @@ scene "Scene"
 		{
 			albedo 1.0 1.0 1.0
 			emissive 0.0
-			metallic 0.0
+			metalness 0.0
 			roughness 0.0
 			two_sided true
 

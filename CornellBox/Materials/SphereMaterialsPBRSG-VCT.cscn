@@ -3,7 +3,7 @@ material "leftSphere"
 {
 	pass
 	{
-		diffuse 0.55000 0.55000 0.55000
+		albedo 0.55000 0.55000 0.55000
 		specular 0.55000 0.55000 0.55000
 		glossiness 0.90
 		two_sided true
@@ -14,7 +14,7 @@ material "rightSphere"
 {
 	pass
 	{
-		diffuse 0.55000 0.55000 0.55000
+		albedo 0.55000 0.55000 0.55000
 		specular 0.55000 0.55000 0.55000
 		transmission 1.0 1.0 1.0
 		glossiness 0.90
@@ -28,7 +28,7 @@ material "light"
 {
 	pass
 	{
-		diffuse 0.780000 0.780000 0.780000
+		albedo 0.780000 0.780000 0.780000
 		specular 0.00000 0.00000 0.00000
 		emissive 10.0
 		glossiness 0.1
@@ -40,7 +40,7 @@ material "backWall"
 {
 	pass
 	{
-		diffuse 0.725000 0.710000 0.680000
+		albedo 0.725000 0.710000 0.680000
 		specular 0.00000 0.00000 0.00000
 		glossiness 0.1
 	}
@@ -50,7 +50,7 @@ material "ceiling"
 {
 	pass
 	{
-		diffuse 0.725000 0.710000 0.680000
+		albedo 0.725000 0.710000 0.680000
 		specular 0.00000 0.00000 0.00000
 		glossiness 0.1
 	}
@@ -60,7 +60,7 @@ material "floor"
 {
 	pass
 	{
-		diffuse 0.725000 0.710000 0.680000
+		albedo 0.725000 0.710000 0.680000
 		specular 0.00000 0.00000 0.00000
 		glossiness 0.1
 	}
@@ -70,7 +70,7 @@ material "leftWall"
 {
 	pass
 	{
-		diffuse 0.630000 0.0650000 0.0500000
+		albedo 0.630000 0.0650000 0.0500000
 		specular 0.00000 0.00000 0.00000
 		glossiness 0.1
 	}
@@ -80,7 +80,7 @@ material "rightWall"
 {
 	pass
 	{
-		diffuse 0.14000 0.45000 0.09100
+		albedo 0.14000 0.45000 0.09100
 		specular 0.00000 0.00000 0.00000
 		glossiness 0.1
 	}
@@ -90,7 +90,7 @@ material "WhiteEmit"
 {
 	pass
 	{
-		diffuse 1.0 1.0 1.0
+		albedo 1.0 1.0 1.0
 		emissive 1.1
 	}
 }

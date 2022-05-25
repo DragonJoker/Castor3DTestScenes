@@ -6,7 +6,7 @@ material "DefaultMaterial"
 	pass
 	{
 		albedo 0.600000 0.600000 0.600000 0.00392157
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -20,7 +20,7 @@ material "barriere_bar/barriere_bar"
 
 	pass
 	{
-		metallic 1.0
+		metalness 1.0
 		roughness 0.2
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -29,13 +29,13 @@ material "barriere_bar/barriere_bar"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/barriere_metal.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel metallic
+			channel metalness
 			image "Textures/CafePBRMR/barriere_metal.jpg" rgb
 		}
 	}
@@ -46,7 +46,7 @@ material "billard/bleu"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -55,7 +55,7 @@ material "billard/bleu"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/billard_bleu.jpg" rgb
 		}
 	}
@@ -66,7 +66,7 @@ material "billard/bois"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.3
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -75,7 +75,7 @@ material "billard/bois"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/billard_bois.jpg" rgb
 		}
 	}
@@ -86,7 +86,7 @@ material "billard/dorure"
 
 	pass
 	{
-		metallic 1.0
+		metalness 1.0
 		roughness 0.1
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -95,13 +95,13 @@ material "billard/dorure"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/billard_dorure.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel metallic
+			channel metalness
 			image "Textures/CafePBRMR/billard_dorure.jpg" rgb
 		}
 	}
@@ -113,7 +113,7 @@ material "billard/light"
 	pass
 	{
 		albedo 0 0 0
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -129,7 +129,7 @@ material "billard/noir"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000 0.00392157
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.3
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -144,7 +144,7 @@ material "billard/queue"
 	pass
 	{
 		albedo 0.588000 0.588000 0.588000 0.00392157
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.3
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -153,7 +153,7 @@ material "billard/queue"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/billard_queue.jpg" rgb
 		}
 	}
@@ -164,7 +164,7 @@ material "billard/tapis"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		edge_width 1.0
 		edge_normal_factor 1.0
 		smooth_band_width 4.0
@@ -172,13 +172,13 @@ material "billard/tapis"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/billard_tapis.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/billard_tapis-normal.png" rgb
 		}
 
@@ -201,7 +201,7 @@ material "cafe/cafe_aqua_coffre"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -211,13 +211,13 @@ material "cafe/cafe_aqua_coffre"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_coffre.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_coffre.jpg" rgb
 		}
 	}
@@ -228,7 +228,7 @@ material "cafe/cafe_aqua_coquillage_01"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -238,13 +238,13 @@ material "cafe/cafe_aqua_coquillage_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_coquillage_01.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_coquillage_01.jpg" rgb
 		}
 	}
@@ -255,7 +255,7 @@ material "cafe/cafe_aqua_coquillage_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -265,13 +265,13 @@ material "cafe/cafe_aqua_coquillage_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_coquillage_02.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_coquillage_02.jpg" rgb
 		}
 	}
@@ -282,7 +282,7 @@ material "cafe/cafe_aqua_fond"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -292,13 +292,13 @@ material "cafe/cafe_aqua_fond"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_fond.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_fond.jpg" rgb
 		}
 	}
@@ -309,7 +309,7 @@ material "cafe/cafe_aqua_pierre_01"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -319,13 +319,13 @@ material "cafe/cafe_aqua_pierre_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_pierre_01.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_pierre_01.jpg" rgb
 		}
 	}
@@ -336,7 +336,7 @@ material "cafe/cafe_aqua_pierre_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -346,13 +346,13 @@ material "cafe/cafe_aqua_pierre_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_pierre_02.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_pierre_02.jpg" rgb
 		}
 	}
@@ -363,7 +363,7 @@ material "cafe/cafe_aqua_pierre_03"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -373,13 +373,13 @@ material "cafe/cafe_aqua_pierre_03"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_pierre_03.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_pierre_03.jpg" rgb
 		}
 	}
@@ -390,7 +390,7 @@ material "cafe/cafe_aqua_plafond"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -400,13 +400,13 @@ material "cafe/cafe_aqua_plafond"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_plafond.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_plafond.jpg" rgb
 		}
 	}
@@ -417,7 +417,7 @@ material "cafe/cafe_aqua_plante_01"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -428,13 +428,13 @@ material "cafe/cafe_aqua_plante_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_plante_01.png" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_plante_01.png" rgb
 		}
 
@@ -451,7 +451,7 @@ material "cafe/cafe_aqua_plante_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -462,13 +462,13 @@ material "cafe/cafe_aqua_plante_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_plante_02.png" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_plante_02.png" rgb
 		}
 
@@ -485,7 +485,7 @@ material "cafe/cafe_aqua_plante_03"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -496,13 +496,13 @@ material "cafe/cafe_aqua_plante_03"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_plante_03.png" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_plante_03.png" rgb
 		}
 
@@ -519,7 +519,7 @@ material "cafe/cafe_aqua_sol_01"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -529,13 +529,13 @@ material "cafe/cafe_aqua_sol_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_sol_01.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_sol_01.jpg" rgb
 		}
 	}
@@ -546,7 +546,7 @@ material "cafe/cafe_aqua_sol_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -556,13 +556,13 @@ material "cafe/cafe_aqua_sol_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_sol_02.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_sol_02.jpg" rgb
 		}
 	}
@@ -573,7 +573,7 @@ material "cafe/cafe_aqua_tube"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -583,13 +583,13 @@ material "cafe/cafe_aqua_tube"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_tube.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_aqua_tube.jpg" rgb
 		}
 	}
@@ -600,7 +600,7 @@ material "cafe/cafe_bar_alu"
 
 	pass
 	{
-		metallic 1.0
+		metalness 1.0
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -609,13 +609,13 @@ material "cafe/cafe_bar_alu"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_bar_alu.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel metallic
+			channel metalness
 			image "Textures/CafePBRMR/cafe_bar_alu.jpg" rgb
 		}
 	}
@@ -626,7 +626,7 @@ material "cafe/cafe_bar_gris"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -635,7 +635,7 @@ material "cafe/cafe_bar_gris"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_bar_gris.jpg" rgb
 		}
 	}
@@ -646,7 +646,7 @@ material "cafe/cafe_bar_light"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -655,7 +655,7 @@ material "cafe/cafe_bar_light"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_bar_light.jpg" rgb
 		}
 	}
@@ -666,7 +666,7 @@ material "cafe/cafe_bar_marbre"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.0785
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -675,7 +675,7 @@ material "cafe/cafe_bar_marbre"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_bar_marbre.jpg" rgb
 		}
 	}
@@ -686,7 +686,7 @@ material "cafe/cafe_bois"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -695,7 +695,7 @@ material "cafe/cafe_bois"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_bois.jpg" rgb
 		}
 	}
@@ -706,7 +706,7 @@ material "cafe/cafe_bouteilles_01"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -715,7 +715,7 @@ material "cafe/cafe_bouteilles_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_bouteilles_01.jpg" rgb
 		}
 	}
@@ -726,7 +726,7 @@ material "cafe/cafe_bouteilles_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -735,7 +735,7 @@ material "cafe/cafe_bouteilles_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_bouteilles_02.jpg" rgb
 		}
 	}
@@ -746,7 +746,7 @@ material "cafe/cafe_bouteilles_03"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -755,7 +755,7 @@ material "cafe/cafe_bouteilles_03"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_bouteilles_03.jpg" rgb
 		}
 	}
@@ -766,7 +766,7 @@ material "cafe/cafe_bouteilles_04"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -775,7 +775,7 @@ material "cafe/cafe_bouteilles_04"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_bouteilles_04.jpg" rgb
 		}
 	}
@@ -786,7 +786,7 @@ material "cafe/cafe_carelage"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		edge_width 1.0
 		edge_normal_factor 1.0
 		smooth_band_width 4.0
@@ -794,13 +794,13 @@ material "cafe/cafe_carelage"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_carelage.jpg" rgb
 		}
 
 		// texture_unit
 		// {
-			// channel normal
+			// normal_mask 0x00FFFFFF
 			// image "Textures/CafePBRMR/cafe_carelage-normal.jpg" rgb
 		// }
 
@@ -818,7 +818,7 @@ material "cafe/cafe_chrome"
 	pass
 	{
 		albedo 0.337255 0.337255 0.337255 0.00392157
-		metallic 1.0
+		metalness 1.0
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -832,7 +832,7 @@ material "cafe/cafe_deco_01"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -841,7 +841,7 @@ material "cafe/cafe_deco_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_deco_01.jpg" rgb
 		}
 	}
@@ -852,7 +852,7 @@ material "cafe/cafe_deco_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -861,7 +861,7 @@ material "cafe/cafe_deco_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_deco_02.jpg" rgb
 		}
 	}
@@ -872,7 +872,7 @@ material "cafe/cafe_deco_03"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -881,7 +881,7 @@ material "cafe/cafe_deco_03"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_deco_03.jpg" rgb
 		}
 	}
@@ -892,7 +892,7 @@ material "cafe/cafe_deco_04"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -901,7 +901,7 @@ material "cafe/cafe_deco_04"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_deco_04.jpg" rgb
 		}
 	}
@@ -912,7 +912,7 @@ material "cafe/cafe_entree"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -921,7 +921,7 @@ material "cafe/cafe_entree"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/magasins_vitrine_bar.jpg" rgb
 		}
 	}
@@ -932,7 +932,7 @@ material "cafe/cafe_exit"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -942,13 +942,13 @@ material "cafe/cafe_exit"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_exit.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_exit.jpg" rgb
 		}
 	}
@@ -959,7 +959,7 @@ material "cafe/cafe_frigo_bar"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -968,13 +968,13 @@ material "cafe/cafe_frigo_bar"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_frigo_bar.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_frigo_bar.jpg" rgb
 		}
 	}
@@ -985,7 +985,7 @@ material "cafe/cafe_grille_bar"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -994,7 +994,7 @@ material "cafe/cafe_grille_bar"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_grille_bar.jpg" rgb
 		}
 	}
@@ -1005,7 +1005,7 @@ material "cafe/cafe_grille_bar_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1014,7 +1014,7 @@ material "cafe/cafe_grille_bar_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_grille_bar_02.jpg" rgb
 		}
 	}
@@ -1025,7 +1025,7 @@ material "cafe/cafe_mur_01"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1034,7 +1034,7 @@ material "cafe/cafe_mur_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_mur_01.jpg" rgb
 		}
 	}
@@ -1045,7 +1045,7 @@ material "cafe/cafe_mur_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1055,7 +1055,7 @@ material "cafe/cafe_mur_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_mur_02.jpg" rgb
 		}
 	}
@@ -1066,7 +1066,7 @@ material "cafe/cafe_neon"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1076,7 +1076,7 @@ material "cafe/cafe_neon"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_carelage.jpg" rgb
 		}
 	}
@@ -1087,7 +1087,7 @@ material "cafe/cafe_porte"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1096,7 +1096,7 @@ material "cafe/cafe_porte"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_porte.jpg" rgb
 		}
 	}
@@ -1107,7 +1107,7 @@ material "cafe/cafe_poteau"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1116,7 +1116,7 @@ material "cafe/cafe_poteau"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_poteau.jpg" rgb
 		}
 	}
@@ -1127,7 +1127,7 @@ material "cafe/cafe_rideau"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1136,7 +1136,7 @@ material "cafe/cafe_rideau"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_rideau.jpg" rgb
 		}
 	}
@@ -1147,7 +1147,7 @@ material "cafe/cafe_roof_01"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1156,7 +1156,7 @@ material "cafe/cafe_roof_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_roof_01.jpg" rgb
 		}
 	}
@@ -1167,7 +1167,7 @@ material "cafe/cafe_roof_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1176,7 +1176,7 @@ material "cafe/cafe_roof_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_roof_02.jpg" rgb
 		}
 	}
@@ -1187,7 +1187,7 @@ material "cafe/cafe_sol_01"
 
 	pass
 	{
-		metallic 0.0
+		metalness 0.0
 		edge_width 1.0
 		edge_normal_factor 1.0
 		smooth_band_width 4.0
@@ -1195,13 +1195,13 @@ material "cafe/cafe_sol_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_sol_01.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_sol_01-normal.png" rgb
 		}
 
@@ -1218,7 +1218,7 @@ material "cafe/cafe_vitre"
 
 	pass
 	{
-		metallic 0.0
+		metalness 0.0
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1227,7 +1227,7 @@ material "cafe/cafe_vitre"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cafe_vitre.png" rgb
 		}
 
@@ -1244,7 +1244,7 @@ material "canape_demi_cercle/canape_demi_cercle"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1253,7 +1253,7 @@ material "canape_demi_cercle/canape_demi_cercle"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/canape_demi_cercle.jpg" rgb
 		}
 
@@ -1271,7 +1271,7 @@ material "canape_demi_cercle/canape_demi_cercle"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/leather-normal.png" rgb
 		}
 	}
@@ -1281,7 +1281,7 @@ material "canape_triple/canape_triple"
 {
 	pass
 	{
-		metallic 0.0
+		metalness 0.0
 		edge_width 1.0
 		edge_normal_factor 1.0
 		smooth_band_width 4.0
@@ -1289,7 +1289,7 @@ material "canape_triple/canape_triple"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/canape_triple.jpg"
 		}
 
@@ -1307,7 +1307,7 @@ material "canape_triple/canape_triple"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cuir-normal.png"
 		}
 	}
@@ -1317,7 +1317,7 @@ material "pouf/pouf"
 {
 	pass
 	{
-		metallic 0.0
+		metalness 0.0
 		edge_width 1.0
 		edge_normal_factor 1.0
 		smooth_band_width 4.0
@@ -1325,7 +1325,7 @@ material "pouf/pouf"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/pouf.jpg"
 		}
 
@@ -1343,7 +1343,7 @@ material "pouf/pouf"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cuir-normal.png"
 		}
 	}
@@ -1353,7 +1353,7 @@ material "fauteuil/gros_fauteuil_bar"
 {
 	pass
 	{
-		metallic 0.0
+		metalness 0.0
 		edge_width 1.0
 		edge_normal_factor 1.0
 		smooth_band_width 4.0
@@ -1361,7 +1361,7 @@ material "fauteuil/gros_fauteuil_bar"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/canape_triple.jpg"
 		}
 
@@ -1379,7 +1379,7 @@ material "fauteuil/gros_fauteuil_bar"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/cuir-normal.png"
 		}
 	}
@@ -1390,7 +1390,7 @@ material "plante_01/plante_01"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1400,7 +1400,7 @@ material "plante_01/plante_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/plante_01.png" rgb
 		}
 
@@ -1417,7 +1417,7 @@ material "plante_01/plante_pot"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1426,7 +1426,7 @@ material "plante_01/plante_pot"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/plante_pot.jpg" rgb
 		}
 	}
@@ -1437,7 +1437,7 @@ material "plante_02/plante_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1447,7 +1447,7 @@ material "plante_02/plante_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/plante_02.png" rgb
 		}
 
@@ -1464,7 +1464,7 @@ material "plante_02/plante_pot"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1473,7 +1473,7 @@ material "plante_02/plante_pot"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/plante_pot.jpg" rgb
 		}
 	}
@@ -1484,7 +1484,7 @@ material "plante_03/plante_03"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1494,7 +1494,7 @@ material "plante_03/plante_03"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/plante_03.png" rgb
 		}
 
@@ -1511,7 +1511,7 @@ material "plante_03/plante_pot"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1520,7 +1520,7 @@ material "plante_03/plante_pot"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/plante_pot.jpg" rgb
 		}
 	}
@@ -1531,7 +1531,7 @@ material "plante_05/plante_05"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1541,7 +1541,7 @@ material "plante_05/plante_05"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/plante_05.png" rgb
 		}
 
@@ -1558,7 +1558,7 @@ material "plante_05/plante_pot"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1567,7 +1567,7 @@ material "plante_05/plante_pot"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/plante_pot.jpg" rgb
 		}
 	}
@@ -1579,7 +1579,7 @@ material "table_bar/cuivre"
 	pass
 	{
 		albedo 1.00000 0.65882 0.54509 1.0
-		metallic 1.0
+		metalness 1.0
 		roughness 0.1
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1594,7 +1594,7 @@ material "table_bar/laque"
 	pass
 	{
 		albedo 0.000000 0.000000 0.000000 0.00392157
-		metallic 0.0
+		metalness 0.0
 		roughness 0.2
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1609,7 +1609,7 @@ material "table_basse/table_basse_cuivre"
 	pass
 	{
 		albedo 1.00000 0.65882 0.54509 1.0
-		metallic 1.0
+		metalness 1.0
 		roughness 0.1
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1624,7 +1624,7 @@ material "table_basse/table_basse_laque"
 	pass
 	{
 		albedo 0.000000 0.000000 0.000000 0.00392157
-		metallic 0.0
+		metalness 0.0
 		roughness 0.2
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1638,7 +1638,7 @@ material "table_verre/table_bar_fer_forge"
 
 	pass
 	{
-		metallic 1.0
+		metalness 1.0
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1647,7 +1647,7 @@ material "table_verre/table_bar_fer_forge"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/table_bar_fer_forge.jpg" rgb
 		}
 	}
@@ -1658,7 +1658,7 @@ material "table_verre/table_bar_verre"
 
 	pass
 	{
-		metallic 0.0
+		metalness 0.0
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1667,7 +1667,7 @@ material "table_verre/table_bar_verre"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/table_bar_verre.png" rgb
 		}
 
@@ -1684,7 +1684,7 @@ material "tableau_myt/tableau_myt_graff_01"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1693,7 +1693,7 @@ material "tableau_myt/tableau_myt_graff_01"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/tableau_myt_graff_01.jpg" rgb
 		}
 	}
@@ -1704,7 +1704,7 @@ material "tableau_myt/tableau_myt_graff_02"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1713,7 +1713,7 @@ material "tableau_myt/tableau_myt_graff_02"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/tableau_myt_graff_02.jpg" rgb
 		}
 	}
@@ -1724,7 +1724,7 @@ material "tableau_myt/tableau_myt_graff_03"
 
 	pass
 	{
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1733,7 +1733,7 @@ material "tableau_myt/tableau_myt_graff_03"
 
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/tableau_myt_graff_03.jpg" rgb
 		}
 	}
@@ -1745,7 +1745,7 @@ material "tabouret_bar/cuir"
 	pass
 	{
 		albedo 0.0 0.0 0.0
-		metallic 0.0
+		metalness 0.0
 		edge_width 1.0
 		edge_normal_factor 1.0
 		smooth_band_width 4.0
@@ -1765,7 +1765,7 @@ material "tabouret_bar/cuir"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRMR/leather-normal.png"
 		}
 	}
@@ -1777,7 +1777,7 @@ material "tabouret_bar/metal"
 	pass
 	{
 		albedo 0.196078 0.196078 0.196078 0.00392157
-		metallic 1.0
+		metalness 1.0
 		roughness 0.1
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1792,7 +1792,7 @@ material "tv_bar/ecran"
 	pass
 	{
 		albedo 0.000000 0.000000 0.000000 0.00392157
-		metallic 0.360000
+		metalness 0.360000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0
@@ -1807,7 +1807,7 @@ material "tv_bar/plasma"
 	pass
 	{
 		albedo 0.156863 0.156863 0.156863 0.00392157
-		metallic 0.000000
+		metalness 0.000000
 		roughness 0.5
 		edge_width 1.0
 		edge_normal_factor 1.0

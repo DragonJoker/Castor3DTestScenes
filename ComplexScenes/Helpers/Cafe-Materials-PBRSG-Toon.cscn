@@ -5,7 +5,7 @@ material "DefaultMaterial"
 
 	pass
 	{
-		diffuse 0.600000 0.600000 0.600000 0.00392157
+		albedo 0.600000 0.600000 0.600000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
 		glossiness 0.5
 		edge_colour 0.0 0.0 0.0 0.2
@@ -28,13 +28,13 @@ material "barriere_bar/barriere_bar"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/barriere_metal.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/barriere_metal.jpg" rgb
 		}
 	}
@@ -55,7 +55,7 @@ material "billard/bleu"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/billard_bleu.jpg" rgb
 		}
 	}
@@ -66,7 +66,7 @@ material "billard/bois"
 
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
+		albedo 0.588000 0.588000 0.588000 0.00392157
 		specular 0.189000 0.189000 0.189000 0.00392157
 		glossiness 0.5
 		edge_width 1.0
@@ -77,7 +77,7 @@ material "billard/bois"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/billard_bois.jpg" rgb
 		}
 	}
@@ -97,13 +97,13 @@ material "billard/dorure"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/billard_dorure.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/billard_dorure.jpg" rgb
 		}
 	}
@@ -114,7 +114,7 @@ material "billard/light"
 
 	pass
 	{
-		diffuse 0 0 0
+		albedo 0 0 0
 		specular 0.000000 0.000000 0.000000 0.00392157
 		glossiness 0.5
 		edge_width 1.0
@@ -126,13 +126,13 @@ material "billard/light"
 
 		// texture_unit
 		// {
-			// channel diffuse
+			// albedo_mask 0x00FFFFFF
 			// image "Textures/CafePBRSG/billard_light.png" rgb
 		// }
 
 		// texture_unit
 		// {
-			// channel emissive
+			// emissive_mask 0x00FFFFFF
 			// image "Textures/CafePBRSG/billard_light.png" rgb
 		// }
 
@@ -149,7 +149,7 @@ material "billard/noir"
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000 0.00392157
+		albedo 1.00000 1.00000 1.00000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
 		glossiness 0.5
 		edge_width 1.0
@@ -165,7 +165,7 @@ material "billard/queue"
 
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
+		albedo 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
 		glossiness 0.5
 		edge_width 1.0
@@ -176,7 +176,7 @@ material "billard/queue"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/billard_queue.jpg" rgb
 		}
 	}
@@ -187,7 +187,7 @@ material "billard/tapis"
 
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
+		albedo 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
 		glossiness 0.5
 		edge_width 1.0
@@ -198,7 +198,7 @@ material "billard/tapis"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/billard_tapis.jpg" rgb
 		}
 	}
@@ -220,13 +220,13 @@ material "cafe/cafe_aqua_coffre"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_coffre.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_coffre.jpg" rgb
 		}
 	}
@@ -248,13 +248,13 @@ material "cafe/cafe_aqua_coquillage_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_coquillage_01.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_coquillage_01.jpg" rgb
 		}
 	}
@@ -276,13 +276,13 @@ material "cafe/cafe_aqua_coquillage_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_coquillage_02.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_coquillage_02.jpg" rgb
 		}
 	}
@@ -304,13 +304,13 @@ material "cafe/cafe_aqua_fond"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_fond.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_fond.jpg" rgb
 		}
 	}
@@ -332,13 +332,13 @@ material "cafe/cafe_aqua_pierre_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_pierre_01.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_pierre_01.jpg" rgb
 		}
 	}
@@ -360,13 +360,13 @@ material "cafe/cafe_aqua_pierre_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_pierre_02.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_pierre_02.jpg" rgb
 		}
 	}
@@ -388,13 +388,13 @@ material "cafe/cafe_aqua_pierre_03"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_pierre_03.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_pierre_03.jpg" rgb
 		}
 	}
@@ -416,13 +416,13 @@ material "cafe/cafe_aqua_plafond"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_plafond.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_plafond.jpg" rgb
 		}
 	}
@@ -445,13 +445,13 @@ material "cafe/cafe_aqua_plante_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_plante_01.png" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_plante_01.png" rgb
 		}
 
@@ -480,13 +480,13 @@ material "cafe/cafe_aqua_plante_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_plante_02.png" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_plante_02.png" rgb
 		}
 
@@ -515,13 +515,13 @@ material "cafe/cafe_aqua_plante_03"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_plante_03.png" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_plante_03.png" rgb
 		}
 
@@ -549,13 +549,13 @@ material "cafe/cafe_aqua_sol_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_sol_01.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_sol_01.jpg" rgb
 		}
 	}
@@ -577,13 +577,13 @@ material "cafe/cafe_aqua_sol_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_sol_02.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_sol_02.jpg" rgb
 		}
 	}
@@ -605,13 +605,13 @@ material "cafe/cafe_aqua_tube"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_tube.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_aqua_tube.jpg" rgb
 		}
 	}
@@ -631,13 +631,13 @@ material "cafe/cafe_bar_alu"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_bar_alu.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_bar_alu.jpg" rgb
 		}
 	}
@@ -658,7 +658,7 @@ material "cafe/cafe_bar_gris"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_bar_gris.jpg" rgb
 		}
 	}
@@ -679,7 +679,7 @@ material "cafe/cafe_bar_light"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_bar_light.jpg" rgb
 		}
 	}
@@ -700,7 +700,7 @@ material "cafe/cafe_bar_marbre"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_bar_marbre.jpg" rgb
 		}
 	}
@@ -721,7 +721,7 @@ material "cafe/cafe_bois"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_bois.jpg" rgb
 		}
 	}
@@ -742,7 +742,7 @@ material "cafe/cafe_bouteilles_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_bouteilles_01.jpg" rgb
 		}
 	}
@@ -763,7 +763,7 @@ material "cafe/cafe_bouteilles_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_bouteilles_02.jpg" rgb
 		}
 	}
@@ -784,7 +784,7 @@ material "cafe/cafe_bouteilles_03"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_bouteilles_03.jpg" rgb
 		}
 	}
@@ -805,7 +805,7 @@ material "cafe/cafe_bouteilles_04"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_bouteilles_04.jpg" rgb
 		}
 	}
@@ -826,19 +826,19 @@ material "cafe/cafe_carelage"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_carelage.jpg" rgb
 		}
 
 		// texture_unit
 		// {
-			// channel normal
+			// normal_mask 0x00FFFFFF
 			// image "Textures/CafePBRSG/cafe_carelage-normal.jpg" rgb
 		// }
 
 		texture_unit
 		{
-			channel glossiness
+			glossiness_mask 0x00FF0000
 			image "Textures/CafePBRSG/cafe_carelage-glossiness.jpg" rgb
 		}
 	}
@@ -849,7 +849,7 @@ material "cafe/cafe_chrome"
 
 	pass
 	{
-		diffuse 0.337255 0.337255 0.337255 0.00392157
+		albedo 0.337255 0.337255 0.337255 0.00392157
 		specular 0.603000 0.603000 0.603000 0.00392157
 		glossiness 0.5
 		edge_width 1.0
@@ -875,7 +875,7 @@ material "cafe/cafe_deco_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_deco_01.jpg" rgb
 		}
 	}
@@ -896,7 +896,7 @@ material "cafe/cafe_deco_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_deco_02.jpg" rgb
 		}
 	}
@@ -917,7 +917,7 @@ material "cafe/cafe_deco_03"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_deco_03.jpg" rgb
 		}
 	}
@@ -938,7 +938,7 @@ material "cafe/cafe_deco_04"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_deco_04.jpg" rgb
 		}
 	}
@@ -959,7 +959,7 @@ material "cafe/cafe_entree"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/magasins_vitrine_bar.jpg" rgb
 		}
 	}
@@ -981,13 +981,13 @@ material "cafe/cafe_exit"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_exit.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_exit.jpg" rgb
 		}
 	}
@@ -1008,13 +1008,13 @@ material "cafe/cafe_frigo_bar"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_frigo_bar.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_frigo_bar.jpg" rgb
 		}
 	}
@@ -1035,7 +1035,7 @@ material "cafe/cafe_grille_bar"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_grille_bar.jpg" rgb
 		}
 	}
@@ -1056,7 +1056,7 @@ material "cafe/cafe_grille_bar_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_grille_bar_02.jpg" rgb
 		}
 	}
@@ -1077,7 +1077,7 @@ material "cafe/cafe_mur_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_mur_01.jpg" rgb
 		}
 	}
@@ -1099,7 +1099,7 @@ material "cafe/cafe_mur_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_mur_02.jpg" rgb
 		}
 	}
@@ -1121,7 +1121,7 @@ material "cafe/cafe_neon"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_carelage.jpg" rgb
 		}
 	}
@@ -1142,7 +1142,7 @@ material "cafe/cafe_porte"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_porte.jpg" rgb
 		}
 	}
@@ -1163,7 +1163,7 @@ material "cafe/cafe_poteau"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_poteau.jpg" rgb
 		}
 	}
@@ -1184,7 +1184,7 @@ material "cafe/cafe_rideau"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_rideau.jpg" rgb
 		}
 	}
@@ -1205,7 +1205,7 @@ material "cafe/cafe_roof_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_roof_01.jpg" rgb
 		}
 	}
@@ -1226,7 +1226,7 @@ material "cafe/cafe_roof_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_roof_02.jpg" rgb
 		}
 	}
@@ -1247,19 +1247,19 @@ material "cafe/cafe_sol_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_sol_01.jpg" rgb
 		}
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_sol_01-normal.png" rgb
 		}
 
 		texture_unit
 		{
-			channel glossiness
+			glossiness_mask 0x00FF0000
 			image "Textures/CafePBRSG/cafe_sol_01-glossiness.jpg" rgb
 		}
 	}
@@ -1280,7 +1280,7 @@ material "cafe/cafe_vitre"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_vitre.png" rgb
 		}
 
@@ -1307,7 +1307,7 @@ material "canape_demi_cercle/canape_demi_cercle"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/canape_demi_cercle.jpg" rgb
 		}
 	}
@@ -1327,7 +1327,7 @@ material "canape_triple/canape_triple"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/canape_bar.jpg" rgb
 		}
 
@@ -1339,13 +1339,13 @@ material "canape_triple/canape_triple"
 
 		texture_unit
 		{
-			channel glossiness
+			glossiness_mask 0x00FF0000
 			image "Textures/CafePBRSG/cuir-glossiness.png" rgb
 		}
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cuir-normal.png" rgb
 		}
 	}
@@ -1365,7 +1365,7 @@ material "fauteuil/gros_fauteuil_bar"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/canape_bar.jpg" rgb
 		}
 
@@ -1377,13 +1377,13 @@ material "fauteuil/gros_fauteuil_bar"
 
 		texture_unit
 		{
-			channel glossiness
+			glossiness_mask 0x00FF0000
 			image "Textures/CafePBRSG/cuir-glossiness.png" rgb
 		}
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cuir-normal.png" rgb
 		}
 	}
@@ -1405,7 +1405,7 @@ material "plante_01/plante_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/plante_01.png" rgb
 		}
 
@@ -1432,7 +1432,7 @@ material "plante_01/plante_pot"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/plante_pot.jpg" rgb
 		}
 	}
@@ -1454,7 +1454,7 @@ material "plante_02/plante_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/plante_02.png" rgb
 		}
 
@@ -1481,7 +1481,7 @@ material "plante_02/plante_pot"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/plante_pot.jpg" rgb
 		}
 	}
@@ -1503,7 +1503,7 @@ material "plante_03/plante_03"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/plante_03.png" rgb
 		}
 
@@ -1530,7 +1530,7 @@ material "plante_03/plante_pot"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/plante_pot.jpg" rgb
 		}
 	}
@@ -1552,7 +1552,7 @@ material "plante_05/plante_05"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/plante_05.png" rgb
 		}
 
@@ -1579,7 +1579,7 @@ material "plante_05/plante_pot"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/plante_pot.jpg" rgb
 		}
 	}
@@ -1600,7 +1600,7 @@ material "pouf/pouf"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/pouf.jpg" rgb
 		}
 
@@ -1612,13 +1612,13 @@ material "pouf/pouf"
 
 		texture_unit
 		{
-			channel glossiness
+			glossiness_mask 0x00FF0000
 			image "Textures/CafePBRSG/cuir-glossiness.png" rgb
 		}
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cuir-normal.png" rgb
 		}
 	}
@@ -1629,7 +1629,7 @@ material "table_bar/cuivre"
 
 	pass
 	{
-		diffuse 0.984314 0.647059 0.545098
+		albedo 0.984314 0.647059 0.545098
 		specular 0.984314 0.647059 0.545098
 		glossiness 0.9
 		edge_width 1.0
@@ -1645,7 +1645,7 @@ material "table_bar/laque"
 
 	pass
 	{
-		diffuse 0.000000 0.000000 0.000000
+		albedo 0.000000 0.000000 0.000000
 		specular 0.1 0.1 0.1
 		glossiness 0.8
 		edge_width 1.0
@@ -1661,7 +1661,7 @@ material "table_basse/table_basse_cuivre"
 
 	pass
 	{
-		diffuse 0.984314 0.647059 0.545098
+		albedo 0.984314 0.647059 0.545098
 		specular 0.984314 0.647059 0.545098
 		glossiness 0.9
 		edge_width 1.0
@@ -1677,7 +1677,7 @@ material "table_basse/table_basse_laque"
 
 	pass
 	{
-		diffuse 0.000000 0.000000 0.000000
+		albedo 0.000000 0.000000 0.000000
 		specular 0.1 0.1 0.1
 		glossiness 0.8
 		edge_width 1.0
@@ -1703,7 +1703,7 @@ material "table_verre/table_bar_fer_forge"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/table_bar_fer_forge.jpg" rgb
 		}
 	}
@@ -1724,7 +1724,7 @@ material "table_verre/table_bar_verre"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/table_bar_verre.png" rgb
 		}
 
@@ -1751,7 +1751,7 @@ material "tableau_myt/tableau_myt_graff_01"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/tableau_myt_graff_01.jpg" rgb
 		}
 	}
@@ -1772,7 +1772,7 @@ material "tableau_myt/tableau_myt_graff_02"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/tableau_myt_graff_02.jpg" rgb
 		}
 	}
@@ -1793,7 +1793,7 @@ material "tableau_myt/tableau_myt_graff_03"
 
 		texture_unit
 		{
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/tableau_myt_graff_03.jpg" rgb
 		}
 	}
@@ -1809,7 +1809,7 @@ material "tabouret_bar/cuir"
 		edge_normal_factor 1.0
 		edge_colour 0.0 0.0 0.0 0.6
 		smooth_band_width 4.0
-		diffuse 0.0 0.0 0.0
+		albedo 0.0 0.0 0.0
 		two_sided true
 
 		texture_unit
@@ -1820,19 +1820,19 @@ material "tabouret_bar/cuir"
 
 		texture_unit
 		{
-			channel glossiness
+			glossiness_mask 0x00FF0000
 			image "Textures/CafePBRSG/leather-glossiness.png"
 		}
 
 		texture_unit
 		{
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/leather-specular.png"
 		}
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/leather-normal.png"
 		}
 	}
@@ -1843,7 +1843,7 @@ material "tabouret_bar/metal"
 
 	pass
 	{
-		diffuse 0.196078 0.196078 0.196078 0.00392157
+		albedo 0.196078 0.196078 0.196078 0.00392157
 		specular 0.196078 0.196078 0.196078 0.00392157
 		glossiness 0.9
 		edge_width 1.0
@@ -1859,7 +1859,7 @@ material "tv_bar/ecran"
 
 	pass
 	{
-		diffuse 0.000000 0.000000 0.000000 0.00392157
+		albedo 0.000000 0.000000 0.000000 0.00392157
 		specular 0.360000 0.360000 0.360000 0.00392157
 		glossiness 0.5
 		edge_width 1.0
@@ -1875,7 +1875,7 @@ material "tv_bar/plasma"
 
 	pass
 	{
-		diffuse 0.156863 0.156863 0.156863 0.00392157
+		albedo 0.156863 0.156863 0.156863 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
 		glossiness 0.5
 		edge_width 1.0

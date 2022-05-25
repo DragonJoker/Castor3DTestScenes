@@ -1,5 +1,5 @@
 // Global configuration
-materials specular_glossiness
+materials pbr
 max_image_size 512
 
 scene "SanMiguel"

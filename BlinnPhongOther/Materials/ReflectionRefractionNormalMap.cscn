@@ -39,7 +39,7 @@ material "MatBody"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/body-normal.jpg" rgb
 			sampler "Trilinear"
@@ -63,7 +63,7 @@ material "MatHead"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/head-normal.jpg" rgb
 			sampler "Trilinear"
@@ -112,7 +112,7 @@ material "dx11Shader6"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/head-normal.jpg" rgb
 			sampler "Trilinear"

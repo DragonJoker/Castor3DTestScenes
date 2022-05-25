@@ -1,5 +1,5 @@
 // Global configuration
-materials toon_metallic_roughness
+materials toon_pbr
 
 scene "Pufi"
 {

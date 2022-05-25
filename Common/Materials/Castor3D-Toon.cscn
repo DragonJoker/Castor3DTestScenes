@@ -23,7 +23,7 @@ material "Pufi"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 1.00000
-		metallic 0.00000
+		metalness 0.00000
 		two_sided false
 		smooth_band_width 4.0
 		edge_width 1.0

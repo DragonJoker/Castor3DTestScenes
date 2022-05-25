@@ -21,8 +21,8 @@ scene "MyScene"
 	{
 		pass
 		{
-			diffuse 0.640000 0.406873 0.176735 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
+			diffuse 0.640000 0.406873 0.176735
+			specular 0.000000 0.000000 0.000000
 			ambient 0
 			emissive 0
 			shininess 9.60784
@@ -39,13 +39,12 @@ scene "MyScene"
 			texture_unit
 			{
 				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss.png"
-				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
 			texture_unit
 			{
-				channel normal
+				normal_mask 0x00FFFFFF
 				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Normal.png"
 			}
 		}
@@ -54,8 +53,8 @@ scene "MyScene"
 	{
 		pass
 		{
-			diffuse 0.400000 0.400000 0.400000 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
+			diffuse 0.400000 0.400000 0.400000
+			specular 0.000000 0.000000 0.000000
 			ambient 0
 			emissive 0
 			shininess 9.41177
@@ -72,13 +71,12 @@ scene "MyScene"
 			texture_unit
 			{
 				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss_0.png"
-				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
 			texture_unit
 			{
-				channel normal
+				normal_mask 0x00FFFFFF
 				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Normal_0.png"
 			}
 		}
@@ -124,8 +122,8 @@ scene "MyScene"
 	{
 		pass
 		{
-			diffuse 0.640000 0.406873 0.176735 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
+			diffuse 0.640000 0.406873 0.176735
+			specular 0.000000 0.000000 0.000000
 			ambient 0
 			emissive 0
 			shininess 9.60784
@@ -142,13 +140,12 @@ scene "MyScene"
 			texture_unit
 			{
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss.png"
-				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
 			texture_unit
 			{
-				channel normal
+				normal_mask 0x00FFFFFF
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_Normal.png"
 			}
 		}
@@ -157,8 +154,8 @@ scene "MyScene"
 	{
 		pass
 		{
-			diffuse 0.400000 0.400000 0.400000 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
+			diffuse 0.400000 0.400000 0.400000
+			specular 0.000000 0.000000 0.000000
 			ambient 0
 			emissive 0
 			shininess 9.41177
@@ -175,13 +172,12 @@ scene "MyScene"
 			texture_unit
 			{
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss_0.png"
-				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
 			texture_unit
 			{
-				channel normal
+				normal_mask 0x00FFFFFF
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_Normal_0.png"
 			}
 		}
@@ -227,8 +223,8 @@ scene "MyScene"
 	{
 		pass
 		{
-			diffuse 0.640000 0.406873 0.176735 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
+			diffuse 0.640000 0.406873 0.176735
+			specular 0.000000 0.000000 0.000000
 			ambient 0
 			emissive 0
 			shininess 9.60784
@@ -245,13 +241,12 @@ scene "MyScene"
 			texture_unit
 			{
 				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss_0.png"
-				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
 			texture_unit
 			{
-				channel normal
+				normal_mask 0x00FFFFFF
 				image "Textures/CastorTD/short_range_tower_tower1_quick_short_Normal_0.png"
 			}
 		}
@@ -260,8 +255,8 @@ scene "MyScene"
 	{
 		pass
 		{
-			diffuse 0.400000 0.400000 0.400000 0.00392157
-			specular 0.000000 0.000000 0.000000 0.00392157
+			diffuse 0.400000 0.400000 0.400000
+			specular 0.000000 0.000000 0.000000
 			ambient 0
 			emissive 0
 			shininess 9.41177
@@ -278,13 +273,12 @@ scene "MyScene"
 			texture_unit
 			{
 				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss.png"
-				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
 			texture_unit
 			{
-				channel normal
+				normal_mask 0x00FFFFFF
 				image "Textures/CastorTD/short_range_tower_tower1_quick_short_Normal.png"
 			}
 		}

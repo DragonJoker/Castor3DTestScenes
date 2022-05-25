@@ -20,7 +20,7 @@ material "baltard_in_ns/armature"
 	{
 		albedo 0.588235 0.588235 0.588235
 		roughness 0.5
-		metallic 1
+		metalness 1
 		two_sided true
 	}
 }
@@ -184,7 +184,7 @@ material "baltard_in_ns/metal_cable"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.865
-		metallic 1
+		metalness 0.0
 		two_sided true
 
 		texture_unit
@@ -203,7 +203,7 @@ material "baltard_in_ns/metal_spot"
 	{
 		albedo 1.00000 1.00000 1.00000
 		roughness 0.64
-		metallic 1
+		metalness 0.0
 		two_sided true
 
 		texture_unit
@@ -238,7 +238,7 @@ material "baltard_in_ns/ns_bg"
 		texture_unit
 		{
 			levels_count 9
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/ns_bg.jpg"
 			albedo_mask 0x00FFFFFF
@@ -399,7 +399,7 @@ material "pavillon_baltard_in/grilles deco"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
-		metallic 1
+		metalness 1
 		two_sided true
 		alpha_func greater 0.5
 
@@ -430,7 +430,7 @@ material "pavillon_baltard_in/metal_bleu"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
-		metallic 1
+		metalness 1
 		two_sided true
 
 		texture_unit

@@ -33,7 +33,7 @@ material "gob"
 		texture_unit
 		{
 			levels_count 6
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/HellKnight/gob_s.tga" rgb
 			sampler "Trilinear"
 		}
@@ -41,7 +41,7 @@ material "gob"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/HellKnight/gob_local.tga" rgb
 			sampler "Trilinear"
 		}
@@ -68,7 +68,7 @@ material "gob2"
 		texture_unit
 		{
 			levels_count 6
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/HellKnight/gob2_s.tga" rgb
 			sampler "Trilinear"
 		}
@@ -76,7 +76,7 @@ material "gob2"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/HellKnight/gob2_local.tga" rgb
 			sampler "Trilinear"
 		}
@@ -102,7 +102,7 @@ material "hellknight"
 		texture_unit
 		{
 			levels_count 6
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/HellKnight/hellknight_s.tga" rgb
 			sampler "Trilinear"
 		}
@@ -110,7 +110,7 @@ material "hellknight"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/HellKnight/hellknight_local.tga" rgb
 			sampler "Trilinear"
 		}
@@ -135,7 +135,7 @@ material "tongue"
 		texture_unit
 		{
 			levels_count 6
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/HellKnight/tongue_s.tga" rgb
 			sampler "Trilinear"
 		}
@@ -143,7 +143,7 @@ material "tongue"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/HellKnight/tongue_local.tga" rgb
 			sampler "Trilinear"
 		}

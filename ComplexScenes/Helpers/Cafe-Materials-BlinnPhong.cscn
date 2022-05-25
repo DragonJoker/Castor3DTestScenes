@@ -108,7 +108,7 @@ material "billard/light"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/billard_light.png" rgb
 		}
 
@@ -190,7 +190,7 @@ material "cafe/cafe_aqua_coffre"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_coffre.jpg" rgb
 		}
 	}
@@ -215,7 +215,7 @@ material "cafe/cafe_aqua_coquillage_01"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_coquillage_01.jpg" rgb
 		}
 	}
@@ -240,7 +240,7 @@ material "cafe/cafe_aqua_coquillage_02"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_coquillage_02.jpg" rgb
 		}
 	}
@@ -265,7 +265,7 @@ material "cafe/cafe_aqua_fond"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_fond.jpg" rgb
 		}
 	}
@@ -290,7 +290,7 @@ material "cafe/cafe_aqua_pierre_01"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_pierre_01.jpg" rgb
 		}
 	}
@@ -315,7 +315,7 @@ material "cafe/cafe_aqua_pierre_02"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_pierre_02.jpg" rgb
 		}
 	}
@@ -340,7 +340,7 @@ material "cafe/cafe_aqua_pierre_03"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_pierre_03.jpg" rgb
 		}
 	}
@@ -365,7 +365,7 @@ material "cafe/cafe_aqua_plafond"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_plafond.jpg" rgb
 		}
 	}
@@ -391,7 +391,7 @@ material "cafe/cafe_aqua_plante_01"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_plante_01.png" rgb
 		}
 
@@ -423,7 +423,7 @@ material "cafe/cafe_aqua_plante_02"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_plante_02.png" rgb
 		}
 
@@ -455,7 +455,7 @@ material "cafe/cafe_aqua_plante_03"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_plante_03.png" rgb
 		}
 
@@ -486,7 +486,7 @@ material "cafe/cafe_aqua_sol_01"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_sol_01.jpg" rgb
 		}
 	}
@@ -511,7 +511,7 @@ material "cafe/cafe_aqua_sol_02"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_sol_02.jpg" rgb
 		}
 	}
@@ -536,7 +536,7 @@ material "cafe/cafe_aqua_tube"
 
 		texture_unit
 		{
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_aqua_tube.jpg" rgb
 		}
 	}

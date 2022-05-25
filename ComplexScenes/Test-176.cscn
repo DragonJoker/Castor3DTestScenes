@@ -1,5 +1,5 @@
 // Global configuration
-materials metallic_roughness
+materials pbr
 
 scene "Parc"
 {

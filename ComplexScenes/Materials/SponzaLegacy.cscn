@@ -39,7 +39,7 @@ material "Material__25"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Lion_Normal.png" rgb
 		}
 	}
@@ -67,7 +67,7 @@ material "Material__298"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Background_Normal.png" rgb
 		}
 	}
@@ -116,7 +116,7 @@ material "Material__57"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/vase_plant_spec.png" rgb
 		}
 
@@ -124,7 +124,7 @@ material "Material__57"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/VasePlant_Normal.png" rgb
 		}
 	}
@@ -152,7 +152,7 @@ material "arch"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Arch_normal.png" rgb
 		}
 	}
@@ -172,7 +172,7 @@ material "bricks"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/spnza_bricks_a_spec.png" rgb
 		}
 
@@ -188,7 +188,7 @@ material "bricks"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Bricks_a_Normal.png" rgb
 		}
 	}
@@ -216,7 +216,7 @@ material "ceiling"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Ceiling_normal.png" rgb
 		}
 	}
@@ -253,7 +253,7 @@ material "chain"
 		{
 			sampler "Trilinear"
 			levels_count 9
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/ChainTexture_Normal.png" rgb
 		}
 	}
@@ -281,7 +281,7 @@ material "column_a"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Column_a_normal.png" rgb
 		}
 	}
@@ -309,7 +309,7 @@ material "column_b"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Column_b_normal.png" rgb
 		}
 	}
@@ -337,7 +337,7 @@ material "column_c"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/sponza_column_c_bump.png" rgb
 		}
 
@@ -345,7 +345,7 @@ material "column_c"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Column_c_normal.png" rgb
 		}
 	}
@@ -373,7 +373,7 @@ material "details"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Details_normal.png" rgb
 		}
 	}
@@ -401,7 +401,7 @@ material "fabric_a"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Fabric_Red_normal.png" rgb
 		}
 	}
@@ -429,7 +429,7 @@ material "fabric_c"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Curtain_Red_normal.png" rgb
 		}
 	}
@@ -457,7 +457,7 @@ material "fabric_d"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Fabric_Blue_normal.png" rgb
 		}
 	}
@@ -485,7 +485,7 @@ material "fabric_e"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Fabric_Green_normal.png" rgb
 		}
 	}
@@ -513,7 +513,7 @@ material "fabric_f"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Curtain_Green_normal.png" rgb
 		}
 	}
@@ -541,7 +541,7 @@ material "fabric_g"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Curtain_Blue_normal.png" rgb
 		}
 	}
@@ -569,7 +569,7 @@ material "flagpole"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_FlagPole_normal.png" rgb
 		}
 	}
@@ -597,7 +597,7 @@ material "floor"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Floor_normal.png" rgb
 		}
 	}
@@ -634,7 +634,7 @@ material "leaf"
 		{
 			sampler "Trilinear"
 			levels_count 9
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Thorn_normal.png" rgb
 		}
 	}
@@ -662,7 +662,7 @@ material "roof"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Sponza_Roof_normal.png" rgb
 		}
 	}
@@ -690,7 +690,7 @@ material "vase"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/Vase_normal.png" rgb
 		}
 	}
@@ -718,7 +718,7 @@ material "vase_hanging"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/VaseHanging_normal.png" rgb
 		}
 	}
@@ -746,7 +746,7 @@ material "vase_round"
 		{
 			sampler "Trilinear"
 			levels_count 11
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/SponzaLegacy/VaseRound_Normal.png" rgb
 		}
 	}

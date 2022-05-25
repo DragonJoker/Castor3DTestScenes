@@ -16,7 +16,7 @@ material "Clothes"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
+		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
 		specular 0.0 0.0 0.0
 		glossiness 1.0
@@ -26,7 +26,7 @@ material "Clothes"
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/Lightning/clothes_D.tga"
 			sampler	"Trilinear"
 		}
@@ -34,7 +34,7 @@ material "Clothes"
 		texture_unit
 		{
 			levels_count 6
-			channel glossiness
+			glossiness_mask 0x00FF0000
 			image "Textures/Lightning/clothes_G.tga"
 			sampler	"Trilinear"
 		}
@@ -42,7 +42,7 @@ material "Clothes"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/Lightning/clothes_N.tga"
 			sampler	"Trilinear"
 		}
@@ -53,7 +53,7 @@ material "Eye"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
+		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
 		specular 0.0 0.0 0.0
 		glossiness 0.7
@@ -63,7 +63,7 @@ material "Eye"
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/Lightning/eye_D.tga"
 			sampler	"Trilinear"
 		}
@@ -74,7 +74,7 @@ material "Face"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
+		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
 		specular 0.0 0.0 0.0
 		glossiness 0.1
@@ -84,7 +84,7 @@ material "Face"
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/Lightning/face_D.tga"
 			sampler	"Trilinear"
 		}
@@ -92,7 +92,7 @@ material "Face"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/Lightning/face_N.tga"
 			sampler	"Trilinear"
 		}
@@ -103,7 +103,7 @@ material "Hair"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
+		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
 		specular 0.0 0.0 0.0
 		glossiness 0.1
@@ -113,24 +113,9 @@ material "Hair"
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
-			image "Textures/Lightning/hair_D.tga" rgb
-			sampler	"Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel opacity
-			image "Textures/Lightning/hair_D.tga" a
-			sampler	"Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel specular
-			image "Textures/Lightning/hair_S.tga"
+			image "Textures/Lightning/hair_D.tga"
+			albedo_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
 			sampler	"Trilinear"
 		}
 	}
@@ -140,7 +125,7 @@ material "Pendant"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
+		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
 		specular 0.0 0.0 0.0
 		glossiness 0.9
@@ -150,7 +135,7 @@ material "Pendant"
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/Lightning/pendant_D.tga"
 			sampler	"Trilinear"
 		}
@@ -158,7 +143,7 @@ material "Pendant"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/Lightning/pendant_N.tga"
 			sampler	"Trilinear"
 		}
@@ -169,7 +154,8 @@ material "Stuff"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
+		albedo 0.588000 0.588000 0.588000
+		specular 1.000000 1.000000 1.000000
 		emissive 0.0
 		glossiness 0.1
 		two_sided false
@@ -178,7 +164,7 @@ material "Stuff"
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			image "Textures/Lightning/stuff_D.tga"
 			sampler	"Trilinear"
 		}
@@ -186,7 +172,7 @@ material "Stuff"
 		texture_unit
 		{
 			levels_count 6
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/Lightning/stuff_S.tga"
 			sampler	"Trilinear"
 		}
@@ -194,7 +180,7 @@ material "Stuff"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/Lightning/stuff_N.tga"
 			sampler	"Trilinear"
 		}
@@ -205,9 +191,9 @@ material "Weapon"
 {
 	pass
 	{
-		diffuse 0.588000 0.588000 0.588000 0.00392157
+		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
-		specular 0.588000 0.588000 0.588000 0.00392157
+		specular 0.588000 0.588000 0.588000
 		glossiness 0.8
 		two_sided false
 		colour_blend_mode none
@@ -215,40 +201,26 @@ material "Weapon"
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
-			image "Textures/Lightning/weapon_D.png" rgb
+			albedo_mask 0x00FFFFFF
+			image "Textures/Lightning/weapon_D.png"
 			sampler	"Trilinear"
 		}
 
 		texture_unit
 		{
 			levels_count 6
-			channel specular
-			image "Textures/Lightning/weapon_SG.png" rgb
+			image "Textures/Lightning/weapon_SG.png"
+			specular_mask 0x00FFFFFF
+			glossiness_mask 0xFF000000
 			sampler	"Trilinear"
 		}
 
 		texture_unit
 		{
 			levels_count 6
-			channel glossiness
-			image "Textures/Lightning/weapon_SG.png" a
-			sampler	"Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel occlusion
-			image "Textures/Lightning/weapon_N.png" a
-			sampler	"Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel normal
-			image "Textures/Lightning/weapon_N.png" rgb
+			image "Textures/Lightning/weapon_N.png"
+			normal_mask 0x00FFFFFF
+			occlusion_mask 0xFF000000
 			sampler	"Trilinear"
 		}
 	}

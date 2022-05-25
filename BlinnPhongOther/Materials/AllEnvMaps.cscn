@@ -37,7 +37,7 @@ material "ReflMatBody"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/body-normal.jpg" rgb
 			sampler "Trilinear"
@@ -59,7 +59,7 @@ material "ReflMatHead"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/head-normal.jpg" rgb
 			sampler "Trilinear"
@@ -104,7 +104,7 @@ material "ReflDx11Shader6"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/head-normal.jpg" rgb
 			sampler "Trilinear"
@@ -136,7 +136,7 @@ material "RefrMatBody"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/body-normal.jpg" rgb
 			sampler "Trilinear"
@@ -159,7 +159,7 @@ material "RefrMatHead"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/head-normal.jpg" rgb
 			sampler "Trilinear"
@@ -206,7 +206,7 @@ material "RefrDx11Shader6"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/head-normal.jpg" rgb
 			sampler "Trilinear"
@@ -239,7 +239,7 @@ material "ReflRefrMatBody"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/body-normal.jpg" rgb
 			sampler "Trilinear"
@@ -263,7 +263,7 @@ material "ReflRefrMatHead"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/head-normal.jpg" rgb
 			sampler "Trilinear"
@@ -312,7 +312,7 @@ material "ReflRefrDx11Shader6"
 
 		texture_unit
 		{
-			channel normal
+			normal_mask 0x00FFFFFF
 			levels_count 6
 			image "Textures/Nyra/head-normal.jpg" rgb
 			sampler "Trilinear"

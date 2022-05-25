@@ -18,7 +18,7 @@ material "baltard_in_ns/armature"
 {
 	pass
 	{
-		diffuse 0.588235 0.588235 0.588235
+		albedo 0.588235 0.588235 0.588235
 		specular 0.588235 0.588235 0.588235
 		glossiness 0.5
 		two_sided true
@@ -29,7 +29,7 @@ material "baltard_in_ns/baffles"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0
 		two_sided true
@@ -37,7 +37,7 @@ material "baltard_in_ns/baffles"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baffles.jpg" rgb
 		}
@@ -48,7 +48,7 @@ material "baltard_in_ns/bois_ns"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.09
 		two_sided true
@@ -56,7 +56,7 @@ material "baltard_in_ns/bois_ns"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/bois_ns.jpg" rgb
 		}
@@ -67,7 +67,7 @@ material "baltard_in_ns/cube_ns_01"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.765
 		two_sided true
@@ -77,7 +77,7 @@ material "baltard_in_ns/cube_ns_01"
 		texture_unit
 		{
 			levels_count 8
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/cube_ns_01.png" rgb
 		}
@@ -96,7 +96,7 @@ material "baltard_in_ns/cube_ns_02"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.765
 		two_sided true
@@ -106,7 +106,7 @@ material "baltard_in_ns/cube_ns_02"
 		texture_unit
 		{
 			levels_count 8
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/cube_ns_02.png" rgb
 		}
@@ -125,7 +125,7 @@ material "baltard_in_ns/gradin_ns"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.216
 		two_sided true
@@ -133,7 +133,7 @@ material "baltard_in_ns/gradin_ns"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/gradin_ns.jpg" rgb
 		}
@@ -144,7 +144,7 @@ material "baltard_in_ns/light"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.9
 		emissive 10
@@ -153,7 +153,7 @@ material "baltard_in_ns/light"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/spot_light.png" rgb
 		}
@@ -172,7 +172,7 @@ material "baltard_in_ns/lumiere"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0
 		emissive 10
@@ -181,7 +181,7 @@ material "baltard_in_ns/lumiere"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/spot_light.png" rgb
 		}
@@ -200,7 +200,7 @@ material "baltard_in_ns/marche_ns"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.36
 		two_sided true
@@ -208,7 +208,7 @@ material "baltard_in_ns/marche_ns"
 		texture_unit
 		{
 			levels_count 8
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/marche_ns.jpg" rgb
 		}
@@ -219,7 +219,7 @@ material "baltard_in_ns/metal_cable"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
 		glossiness 0.135
 		two_sided true
@@ -227,7 +227,7 @@ material "baltard_in_ns/metal_cable"
 		texture_unit
 		{
 			levels_count 8
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
 		}
@@ -235,7 +235,7 @@ material "baltard_in_ns/metal_cable"
 		texture_unit
 		{
 			levels_count 8
-			channel specular
+			specular_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
 		}
@@ -246,7 +246,7 @@ material "baltard_in_ns/metal_spot"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
 		glossiness 0.36
 		two_sided true
@@ -254,7 +254,7 @@ material "baltard_in_ns/metal_spot"
 		texture_unit
 		{
 			levels_count 8
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
 		}
@@ -262,7 +262,7 @@ material "baltard_in_ns/metal_spot"
 		texture_unit
 		{
 			levels_count 8
-			channel specular
+			specular_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/spot_simple_metal.jpg" rgb
 		}
@@ -273,7 +273,7 @@ material "baltard_in_ns/noir_laque"
 {
 	pass
 	{
-		diffuse 0.0470588 0.0470588 0.0470588
+		albedo 0.0470588 0.0470588 0.0470588
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.88
 		two_sided true
@@ -284,7 +284,7 @@ material "baltard_in_ns/ns_bg"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.09
 		emissive 0.866025
@@ -293,7 +293,7 @@ material "baltard_in_ns/ns_bg"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/ns_bg.jpg" rgb
 		}
@@ -301,7 +301,7 @@ material "baltard_in_ns/ns_bg"
 		texture_unit
 		{
 			levels_count 9
-			channel emissive
+			emissive_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/ns_bg.jpg" rgb
 		}
@@ -312,7 +312,7 @@ material "baltard_in_ns/piste_ns_01"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.2
 		two_sided true
@@ -320,7 +320,7 @@ material "baltard_in_ns/piste_ns_01"
 		texture_unit
 		{
 			levels_count 8
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/piste_ns.jpg" rgb
 		}
@@ -331,7 +331,7 @@ material "baltard_in_ns/piste_ns_02"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.3
 		two_sided true
@@ -339,7 +339,7 @@ material "baltard_in_ns/piste_ns_02"
 		texture_unit
 		{
 			levels_count 8
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/piste_ns_02.jpg" rgb
 		}
@@ -350,7 +350,7 @@ material "baltard_in_ns/piste_ns_03"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.1
 		two_sided true
@@ -358,7 +358,7 @@ material "baltard_in_ns/piste_ns_03"
 		texture_unit
 		{
 			levels_count 8
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/piste_ns.jpg" rgb
 		}
@@ -369,7 +369,7 @@ material "baltard_in_ns/screen_ns_04"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.75
 		two_sided true
@@ -381,7 +381,7 @@ material "baltard_in_ns/verre_baltard_in"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.297
 		two_sided true
@@ -390,7 +390,7 @@ material "baltard_in_ns/verre_baltard_in"
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/barriere_verre.png" rgb
 		}
@@ -409,7 +409,7 @@ material "pavillon_baltard_in/black"
 {
 	pass
 	{
-		diffuse 0.000000 0.000000 0.000000
+		albedo 0.000000 0.000000 0.000000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0
 		two_sided true
@@ -420,7 +420,7 @@ material "pavillon_baltard_in/bord_toit"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0
 		two_sided true
@@ -428,7 +428,7 @@ material "pavillon_baltard_in/bord_toit"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baltar_int_bois.jpg" rgb
 		}
@@ -439,7 +439,7 @@ material "pavillon_baltard_in/bronze"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0
 		two_sided true
@@ -447,7 +447,7 @@ material "pavillon_baltard_in/bronze"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baltar_bronze.jpg" rgb
 		}
@@ -458,7 +458,7 @@ material "pavillon_baltard_in/ciment"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0
 		two_sided true
@@ -466,7 +466,7 @@ material "pavillon_baltard_in/ciment"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baltar_int_ciment.jpg" rgb
 		}
@@ -477,7 +477,7 @@ material "pavillon_baltard_in/grilles deco"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
 		glossiness 0
 		two_sided true
@@ -486,7 +486,7 @@ material "pavillon_baltard_in/grilles deco"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baltar_int_grille.png" rgb
 		}
@@ -494,7 +494,7 @@ material "pavillon_baltard_in/grilles deco"
 		texture_unit
 		{
 			levels_count 9
-			channel specular
+			specular_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baltar_int_grille.png" rgb
 		}
@@ -513,7 +513,7 @@ material "pavillon_baltard_in/light"
 {
 	pass
 	{
-		diffuse 1.00000 0.992157 0.772549
+		albedo 1.00000 0.992157 0.772549
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.9
 		emissive 10
@@ -525,7 +525,7 @@ material "pavillon_baltard_in/metal_bleu"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
 		glossiness 0
 		two_sided true
@@ -533,7 +533,7 @@ material "pavillon_baltard_in/metal_bleu"
 		texture_unit
 		{
 			levels_count 9
-			channel specular
+			specular_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baltar_metal_bleu.jpg" rgb
 		}
@@ -541,7 +541,7 @@ material "pavillon_baltard_in/metal_bleu"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baltar_metal_bleu.jpg" rgb
 		}
@@ -552,7 +552,7 @@ material "pavillon_baltard_in/motifs"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0
 		two_sided true
@@ -560,7 +560,7 @@ material "pavillon_baltard_in/motifs"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baltar_int_sol.jpg" rgb
 		}
@@ -571,7 +571,7 @@ material "pavillon_baltard_in/toit"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.288
 		two_sided true
@@ -579,7 +579,7 @@ material "pavillon_baltard_in/toit"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baltar_int_mur.jpg" rgb
 		}
@@ -590,7 +590,7 @@ material "pavillon_baltard_in/vitres"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.27
 		alpha_blend_mode interpolative
@@ -598,7 +598,7 @@ material "pavillon_baltard_in/vitres"
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/baltar_int_vitre.png" rgb
 		}
@@ -617,7 +617,7 @@ material "plasma/ecran"
 {
 	pass
 	{
-		diffuse 0.0392157 0.0392157 0.0392157
+		albedo 0.0392157 0.0392157 0.0392157
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.135
 		two_sided true
@@ -628,7 +628,7 @@ material "plasma/plasma"
 {
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
+		albedo 1.00000 1.00000 1.00000
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.054
 		two_sided true
@@ -636,7 +636,7 @@ material "plasma/plasma"
 		texture_unit
 		{
 			levels_count 9
-			channel diffuse
+			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/plasma.jpg" rgb
 		}

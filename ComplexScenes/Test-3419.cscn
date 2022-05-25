@@ -1,6 +1,6 @@
 // Global configuration
 // debug_overlays true
-materials toon_specular_glossiness
+materials toon_pbr
 
 scene "Cafe"
 {

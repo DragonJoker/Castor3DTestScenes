@@ -42,7 +42,7 @@ material "Clothes"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/Lightning/clothes_N.tga"
 			sampler	"Trilinear"
 		}
@@ -92,7 +92,7 @@ material "Face"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/Lightning/face_N.tga"
 			sampler	"Trilinear"
 		}
@@ -151,7 +151,7 @@ material "Pendant"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/Lightning/pendant_N.tga"
 			sampler	"Trilinear"
 		}
@@ -179,7 +179,7 @@ material "Stuff"
 		texture_unit
 		{
 			levels_count 6
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/Lightning/stuff_S.tga"
 			sampler	"Trilinear"
 		}
@@ -187,7 +187,7 @@ material "Stuff"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/Lightning/stuff_N.tga"
 			sampler	"Trilinear"
 		}
@@ -212,7 +212,7 @@ material "Weapon"
 		texture_unit
 		{
 			levels_count 6
-			channel specular
+			specular_mask 0x00FFFFFF
 			image "Textures/Lightning/weapon_SG.png" rgb
 			sampler	"Trilinear"
 		}
@@ -236,7 +236,7 @@ material "Weapon"
 		texture_unit
 		{
 			levels_count 6
-			channel normal
+			normal_mask 0x00FFFFFF
 			image "Textures/Lightning/weapon_N.png" rgb
 			sampler	"Trilinear"
 		}

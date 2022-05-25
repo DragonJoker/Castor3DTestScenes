@@ -1,4 +1,4 @@
-materials metallic_roughness
+materials pbr
 
 scene "Scene"
 {
@@ -26,20 +26,20 @@ scene "Scene"
 		{
 			albedo 1.0 1.0 1.0
 			emissive 0.0
-			metallic 0.0
+			metalness 0.0
 			roughness 0.8
 
 			texture_unit
 			{
 				image "Textures/Bricks/Diffuse.jpg"
-				channel albedo
+				albedo_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
 				image "Textures/Bricks/Normal.jpg"
-				channel normal
+				normal_mask 0x00FFFFFF
 				sampler	"Linear"
 			}
 
@@ -76,7 +76,7 @@ scene "Scene"
 			albedo 0.465 0.797 0.991
 			emissive 0.0
 			transmission 0.003 0.599 0.812
-			metallic 0.0
+			metalness 0.0
 			roughness 0.08
 		}
 	}

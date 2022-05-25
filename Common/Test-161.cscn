@@ -1,6 +1,6 @@
 // materials phong
-materials specular_glossiness
-// materials metallic_roughness
+materials pbr
+// materials pbr
 
 scene "Scene"
 {

@@ -14,7 +14,7 @@ material "Titre"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/titre.png" rgb
 		}
 		texture_unit
@@ -31,7 +31,7 @@ material "BasDroite"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/bord_droit.png" rgb
 		}
 		texture_unit
@@ -48,7 +48,7 @@ material "BaseMenu"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/bord_gauche.png" rgb
 		}
 		texture_unit
@@ -65,7 +65,7 @@ material "MenuInGame"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/menu.png" rgb
 		}
 		texture_unit
@@ -82,7 +82,7 @@ material "MenuInGameMO"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/menumo.png" rgb
 		}
 		texture_unit
@@ -99,7 +99,7 @@ material "Retour"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/retour.png" rgb
 		}
 		texture_unit
@@ -116,7 +116,7 @@ material "RetourMO"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/retourmo.png" rgb
 		}
 		texture_unit
@@ -134,7 +134,7 @@ material "Frame"
 		albedo 1.0 1.0 0.0
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/frame.png" rgb
 		}
 		texture_unit
@@ -152,7 +152,7 @@ material "FrameMO"
 		albedo 1.0 0.0 1.0
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/frame.png" rgb
 		}
 		texture_unit
@@ -170,7 +170,7 @@ material "FrameMP"
 		albedo 0.0 1.0 1.0
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/frame.png" rgb
 		}
 		texture_unit
@@ -188,7 +188,7 @@ material "FrameCenter"
 		albedo 1.0 1.0 0.0
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/frame_center.png" rgb
 		}
 		texture_unit
@@ -206,7 +206,7 @@ material "FrameCenterMO"
 		albedo 1.0 0.0 1.0
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/frame_center.png" rgb
 		}
 		texture_unit
@@ -224,7 +224,7 @@ material "FrameCenterMP"
 		albedo 0.0 1.0 1.0
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/frame_center.png" rgb
 		}
 		texture_unit
@@ -241,7 +241,7 @@ material "Commencer"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/commencer.png" rgb
 		}
 		texture_unit
@@ -258,7 +258,7 @@ material "CommencerMO"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/commencermo.png" rgb
 		}
 		texture_unit
@@ -275,7 +275,7 @@ material "Recommencer"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/recommencer.png" rgb
 		}
 		texture_unit
@@ -292,7 +292,7 @@ material "RecommencerMO"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/recommencermo.png" rgb
 		}
 		texture_unit
@@ -309,7 +309,7 @@ material "Continuer"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/continuer.png" rgb
 		}
 		texture_unit
@@ -326,7 +326,7 @@ material "ContinuerMO"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/continuermo.png" rgb
 		}
 		texture_unit
@@ -343,7 +343,7 @@ material "Regles"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/regles.png" rgb
 		}
 		texture_unit
@@ -360,7 +360,7 @@ material "ReglesMO"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/reglesmo.png" rgb
 		}
 		texture_unit
@@ -377,7 +377,7 @@ material "Gagne"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/gagne.png" rgb
 		}
 		texture_unit
@@ -394,7 +394,7 @@ material "Perdu"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/perdu.png" rgb
 		}
 		texture_unit
@@ -411,7 +411,7 @@ material "NoBorderMenu"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/nobordermenu.png" rgb
 		}
 		texture_unit
@@ -428,7 +428,7 @@ material "NoBorderMenuCenter"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/nobordermenucenter.png" rgb
 		}
 		texture_unit
@@ -445,7 +445,7 @@ material "HorizSeparator"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/horiz_separator.png" rgb
 		}
 		texture_unit
@@ -462,7 +462,7 @@ material "VerticSeparator"
 	{
 		texture_unit
 		{
-			channel albedo
+			albedo_mask 0x00FFFFFF
 			image "Textures/Gui/vertic_separator.png" rgb
 		}
 		texture_unit

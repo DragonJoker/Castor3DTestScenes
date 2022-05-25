@@ -1,4 +1,4 @@
-materials metallic_roughness
+materials pbr
 
 scene "Scene"
 {
@@ -27,42 +27,42 @@ scene "Scene"
 		pass
 		{
 			albedo 0.75164 0.75164 0.75164 1.0
-			metallic 0.628281
+			metalness 0.628281
 			roughness 0.4
 			parallax_occlusion one
 			refraction_ratio 0.92
 
 			texture_unit
 			{
-				channel albedo
+				albedo_mask 0x00ffffff
 				sampler "Linear"
 				image "Textures/Cube/albedo.jpg"
 			}
 
 			texture_unit
 			{
-				channel roughness
+				roughness_mask 0x00ff0000
 				sampler "Linear"
 				image "Textures/Cube/roughness.jpg"
 			}
 
 			texture_unit
 			{
-				channel metallic
+				metalness_mask 0x00ff0000
 				sampler "Linear"
-				image "Textures/Cube/metallic.jpg"
+				image "Textures/Cube/metalness.jpg"
 			}
 
 			texture_unit
 			{
-				channel normal
+				normal_mask 0x00ffffff
 				sampler "Linear"
 				image "Textures/Cube/normal.jpg"
 			}
 
 			texture_unit
 			{
-				channel height
+				height_mask 0x00ff0000
 				sampler "Linear"
 				image "Textures/Cube/height.jpg"
 			}
@@ -72,13 +72,13 @@ scene "Scene"
 		}
 	}
 
-	scene_node "SunLightNode1"
+	scene_node "LightNode"
 	{
 		orientation 1 0 0 45
 	}
 	light "SunLight1"
 	{
-		parent "SunLightNode1"
+		parent "LightNode"
 		type directional
 		colour 1.0 1.0 1.0
 		intensity 0.8 1.0
@@ -88,20 +88,21 @@ scene "Scene"
 	{
 		position 0.0 0.0 0.0
 	}
+	mesh "Mesh"
+	{
+		type "cube" -width=50 -height=50 depth=50
+		default_material "Textured"
+	}
 	object "FinalPrimitive"
 	{
 		parent "FinalNode"
 		mesh "Mesh"
-		{
-			type "cube" -width=50 -height=50 depth=50
-		}
-		material "Textured"
 	}
 
 	scene_node "MainCameraNode"
 	{
 		position 87.3926 -3.91655 -82.7833
-		orientation -0.0337855 -0.999314 -0.0151473 48.3264
+		orientation 0.0 1.0 0.0 315.0
 	}
 	camera "MainCamera"
 	{
@@ -112,14 +113,16 @@ scene "Scene"
 			type perspective
 			fov_y 45.0
 			aspect_ratio 1.333
-			near 0.1
-			far 20000.0
+			near 1.0
+			far 2000.0
 		}
 	}
 }
 
 window "Window"
 {
+	fullscreen false
+	vsync false
 	render_target
 	{
 		format argb32
@@ -127,7 +130,5 @@ window "Window"
 		scene "Scene"
 		camera "MainCamera"
 	}
-	fullscreen false
-	vsync false
 }
 

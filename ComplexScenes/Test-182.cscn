@@ -1,5 +1,5 @@
 // Global configuration
-materials specular_glossiness
+materials pbr
 
 scene "Boite"
 {

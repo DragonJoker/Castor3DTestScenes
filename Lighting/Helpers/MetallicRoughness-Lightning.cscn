@@ -54,7 +54,7 @@ material "Eye"
 	{
 		albedo 0.588000 0.588000 0.588000 0.00392157
 		emissive 0.0
-		metallic 0.0
+		metalness 0.0
 		roughness 0.3
 		two_sided false
 		colour_blend_mode none
@@ -75,7 +75,7 @@ material "Face"
 	{
 		albedo 0.588000 0.588000 0.588000 0.00392157
 		emissive 0.0
-		metallic 0.0
+		metalness 0.0
 		roughness 0.9
 		two_sided false
 		colour_blend_mode none
@@ -104,7 +104,7 @@ material "Hair"
 	{
 		albedo 0.588000 0.588000 0.588000 0.00392157
 		emissive 0.0
-		metallic 0.0
+		metalness 0.0
 		roughness 0.9
 		two_sided false
 		mixed_interpolation true
@@ -134,7 +134,7 @@ material "Pendant"
 	{
 		albedo 0.588000 0.588000 0.588000 0.00392157
 		emissive 0.0
-		metallic 1.0
+		metalness 1.0
 		roughness 0.1
 		two_sided false
 		colour_blend_mode none
@@ -164,7 +164,7 @@ material "Stuff"
 		albedo 0.588000 0.588000 0.588000 0.00392157
 		emissive 0.0
 		roughness 0.9
-		metallic 0.0
+		metalness 0.0
 		two_sided false
 		colour_blend_mode none
 
@@ -193,7 +193,7 @@ material "Weapon"
 		albedo 0.588000 0.588000 0.588000 0.00392157
 		emissive 0.0
 		roughness 0.2
-		metallic 1.0
+		metalness 1.0
 		two_sided false
 		colour_blend_mode none
 

@@ -1,4 +1,4 @@
-materials specular_glossiness
+materials pbr
 
 scene "Scene"
 {
@@ -32,60 +32,72 @@ scene "Scene"
 			emissive 1.0
 			two_sided true
 			mixed_interpolation true
-			parallax_occlusion one
 			refraction_ratio 0.92
 
 			texture_unit
 			{
-				channel emissive
+				emissive_mask 0x00ffffff
 				sampler "Linear"
 				image "Textures/Rusted/emissive.png"
 			}
 
 			texture_unit
 			{
-				channel opacity
+				opacity_mask 0xff000000
 				sampler "Linear"
 				image "Textures/Rusted/opacity.png"
 			}
 
 			texture_unit
 			{
-				channel normal
+				occlusion_mask 0x00ff0000
 				sampler "Linear"
-				image "Textures/Rusted/normal.jpg"
+				image "Textures/Rusted/occlusion.jpg"
 			}
 
 			texture_unit
 			{
-				channel height
+				normal_mask 0x00ffffff
 				sampler "Linear"
-				image "Textures/Rusted/height.jpg"
+				image "Textures/Rusted/normal.jpg"
 			}
 			reflections true
-			transmission 0.75164 0.75164 0.75164
+			transmission 1.0 1.0 1.0
 			refractions true
 		}
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 45
+	}
+	light "SunLight1"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 0.8 1.0
 	}
 
 	scene_node "FinalNode"
 	{
 		position 0.0 0.0 0.0
 	}
+	mesh "Mesh"
+	{
+		type "cube" -width=50 -height=50 depth=50
+		default_material "Textured"
+	}
 	object "FinalPrimitive"
 	{
 		parent "FinalNode"
 		mesh "Mesh"
-		{
-			type "cube" -width=50 -height=50 depth=50
-		}
-		material "Textured"
 	}
 
 	scene_node "MainCameraNode"
 	{
 		position 87.3926 -3.91655 -82.7833
-		orientation -0.0337855 -0.999314 -0.0151473 48.3264
+		orientation 0.0 1.0 0.0 315.0
 	}
 	camera "MainCamera"
 	{
@@ -104,6 +116,8 @@ scene "Scene"
 
 window "Window"
 {
+	fullscreen false
+	vsync false
 	render_target
 	{
 		format argb32
@@ -111,7 +125,5 @@ window "Window"
 		scene "Scene"
 		camera "MainCamera"
 	}
-	fullscreen false
-	vsync false
 }
 

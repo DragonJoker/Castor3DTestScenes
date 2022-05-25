@@ -34,14 +34,14 @@ scene "Scene"
 
 			texture_unit
 			{
-				channel specular
+				specular_mask 0x00FFFFFF
 				sampler "Linear"
 				image "Textures/Bricks/Specular.jpg"
 			}
 
 			texture_unit
 			{
-				channel emissive
+				emissive_mask 0x00FFFFFF
 				sampler "Linear"
 				image "Textures/Bricks/Emissive.jpg"
 			}
@@ -55,7 +55,7 @@ scene "Scene"
 
 			texture_unit
 			{
-				channel normal
+				normal_mask 0x00FFFFFF
 				sampler "Linear"
 				image "Textures/Bricks/Normal.jpg"
 			}
