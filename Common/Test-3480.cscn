@@ -1,0 +1,290 @@
+materials pbr
+
+scene "Scene"
+{
+	ambient_light 1.0 1.0 1.0
+	background_colour 0.5 0.5 0.5
+
+	scene_node "LightNode"
+	{
+		orientation -0.0151991 0.999078 -0.0401618 241.947
+	}
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 0.8 0.6
+		intensity 8.0 10.0
+		shadows
+		{
+			producer true
+			filter pcf
+			pcf_config
+			{
+				min_offset 0.0
+				max_slope_offset 0.0009
+			}
+		}
+	}
+
+	atmospheric_scattering
+	{
+		node "LightNode"
+		transmittanceResolution 256 64
+		multiScatterResolution 32
+		atmosphereVolumeResolution 32
+		skyViewResolution 192 108
+		sunIlluminance 1.0 1.0 1.0
+		sunIlluminanceScale 1.0
+		rayMarchMinSPP 4
+		rayMarchMaxSPP 14
+		multipleScatteringFactor 1.0
+
+		// The solar irradiance at the top of the atmosphere.
+		solarIrradiance 1.0 1.0 1.0
+
+		// The sun's angular radius. Warning: the implementation uses approximations
+		// that are valid only if this angle is smaller than 0.1 radians.
+		sunAngularRadius 0.004675
+
+		// The extinction coefficient of molecules that absorb light (e.g. ozone) at
+		// the altitude where their density is maximum, as a function of wavelength.
+		// The extinction coefficient at altitude h is equal to
+		// 'absorption_extinction' times 'absorption_density' at this altitude.
+		absorptionExtinction 0.000650 0.001881 0.000085
+
+		// The maximum Sun zenith angle for which atmospheric scattering
+		// must be precomputed (for maximum precision, use the smallest Sun zenith
+		// angle yielding negligible sky light radiance values. For instance, for the
+		// Earth case, 102 degrees is a good choice - yielding mu_s_min = -0.2).
+		maxSunZenithAngle 102.0
+
+		// The scattering coefficient of air molecules at the altitude where their
+		// density is maximum (usually the bottom of the atmosphere), as a function of
+		// wavelength. The scattering coefficient at altitude h is equal to
+		// 'rayleigh_scattering' times 'rayleigh_density' at this altitude.
+		rayleighScattering 0.005802 0.013558 0.033100
+
+		// The scattering coefficient of aerosols at the altitude where their density
+		// is maximum (usually the bottom of the atmosphere), as a function of
+		// wavelength. The scattering coefficient at altitude h is equal to
+		// 'mie_scattering' times 'mie_density' at this altitude.
+		mieScattering 0.003996 0.003996 0.003996
+
+		// The asymetry parameter for the Cornette-Shanks phase function for the
+		// aerosols.
+		miePhaseFunctionG 0.8
+
+		// The extinction coefficient of aerosols at the altitude where their density
+		// is maximum (usually the bottom of the atmosphere), as a function of
+		// wavelength. The extinction coefficient at altitude h is equal to
+		// 'mie_extinction' times 'mie_density' at this altitude.
+		mieExtinction 0.004440 0.004440 0.004440
+
+		// The distance between the planet center and the bottom of the atmosphere.
+		bottomRadius 6360.0
+
+		// The distance between the planet center and the top of the atmosphere.
+		topRadius 6460.0
+
+		// The average albedo of the ground.
+		groundAlbedo 0.0 0.0 0.0
+
+		// The density profile of air molecules, i.e. a function from altitude to
+		// dimensionless values between 0 (min density) and 1 (maximum density).
+		minRayleighDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+		maxRayleighDensity
+		{
+			layerWidth 0.0
+			expTerm 1.0
+			expScale -0.125 // -1 / 8
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+
+		// The density profile of aerosols, i.e. a function from altitude to
+		// dimensionless values between 0 (min density) and 1 (maximum density).
+		minMieDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+		maxMieDensity
+		{
+			layerWidth 0.0
+			expTerm 1.0
+			expScale -0.83333 // -1 / 1.2
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+
+		// The density profile of air molecules that absorb light (e.g. ozone), i.e.
+		// a function from altitude to dimensionless values between 0 (min density)
+		// and 1 (maximum density).
+		minAbsorptionDensity
+		{
+			layerWidth 25.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.066666 // 1 / 15
+			constantTerm -0.66666 // -2 / 3
+		}
+		maxAbsorptionDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm -0.066666 // -1 / 15
+			constantTerm 2.66666 // 8 / 3
+		}
+	}
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	material "FloorMaterial"
+	{
+		pass
+		{
+			albedo 1.0 1.0 1.0
+			emissive 0.0
+			metalness 0.0
+			roughness 0.8
+
+			texture_unit
+			{
+				image "Textures/Bricks/Diffuse.jpg"
+				albedo_mask 0x00FFFFFF
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Bricks/Normal.jpg"
+				normal_mask 0x00FFFFFF
+				sampler	"Linear"
+			}
+
+			texture_unit
+			{
+				image "Textures/Bricks/Height.jpg"
+				channel roughness
+				sampler	"Linear"
+			}
+		}
+	}
+	mesh "FloorMesh"
+	{
+		type "plane" -width_subdiv=0 -depth_subdiv=0 -width=600 -depth=600
+		default_material "FloorMaterial"
+	}
+	scene_node "FloorNode"
+	{
+		position 0.0 0.0 0.0
+		orientation 1.0 0.0 0.0 270.0
+	}
+	object "Floor"
+	{
+		parent "FloorNode"
+		mesh "FloorMesh"
+	}
+
+	material "WaterMaterial"
+	{
+		render_pass "c3d.water"
+
+		pass
+		{
+			albedo 0.465 0.797 0.991
+			emissive 0.0
+			transmission 0.003 0.599 0.812
+			metalness 0.0
+			roughness 0.08
+		}
+	}
+	mesh "WaterMesh"
+	{
+		type "plane" -width_subdiv=1000 -depth_subdiv=1000 -width=1000 -depth=1000
+		default_material "WaterMaterial"
+	}
+	scene_node "WaterNode"
+	{
+		position 0.0 2.0 0.0
+		orientation 1.0 0.0 0.0 270.0
+	}
+	object "Water"
+	{
+		parent "WaterNode"
+		mesh "WaterMesh"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position -542.925 152.329 -372.367
+		orientation 0.247141 0.960752 -0.126006 55.9081
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 1.0
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	fullscreen false
+	vsync false
+
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+
+		water_rendering
+		{
+			dampeningFactor 5.0
+			depthSofteningDistance 0.5
+			refractionRatio 1.2
+			refractionDistortionFactor 0.04
+			refractionHeightFactor 2.5
+			refractionDistanceFactor 0.05
+			normalMapScrollSpeed 0.01 0.01
+			normalMapScroll 1.0 0.0 0.0 1.0
+			ssrStepSize 0.5
+			ssrForwardStepsCount 20.0
+			ssrBackwardStepsCount 10.0
+			ssrDepthMult 20.0
+			normals1 "Textures/Waves/waterNM1.dds"
+			normals2 "Textures/Waves/waterNM2.dds"
+			noise "Textures/Waves/waterNoise.dds"
+		}
+	}
+}

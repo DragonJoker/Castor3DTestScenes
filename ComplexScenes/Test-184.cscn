@@ -68,6 +68,7 @@ window "SanMiguel"
 		scene "SanMiguel"
 		camera "MainCamera"
 		tone_mapping "linear"
+		postfx "pbr_bloom"
 
 		smaa
 		{

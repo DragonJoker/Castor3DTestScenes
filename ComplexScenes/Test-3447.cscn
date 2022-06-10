@@ -81,6 +81,7 @@ window "RenderPanel"
 		tone_mapping "aces"
 		scene "Bistro"
 		camera "MainCamera"
+		postfx "pbr_bloom"
 
 		smaa
 		{

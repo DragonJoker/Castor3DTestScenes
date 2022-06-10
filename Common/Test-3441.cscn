@@ -27,7 +27,7 @@ scene "Scene"
 			albedo 1.0 1.0 1.0
 			emissive 0.0
 			metalness 0.0
-			roughness 0.0
+			roughness 1.0
 			two_sided true
 
 			texture_unit
@@ -68,7 +68,12 @@ scene "Scene"
 	}
 	mesh "FloorMesh"
 	{
-		type "diamond_square_terrain" -detail=10 -roughness=0.3 -disableRandomSeed
+		diamond_square_terrain
+		{
+			detail 10
+			heightRange -20.0 100.0
+			disableRandomSeed true
+		}
 		default_material "FloorMaterial"
 	}
 	scene_node "FloorNode"
@@ -113,8 +118,8 @@ scene "Scene"
 
 	scene_node "MainCameraNode"
 	{
-		position -135.745 22.4645 -329.16
-		orientation 0.0 1.0 0.0 338
+		position 447.997 22.4646 348.392
+		orientation 0.0 1.0 0.0 220.0
 		//position -607.11 17.5754 -379.806
 		//orientation 0.0 1.0 0.0 63
 	}

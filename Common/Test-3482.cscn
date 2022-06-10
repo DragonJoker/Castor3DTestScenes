@@ -1,0 +1,67 @@
+materials pbr
+max_image_size 2048
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.5 0.5 0.5 1.0
+	include "Helpers/Terrain-Materials.cscn"
+	include "Helpers/Terrain-Meshes.cscn"
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 45
+	}
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		intensity 8.0 10.0
+	}
+
+	scene_node "Terrain"
+	{
+		position 0.0 0.0 0.0
+		scale 10 10 10
+	}
+	object "Terrain"
+	{
+		parent "Terrain"
+		mesh "Terrain"
+	}
+
+	scene_node "MainCameraNode"
+	{
+		//position -988.399 234.775 -7259.34
+		//orientation 0 1 0 0
+		position -2386.53 3540.84 5085.33
+		orientation -0.0299468 -0.946933 0.320032 190.127
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
+}
+
+window "Window"
+{
+	fullscreen false
+	vsync false
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+}

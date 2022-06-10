@@ -82,7 +82,7 @@ window "RenderPanel"
 		tone_mapping "linear"
 		scene "Parc"
 		camera "MainCamera"
-		postfx "bloom" -Size=5 -Passes=4
+		postfx "pbr_bloom"
 
 		smaa
 		{
