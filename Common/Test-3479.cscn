@@ -29,59 +29,18 @@ scene "Scene"
 		rayMarchMinSPP 4
 		rayMarchMaxSPP 14
 		multipleScatteringFactor 1.0
-
-		// The solar irradiance at the top of the atmosphere.
 		solarIrradiance 1.0 1.0 1.0
-
-		// The sun's angular radius. Warning: the implementation uses approximations
-		// that are valid only if this angle is smaller than 0.1 radians.
 		sunAngularRadius 0.004675
-
-		// The extinction coefficient of molecules that absorb light (e.g. ozone) at
-		// the altitude where their density is maximum, as a function of wavelength.
-		// The extinction coefficient at altitude h is equal to
-		// 'absorption_extinction' times 'absorption_density' at this altitude.
 		absorptionExtinction 0.000650 0.001881 0.000085
-
-		// The maximum Sun zenith angle for which atmospheric scattering
-		// must be precomputed (for maximum precision, use the smallest Sun zenith
-		// angle yielding negligible sky light radiance values. For instance, for the
-		// Earth case, 102 degrees is a good choice - yielding mu_s_min = -0.2).
 		maxSunZenithAngle 102.0
-
-		// The scattering coefficient of air molecules at the altitude where their
-		// density is maximum (usually the bottom of the atmosphere), as a function of
-		// wavelength. The scattering coefficient at altitude h is equal to
-		// 'rayleigh_scattering' times 'rayleigh_density' at this altitude.
 		rayleighScattering 0.005802 0.013558 0.033100
-
-		// The scattering coefficient of aerosols at the altitude where their density
-		// is maximum (usually the bottom of the atmosphere), as a function of
-		// wavelength. The scattering coefficient at altitude h is equal to
-		// 'mie_scattering' times 'mie_density' at this altitude.
 		mieScattering 0.003996 0.003996 0.003996
-
-		// The asymetry parameter for the Cornette-Shanks phase function for the
-		// aerosols.
 		miePhaseFunctionG 0.8
-
-		// The extinction coefficient of aerosols at the altitude where their density
-		// is maximum (usually the bottom of the atmosphere), as a function of
-		// wavelength. The extinction coefficient at altitude h is equal to
-		// 'mie_extinction' times 'mie_density' at this altitude.
 		mieExtinction 0.004440 0.004440 0.004440
-
-		// The distance between the planet center and the bottom of the atmosphere.
 		bottomRadius 6360.0
-
-		// The distance between the planet center and the top of the atmosphere.
 		topRadius 6460.0
-
-		// The average albedo of the ground.
 		groundAlbedo 0.0 0.0 0.0
 
-		// The density profile of air molecules, i.e. a function from altitude to
-		// dimensionless values between 0 (min density) and 1 (maximum density).
 		minRayleighDensity
 		{
 			layerWidth 0.0
@@ -99,8 +58,6 @@ scene "Scene"
 			constantTerm 0.0
 		}
 
-		// The density profile of aerosols, i.e. a function from altitude to
-		// dimensionless values between 0 (min density) and 1 (maximum density).
 		minMieDensity
 		{
 			layerWidth 0.0
@@ -118,9 +75,6 @@ scene "Scene"
 			constantTerm 0.0
 		}
 
-		// The density profile of air molecules that absorb light (e.g. ozone), i.e.
-		// a function from altitude to dimensionless values between 0 (min density)
-		// and 1 (maximum density).
 		minAbsorptionDensity
 		{
 			layerWidth 25.0
@@ -136,6 +90,11 @@ scene "Scene"
 			expScale 0.0
 			linearTerm -0.066666 // -1 / 15
 			constantTerm 2.66666 // 8 / 3
+		}
+
+		clouds
+		{
+			coverage 0.0
 		}
 	}
 

@@ -129,6 +129,11 @@ scene "Scene"
 			linearTerm -0.066666 // -1 / 15
 			constantTerm 2.66666 // 8 / 3
 		}
+
+		clouds
+		{
+			coverage 0.0
+		}
 	}
 
 	// scene_node "MainCameraNode"

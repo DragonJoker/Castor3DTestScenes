@@ -19,7 +19,7 @@ scene "MyScene"
 
 	scene_node "SunLightNode"
 	{
-		orientation 1 0 0 45
+		orientation 1 0 0 235
 	}
 
 	light "SunLight"

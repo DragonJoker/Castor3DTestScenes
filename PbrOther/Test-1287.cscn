@@ -44,7 +44,7 @@ scene "Rusted"
 
 			texture_unit
 			{
-				image "Textures/Rusted/metalness.png"
+				image "Textures/Rusted/metallic.png"
 				channel metalness
 				sampler	"TriLinear"
 			}
