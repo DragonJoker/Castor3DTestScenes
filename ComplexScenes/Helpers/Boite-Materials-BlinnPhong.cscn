@@ -269,6 +269,7 @@ material "bars_boite/lumiere"
 		specular 0.588000 0.588000 0.588000
 		ambient 1.00000
 		shininess 64.0000
+		emissive 2.0
 		two_sided true
 
 		texture_unit

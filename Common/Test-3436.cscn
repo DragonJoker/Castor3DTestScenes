@@ -9,6 +9,7 @@ scene "Scene"
 	{
 		min_filter nearest
 		mag_filter nearest
+		max_lod 0.0
 		lod_bias 0.0
 		u_wrap_mode repeat
 		v_wrap_mode repeat

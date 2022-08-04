@@ -23,8 +23,8 @@ scene "Scene"
 			filter pcf
 			pcf_config
 			{
-				min_offset 0.00001
-				max_slope_offset 0.0001
+				min_offset 0.001
+				max_slope_offset 0.002
 			}
 		}
 	}

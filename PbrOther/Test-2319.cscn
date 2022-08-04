@@ -23,7 +23,7 @@ scene "Scene"
 			filter variance
 			vsm_config
 			{
-				variance_max 0.0000001
+				variance_max 0.00001
 				variance_bias 0.15
 			}
 		}

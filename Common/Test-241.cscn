@@ -13,7 +13,7 @@ scene "Scene"
 		u_wrap_mode clamp_to_edge
 		v_wrap_mode clamp_to_edge
 		w_wrap_mode clamp_to_edge
-		border_colour 0.0 0.0 0.0 0.0
+		border_colour float_transparent_black
 	}
 
 	material "Multipass"

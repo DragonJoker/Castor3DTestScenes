@@ -19,13 +19,13 @@ scene "Boite"
 	{
 		enabled false
 		grid_size 2
-		conservative_rasterization false
+		conservative_rasterization true
 		temporal_smoothing false
 		occlusion false
-		secondary_bounce false
-		num_cones 2
+		secondary_bounce true
+		num_cones 16
 		max_distance 20.0000
-		ray_step_size 0.750000
+		ray_step_size 0.0156250
 		voxel_size 1.00000
 	}
 

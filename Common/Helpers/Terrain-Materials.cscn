@@ -22,6 +22,7 @@ material "Terrain"
 		emissive 0.0
 		metalness 0.0
 		roughness 1.0
+		two_sided true
 		untile true
 
 		texture_unit
@@ -66,6 +67,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{
@@ -109,6 +111,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{
@@ -147,6 +150,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{
@@ -190,6 +194,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{
@@ -233,6 +238,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{
@@ -278,6 +284,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{
@@ -321,6 +328,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{
@@ -357,6 +365,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{
@@ -402,6 +411,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{
@@ -445,6 +455,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{
@@ -488,6 +499,7 @@ material "Terrain"
 		metalness 0.0
 		roughness 1.0
 		untile true
+		two_sided true
 
 		texture_unit
 		{

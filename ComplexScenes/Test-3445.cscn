@@ -70,7 +70,7 @@ window "SanMiguel"
 			mode 1X
 			edgeDetection colour
 			preset ultra
-			reprojection true
+			enableReprojection true
 		}
 
 		ssao
