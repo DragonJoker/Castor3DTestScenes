@@ -118,14 +118,14 @@ scene "Scene"
 		clouds
 		{
 			windDirection 0.5 0.0 0.1
-			speed 8500.0
-			coverage 0.45
+			speed 900.0
+			coverage 0.25
 			crispiness 40.0
 			curliness 0.1
 			density 1.0
 			absorption 0.25
-			innerRadius 50.0
-			outerRadius 170.0
+			innerRadius 1.0
+			outerRadius 12.0
 			topColour 0.994 0.876 0.876
 			bottomColour 0.382 0.411 0.471
 			enablePowder true
