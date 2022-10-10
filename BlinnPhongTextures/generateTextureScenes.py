@@ -1,18 +1,19 @@
 #!/usr/bin/python
 
-startIndex = 230
+startIndex = 246
 
 channels = ["diffuse", "shininess", "specular", "emissive", "opacity", "occlusion", "normal", "height", "reflection", "refraction"]
+masks = ["0x00FFFFFF", "0x00FF0000", "0x00FFFFFF", "0x00FFFFFF", "0xFF000000", "0x00FF0000", "0x00FFFFFF", "0x00FF0000", "", ""]
 materials = ["reflection", "refraction"]
 extensions = ["jpg", "jpg", "jpg", "jpg", "png", "jpg", "jpg", "jpg", "", ""]
 options = ["", "", "", "emissive 1.0", 'two_sided true\n			mixed_interpolation true', "", "", "parallax_occlusion one", "", "refraction_ratio 0.92"]
 
-def writeChannel( file, channel, extension ):
+def writeChannel( file, channel, mask, extension ):
 	if channel != "reflection" and channel != "refraction":
 		file.write( '\n' )
 		file.write( '			texture_unit\n' )
 		file.write( '			{\n' )
-		file.write( '				channel ' + channel + '\n' )
+		file.write( '				' + channel + '_mask' + mask + '\n' )
 		file.write( '				sampler "Linear"\n' )
 		file.write( '				image "Textures/Bricks/' + channel.capitalize() + '.' + extension + '"\n' )
 		file.write( '			}\n' )
@@ -52,13 +53,12 @@ def writeFile( file, indices ):
 	file.write( '		{\n' )
 	file.write( '			diffuse 0.75164 0.75164 0.75164\n' )
 	file.write( '			specular 0.628281 0.628281 0.628281\n' )
-	file.write( '			ambient 1.0\n' )
 	file.write( '			shininess 192.0\n' )
 	for i in indices:
 		if len( options[i] ) > 0:
 			file.write( '			' + options[i] + '\n' )
 	for i in indices:
-		writeChannel( file, channels[i], extensions[i] )
+		writeChannel( file, channels[i], masks[i], extensions[i] )
 	file.write( '		}\n' )
 	file.write( '	}\n' )
 	file.write( '\n' )
@@ -125,7 +125,7 @@ def writeFile( file, indices ):
 def generate1Channel( names, index, count, begin, end ):
 	global startIndex
 	for i in range( begin, end ):
-		file = open( "{:04}".format( startIndex ) + "-" + names + channels[i].capitalize() + ".cscn", "w" )
+		file = open( "Test-{:04}".format( startIndex ) + ".cscn", "w" )
 		startIndex = startIndex + 1
 		list = []
 		if index != -1:

@@ -28,20 +28,19 @@ scene "Scene"
 		{
 			diffuse 0.75164 0.75164 0.75164
 			specular 0.628281 0.628281 0.628281
-			ambient 1.0
 			shininess 192.0
 			parallax_occlusion one
 
 			texture_unit
 			{
-				channel diffuse
+				diffuse_mask 0x00FFFFFF
 				sampler "Linear"
 				image "Textures/Bricks/Diffuse.jpg"
 			}
 
 			texture_unit
 			{
-				channel shininess
+				shininess_mask 0x00FF0000
 				sampler "Linear"
 				image "Textures/Bricks/Shininess.jpg"
 			}

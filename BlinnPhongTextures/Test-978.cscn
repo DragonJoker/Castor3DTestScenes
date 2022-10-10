@@ -28,7 +28,6 @@ scene "Scene"
 		{
 			diffuse 0.75164 0.75164 0.75164
 			specular 0.628281 0.628281 0.628281
-			ambient 1.0
 			shininess 192.0
 			two_sided true
 			mixed_interpolation true
@@ -36,7 +35,7 @@ scene "Scene"
 
 			texture_unit
 			{
-				channel diffuse
+				diffuse_mask 0x00FFFFFF
 				sampler "Linear"
 				image "Textures/Bricks/Diffuse.jpg"
 			}
@@ -50,14 +49,14 @@ scene "Scene"
 
 			texture_unit
 			{
-				channel opacity
+				opacity_mask 0xFF000000
 				sampler "Linear"
 				image "Textures/Bricks/Opacity.png"
 			}
 
 			texture_unit
 			{
-				channel occlusion
+				occlusion_mask 0x00FF0000
 				sampler "Linear"
 				image "Textures/Bricks/Occlusion.jpg"
 			}

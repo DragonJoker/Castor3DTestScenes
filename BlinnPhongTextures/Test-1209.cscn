@@ -28,7 +28,6 @@ scene "Scene"
 		{
 			diffuse 0.75164 0.75164 0.75164
 			specular 0.628281 0.628281 0.628281
-			ambient 1.0
 			shininess 192.0
 			emissive 1.0
 			two_sided true
@@ -52,7 +51,7 @@ scene "Scene"
 
 			texture_unit
 			{
-				channel opacity
+				opacity_mask 0xFF000000
 				sampler "Linear"
 				image "Textures/Bricks/Opacity.png"
 			}
