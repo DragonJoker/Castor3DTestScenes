@@ -34,21 +34,15 @@ scene "Scene"
 	{
 		pass
 		{
-			// diffuse 1.0 1.0 1.0
 			albedo 1.0 1.0 1.0
 			specular 0.0 0.0 0.0
 			emissive 0.0 0.0 0.0
-			// shininess 20.0
 			glossiness 0.1
-			// roughness 0.9
 			two_sided true
 
 			texture_unit
 			{
-				// image "Textures/bronze.jpg" rgb
-				// image "Textures/VasePlant_diffuse.png" rgb
 				image "Textures/BC1.dds"
-				// diffuse_mask 0x00ffffff
 				albedo_mask 0x00ffffff
 				sampler	"Trilinear"
 			}
@@ -77,19 +71,6 @@ scene "Scene"
 		colour 1.0 1.0 1.0
 		intensity 0.8 1.0
 	}
-
-	// scene_node "LightNode"
-	// {
-		// position  0.0 0.0 -5.0
-	// }
-	// light "BulbLight1"
-	// {
-		// parent "LightNode"
-		// type point
-		// colour 1.0 1.0 1.0
-		// intensity 0.1 0.8 1.0
-		// attenuation 0.0 0.25 0.0
-	// }
 
 	scene_node "MainCameraNode"
 	{

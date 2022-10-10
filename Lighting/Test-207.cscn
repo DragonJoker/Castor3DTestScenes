@@ -3,7 +3,7 @@ materials blinn_phong
 scene "MainScene"
 {
 	include "Helpers/BlinnPhong-Lightning.cscn"
-	ambient_light 0.2 0.2 0.2
+	ambient_light 0.0 0.0 0.0
 
 	// Skybox
 

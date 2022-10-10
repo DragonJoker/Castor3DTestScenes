@@ -20,19 +20,18 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
-			shininess 50.2
-			two_sided true
+			diffuse 0.75164 0.75164 0.75164
+			specular 0.628281 0.628281 0.628281
+			shininess 192.0
 
 			texture_unit
 			{
 				image "Textures/Bricks/Diffuse.jpg"
-				channel diffuse
+				diffuse_mask 0x00FFFFFF
 				sampler	"Linear"
 				animation
 				{
-					rotate 20.0
+					rotate 90
 				}
 			}
 		}

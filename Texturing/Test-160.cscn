@@ -2,7 +2,7 @@ materials phong
 
 scene "Scene"
 {
-	ambient_light 0.2 0.2 0.2
+	ambient_light 0.0 0.0 0.0
 
 	skybox
 	{
@@ -31,8 +31,8 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
+			diffuse 0.75164 0.75164 0.75164
+			emissive 0.0
 			shininess 50.2
 			two_sided true
 
@@ -60,8 +60,8 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
+			diffuse 0.75164 0.75164 0.75164
+			emissive 0.0
 			shininess 50.2
 			two_sided true
 
@@ -96,8 +96,8 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
+			diffuse 0.75164 0.75164 0.75164
+			emissive 0.0
 			shininess 50.2
 			two_sided true
 

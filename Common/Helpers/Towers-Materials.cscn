@@ -24,7 +24,6 @@ material "Imp-Material"
 	{
 		diffuse 0.640000 0.640000 0.640000
 		specular 1.00000 1.00000 1.00000
-		ambient 1.00000
 		shininess 50.0000
 		alpha 0.00000
 		bw_accumulation 1
@@ -38,7 +37,6 @@ material "Imp-accessories"
 	{
 		diffuse 0.640000 0.406873 0.176735
 		specular 1.00000 1.00000 1.00000
-		ambient 1.00000
 		shininess 50.0000
 		alpha 0.00000
 		bw_accumulation 1
@@ -52,7 +50,6 @@ material "Imp-body"
 	{
 		diffuse 0.400000 0.400000 0.400000
 		specular 1.00000 1.00000 1.00000
-		ambient 1.00000
 		shininess 50.0000
 		alpha 0.00000
 		bw_accumulation 1
@@ -66,7 +63,6 @@ material "Imp-lambert1"
 	{
 		diffuse 0.400000 0.400000 0.400000
 		specular 1.00000 1.00000 1.00000
-		ambient 1.00000
 		shininess 50.0000
 		alpha 0.00000
 		bw_accumulation 1
@@ -80,7 +76,6 @@ material "inventor_accessories"
 	{
 		diffuse 0.640000 0.406873 0.176735
 		specular 0.00000 0.00000 0.00000
-		ambient 0.00000
 		shininess 9.60784
 
 		texture_unit
@@ -116,7 +111,6 @@ material "inventor_body"
 	{
 		diffuse 0.400000 0.400000 0.400000
 		specular 0.00000 0.00000 0.00000
-		ambient 0.00000
 		shininess 9.41177
 
 		texture_unit
@@ -152,7 +146,6 @@ material "short_range_accessories"
 	{
 		diffuse 0.640000 0.406873 0.176735
 		specular 0.00000 0.00000 0.00000
-		ambient 0.00000
 		shininess 9.60784
 
 		texture_unit
@@ -188,7 +181,6 @@ material "short_range_body"
 	{
 		diffuse 0.400000 0.400000 0.400000
 		specular 0.00000 0.00000 0.00000
-		ambient 0.00000
 		shininess 9.41177
 
 		texture_unit
@@ -224,7 +216,6 @@ material "splash_accessories"
 	{
 		diffuse 0.640000 0.406873 0.176735
 		specular 0.00000 0.00000 0.00000
-		ambient 0.00000
 		shininess 9.60784
 
 		texture_unit
@@ -260,7 +251,6 @@ material "splash_body"
 	{
 		diffuse 0.400000 0.400000 0.400000
 		specular 0.00000 0.00000 0.00000
-		ambient 0.00000
 		shininess 9.41177
 
 		texture_unit

@@ -16,7 +16,8 @@ scene "Scene"
 		{
 			albedo 1.000 0.766 0.336
 			glossiness 1.0
-			specular 0.0 0.0 0.0
+			specular 0.04 0.04 0.04
+			metalness 0.0
 		}
 	}
 
@@ -26,7 +27,8 @@ scene "Scene"
 		{
 			albedo 1.000 0.766 0.336
 			glossiness 0.875
-			specular 0.0 0.0 0.0
+			specular 0.04 0.04 0.04
+			metalness 0.0
 		}
 	}
 
@@ -36,7 +38,8 @@ scene "Scene"
 		{
 			albedo 1.000 0.766 0.336
 			glossiness 0.75
-			specular 0.0 0.0 0.0
+			specular 0.04 0.04 0.04
+			metalness 0.0
 		}
 	}
 
@@ -46,7 +49,8 @@ scene "Scene"
 		{
 			albedo 1.000 0.766 0.336
 			glossiness 0.625
-			specular 0.0 0.0 0.0
+			specular 0.04 0.04 0.04
+			metalness 0.0
 		}
 	}
 
@@ -56,7 +60,8 @@ scene "Scene"
 		{
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
-			specular 0.0 0.0 0.0
+			specular 0.04 0.04 0.04
+			metalness 0.0
 		}
 	}
 
@@ -66,7 +71,8 @@ scene "Scene"
 		{
 			albedo 1.000 0.766 0.336
 			glossiness 0.375
-			specular 0.0 0.0 0.0
+			specular 0.04 0.04 0.04
+			metalness 0.0
 		}
 	}
 
@@ -76,7 +82,8 @@ scene "Scene"
 		{
 			albedo 1.000 0.766 0.336
 			glossiness 0.25
-			specular 0.0 0.0 0.0
+			specular 0.04 0.04 0.04
+			metalness 0.0
 		}
 	}
 
@@ -86,7 +93,8 @@ scene "Scene"
 		{
 			albedo 1.000 0.766 0.336
 			glossiness 0.125
-			specular 0.0 0.0 0.0
+			specular 0.04 0.04 0.04
+			metalness 0.0
 		}
 	}
 
@@ -96,7 +104,8 @@ scene "Scene"
 		{
 			albedo 1.000 0.766 0.336
 			glossiness 0.0
-			specular 0.0 0.0 0.0
+			specular 0.04 0.04 0.04
+			metalness 0.0
 		}
 	}
 
@@ -107,6 +116,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 1.0
 			specular 0.125 0.096 0.042
+			metalness 0.125
 		}
 	}
 
@@ -117,6 +127,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.875
 			specular 0.125 0.096 0.042
+			metalness 0.125
 		}
 	}
 
@@ -127,6 +138,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.75
 			specular 0.125 0.096 0.042
+			metalness 0.125
 		}
 	}
 
@@ -137,6 +149,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.625
 			specular 0.125 0.096 0.042
+			metalness 0.125
 		}
 	}
 
@@ -147,6 +160,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
 			specular 0.125 0.096 0.042
+			metalness 0.125
 		}
 	}
 
@@ -157,6 +171,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.375
 			specular 0.125 0.096 0.042
+			metalness 0.125
 		}
 	}
 
@@ -167,6 +182,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.25
 			specular 0.125 0.096 0.042
+			metalness 0.125
 		}
 	}
 
@@ -177,6 +193,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.125
 			specular 0.125 0.096 0.042
+			metalness 0.125
 		}
 	}
 
@@ -187,6 +204,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.0
 			specular 0.125 0.096 0.042
+			metalness 0.125
 		}
 	}
 
@@ -197,6 +215,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 1.0
 			specular 0.25 0.192 0.084
+			metalness 0.25
 		}
 	}
 
@@ -207,6 +226,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.875
 			specular 0.25 0.192 0.084
+			metalness 0.25
 		}
 	}
 
@@ -217,6 +237,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.75
 			specular 0.25 0.192 0.084
+			metalness 0.25
 		}
 	}
 
@@ -227,6 +248,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.625
 			specular 0.25 0.192 0.084
+			metalness 0.25
 		}
 	}
 
@@ -237,6 +259,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
 			specular 0.25 0.192 0.084
+			metalness 0.25
 		}
 	}
 
@@ -247,6 +270,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.375
 			specular 0.25 0.192 0.084
+			metalness 0.25
 		}
 	}
 
@@ -257,6 +281,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.25
 			specular 0.25 0.192 0.084
+			metalness 0.25
 		}
 	}
 
@@ -267,6 +292,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.125
 			specular 0.25 0.192 0.084
+			metalness 0.25
 		}
 	}
 
@@ -277,6 +303,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.0
 			specular 0.25 0.192 0.084
+			metalness 0.25
 		}
 	}
 
@@ -287,6 +314,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 1.0
 			specular 0.375 0.28725 0.126
+			metalness 0.375
 		}
 	}
 
@@ -297,6 +325,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.875
 			specular 0.375 0.28725 0.126
+			metalness 0.375
 		}
 	}
 
@@ -307,6 +336,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.75
 			specular 0.375 0.28725 0.126
+			metalness 0.375
 		}
 	}
 
@@ -317,6 +347,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.625
 			specular 0.375 0.28725 0.126
+			metalness 0.375
 		}
 	}
 
@@ -327,6 +358,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
 			specular 0.375 0.28725 0.126
+			metalness 0.375
 		}
 	}
 
@@ -337,6 +369,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.375
 			specular 0.375 0.28725 0.126
+			metalness 0.375
 		}
 	}
 
@@ -347,6 +380,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.25
 			specular 0.375 0.28725 0.126
+			metalness 0.375
 		}
 	}
 
@@ -357,6 +391,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.125
 			specular 0.375 0.28725 0.126
+			metalness 0.375
 		}
 	}
 
@@ -367,6 +402,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.0
 			specular 0.375 0.28725 0.126
+			metalness 0.375
 		}
 	}
 
@@ -377,6 +413,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 1.0
 			specular 0.5 0.383 0.168
+			metalness 0.5
 		}
 	}
 
@@ -387,6 +424,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.875
 			specular 0.5 0.383 0.168
+			metalness 0.5
 		}
 	}
 
@@ -397,6 +435,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.75
 			specular 0.5 0.383 0.168
+			metalness 0.5
 		}
 	}
 
@@ -407,6 +446,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.625
 			specular 0.5 0.383 0.168
+			metalness 0.5
 		}
 	}
 
@@ -417,6 +457,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
 			specular 0.5 0.383 0.168
+			metalness 0.5
 		}
 	}
 
@@ -427,6 +468,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.375
 			specular 0.5 0.383 0.168
+			metalness 0.5
 		}
 	}
 
@@ -437,6 +479,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.25
 			specular 0.5 0.383 0.168
+			metalness 0.5
 		}
 	}
 
@@ -447,6 +490,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.125
 			specular 0.5 0.383 0.168
+			metalness 0.5
 		}
 	}
 
@@ -457,6 +501,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.0
 			specular 0.5 0.383 0.168
+			metalness 0.5
 		}
 	}
 
@@ -467,6 +512,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 1.0
 			specular 0.625 0.47875 0.22875
+			metalness 0.625
 		}
 	}
 
@@ -477,6 +523,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.875
 			specular 0.625 0.47875 0.22875
+			metalness 0.625
 		}
 	}
 
@@ -487,6 +534,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.75
 			specular 0.625 0.47875 0.22875
+			metalness 0.625
 		}
 	}
 
@@ -497,6 +545,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.625
 			specular 0.625 0.47875 0.22875
+			metalness 0.625
 		}
 	}
 
@@ -507,6 +556,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
 			specular 0.625 0.47875 0.22875
+			metalness 0.625
 		}
 	}
 
@@ -517,6 +567,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.375
 			specular 0.625 0.47875 0.22875
+			metalness 0.625
 		}
 	}
 
@@ -527,6 +578,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.25
 			specular 0.625 0.47875 0.22875
+			metalness 0.625
 		}
 	}
 
@@ -537,6 +589,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.125
 			specular 0.625 0.47875 0.22875
+			metalness 0.625
 		}
 	}
 
@@ -547,6 +600,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.0
 			specular 0.625 0.47875 0.22875
+			metalness 0.625
 		}
 	}
 
@@ -557,6 +611,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 1.0
 			specular 0.75 0.5745 0.252
+			metalness 0.75
 		}
 	}
 
@@ -567,6 +622,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.875
 			specular 0.75 0.5745 0.252
+			metalness 0.75
 		}
 	}
 
@@ -577,6 +633,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.75
 			specular 0.75 0.5745 0.252
+			metalness 0.75
 		}
 	}
 
@@ -587,6 +644,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.625
 			specular 0.75 0.5745 0.252
+			metalness 0.75
 		}
 	}
 
@@ -597,6 +655,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
 			specular 0.75 0.5745 0.252
+			metalness 0.75
 		}
 	}
 
@@ -607,6 +666,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.375
 			specular 0.75 0.5745 0.252
+			metalness 0.75
 		}
 	}
 
@@ -617,6 +677,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.25
 			specular 0.75 0.5745 0.252
+			metalness 0.75
 		}
 	}
 
@@ -627,6 +688,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.125
 			specular 0.75 0.5745 0.252
+			metalness 0.75
 		}
 	}
 
@@ -637,6 +699,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.0
 			specular 0.75 0.5745 0.252
+			metalness 0.75
 		}
 	}
 
@@ -647,6 +710,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 1.0
 			specular 0.875 0.656462 0.294
+			metalness 0.875
 		}
 	}
 
@@ -657,6 +721,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.875
 			specular 0.875 0.656462 0.294
+			metalness 0.875
 		}
 	}
 
@@ -667,6 +732,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.75
 			specular 0.875 0.656462 0.294
+			metalness 0.875
 		}
 	}
 
@@ -677,6 +743,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.625
 			specular 0.875 0.656462 0.294
+			metalness 0.875
 		}
 	}
 
@@ -687,6 +754,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
 			specular 0.875 0.656462 0.294
+			metalness 0.875
 		}
 	}
 
@@ -697,6 +765,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.375
 			specular 0.875 0.656462 0.294
+			metalness 0.875
 		}
 	}
 
@@ -707,6 +776,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.25
 			specular 0.875 0.656462 0.294
+			metalness 0.875
 		}
 	}
 
@@ -717,6 +787,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.125
 			specular 0.875 0.656462 0.294
+			metalness 0.875
 		}
 	}
 
@@ -727,6 +798,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.0
 			specular 0.875 0.656462 0.294
+			metalness 0.875
 		}
 	}
 
@@ -737,6 +809,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 1.0
 			specular 1.000 0.766 0.336
+			metalness 1.0
 		}
 	}
 
@@ -747,6 +820,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.875
 			specular 1.000 0.766 0.336
+			metalness 1.0
 		}
 	}
 
@@ -757,6 +831,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.75
 			specular 1.000 0.766 0.336
+			metalness 1.0
 		}
 	}
 
@@ -767,6 +842,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.625
 			specular 1.000 0.766 0.336
+			metalness 1.0
 		}
 	}
 
@@ -777,6 +853,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
 			specular 1.000 0.766 0.336
+			metalness 1.0
 		}
 	}
 
@@ -787,6 +864,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.375
 			specular 1.000 0.766 0.336
+			metalness 1.0
 		}
 	}
 
@@ -797,6 +875,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.25
 			specular 1.000 0.766 0.336
+			metalness 1.0
 		}
 	}
 
@@ -807,6 +886,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.125
 			specular 1.000 0.766 0.336
+			metalness 1.0
 		}
 	}
 
@@ -817,6 +897,7 @@ scene "Scene"
 			albedo 1.000 0.766 0.336
 			glossiness 0.0
 			specular 1.000 0.766 0.336
+			metalness 1.0
 		}
 	}
 

@@ -32,9 +32,9 @@ scene "Scene"
 		pass
 		{
 			albedo 0.75164 0.75164 0.75164
-			specular 0.1 0.01 0.1
 			emissive 0.0
 			glossiness 0.2
+			metalness 0.0
 			mixed_interpolation true
 
 			texture_unit
@@ -47,16 +47,15 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/BC5.dds"
-				normal_mask 0x00ffffff
-				normal_directx true
+				image "Textures/BC3Spec.dds"
+				specular_mask 0x00ffffff
 				sampler	"Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/BC3Spec.dds"
-				specular_mask 0x00ffffff
+				image "Textures/BC5.dds"
+				normal_mask 0x00ffffff
 				sampler	"Linear"
 			}
 		}
@@ -84,19 +83,6 @@ scene "Scene"
 		colour 1.0 1.0 1.0
 		intensity 0.8 1.0
 	}
-
-	// scene_node "LightNode"
-	// {
-		// position  0.0 0.0 -5.0
-	// }
-	// light "BulbLight1"
-	// {
-		// parent "LightNode"
-		// type point
-		// colour 1.0 1.0 1.0
-		// intensity 0.1 0.8 1.0
-		// attenuation 0.0 0.25 0.0
-	// }
 
 	scene_node "MainCameraNode"
 	{

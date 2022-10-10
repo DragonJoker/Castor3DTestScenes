@@ -1,9 +1,10 @@
 materials blinn_phong
+define defaultSpecular 0.2 0.2 0.2
 
 scene "MyScene"
 {
 	background_colour 0.5 0.5 0.5 1.0
-	ambient_light 0.2 0.2 0.2
+	ambient_light 0.0 0.0 0.0
 
 	scene_node "LightNode"
 	{
@@ -22,9 +23,8 @@ scene "MyScene"
 		pass
 		{
 			diffuse 0.640000 0.406873 0.176735
-			specular 0.000000 0.000000 0.000000
-			ambient 0
-			emissive 0
+			specular defaultSpecular
+			emissive 0.000000
 			shininess 9.60784
 			two_sided false
 			colour_blend_mode none
@@ -39,6 +39,7 @@ scene "MyScene"
 			texture_unit
 			{
 				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss.png"
+				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
@@ -54,9 +55,8 @@ scene "MyScene"
 		pass
 		{
 			diffuse 0.400000 0.400000 0.400000
-			specular 0.000000 0.000000 0.000000
-			ambient 0
-			emissive 0
+			specular defaultSpecular
+			emissive 0.000000
 			shininess 9.41177
 			two_sided false
 			colour_blend_mode none
@@ -64,20 +64,21 @@ scene "MyScene"
 
 			texture_unit
 			{
-				channel diffuse
 				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Diffuse_0.png"
+				diffuse_mask 0x00FFFFFF
 			}
 
 			texture_unit
 			{
 				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_SpecularGloss_0.png"
+				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
 			texture_unit
 			{
-				normal_mask 0x00FFFFFF
 				image "Textures/CastorTD/splash_tower_tower1_heavy_splash_Normal_0.png"
+				normal_mask 0x00FFFFFF
 			}
 		}
 	}
@@ -123,9 +124,8 @@ scene "MyScene"
 		pass
 		{
 			diffuse 0.640000 0.406873 0.176735
-			specular 0.000000 0.000000 0.000000
-			ambient 0
-			emissive 0
+			specular defaultSpecular
+			emissive 0.000000
 			shininess 9.60784
 			two_sided false
 			colour_blend_mode none
@@ -133,20 +133,21 @@ scene "MyScene"
 
 			texture_unit
 			{
-				channel diffuse
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_Diffuse.png"
+				diffuse_mask 0x00FFFFFF
 			}
 
 			texture_unit
 			{
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss.png"
+				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
 			texture_unit
 			{
-				normal_mask 0x00FFFFFF
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_Normal.png"
+				normal_mask 0x00FFFFFF
 			}
 		}
 	}
@@ -155,9 +156,8 @@ scene "MyScene"
 		pass
 		{
 			diffuse 0.400000 0.400000 0.400000
-			specular 0.000000 0.000000 0.000000
-			ambient 0
-			emissive 0
+			specular defaultSpecular
+			emissive 0.000000
 			shininess 9.41177
 			two_sided false
 			colour_blend_mode none
@@ -165,20 +165,21 @@ scene "MyScene"
 
 			texture_unit
 			{
-				channel diffuse
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_Diffuse_0.png"
+				diffuse_mask 0x00FFFFFF
 			}
 
 			texture_unit
 			{
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_SpecularGloss_0.png"
+				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
 			texture_unit
 			{
-				normal_mask 0x00FFFFFF
 				image "Textures/CastorTD/inventor_tower_tower1_inventor_Normal_0.png"
+				normal_mask 0x00FFFFFF
 			}
 		}
 	}
@@ -224,9 +225,8 @@ scene "MyScene"
 		pass
 		{
 			diffuse 0.640000 0.406873 0.176735
-			specular 0.000000 0.000000 0.000000
-			ambient 0
-			emissive 0
+			specular defaultSpecular
+			emissive 0.000000
 			shininess 9.60784
 			two_sided false
 			colour_blend_mode none
@@ -241,6 +241,7 @@ scene "MyScene"
 			texture_unit
 			{
 				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss_0.png"
+				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 
@@ -256,9 +257,8 @@ scene "MyScene"
 		pass
 		{
 			diffuse 0.400000 0.400000 0.400000
-			specular 0.000000 0.000000 0.000000
-			ambient 0
-			emissive 0
+			specular defaultSpecular
+			emissive 0.000000
 			shininess 9.41177
 			two_sided false
 			colour_blend_mode none
@@ -273,6 +273,7 @@ scene "MyScene"
 			texture_unit
 			{
 				image "Textures/CastorTD/short_range_tower_tower1_quick_short_SpecularGloss.png"
+				specular_mask 0x00FFFFFF
 				shininess_mask 0xFF000000
 			}
 

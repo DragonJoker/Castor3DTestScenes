@@ -3,7 +3,7 @@ materials blinn_phong
 scene "Scene"
 {
 	background_colour 0.5 0.5 0.5 1.0
-	ambient_light 0.2 0.2 0.2
+	ambient_light 0.0 0.0 0.0
 
 	sampler "Nearest"
 	{
@@ -87,11 +87,12 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
-			specular 0.0 0.0 0.0 1.0
+			diffuse 0.75164 0.75164 0.75164
+			specular 0.0 0.0 0.0
+			emissive 0.0
 			shininess 50.2
-	
+			lighting false
+
 			texture_unit
 			{
 				image "Textures/Bricks/Diffuse.jpg"
@@ -105,11 +106,12 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
-			specular 0.0 0.0 0.0 1.0
+			diffuse 0.75164 0.75164 0.75164
+			specular 0.0 0.0 0.0
+			emissive 0.0
 			shininess 50.2
-	
+			lighting false
+
 			texture_unit
 			{
 				image "Textures/Bricks/Diffuse.jpg"
@@ -123,11 +125,12 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
-			specular 0.0 0.0 0.0 1.0
+			diffuse 0.75164 0.75164 0.75164
+			specular 0.0 0.0 0.0
+			emissive 0.0
 			shininess 50.2
-	
+			lighting false
+
 			texture_unit
 			{
 				image "Textures/Bricks/Diffuse.jpg"
@@ -141,11 +144,12 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
-			specular 0.0 0.0 0.0 1.0
+			diffuse 0.75164 0.75164 0.75164
+			specular 0.0 0.0 0.0
+			emissive 0.0
 			shininess 50.2
-	
+			lighting false
+
 			texture_unit
 			{
 				image "Textures/Bricks/Diffuse.jpg"
@@ -159,11 +163,12 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
-			specular 0.0 0.0 0.0 1.0
+			diffuse 0.75164 0.75164 0.75164
+			specular 0.0 0.0 0.0
+			emissive 0.0
 			shininess 50.2
-	
+			lighting false
+
 			texture_unit
 			{
 				image "Textures/Bricks/Diffuse.jpg"
@@ -177,11 +182,12 @@ scene "Scene"
 	{
 		pass
 		{
-			diffuse 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
-			specular 0.0 0.0 0.0 1.0
+			diffuse 0.75164 0.75164 0.75164
+			specular 0.0 0.0 0.0
+			emissive 0.0
 			shininess 50.2
-	
+			lighting false
+
 			texture_unit
 			{
 				image "Textures/Bricks/Diffuse.jpg"

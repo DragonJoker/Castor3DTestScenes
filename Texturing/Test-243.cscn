@@ -2,6 +2,9 @@ materials blinn_phong
 
 scene "Relief"
 {
+	background_colour 0.5 0.5 0.5 1.0
+	ambient_light 0.2 0.2 0.2
+
 	sampler "Linear"
 	{
 		min_filter linear
@@ -19,16 +22,16 @@ scene "Relief"
 	{
 		pass
 		{
-			diffuse 0.4 0.4 0.4 1.0
-			emissive 0.0 0.0 0.0 1.0
-			specular 0.1 0.1 0.1 1.0
+			diffuse 1.0 1.0 1.0
+			emissive 0.0
+			specular 0.1 0.1 0.1
 			shininess 50.0
 			parallax_occlusion one
 
 			texture_unit
 			{
 				image "Textures/Bricks/Diffuse.jpg"
-				channel diffuse
+				diffuse_mask 0x00FFFFFF
 				sampler "Linear"
 			}
 
@@ -42,14 +45,11 @@ scene "Relief"
 			texture_unit
 			{
 				image "Textures/Bricks/Height.jpg"
-				channel height
+				height_mask 0x00FF0000
 				sampler "Linear"
 			}
 		}
 	}
-
-	background_colour 0.5 0.5 0.5 1.0
-	ambient_light 0.2 0.2 0.2
 
 	scene_node "LightNode"
 	{

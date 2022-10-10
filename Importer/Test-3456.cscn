@@ -5,7 +5,7 @@ scene "AnimScene"
 	// Scene configuration
 
 	background_colour 0.5 0.5 0.5
-	ambient_light 0.1 0.1 0.1
+	ambient_light 0.0 0.0 0.0
 
 	// Objects nodes
 

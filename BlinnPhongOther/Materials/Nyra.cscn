@@ -18,24 +18,24 @@ material "MatBody"
 {
 	pass
 	{
-		ambient 1.0
 		shininess 128.0
+		alpha 1.0
 		alpha_func greater 0.5
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
+			diffuse_mask 0x00FFFFFF
 			levels_count 6
-			image "Textures/Nyra/body-diffuse.jpg" rgb
+			image "Textures/Nyra/body-diffuse.jpg"
 			sampler "Trilinear"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			levels_count 6
-			image "Textures/Nyra/body-opacity.png" a
+			image "Textures/Nyra/body-opacity.png"
 			sampler "Trilinear"
 		}
 
@@ -43,7 +43,7 @@ material "MatBody"
 		{
 			normal_mask 0x00FFFFFF
 			levels_count 6
-			image "Textures/Nyra/body-normal.jpg" rgb
+			image "Textures/Nyra/body-normal.jpg"
 			sampler "Trilinear"
 		}
 
@@ -51,7 +51,7 @@ material "MatBody"
 		{
 			specular_mask 0x00FFFFFF
 			levels_count 6
-			image "Textures/Nyra/body-specular.jpg" rgb
+			image "Textures/Nyra/body-specular.jpg"
 			sampler "Trilinear"
 		}
 	}
@@ -61,15 +61,14 @@ material "MatHead"
 {
 	pass
 	{
-		ambient 1.0
 		shininess 128.0
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
+			diffuse_mask 0x00FFFFFF
 			levels_count 6
-			image "Textures/Nyra/head-diffuse.jpg" rgb
+			image "Textures/Nyra/head-diffuse.jpg"
 			sampler "Trilinear"
 		}
 
@@ -77,7 +76,7 @@ material "MatHead"
 		{
 			normal_mask 0x00FFFFFF
 			levels_count 6
-			image "Textures/Nyra/head-normal.jpg" rgb
+			image "Textures/Nyra/head-normal.jpg"
 			sampler "Trilinear"
 		}
 
@@ -85,7 +84,7 @@ material "MatHead"
 		{
 			specular_mask 0x00FFFFFF
 			levels_count 6
-			image "Textures/Nyra/head-specular.jpg" rgb
+			image "Textures/Nyra/head-specular.jpg"
 			sampler "Trilinear"
 		}
 	}
@@ -95,13 +94,12 @@ material "cornea"
 {
 	pass
 	{
-		ambient 1.0
-		diffuse 0.000000 0.000000 0.000000 0.00392157
-		specular 1.00000 1.00000 1.00000 0.00392157
+		diffuse 0.000000 0.000000 0.000000
+		specular 1.00000 1.00000 1.00000
 		shininess 128.0
-		alpha 0.119661
-		alpha_blend_mode interpolative
+		alpha 0.00392157
 		two_sided true
+		alpha_blend_mode interpolative
 	}
 }
 
@@ -109,23 +107,24 @@ material "dx11Shader6"
 {
 	pass
 	{
-		ambient 1.0
 		shininess 128.0
+		alpha 1.0
 		two_sided true
+		alpha_blend_mode interpolative
 
 		texture_unit
 		{
-			channel diffuse
+			diffuse_mask 0x00FFFFFF
 			levels_count 6
-			image "Textures/Nyra/head-diffuse.jpg" rgb
+			image "Textures/Nyra/head-diffuse.jpg"
 			sampler "Trilinear"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			levels_count 6
-			image "Textures/Nyra/head-opacity.png" a
+			image "Textures/Nyra/head-opacity.png"
 			sampler "Trilinear"
 		}
 
@@ -133,7 +132,7 @@ material "dx11Shader6"
 		{
 			normal_mask 0x00FFFFFF
 			levels_count 6
-			image "Textures/Nyra/head-normal.jpg" rgb
+			image "Textures/Nyra/head-normal.jpg"
 			sampler "Trilinear"
 		}
 
@@ -141,7 +140,7 @@ material "dx11Shader6"
 		{
 			specular_mask 0x00FFFFFF
 			levels_count 6
-			image "Textures/Nyra/head-specular.jpg" rgb
+			image "Textures/Nyra/head-specular.jpg"
 			sampler "Trilinear"
 		}
 	}

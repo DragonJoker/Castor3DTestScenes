@@ -107,7 +107,7 @@ scene "Scene"
 			type "cube" -width=400 -height=400 -depth=400
 		}
 
-		material "Gold"
+		material "GoldTS"
 	}
 
 	object "SphereRight"

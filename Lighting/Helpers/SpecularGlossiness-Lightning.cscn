@@ -18,7 +18,7 @@ material "Clothes"
 	{
 		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
-		specular 0.0 0.0 0.0
+		specular 0.04 0.04 0.04
 		glossiness 1.0
 		two_sided false
 		colour_blend_mode none
@@ -55,7 +55,7 @@ material "Eye"
 	{
 		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
-		specular 0.0 0.0 0.0
+		specular 0.04 0.04 0.04
 		glossiness 0.7
 		two_sided false
 		colour_blend_mode none
@@ -76,7 +76,7 @@ material "Face"
 	{
 		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
-		specular 0.0 0.0 0.0
+		specular 0.04 0.04 0.04
 		glossiness 0.1
 		two_sided false
 		colour_blend_mode none
@@ -105,7 +105,7 @@ material "Hair"
 	{
 		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
-		specular 0.0 0.0 0.0
+		specular 0.04 0.04 0.04
 		glossiness 0.1
 		two_sided false
 		mixed_interpolation true
@@ -127,7 +127,7 @@ material "Pendant"
 	{
 		albedo 0.588000 0.588000 0.588000
 		emissive 0.0
-		specular 0.0 0.0 0.0
+		specular 1.000000 1.000000 1.000000
 		glossiness 0.9
 		two_sided false
 		colour_blend_mode none
@@ -136,6 +136,7 @@ material "Pendant"
 		{
 			levels_count 6
 			albedo_mask 0x00FFFFFF
+			specular_mask 0x00FFFFFF
 			image "Textures/Lightning/pendant_D.tga"
 			sampler	"Trilinear"
 		}

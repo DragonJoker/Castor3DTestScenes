@@ -18,15 +18,13 @@ material "Clothes"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		emissive 0.000000
-		specular 0.000000 0.000000 0.000000
+		specular 0.040000 0.040000 0.040000
 		shininess 256
-		two_sided false
-		colour_blend_mode none
 
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			diffuse_mask 0x00FFFFFF
 			image "Textures/Lightning/clothes_D.tga"
 			sampler	"Trilinear"
 		}
@@ -34,7 +32,7 @@ material "Clothes"
 		texture_unit
 		{
 			levels_count 6
-			channel shininess
+			shininess_mask 0x00FF0000
 			image "Textures/Lightning/clothes_G.tga"
 			sampler	"Trilinear"
 		}
@@ -55,15 +53,13 @@ material "Eye"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		emissive 0.000000
-		specular 0.000000 0.000000 0.000000
+		specular 0.040000 0.040000 0.040000
 		shininess 40
-		two_sided false
-		colour_blend_mode none
 
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			diffuse_mask 0x00FFFFFF
 			image "Textures/Lightning/eye_D.tga"
 			sampler	"Trilinear"
 		}
@@ -76,15 +72,13 @@ material "Face"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		emissive 0.000000
-		specular 0.000000 0.000000 0.000000
+		specular 0.040000 0.040000 0.040000
 		shininess 40
-		two_sided false
-		colour_blend_mode none
 
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			diffuse_mask 0x00FFFFFF
 			image "Textures/Lightning/face_D.tga"
 			sampler	"Trilinear"
 		}
@@ -105,25 +99,17 @@ material "Hair"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		emissive 0.000000
-		specular 0.000000 0.000000 0.000000
+		specular 0.040000 0.040000 0.040000
 		shininess 40
 		two_sided true
-		colour_blend_mode none
 		mixed_interpolation true
 
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
-			image "Textures/Lightning/hair_D.tga" rgb
-			sampler	"Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel opacity
-			image "Textures/Lightning/hair_D.tga" a
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
+			image "Textures/Lightning/hair_D.tga"
 			sampler	"Trilinear"
 		}
 	}
@@ -137,13 +123,11 @@ material "Pendant"
 		emissive 0.000000
 		specular 0.588000 0.588000 0.588000
 		shininess 40
-		two_sided false
-		colour_blend_mode none
 
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			diffuse_mask 0x00FFFFFF
 			image "Textures/Lightning/pendant_D.tga"
 			sampler	"Trilinear"
 		}
@@ -163,15 +147,14 @@ material "Stuff"
 	pass
 	{
 		diffuse 0.588000 0.588000 0.588000
+		specular 1.000000 1.000000 1.000000
 		emissive 0.0
 		shininess 40
-		two_sided false
-		colour_blend_mode none
 
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
+			diffuse_mask 0x00FFFFFF
 			image "Textures/Lightning/stuff_D.tga"
 			sampler	"Trilinear"
 		}
@@ -198,14 +181,14 @@ material "Weapon"
 {
 	pass
 	{
-		two_sided false
-		colour_blend_mode none
-
+		diffuse 1.000000 1.000000 1.000000
+		specular 1.000000 1.000000 1.000000
+		shininess 256.0
 		texture_unit
 		{
 			levels_count 6
-			channel diffuse
-			image "Textures/Lightning/weapon_D.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/Lightning/weapon_D.png"
 			sampler	"Trilinear"
 		}
 
@@ -213,31 +196,17 @@ material "Weapon"
 		{
 			levels_count 6
 			specular_mask 0x00FFFFFF
-			image "Textures/Lightning/weapon_SG.png" rgb
+			shininess_mask 0xFF000000
+			image "Textures/Lightning/weapon_SG.png"
 			sampler	"Trilinear"
 		}
 
 		texture_unit
 		{
 			levels_count 6
-			channel shininess
-			image "Textures/Lightning/weapon_SG.png" a
-			sampler	"Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel occlusion
-			image "Textures/Lightning/weapon_N.png" a
-			sampler	"Trilinear"
-		}
-
-		texture_unit
-		{
-			levels_count 6
+			occlusion_mask 0xFF000000
 			normal_mask 0x00FFFFFF
-			image "Textures/Lightning/weapon_N.png" rgb
+			image "Textures/Lightning/weapon_N.png"
 			sampler	"Trilinear"
 		}
 	}

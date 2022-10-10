@@ -32,12 +32,13 @@ scene "Scene"
 	scene_node "Plane"
 	{
 		position 0.0 0.0 50.0
-		orientation 1.0 0.0 0.0 90.0
+		orientation 1.0 0.0 0.0 270.0
 	}
 
 	scene_node "Plane2"
 	{
 		position 0.0 50.0 150.0
+		orientation 1.0 0.0 0.0 180.0
 	}
 
 	scene_node "Torus"

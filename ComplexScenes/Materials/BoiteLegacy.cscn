@@ -21,7 +21,6 @@ material "baffles_boite/baffles"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.0900000 0.0900000 0.0900000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -41,7 +40,6 @@ material "barriere_verre/metal"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.486000 0.486000 0.486000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -61,7 +59,6 @@ material "barriere_verre/verre"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.324000 0.324000 0.324000
-		ambient 1.0
 		shininess 64
 		alpha_blend_mode interpolative
 
@@ -82,7 +79,6 @@ material "bars_boite/bois"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.126000 0.126000 0.126000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -102,7 +98,6 @@ material "bars_boite/bois_noir"
 	{
 		diffuse 0.0470588 0.0470588 0.0470588
 		specular 0.333000 0.333000 0.333000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -122,7 +117,6 @@ material "bars_boite/bouteilles"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -142,7 +136,6 @@ material "bars_boite/bouteilles02"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -162,7 +155,6 @@ material "bars_boite/bouteilles03"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -182,7 +174,6 @@ material "bars_boite/bouteilles04"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -202,7 +193,6 @@ material "bars_boite/distrib_biere"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -222,7 +212,6 @@ material "bars_boite/grille_biere"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -242,7 +231,6 @@ material "bars_boite/lumiere"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -262,7 +250,6 @@ material "bars_boite/metal"
 	{
 		diffuse 0.525490 0.525490 0.525490
 		specular 0.585000 0.585000 0.585000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -282,7 +269,6 @@ material "bars_boite/porte_bar"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -302,7 +288,6 @@ material "bars_boite/verre"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.270000 0.270000 0.270000
-		ambient 1.0
 		shininess 64
 		alpha_blend_mode interpolative
 
@@ -322,7 +307,6 @@ material "boite/murs"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -342,7 +326,6 @@ material "boite/noir"
 	{
 		diffuse 0.000000 0.000000 0.000000
 		specular 0.000000 0.000000 0.000000
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -354,7 +337,6 @@ material "boite/parquet 1"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -374,7 +356,6 @@ material "boite/parquet 2"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -394,7 +375,6 @@ material "boite/plafond"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.117000 0.117000 0.117000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -414,7 +394,6 @@ material "boite/porte"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -434,7 +413,6 @@ material "boite/sol 1"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -454,7 +432,6 @@ material "boite/sol 2"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -474,7 +451,6 @@ material "boite/sol 3"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -494,7 +470,6 @@ material "canape_triple/canape_triple"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -514,7 +489,6 @@ material "dj_boite/bloc"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.117000 0.117000 0.117000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -534,7 +508,6 @@ material "dj_boite/metal"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.540000 0.540000 0.540000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -554,7 +527,6 @@ material "dj_boite/piste"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -574,7 +546,6 @@ material "dj_boite/table"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.588235 0.588235 0.588235
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -594,7 +565,6 @@ material "dj_boite/vinyle"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -614,7 +584,6 @@ material "escaliers_boite/metal"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.486000 0.486000 0.486000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -634,7 +603,6 @@ material "escaliers_boite/verre"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.600000 0.600000 0.600000
-		ambient 1.0
 		shininess 64
 		alpha_blend_mode interpolative
 
@@ -654,7 +622,6 @@ material "fauteuil/gros_fauteuil_bar"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -674,7 +641,6 @@ material "panneau_mural/panneau_pub"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -694,7 +660,6 @@ material "panneau_mural/pub"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -714,7 +679,6 @@ material "plante_05/plante_05"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_func greater 0.5
@@ -736,7 +700,6 @@ material "plante_05/plante_pot"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -756,7 +719,6 @@ material "plasma/ecran"
 	{
 		diffuse 0.0392157 0.0392157 0.0392157
 		specular 0.135000 0.135000 0.135000
-		ambient 1.0
 		shininess 64
 	}
 }
@@ -767,7 +729,6 @@ material "plasma/plasma"
 	{
 		diffuse 0.117647 0.117647 0.117647
 		specular 0.0540000 0.0540000 0.0540000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -787,7 +748,6 @@ material "pouf/pouf"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -807,7 +767,6 @@ material "spot_couleur/light bleu"
 	{
 		diffuse 0.000000 0.000000 1.00000
 		specular 0.000000 0.000000 1.00000
-		ambient 1.0
 		shininess 64
 		emissive 5
 		two_sided true
@@ -829,7 +788,6 @@ material "spot_couleur/light jaune"
 	{
 		diffuse 1.00000 1.00000 0.000000
 		specular 1.00000 1.00000 0.000000
-		ambient 1.0
 		shininess 64
 		emissive 5
 		two_sided true
@@ -851,7 +809,6 @@ material "spot_couleur/light rouge"
 	{
 		diffuse 1.00000 0.000000 0.000000
 		specular 1.00000 0.000000 0.000000
-		ambient 1.0
 		shininess 64
 		emissive 5
 		two_sided true
@@ -873,7 +830,6 @@ material "spot_couleur/light vert"
 	{
 		diffuse 0.000000 1.00000 0.000000
 		specular 0.000000 1.00000 0.000000
-		ambient 1.0
 		shininess 64
 		emissive 5
 		two_sided true
@@ -895,7 +851,6 @@ material "spot_couleur/lumiere"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		emissive 5
 		two_sided true
@@ -916,7 +871,6 @@ material "spot_couleur/metal"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.630000 0.630000 0.630000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -936,7 +890,6 @@ material "spot_simple/light"
 	{
 		diffuse 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
-		ambient 1.0
 		shininess 64
 		emissive 5
 		alpha_blend_mode interpolative
@@ -958,7 +911,6 @@ material "spot_simple/lumiere"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.588000 0.588000 0.588000
-		ambient 1.0
 		shininess 64
 		emissive 5
 		two_sided true
@@ -979,7 +931,6 @@ material "spot_simple/metal"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.369000 0.369000 0.369000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -999,7 +950,6 @@ material "table_basse/table_basse_cuivre"
 	{
 		diffuse 0.666667 0.501961 0.00392157
 		specular 0.459000 0.459000 0.459000
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -1011,7 +961,6 @@ material "table_basse/table_basse_laque"
 	{
 		diffuse 0.000000 0.000000 0.000000
 		specular 0.315000 0.315000 0.315000
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -1023,7 +972,6 @@ material "table_haute/cuivre"
 	{
 		diffuse 0.666667 0.501961 0.00392157
 		specular 0.459000 0.459000 0.459000
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -1035,7 +983,6 @@ material "table_haute/laque"
 	{
 		diffuse 0.000000 0.000000 0.000000
 		specular 0.315000 0.315000 0.315000
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -1047,7 +994,6 @@ material "table_verre/table_bar_fer_forge"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.360000 0.360000 0.360000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1067,7 +1013,6 @@ material "table_verre/table_bar_verre"
 	{
 		diffuse 0.000000 0.000000 0.000000
 		specular 0.270000 0.270000 0.270000
-		ambient 1.0
 		shininess 64
 		alpha_blend_mode interpolative
 
@@ -1088,7 +1033,6 @@ material "tabouret_boite/cuir"
 	{
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
-		ambient 1.0
 		shininess 64
 		two_sided true
 
@@ -1108,7 +1052,6 @@ material "tabouret_boite/metal"
 	{
 		diffuse 0.588235 0.588235 0.588235
 		specular 0.342000 0.342000 0.342000
-		ambient 1.0
 		shininess 64
 		two_sided true
 

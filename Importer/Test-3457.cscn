@@ -55,7 +55,7 @@ scene "Scene"
 		hdr_config
 		{
 			exposure 1.00000
-			gamma 2.20000s
+			gamma 2.20000
 		}
 	}
 

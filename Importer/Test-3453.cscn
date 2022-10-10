@@ -63,7 +63,7 @@ scene "Scene"
 	{
 		file "Meshes/Izzy/scene.gltf"
 		rescale 0.01
-		pbrmr_texture_remap_config
+		texture_remap_config
 		{
 			specular
 			{

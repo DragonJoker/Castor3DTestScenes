@@ -31,9 +31,8 @@ scene "Scene"
 	{
 		pass
 		{
-			albedo 0.75164 0.75164 0.75164 1.0
-			specular 0.75164 0.75164 0.75164 1.0
-			emissive 0.0 0.0 0.0 1.0
+			albedo 0.75164 0.75164 0.75164
+			emissive 0.0
 			glossiness 0.2
 			mixed_interpolation true
 
@@ -69,19 +68,6 @@ scene "Scene"
 		colour 1.0 1.0 1.0
 		intensity 0.8 1.0
 	}
-
-	// scene_node "LightNode"
-	// {
-		// position  0.0 0.0 -5.0
-	// }
-	// light "BulbLight1"
-	// {
-		// parent "LightNode"
-		// type point
-		// colour 1.0 1.0 1.0
-		// intensity 0.1 0.8 1.0
-		// attenuation 0.0 0.25 0.0
-	// }
 
 	scene_node "MainCameraNode"
 	{

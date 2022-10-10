@@ -30,7 +30,7 @@ material "CORPS2"
 			image "Textures/Pufi/ALLOBJ_CORPS2_BaseColor.exr"
 			diffuse_mask 0x00ffffff
 			invert_y true
-		} // texture_unit
+		}
 
 		texture_unit
 		{
@@ -39,6 +39,6 @@ material "CORPS2"
 			image "Textures/Pufi/ALLOBJ_CORPS2_Roughness.exr"
 			shininess_mask 0x000000ff
 			invert_y true
-		} // texture_unit
+		}
 	}
 }

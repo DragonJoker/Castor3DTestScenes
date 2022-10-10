@@ -5,7 +5,6 @@ material "DefaultMaterial"
 	{
 		diffuse 0.600000 0.600000 0.600000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -18,14 +17,13 @@ material "barriere_bar/barriere_bar"
 	{
 		diffuse 0.588235 0.588235 0.588235 0.00392157
 		specular 0.423000 0.423000 0.423000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/barriere_metal.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/barriere_metal.jpg"
 		}
 	}
 }
@@ -37,14 +35,13 @@ material "billard/bleu"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/billard_bleu.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/billard_bleu.jpg"
 		}
 	}
 }
@@ -56,14 +53,13 @@ material "billard/bois"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.189000 0.189000 0.189000 0.00392157
-		ambient 1.0
 		shininess 256
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/billard_bois.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/billard_bois.jpg"
 		}
 	}
 }
@@ -75,14 +71,13 @@ material "billard/dorure"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/billard_dorure.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/billard_dorure.jpg"
 		}
 	}
 }
@@ -94,7 +89,6 @@ material "billard/light"
 	{
 		diffuse 1.00000 1.00000 0.752941 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -102,19 +96,19 @@ material "billard/light"
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/billard_light.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/billard_light.png"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/billard_light.png" rgb
+			image "Textures/CafeLegacy/billard_light.png"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			image "Textures/CafeLegacy/billard_light.png" a
 		}
 	}
@@ -127,7 +121,6 @@ material "billard/noir"
 	{
 		diffuse 1.00000 1.00000 1.00000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -140,14 +133,13 @@ material "billard/queue"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/billard_queue.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/billard_queue.jpg"
 		}
 	}
 }
@@ -159,14 +151,13 @@ material "billard/tapis"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/billard_tapis.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/billard_tapis.jpg"
 		}
 	}
 }
@@ -177,21 +168,20 @@ material "cafe/cafe_aqua_coffre"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_coffre.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_coffre.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_coffre.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_coffre.jpg"
 		}
 	}
 }
@@ -202,21 +192,20 @@ material "cafe/cafe_aqua_coquillage_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_coquillage_01.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_coquillage_01.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_coquillage_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_coquillage_01.jpg"
 		}
 	}
 }
@@ -227,21 +216,20 @@ material "cafe/cafe_aqua_coquillage_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_coquillage_02.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_coquillage_02.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_coquillage_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_coquillage_02.jpg"
 		}
 	}
 }
@@ -252,21 +240,20 @@ material "cafe/cafe_aqua_fond"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_fond.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_fond.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_fond.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_fond.jpg"
 		}
 	}
 }
@@ -277,21 +264,20 @@ material "cafe/cafe_aqua_pierre_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_pierre_01.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_pierre_01.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_pierre_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_pierre_01.jpg"
 		}
 	}
 }
@@ -302,21 +288,20 @@ material "cafe/cafe_aqua_pierre_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_pierre_02.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_pierre_02.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_pierre_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_pierre_02.jpg"
 		}
 	}
 }
@@ -327,21 +312,20 @@ material "cafe/cafe_aqua_pierre_03"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_pierre_03.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_pierre_03.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_pierre_03.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_pierre_03.jpg"
 		}
 	}
 }
@@ -352,21 +336,20 @@ material "cafe/cafe_aqua_plafond"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_plafond.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_plafond.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plafond.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plafond.jpg"
 		}
 	}
 }
@@ -377,7 +360,6 @@ material "cafe/cafe_aqua_plante_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -385,19 +367,19 @@ material "cafe/cafe_aqua_plante_01"
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_plante_01.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_plante_01.png"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plante_01.png" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plante_01.png"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			image "Textures/CafeLegacy/cafe_aqua_plante_01.png" a
 		}
 	}
@@ -409,7 +391,6 @@ material "cafe/cafe_aqua_plante_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -417,19 +398,19 @@ material "cafe/cafe_aqua_plante_02"
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_plante_02.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_plante_02.png"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plante_02.png" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plante_02.png"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			image "Textures/CafeLegacy/cafe_aqua_plante_02.png" a
 		}
 	}
@@ -441,7 +422,6 @@ material "cafe/cafe_aqua_plante_03"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
@@ -449,19 +429,19 @@ material "cafe/cafe_aqua_plante_03"
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_plante_03.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_plante_03.png"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plante_03.png" rgb
+			image "Textures/CafeLegacy/cafe_aqua_plante_03.png"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			image "Textures/CafeLegacy/cafe_aqua_plante_03.png" a
 		}
 	}
@@ -473,21 +453,20 @@ material "cafe/cafe_aqua_sol_01"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_sol_01.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_sol_01.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_sol_01.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_sol_01.jpg"
 		}
 	}
 }
@@ -498,21 +477,20 @@ material "cafe/cafe_aqua_sol_02"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_sol_02.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_sol_02.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_sol_02.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_sol_02.jpg"
 		}
 	}
 }
@@ -523,21 +501,20 @@ material "cafe/cafe_aqua_tube"
 	pass
 	{
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_aqua_tube.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_aqua_tube.jpg"
 		}
 
 		texture_unit
 		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_tube.jpg" rgb
+			image "Textures/CafeLegacy/cafe_aqua_tube.jpg"
 		}
 	}
 }
@@ -549,14 +526,13 @@ material "cafe/cafe_bar_alu"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.156863 0.156863 0.156863 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_bar_alu.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_bar_alu.jpg"
 		}
 	}
 }
@@ -568,14 +544,13 @@ material "cafe/cafe_bar_gris"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_bar_gris.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_bar_gris.jpg"
 		}
 	}
 }
@@ -587,14 +562,13 @@ material "cafe/cafe_bar_light"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_bar_light.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_bar_light.jpg"
 		}
 	}
 }
@@ -606,14 +580,13 @@ material "cafe/cafe_bar_marbre"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.235294 0.235294 0.235294 0.00392157
-		ambient 1.0
 		shininess 1024
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_bar_marbre.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_bar_marbre.jpg"
 		}
 	}
 }
@@ -625,14 +598,13 @@ material "cafe/cafe_bois"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_bois.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_bois.jpg"
 		}
 	}
 }
@@ -644,14 +616,13 @@ material "cafe/cafe_bouteilles_01"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_bouteilles_01.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_bouteilles_01.jpg"
 		}
 	}
 }
@@ -663,14 +634,13 @@ material "cafe/cafe_bouteilles_02"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_bouteilles_02.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_bouteilles_02.jpg"
 		}
 	}
 }
@@ -682,14 +652,13 @@ material "cafe/cafe_bouteilles_03"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_bouteilles_03.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_bouteilles_03.jpg"
 		}
 	}
 }
@@ -701,14 +670,13 @@ material "cafe/cafe_bouteilles_04"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.352941 0.352941 0.352941 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_bouteilles_04.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_bouteilles_04.jpg"
 		}
 	}
 }
@@ -720,14 +688,13 @@ material "cafe/cafe_carelage"
 	{
 		diffuse 0.843137 0.843137 0.843137 0.00392157
 		specular 0.0784314 0.0784314 0.0784314 0.00392157
-		ambient 1.0
 		shininess 1024
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_carelage.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_carelage.jpg"
 		}
 	}
 }
@@ -739,7 +706,6 @@ material "cafe/cafe_chrome"
 	{
 		diffuse 0.337255 0.337255 0.337255 0.00392157
 		specular 0.603000 0.603000 0.603000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -752,14 +718,13 @@ material "cafe/cafe_deco_01"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_deco_01.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_deco_01.jpg"
 		}
 	}
 }
@@ -771,14 +736,13 @@ material "cafe/cafe_deco_02"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_deco_02.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_deco_02.jpg"
 		}
 	}
 }
@@ -790,14 +754,13 @@ material "cafe/cafe_deco_03"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_deco_03.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_deco_03.jpg"
 		}
 	}
 }
@@ -809,14 +772,13 @@ material "cafe/cafe_deco_04"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_deco_04.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_deco_04.jpg"
 		}
 	}
 }
@@ -828,14 +790,13 @@ material "cafe/cafe_entree"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/magasins_vitrine_bar.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/magasins_vitrine_bar.jpg"
 		}
 	}
 }
@@ -847,15 +808,14 @@ material "cafe/cafe_exit"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.815082
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_exit.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_exit.jpg"
 		}
 	}
 }
@@ -867,14 +827,13 @@ material "cafe/cafe_frigo_bar"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_frigo_bar.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_frigo_bar.jpg"
 		}
 	}
 }
@@ -886,14 +845,13 @@ material "cafe/cafe_grille_bar"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_grille_bar.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_grille_bar.jpg"
 		}
 	}
 }
@@ -905,14 +863,13 @@ material "cafe/cafe_grille_bar_02"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_grille_bar_02.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_grille_bar_02.jpg"
 		}
 	}
 }
@@ -924,14 +881,13 @@ material "cafe/cafe_mur_01"
 	{
 		diffuse 0.843137 0.843137 0.843137 0.00392157
 		specular 0.156863 0.156863 0.156863 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_mur_01.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_mur_01.jpg"
 		}
 	}
 }
@@ -943,15 +899,14 @@ material "cafe/cafe_mur_02"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 0.271695
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_mur_02.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_mur_02.jpg"
 		}
 	}
 }
@@ -963,15 +918,14 @@ material "cafe/cafe_neon"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.313726 0.313726 0.313726 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		emissive 1.35847
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_carelage.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_carelage.jpg"
 		}
 	}
 }
@@ -983,14 +937,13 @@ material "cafe/cafe_porte"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_porte.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_porte.jpg"
 		}
 	}
 }
@@ -1002,14 +955,13 @@ material "cafe/cafe_poteau"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_poteau.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_poteau.jpg"
 		}
 	}
 }
@@ -1021,14 +973,13 @@ material "cafe/cafe_rideau"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_rideau.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_rideau.jpg"
 		}
 	}
 }
@@ -1040,14 +991,13 @@ material "cafe/cafe_roof_01"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_roof_01.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_roof_01.jpg"
 		}
 	}
 }
@@ -1059,14 +1009,13 @@ material "cafe/cafe_roof_02"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_roof_02.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_roof_02.jpg"
 		}
 	}
 }
@@ -1078,14 +1027,13 @@ material "cafe/cafe_sol_01"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.0823529 0.0823529 0.0823529 0.00392157
-		ambient 1.0
 		shininess 128
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_sol_01.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_sol_01.jpg"
 		}
 	}
 }
@@ -1097,20 +1045,19 @@ material "cafe/cafe_vitre"
 	{
 		diffuse 0.996078 0.996078 0.996078 0.00392157
 		specular 0.588235 0.588235 0.588235 0.00392157
-		ambient 1.0
 		shininess 512
 		two_sided true
 		alpha_blend_mode interpolative
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/cafe_vitre.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/cafe_vitre.png"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			image "Textures/CafeLegacy/cafe_vitre.png" a
 		}
 	}
@@ -1123,14 +1070,13 @@ material "canape_demi_cercle/canape_demi_cercle"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/canape_demi_cercle.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/canape_demi_cercle.jpg"
 		}
 	}
 }
@@ -1142,14 +1088,13 @@ material "canape_triple/canape_triple"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/canape_bar.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/canape_bar.jpg"
 		}
 	}
 }
@@ -1161,14 +1106,13 @@ material "fauteuil/gros_fauteuil_bar"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/canape_bar.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/canape_bar.jpg"
 		}
 	}
 }
@@ -1180,20 +1124,19 @@ material "plante_01/plante_01"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/plante_01.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/plante_01.png"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			image "Textures/CafeLegacy/plante_01.png" a
 		}
 	}
@@ -1206,14 +1149,13 @@ material "plante_01/plante_pot"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/plante_pot.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/plante_pot.jpg"
 		}
 	}
 }
@@ -1225,20 +1167,19 @@ material "plante_02/plante_02"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/plante_02.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/plante_02.png"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			image "Textures/CafeLegacy/plante_02.png" a
 		}
 	}
@@ -1251,14 +1192,13 @@ material "plante_02/plante_pot"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/plante_pot.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/plante_pot.jpg"
 		}
 	}
 }
@@ -1270,20 +1210,19 @@ material "plante_03/plante_03"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/plante_03.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/plante_03.png"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			image "Textures/CafeLegacy/plante_03.png" a
 		}
 	}
@@ -1296,14 +1235,13 @@ material "plante_03/plante_pot"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/plante_pot.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/plante_pot.jpg"
 		}
 	}
 }
@@ -1315,20 +1253,19 @@ material "plante_05/plante_05"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_func greater 0.5
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/plante_05.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/plante_05.png"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			image "Textures/CafeLegacy/plante_05.png" a
 		}
 	}
@@ -1341,14 +1278,13 @@ material "plante_05/plante_pot"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/plante_pot.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/plante_pot.jpg"
 		}
 	}
 }
@@ -1360,14 +1296,13 @@ material "pouf/pouf"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/pouf.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/pouf.jpg"
 		}
 	}
 }
@@ -1379,7 +1314,6 @@ material "table_bar/cuivre"
 	{
 		diffuse 0.666667 0.501961 0.00392157 0.00392157
 		specular 0.459000 0.459000 0.459000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -1392,7 +1326,6 @@ material "table_bar/laque"
 	{
 		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 0.315000 0.315000 0.315000 0.00392157
-		ambient 1.0
 		shininess 1024
 		two_sided true
 	}
@@ -1405,7 +1338,6 @@ material "table_basse/table_basse_cuivre"
 	{
 		diffuse 0.666667 0.501961 0.00392157 0.00392157
 		specular 0.459000 0.459000 0.459000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -1418,7 +1350,6 @@ material "table_basse/table_basse_laque"
 	{
 		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 0.315000 0.315000 0.315000 0.00392157
-		ambient 1.0
 		shininess 1024
 		two_sided true
 	}
@@ -1431,14 +1362,13 @@ material "table_verre/table_bar_fer_forge"
 	{
 		diffuse 0.588235 0.588235 0.588235 0.00392157
 		specular 0.360000 0.360000 0.360000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/table_bar_fer_forge.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/table_bar_fer_forge.jpg"
 		}
 	}
 }
@@ -1450,20 +1380,19 @@ material "table_verre/table_bar_verre"
 	{
 		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 0.270000 0.270000 0.270000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 		alpha_blend_mode interpolative
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/table_bar_verre.png" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/table_bar_verre.png"
 		}
 
 		texture_unit
 		{
-			channel opacity
+			opacity_mask 0xFF000000
 			image "Textures/CafeLegacy/table_bar_verre.png" a
 		}
 	}
@@ -1476,14 +1405,13 @@ material "tableau_myt/tableau_myt_graff_01"
 	{
 		diffuse 0.588235 0.588235 0.588235 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/tableau_myt_graff_01.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/tableau_myt_graff_01.jpg"
 		}
 	}
 }
@@ -1495,14 +1423,13 @@ material "tableau_myt/tableau_myt_graff_02"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/tableau_myt_graff_02.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/tableau_myt_graff_02.jpg"
 		}
 	}
 }
@@ -1514,14 +1441,13 @@ material "tableau_myt/tableau_myt_graff_03"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/tableau_myt_graff_03.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/tableau_myt_graff_03.jpg"
 		}
 	}
 }
@@ -1533,14 +1459,13 @@ material "tabouret_bar/cuir"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.108000 0.108000 0.108000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/tabouret_cuir.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/tabouret_cuir.jpg"
 		}
 	}
 }
@@ -1552,14 +1477,13 @@ material "tabouret_bar/metal"
 	{
 		diffuse 0.588000 0.588000 0.588000 0.00392157
 		specular 0.360000 0.360000 0.360000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 
 		texture_unit
 		{
-			channel diffuse
-			image "Textures/CafeLegacy/tabouret_metal.jpg" rgb
+			diffuse_mask 0x00FFFFFF
+			image "Textures/CafeLegacy/tabouret_metal.jpg"
 		}
 	}
 }
@@ -1571,7 +1495,6 @@ material "tv_bar/ecran"
 	{
 		diffuse 0.000000 0.000000 0.000000 0.00392157
 		specular 0.360000 0.360000 0.360000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}
@@ -1584,7 +1507,6 @@ material "tv_bar/plasma"
 	{
 		diffuse 0.156863 0.156863 0.156863 0.00392157
 		specular 0.000000 0.000000 0.000000 0.00392157
-		ambient 1.0
 		shininess 64
 		two_sided true
 	}

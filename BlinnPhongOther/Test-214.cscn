@@ -31,7 +31,7 @@ scene "Scene"
 	scene_node "Plane"
 	{
 		position 450.0 -200.0 50.0
-		orientation 1.0 0.0 0.0 90.0
+		orientation 1.0 0.0 0.0 270.0
 	}
 	object "Plane"
 	{
@@ -48,6 +48,7 @@ scene "Scene"
 	scene_node "Plane2"
 	{
 		position 450.0 -200.0 250.0
+		orientation 1.0 0.0 0.0 180.0
 	}
 	object "Plane2"
 	{
