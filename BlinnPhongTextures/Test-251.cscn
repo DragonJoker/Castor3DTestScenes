@@ -68,7 +68,7 @@ scene "Scene"
 	scene_node "MainCameraNode"
 	{
 		position 87.3926 -3.91655 -82.7833
-		orientation -0.0337855 -0.999314 -0.0151473 48.3264
+		orientation 0.0 1.0 0.0 315.0
 	}
 	camera "MainCamera"
 	{
