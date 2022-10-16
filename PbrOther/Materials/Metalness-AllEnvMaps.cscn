@@ -109,13 +109,11 @@ material "RefrMatBody"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
-		transmission 1.0 1.0 1.0
 		roughness 0.0
-		metalness 1.0
+		metalness 0.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 
 		texture_unit
 		{
@@ -140,12 +138,10 @@ material "RefrMatHead"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
-		transmission 1.0 1.0 1.0
 		roughness 0.0
-		metalness 1.0
+		metalness 0.0
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 
 		texture_unit
 		{
@@ -162,12 +158,10 @@ material "RefrCornea"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
-		transmission 1.0 1.0 1.0
 		roughness 0.0
-		metalness 1.0
+		metalness 0.0
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 	}
 }
 
@@ -176,13 +170,11 @@ material "RefrDx11Shader6"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
-		transmission 1.0 1.0 1.0
 		roughness 0.0
-		metalness 1.0
+		metalness 0.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 
 		texture_unit
 		{
@@ -207,14 +199,12 @@ material "ReflRefrMatBody"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
-		transmission 1.0 1.0 1.0
 		roughness 0.0
-		metalness 1.0
+		metalness 0.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
 		reflections true
-		refractions true
 
 		texture_unit
 		{
@@ -239,13 +229,11 @@ material "ReflRefrMatHead"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
-		transmission 1.0 1.0 1.0
 		roughness 0.0
-		metalness 1.0
+		metalness 0.0
 		two_sided true
 		refraction_ratio 0.92
 		reflections true
-		refractions true
 
 		texture_unit
 		{
@@ -262,13 +250,11 @@ material "ReflRefrCornea"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
-		transmission 1.0 1.0 1.0
 		roughness 0.0
-		metalness 1.0
+		metalness 0.0
 		two_sided true
 		refraction_ratio 0.92
 		reflections true
-		refractions true
 	}
 }
 
@@ -277,14 +263,12 @@ material "ReflRefrDx11Shader6"
 	pass
 	{
 		albedo 0.75164 0.75164 0.75164 1.0
-		transmission 1.0 1.0 1.0
 		roughness 0.0
-		metalness 1.0
+		metalness 0.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
 		reflections true
-		refractions true
 
 		texture_unit
 		{

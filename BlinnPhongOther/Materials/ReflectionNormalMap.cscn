@@ -19,7 +19,6 @@ material "MatBody"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 0.75164 0.75164 0.75164
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
@@ -49,7 +48,6 @@ material "MatHead"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 0.75164 0.75164 0.75164
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		two_sided true
@@ -70,7 +68,6 @@ material "cornea"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 0.75164 0.75164 0.75164
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha 0.119661
@@ -85,7 +82,6 @@ material "dx11Shader6"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 0.75164 0.75164 0.75164
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5

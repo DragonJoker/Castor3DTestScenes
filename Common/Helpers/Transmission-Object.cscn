@@ -1,0 +1,85 @@
+// Objects
+
+// object "$MergedNode_0Sphere6"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere6"
+// }
+
+object "$MergedNode_0Backdrop_Cloth_1"
+{
+	parent "$MergedNode_0"
+	mesh "Backdrop_Cloth_1"
+}
+
+// object "$MergedNode_0Sphere2"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere2"
+// }
+
+object "$MergedNode_0Sphere"
+{
+	parent "$MergedNode_0"
+	mesh "Sphere"
+}
+
+// object "$MergedNode_0Sphere3"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere3"
+// }
+
+// object "$MergedNode_0Sphere4"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere4"
+// }
+
+// object "$MergedNode_0Sphere5"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere5"
+// }
+
+// object "$MergedNode_0Sphere7"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere7"
+// }
+
+// object "$MergedNode_0Sphere8"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere8"
+// }
+
+// object "$MergedNode_0Sphere9"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere9"
+// }
+
+// object "$MergedNode_0Sphere10"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere10"
+// }
+
+// object "$MergedNode_0Sphere11"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere11"
+// }
+
+// object "$MergedNode_0Sphere12"
+// {
+	// parent "$MergedNode_0"
+	// mesh "Sphere12"
+// }
+
+// object "$MergedNode_0BaseNormals_Coated_CoatingOnly_Label_SharedNormals_SimpleCoating_X1_X2_Y0_Y3_Y5"
+// {
+	// parent "$MergedNode_0"
+	// mesh "BaseNormals_Coated_CoatingOnly_Label_SharedNormals_SimpleCoating_X1_X2_Y0_Y3_Y5"
+// }

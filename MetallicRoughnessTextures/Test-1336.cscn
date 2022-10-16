@@ -27,10 +27,11 @@ scene "Scene"
 		pass
 		{
 			albedo 0.75164 0.75164 0.75164 1.0
-			metalness 0.628281
+			metalness 0.0
 			roughness 0.4
 			two_sided true
-			mixed_interpolation true
+			alpha_blend_mode interpolative
+			alpha_func greater 0.95
 			refraction_ratio 0.92
 
 			texture_unit

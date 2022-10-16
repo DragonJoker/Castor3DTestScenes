@@ -31,7 +31,8 @@ scene "Scene"
 			roughness 0.4
 			emissive 1.0
 			two_sided true
-			mixed_interpolation true
+			alpha_blend_mode interpolative
+			alpha_func greater 0.95
 			parallax_occlusion one
 			refraction_ratio 0.92
 

@@ -16,11 +16,9 @@ material "rightSphere"
 	{
 		albedo 0.55000 0.55000 0.55000
 		specular 0.55000 0.55000 0.55000
-		transmission 1.0 1.0 1.0
 		glossiness 0.90
 		two_sided true
 		refraction_ratio 0.66
-		refractions true
 	}
 }
 

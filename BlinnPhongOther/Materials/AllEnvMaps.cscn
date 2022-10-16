@@ -19,7 +19,6 @@ material "ReflMatBody"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
@@ -49,7 +48,6 @@ material "ReflMatHead"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		two_sided true
@@ -70,7 +68,6 @@ material "ReflCornea"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		two_sided true
@@ -83,7 +80,6 @@ material "ReflDx11Shader6"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
@@ -113,13 +109,11 @@ material "RefrMatBody"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 
 		texture_unit
 		{
@@ -144,12 +138,10 @@ material "RefrMatHead"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 
 		texture_unit
 		{
@@ -166,12 +158,10 @@ material "RefrCornea"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 	}
 }
 
@@ -180,13 +170,11 @@ material "RefrDx11Shader6"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 
 		texture_unit
 		{
@@ -211,13 +199,11 @@ material "ReflRefrMatBody"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 		reflections true
 
 		texture_unit
@@ -243,12 +229,10 @@ material "ReflRefrMatHead"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 		reflections true
 
 		texture_unit
@@ -266,12 +250,10 @@ material "ReflRefrCornea"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 		reflections true
 	}
 }
@@ -281,13 +263,11 @@ material "ReflRefrDx11Shader6"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
-		refractions true
 		reflections true
 
 		texture_unit

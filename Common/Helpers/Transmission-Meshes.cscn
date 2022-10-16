@@ -1,0 +1,85 @@
+// Meshes
+
+mesh "Sphere"
+{
+	import "Meshes/Transmission/Sphere.cmsh"
+	default_material "RedTransTexture"
+}
+
+mesh "Backdrop_Cloth_1"
+{
+	import "Meshes/Transmission/Backdrop_Cloth_1.cmsh"
+	default_material "Cloth Backdrop"
+}
+
+mesh "BaseNormals_Coated_CoatingOnly_Label_SharedNormals_SimpleCoating_X1_X2_Y0_Y3_Y5"
+{
+	import "Meshes/Transmission/BaseNormals_Coated_CoatingOnly_Label_SharedNormals_SimpleCoating_X1_X2_Y0_Y3_Y5.cmsh"
+	default_material "LabelMaterial"
+}
+
+mesh "Sphere3"
+{
+	import "Meshes/Transmission/Sphere3.cmsh"
+	default_material "BlueTransWithMask"
+}
+
+mesh "Sphere10"
+{
+	import "Meshes/Transmission/Sphere10.cmsh"
+	default_material "YellowTransMetal"
+}
+
+mesh "Sphere2"
+{
+	import "Meshes/Transmission/Sphere2.cmsh"
+	default_material "YellowTrans"
+}
+
+mesh "Sphere11"
+{
+	import "Meshes/Transmission/Sphere11.cmsh"
+	default_material "GreenMaskMetal"
+}
+
+mesh "Sphere12"
+{
+	import "Meshes/Transmission/Sphere12.cmsh"
+	default_material "BlueTransWithMaskMetal"
+}
+
+mesh "Sphere4"
+{
+	import "Meshes/Transmission/Sphere4.cmsh"
+	default_material "GreenMask"
+}
+
+mesh "Sphere5"
+{
+	import "Meshes/Transmission/Sphere5.cmsh"
+	default_material "RedTransTextureRough"
+}
+
+mesh "Sphere6"
+{
+	import "Meshes/Transmission/Sphere6.cmsh"
+	default_material "YellowTransRough"
+}
+
+mesh "Sphere7"
+{
+	import "Meshes/Transmission/Sphere7.cmsh"
+	default_material "BlueTransWithMaskRough"
+}
+
+mesh "Sphere8"
+{
+	import "Meshes/Transmission/Sphere8.cmsh"
+	default_material "GreenMaskRough"
+}
+
+mesh "Sphere9"
+{
+	import "Meshes/Transmission/Sphere9.cmsh"
+	default_material "RedTransTextureMetal"
+}

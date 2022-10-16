@@ -19,14 +19,12 @@ material "MatBody"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164 1.0
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164 1.0
 		shininess 256.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
 		reflections true
-		refractions true
 
 		texture_unit
 		{
@@ -51,13 +49,11 @@ material "MatHead"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164 1.0
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164 1.0
 		shininess 256.0
 		two_sided true
 		refraction_ratio 0.92
 		reflections true
-		refractions true
 
 		texture_unit
 		{
@@ -74,13 +70,11 @@ material "cornea"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164 1.0
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164 1.0
 		shininess 256.0
 		two_sided true
 		refraction_ratio 0.92
 		reflections true
-		refractions true
 	}
 }
 
@@ -89,14 +83,12 @@ material "dx11Shader6"
 	pass
 	{
 		diffuse 0.75164	0.75164	0.75164 1.0
-		transmission 1.0 1.0 1.0
 		specular 0.75164 0.75164 0.75164 1.0
 		shininess 256.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
 		reflections true
-		refractions true
 
 		texture_unit
 		{

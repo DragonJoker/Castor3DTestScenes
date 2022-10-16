@@ -1,0 +1,24 @@
+// Nodes
+
+scene_node "LightNode"
+{
+	orientation 1 0 0 155.442
+}
+
+scene_node "ROOT"
+{
+}
+
+scene_node "$MergedNode_0"
+{
+	parent "ROOT"
+	position -0.154701 -0.401584 -0.0603687
+}
+
+scene_node "render_camera_n3d"
+{
+	parent "ROOT"
+	orientation -0.963841 0.265817 0.0187523 8.37201
+	position -0.0767554 0.339420 1.80285
+	scale 1.00000 1.00000 1.00000
+}

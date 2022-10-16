@@ -172,9 +172,8 @@ scene "Scene"
 
 		pass
 		{
-			albedo 0.465 0.797 0.991
+			colour_srgb 0.003 0.599 0.812
 			emissive 0.0
-			transmission 0.003 0.599 0.812
 			metalness 0.0
 			roughness 0.08
 		}
