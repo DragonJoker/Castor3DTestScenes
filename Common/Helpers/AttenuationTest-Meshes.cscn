@@ -1,0 +1,109 @@
+// Meshes
+
+mesh "Block_0_1"
+{
+	import "Meshes/Attenuation/Block_0_1.cmsh"
+	default_material "R2_and_R4_ThicknessFac_1.0"
+}
+
+mesh "Block_0_2"
+{
+	import "Meshes/Attenuation/Block_0_2.cmsh"
+	default_material "R2_ThicknessFac_2.0"
+}
+
+mesh "Block_0_19"
+{
+	import "Meshes/Attenuation/Block_0_19.cmsh"
+	default_material "R5_Attenuation_2.0"
+}
+
+mesh "Block_0_110"
+{
+	import "Meshes/Attenuation/Block_0_110.cmsh"
+	default_material "R5_Attenuation_0.50"
+}
+
+mesh "Quad_0_25"
+{
+	import "Meshes/Attenuation/Quad_0_25.cmsh"
+	default_material "R1_Sample_0.25"
+}
+
+mesh "Block_0_18"
+{
+	import "Meshes/Attenuation/Block_0_18.cmsh"
+	default_material "R5_Attenuation_1.5"
+}
+
+mesh "Block_0_111"
+{
+	import "Meshes/Attenuation/Block_0_111.cmsh"
+	default_material "R5_Attenuation_0.25"
+}
+
+mesh "Block_0_17"
+{
+	import "Meshes/Attenuation/Block_0_17.cmsh"
+	default_material "R2_and_R4_ThicknessFac_1.0"
+}
+
+mesh "Block_0_25"
+{
+	import "Meshes/Attenuation/Block_0_25.cmsh"
+	default_material "R2_ThicknessFac_0.25"
+}
+
+mesh "Block_0_50"
+{
+	import "Meshes/Attenuation/Block_0_50.cmsh"
+	default_material "R2_ThicknessFac_0.50"
+}
+
+mesh "Block_1_5"
+{
+	import "Meshes/Attenuation/Block_1_5.cmsh"
+	default_material "R2_ThicknessFac_1.5"
+}
+
+mesh "Quad_0_5"
+{
+	import "Meshes/Attenuation/Quad_0_5.cmsh"
+	default_material "R1_Sample_0.50"
+}
+
+mesh "Plane"
+{
+	import "Meshes/Attenuation/Plane.cmsh"
+	default_material "FlatBackdrop"
+}
+
+mesh "Block_Row"
+{
+	import "Meshes/Attenuation/Block_Row.cmsh"
+	default_material "R3_ThicknessTex_Mat"
+}
+
+mesh "Labels"
+{
+	import "Meshes/Attenuation/Labels.cmsh"
+	default_material "LabelMaterial"
+}
+
+mesh "Quad_0_1"
+{
+	import "Meshes/Attenuation/Quad_0_1.cmsh"
+	default_material "R1_Sample_1.0"
+}
+
+mesh "Quad_0_2"
+{
+	import "Meshes/Attenuation/Quad_0_2.cmsh"
+	default_material "R1_Sample_2.0"
+}
+
+mesh "Quad_1_5"
+{
+	import "Meshes/Attenuation/Quad_1_5.cmsh"
+	default_material "R1_Sample_1.5"
+}

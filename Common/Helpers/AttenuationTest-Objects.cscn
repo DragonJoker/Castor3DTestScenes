@@ -1,0 +1,139 @@
+// Objects
+
+object "R2_Block_1.0Block_0_1"
+{
+	parent "R2_Block_1.0"
+	mesh "Block_0_1"
+}
+
+object "$MergedNode_0Block_1_5"
+{
+	parent "$MergedNode_0"
+	mesh "Block_1_5"
+}
+
+object "$MergedNode_0Block_0_17"
+{
+	parent "$MergedNode_0"
+	mesh "Block_0_17"
+}
+
+object "$MergedNode_0Block_0_2"
+{
+	parent "$MergedNode_0"
+	mesh "Block_0_2"
+}
+
+object "$MergedNode_0Block_0_50"
+{
+	parent "$MergedNode_0"
+	mesh "Block_0_50"
+}
+
+object "$MergedNode_0Block_Row"
+{
+	parent "$MergedNode_0"
+	mesh "Block_Row"
+}
+
+object "$MergedNode_0Plane"
+{
+	parent "$MergedNode_0"
+	mesh "Plane"
+}
+
+object "$MergedNode_0Block_0_25"
+{
+	parent "$MergedNode_0"
+	mesh "Block_0_25"
+}
+
+object "$MergedNode_0Labels"
+{
+	parent "$MergedNode_0"
+	mesh "Labels"
+}
+
+object "$MergedNode_0Block_0_18"
+{
+	parent "$MergedNode_0"
+	mesh "Block_0_18"
+}
+
+object "R4_Block_0.25Block_0_1"
+{
+	parent "R4_Block_0.25"
+	mesh "Block_0_1"
+}
+
+object "$MergedNode_0Block_0_19"
+{
+	parent "$MergedNode_0"
+	mesh "Block_0_19"
+}
+
+object "$MergedNode_0Block_0_110"
+{
+	parent "$MergedNode_0"
+	mesh "Block_0_110"
+}
+
+object "$MergedNode_0Block_0_111"
+{
+	parent "$MergedNode_0"
+	mesh "Block_0_111"
+}
+
+object "$MergedNode_0Quad_0_1"
+{
+	parent "$MergedNode_0"
+	mesh "Quad_0_1"
+}
+
+object "$MergedNode_0Quad_1_5"
+{
+	parent "$MergedNode_0"
+	mesh "Quad_1_5"
+}
+
+object "$MergedNode_0Quad_0_2"
+{
+	parent "$MergedNode_0"
+	mesh "Quad_0_2"
+}
+
+object "$MergedNode_0Quad_0_5"
+{
+	parent "$MergedNode_0"
+	mesh "Quad_0_5"
+}
+
+object "$MergedNode_0Quad_0_25"
+{
+	parent "$MergedNode_0"
+	mesh "Quad_0_25"
+}
+
+object "R4_Block_1.0Block_0_1"
+{
+	parent "R4_Block_1.0"
+	mesh "Block_0_1"
+}
+
+object "R4_Block_1.5Block_0_1"
+{
+	parent "R4_Block_1.5"
+	mesh "Block_0_1"
+}
+
+object "R4_Block_2.0Block_0_1"
+{
+	parent "R4_Block_2.0"
+	mesh "Block_0_1"
+}
+
+object "R4_Block_0.50Block_0_1"
+{
+	parent "R4_Block_0.50"
+	mesh "Block_0_1"
+}

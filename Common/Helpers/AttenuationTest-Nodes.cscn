@@ -1,0 +1,57 @@
+// Nodes
+
+scene_node "AttenuationTestTransformNode"
+{
+	scale 0.100000 0.100000 0.100000
+}
+
+scene_node "ROOT"
+{
+	parent "AttenuationTestTransformNode"
+}
+
+scene_node "$MergedNode_0"
+{
+	parent "ROOT"
+	position 2.50000 3.00000 0.00000
+}
+
+scene_node "R2_Block_1.0"
+{
+	parent "ROOT"
+	position 0.00000 3.00000 0.00000
+}
+
+scene_node "R4_Block_0.25"
+{
+	parent "ROOT"
+	position -3.50000 -3.00000 0.00000
+	scale 0.250000 0.250000 0.250000
+}
+
+scene_node "R4_Block_0.50"
+{
+	parent "ROOT"
+	position -2.00000 -3.00000 0.00000
+	scale 0.500000 0.500000 0.500000
+}
+
+scene_node "R4_Block_1.0"
+{
+	parent "ROOT"
+	position 0.00000 -3.00000 0.00000
+}
+
+scene_node "R4_Block_1.5"
+{
+	parent "ROOT"
+	position 2.50000 -3.00000 0.00000
+	scale 1.50000 1.50000 1.50000
+}
+
+scene_node "R4_Block_2.0"
+{
+	parent "ROOT"
+	position 6.00000 -3.00000 0.00000
+	scale 2.00000 2.00000 2.00000
+}

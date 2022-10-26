@@ -1,0 +1,97 @@
+// Meshes
+
+mesh "ClearCoatSampleMesh4"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh4.cmsh"
+	default_material "Partial_Coated"
+}
+
+mesh "ClearCoatSampleMesh"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh.cmsh"
+	default_material "Simple_Base"
+}
+
+mesh "ClearCoatSampleMesh1"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh1.cmsh"
+	default_material "Simple_Coated"
+}
+
+mesh "ClearCoatSampleMesh12"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh12.cmsh"
+	default_material "SharedNorm_Coating"
+}
+
+mesh "ClearCoatSampleMesh3"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh3.cmsh"
+	default_material "Partial_Base"
+}
+
+mesh "ClearCoatSampleMesh10"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh10.cmsh"
+	default_material "BaseNorm_Coated"
+}
+
+mesh "ClearCoatSampleMesh13"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh13.cmsh"
+	default_material "CoatNorm_Coated"
+}
+
+mesh "ClearCoatSampleMesh7"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh7.cmsh"
+	default_material "RoughVariations_Coated"
+}
+
+mesh "ClearCoatSampleMesh14"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh14.cmsh"
+	default_material "CoatNorm_Coating"
+}
+
+mesh "ClearCoatSampleMesh6"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh6.cmsh"
+	default_material "RoughVariations_Base"
+}
+
+mesh "ClearCoatSampleMesh15"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh15.cmsh"
+	default_material "SharedNorm_Coated"
+}
+
+mesh "ClearCoatSampleMesh2"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh2.cmsh"
+	default_material "Simple_Coating"
+}
+
+mesh "ClearCoatSampleMesh5"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh5.cmsh"
+	default_material "Partial_Coating"
+}
+
+mesh "ClearCoatSampleMesh8"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh8.cmsh"
+	default_material "RoughVariations_Coating"
+}
+
+mesh "ClearCoatSampleMesh9"
+{
+	import "Meshes/Clearcoat/ClearCoatSampleMesh9.cmsh"
+	default_material "BaseNorm_Base"
+}
+
+mesh "Labels_Mesh_1_2_3_4_5_6_7_8"
+{
+	import "Meshes/Clearcoat/Labels_Mesh_1_2_3_4_5_6_7_8.cmsh"
+	default_material "LabelMaterial"
+}

@@ -1,0 +1,277 @@
+// Samplers
+
+sampler "Default"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter nearest
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod -1000.00
+	max_lod 1000.00
+	lod_bias 0.00000
+	border_colour float_opaque_black
+	max_anisotropy 1.00000
+}
+
+// Materials
+
+material "FlatBackdrop"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			levels_count 7
+			image "Textures/Attenuation/PlainGrid.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "LabelMaterial"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.800000
+
+		texture_unit
+		{
+			levels_count 8
+			image "Textures/Attenuation/AttenuationLabels.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "R1_Sample_0.25"
+{
+
+	pass
+	{
+		two_sided true
+		colour_hdr 0.562341 0.840896 0.974004
+		transmission 1.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R1_Sample_0.50"
+{
+
+	pass
+	{
+		two_sided true
+		colour_hdr 0.316228 0.707107 0.948683
+		transmission 1.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R1_Sample_1.0"
+{
+
+	pass
+	{
+		two_sided true
+		colour_hdr 0.100000 0.500000 0.900000
+		transmission 1.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R1_Sample_1.5"
+{
+
+	pass
+	{
+		two_sided true
+		colour_hdr 0.0316228 0.353553 0.853815
+		transmission 1.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R1_Sample_2.0"
+{
+
+	pass
+	{
+		two_sided true
+		colour_hdr 0.0100000 0.250000 0.810000
+		transmission 1.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R2_ThicknessFac_0.25"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 0.100000 0.500000 0.900000
+		attenuation_distance 1.00000
+		thickness_factor 0.250000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R2_ThicknessFac_0.50"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 0.100000 0.500000 0.900000
+		attenuation_distance 1.00000
+		thickness_factor 0.500000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R2_ThicknessFac_1.5"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 0.100000 0.500000 0.900000
+		attenuation_distance 1.00000
+		thickness_factor 1.50000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R2_ThicknessFac_2.0"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 0.100000 0.500000 0.900000
+		attenuation_distance 1.00000
+		thickness_factor 2.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R2_and_R4_ThicknessFac_1.0"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 0.100000 0.500000 0.900000
+		attenuation_distance 1.00000
+		thickness_factor 1.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R3_ThicknessTex_Mat"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 0.100000 0.500000 0.900000
+		attenuation_distance 1.00000
+		thickness_factor 2.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+
+		texture_unit
+		{
+			levels_count 7
+			image "Textures/Attenuation/ThicknessTexture.dds"
+			thickness_mask 0x0000ff00
+			invert_y true
+		}
+	}
+}
+
+material "R5_Attenuation_0.25"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 0.100000 0.500000 0.900000
+		attenuation_distance 4.00000
+		thickness_factor 1.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R5_Attenuation_0.50"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 0.100000 0.500000 0.900000
+		attenuation_distance 2.00000
+		thickness_factor 1.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R5_Attenuation_1.5"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 0.100000 0.500000 0.900000
+		attenuation_distance 0.666667
+		thickness_factor 1.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}
+
+material "R5_Attenuation_2.0"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 0.100000 0.500000 0.900000
+		attenuation_distance 0.500000
+		thickness_factor 1.00000
+		roughness 0.00000
+		refraction_ratio 1.00000
+	}
+}

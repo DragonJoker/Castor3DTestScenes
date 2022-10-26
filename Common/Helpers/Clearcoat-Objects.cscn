@@ -1,0 +1,97 @@
+// Objects
+
+object "$MergedNode_0ClearCoatSampleMesh2"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh2"
+}
+
+object "$MergedNode_0Labels_Mesh_1_2_3_4_5_6_7_8"
+{
+	parent "$MergedNode_0"
+	mesh "Labels_Mesh_1_2_3_4_5_6_7_8"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh1"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh1"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh3"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh3"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh4"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh4"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh5"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh5"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh6"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh6"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh7"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh7"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh8"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh8"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh9"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh9"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh10"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh10"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh12"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh12"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh13"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh13"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh14"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh14"
+}
+
+object "$MergedNode_0ClearCoatSampleMesh15"
+{
+	parent "$MergedNode_0"
+	mesh "ClearCoatSampleMesh15"
+}
