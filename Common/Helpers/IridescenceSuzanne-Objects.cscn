@@ -1,0 +1,19 @@
+// Objects
+
+object "$MergedNode_0Suzanne1"
+{
+	parent "$MergedNode_0"
+	mesh "Suzanne1"
+}
+
+object "$MergedNode_0Suzanne2"
+{
+	parent "$MergedNode_0"
+	mesh "Suzanne2"
+}
+
+object "$MergedNode_0Suzanne3"
+{
+	parent "$MergedNode_0"
+	mesh "Suzanne3"
+}

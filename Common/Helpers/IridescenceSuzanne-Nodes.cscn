@@ -1,0 +1,17 @@
+// Nodes
+
+scene_node "ROOT"
+{
+}
+
+scene_node "$MergedNode_0"
+{
+	parent "ROOT"
+	position -3.00000 0.00000 0.00000
+}
+
+scene_node "Light"
+{
+	parent "ROOT"
+	orientation 0 1 0 180
+}

@@ -1,0 +1,19 @@
+// Meshes
+
+mesh "Suzanne1"
+{
+	import "Meshes/IridescenceSuzanne/Suzanne1.cmsh"
+	default_material "DielectricConstThickness"
+}
+
+mesh "Suzanne2"
+{
+	import "Meshes/IridescenceSuzanne/Suzanne2.cmsh"
+	default_material "MetallicConstThickness"
+}
+
+mesh "Suzanne3"
+{
+	import "Meshes/IridescenceSuzanne/Suzanne3.cmsh"
+	default_material "TransmissiveVarThickness"
+}

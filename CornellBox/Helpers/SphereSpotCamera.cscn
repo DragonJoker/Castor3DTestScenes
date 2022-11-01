@@ -7,7 +7,7 @@ camera "MainCamera"
 		type perspective
 		aspect_ratio 1.778
 		near 1.0
-		far 1500.0
+		far 150.0
 		fov_y 45
 	}
 	hdr_config

@@ -1,0 +1,46 @@
+// Samplers
+
+// Materials
+
+material "DielectricConstThickness"
+{
+
+	pass
+	{
+		colour_hdr 0.400000 0.400000 0.400000
+		roughness 0.100000
+		iridescence_factor 1.00000
+		iridescence_ior 1.33000
+	}
+}
+
+material "MetallicConstThickness"
+{
+
+	pass
+	{
+		colour_hdr 0.400000 0.400000 0.400000
+		metalness 1.00000
+		roughness 0.100000
+		iridescence_factor 1.00000
+		iridescence_ior 1.33000
+	}
+}
+
+material "TransmissiveVarThickness"
+{
+
+	pass
+	{
+		colour_hdr 1.00000 1.00000 1.00000
+		transmission 1.00000
+		attenuation_colour 1.00000 1.00000 1.00000
+		thickness_factor 2.00000
+		roughness 0.100000
+		refraction_ratio 1.50000
+		iridescence_factor 1.00000
+		iridescence_ior 1.80000
+		iridescence_min_thickness 200.0
+		iridescence_max_thickness 600.0
+	}
+}

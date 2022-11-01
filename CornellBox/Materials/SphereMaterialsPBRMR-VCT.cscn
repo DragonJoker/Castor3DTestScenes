@@ -18,7 +18,10 @@ material "rightSphere"
 		roughness 0.1
 		metalness 1.0
 		two_sided true
-		refraction_ratio 0.66
+		refraction_ratio 1.33
+		transmission 1.0
+		thickness_factor 1.0
+		attenuation_colour 1.0 1.0 1.0
 	}
 }
 
