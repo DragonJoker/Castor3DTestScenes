@@ -154,6 +154,7 @@ material "baltard_in_ns/light"
 		{
 			levels_count 9
 			albedo_mask 0x00FFFFFF
+			emissive_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/spot_light.png" rgb
 		}
@@ -182,6 +183,7 @@ material "baltard_in_ns/lumiere"
 		{
 			levels_count 9
 			albedo_mask 0x00FFFFFF
+			emissive_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BaltardIn/spot_light.png" rgb
 		}
@@ -516,6 +518,7 @@ material "pavillon_baltard_in/light"
 		albedo 1.00000 0.992157 0.772549
 		specular 0.100000 0.100000 0.100000
 		glossiness 0.9
+		emissive_colour 1.00000 0.992157 0.772549
 		emissive 10
 		two_sided true
 	}

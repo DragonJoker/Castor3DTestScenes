@@ -133,6 +133,7 @@ material "baltard_in_ns/light"
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
 		shininess 0.0
+		emissive_colour 1.0 1.0 1.0
 		emissive 10
 		alpha_blend_mode interpolative
 
@@ -155,6 +156,7 @@ material "baltard_in_ns/lumiere"
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.000000 0.000000 0.000000
 		shininess 0.0
+		emissive_colour 1.0 1.0 1.0
 		emissive 10
 		alpha_blend_mode interpolative
 
@@ -245,6 +247,7 @@ material "baltard_in_ns/ns_bg"
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.0900000 0.0900000 0.0900000
 		shininess 16.0
+		emissive_colour 1.0 1.0 1.0
 		emissive 0.866025
 		two_sided true
 
@@ -323,6 +326,7 @@ material "baltard_in_ns/screen_ns_04"
 		diffuse 0.588000 0.588000 0.588000
 		specular 0.756000 0.756000 0.756000
 		shininess 160.0
+		emissive_colour 1.0 1.0 1.0
 		emissive 0.866025
 		two_sided true
 		alpha 0.0
@@ -335,6 +339,7 @@ material "baltard_in_ns/screen_ns_04"
 			sampler "TriLinear"
 			image "Textures/BaltardIn/screen_ns_04.jpg"
 			diffuse_mask 0x00FFFFFF
+			emissive_mask 0x00FFFFFF
 		}
 	}
 }
@@ -456,6 +461,7 @@ material "pavillon_baltard_in/light"
 		diffuse 1.00000 0.992157 0.772549
 		specular 0.000000 0.000000 0.000000
 		shininess 224.0
+		emissive_colour 1.00000 0.992157 0.772549
 		emissive 10
 		two_sided true
 	}

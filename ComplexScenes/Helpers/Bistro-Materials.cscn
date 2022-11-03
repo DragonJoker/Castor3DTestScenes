@@ -374,6 +374,7 @@ material "Imp-Bistro_Sign_Letters"
 			levels_count 4
 			image "Textures/Bistro/Grey_80.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -1703,6 +1704,7 @@ material "Imp-MASTER_Curtains"
 			levels_count 8
 			image "Textures/Bistro/Windows_curtains_diff.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -1808,6 +1810,7 @@ material "Imp-MASTER_Focus_Glass"
 			levels_count 7
 			image "Textures/Bistro/Paris_BistroExteriorSpotLightGlass_01_diff.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 
@@ -1929,6 +1932,7 @@ material "Imp-MASTER_Glass_Clean"
 		glossiness 0.100000
 		alpha 0.346410
 		bw_accumulation 1
+		emissive_colour 0.00000 0.00000 0.00000
 		emissive 0.0173205
 		transmission 0.200000 0.200000 0.200000
 		two_sided true
@@ -1960,7 +1964,6 @@ material "Imp-MASTER_Glass_Exterior"
 		albedo 0.100000 0.100000 0.100000
 		specular 0.500000 0.500000 0.500000
 		glossiness 0.0800000
-		emissive 1.00000
 		alpha 0.346410
 		two_sided true
 		alpha_blend_mode interpolative
@@ -2410,6 +2413,7 @@ material "Imp-MASTER_Light_Bulb"
 			levels_count 8
 			image "Textures/Bistro/paris_bistroexteriorspotlight_01_diff.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -3701,6 +3705,7 @@ material "Imp-Paris_StringLights_01_Blue_Color"
 		specular 0.434000 0.434000 0.434000
 		glossiness 0.0151740
 		emissive 3.20156
+		emissive_colour 0.800000 0.800000 0.800000
 		two_sided true
 
 		texture_unit
@@ -3708,6 +3713,7 @@ material "Imp-Paris_StringLights_01_Blue_Color"
 			levels_count 5
 			image "Textures/Bistro/White.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -3721,6 +3727,7 @@ material "Imp-Paris_StringLights_01_Green_Color"
 		albedo 0.800000 0.800000 0.800000
 		specular 0.434000 0.434000 0.434000
 		glossiness 0.0158500
+		emissive_colour 0.800000 0.800000 0.800000
 		emissive 2.29129
 		two_sided true
 
@@ -3729,6 +3736,7 @@ material "Imp-Paris_StringLights_01_Green_Color"
 			levels_count 4
 			image "Textures/Bistro/Green.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -3742,6 +3750,7 @@ material "Imp-Paris_StringLights_01_Orange_Color"
 		albedo 0.800000 0.800000 0.800000
 		specular 0.434000 0.434000 0.434000
 		glossiness 0.0152130
+		emissive_colour 0.800000 0.800000 0.800000
 		emissive 2.23830
 		two_sided true
 
@@ -3750,6 +3759,7 @@ material "Imp-Paris_StringLights_01_Orange_Color"
 			levels_count 4
 			image "Textures/Bistro/Orange.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -3763,6 +3773,7 @@ material "Imp-Paris_StringLights_01_Pink_Color"
 		albedo 0.800000 0.800000 0.800000
 		specular 0.434000 0.434000 0.434000
 		glossiness 0.0158500
+		emissive_colour 0.800000 0.800000 0.800000
 		emissive 2.24499
 		two_sided true
 
@@ -3771,6 +3782,7 @@ material "Imp-Paris_StringLights_01_Pink_Color"
 			levels_count 4
 			image "Textures/Bistro/Purple.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -3784,6 +3796,7 @@ material "Imp-Paris_StringLights_01_Red_Color"
 		albedo 0.800000 0.800000 0.800000
 		specular 0.456000 0.456000 0.456000
 		glossiness 0.0151740
+		emissive_colour 0.800000 0.800000 0.800000
 		emissive 3.00832
 		two_sided true
 
@@ -3792,6 +3805,7 @@ material "Imp-Paris_StringLights_01_Red_Color"
 			levels_count 4
 			image "Textures/Bistro/Red_Full.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -3805,6 +3819,7 @@ material "Imp-Paris_StringLights_01_White_Color"
 		albedo 0.800000 0.800000 0.800000
 		specular 0.435000 0.435000 0.435000
 		glossiness 0.0158500
+		emissive_colour 0.800000 0.800000 0.800000
 		emissive 16.7631
 		two_sided true
 
@@ -3813,6 +3828,7 @@ material "Imp-Paris_StringLights_01_White_Color"
 			levels_count 5
 			image "Textures/Bistro/White.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -3955,6 +3971,7 @@ material "Imp-Paris_Wall_Bulb_Light"
 			levels_count 5
 			image "Textures/Bistro/White.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -4754,6 +4771,7 @@ material "Imp-Spotlight_Glass"
 			levels_count 7
 			image "Textures/Bistro/Paris_BistroExteriorSpotLightGlass_01_diff.dds"
 			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 

@@ -247,6 +247,7 @@ material "bars_boite/lumiere"
 		{
 			levels_count 9
 			albedo_mask 0x00FFFFFF
+			emissive_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/bar_lumiere.jpg" rgb
 		}
@@ -839,6 +840,7 @@ material "spot_couleur/light bleu"
 	{
 		albedo 0.000000 0.000000 1.00000
 		roughness 0.5
+		emissive_colour 0.000000 0.000000 1.00000
 		emissive 2
 		two_sided true
 		alpha_blend_mode interpolative
@@ -859,6 +861,7 @@ material "spot_couleur/light jaune"
 	{
 		albedo 1.00000 1.00000 0.000000
 		roughness 0.5
+		emissive_colour 1.00000 1.00000 0.000000
 		emissive 2
 		two_sided true
 		alpha_blend_mode interpolative
@@ -879,6 +882,7 @@ material "spot_couleur/light rouge"
 	{
 		albedo 1.00000 0.000000 0.000000
 		roughness 0.5
+		emissive_colour 1.00000 0.000000 0.000000
 		emissive 2
 		two_sided true
 		alpha_blend_mode interpolative
@@ -899,6 +903,7 @@ material "spot_couleur/light vert"
 	{
 		albedo 0.000000 1.00000 0.000000
 		roughness 0.5
+		emissive_colour 0.000000 1.00000 0.000000
 		emissive 2
 		two_sided true
 		alpha_blend_mode interpolative
@@ -925,6 +930,7 @@ material "spot_couleur/lumiere"
 		texture_unit
 		{
 			levels_count 8
+			emissive_mask 0x00FFFFFF
 			albedo_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/spot_couleur_lumiere.jpg" rgb
@@ -984,6 +990,7 @@ material "spot_simple/lumiere"
 		{
 			levels_count 8
 			albedo_mask 0x00FFFFFF
+			emissive_mask 0x00FFFFFF
 			sampler "TriLinear"
 			image "Textures/BoitePBRMR/spot_simple_lumiere.jpg" rgb
 		}

@@ -526,7 +526,8 @@ scene "Scene"
 		{
 			diffuse 1 0 0
 			specular 0 0 0
-			emissive 1.0
+			emissive_colour 1 0 0
+			emissive_factor 1.0
 			shininess 50
 			mixed_interpolation true
 

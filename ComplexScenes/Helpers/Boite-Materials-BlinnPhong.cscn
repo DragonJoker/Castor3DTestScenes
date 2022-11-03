@@ -266,6 +266,7 @@ material "bars_boite/lumiere"
 			levels_count 7
 			image "Textures/BoiteLegacy/bar_lumiere.dds"
 			diffuse_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -850,6 +851,7 @@ material "spot_couleur/light bleu"
 		diffuse 0.00000 0.00000 1.00000
 		specular 0.00000 0.00000 1.00000
 		shininess 64.0000
+		emissive_colour 0.00000 0.00000 1.00000
 		emissive 5.00000
 		two_sided true
 		alpha_blend_mode interpolative
@@ -874,6 +876,7 @@ material "spot_couleur/light jaune"
 		specular 1.00000 1.00000 0.00000
 		shininess 64.0000
 		emissive 5.00000
+		emissive_colour 1.00000 1.00000 0.00000
 		two_sided true
 		alpha_blend_mode interpolative
 
@@ -896,6 +899,7 @@ material "spot_couleur/light rouge"
 		diffuse 1.00000 0.00000 0.00000
 		specular 1.00000 0.00000 0.00000
 		shininess 64.0000
+		emissive_colour 1.00000 0.00000 0.00000
 		emissive 5.00000
 		two_sided true
 		alpha_blend_mode interpolative
@@ -919,6 +923,7 @@ material "spot_couleur/light vert"
 		diffuse 0.00000 1.00000 0.00000
 		specular 0.00000 1.00000 0.00000
 		shininess 64.0000
+		emissive_colour 0.00000 1.00000 0.00000
 		emissive 5.00000
 		two_sided true
 		alpha_blend_mode interpolative
@@ -951,6 +956,7 @@ material "spot_couleur/lumiere"
 			levels_count 6
 			image "Textures/BoiteLegacy/spot_couleur_lumiere.dds"
 			diffuse_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
@@ -994,6 +1000,7 @@ material "spot_simple/light"
 			levels_count 7
 			image "Textures/BoiteLegacy/spot_light.dds"
 			diffuse_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			opacity_mask 0xff000000
 			invert_y true
 		}
@@ -1017,6 +1024,7 @@ material "spot_simple/lumiere"
 			levels_count 6
 			image "Textures/BoiteLegacy/spot_simple_lumiere.dds"
 			diffuse_mask 0x00ffffff
+			emissive_mask 0x00ffffff
 			invert_y true
 		}
 	}
