@@ -1,0 +1,283 @@
+materials pbr
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+
+	scene_node "LightNode"
+	{
+		orientation 1.0 0.0 0.0 65.0
+	}
+
+	scene_node "PlanetNode"
+	{
+	}
+
+	atmospheric_scattering
+	{
+		sunNode "LightNode"
+		planetNode "PlanetNode"
+		transmittanceResolution 256 64
+		multiScatterResolution 32
+		atmosphereVolumeResolution 32
+		skyViewResolution 192 108
+		sunIlluminance 1.0 1.0 1.0
+		sunIlluminanceScale 1.0
+		rayMarchMinSPP 4
+		rayMarchMaxSPP 14
+		multipleScatteringFactor 1.0
+
+		// The solar irradiance at the top of the atmosphere.
+		solarIrradiance 1.0 1.0 1.0
+
+		// The sun's angular radius. Warning: the implementation uses approximations
+		// that are valid only if this angle is smaller than 0.1 radians.
+		sunAngularRadius 0.004675
+
+		// The extinction coefficient of molecules that absorb light (e.g. ozone) at
+		// the altitude where their density is maximum, as a function of wavelength.
+		// The extinction coefficient at altitude h is equal to
+		// 'absorption_extinction' times 'absorption_density' at this altitude.
+		absorptionExtinction 0.000650 0.001881 0.000085
+
+		// The maximum Sun zenith angle for which atmospheric scattering
+		// must be precomputed (for maximum precision, use the smallest Sun zenith
+		// angle yielding negligible sky light radiance values. For instance, for the
+		// Earth case, 102 degrees is a good choice - yielding mu_s_min = -0.2).
+		maxSunZenithAngle 102.0
+
+		// The scattering coefficient of air molecules at the altitude where their
+		// density is maximum (usually the bottom of the atmosphere), as a function of
+		// wavelength. The scattering coefficient at altitude h is equal to
+		// 'rayleigh_scattering' times 'rayleigh_density' at this altitude.
+		rayleighScattering 0.005802 0.013558 0.033100
+
+		// The scattering coefficient of aerosols at the altitude where their density
+		// is maximum (usually the bottom of the atmosphere), as a function of
+		// wavelength. The scattering coefficient at altitude h is equal to
+		// 'mie_scattering' times 'mie_density' at this altitude.
+		mieScattering 0.003996 0.003996 0.003996
+
+		// The asymetry parameter for the Cornette-Shanks phase function for the
+		// aerosols.
+		miePhaseFunctionG 0.8
+
+		// The extinction coefficient of aerosols at the altitude where their density
+		// is maximum (usually the bottom of the atmosphere), as a function of
+		// wavelength. The extinction coefficient at altitude h is equal to
+		// 'mie_extinction' times 'mie_density' at this altitude.
+		mieExtinction 0.004440 0.004440 0.004440
+
+		// The distance between the planet center and the bottom of the atmosphere.
+		bottomRadius 6360.0
+
+		// The distance between the planet center and the top of the atmosphere.
+		topRadius 6460.0
+
+		// The average albedo of the ground.
+		groundAlbedo 0.0 0.0 0.0
+
+		// The density profile of air molecules, i.e. a function from altitude to
+		// dimensionless values between 0 (min density) and 1 (maximum density).
+		minRayleighDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+		maxRayleighDensity
+		{
+			layerWidth 0.0
+			expTerm 1.0
+			expScale -0.125 // -1 / 8
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+
+		// The density profile of aerosols, i.e. a function from altitude to
+		// dimensionless values between 0 (min density) and 1 (maximum density).
+		minMieDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+		maxMieDensity
+		{
+			layerWidth 0.0
+			expTerm 1.0
+			expScale -0.83333 // -1 / 1.2
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+
+		// The density profile of air molecules that absorb light (e.g. ozone), i.e.
+		// a function from altitude to dimensionless values between 0 (min density)
+		// and 1 (maximum density).
+		minAbsorptionDensity
+		{
+			layerWidth 25.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.066666 // 1 / 15
+			constantTerm -0.66666 // -2 / 3
+		}
+		maxAbsorptionDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm -0.066666 // -1 / 15
+			constantTerm 2.66666 // 8 / 3
+		}
+
+		clouds
+		{
+			coverage 0.0
+		}
+	}
+
+	// Lights
+
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.00000 1.00000 1.00000
+		intensity 8.00000 10.0000
+/*
+		shadows
+		{
+			filter none
+			producer false
+			volumetric_steps 20
+
+			pcf_config
+			{
+				min_offset 0.0
+				max_slope_offset 0.0009
+			}
+		}
+/**/
+	}
+/*
+	// Samplers
+
+	sampler "Earth0"
+	{
+		min_filter nearest
+		mag_filter linear
+		mip_filter linear
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode repeat
+		min_lod -1000.00
+		max_lod 1000.00
+		lod_bias 0.00000
+		border_colour float_opaque_black
+		max_anisotropy 1.00000
+	}
+
+	sampler "Earth1"
+	{
+		min_filter linear
+		mag_filter linear
+		mip_filter nearest
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		min_lod -1000.00
+		max_lod 1000.00
+		lod_bias 0.00000
+		border_colour float_opaque_black
+		max_anisotropy 1.00000
+	}
+
+	// Materials
+
+	material "Earth"
+	{
+
+		pass
+		{
+			colour_hdr 1.00000 1.00000 1.00000
+			metalness 0.250000
+			roughness 0.900000
+
+			texture_unit
+			{
+				sampler "Earth1"
+				image "Textures/Earth/Image1.dds"
+				normal_mask 0x00ffffff
+				invert_y true
+			}
+
+			texture_unit
+			{
+				sampler "Earth0"
+				levels_count 10
+				image "Textures/Earth/Image0.dds"
+				colour_mask 0x00ffffff
+				invert_y true
+			}
+		}
+	}
+
+	// Meshes
+
+	mesh "Earth"
+	{
+		import "Meshes/Earth/Earth.cmsh"
+		default_material "Earth"
+	}
+
+	// Nodes
+
+	scene_node "Earth"
+	{
+		scale 12720.0 12720.0 12720.0
+		position 0.0 -6360000.0 0.0
+	}
+
+	object "Earth"
+	{
+		parent "Earth"
+		mesh "Earth"
+	}
+/**/
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.0 -19000000.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.0
+			near 1000.0
+			far 200000000.0
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 720 720
+		scene "Scene"
+		camera "MainCamera"
+		// postfx "pbr_bloom"
+	}
+	fullscreen false
+	vsync false
+}

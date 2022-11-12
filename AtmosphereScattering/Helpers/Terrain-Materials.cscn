@@ -1,0 +1,539 @@
+// Samplers
+
+sampler "Linear"
+{
+	min_filter linear
+	mag_filter linear
+	lod_bias 0.0
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	border_colour float_opaque_black
+}
+
+// Materials
+
+material "Terrain"
+{
+	// Sand
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		two_sided true
+		untile true
+
+		texture_unit
+		{
+			image "Textures/Sand/LowSteepness/ground_0024_color_2k.jpg"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/LowSteepness/ground_0024_normal_opengl_2k.png"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/LowSteepness/ground_0024_ao_2k.jpg"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/LowSteepness/ground_0024_height_2k.png"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/LowSteepness/ground_0024_roughness_2k.jpg"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Sand/MediumSteepness/sandyground1_Base_Color.png"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/MediumSteepness/sandyground1_Normal.png"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/MediumSteepness/sandyground1_Ambient_Occlusion.png"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/MediumSteepness/sandyground1_Height.png"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/MediumSteepness/sandyground1_Roughness.png"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Sand/HighSteepness/wet-stones-with-sand1-albedo.png"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/HighSteepness/wet-stones-with-sand1-normal-ogl.png"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/HighSteepness/wet-stones-with-sand1-height.png"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/HighSteepness/wet-stones-with-sand1-roughness.png"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Sand/HighSteepness/wet-stones-with-sand1-ao.png"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+
+	// Grass
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Grass/LowSteepness/patchy-meadow1_albedo.png"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/LowSteepness/patchy-meadow1_normal-ogl.png"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/LowSteepness/patchy-meadow1_ao.png"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/LowSteepness/patchy-meadow1_height.png"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/LowSteepness/patchy-meadow1_roughness.png"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Grass/MediumSteepness/Ground_Dirt_008_baseColor.jpg"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/MediumSteepness/Ground_Dirt_008_normal.jpg"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/MediumSteepness/Ground_Dirt_008_ambientOcclusion.jpg"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/MediumSteepness/Ground_Dirt_008_height.png"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/MediumSteepness/Ground_Dirt_008_roughness.jpg"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Grass/HighSteepness/rocks_ground_02_col_1k.jpg"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/HighSteepness/rocks_ground_02_nor_1k.jpg"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/HighSteepness/rocks_ground_02_AO_1k.jpg"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/HighSteepness/rocks_ground_02_height_1k.jpg"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/HighSteepness/rocks_ground_02_rough_1k.jpg"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+
+	// Forest
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Forest/LowSteepness/forest_floor_albedo.png"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Forest/LowSteepness/forest_floor_Normal-ogl.png"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Forest/LowSteepness/forest_floor-ao.png"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Forest/LowSteepness/forest_floor_Height.png"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Forest/LowSteepness/forest_floor_Roughness.png"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Forest/MediumSteepness/leaf-fall1-albedo.png"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Forest/MediumSteepness/leaf-fall3-normal-ogl.png"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Forest/MediumSteepness/leaf-fall1-ao.png"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Forest/MediumSteepness/leaf-fall1-roughness.png"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Grass/HighSteepness/rocks_ground_02_col_1k.jpg"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/HighSteepness/rocks_ground_02_nor_1k.jpg"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/HighSteepness/rocks_ground_02_AO_1k.jpg"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/HighSteepness/rocks_ground_02_height_1k.jpg"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Grass/HighSteepness/rocks_ground_02_rough_1k.jpg"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+
+	// Snow
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Snow/LowSteepness/Snow-Albedo.png"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/LowSteepness/Snow-Normal.png"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/LowSteepness/Snow-Occlusion.png"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/LowSteepness/Snow-Height.png"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/LowSteepness/Snow-Roughness.png"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Snow/MediumSteepness/rock-snow-ice1-2k_Base_Color.png"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/MediumSteepness/rock-snow-ice1-2k_Normal-ogl.png"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/MediumSteepness/rock-snow-ice1-2k_Ambient_Occlusion.png"
+			occlusion_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/MediumSteepness/rock-snow-ice1-2k_Height.png"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/MediumSteepness/rock-snow-ice1-2k_Roughness.png"
+			roughness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+	pass
+	{
+		albedo 1.0 1.0 1.0
+		emissive 0.0
+		metalness 0.0
+		roughness 1.0
+		untile true
+		two_sided true
+
+		texture_unit
+		{
+			image "Textures/Snow/HighSteepness/rough_cliff_wall_stone_46_diffuse.png"
+			albedo_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/HighSteepness/rough_cliff_wall_stone_46_normal.png"
+			normal_mask 0x00FFFFFF
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/HighSteepness/rough_cliff_wall_stone_46_height.png"
+			height_mask 0x00FF0000
+			sampler	"Linear"
+		}
+
+		texture_unit
+		{
+			image "Textures/Snow/HighSteepness/rough_cliff_wall_stone_46_glossiness.png"
+			glossiness_mask 0x00FF0000
+			sampler	"Linear"
+		}
+	}
+}

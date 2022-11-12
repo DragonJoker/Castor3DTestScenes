@@ -1,0 +1,204 @@
+materials pbr
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.5 0.5 0.5
+	include "Helpers/Terrain-Materials.cscn"
+
+	scene_node "LightNode"
+	{
+		orientation -0.0478249 0.99839 -0.0305105 285.186
+	}
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 0.2 0.2
+		intensity 8.0 10.0
+		shadows
+		{
+			producer true
+			filter pcf
+			volumetric_steps 20
+			pcf_config
+			{
+				min_offset 0.0
+				max_slope_offset 0.0009
+			}
+		}
+	}
+
+	scene_node "PlanetNode"
+	{
+		position 0.0 -6360000.0 0.0
+	}
+
+	atmospheric_scattering
+	{
+		sunNode "LightNode"
+		planetNode "PlanetNode"
+		transmittanceResolution 256 64
+		multiScatterResolution 32
+		atmosphereVolumeResolution 32
+		skyViewResolution 192 108
+		sunIlluminance 1.0 1.0 1.0
+		sunIlluminanceScale 1.0
+		rayMarchMinSPP 4
+		rayMarchMaxSPP 14
+		multipleScatteringFactor 1.0
+		solarIrradiance 1.0 1.0 1.0
+		sunAngularRadius 0.004675
+		absorptionExtinction 0.000650 0.001881 0.000085
+		maxSunZenithAngle 102.0
+		rayleighScattering 0.005802 0.013558 0.033100
+		mieScattering 0.003996 0.003996 0.003996
+		miePhaseFunctionG 0.8
+		mieExtinction 0.004440 0.004440 0.004440
+		bottomRadius 6360.0
+		topRadius 6460.0
+		groundAlbedo 0.0 0.0 0.0
+
+		minRayleighDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+		maxRayleighDensity
+		{
+			layerWidth 0.0
+			expTerm 1.0
+			expScale -0.125 // -1 / 8
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+
+		minMieDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+		maxMieDensity
+		{
+			layerWidth 0.0
+			expTerm 1.0
+			expScale -0.83333 // -1 / 1.2
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+
+		minAbsorptionDensity
+		{
+			layerWidth 25.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.066666 // 1 / 15
+			constantTerm -0.66666 // -2 / 3
+		}
+		maxAbsorptionDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm -0.066666 // -1 / 15
+			constantTerm 2.66666 // 8 / 3
+		}
+
+		clouds
+		{
+			windDirection 0.5 0.0 0.1
+			speed 0.0
+			coverage 0.35
+			crispiness 40.0
+			curliness 0.1
+			density 1.0
+			absorption 0.25
+			innerRadius 1.0
+			outerRadius 12.0
+			topColour 0.994 0.876 0.876
+			bottomColour 0.382 0.411 0.471
+			enablePowder true
+			topOffset 0.75
+		}
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position -20000 500 20000
+		orientation 0 1 0 113
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 1000.0
+			far 200000.0
+		}
+	}
+
+	scene_node "Terrain"
+	{
+		scale 50 50 50
+	}
+	mesh "Terrain"
+	{
+		diamond_square_terrain
+		{
+			detail 10
+			heightRange -60.0 90.0
+			disableRandomSeed true
+			biome "Grass"
+			{
+				range 0.0 0.3
+				lowSteepness 3 0.0 0.4
+				mediumSteepness 4 0.4 0.8
+				highSteepness 5 0.8 1.0
+			}
+			biome "Forest"
+			{
+				range 0.3 0.8
+				lowSteepness 6 0.0 0.4
+				mediumSteepness 7 0.4 0.7
+				highSteepness 8 0.7 1.0
+			}
+			biome "Snow"
+			{
+				range 0.8 1.0
+				lowSteepness 9 0.0 0.2
+				mediumSteepness 10 0.2 0.7
+				highSteepness 11 0.7 1.0
+			}
+		}
+		default_material "Terrain"
+	}
+	object "Terrain"
+	{
+		parent "Terrain"
+		mesh "Terrain"
+	}
+}
+
+window "Window"
+{
+	fullscreen false
+	vsync false
+
+	render_target
+	{
+		format argb32
+		size 1280 720
+		scene "Scene"
+		camera "MainCamera"
+		// postfx "pbr_bloom"
+	}
+}

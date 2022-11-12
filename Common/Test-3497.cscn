@@ -1,0 +1,298 @@
+materials pbr
+
+scene "Scene"
+{
+	ambient_light 1.0 1.0 1.0
+	background_colour 0.5 0.5 0.5
+	include "Helpers/Terrain-Materials.cscn"
+
+	scene_node "LightNode"
+	{
+		orientation -0.00374395 0.997035 -0.0768594 242.264
+	}
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 0.8 0.6
+		intensity 8.0 10.0
+		shadows
+		{
+			producer true
+			filter pcf
+			pcf_config
+			{
+				min_offset 0.0
+				max_slope_offset 0.0009
+			}
+		}
+	}
+
+	atmospheric_scattering
+	{
+		node "LightNode"
+		transmittanceResolution 256 64
+		multiScatterResolution 32
+		atmosphereVolumeResolution 32
+		skyViewResolution 192 108
+		sunIlluminance 1.0 1.0 1.0
+		sunIlluminanceScale 1.0
+		rayMarchMinSPP 4
+		rayMarchMaxSPP 14
+		multipleScatteringFactor 1.0
+		solarIrradiance 1.0 1.0 1.0
+		sunAngularRadius 0.004675
+		absorptionExtinction 0.000650 0.001881 0.000085
+		maxSunZenithAngle 102.0
+		rayleighScattering 0.005802 0.013558 0.033100
+		mieScattering 0.003996 0.003996 0.003996
+		miePhaseFunctionG 0.8
+		mieExtinction 0.004440 0.004440 0.004440
+		bottomRadius 6360.0
+		topRadius 6460.0
+		groundAlbedo 0.0 0.0 0.0
+
+		minRayleighDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+		maxRayleighDensity
+		{
+			layerWidth 0.0
+			expTerm 1.0
+			expScale -0.125 // -1 / 8
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+
+		minMieDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+		maxMieDensity
+		{
+			layerWidth 0.0
+			expTerm 1.0
+			expScale -0.83333 // -1 / 1.2
+			linearTerm 0.0
+			constantTerm 0.0
+		}
+
+		minAbsorptionDensity
+		{
+			layerWidth 25.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm 0.066666 // 1 / 15
+			constantTerm -0.66666 // -2 / 3
+		}
+		maxAbsorptionDensity
+		{
+			layerWidth 0.0
+			expTerm 0.0
+			expScale 0.0
+			linearTerm -0.066666 // -1 / 15
+			constantTerm 2.66666 // 8 / 3
+		}
+
+		weather
+		{
+			worleyResolution 32
+			perlinWorleyResolution 128
+			weatherResolution 128
+			curlResolution 128
+			amplitude 0.5
+			frequency 0.8
+			scale 100.0
+			octaves 4
+		}
+
+		clouds
+		{
+			windDirection 0.5 0.0 0.1
+			speed 900.0
+			coverage 0.25
+			crispiness 40.0
+			curliness 0.1
+			density 1.0
+			absorption 0.25
+			innerRadius 1.0
+			outerRadius 12.0
+			topColour 0.994 0.876 0.876
+			bottomColour 0.382 0.411 0.471
+			enablePowder true
+			topOffset 0.75
+		}
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position -16600.0 700.0 -24000.0
+		orientation 0.0 1.0 0.0 46.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 100.0
+			far 200000.0
+		}
+	}
+
+	scene_node "Terrain"
+	{
+		position 0.0 0.0 0.0
+	}
+	mesh "Terrain"
+	{
+		diamond_square_terrain
+		{
+			detail 10
+			heightRange -1000.0 2500.0
+			disableRandomSeed true
+			island true
+			xzScale 50.0 50.0
+			biome "Abyss"
+			{
+				range 0.0 0.05
+				lowSteepness 0 0.0 0.4
+				mediumSteepness 1 0.4 0.9
+				highSteepness 2 0.9 1.0
+			}
+			biome "DeepSea"
+			{
+				range 0.05 0.1
+				lowSteepness 0 0.0 0.4
+				mediumSteepness 1 0.4 0.9
+				highSteepness 2 0.9 1.0
+			}
+			biome "Sea"
+			{
+				range 0.1 0.15
+				lowSteepness 0 0.0 0.4
+				mediumSteepness 1 0.4 0.9
+				highSteepness 2 0.9 1.0
+			}
+			biome "Sand"
+			{
+				range 0.15 0.17
+				lowSteepness 0 0.0 0.4
+				mediumSteepness 1 0.4 0.9
+				highSteepness 2 0.9 1.0
+			}
+			biome "Grass"
+			{
+				range 0.17 0.6
+				lowSteepness 3 0.0 0.4
+				mediumSteepness 4 0.4 0.8
+				highSteepness 5 0.8 1.0
+			}
+			biome "Forest"
+			{
+				range 0.6 0.75
+				lowSteepness 6 0.0 0.4
+				mediumSteepness 7 0.4 0.7
+				highSteepness 8 0.7 1.0
+			}
+			biome "Snow"
+			{
+				range 0.9 1.0
+				lowSteepness 9 0.0 0.2
+				mediumSteepness 10 0.2 0.7
+				highSteepness 11 0.7 1.0
+			}
+		}
+		default_material "Terrain"
+	}
+	object "Terrain"
+	{
+		parent "Terrain"
+		mesh "Terrain"
+	}
+
+	material "Ocean"
+	{
+		render_pass "c3d.fft_ocean"
+
+		pass
+		{
+			colour_srgb 0.003 0.812 0.599
+			albedo 0.465 0.797 0.991
+			emissive 0.0
+			metalness 0.0
+			roughness 0.08
+			two_sided true
+		}
+	}
+	mesh "Ocean"
+	{
+		type "plane" -width_subdiv=639 -depth_subdiv=639 -width=204800.0 -depth=204800.0 -flipYZ -sort_around_center
+		default_material "Ocean"
+	}
+	scene_node "Ocean"
+	{
+		position 0.0 0.0 0.0
+	}
+	object "Ocean"
+	{
+		parent "Ocean"
+		mesh "Ocean"
+		cullable false
+	}
+}
+
+window "Window"
+{
+	fullscreen false
+	vsync false
+
+	render_target
+	{
+		format argb32
+		size 1920 1080
+		scene "Scene"
+		camera "MainCamera"
+
+		fft_ocean_rendering
+		{
+			depthSofteningDistance 2.0
+			refractionRatio 1.2
+			refractionDistortionFactor 0.04
+			refractionHeightFactor 0.006
+			refractionDistanceFactor 0.08
+			ssrStepSize 0.5
+			ssrForwardStepsCount 20.0
+			ssrBackwardStepsCount 10.0
+			ssrDepthMult 20.0
+			density 0.3
+
+			fft_config
+			{
+				disableRandomSeed true
+				heightMapSamples 256
+				displacementDownsample 1
+				size 200.0 200.0
+				amplitude 3.0
+				normalMapFreqMod 7.3 7.3
+				windDirection 0.76339 -0.64594
+				windVelocity 16
+				patchSize 320.0 320.0
+				blocksCount 640 640
+				lod0Distance 50.0
+			}
+		}
+	}
+}

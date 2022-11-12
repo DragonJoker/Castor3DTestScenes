@@ -1,0 +1,62 @@
+// Meshes
+
+mesh "Terrain"
+{
+	diamond_square_terrain
+	{
+		detail 10
+		heightRange -75.0 75.0
+		disableRandomSeed true
+		island true
+		biome "Abyss"
+		{
+			range 0.0 0.05
+			lowSteepness 0 0.0 0.4
+			mediumSteepness 1 0.4 0.9
+			highSteepness 2 0.9 1.0
+		}
+		biome "DeepSea"
+		{
+			range 0.05 0.2
+			lowSteepness 0 0.0 0.4
+			mediumSteepness 1 0.4 0.9
+			highSteepness 2 0.9 1.0
+		}
+		biome "Sea"
+		{
+			range 0.2 0.25
+			lowSteepness 0 0.0 0.4
+			mediumSteepness 1 0.4 0.9
+			highSteepness 2 0.9 1.0
+		}
+		biome "Sand"
+		{
+			range 0.25 0.27
+			lowSteepness 0 0.0 0.4
+			mediumSteepness 1 0.4 0.9
+			highSteepness 2 0.9 1.0
+		}
+		biome "Grass"
+		{
+			range 0.27 0.6
+			lowSteepness 3 0.0 0.4
+			mediumSteepness 4 0.4 0.8
+			highSteepness 5 0.8 1.0
+		}
+		biome "Forest"
+		{
+			range 0.6 0.75
+			lowSteepness 6 0.0 0.4
+			mediumSteepness 7 0.4 0.7
+			highSteepness 8 0.7 1.0
+		}
+		biome "Snow"
+		{
+			range 0.9 1.0
+			lowSteepness 9 0.0 0.2
+			mediumSteepness 10 0.2 0.7
+			highSteepness 11 0.7 1.0
+		}
+	}
+	default_material "Terrain"
+}
