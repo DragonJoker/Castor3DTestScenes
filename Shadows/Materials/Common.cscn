@@ -115,7 +115,8 @@ material "WhiteEmit"
 	{
 		diffuse 1.0 1.0 1.0
 		specular 1.0 1.0 1.0
-		emissive 1.1
+		emissive_colour 1.0 1.0 1.0
+		emissive_factor 1.1
 	}
 }
 
@@ -125,7 +126,8 @@ material "RedEmit"
 	{
 		diffuse 1.0 0.0 0.0
 		specular 1.0 0.0 0.0
-		emissive 1.1
+		emissive_colour 1.0 0.0 0.0
+		emissive_factor 1.1
 	}
 }
 
@@ -135,7 +137,8 @@ material "GreenEmit"
 	{
 		diffuse 0.0 1.0 0.0
 		specular 0.0 1.0 0.0
-		emissive 1.1
+		emissive_colour 0.0 1.0 0.0
+		emissive_factor 1.1
 	}
 }
 
@@ -145,6 +148,7 @@ material "BlueEmit"
 	{
 		diffuse 0.0 0.0 1.0
 		specular 0.0 0.0 1.0
-		emissive 1.1
+		emissive_colour 0.0 0.0 1.0
+		emissive_factor 1.1
 	}
 }

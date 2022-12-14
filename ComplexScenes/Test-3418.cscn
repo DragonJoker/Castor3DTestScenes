@@ -1,5 +1,5 @@
 // Global configuration
-materials toon_blinn_phong
+materials toon.phong
 
 scene "Cafe"
 {

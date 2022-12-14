@@ -3,7 +3,7 @@ materials blinn_phong
 scene "Scene"
 {
 	background_colour 0.5 0.5 0.5 1.0
-	ambient_light 0.2 0.2 0.2
+	ambient_light 0.0 0.0 0.0
 
 	skybox
 	{

@@ -1,5 +1,5 @@
 // Global configuration
-materials toon_pbr
+materials toon.pbr
 
 scene "Scene"
 {

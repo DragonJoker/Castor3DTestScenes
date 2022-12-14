@@ -100,12 +100,5 @@ window "Window"
 			blur_step_size 2
 			blur_radius 4
 		}
-
-		smaa
-		{
-			mode T2X
-			preset ultra
-			enableReprojection false
-		}
 	}
 }

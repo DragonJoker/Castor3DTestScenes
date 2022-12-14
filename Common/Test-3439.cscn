@@ -165,7 +165,7 @@ window "Window"
 
 			waves
 			{
-				wave
+/*				wave
 				{
 					direction 0.3 0.0 -0.7
 					steepness 1.79
@@ -180,7 +180,7 @@ window "Window"
 					length 4.1
 					amplitude 0.52
 					speed 3.09
-				}
+				}*/
 			}
 		}
 	}

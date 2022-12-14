@@ -3226,7 +3226,6 @@ material "kiosque_park/light_kiosque"
 		metalness 0.00000
 		alpha 0.00000
 		bw_accumulation 1
-		emissive 1.00000
 		two_sided true
 		alpha_func greater 0.500000
 		alpha_blend_mode interpolative
