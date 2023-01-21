@@ -1,0 +1,706 @@
+// Samplers
+
+sampler "Trilinear"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	u_wrap_mode clamp_to_border
+	v_wrap_mode clamp_to_border
+	w_wrap_mode clamp_to_border
+	min_lod 0.00000
+	max_lod 5.00000
+	lod_bias 0.00000
+	border_colour float_opaque_black
+	max_anisotropy 5.00000
+}
+
+// Materials
+
+material "PBRBody"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		metalness 1.00000
+		roughness 0.804688
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/body-normaldispl.dds"
+			height_mask 0xff000000
+			height_factor 0.100000
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Nyras/body-opacitymetallic.dds"
+			opacity_mask 0x00ff0000
+			metalness_mask 0x0000ff00
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Nyras/body-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Nyras/body-roughness.dds"
+			roughness_mask 0x00ff0000
+			invert_y true
+		}
+	}
+}
+
+material "PBRCornea"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		alpha_blend_mode interpolative
+		two_sided true
+		opacity 0.119661
+		bw_accumulation 1
+		colour_hdr 0.00000 0.00000 0.00000
+		specular 1.00000 1.00000 1.00000
+		metalness 1.00000
+		roughness 0.00000
+	}
+}
+
+material "PBREyes"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		alpha_blend_mode interpolative
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		metalness 1.00000
+		roughness 0.804688
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/head-normaldispl.dds"
+			height_mask 0xff000000
+			height_factor 0.100000
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-opacitymetallic.dds"
+			opacity_mask 0x00ff0000
+			metalness_mask 0x0000ff00
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-roughnesstransmittance.dds"
+			roughness_mask 0x00ff0000
+			transmittance_mask 0x0000ff00
+			invert_y true
+		}
+	}
+}
+
+material "PBRHead"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		metalness 1.00000
+		roughness 0.804688
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/head-normaldispl.dds"
+			height_mask 0xff000000
+			height_factor 0.100000
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-metallicroughness.dds"
+			metalness_mask 0x00ff0000
+			roughness_mask 0x0000ff00
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-transmittance.png"
+			transmittance_mask 0xff000000
+		}
+
+		subsurface_scattering
+		{
+			strength 1
+			gaussian_width 20
+
+			transmittance_profile
+			{
+				factor 0.233 0.455 0.649 0.0064
+				factor 0.1 0.336 0.344 0.0484
+				factor 0.118 0.198 0.0 0.187
+				factor 0.113 0.007 0.007 0.567
+				factor 0.358 0.004 0.0 1.99
+				factor 0.078 0.0 0.0 7.41
+			}
+		}
+	}
+}
+
+material "ToonPBRBody"
+{
+
+	pass
+	{
+		lighting_model toon.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		metalness 1.00000
+		roughness 0.804688
+		alpha_func greater 0.500000
+		smooth_band_width 4.0
+		edge_width 1.0
+		edge_normal_factor 0.0
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/body-normaldispl.dds"
+			height_mask 0xff000000
+			height_factor 0.100000
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Nyras/body-opacitymetallic.dds"
+			opacity_mask 0x00ff0000
+			metalness_mask 0x0000ff00
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Nyras/body-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Nyras/body-roughness.dds"
+			roughness_mask 0x00ff0000
+			invert_y true
+		}
+	}
+}
+
+material "ToonPBRCornea"
+{
+
+	pass
+	{
+		lighting_model toon.pbr
+		alpha_blend_mode interpolative
+		two_sided true
+		opacity 0.119661
+		bw_accumulation 1
+		colour_hdr 0.00000 0.00000 0.00000
+		specular 1.00000 1.00000 1.00000
+		metalness 1.00000
+		roughness 0.00000
+		smooth_band_width 4.0
+		edge_width 1.0
+		edge_normal_factor 0.0
+	}
+}
+
+material "ToonPBREyes"
+{
+
+	pass
+	{
+		lighting_model toon.pbr
+		alpha_blend_mode interpolative
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		metalness 1.00000
+		roughness 0.804688
+		smooth_band_width 4.0
+		edge_width 1.0
+		edge_normal_factor 0.0
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/head-normaldispl.dds"
+			height_mask 0xff000000
+			height_factor 0.100000
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-opacitymetallic.dds"
+			opacity_mask 0x00ff0000
+			metalness_mask 0x0000ff00
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-roughnesstransmittance.dds"
+			roughness_mask 0x00ff0000
+			transmittance_mask 0x0000ff00
+			invert_y true
+		}
+	}
+}
+
+material "ToonPBRHead"
+{
+
+	pass
+	{
+		lighting_model toon.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		metalness 1.00000
+		roughness 0.804688
+		smooth_band_width 4.0
+		edge_width 1.0
+		edge_normal_factor 0.0
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/head-normaldispl.dds"
+			height_mask 0xff000000
+			height_factor 0.100000
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-metallicroughness.dds"
+			metalness_mask 0x00ff0000
+			roughness_mask 0x0000ff00
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-transmittance.png"
+			transmittance_mask 0xff000000
+		}
+
+		subsurface_scattering
+		{
+			strength 1
+			gaussian_width 20
+
+			transmittance_profile
+			{
+				factor 0.233 0.455 0.649 0.0064
+				factor 0.1 0.336 0.344 0.0484
+				factor 0.118 0.198 0.0 0.187
+				factor 0.113 0.007 0.007 0.567
+				factor 0.358 0.004 0.0 1.99
+				factor 0.078 0.0 0.0 7.41
+			}
+		}
+	}
+}
+
+material "PhongBody"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		roughness 0.500000
+		ambient_factor 0.200000
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/body-normalopacity.dds"
+			normal_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Nyras/body-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Nyras/body-specular.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "PhongCornea"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		alpha_blend_mode interpolative
+		two_sided true
+		opacity 0.00392157
+		bw_accumulation 1
+		colour_hdr 0.00000 0.00000 0.00000
+		specular 1.00000 1.00000 1.00000
+		roughness 0.500000
+		ambient_factor 0.200000
+	}
+}
+
+material "PhongEyes"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		alpha_blend_mode interpolative
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		roughness 0.500000
+		ambient_factor 0.200000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/head-normalopacity.dds"
+			normal_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-specular.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "PhongHead"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		roughness 0.500000
+		ambient_factor 0.200000
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/head-normal.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-specular.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "ToonPhongBody"
+{
+
+	pass
+	{
+		lighting_model toon.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 0.20000 0.20000 0.20000
+		roughness 0.500000
+		ambient_factor 0.200000
+		alpha_func greater 0.500000
+		smooth_band_width 4.0
+		edge_width 1.0
+		edge_normal_factor 0.0
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/body-normalopacity.dds"
+			normal_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Nyras/body-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 11
+			image "Textures/Nyras/body-specular.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "ToonPhongCornea"
+{
+
+	pass
+	{
+		lighting_model toon.phong
+		alpha_blend_mode interpolative
+		two_sided true
+		opacity 0.00392157
+		bw_accumulation 1
+		colour_hdr 0.00000 0.00000 0.00000
+		specular 0.20000 0.20000 0.20000
+		roughness 0.500000
+		ambient_factor 0.200000
+		smooth_band_width 4.0
+		edge_width 1.0
+		edge_normal_factor 0.0
+	}
+}
+
+material "ToonPhongEyes"
+{
+
+	pass
+	{
+		lighting_model toon.phong
+		alpha_blend_mode interpolative
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 0.20000 0.20000 0.20000
+		roughness 0.500000
+		ambient_factor 0.200000
+		smooth_band_width 4.0
+		edge_width 1.0
+		edge_normal_factor 0.0
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/head-normalopacity.dds"
+			normal_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-specular.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "ToonPhongHead"
+{
+
+	pass
+	{
+		lighting_model toon.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular 0.20000 0.20000 0.20000
+		roughness 0.500000
+		ambient_factor 0.200000
+		smooth_band_width 4.0
+		edge_width 1.0
+		edge_normal_factor 0.0
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Nyras/head-normal.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-diffuse.dds"
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			levels_count 10
+			image "Textures/Nyras/head-specular.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}

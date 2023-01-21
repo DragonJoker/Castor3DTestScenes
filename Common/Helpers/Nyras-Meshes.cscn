@@ -1,0 +1,14 @@
+// Meshes
+
+mesh "Nyra"
+{
+	import "Meshes/Nyras/Nyra.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+	}
+}

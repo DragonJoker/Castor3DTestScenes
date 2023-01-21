@@ -1,0 +1,25 @@
+// Nodes
+
+scene_node "NyraPhong"
+{
+	orientation 0 1 0 180
+	position -15.00000 0.00000 0.00000
+}
+
+scene_node "NyraToonPhong"
+{
+	orientation 0 1 0 180
+	position -5.00000 0.00000 0.00000
+}
+
+scene_node "NyraPBR"
+{
+	orientation 0 1 0 180
+	position 5.00000 0.00000 0.00000
+}
+
+scene_node "NyraToonPBR"
+{
+	orientation 0 1 0 180
+	position 15.00000 0.00000 0.00000
+}

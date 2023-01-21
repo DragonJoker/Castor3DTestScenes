@@ -1,0 +1,57 @@
+// Objects
+
+object "NyraPBR"
+{
+	parent "NyraPBR"
+	mesh "Nyra"
+
+	materials
+	{
+		material 0 "PBRBody"
+		material 1 "PBRHead"
+		material 2 "PBRCornea"
+		material 3 "PBREyes"
+	}
+}
+
+object "NyraToonPBR"
+{
+	parent "NyraToonPBR"
+	mesh "Nyra"
+
+	materials
+	{
+		material 0 "ToonPBRBody"
+		material 1 "ToonPBRHead"
+		material 2 "ToonPBRCornea"
+		material 3 "ToonPBREyes"
+	}
+}
+
+object "NyraPhong"
+{
+	parent "NyraPhong"
+	mesh "Nyra"
+
+	materials
+	{
+		material 0 "PhongBody"
+		material 1 "PhongHead"
+		material 2 "PhongCornea"
+		material 3 "PhongEyes"
+	}
+}
+
+object "NyraToonPhong"
+{
+	parent "NyraToonPhong"
+	mesh "Nyra"
+
+	materials
+	{
+		material 0 "ToonPhongBody"
+		material 1 "ToonPhongHead"
+		material 2 "ToonPhongCornea"
+		material 3 "ToonPhongEyes"
+	}
+}

@@ -1,0 +1,214 @@
+scene "Test"
+{
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.00000 0.00000 0.00000
+
+	//Skybox
+
+	skybox
+	{
+		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
+	}
+
+	// Materials
+
+	material "PhongSphere"
+	{
+		pass
+		{
+			lighting_model c3d.phong
+			diffuse 1.000 0.766 0.336
+			shininess 128.0
+			specular 0.625 0.47875 0.22875
+		}
+	}
+
+	material "ToonPhongSphere"
+	{
+		pass
+		{
+			lighting_model toon.phong
+			diffuse 1.000 0.766 0.336
+			shininess 128.0
+			specular 0.625 0.47875 0.22875
+			smooth_band_width 4.0
+			edge_width 1.0
+			edge_normal_factor 1.0
+		}
+	}
+
+	material "PBRSphere"
+	{
+		pass
+		{
+			lighting_model c3d.pbr
+			albedo 1.000 0.766 0.336
+			glossiness 0.50
+			specular 0.625 0.47875 0.22875
+			metalness 0.625
+		}
+	}
+
+	material "ToonPBRSphere"
+	{
+		pass
+		{
+			lighting_model toon.pbr
+			albedo 1.000 0.766 0.336
+			glossiness 0.50
+			specular 0.625 0.47875 0.22875
+			metalness 0.625
+			smooth_band_width 4.0
+			edge_width 1.0
+			edge_normal_factor 1.0
+		}
+	}
+
+	//Lights nodes
+
+	scene_node "LightNode"
+	{
+		orientation 0.131861 -0.965589 0.224165 120.808
+	}
+
+	scene_node "LightNode2"
+	{
+		parent "LightNode"
+		orientation 1.0 0.0 0.0 4.99997
+	}
+
+	//Lights
+
+	light "SunLight"
+	{
+		parent "LightNode2"
+		type directional
+		colour 1.0 1.0 0.5
+		intensity 0.8 1.0
+	}
+
+	//Cameras nodes
+
+	scene_node "CameraNode"
+	{
+		orientation 0.0 1.0 0.0 180.0
+		position 2.5 0.0 30.0
+	}
+
+	//Cameras
+
+	camera "MainCamera"
+	{
+		parent "CameraNode"
+
+		viewport
+		{
+			type perspective
+			near 1.00000
+			far 12000.0
+			aspect_ratio 1.33300
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+
+	// Nodes
+
+	scene_node "SpherePhong"
+	{
+		orientation 0 1 0 180
+		position -5.00000 0.00000 0.00000
+	}
+
+	scene_node "SphereToonPhong"
+	{
+		orientation 0 1 0 180
+		position 0.00000 0.00000 0.00000
+	}
+
+	scene_node "SpherePBR"
+	{
+		orientation 0 1 0 180
+		position 5.00000 0.00000 0.00000
+	}
+
+	scene_node "SphereToonPBR"
+	{
+		orientation 0 1 0 180
+		position 10.00000 0.00000 0.00000
+	}
+
+	// Meshes
+
+	mesh "Sphere"
+	{
+		type "sphere" -subdiv=40 -radius=2.5
+	}
+
+	// Objects
+
+	object "SpherePBR"
+	{
+		parent "SpherePBR"
+		mesh "Sphere"
+
+		materials
+		{
+			material 0 "PBRSphere"
+		}
+	}
+
+	object "SphereToonPBR"
+	{
+		parent "SphereToonPBR"
+		mesh "Sphere"
+
+		materials
+		{
+			material 0 "ToonPBRSphere"
+		}
+	}
+
+	object "SpherePhong"
+	{
+		parent "SpherePhong"
+		mesh "Sphere"
+
+		materials
+		{
+			material 0 "PhongSphere"
+		}
+	}
+
+	object "SphereToonPhong"
+	{
+		parent "SphereToonPhong"
+		mesh "Sphere"
+
+		materials
+		{
+			material 0 "ToonPhongSphere"
+		}
+	}
+}
+
+window "RenderPanel"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 800 600
+		format rgba32
+		tone_mapping "linear"
+		scene "Test"
+		camera "MainCamera"
+	}
+}

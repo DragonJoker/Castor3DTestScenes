@@ -1,0 +1,142 @@
+scene "Nyras"
+{
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.00000 0.00000 0.00000
+	lpv_indirect_attenuation 1.70000
+	include "Helpers/Nyras-Materials.cscn"
+	include "Helpers/Nyras-Meshes.cscn"
+	include "Helpers/Nyras-Nodes.cscn"
+	include "Helpers/Nyras-Objects.cscn"
+
+	//Skybox
+
+	skybox
+	{
+		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
+	}
+
+	//Voxel Cone Tracing
+
+	voxel_cone_tracing
+	{
+		enabled false
+		grid_size 2
+		conservative_rasterization false
+		temporal_smoothing false
+		occlusion false
+		secondary_bounce false
+		num_cones 2
+		max_distance 20.0000
+		ray_step_size 0.750000
+		voxel_size 1.00000
+	}
+
+	//Lights nodes
+
+	scene_node "LightNode"
+	{
+		orientation 0.131861 -0.965589 0.224165 120.808
+	}
+
+	scene_node "LightNode2"
+	{
+		parent "LightNode"
+		orientation 1.0 0.0 0.0 4.99997
+	}
+
+	//Lights
+
+	light "SunLight"
+	{
+		parent "LightNode2"
+		type directional
+		colour 1.0 1.0 0.5
+		intensity 8.0 10.0
+		shadows
+		{
+			producer true
+			filter pcf
+			raw_config
+			{
+				min_offset 0.0001
+				max_slope_offset 0.000001
+			}
+			pcf_config
+			{
+				min_offset 0.0001
+				max_slope_offset 0.000001
+			}
+			vsm_config
+			{
+				variance_max 0.0000001
+				variance_bias 0.15
+			}
+		}
+	}
+
+	//Cameras nodes
+
+	scene_node "CameraNode"
+	{
+		orientation 0.0 1.0 0.0 332.3298
+		position 20.2144 15.5009 -29.835
+	}
+
+	//Cameras
+
+	camera "MainCamera"
+	{
+		parent "CameraNode"
+
+		viewport
+		{
+			type perspective
+			near 1.00000
+			far 1200.0
+			aspect_ratio 1.777778
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+}
+
+//Windows
+
+window "RenderPanel"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format rgba32
+		tone_mapping "linear"
+		scene "Nyras"
+		camera "MainCamera"
+		postfx "draw_edges"
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			use_normals_buffer true
+			blur_high_quality true
+			intensity 3.00000
+			radius 3.00000
+			bias 0.50000
+			num_samples 19
+			edge_sharpness 1.00000
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
+		}
+	}
+}
