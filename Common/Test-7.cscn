@@ -70,6 +70,25 @@ scene "Scene"
 			far 20000.0
 		}
 	}
+
+	scene_node "LeftCameraNode"
+	{
+		position -200.0 0.0 0.0
+		orientation 0.0 1.0 0.0 90.0
+	}
+	camera "LeftCamera"
+	{
+		parent "LeftCameraNode"
+		primitive triangle_list
+		viewport "LeftViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 20000.0
+		}
+	}
 }
 
 window "Window"
