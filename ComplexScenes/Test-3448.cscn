@@ -38,6 +38,12 @@ scene "Bistro"
 
 	//Cameras nodes
 
+	scene_node "InteriorMainCameraNode"
+	{
+		orientation 0 1 0 90
+		position -0.442365 1.54 -1.11186
+	}
+
 	scene_node "ExteriorMainCameraNode"
 	{
 		orientation 0.138915 0.983574 -0.115261 80.3007
@@ -46,9 +52,29 @@ scene "Bistro"
 
 	//Cameras
 
-	camera "MainCamera"
+	camera "ExteriorMainCamera"
 	{
 		parent "ExteriorMainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.10000
+			far 200.000
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+
+	camera "InteriorMainCamera"
+	{
+		parent "InteriorMainCameraNode"
 
 		viewport
 		{
@@ -80,7 +106,7 @@ window "RenderPanel"
 		format rgba32
 		tone_mapping "aces"
 		scene "Bistro"
-		camera "MainCamera"
+		camera "ExteriorMainCamera"
 		postfx "pbr_bloom"
 
 		smaa
