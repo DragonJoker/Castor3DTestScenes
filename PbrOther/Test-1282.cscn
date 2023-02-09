@@ -75,8 +75,8 @@ scene "Scene"
 			filter variance
 			vsm_config
 			{
-				variance_max 0.00000001
-				variance_bias 0.000001
+				min_variance 0.00000001
+				light_bleeding_reduction 0.000001
 			}
 		}
 	}
@@ -96,8 +96,8 @@ scene "Scene"
 			filter variance
 			vsm_config
 			{
-				variance_max 0.00000001
-				variance_bias 0.000001
+				min_variance 0.00000001
+				light_bleeding_reduction 0.000001
 			}
 		}
 	}

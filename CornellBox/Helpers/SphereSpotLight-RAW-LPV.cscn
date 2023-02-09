@@ -36,8 +36,8 @@ light "Light"
 		}
 		vsm_config
 		{
-			variance_max 0.0000005
-			variance_bias 0.015
+			min_variance 0.0000005
+			light_bleeding_reduction 0.015
 		}
 		lpv_config
 		{

@@ -27,8 +27,8 @@ light "SunLight"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config

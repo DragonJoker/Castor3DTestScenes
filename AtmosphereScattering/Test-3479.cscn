@@ -203,7 +203,7 @@ scene "Scene"
 		primitive triangle_list
 		viewport "MainViewport"
 		{
-			type perspective
+			type infinite_perspective
 			fov_y 45.0
 			aspect_ratio 1.333
 			near 1.0

@@ -31,8 +31,8 @@ light "bar_spot_01"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -80,8 +80,8 @@ light "bar_spot_02"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -129,8 +129,8 @@ light "bar_spot_03"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -178,8 +178,8 @@ light "bar_spot_04"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -227,8 +227,8 @@ light "bar_spot_05"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -276,8 +276,8 @@ light "bar_spot_06"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -325,8 +325,8 @@ light "bar_spot_07"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -374,8 +374,8 @@ light "bar_spot_08"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -423,8 +423,8 @@ light "blue_spot"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -472,8 +472,8 @@ light "green_spot"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -521,8 +521,8 @@ light "upstairs_bar_spot_05"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -570,8 +570,8 @@ light "red_spot"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -619,8 +619,8 @@ light "scene_spot_01"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -668,8 +668,8 @@ light "scene_spot_02"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -717,8 +717,8 @@ light "scene_spot_03"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -766,8 +766,8 @@ light "scene_spot_04"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -815,8 +815,8 @@ light "scene_spot_05"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -864,8 +864,8 @@ light "scene_spot_06"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -913,8 +913,8 @@ light "scene_spot_07"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -962,8 +962,8 @@ light "scene_spot_08"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1011,8 +1011,8 @@ light "spot_01"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1060,8 +1060,8 @@ light "spot_02"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1109,8 +1109,8 @@ light "spot_03"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1158,8 +1158,8 @@ light "spot_04"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1207,8 +1207,8 @@ light "spot_05"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1256,8 +1256,8 @@ light "spot_06"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1305,8 +1305,8 @@ light "spot_07"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1354,8 +1354,8 @@ light "spot_08"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1403,8 +1403,8 @@ light "spot_09"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1452,8 +1452,8 @@ light "spot_10"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1501,8 +1501,8 @@ light "upstairs_bar_spot_01"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1550,8 +1550,8 @@ light "upstairs_bar_spot_02"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1599,8 +1599,8 @@ light "upstairs_bar_spot_03"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1648,8 +1648,8 @@ light "upstairs_bar_spot_04"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1697,8 +1697,8 @@ light "upstairs_bar_spot_19"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1746,8 +1746,8 @@ light "upstairs_bar_spot_06"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1795,8 +1795,8 @@ light "upstairs_bar_spot_07"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1844,8 +1844,8 @@ light "yellow_spot"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1893,8 +1893,8 @@ light "upstairs_bar_spot_08"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -1942,8 +1942,8 @@ light "upstairs_bar_spot_09"
 
 		vsm_config
 		{
-			variance_max 0.00000
-			variance_bias 0.00000
+			min_variance 0.00000
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config

@@ -4,16 +4,19 @@ scene_node "FromDames"
 {
 	position 34.5335 0.0666670 35.7335
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "Fx_Pathfinding"
 {
 	scale 0.0200001 0.0200001 0.0200001
+	static true
 }
 
 scene_node "Fx_Selected"
 {
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "LightNode"
@@ -26,24 +29,28 @@ scene_node "abris_bus"
 	orientation -0 -1 -0 180
 	position 80.0004 0.00000 193.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "arbre_rue"
 {
 	position 166.001 0.00000 35.0002
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "arbre_rue_2"
 {
 	position 36.3335 5.56313e-08 -165.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "arbre_rue_3"
 {
 	position -161.667 5.56313e-08 -69.3337
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "banc_1"
@@ -120,6 +127,7 @@ scene_node "banniere"
 	orientation 0 -1 0 90.0001
 	position 0.00000 37.6669 223.668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier"
@@ -127,6 +135,7 @@ scene_node "barriere_chantier"
 	orientation 0 1 0 94.9999
 	position 226.107 -1.00001 136.505
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier_10"
@@ -134,6 +143,7 @@ scene_node "barriere_chantier_10"
 	orientation 0 1 0 105
 	position 289.146 -1.00001 163.185
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier_11"
@@ -141,6 +151,7 @@ scene_node "barriere_chantier_11"
 	orientation -0 -1 -0 230
 	position 293.731 0.00000 189.563
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier_11_1"
@@ -148,6 +159,7 @@ scene_node "barriere_chantier_11_1"
 	orientation -0 -1 -0 210
 	position 275.731 -3.97366e-09 206.896
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier_12_1"
@@ -155,6 +167,7 @@ scene_node "barriere_chantier_12_1"
 	orientation 0 -1 0 59.9999
 	position 276.397 0.00000 104.561
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier_2"
@@ -162,6 +175,7 @@ scene_node "barriere_chantier_2"
 	orientation 0 1 0 54.9999
 	position 228.132 0.00000 107.918
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier_3"
@@ -169,6 +183,7 @@ scene_node "barriere_chantier_3"
 	orientation 0 1 0 127.5
 	position 230.771 0.00000 194.330
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier_4"
@@ -176,6 +191,7 @@ scene_node "barriere_chantier_4"
 	orientation 0 1 0 170
 	position 250.835 0.00000 211.256
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier_5"
@@ -183,6 +199,7 @@ scene_node "barriere_chantier_5"
 	orientation 0 1 0 80
 	position 225.922 -1.00001 163.327
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier_6"
@@ -190,6 +207,7 @@ scene_node "barriere_chantier_6"
 	orientation 0 -1 0 4.99997
 	position 252.983 0.00000 92.7245
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_chantier_8"
@@ -197,6 +215,7 @@ scene_node "barriere_chantier_8"
 	orientation 0 1 0 99.9999
 	position 284.885 -1.00001 134.968
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux"
@@ -204,6 +223,7 @@ scene_node "barriere_travaux"
 	orientation 0 -1 0 140
 	position -245.160 0.00000 -197.941
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_1"
@@ -211,6 +231,7 @@ scene_node "barriere_travaux_1"
 	orientation 0 -1 0 125
 	position -263.649 0.00000 -217.964
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_10"
@@ -218,6 +239,7 @@ scene_node "barriere_travaux_10"
 	orientation 0 -1 0 86.9999
 	position 149.647 0.00000 198.009
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_10_1"
@@ -225,6 +247,7 @@ scene_node "barriere_travaux_10_1"
 	orientation 0 -1 0 94
 	position 150.647 0.00000 206.009
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_10_2"
@@ -232,6 +255,7 @@ scene_node "barriere_travaux_10_2"
 	orientation 0 -1 0 81
 	position 149.647 0.00000 212.342
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_2"
@@ -239,6 +263,7 @@ scene_node "barriere_travaux_2"
 	orientation 0 -1 0 89.9999
 	position -267.021 0.00000 -209.326
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_3"
@@ -246,6 +271,7 @@ scene_node "barriere_travaux_3"
 	orientation 0 -1 0 49.9997
 	position -263.679 0.00000 -199.374
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_4"
@@ -253,6 +279,7 @@ scene_node "barriere_travaux_4"
 	orientation 0 -1 0 4.99746
 	position -255.013 0.00000 -194.193
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_5"
@@ -260,6 +287,7 @@ scene_node "barriere_travaux_5"
 	orientation 0 -1 0 89.9999
 	position -240.617 0.00000 -205.938
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_6"
@@ -267,6 +295,7 @@ scene_node "barriere_travaux_6"
 	orientation 0 -1 0 64.9999
 	position -242.654 0.00000 -215.488
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_7"
@@ -274,6 +303,7 @@ scene_node "barriere_travaux_7"
 	orientation 0 1 0 9.99872
 	position -256.580 0.00000 -223.182
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_8"
@@ -281,6 +311,7 @@ scene_node "barriere_travaux_8"
 	orientation 0 -1 0 30
 	position -248.001 0.00000 -222.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "barriere_travaux_9"
@@ -288,215 +319,251 @@ scene_node "barriere_travaux_9"
 	orientation 0 -1 0 92.9999
 	position 150.981 0.00000 191.009
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "base_node"
 {
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite"
 {
 	position -156.667 0.00000 118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_1"
 {
 	position -156.667 0.00000 106.667
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_10"
 {
 	position -156.667 0.00000 16.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_11"
 {
 	position -156.667 0.00000 -16.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_12"
 {
 	position -117.334 0.00000 -16.6667
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_13"
 {
 	position -117.334 0.00000 16.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_14"
 {
 	position 117.334 0.00000 16.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_15"
 {
 	position 117.334 0.00000 -16.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_16"
 {
 	position 156.667 0.00000 16.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_17"
 {
 	position 156.667 0.00000 -16.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_18"
 {
 	position -16.0001 0.00000 118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_19"
 {
 	position 16.0001 0.00000 118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_20"
 {
 	position -16.0001 0.00000 181.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_21"
 {
 	position 16.0001 0.00000 181.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_22"
 {
 	position -16.0001 0.00000 -118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_23"
 {
 	position 16.0001 0.00000 -118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_24"
 {
 	position 16.0001 0.00000 -158.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_25"
 {
 	position -16.0001 0.00000 -158.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_27"
 {
 	position 106.667 0.00000 118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_28"
 {
 	position 117.334 0.00000 118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_29"
 {
 	position 117.334 0.00000 107.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_3"
 {
 	position -167.334 0.00000 118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_31"
 {
 	position 156.667 0.00000 118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_32"
 {
 	position 167.334 0.00000 118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_34"
 {
 	position 156.667 0.00000 107.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_36"
 {
 	position 106.667 0.00000 -118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_37"
 {
 	position 117.334 0.00000 -118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_38"
 {
 	position 117.334 0.00000 -107.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_41"
 {
 	position -117.334 0.00000 -106.667
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_43"
 {
 	position -106.667 0.00000 -118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_44"
 {
 	position -117.334 0.00000 -118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_5"
 {
 	position -117.334 0.00000 118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_6"
 {
 	position -106.667 0.00000 118.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "bite_8"
 {
 	position -117.334 0.00000 107.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "borne_incendie"
@@ -504,6 +571,7 @@ scene_node "borne_incendie"
 	orientation 0 -1 0 4.99793
 	position -25.8051 0.00000 -116.255
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "borne_incendie_1"
@@ -511,12 +579,14 @@ scene_node "borne_incendie_1"
 	orientation 0 -1 0 89.9999
 	position -159.667 0.00000 83.6671
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "borne_incendie_2"
 {
 	position 26.6668 0.00000 183.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_3"
@@ -524,12 +594,14 @@ scene_node "buisson_3"
 	orientation 0 1 0 90.0001
 	position 60.0003 0.666670 -98.0005
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_coin_ext"
 {
 	position -89.3338 0.666670 89.6671
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_coin_ext_1"
@@ -537,6 +609,7 @@ scene_node "buisson_coin_ext_1"
 	orientation 0 -1 0 89.0001
 	position -90.0005 0.666670 -89.6671
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_coin_ext_2"
@@ -544,6 +617,7 @@ scene_node "buisson_coin_ext_2"
 	orientation 0 -1 0 179
 	position 88.6671 0.666670 -90.0005
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_coin_ext_3"
@@ -551,12 +625,14 @@ scene_node "buisson_coin_ext_3"
 	orientation -0 1 -0 90
 	position 88.6671 0.666670 89.6671
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_coin_int"
 {
 	position -55.6669 0.666670 55.6669
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_coin_int_1"
@@ -564,6 +640,7 @@ scene_node "buisson_coin_int_1"
 	orientation -0 1 -0 90
 	position 55.6669 0.666670 56.0003
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_coin_int_2"
@@ -571,6 +648,7 @@ scene_node "buisson_coin_int_2"
 	orientation 0 -1 0 179
 	position 55.6669 0.666670 -56.3336
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_coin_int_3"
@@ -578,12 +656,14 @@ scene_node "buisson_coin_int_3"
 	orientation 0 -1 0 90.0001
 	position -55.6669 0.666670 -56.6669
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_1"
 {
 	position 97.3338 0.666670 -60.3336
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10"
@@ -591,6 +671,7 @@ scene_node "buisson_droit_10"
 	orientation -0 -1 -0 180
 	position -97.6672 0.666670 60.0003
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_1"
@@ -598,6 +679,7 @@ scene_node "buisson_droit_10_1"
 	orientation 0 1 0 90
 	position -25.0001 0.666670 98.0005
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_10"
@@ -605,6 +687,7 @@ scene_node "buisson_droit_10_10"
 	orientation -0 -1 -0 180
 	position 65.3337 0.666670 25.3335
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_10_1"
@@ -612,6 +695,7 @@ scene_node "buisson_droit_10_10_1"
 	orientation -0 -1 -0 180
 	position -65.3337 0.666670 25.3335
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_10_2"
@@ -619,6 +703,7 @@ scene_node "buisson_droit_10_10_2"
 	orientation -0 -1 -0 180
 	position -65.3337 0.666670 -26.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_2"
@@ -626,6 +711,7 @@ scene_node "buisson_droit_10_2"
 	orientation 0 1 0 90
 	position -60.0003 0.666670 98.0005
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_3"
@@ -633,6 +719,7 @@ scene_node "buisson_droit_10_3"
 	orientation 0 1 0 90
 	position 25.3335 0.666670 98.0005
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_4"
@@ -640,6 +727,7 @@ scene_node "buisson_droit_10_4"
 	orientation 0 1 0 90
 	position 60.0003 0.666670 98.0005
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_5"
@@ -647,6 +735,7 @@ scene_node "buisson_droit_10_5"
 	orientation 0 1 0 90
 	position 25.6668 0.666670 65.6670
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_6"
@@ -654,6 +743,7 @@ scene_node "buisson_droit_10_6"
 	orientation 0 1 0 90
 	position -25.3335 0.666670 65.3337
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_7"
@@ -661,6 +751,7 @@ scene_node "buisson_droit_10_7"
 	orientation 0 1 0 90
 	position -25.3335 0.666670 -66.0003
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_8"
@@ -668,6 +759,7 @@ scene_node "buisson_droit_10_8"
 	orientation 0 1 0 90
 	position 25.3335 0.666670 -66.0003
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_10_9"
@@ -675,12 +767,14 @@ scene_node "buisson_droit_10_9"
 	orientation -0 -1 -0 180
 	position 65.3337 0.666670 -26.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_11"
 {
 	position 97.0005 0.666670 60.6670
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_12"
@@ -688,12 +782,14 @@ scene_node "buisson_droit_12"
 	orientation 0 1 0 90.0001
 	position 59.6670 0.666670 -98.3338
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_13"
 {
 	position 97.3338 0.666670 -26.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_2"
@@ -701,6 +797,7 @@ scene_node "buisson_droit_2"
 	orientation 0 1 0 90.0001
 	position 25.0001 0.666670 -98.3338
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_4"
@@ -708,6 +805,7 @@ scene_node "buisson_droit_4"
 	orientation 0 1 0 90.0001
 	position -26.0001 0.666670 -98.3338
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_5"
@@ -715,6 +813,7 @@ scene_node "buisson_droit_5"
 	orientation 0 1 0 90.0001
 	position -60.6670 0.666670 -98.3338
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_6"
@@ -722,6 +821,7 @@ scene_node "buisson_droit_6"
 	orientation 0 1 0 1.0056
 	position -97.3338 0.666670 -25.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_7"
@@ -729,12 +829,14 @@ scene_node "buisson_droit_7"
 	orientation 0 1 0 1.0056
 	position -98.0005 0.666670 -60.0003
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_8"
 {
 	position 97.0005 0.666670 25.6668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_9"
@@ -742,6 +844,7 @@ scene_node "buisson_droit_9"
 	orientation -0 -1 -0 180
 	position -97.6672 0.666670 24.6668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_coin_ext_1"
@@ -749,24 +852,28 @@ scene_node "buisson_droit_coin_ext_1"
 	orientation 0 -1 0 90
 	position -90.0005 0.666670 -89.6671
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "buisson_droit_droit"
 {
 	position 97.0005 0.666670 -25.3335
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "cabine_telephone"
 {
 	position -53.1109 0.00000 189.028
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "cabine_telephone_1"
 {
 	position 83.3337 0.00000 -178.668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "cartons"
@@ -780,6 +887,7 @@ scene_node "chene"
 	orientation 0 -1 0 72
 	position -35.6668 0.666670 37.0002
 	scale 0.0865958 0.0865958 0.0865958
+	static true
 }
 
 scene_node "chene_1"
@@ -787,6 +895,7 @@ scene_node "chene_1"
 	orientation 0 1 0 23
 	position -47.0002 0.666670 -28.3335
 	scale 0.108862 0.108862 0.108862
+	static true
 }
 
 scene_node "chene_2"
@@ -794,6 +903,7 @@ scene_node "chene_2"
 	orientation 0 1 0 19.9999
 	position 35.0002 0.666670 -41.6669
 	scale 0.0865958 0.0865958 0.0865958
+	static true
 }
 
 scene_node "chene_3"
@@ -801,42 +911,49 @@ scene_node "chene_3"
 	orientation 0 -1 0 13
 	position 46.3336 0.666670 17.3334
 	scale 0.0742104 0.0742104 0.0742104
+	static true
 }
 
 scene_node "corbeille"
 {
 	position 105.334 0.00000 -38.3335
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "corbeille_1"
 {
 	position 160.334 0.00000 -20.3334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "corbeille_2"
 {
 	position -19.6668 0.00000 -162.667
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "corbeille_4"
 {
 	position -17.3334 0.00000 106.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "corbeille_6"
 {
 	position -89.0004 0.466669 -11.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "corbeille_7"
 {
 	position -30.3335 0.00000 10.0000
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "distributeur"
@@ -844,6 +961,7 @@ scene_node "distributeur"
 	orientation 0 -1 0 89.9999
 	position 194.668 0.00000 36.6668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "distributeur_1"
@@ -851,6 +969,7 @@ scene_node "distributeur_1"
 	orientation -0 1 -0 270
 	position -194.778 0.00000 -109.343
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "entree_station"
@@ -858,6 +977,7 @@ scene_node "entree_station"
 	orientation -0 1 -0 270
 	position 170.334 -1.19210e-08 231.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "feu_tricolore"
@@ -865,6 +985,7 @@ scene_node "feu_tricolore"
 	orientation 0 -1 0 89.9999
 	position -160.173 0.00000 90.4785
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "feu_tricolore_1"
@@ -872,17 +993,20 @@ scene_node "feu_tricolore_1"
 	orientation -0 -1 -0 180
 	position 184.668 0.00000 116.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "fontaine"
 {
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "horloge"
 {
 	position 0.00000 36.6668 -205.668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "horloge_aiguille_heures"
@@ -908,12 +1032,14 @@ scene_node "kiosque_park"
 	orientation 0 -1 0 135
 	position 47.7162 0.00000 48.6325
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "npc_node_01"
 {
 	position 32.2668 0.0666670 46.0669
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "panneau_enfants"
@@ -921,6 +1047,7 @@ scene_node "panneau_enfants"
 	orientation -0 -1 -0 359.881
 	position 158.667 0.00000 17.6668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "panneau_mural"
@@ -928,6 +1055,7 @@ scene_node "panneau_mural"
 	orientation -0 1 -0 90
 	position -199.001 17.6668 20.3334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "panneau_pub"
@@ -935,6 +1063,7 @@ scene_node "panneau_pub"
 	orientation 0 1 0 90.0001
 	position -76.6670 0.00000 -164.667
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "panneau_stationnement"
@@ -942,6 +1071,7 @@ scene_node "panneau_stationnement"
 	orientation 0 -1 0 90
 	position -44.3336 0.00000 -117.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "panneau_stationnement_1"
@@ -949,6 +1079,7 @@ scene_node "panneau_stationnement_1"
 	orientation 0 -1 0 90
 	position 84.0004 0.00000 117.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "panneau_stationnement_2"
@@ -956,6 +1087,7 @@ scene_node "panneau_stationnement_2"
 	orientation 0 -1 0 177.5
 	position -160.334 0.00000 32.0002
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "panneau_velo"
@@ -963,6 +1095,7 @@ scene_node "panneau_velo"
 	orientation 0 -1 0 90.0001
 	position -84.6671 0.00000 182.668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "panneau_velo_1"
@@ -970,6 +1103,7 @@ scene_node "panneau_velo_1"
 	orientation 0 1 0 90.0001
 	position 20.6668 0.00000 -159.667
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "piaf_ciel"
@@ -998,6 +1132,7 @@ scene_node "plasma"
 	orientation 0 -1 0 90
 	position 198.668 19.3334 -125.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "plot_chantier_1"
@@ -1135,6 +1270,7 @@ scene_node "poubelle"
 	orientation 0 1 0 9.99966
 	position -191.334 0.00000 -271.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "poubelle_1"
@@ -1142,6 +1278,7 @@ scene_node "poubelle_1"
 	orientation 0 -1 0 4.99934
 	position -182.334 0.00000 -262.335
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "poubelle_2"
@@ -1149,6 +1286,7 @@ scene_node "poubelle_2"
 	orientation 0 -1 0 4.99934
 	position -160.667 0.00000 -270.668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "poubelle_3"
@@ -1156,84 +1294,98 @@ scene_node "poubelle_3"
 	orientation 0 1 0 10.0006
 	position -168.668 0.00000 -261.668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere"
 {
 	position 115.334 0.00000 -160.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_11"
 {
 	position 106.667 0.00000 80.0004
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_11_1"
 {
 	position -12.3334 -1.98683e-07 29.6668
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_11_2"
 {
 	position -30.0001 -1.98683e-07 -11.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_11_3"
 {
 	position 29.0001 -1.98683e-07 -14.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_11_4"
 {
 	position 17.0001 -2.22525e-07 28.0001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_13"
 {
 	position 80.0004 0.00000 -106.667
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_15"
 {
 	position -80.0004 0.00000 106.667
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_16"
 {
 	position -106.667 0.00000 -80.0004
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_19"
 {
 	position -158.667 0.00000 115.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_21"
 {
 	position 332.002 0.00000 115.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_4"
 {
 	position -115.334 0.00000 -160.001
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "reverbere_8"
 {
 	position 159.334 0.00000 115.334
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "saule_pleureur_1"
@@ -1241,6 +1393,7 @@ scene_node "saule_pleureur_1"
 	orientation 0 1 0 77
 	position 20.3334 -4.37103e-08 47.6669
 	scale 0.116057 0.116057 0.116057
+	static true
 }
 
 scene_node "saule_pleureur_2"
@@ -1248,6 +1401,7 @@ scene_node "saule_pleureur_2"
 	orientation 0 -1 0 29
 	position -17.6668 0.333335 -47.3336
 	scale 0.0777171 0.0777171 0.0777171
+	static true
 }
 
 scene_node "skycraper"
@@ -1261,6 +1415,7 @@ scene_node "table_echec"
 	orientation 0 -1 0 45
 	position 47.3336 2.66668 49.0002
 	scale 0.0666670 0.0666670 0.0666670
+	static true
 }
 
 scene_node "trigger_1"

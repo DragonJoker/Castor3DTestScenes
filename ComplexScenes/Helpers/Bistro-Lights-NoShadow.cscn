@@ -32,8 +32,8 @@ light "SunLight"
 
 		vsm_config
 		{
-			variance_max 1.00000e-07
-			variance_bias 0.00000
+			min_variance 1.00000e-07
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -162,8 +162,8 @@ light "Light_Bar_01"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -208,8 +208,8 @@ light "Light_Bar_02"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -254,8 +254,8 @@ light "Light_Bar_03"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -300,8 +300,8 @@ light "Light_Bar_04"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -348,8 +348,8 @@ light "Light_Ceiling_01"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -396,8 +396,8 @@ light "Light_Ceiling_02"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -444,8 +444,8 @@ light "Light_Ceiling_03"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -492,8 +492,8 @@ light "Light_Ceiling_04"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -538,8 +538,8 @@ light "Light_Wall_01"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -584,8 +584,8 @@ light "Light_Wall_02"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -630,8 +630,8 @@ light "Light_Wall_03"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -676,8 +676,8 @@ light "Light_Wall_04"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -722,8 +722,8 @@ light "Light_Wall_05"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
@@ -768,8 +768,8 @@ light "Light_Wall_06"
 
 		vsm_config
 		{
-			variance_max 1.00000e-12
-			variance_bias 0.00000
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
 		}
 
 		rsm_config
