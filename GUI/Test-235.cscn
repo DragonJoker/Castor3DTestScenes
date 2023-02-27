@@ -7,13 +7,13 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "DarkRed"
 			border_material "DarkBlue"
 		}
 
-		listbox_style
+		listbox_style "ListBox"
 		{
 			background_material "DarkBlue"
 			border_material "White"
@@ -34,14 +34,14 @@ gui
 
 			highlighted_item_style
 			{
-				background_material "DarkerBlue"
+				background_material "DarkMagenta"
 				border_material "White"
 				text_material "White"
 			}
 		}
 	}
 
-	static "TestColours"
+	panel "TestColours"
 	{
 		theme "Colours"
 		pixel_position 48 0
@@ -64,13 +64,13 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "FrameCenter"
 			border_material "DarkRed"
 		}
 
-		listbox_style
+		listbox_style "ListBox"
 		{
 			background_material "FrameCenterMP"
 			border_material "White"
@@ -99,7 +99,7 @@ gui
 		}
 	}
 
-	static "TestBackgroundTexture"
+	panel "TestBackgroundTexture"
 	{
 		theme "BackgroundTexture"
 		pixel_position 304 0
@@ -122,13 +122,13 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "DarkRed"
 			border_material "Frame"
 		}
 
-		listbox_style
+		listbox_style "ListBox"
 		{
 			background_material "DarkBlue"
 			border_material "FrameMP"
@@ -149,14 +149,14 @@ gui
 
 			highlighted_item_style
 			{
-				background_material "DarkBlue"
+				background_material "DarkMagenta"
 				border_material "FrameMP"
 				text_material "FrameMP"
 			}
 		}
 	}
 
-	static "TestForegroundTexture"
+	panel "TestForegroundTexture"
 	{
 		theme "ForegroundTexture"
 		pixel_position 560 0
@@ -179,13 +179,13 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "FrameCenter"
 			border_material "Frame"
 		}
 
-		listbox_style
+		listbox_style "ListBox"
 		{
 			background_material "FrameCenterMP"
 			border_material "FrameMP"
@@ -194,26 +194,26 @@ gui
 			{
 				background_material "FrameCenterMP"
 				border_material "FrameMP"
-				text_material "FrameMP"
+				text_material "White"
 			}
 
 			selected_item_style
 			{
 				background_material "FrameCenterMO"
 				border_material "FrameMO"
-				text_material "FrameMO"
+				text_material "White"
 			}
 
 			highlighted_item_style
 			{
 				background_material "NoBorderMenuCenter"
 				border_material "FrameMP"
-				text_material "FrameMP"
+				text_material "White"
 			}
 		}
 	}
 
-	static "TestBothTextures"
+	panel "TestBothTextures"
 	{
 		theme "BothTextures"
 		pixel_position 816 0

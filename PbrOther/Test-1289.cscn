@@ -38,7 +38,7 @@ scene "Scene"
 	{
 		pass
 		{
-			roughness 0.5
+			roughness 0.6
 
 			texture_unit
 			{

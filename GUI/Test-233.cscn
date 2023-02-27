@@ -7,19 +7,13 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "DarkRed"
 			border_material "DarkBlue"
-			text_material "DarkBlue"
 		}
-	}
 
-	theme "ColoursInner"
-	{
-		default_font "Dbbrnms_25"
-
-		static_style
+		static_style "Static"
 		{
 			background_material "DarkGreen"
 			border_material "DarkBlue"
@@ -27,7 +21,7 @@ gui
 		}
 	}
 
-	static "TestColours"
+	panel "TestColours"
 	{
 		theme "Colours"
 		pixel_position 48 0
@@ -36,7 +30,7 @@ gui
 
 		static "TestStatic"
 		{
-			theme "ColoursInner"
+			theme "Colours"
 			pixel_position 16 300
 			pixel_size 128 50
 			pixel_border_size 4 4 4 4
@@ -50,19 +44,13 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "FrameCenter"
 			border_material "DarkRed"
-			text_material "DarkBlue"
 		}
-	}
 
-	theme "BackgroundTextureInner"
-	{
-		default_font "Dbbrnms_25"
-
-		static_style
+		static_style "Static"
 		{
 			background_material "FrameCenter"
 			border_material "DarkBlue"
@@ -70,7 +58,7 @@ gui
 		}
 	}
 
-	static "TestBackgroundTexture"
+	panel "TestBackgroundTexture"
 	{
 		theme "BackgroundTexture"
 		pixel_position 304 0
@@ -79,7 +67,7 @@ gui
 
 		static "BT TestStatic"
 		{
-			theme "BackgroundTextureInner"
+			theme "BackgroundTexture"
 			pixel_position 16 300
 			pixel_size 128 50
 			pixel_border_size 4 4 4 4
@@ -93,19 +81,13 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "DarkRed"
 			border_material "Frame"
-			text_material "DarkBlue"
 		}
-	}
 
-	theme "ForegroundTextureInner"
-	{
-		default_font "Dbbrnms_25"
-
-		static_style
+		static_style "Static"
 		{
 			background_material "DarkGreen"
 			border_material "Frame"
@@ -113,7 +95,7 @@ gui
 		}
 	}
 
-	static "TestForegroundTexture"
+	panel "TestForegroundTexture"
 	{
 		theme "ForegroundTexture"
 		pixel_position 560 0
@@ -122,7 +104,7 @@ gui
 
 		static "FT TestStatic"
 		{
-			theme "ForegroundTextureInner"
+			theme "ForegroundTexture"
 			pixel_position 16 300
 			pixel_size 128 50
 			pixel_border_size 4 4 4 4
@@ -136,7 +118,13 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
+		{
+			background_material "FrameCenter"
+			border_material "Frame"
+		}
+
+		static_style "Static"
 		{
 			background_material "FrameCenter"
 			border_material "Frame"
@@ -144,7 +132,7 @@ gui
 		}
 	}
 
-	static "TestBothTextures"
+	panel "TestBothTextures"
 	{
 		theme "BothTextures"
 		pixel_position 816 0

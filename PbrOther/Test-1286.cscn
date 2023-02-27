@@ -837,408 +837,493 @@ scene "Scene"
 		intensity 0.8 1.0
 	}
 
+	scene_node "Base"
+	{
+	}
+
 	scene_node "Node00"
 	{
+		parent "Base"
 		position -200 -200 0
 	}
 
 	scene_node "Node01"
 	{
+		parent "Base"
 		position -150 -200 0
 	}
 
 	scene_node "Node02"
 	{
+		parent "Base"
 		position -100 -200 0
 	}
 
 	scene_node "Node03"
 	{
+		parent "Base"
 		position -50 -200 0
 	}
 
 	scene_node "Node04"
 	{
+		parent "Base"
 		position 0 -200 0
 	}
 
 	scene_node "Node05"
 	{
+		parent "Base"
 		position 50 -200 0
 	}
 
 	scene_node "Node06"
 	{
+		parent "Base"
 		position 100 -200 0
 	}
 
 	scene_node "Node07"
 	{
+		parent "Base"
 		position 150 -200 0
 	}
 
 	scene_node "Node08"
 	{
+		parent "Base"
 		position 200 -200 0
 	}
 
 	scene_node "Node10"
 	{
+		parent "Base"
 		position -200 -150 0
 	}
 
 	scene_node "Node11"
 	{
+		parent "Base"
 		position -150 -150 0
 	}
 
 	scene_node "Node12"
 	{
+		parent "Base"
 		position -100 -150 0
 	}
 
 	scene_node "Node13"
 	{
+		parent "Base"
 		position -50 -150 0
 	}
 
 	scene_node "Node14"
 	{
+		parent "Base"
 		position 0 -150 0
 	}
 
 	scene_node "Node15"
 	{
+		parent "Base"
 		position 50 -150 0
 	}
 
 	scene_node "Node16"
 	{
+		parent "Base"
 		position 100 -150 0
 	}
 
 	scene_node "Node17"
 	{
+		parent "Base"
 		position 150 -150 0
 	}
 
 	scene_node "Node18"
 	{
+		parent "Base"
 		position 200 -150 0
 	}
 
 	scene_node "Node20"
 	{
+		parent "Base"
 		position -200 -100 0
 	}
 
 	scene_node "Node21"
 	{
+		parent "Base"
 		position -150 -100 0
 	}
 
 	scene_node "Node22"
 	{
+		parent "Base"
 		position -100 -100 0
 	}
 
 	scene_node "Node23"
 	{
+		parent "Base"
 		position -50 -100 0
 	}
 
 	scene_node "Node24"
 	{
+		parent "Base"
 		position 0 -100 0
 	}
 
 	scene_node "Node25"
 	{
+		parent "Base"
 		position 50 -100 0
 	}
 
 	scene_node "Node26"
 	{
+		parent "Base"
 		position 100 -100 0
 	}
 
 	scene_node "Node27"
 	{
+		parent "Base"
 		position 150 -100 0
 	}
 
 	scene_node "Node28"
 	{
+		parent "Base"
 		position 200 -100 0
 	}
 
 	scene_node "Node30"
 	{
+		parent "Base"
 		position -200 -50 0
 	}
 
 	scene_node "Node31"
 	{
+		parent "Base"
 		position -150 -50 0
 	}
 
 	scene_node "Node32"
 	{
+		parent "Base"
 		position -100 -50 0
 	}
 
 	scene_node "Node33"
 	{
+		parent "Base"
 		position -50 -50 0
 	}
 
 	scene_node "Node34"
 	{
+		parent "Base"
 		position 0 -50 0
 	}
 
 	scene_node "Node35"
 	{
+		parent "Base"
 		position 50 -50 0
 	}
 
 	scene_node "Node36"
 	{
+		parent "Base"
 		position 100 -50 0
 	}
 
 	scene_node "Node37"
 	{
+		parent "Base"
 		position 150 -50 0
 	}
 
 	scene_node "Node38"
 	{
+		parent "Base"
 		position 200 -50 0
 	}
 
 	scene_node "Node40"
 	{
+		parent "Base"
 		position -200 0 0
 	}
 
 	scene_node "Node41"
 	{
+		parent "Base"
 		position -150 0 0
 	}
 
 	scene_node "Node42"
 	{
+		parent "Base"
 		position -100 0 0
 	}
 
 	scene_node "Node43"
 	{
+		parent "Base"
 		position -50 0 0
 	}
 
 	scene_node "Node44"
 	{
+		parent "Base"
 		position 0 0 0
 	}
 
 	scene_node "Node45"
 	{
+		parent "Base"
 		position 50 0 0
 	}
 
 	scene_node "Node46"
 	{
+		parent "Base"
 		position 100 0 0
 	}
 
 	scene_node "Node47"
 	{
+		parent "Base"
 		position 150 0 0
 	}
 
 	scene_node "Node48"
 	{
+		parent "Base"
 		position 200 0 0
 	}
 
 	scene_node "Node50"
 	{
+		parent "Base"
 		position -200 50 0
 	}
 
 	scene_node "Node51"
 	{
+		parent "Base"
 		position -150 50 0
 	}
 
 	scene_node "Node52"
 	{
+		parent "Base"
 		position -100 50 0
 	}
 
 	scene_node "Node53"
 	{
+		parent "Base"
 		position -50 50 0
 	}
 
 	scene_node "Node54"
 	{
+		parent "Base"
 		position 0 50 0
 	}
 
 	scene_node "Node55"
 	{
+		parent "Base"
 		position 50 50 0
 	}
 
 	scene_node "Node56"
 	{
+		parent "Base"
 		position 100 50 0
 	}
 
 	scene_node "Node57"
 	{
+		parent "Base"
 		position 150 50 0
 	}
 
 	scene_node "Node58"
 	{
+		parent "Base"
 		position 200 50 0
 	}
 
 	scene_node "Node60"
 	{
+		parent "Base"
 		position -200 100 0
 	}
 
 	scene_node "Node61"
 	{
+		parent "Base"
 		position -150 100 0
 	}
 
 	scene_node "Node62"
 	{
+		parent "Base"
 		position -100 100 0
 	}
 
 	scene_node "Node63"
 	{
+		parent "Base"
 		position -50 100 0
 	}
 
 	scene_node "Node64"
 	{
+		parent "Base"
 		position 0 100 0
 	}
 
 	scene_node "Node65"
 	{
+		parent "Base"
 		position 50 100 0
 	}
 
 	scene_node "Node66"
 	{
+		parent "Base"
 		position 100 100 0
 	}
 
 	scene_node "Node67"
 	{
+		parent "Base"
 		position 150 100 0
 	}
 
 	scene_node "Node68"
 	{
+		parent "Base"
 		position 200 100 0
 	}
 
 	scene_node "Node70"
 	{
+		parent "Base"
 		position -200 150 0
 	}
 
 	scene_node "Node71"
 	{
+		parent "Base"
 		position -150 150 0
 	}
 
 	scene_node "Node72"
 	{
+		parent "Base"
 		position -100 150 0
 	}
 
 	scene_node "Node73"
 	{
+		parent "Base"
 		position -50 150 0
 	}
 
 	scene_node "Node74"
 	{
+		parent "Base"
 		position 0 150 0
 	}
 
 	scene_node "Node75"
 	{
+		parent "Base"
 		position 50 150 0
 	}
 
 	scene_node "Node76"
 	{
+		parent "Base"
 		position 100 150 0
 	}
 
 	scene_node "Node77"
 	{
+		parent "Base"
 		position 150 150 0
 	}
 
 	scene_node "Node78"
 	{
+		parent "Base"
 		position 200 150 0
 	}
 
 	scene_node "Node80"
 	{
+		parent "Base"
 		position -200 200 0
 	}
 
 	scene_node "Node81"
 	{
+		parent "Base"
 		position -150 200 0
 	}
 
 	scene_node "Node82"
 	{
+		parent "Base"
 		position -100 200 0
 	}
 
 	scene_node "Node83"
 	{
+		parent "Base"
 		position -50 200 0
 	}
 
 	scene_node "Node84"
 	{
+		parent "Base"
 		position 0 200 0
 	}
 
 	scene_node "Node85"
 	{
+		parent "Base"
 		position 50 200 0
 	}
 
 	scene_node "Node86"
 	{
+		parent "Base"
 		position 100 200 0
 	}
 
 	scene_node "Node87"
 	{
+		parent "Base"
 		position 150 200 0
 	}
 
 	scene_node "Node88"
 	{
+		parent "Base"
 		position 200 200 0
 	}
 

@@ -1,0 +1,554 @@
+materials pbr
+
+gui
+{
+	theme "Colours"
+	{
+		default_font "Arial20"
+
+		panel_style "Panel"
+		{
+			background_material "DarkRed"
+			border_material "DarkBlue"
+		}
+
+		static_style "Static"
+		{
+			background_material "Yellow"
+			border_material "Teal"
+			text_material "DarkBlue"
+		}
+	}
+
+	panel "Test-BoxLayout-TopLeft"
+	{
+		theme "Colours"
+		pixel_position 0 0
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "TL"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_ctrl "Text"
+			{
+				horizontal_align left
+			}
+			layout_dynspace
+		}
+	}
+
+	panel "Test-BoxLayout-CenterLeft"
+	{
+		theme "Colours"
+		pixel_position 0 256
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "CL"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_dynspace
+			layout_ctrl "Text"
+			{
+				horizontal_align left
+			}
+			layout_dynspace
+		}
+	}
+
+	panel "Test-BoxLayout-BottomLeft"
+	{
+		theme "Colours"
+		pixel_position 0 512
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "BL"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_dynspace
+			layout_ctrl "Text"
+			{
+				horizontal_align left
+			}
+		}
+	}
+
+	panel "Test-BoxLayout-TopBottomLeft"
+	{
+		theme "Colours"
+		pixel_position 0 768
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text-Top"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "TL"
+			horizontal_align center
+			vertical_align center
+		}
+
+		static "Text-Bottom"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "BL"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_ctrl "Text-Top"
+			{
+				horizontal_align left
+			}
+			layout_dynspace
+			layout_ctrl "Text-Bottom"
+			{
+				horizontal_align left
+			}
+		}
+	}
+
+	panel "Test-BoxLayout-TopCenter"
+	{
+		theme "Colours"
+		pixel_position 256 0
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "TC"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_ctrl "Text"
+			{
+				horizontal_align center
+			}
+			layout_dynspace
+		}
+	}
+
+	panel "Test-BoxLayout-CenterCenter"
+	{
+		theme "Colours"
+		pixel_position 256 256
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "CC"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_dynspace
+			layout_ctrl "Text"
+			{
+				horizontal_align center
+			}
+			layout_dynspace
+		}
+	}
+
+	panel "Test-BoxLayout-BottomCenter"
+	{
+		theme "Colours"
+		pixel_position 256 512
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "BC"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_dynspace
+			layout_ctrl "Text"
+			{
+				horizontal_align center
+			}
+		}
+	}
+
+	panel "Test-BoxLayout-CenterCenterCenter"
+	{
+		theme "Colours"
+		pixel_position 256 768
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text-Top"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "CT"
+			horizontal_align center
+			vertical_align center
+		}
+
+		static "Text-Bottom"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "CB"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_dynspace
+			layout_ctrl "Text-Top"
+			{
+				horizontal_align center
+			}
+			layout_ctrl "Text-Bottom"
+			{
+				horizontal_align center
+			}
+			layout_dynspace
+		}
+	}
+
+	panel "Test-BoxLayout-TopRight"
+	{
+		theme "Colours"
+		pixel_position 512 0
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "TR"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_ctrl "Text"
+			{
+				horizontal_align right
+			}
+			layout_dynspace
+		}
+	}
+
+	panel "Test-BoxLayout-CenterRight"
+	{
+		theme "Colours"
+		pixel_position 512 256
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "CR"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_dynspace
+			layout_ctrl "Text"
+			{
+				horizontal_align right
+			}
+			layout_dynspace
+		}
+	}
+
+	panel "Test-BoxLayout-BottomRight"
+	{
+		theme "Colours"
+		pixel_position 512 512
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "BR"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_dynspace
+			layout_ctrl "Text"
+			{
+				horizontal_align right
+			}
+		}
+	}
+
+	panel "Test-BoxLayout-TopTopRight"
+	{
+		theme "Colours"
+		pixel_position 512 768
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text-Top"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "TR"
+			horizontal_align center
+			vertical_align center
+		}
+
+		static "Text-Bottom"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "BR"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_ctrl "Text-Top"
+			{
+				horizontal_align right
+			}
+			layout_ctrl "Text-Bottom"
+			{
+				horizontal_align right
+			}
+			layout_dynspace
+		}
+	}
+
+	panel "Test-BoxLayout-TopStretch"
+	{
+		theme "Colours"
+		pixel_position 768 0
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "TS"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_ctrl "Text"
+			{
+				stretch true
+			}
+			layout_dynspace
+		}
+	}
+
+	panel "Test-BoxLayout-CenterStretch"
+	{
+		theme "Colours"
+		pixel_position 768 256
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "CS"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_dynspace
+			layout_ctrl "Text"
+			{
+				stretch true
+			}
+			layout_dynspace
+		}
+	}
+
+	panel "Test-BoxLayout-BottomStretch"
+	{
+		theme "Colours"
+		pixel_position 768 512
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "BS"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_dynspace
+			layout_ctrl "Text"
+			{
+				stretch true
+			}
+		}
+	}
+
+	panel "Test-BoxLayout-BottomBottomStretch"
+	{
+		theme "Colours"
+		pixel_position 768 768
+		pixel_size 200 200
+		pixel_border_size 8 8 8 8
+
+		static "Text-Top"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "TS"
+			horizontal_align center
+			vertical_align center
+		}
+
+		static "Text-Bottom"
+		{
+			theme "Colours"
+			pixel_size 50 50
+			pixel_border_size 2 2 2 2
+			caption "BS"
+			horizontal_align center
+			vertical_align center
+		}
+
+		box_layout
+		{
+			layout_dynspace
+			layout_ctrl "Text-Top"
+			{
+				stretch true
+			}
+			layout_dynspace
+			layout_ctrl "Text-Bottom"
+			{
+				stretch true
+			}
+			layout_dynspace
+		}
+	}
+}
+
+scene "Scene"
+{
+	background_image "Textures/backgroundImage.hdr"
+	ambient_light 0.0 0.0 0.0
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.0 -100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 1
+			far 100
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 1024 1024
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

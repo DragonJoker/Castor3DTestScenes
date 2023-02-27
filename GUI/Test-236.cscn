@@ -7,18 +7,18 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "DarkRed"
 			border_material "DarkBlue"
 		}
 
-		combobox_style
+		combobox_style "ComboBox"
 		{
 			background_material "DarkBlue"
 			border_material "White"
 
-			button_style
+			expand_style
 			{
 				background_material "DarkBlue"
 				border_material "White"
@@ -31,7 +31,7 @@ gui
 				pushed_text_material "LightGray"
 			}
 
-			listbox_style
+			elements_style
 			{
 				background_material "DarkBlue"
 				border_material "White"
@@ -60,7 +60,7 @@ gui
 		}
 	}
 
-	static "TestColours"
+	panel "TestColours"
 	{
 		theme "Colours"
 		pixel_position 48 0
@@ -83,18 +83,18 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "FrameCenter"
 			border_material "DarkRed"
 		}
 
-		combobox_style
+		combobox_style "ComboBox"
 		{
 			background_material "FrameCenterMP"
 			border_material "White"
 
-			button_style
+			expand_style
 			{
 				background_material "FrameCenterMP"
 				border_material "White"
@@ -107,7 +107,7 @@ gui
 				pushed_text_material "LightGray"
 			}
 
-			listbox_style
+			elements_style
 			{
 				background_material "FrameCenterMP"
 				border_material "White"
@@ -137,7 +137,7 @@ gui
 		}
 	}
 
-	static "TestBackgroundTexture"
+	panel "TestBackgroundTexture"
 	{
 		theme "BackgroundTexture"
 		pixel_position 304 0
@@ -160,18 +160,18 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "DarkRed"
 			border_material "Frame"
 		}
 
-		combobox_style
+		combobox_style "ComboBox"
 		{
 			background_material "DarkBlue"
 			border_material "FrameMP"
 
-			button_style
+			expand_style
 			{
 				background_material "DarkBlue"
 				border_material "FrameMP"
@@ -184,7 +184,7 @@ gui
 				pushed_text_material "FrameMO"
 			}
 
-			listbox_style
+			elements_style
 			{
 				background_material "DarkBlue"
 				border_material "FrameMP"
@@ -213,7 +213,7 @@ gui
 		}
 	}
 
-	static "TestForegroundTexture"
+	panel "TestForegroundTexture"
 	{
 		theme "ForegroundTexture"
 		pixel_position 560 0
@@ -236,18 +236,18 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "FrameCenter"
 			border_material "Frame"
 		}
 
-		combobox_style
+		combobox_style "ComboBox"
 		{
 			background_material "FrameCenterMP"
 			border_material "FrameMP"
 
-			button_style
+			expand_style
 			{
 				background_material "FrameCenterMP"
 				border_material "FrameMP"
@@ -260,7 +260,7 @@ gui
 				pushed_text_material "FrameMO"
 			}
 
-			listbox_style
+			elements_style
 			{
 				background_material "FrameCenterMP"
 				border_material "FrameMP"
@@ -289,7 +289,7 @@ gui
 		}
 	}
 
-	static "TestBothTextures"
+	panel "TestBothTextures"
 	{
 		theme "BothTextures"
 		pixel_position 816 0

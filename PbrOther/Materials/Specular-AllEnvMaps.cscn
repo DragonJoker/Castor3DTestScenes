@@ -20,6 +20,7 @@ material "ReflMatBody"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		alpha_func greater 0.5
 		two_sided true
 		reflections true
@@ -48,6 +49,7 @@ material "ReflMatHead"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		two_sided true
 		reflections true
 
@@ -67,6 +69,7 @@ material "ReflCornea"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		two_sided true
 		reflections true
 	}
@@ -78,6 +81,7 @@ material "ReflDx11Shader6"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		alpha_func greater 0.5
 		two_sided true
 		reflections true
@@ -192,6 +196,7 @@ material "ReflRefrMatBody"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
@@ -221,6 +226,7 @@ material "ReflRefrMatHead"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		two_sided true
 		refraction_ratio 0.92
 		reflections true
@@ -241,6 +247,7 @@ material "ReflRefrCornea"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		two_sided true
 		refraction_ratio 0.92
 		reflections true
@@ -253,6 +260,7 @@ material "ReflRefrDx11Shader6"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92

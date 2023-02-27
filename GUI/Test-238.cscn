@@ -3,173 +3,164 @@ include "Materials/Gui.cscn"
 
 // GUI
 
-gui
+theme "Menu"
 {
-	theme "Menu/Jouer"
-	{
-		default_font "Dbbrnms_25"
+	default_font "Dbbrnms_25"
 
-		button_style
-		{
-			background_material "Commencer"
-			highlighted_background_material "CommencerMO"
-			pushed_background_material "CommencerMO"
-		}
+	button_style "Jouer"
+	{
+		background_material "Commencer"
+		highlighted_background_material "CommencerMO"
+		pushed_background_material "CommencerMO"
 	}
 
-	theme "Menu/Regles"
+	button_style "Regles"
 	{
-		default_font "Dbbrnms_25"
-
-		button_style
-		{
-			background_material "Regles"
-			highlighted_background_material "ReglesMO"
-			pushed_background_material "ReglesMO"
-		}
+		background_material "Regles"
+		highlighted_background_material "ReglesMO"
+		pushed_background_material "ReglesMO"
 	}
 
-	theme "Menu/Retour"
+	button_style "Retour"
 	{
-		default_font "Dbbrnms_25"
-
-		button_style
-		{
-			background_material "Retour"
-			highlighted_background_material "RetourMO"
-			pushed_background_material "RetourMO"
-		}
+		background_material "Retour"
+		highlighted_background_material "RetourMO"
+		pushed_background_material "RetourMO"
 	}
 
-	theme "Menu/Continuer"
+	button_style "Continuer"
 	{
-		default_font "Dbbrnms_25"
-
-		button_style
-		{
-			background_material "Continuer"
-			highlighted_background_material "ContinuerMO"
-			pushed_background_material "ContinuerMO"
-		}
+		background_material "Continuer"
+		highlighted_background_material "ContinuerMO"
+		pushed_background_material "ContinuerMO"
 	}
 
-	theme "Menu/Recommencer"
+	button_style "Recommencer"
 	{
-		default_font "Dbbrnms_25"
-
-		button_style
-		{
-			background_material "Recommencer"
-			highlighted_background_material "RecommencerMO"
-			pushed_background_material "RecommencerMO"
-		}
+		background_material "Recommencer"
+		highlighted_background_material "RecommencerMO"
+		pushed_background_material "RecommencerMO"
 	}
 
-	theme "Menu/Menu"
+	button_style "Menu"
 	{
-		default_font "Dbbrnms_25"
-
-		static_style
-		{
-			background_material "BaseMenu"
-		}
-
-		button_style
-		{
-			background_material "MenuInGame"
-			highlighted_background_material "MenuInGameMO"
-			pushed_background_material "MenuInGameMO"
-		}
+		background_material "MenuInGame"
+		highlighted_background_material "MenuInGameMO"
+		pushed_background_material "MenuInGameMO"
 	}
 
-	theme "Title"
+	panel_style "Title"
 	{
-		default_font "Dbbrnms_25"
-
-		static_style
-		{
-			background_material "Titre"
-		}
+		background_material "Titre"
 	}
 
-	theme "BottomRightCorner"
+	panel_style "BottomRightCorner"
 	{
-		default_font "Dbbrnms_25"
-
-		static_style
-		{
-			background_material "BasDroite"
-		}
-	}
-
-	static "Title"
-	{
-		theme "Title"
-		pixel_position 256 192
-		pixel_size 512 384
-	}
-
-	static "BottomRightCorner"
-	{
-		theme "BottomRightCorner"
 		background_material "BasDroite"
-		pixel_position 768 512
-		pixel_size 256 256
 	}
 
-	static "Menu"
+	panel_style "Menu"
 	{
-		theme "Menu/Menu"
-		pixel_position 0 0
-		pixel_size 341 1024
+		background_material "BaseMenu"
+	}
+}
 
-		button "Menu/Jouer"
-		{
-			theme "Menu/Jouer"
-			pixel_position 32 192
-			pixel_size 128 64
-			pixel_border_size 0 0 0 0
-		}
+panel "Title"
+{
+	style "Menu/Title"
+	pixel_position 256 192
+	pixel_size 512 384
+}
 
-		button "Menu/Regles"
-		{
-			theme "Menu/Regles"
-			pixel_position 32 288
-			pixel_size 128 64
-			pixel_border_size 0 0 0 0
-		}
+panel "BottomRightCorner"
+{
+	style "Menu/BottomRightCorner"
+	pixel_position 768 512
+	pixel_size 256 256
+}
 
-		button "Menu/Retour"
-		{
-			theme "Menu/Retour"
-			pixel_position 32 384
-			pixel_size 128 64
-			pixel_border_size 0 0 0 0
-		}
+panel "Menu"
+{
+	style "Menu/Menu"
+	pixel_position 0 0
+	pixel_size 341 768
 
-		button "Menu/Continuer"
-		{
-			theme "Menu/Continuer"
-			pixel_position 32 480
-			pixel_size 128 64
-			pixel_border_size 0 0 0 0
-		}
+	button "Jouer"
+	{
+		style "Menu/Jouer"
+		pixel_size 128 64
+		pixel_border_size 0 0 0 0
+	}
 
-		button "Menu/Recommencer"
-		{
-			theme "Menu/Recommencer"
-			pixel_position 32 576
-			pixel_size 128 64
-			pixel_border_size 0 0 0 0
-		}
+	button "Regles"
+	{
+		style "Menu/Regles"
+		pixel_size 128 64
+		pixel_border_size 0 0 0 0
+	}
 
-		button "Menu/Menu"
+	button "Retour"
+	{
+		style "Menu/Retour"
+		pixel_size 128 64
+		pixel_border_size 0 0 0 0
+	}
+
+	button "Continuer"
+	{
+		style "Menu/Continuer"
+		pixel_size 128 64
+		pixel_border_size 0 0 0 0
+	}
+
+	button "Recommencer"
+	{
+		style "Menu/Recommencer"
+		pixel_size 128 64
+		pixel_border_size 0 0 0 0
+	}
+
+	button "Menu"
+	{
+		style "Menu/Menu"
+		pixel_size 128 64
+		pixel_border_size 0 0 0 0
+	}
+
+	box_layout
+	{
+		layout_dynspace
+		layout_ctrl "Jouer"
 		{
-			theme "Menu/Menu"
-			pixel_position 32 576
-			pixel_size 128 64
-			pixel_border_size 0 0 0 0
+			horizontal_align left
+			padding 32 16 16 16
 		}
+		layout_ctrl "Regles"
+		{
+			horizontal_align left
+			padding 32 16 16 16
+		}
+		layout_ctrl "Retour"
+		{
+			horizontal_align left
+			padding 32 16 16 16
+		}
+		layout_ctrl "Continuer"
+		{
+			horizontal_align left
+			padding 32 16 16 16
+		}
+		layout_ctrl "Recommencer"
+		{
+			horizontal_align left
+			padding 32 16 16 16
+		}
+		layout_ctrl "Menu"
+		{
+			horizontal_align left
+			padding 32 16 16 16
+		}
+		layout_dynspace
 	}
 }
 

@@ -1,0 +1,1258 @@
+materials phong
+
+font "Arial_20"
+{
+	file "arial.ttf"
+	height 20
+}
+
+font "Arial_22"
+{
+	file "arial.ttf"
+	height 22
+}
+
+material "DarkerBlue"
+{
+	pass
+	{
+		diffuse 0.0 0.0 0.25 1.0
+	}
+}
+
+material "DarkOrange"
+{
+	pass
+	{
+		diffuse 0.5 0.25 0.5 1.0
+	}
+}
+
+material "ColourMap"
+{
+	pass
+	{
+		diffuse 1.0 1.0 1.0
+
+		texture_unit
+		{
+			image "Textures/Gui/Diffuse.jpg"
+			diffuse_mask 0x00FFFFFF
+		}
+	}
+}
+
+material "BtnTexture"
+{
+	pass
+	{
+		diffuse 1.0 1.0 1.0
+
+		texture_unit
+		{
+			image "Textures/Gui/button.png"
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
+		}
+	}
+}
+
+material "BtnHighlightedTexture"
+{
+	pass
+	{
+		diffuse 1.0 1.0 1.0
+
+		texture_unit
+		{
+			image "Textures/Gui/button_mo.png"
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
+		}
+	}
+}
+
+material "BtnPushedTexture"
+{
+	pass
+	{
+		diffuse 1.0 1.0 1.0
+
+		texture_unit
+		{
+			image "Textures/Gui/button_push.png"
+			diffuse_mask 0x00FFFFFF
+			opacity_mask 0xFF000000
+		}
+	}
+}
+
+button_style "SingleButton"
+{
+	background_material "BtnTexture"
+	border_material "BtnTexture"
+	font "Arial_20"
+	text_material "DarkGray"
+	highlighted_background_material "BtnHighlightedTexture"
+	highlighted_foreground_material "BtnHighlightedTexture"
+	highlighted_text_material "Black"
+	pushed_background_material "BtnPushedTexture"
+	pushed_foreground_material "BtnPushedTexture"
+	pushed_text_material "DarkGray"
+}
+
+static_style "Frame/Static"
+{
+	background_material "DarkRed"
+	border_material "DarkBlue"
+	font "Arial_20"
+	text_material "White"
+}
+
+panel_style "Frame/Panel"
+{
+	background_material "DarkRed"
+	border_material "DarkBlue"
+}
+
+panel_style "Invisible"
+{
+	background_material "TransparentBlack"
+	border_material "TransparentBlack"
+}
+
+frame_style "Colours/Frame"
+{
+	background_material "DarkOrange"
+	border_material "DarkBlue"
+	header_font "Arial_20"
+	header_text_material "DarkBlue"
+}
+
+static_style "Colours/Static"
+{
+	background_material "White"
+	border_material "DarkBlue"
+	font "Arial_20"
+	text_material "DarkBlue"
+}
+
+button_style "Colours/Button"
+{
+	background_material "Yellow"
+	border_material "Black"
+	font "Arial_20"
+	text_material "Black"
+	highlighted_background_material "Yellow"
+	highlighted_foreground_material "DarkGray"
+	highlighted_text_material "DarkGray"
+	pushed_background_material "Yellow"
+	pushed_foreground_material "LightGray"
+	pushed_text_material "LightGray"
+}
+
+listbox_style "Colours/ListBox"
+{
+	background_material "DarkBlue"
+	border_material "White"
+
+	item_style
+	{
+		background_material "DarkBlue"
+		border_material "White"
+		font "Arial_20"
+		text_material "White"
+	}
+
+	selected_item_style
+	{
+		background_material "DarkGreen"
+		border_material "LightGray"
+		font "Arial_20"
+		text_material "LightGray"
+	}
+
+	highlighted_item_style
+	{
+		background_material "DarkerBlue"
+		border_material "White"
+		font "Arial_20"
+		text_material "White"
+	}
+}
+
+edit_style "Colours/SingleLineEdit"
+{
+	background_material "White"
+	border_material "DarkBlue"
+	font "Arial_20"
+	text_material "DarkBlue"
+}
+
+edit_style "Colours/MultiLineEdit"
+{
+	background_material "DarkRed"
+	border_material "Teal"
+	font "Arial_20"
+	text_material "Teal"
+}
+
+combobox_style "Colours/ComboBox"
+{
+	background_material "DarkBlue"
+	border_material "White"
+
+	expand_style
+	{
+		background_material "DarkBlue"
+		border_material "White"
+		font "Arial_20"
+		text_material "White"
+		highlighted_background_material "DarkRed"
+		highlighted_foreground_material "White"
+		highlighted_text_material "White"
+		pushed_background_material "DarkGreen"
+		pushed_foreground_material "LightGray"
+		pushed_text_material "LightGray"
+	}
+
+	elements_style
+	{
+		background_material "DarkBlue"
+		border_material "White"
+
+		item_style
+		{
+			background_material "DarkBlue"
+			border_material "White"
+			font "Arial_20"
+			text_material "White"
+		}
+
+		selected_item_style
+		{
+			background_material "DarkGreen"
+			border_material "LightGray"
+			font "Arial_20"
+			text_material "LightGray"
+		}
+
+		highlighted_item_style
+		{
+			background_material "DarkRed"
+			border_material "White"
+			font "Arial_20"
+			text_material "White"
+		}
+	}
+}
+
+panel_style "Colours/Panel"
+{
+	background_material "DarkRed"
+	border_material "DarkBlue"
+}
+
+expandable_panel_style "Colours/ExpandablePanel"
+{
+	background_material "TransparentBlack"
+
+	header_style
+	{
+		background_material "DarkRed"
+		border_material "DarkBlue"
+	}
+
+	expand_style
+	{
+		background_material "DarkRed"
+		border_material "DarkBlue"
+		font "Arial_20"
+		text_material "White"
+	}
+
+	content_style
+	{
+		background_material "DarkRed"
+		border_material "DarkBlue"
+	}
+}
+
+frame_style "ForegroundTexture/Frame"
+{
+	background_material "DarkOrange"
+	border_material "ColourMap"
+	header_font "Arial_20"
+	header_text_material "ColourMap"
+}
+
+static_style "ForegroundTexture/Static"
+{
+	background_material "White"
+	border_material "ColourMap"
+	font "Arial_20"
+	text_material "ColourMap"
+}
+
+button_style "ForegroundTexture/Button"
+{
+	background_material "Yellow"
+	border_material "ColourMap"
+	font "Arial_20"
+	text_material "ColourMap"
+	highlighted_background_material "Green"
+	highlighted_foreground_material "ColourMap"
+	highlighted_text_material "ColourMap"
+	pushed_background_material "Red"
+	pushed_foreground_material "ColourMap"
+	pushed_text_material "ColourMap"
+}
+
+listbox_style "ForegroundTexture/ListBox"
+{
+	background_material "DarkBlue"
+	border_material "ColourMap"
+
+	item_style
+	{
+		background_material "DarkBlue"
+		border_material "ColourMap"
+		font "Arial_20"
+		text_material "ColourMap"
+	}
+
+	selected_item_style
+	{
+		background_material "DarkGreen"
+		border_material "ColourMap"
+		font "Arial_20"
+		text_material "ColourMap"
+	}
+
+	highlighted_item_style
+	{
+		background_material "DarkRed"
+		border_material "ColourMap"
+		font "Arial_20"
+		text_material "ColourMap"
+	}
+}
+
+edit_style "ForegroundTexture/SingleLineEdit"
+{
+	background_material "White"
+	border_material "ColourMap"
+	font "Arial_20"
+	text_material "ColourMap"
+}
+
+edit_style "ForegroundTexture/MultiLineEdit"
+{
+	background_material "LightGray"
+	border_material "ColourMap"
+	font "Arial_20"
+	text_material "ColourMap"
+}
+
+combobox_style "ForegroundTexture/ComboBox"
+{
+	background_material "DarkBlue"
+	border_material "ColourMap"
+
+	expand_style
+	{
+		background_material "DarkBlue"
+		border_material "ColourMap"
+		font "Arial_20"
+		text_material "ColourMap"
+		highlighted_background_material "DarkRed"
+		highlighted_foreground_material "ColourMap"
+		highlighted_text_material "ColourMap"
+		pushed_background_material "DarkGreen"
+		pushed_foreground_material "ColourMap"
+		pushed_text_material "ColourMap"
+	}
+
+	elements_style
+	{
+		background_material "DarkBlue"
+		border_material "ColourMap"
+
+		item_style
+		{
+			background_material "DarkBlue"
+			border_material "ColourMap"
+			font "Arial_20"
+			text_material "ColourMap"
+		}
+
+		selected_item_style
+		{
+			background_material "DarkGreen"
+			border_material "ColourMap"
+			font "Arial_20"
+			text_material "ColourMap"
+		}
+
+		highlighted_item_style
+		{
+			background_material "DarkRed"
+			border_material "ColourMap"
+			font "Arial_20"
+			text_material "ColourMap"
+		}
+	}
+}
+
+panel_style "ForegroundTexture/Panel"
+{
+	background_material "DarkBlue"
+	border_material "ColourMap"
+}
+
+expandable_panel_style "ForegroundTexture/ExpandablePanel"
+{
+	background_material "TransparentBlack"
+
+	header_style
+	{
+		background_material "DarkBlue"
+		border_material "ColourMap"
+	}
+
+	expand_style
+	{
+		background_material "DarkBlue"
+		border_material "ColourMap"
+		font "Arial_20"
+		text_material "ColourMap"
+	}
+
+	content_style
+	{
+		background_material "DarkBlue"
+		border_material "ColourMap"
+	}
+}
+
+frame_style "BackgroundTexture/Frame"
+{
+	background_material "ColourMap"
+	border_material "DarkBlue"
+	header_font "Arial_20"
+	header_text_material "White"
+}
+
+static_style "BackgroundTexture/Static"
+{
+	background_material "ColourMap"
+	border_material "DarkBlue"
+	font "Arial_20"
+	text_material "White"
+}
+
+button_style "BackgroundTexture/Button"
+{
+	background_material "ColourMap"
+	border_material "White"
+	font "Arial_20"
+	text_material "White"
+	highlighted_background_material "ColourMap"
+	highlighted_foreground_material "DarkGray"
+	highlighted_text_material "DarkGray"
+	pushed_background_material "ColourMap"
+	pushed_foreground_material "LightGray"
+	pushed_text_material "LightGray"
+}
+
+listbox_style "BackgroundTexture/ListBox"
+{
+	background_material "ColourMap"
+	border_material "White"
+
+	item_style
+	{
+		background_material "ColourMap"
+		border_material "White"
+		font "Arial_20"
+		text_material "White"
+	}
+
+	selected_item_style
+	{
+		background_material "ColourMap"
+		border_material "LightGray"
+		font "Arial_20"
+		text_material "LightGray"
+	}
+
+	highlighted_item_style
+	{
+		background_material "ColourMap"
+		border_material "DarkGray"
+		font "Arial_20"
+		text_material "DarkGray"
+	}
+}
+
+edit_style "BackgroundTexture/SingleLineEdit"
+{
+	background_material "ColourMap"
+	border_material "White"
+	font "Arial_20"
+	text_material "White"
+}
+
+edit_style "BackgroundTexture/MultiLineEdit"
+{
+	background_material "ColourMap"
+	border_material "LightGray"
+	font "Arial_20"
+	text_material "LightGray"
+}
+
+combobox_style "BackgroundTexture/ComboBox"
+{
+	background_material "ColourMap"
+	border_material "White"
+
+	expand_style
+	{
+		background_material "ColourMap"
+		border_material "White"
+		text_material "White"
+		font "Arial_20"
+		highlighted_background_material "ColourMap"
+		highlighted_foreground_material "White"
+		highlighted_text_material "White"
+		pushed_background_material "ColourMap"
+		pushed_foreground_material "LightGray"
+		pushed_text_material "LightGray"
+	}
+
+	elements_style
+	{
+		background_material "ColourMap"
+		border_material "White"
+
+		item_style
+		{
+			background_material "ColourMap"
+			border_material "White"
+			font "Arial_20"
+			text_material "White"
+		}
+
+		selected_item_style
+		{
+			background_material "ColourMap"
+			border_material "LightGray"
+			font "Arial_20"
+			text_material "LightGray"
+		}
+
+		highlighted_item_style
+		{
+			background_material "ColourMap"
+			border_material "White"
+			font "Arial_20"
+			text_material "White"
+		}
+	}
+}
+
+panel_style "BackgroundTexture/Panel"
+{
+	background_material "ColourMap"
+	border_material "White"
+}
+
+expandable_panel_style "BackgroundTexture/ExpandablePanel"
+{
+	background_material "TransparentBlack"
+
+	header_style
+	{
+		background_material "ColourMap"
+		border_material "White"
+	}
+
+	expand_style
+	{
+		background_material "ColourMap"
+		border_material "White"
+		font "Arial_20"
+		text_material "White"
+	}
+
+	content_style
+	{
+		background_material "ColourMap"
+		border_material "White"
+	}
+}
+
+panel "Tests"
+{
+	style "Invisible"
+	pixel_position 0 0
+	pixel_size 1024 768
+
+	panel "Controls"
+	{
+		style "Frame/Panel"
+		pixel_size 768 668
+		pixel_border_size 4 4 4 4
+
+		frame "Colours"
+		{
+			style "Colours/Frame"
+			pixel_size 160 668
+			header_caption "Colours"
+
+			content
+			{
+				button "Button"
+				{
+					style "Colours/Button"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					caption "Click Me!!"
+				}
+
+				listbox "ListBox"
+				{
+					style "Colours/ListBox"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					item "Item 1"
+					item "Item 2"
+					item "Item 3"
+				}
+
+				combobox "ComboBox"
+				{
+					style "Colours/ComboBox"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					item "Item 1"
+					item "Item 2"
+					item "Item 3"
+				}
+
+				expandable_panel "ExpandablePanel"
+				{
+					style "Colours/ExpandablePanel"
+					pixel_size 128 100
+
+					header
+					{
+						pixel_border_size 1 1 1 1
+
+						static "Title"
+						{
+							style "Frame/Static"
+							pixel_position 1 1
+							pixel_size 106 23
+							caption "Header"
+							horizontal_align left
+							vertical_align center
+						}
+					}
+
+					content
+					{
+						pixel_border_size 4 4 4 4
+					}
+				}
+
+				panel "Panel"
+				{
+					style "Colours/Panel"
+					pixel_size 128 50
+					pixel_border_size 4 4 4 4
+				}
+
+				edit "SingleLineEdit"
+				{
+					style "Colours/SingleLineEdit"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+				}
+
+				edit "MultiLineEdit"
+				{
+					style "Colours/MultiLineEdit"
+					pixel_size 128 50
+					pixel_border_size 1 1 1 1
+					multiline true
+				}
+
+				static "Static"
+				{
+					style "Colours/Static"
+					pixel_size 128 50
+					pixel_border_size 1 1 1 1
+					caption "Test static"
+				}
+
+				box_layout
+				{
+					layout_ctrl "Button"
+					{
+						horizontal_align left
+						padding 5 5 5 5
+					}
+					layout_ctrl "ListBox"
+					{
+						horizontal_align left
+						padding 5 5 5 5
+					}
+					layout_ctrl "ComboBox"
+					{
+						horizontal_align left
+						padding 5 5 5 5
+					}
+					layout_ctrl "ExpandablePanel"
+					{
+						horizontal_align left
+						padding 5 5 5 5
+					}
+					layout_ctrl "Panel"
+					{
+						horizontal_align left
+						padding 5 5 5 5
+					}
+					layout_ctrl "SingleLineEdit"
+					{
+						horizontal_align left
+						padding 5 5 5 5
+					}
+					layout_ctrl "MultiLineEdit"
+					{
+						horizontal_align left
+						padding 5 5 5 5
+					}
+					layout_ctrl "Static"
+					{
+						horizontal_align left
+						padding 5 5 5 5
+					}
+					layout_dynspace
+				}
+			}
+		}
+
+		frame "BackgroundTexture"
+		{
+			style "BackgroundTexture/Frame"
+			pixel_size 160 668
+			header_caption "BackgroundTexture"
+
+			content
+			{
+				button "Button"
+				{
+					style "BackgroundTexture/Button"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					caption "Click Me!!"
+				}
+
+				listbox "ListBox"
+				{
+					style "BackgroundTexture/ListBox"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					item "Item 1"
+					item "Item 2"
+					item "Item 3"
+				}
+
+				combobox "ComboBox"
+				{
+					style "BackgroundTexture/ComboBox"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					item "Item 1"
+					item "Item 2"
+					item "Item 3"
+				}
+
+				expandable_panel "ExpandablePanel"
+				{
+					style "BackgroundTexture/ExpandablePanel"
+					pixel_size 128 100
+
+					header
+					{
+						pixel_border_size 1 1 1 1
+
+						static "Title"
+						{
+							style "Frame/Static"
+							pixel_position 1 1
+							pixel_size 106 23
+							caption "Header"
+							horizontal_align left
+							vertical_align center
+						}
+					}
+
+					content
+					{
+						pixel_border_size 4 4 4 4
+					}
+				}
+
+				panel "Panel"
+				{
+					style "BackgroundTexture/Panel"
+					pixel_size 128 50
+					pixel_border_size 4 4 4 4
+				}
+
+				edit "SingleLineEdit"
+				{
+					style "BackgroundTexture/SingleLineEdit"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+				}
+
+				edit "MultiLineEdit"
+				{
+					style "BackgroundTexture/MultiLineEdit"
+					pixel_size 128 50
+					pixel_border_size 1 1 1 1
+					multiline true
+				}
+
+				static "Static"
+				{
+					style "BackgroundTexture/Static"
+					pixel_size 128 50
+					pixel_border_size 1 1 1 1
+					caption "Test static"
+				}
+
+				box_layout
+				{
+					layout_dynspace
+					layout_ctrl "Button"
+					{
+						horizontal_align center
+						padding 5 5 5 5
+					}
+					layout_ctrl "ListBox"
+					{
+						horizontal_align center
+						padding 5 5 5 5
+					}
+					layout_ctrl "ComboBox"
+					{
+						horizontal_align center
+						padding 5 5 5 5
+					}
+					layout_ctrl "ExpandablePanel"
+					{
+						horizontal_align center
+						padding 5 5 5 5
+					}
+					layout_ctrl "Panel"
+					{
+						horizontal_align center
+						padding 5 5 5 5
+					}
+					layout_ctrl "SingleLineEdit"
+					{
+						horizontal_align center
+						padding 5 5 5 5
+					}
+					layout_ctrl "MultiLineEdit"
+					{
+						horizontal_align center
+						padding 5 5 5 5
+					}
+					layout_ctrl "Static"
+					{
+						horizontal_align center
+						padding 5 5 5 5
+					}
+					layout_dynspace
+				}
+			}
+		}
+
+		frame "ForegroundTexture"
+		{
+			style "ForegroundTexture/Frame"
+			pixel_size 160 668
+			header_caption "ForegroundTexture"
+
+			content
+			{
+				button "Button"
+				{
+					style "ForegroundTexture/Button"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					caption "Click Me!!"
+				}
+
+				listbox "ListBox"
+				{
+					style "ForegroundTexture/ListBox"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					item "Item 1"
+					item "Item 2"
+					item "Item 3"
+				}
+
+				combobox "ComboBox"
+				{
+					style "ForegroundTexture/ComboBox"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					item "Item 1"
+					item "Item 2"
+					item "Item 3"
+				}
+
+				expandable_panel "ExpandablePanel"
+				{
+					style "ForegroundTexture/ExpandablePanel"
+					pixel_size 128 100
+
+					header
+					{
+						pixel_border_size 1 1 1 1
+
+						static "Title"
+						{
+							style "Frame/Static"
+							pixel_position 1 1
+							pixel_size 106 23
+							caption "Header"
+							horizontal_align left
+							vertical_align center
+						}
+					}
+
+					content
+					{
+						pixel_border_size 4 4 4 4
+					}
+				}
+
+				panel "Panel"
+				{
+					style "ForegroundTexture/Panel"
+					pixel_size 128 50
+					pixel_border_size 4 4 4 4
+				}
+
+				edit "SingleLineEdit"
+				{
+					style "ForegroundTexture/SingleLineEdit"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+				}
+
+				edit "MultiLineEdit"
+				{
+					style "ForegroundTexture/MultiLineEdit"
+					pixel_size 128 50
+					pixel_border_size 1 1 1 1
+					multiline true
+				}
+
+				static "Static"
+				{
+					style "ForegroundTexture/Static"
+					pixel_size 128 50
+					pixel_border_size 1 1 1 1
+					caption "Test static"
+				}
+
+				box_layout
+				{
+					layout_dynspace
+					layout_ctrl "Button"
+					{
+						horizontal_align right
+						padding 5 5 5 5
+					}
+					layout_ctrl "ListBox"
+					{
+						horizontal_align right
+						padding 5 5 5 5
+					}
+					layout_ctrl "ComboBox"
+					{
+						horizontal_align right
+						padding 5 5 5 5
+					}
+					layout_ctrl "ExpandablePanel"
+					{
+						horizontal_align right
+						padding 5 5 5 5
+					}
+					layout_ctrl "Panel"
+					{
+						horizontal_align right
+						padding 5 5 5 5
+					}
+					layout_ctrl "SingleLineEdit"
+					{
+						horizontal_align right
+						padding 5 5 5 5
+					}
+					layout_ctrl "MultiLineEdit"
+					{
+						horizontal_align right
+						padding 5 5 5 5
+					}
+					layout_ctrl "Static"
+					{
+						horizontal_align right
+						padding 5 5 5 5
+					}
+				}
+			}
+		}
+
+		frame "Mix"
+		{
+			style "BackgroundTexture/Frame"
+			pixel_size 160 668
+			header_caption "Mix"
+
+			content
+			{
+				button "Button"
+				{
+					style "Colours/Button"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					caption "Click Me!!"
+				}
+
+				listbox "ListBox"
+				{
+					style "BackgroundTexture/ListBox"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					item "Item 1"
+					item "Item 2"
+					item "Item 3"
+				}
+
+				combobox "ComboBox"
+				{
+					style "ForegroundTexture/ComboBox"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+					item "Item 1"
+					item "Item 2"
+					item "Item 3"
+				}
+
+				expandable_panel "ExpandablePanel"
+				{
+					style "Colours/ExpandablePanel"
+					pixel_size 128 100
+
+					header
+					{
+						pixel_border_size 1 1 1 1
+
+						static "Title"
+						{
+							style "Frame/Static"
+							pixel_position 1 1
+							pixel_size 106 23
+							caption "Header"
+							horizontal_align left
+							vertical_align center
+						}
+					}
+
+					content
+					{
+						pixel_border_size 4 4 4 4
+					}
+				}
+
+				panel "Panel"
+				{
+					style "BackgroundTexture/Panel"
+					pixel_size 128 50
+					pixel_border_size 4 4 4 4
+				}
+
+				edit "SingleLineEdit"
+				{
+					style "ForegroundTexture/SingleLineEdit"
+					pixel_size 128 25
+					pixel_border_size 1 1 1 1
+				}
+
+				edit "MultiLineEdit"
+				{
+					style "Colours/MultiLineEdit"
+					pixel_size 128 50
+					pixel_border_size 1 1 1 1
+					multiline true
+				}
+
+				static "Static"
+				{
+					style "BackgroundTexture/Static"
+					pixel_size 128 50
+					pixel_border_size 1 1 1 1
+					caption "Test static"
+				}
+
+				box_layout
+				{
+					layout_dynspace
+					layout_ctrl "Button"
+					{
+						stretch true
+					}
+					layout_dynspace
+					layout_ctrl "ListBox"
+					{
+						stretch true
+					}
+					layout_dynspace
+					layout_ctrl "ComboBox"
+					{
+						stretch true
+					}
+					layout_dynspace
+					layout_ctrl "ExpandablePanel"
+					{
+						stretch true
+					}
+					layout_dynspace
+					layout_ctrl "Panel"
+					{
+						stretch true
+					}
+					layout_dynspace
+					layout_ctrl "SingleLineEdit"
+					{
+						stretch true
+					}
+					layout_dynspace
+					layout_ctrl "MultiLineEdit"
+					{
+						stretch true
+					}
+					layout_dynspace
+					layout_ctrl "Static"
+					{
+						stretch true
+					}
+					layout_dynspace
+				}
+			}
+		}
+
+		box_layout
+		{
+			horizontal true
+
+			layout_dynspace
+
+			layout_ctrl "Colours"
+			{
+				stretch true
+				padding 5 5 5 5
+			}
+			layout_dynspace
+			layout_ctrl "BackgroundTexture"
+			{
+				stretch true
+				padding 5 5 5 5
+			}
+			layout_dynspace
+			layout_ctrl "ForegroundTexture"
+			{
+				stretch true
+				padding 5 5 5 5
+			}
+			layout_dynspace
+			layout_ctrl "Mix"
+			{
+				stretch true
+				padding 5 5 5 5
+			}
+			layout_dynspace
+		}
+	}
+
+	button "Button"
+	{
+		style "SingleButton"
+		pixel_size 300 50
+		center_uv 0.025 0.875 0.975 0.125
+		border_inner_uv 0.025 0.125 0.975 0.875
+		pixel_border_size 6 6 6 6
+		caption "Click Me!!"
+	}
+
+	box_layout
+	{
+		layout_dynspace
+		layout_ctrl "Controls"
+		{
+			horizontal_align center
+		}
+		layout_dynspace
+		layout_ctrl "Button"
+		{
+			horizontal_align center
+		}
+		layout_dynspace
+	}
+}
+
+scene "Scene"
+{
+	background_image "Textures/backgroundImage.hdr"
+	ambient_light 0.0 0.0 0.0
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.0 -100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 0.1
+			far 100
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 1024 768
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

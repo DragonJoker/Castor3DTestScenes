@@ -151,7 +151,7 @@ scene "TextureScene"
 			position 0.0 0.0
 			material "ColourMap"
 			font "Arial100"
-			text "Coucou !! La vie est belle? Ici ça va"
+			text "Coucou !! La vie est belle? Ici Ã§a va"
 			text_wrapping break
 			texturing_mode letter
 		}

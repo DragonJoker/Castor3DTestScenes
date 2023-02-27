@@ -28,8 +28,8 @@ light "light_01"
 		}
 		pcf_config
 		{
-			min_offset 0.0
-			max_slope_offset 0.001
+			min_offset 0.0001
+			max_slope_offset 0.0001
 		}
 		vsm_config
 		{

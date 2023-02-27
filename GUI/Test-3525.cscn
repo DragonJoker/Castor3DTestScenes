@@ -1,0 +1,224 @@
+materials pbr
+include "Materials/Gui.cscn"
+
+theme "Colours"
+{
+	default_font "Dbbrnms_25"
+
+	frame_style "Frame"
+	{
+		background_material "DarkRed"
+		border_material "DarkBlue"
+		header_text_material "White"
+	}
+}
+
+theme "ColoursInner"
+{
+	default_font "Dbbrnms_25"
+
+	frame_style "Frame"
+	{
+		background_material "DarkGreen"
+		border_material "DarkBlue"
+		header_text_material "White"
+	}
+}
+
+frame "TestColours"
+{
+	theme "Colours"
+	pixel_position 48 0
+	pixel_size 160 768
+	pixel_border_size 16 16 16 16
+	header_caption "Outer"
+	header_horizontal_align left
+	header_vertical_align center
+	min_size 160 160
+
+	content
+	{
+		frame "Inner"
+		{
+			theme "ColoursInner"
+			pixel_position 0 300
+			pixel_size 128 100
+			pixel_border_size 4 4 4 4
+			header_caption "Inner"
+			header_horizontal_align left
+			header_vertical_align center
+		}
+	}
+}
+
+theme "BackgroundTexture"
+{
+	default_font "Dbbrnms_25"
+
+	frame_style "Frame"
+	{
+		background_material "FrameCenter"
+		border_material "DarkRed"
+		header_text_material "DarkRed"
+	}
+}
+
+theme "BackgroundTextureInner"
+{
+	default_font "Dbbrnms_25"
+
+	frame_style "Frame"
+	{
+		background_material "FrameCenter"
+		border_material "DarkBlue"
+		header_text_material "DarkBlue"
+	}
+}
+
+frame "TestBackgroundTexture"
+{
+	theme "BackgroundTexture"
+	pixel_position 304 0
+	pixel_size 160 768
+	pixel_border_size 16 16 16 16
+	header_caption "Outer"
+	header_horizontal_align left
+	header_vertical_align center
+
+	content
+	{
+		frame "Inner"
+		{
+			theme "BackgroundTextureInner"
+			pixel_position 0 300
+			pixel_size 128 100
+			pixel_border_size 4 4 4 4
+			header_caption "Inner"
+			header_horizontal_align left
+			header_vertical_align center
+		}
+	}
+}
+
+theme "ForegroundTexture"
+{
+	default_font "Dbbrnms_25"
+
+	frame_style "Frame"
+	{
+		background_material "DarkRed"
+		border_material "Frame"
+		header_text_material "Frame"
+	}
+}
+
+theme "ForegroundTextureInner"
+{
+	default_font "Dbbrnms_25"
+
+	frame_style "Frame"
+	{
+		background_material "DarkGreen"
+		border_material "Frame"
+		header_text_material "Frame"
+	}
+}
+
+frame "TestForegroundTexture"
+{
+	theme "ForegroundTexture"
+	pixel_position 560 0
+	pixel_size 160 768
+	pixel_border_size 16 16 16 16
+	header_caption "Outer"
+	header_horizontal_align left
+	header_vertical_align center
+
+	content
+	{
+		frame "Inner"
+		{
+			theme "ForegroundTextureInner"
+			pixel_position 0 300
+			pixel_size 128 100
+			pixel_border_size 4 4 4 4
+			header_caption "Inner"
+			header_horizontal_align left
+			header_vertical_align center
+		}
+	}
+}
+
+theme "BothTextures"
+{
+	default_font "Dbbrnms_25"
+
+	frame_style "Frame"
+	{
+		background_material "FrameCenter"
+		border_material "Frame"
+		header_text_material "Black"
+	}
+}
+
+frame "BothTextures"
+{
+	theme "BothTextures"
+	pixel_position 816 0
+	pixel_size 160 768
+	pixel_border_size 16 16 16 16
+	header_caption "Outer"
+	header_horizontal_align left
+	header_vertical_align center
+
+	content
+	{
+		frame "Inner"
+		{
+			theme "BothTextures"
+			pixel_position 0 300
+			pixel_size 128 100
+			pixel_border_size 4 4 4 4
+			header_caption "Inner"
+			header_horizontal_align left
+			header_vertical_align center
+		}
+	}
+}
+
+scene "Scene"
+{
+	background_image "Textures/backgroundImage.hdr"
+	ambient_light 0.0 0.0 0.0
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.0 -100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 1
+			far 100
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 1024 768
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

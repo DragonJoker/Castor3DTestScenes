@@ -13,7 +13,7 @@ gui
 	{
 		default_font "Arial_20"
 
-		static_style
+		frame_style
 		{
 			background_material "DarkRed"
 			border_material "DarkBlue"
@@ -22,33 +22,53 @@ gui
 		edit_style
 		{
 			background_material "DarkBlue"
-			border_material "DarkGreen"
+			border_material "White"
 			text_material "White"
+			selection_material "AlphaLightRed"
 		}
 	}
 
-	static "TestColours"
+	frame "TestColours"
 	{
 		theme "Colours"
 		pixel_position 48 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
+		header_caption "Colours"
 
-		edit "TestSingleLineEdit"
+		content
 		{
-			theme "Colours"
-			pixel_position 16 205
-			pixel_size 128 25
-			pixel_border_size 0 0 0 0
-		}
+			edit "SingleLineEdit"
+			{
+				theme "Colours"
+				pixel_position 16 205
+				pixel_size 128 25
+				pixel_border_size 0 0 0 0
+			}
+			edit "MultiLineEdit"
+			{
+				theme "Colours"
+				pixel_position 16 240
+				pixel_size 128 200
+				pixel_border_size 0 0 0 0
+				multiline true
+			}
 
-		edit "TestMultiLineEdit"
-		{
-			theme "Colours"
-			pixel_position 16 240
-			pixel_size 128 200
-			pixel_border_size 0 0 0 0
-			multiline true
+			box_layout
+			{
+				layout_dynspace
+				layout_ctrl "SingleLineEdit"
+				{
+					stretch true
+					padding 0 5 0 5
+				}
+				layout_ctrl "MultiLineEdit"
+				{
+					stretch true
+					padding 0 5 0 5
+				}
+				layout_dynspace
+			}
 		}
 	}
 
@@ -56,7 +76,7 @@ gui
 	{
 		default_font "Arial_20"
 
-		static_style
+		frame_style
 		{
 			background_material "FrameCenter"
 			border_material "DarkRed"
@@ -70,28 +90,49 @@ gui
 		}
 	}
 
-	static "TestBackgroundTexture"
+	frame "TestBackgroundTexture"
 	{
 		theme "BackgroundTexture"
 		pixel_position 304 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
+		header_caption "Background"
 
-		edit "BT TestSingleLineEdit"
+		content
 		{
-			theme "BackgroundTexture"
-			pixel_position 16 205
-			pixel_size 128 25
-			pixel_border_size 0 0 0 0
-		}
+			edit "SingleLineEdit"
+			{
+				theme "BackgroundTexture"
+				pixel_position 16 205
+				pixel_size 128 25
+				pixel_border_size 0 0 0 0
+			}
 
-		edit "BT TestMultiLineEdit"
-		{
-			theme "BackgroundTexture"
-			pixel_position 16 240
-			pixel_size 128 200
-			pixel_border_size 0 0 0 0
-			multiline true
+			edit "MultiLineEdit"
+			{
+				theme "BackgroundTexture"
+				pixel_position 16 240
+				pixel_size 128 200
+				pixel_border_size 0 0 0 0
+				multiline true
+			}
+
+			box_layout
+			{
+				layout_dynspace
+				layout_ctrl "SingleLineEdit"
+				{
+					stretch true
+					padding 0 5 0 5
+				}
+
+				layout_ctrl "MultiLineEdit"
+				{
+					stretch true
+					padding 0 5 0 5
+				}
+				layout_dynspace
+			}
 		}
 	}
 
@@ -99,7 +140,7 @@ gui
 	{
 		default_font "Arial_20"
 
-		static_style
+		frame_style
 		{
 			background_material "DarkRed"
 			border_material "Frame"
@@ -107,34 +148,51 @@ gui
 
 		edit_style
 		{
-			background_material "DarkGreen"
-			border_material "FrameMO"
-			text_material "White"
+			background_material "DarkBlue"
+			border_material "Frame"
+			text_material "FrameCenter"
 		}
 	}
 
-	static "TestForegroundTexture"
+	frame "TestForegroundTexture"
 	{
 		theme "ForegroundTexture"
 		pixel_position 560 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
+		header_caption "Foreground"
 
-		edit "FT TestSingleLineEdit"
+		content
 		{
-			theme "ForegroundTexture"
-			pixel_position 16 205
-			pixel_size 128 25
-			pixel_border_size 0 0 0 0
-		}
+			edit "SingleLineEdit"
+			{
+				theme "ForegroundTexture"
+				pixel_size 128 25
+				pixel_border_size 0 0 0 0
+			}
+			edit "MultiLineEdit"
+			{
+				theme "ForegroundTexture"
+				pixel_size 128 200
+				pixel_border_size 0 0 0 0
+				multiline true
+			}
 
-		edit "FT TestMultiLineEdit"
-		{
-			theme "ForegroundTexture"
-			pixel_position 16 240
-			pixel_size 128 200
-			pixel_border_size 0 0 0 0
-			multiline true
+			box_layout
+			{
+				layout_dynspace
+				layout_ctrl "SingleLineEdit"
+				{
+					stretch true
+					padding 0 5 0 5
+				}
+				layout_ctrl "MultiLineEdit"
+				{
+					stretch true
+					padding 0 5 0 5
+				}
+				layout_dynspace
+			}
 		}
 	}
 
@@ -142,7 +200,7 @@ gui
 	{
 		default_font "Arial_20"
 
-		static_style
+		frame_style
 		{
 			background_material "FrameCenter"
 			border_material "Frame"
@@ -151,33 +209,51 @@ gui
 		edit_style
 		{
 			background_material "FrameCenterMO"
-			border_material "FrameMO"
-			text_material "White"
+			border_material "Frame"
+			text_material "FrameCenter"
 		}
 	}
 
-	static "TestBothTextures"
+	frame "TestBothTextures"
 	{
 		theme "BothTextures"
 		pixel_position 816 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
+		header_caption "Both"
 
-		edit "BFT TestSingleLineEdit"
+		content
 		{
-			theme "BothTextures"
-			pixel_position 16 205
-			pixel_size 128 25
-			pixel_border_size 0 0 0 0
-		}
+			edit "SingleLineEdit"
+			{
+				theme "BothTextures"
+				pixel_size 128 25
+				pixel_border_size 0 0 0 0
+			}
 
-		edit "BFT TestMultiLineEdit"
-		{
-			theme "BothTextures"
-			pixel_position 16 240
-			pixel_size 128 200
-			pixel_border_size 0 0 0 0
-			multiline true
+			edit "MultiLineEdit"
+			{
+				theme "BothTextures"
+				pixel_size 128 200
+				pixel_border_size 0 0 0 0
+				multiline true
+			}
+
+			box_layout
+			{
+				layout_dynspace
+				layout_ctrl "SingleLineEdit"
+				{
+					stretch true
+					padding 0 5 0 5
+				}
+				layout_ctrl "MultiLineEdit"
+				{
+					stretch true
+					padding 0 5 0 5
+				}
+				layout_dynspace
+			}
 		}
 	}
 }

@@ -17,6 +17,19 @@ scene "Scene"
 	ambient_light 0.2 0.2 0.2
 	background_image "Textures/backgroundImage.jpg"
  
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod 0.0
+		max_lod 1.0
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
 	material "BlackBlend"
 	{
 		pass
@@ -26,18 +39,34 @@ scene "Scene"
 		}
 	}
 
-	material "ColourMap"
+	material "ColourMapWhite"
 	{
 		pass
 		{
-			diffuse 1.0 0.0 1.0 0.5
+			diffuse 1.0 1.0 1.0
 			alpha 0.8
 	
 			texture_unit
 			{
 				image "Textures/diffuse.jpg"
 				diffuse_mask 0x00FFFFFF
-				sampler	"Default"
+				sampler	"Linear"
+			}
+		}
+	}
+
+	material "ColourMapPink"
+	{
+		pass
+		{
+			diffuse 1.0 0.0 1.0
+			alpha 0.8
+	
+			texture_unit
+			{
+				image "Textures/diffuse.jpg"
+				diffuse_mask 0x00FFFFFF
+				sampler	"Linear"
 			}
 		}
 	}
@@ -53,7 +82,7 @@ scene "Scene"
 				image "Textures/alphaBlend.png"
 				diffuse_mask 0x00FFFFFF
 				opacity_mask 0xFF000000
-				sampler	"Default"
+				sampler	"Linear"
 			}
 		}
 	}
@@ -71,7 +100,7 @@ scene "Scene"
 	{
 		size 0.5 0.5
 		position 0.25 0.25
-		material "ColourMap"
+		material "ColourMapPink"
 
 		border_panel_overlay "ChildPanel"
 		{
@@ -106,7 +135,7 @@ scene "Scene"
 		{
 			size 1.0 1.0
 			position 0.0 0.0
-			material "ColourMap"
+			material "ColourMapWhite"
 			font "Arial100"
 			text "Coucou !! La vie est belle? Ici ça va"
 			text_wrapping break

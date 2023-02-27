@@ -20,6 +20,7 @@ material "MatBody"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		alpha_func greater 0.5
 		two_sided true
 		reflections true
@@ -48,6 +49,7 @@ material "MatHead"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		two_sided true
 		reflections true
 
@@ -67,6 +69,7 @@ material "cornea"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		alpha_func greater 0.5
 		two_sided true
 		reflections true
@@ -79,6 +82,7 @@ material "dx11Shader6"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
+		metalness 1.0
 		alpha_func greater 0.5
 		two_sided true
 		reflections true

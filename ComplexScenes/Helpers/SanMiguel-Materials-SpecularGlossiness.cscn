@@ -174,11 +174,10 @@ material "material_041"
 	{
 		albedo 1.00000 1.00000 1.00000
 		specular 1.00000 1.00000 1.00000
-		glossiness 1.00000
+		glossiness 0.90000
 		two_sided true
-		alpha 0.500000
-		bw_accumulation 1
-		alpha_blend_mode interpolative
+		transmission 0.8
+		refraction_ratio 0.92000
 	}
 }
 
@@ -5386,9 +5385,9 @@ material "materialo"
 	{
 		albedo 0.000000 0.000000 0.010000
 		specular 0.250000 0.250000 0.250000
-		glossiness 4.00000
-		alpha 0.500000
-		bw_accumulation 1
+		glossiness 0.90000
+		transmission 0.8
+		refraction_ratio 0.92000
 		two_sided true
 	}
 }

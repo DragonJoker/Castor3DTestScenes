@@ -122,6 +122,15 @@ window "RenderPanel"
 		camera "MainCamera"
 		postfx "draw_edges"
 
+		smaa
+		{
+			mode 1X
+			preset ultra
+			edgeDetection colour
+			enablePredication true
+			enableReprojection false
+		}
+
 		ssao
 		{
 			enabled true

@@ -22,6 +22,7 @@ material "Pufi"
 	pass
 	{
 		albedo 1.00000 1.00000 1.00000
+		specular 0.20000 0.20000 0.20000
 		roughness 1.00000
 		metalness 0.00000
 		two_sided false

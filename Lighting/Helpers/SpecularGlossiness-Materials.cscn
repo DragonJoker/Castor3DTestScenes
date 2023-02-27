@@ -5,7 +5,7 @@ material "Grayish"
 	{
 		albedo 0.75164 0.75164 0.75164
 		glossiness 0.7
-		specular 0.1 0.1 0.1
+		specular 1.0 1.0 1.0
 		two_sided true
 	}
 }
@@ -16,7 +16,7 @@ material "Yellowish"
 	{
 		albedo 1.0 1.0 0.0
 		glossiness 0.7
-		specular 0.1 0.1 0.1
+		specular 1.0 1.0 1.0
 		two_sided true
 	}
 }
@@ -27,7 +27,7 @@ material "Redish"
 	{
 		albedo 1.0 0.0 0.0
 		glossiness 0.7
-		specular 0.1 0.1 0.1
+		specular 1.0 1.0 1.0
 		two_sided true
 	}
 }

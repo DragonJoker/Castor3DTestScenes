@@ -38,7 +38,7 @@ scene "BaltardOut"
 		{
 			type perspective
 			near 1.0
-			far 1100.0
+			far 11000.0
 			aspect_ratio 1.778
 			fov_y 45
 		}

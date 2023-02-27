@@ -7,17 +7,17 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "DarkRed"
 			border_material "DarkBlue"
 		}
 
-		button_style
+		button_style "Button"
 		{
 			background_material "DarkBlue"
 			border_material "DarkGreen"
-			text_material "DarkRed"
+			text_material "White"
 			highlighted_background_material "Blue"
 			highlighted_foreground_material "Green"
 			highlighted_text_material "Red"
@@ -27,9 +27,11 @@ gui
 		}
 	}
 
-	static "TestColours"
+	panel "TestColours"
 	{
 		theme "Colours"
+		movable true
+		resizable true
 		pixel_position 48 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
@@ -94,13 +96,13 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "FrameCenter"
 			border_material "DarkBlue"
 		}
 
-		button_style
+		button_style "Button"
 		{
 			background_material "FrameCenter"
 			border_material "DarkGreen"
@@ -114,9 +116,11 @@ gui
 		}
 	}
 
-	static "TestBackgroundTexture"
+	panel "TestBackgroundTexture"
 	{
 		theme "BackgroundTexture"
+		movable true
+		resizable true
 		pixel_position 304 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
@@ -181,17 +185,17 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "DarkRed"
 			border_material "Frame"
 		}
 
-		button_style
+		button_style "Button"
 		{
 			background_material "DarkBlue"
 			border_material "Frame"
-			text_material "DarkRed"
+			text_material "White"
 			highlighted_background_material "Blue"
 			highlighted_foreground_material "FrameMO"
 			highlighted_text_material "Red"
@@ -201,9 +205,11 @@ gui
 		}
 	}
 
-	static "TestForegroundTexture"
+	panel "TestForegroundTexture"
 	{
 		theme "ForegroundTexture"
+		movable true
+		resizable true
 		pixel_position 560 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
@@ -268,13 +274,13 @@ gui
 	{
 		default_font "Dbbrnms_25"
 
-		static_style
+		panel_style "Panel"
 		{
 			background_material "FrameCenter"
 			border_material "Frame"
 		}
 
-		button_style
+		button_style "Button"
 		{
 			background_material "FrameCenter"
 			border_material "Frame"
@@ -288,9 +294,11 @@ gui
 		}
 	}
 
-	static "TestBothTextures"
+	panel "TestBothTextures"
 	{
 		theme "BothTextures"
+		movable true
+		resizable true
 		pixel_position 816 0
 		pixel_size 160 768
 		pixel_border_size 16 16 16 16
@@ -298,6 +306,8 @@ gui
 		button "Both/Menu/Jouer"
 		{
 			theme "BothTextures"
+			movable true
+			resizable true
 			pixel_position 16 192
 			pixel_size 128 64
 			pixel_border_size 4 4 4 4
