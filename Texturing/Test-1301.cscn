@@ -30,6 +30,7 @@ scene "Scene"
 			metalness 0.0
 			roughness 0.4
 			refraction_ratio 0.92
+			has_refraction true
 			two_sided true
 		}
 	}

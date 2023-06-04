@@ -24,6 +24,7 @@ material "MatBody"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 
 		texture_unit
 		{
@@ -52,6 +53,7 @@ material "MatHead"
 		shininess 256.0
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 
 		texture_unit
 		{
@@ -72,6 +74,7 @@ material "cornea"
 		shininess 256.0
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 	}
 }
 
@@ -85,6 +88,7 @@ material "dx11Shader6"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 
 		texture_unit
 		{

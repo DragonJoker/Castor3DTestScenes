@@ -2953,7 +2953,6 @@ scene "Parc"
 
 	object "entree_boite_parc"
 	{
-		parent "ObjectRootNode"
 		mesh "entree_boite_parc"
 		materials
 		{
@@ -3036,7 +3035,6 @@ scene "Parc"
 
 	object "grille_parc"
 	{
-		parent "ObjectRootNode"
 		mesh "grille_parc"
 		materials
 		{
@@ -3077,7 +3075,6 @@ scene "Parc"
 
 	object "immeubles_parc"
 	{
-		parent "ObjectRootNode"
 		mesh "immeubles_parc"
 		materials
 		{
@@ -3120,7 +3117,6 @@ scene "Parc"
 
 	object "magasins_parc"
 	{
-		parent "ObjectRootNode"
 		mesh "magasins_parc"
 		materials
 		{
@@ -3624,7 +3620,6 @@ scene "Parc"
 
 	object "sol_parc"
 	{
-		parent "ObjectRootNode"
 		mesh "sol_parc"
 		materials
 		{

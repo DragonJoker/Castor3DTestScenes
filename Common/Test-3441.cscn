@@ -247,7 +247,7 @@ window "Window"
 
 	render_target
 	{
-		format argb32
+		format rgba32
 		size 1920 1080
 		scene "Scene"
 		camera "MainCamera"

@@ -31,7 +31,7 @@ scene "Scene"
 			roughness 0.6171875
 			metalness 0.0
 			refraction_ratio 0.92
-			refractions true
+			has_refraction true
 			reflections true
 		}
 	}
@@ -44,7 +44,7 @@ scene "Scene"
 			roughness 0.0
 			metalness 0.0
 			refraction_ratio 0.92
-			refractions true
+			has_refraction true
 			reflections true
 		}
 	}
@@ -57,7 +57,7 @@ scene "Scene"
 			roughness 0.375
 			metalness 0.0
 			refraction_ratio 0.92
-			refractions true
+			has_refraction true
 			reflections true
 		}
 	}

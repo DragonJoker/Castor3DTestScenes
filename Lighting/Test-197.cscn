@@ -6,13 +6,13 @@ scene "Scene"
 	background_colour 0.5 0.5 0.5 1.0
 	include "Helpers/BlinnPhong-Materials.cscn"
 
-	scene_node "SunLightNode1"
+	scene_node "SunLightNode"
 	{
 		orientation 1 0 0 45
 	}
-	light "SunLight1"
+	light "SunLight"
 	{
-		parent "SunLightNode1"
+		parent "SunLightNode"
 		type directional
 		colour 1.0 1.0 1.0
 		intensity 0.8 1.0

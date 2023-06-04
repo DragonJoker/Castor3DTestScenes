@@ -32,6 +32,8 @@ scene "Scene"
 			two_sided true
 			mixed_interpolation true
 			refraction_ratio 0.92
+			has_refraction true
+			reflections true
 
 			texture_unit
 			{
@@ -39,9 +41,6 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/opacity.png"
 			}
-			reflections true
-			transmission 1.0 1.0 1.0
-			refractions true
 		}
 	}
 

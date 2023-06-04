@@ -33,6 +33,7 @@ scene "Scene"
 			alpha_blend_mode interpolative
 			alpha_func greater 0.95
 			refraction_ratio 0.92
+			has_refraction true
 
 			texture_unit
 			{
@@ -40,8 +41,6 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Cube/opacity.png"
 			}
-			transmission 1.0 1.0 1.0
-			refractions true
 		}
 	}
 

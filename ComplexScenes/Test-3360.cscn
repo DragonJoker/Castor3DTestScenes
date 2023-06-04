@@ -4,7 +4,7 @@ materials pbr
 scene "SanMiguel"
 {
 	// Scene configuration
-	ambient_light 1.00000 1.00000 1.00000
+	ambient_light 0.00000 0.00000 0.00000
 	background_colour 0.00000 0.00000 0.00000
 	lpv_indirect_attenuation 1.70000
 	include "Helpers/SanMiguel-Materials-SpecularGlossiness.cscn"

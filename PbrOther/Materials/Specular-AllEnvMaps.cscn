@@ -113,6 +113,7 @@ material "RefrMatBody"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 
 		texture_unit
 		{
@@ -140,6 +141,7 @@ material "RefrMatHead"
 		glossiness 1.0
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 
 		texture_unit
 		{
@@ -159,6 +161,7 @@ material "RefrCornea"
 		glossiness 1.0
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 	}
 }
 
@@ -171,6 +174,7 @@ material "RefrDx11Shader6"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 
 		texture_unit
 		{
@@ -200,6 +204,7 @@ material "ReflRefrMatBody"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 		reflections true
 
 		texture_unit
@@ -229,6 +234,7 @@ material "ReflRefrMatHead"
 		metalness 1.0
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 		reflections true
 
 		texture_unit
@@ -250,6 +256,7 @@ material "ReflRefrCornea"
 		metalness 1.0
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 		reflections true
 	}
 }
@@ -264,6 +271,7 @@ material "ReflRefrDx11Shader6"
 		alpha_func greater 0.5
 		two_sided true
 		refraction_ratio 0.92
+		has_refraction true
 		reflections true
 
 		texture_unit

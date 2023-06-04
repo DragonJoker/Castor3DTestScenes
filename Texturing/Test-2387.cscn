@@ -31,6 +31,7 @@ scene "Scene"
 			glossiness 0.6
 			parallax_occlusion one
 			refraction_ratio 0.92
+			has_refraction true
 
 			texture_unit
 			{
@@ -38,8 +39,6 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/height.jpg"
 			}
-			transmission 1.0 1.0 1.0
-			refractions true
 		}
 	}
 

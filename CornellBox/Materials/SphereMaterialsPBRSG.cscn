@@ -21,6 +21,7 @@ material "rightSphere"
 		two_sided true
 		reflections true
 		refraction_ratio 1.33
+		has_refraction true
 		transmission 1.0
 		thickness_factor 1.0
 		attenuation_colour 1.0 1.0 1.0

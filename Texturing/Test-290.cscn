@@ -32,6 +32,7 @@ scene "Scene"
 			two_sided true
 			mixed_interpolation true
 			refraction_ratio 0.92
+			has_refraction true
 
 			texture_unit
 			{
@@ -39,8 +40,6 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Bricks/Opacity.png"
 			}
-			transmission 0.75164 0.75164 0.75164
-			refractions true
 		}
 	}
 

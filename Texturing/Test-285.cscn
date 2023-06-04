@@ -31,6 +31,7 @@ scene "Scene"
 			shininess 192.0
 			emissive 1.0
 			refraction_ratio 0.92
+			has_refraction true
 
 			texture_unit
 			{
@@ -38,8 +39,6 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Bricks/Emissive.jpg"
 			}
-			transmission 0.75164 0.75164 0.75164
-			refractions true
 		}
 	}
 
