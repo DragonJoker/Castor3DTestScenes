@@ -17,8 +17,8 @@ scene "Scene"
 		type spot
 		parent "SpotLightNode"
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
-		attenuation 1.0 0.00001 0.00001
+		intensity 8000.0 10000.0
+		attenuation 1.0 0.01 0.0
 		inner_cut_off 10
 		outer_cut_off 20
 	}

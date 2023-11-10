@@ -119,15 +119,9 @@ scene "FinalScene"
 
 			texture_unit
 			{
-				image "Textures/alphaBlend.png" rgb
-				channel diffuse
-				sampler	"Default"
-			}
-
-			texture_unit
-			{
-				image "Textures/alphaBlend.png" a
-				channel opacity
+				image "Textures/alphaBlend.png"
+				albedo_mask 0x00FFFFFF
+				opacity_mask 0xFF000000
 				sampler	"Default"
 			}
 		}

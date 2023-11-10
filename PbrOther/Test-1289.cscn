@@ -155,7 +155,7 @@ scene "Scene"
 		parent "LightNodeA"
 		type spot
 		colour 1 1 1
-		intensity 0.8 1.0
+		intensity 8.0 10.0
 		attenuation 1 0.1 0
 		exponent 1.000000
 		cut_off 20.000000

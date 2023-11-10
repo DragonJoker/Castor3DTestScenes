@@ -21,8 +21,8 @@ scene "Scene"
 		type point
 		parent "PointLightNode1"
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
-		attenuation 1.0 0.0 0.0
+		intensity 10000.0 12500.0
+		range 10000.0
 		shadows
 		{
 			producer true
@@ -40,8 +40,8 @@ scene "Scene"
 		type point
 		parent "PointLightNode2"
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
-		attenuation 1.0 0.0 0.0
+		intensity 10000.0 12500.0
+		range 10000.0
 		shadows
 		{
 			producer true

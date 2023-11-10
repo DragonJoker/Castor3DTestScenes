@@ -55,8 +55,8 @@ scene "Scene"
 		type spot
 		parent "SpotLightNode1"
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
-		attenuation 1.0 0.0 0.0
+		intensity 8000.0 10000.0
+		attenuation 1.0 0.01 0.0
 		inner_cut_off 10
 		outer_cut_off 20
 		shadows
@@ -65,7 +65,7 @@ scene "Scene"
 			filter variance
 			vsm_config
 			{
-				min_variance 0.0000001
+				min_variance 0.00000001
 				light_bleeding_reduction 0.000001
 			}
 		}
@@ -76,8 +76,8 @@ scene "Scene"
 		type spot
 		parent "SpotLightNode2"
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
-		attenuation 1.0 0.0 0.0
+		intensity 8000.0 10000.0
+		attenuation 1.0 0.01 0.0
 		inner_cut_off 10
 		outer_cut_off 20
 		shadows
@@ -86,7 +86,7 @@ scene "Scene"
 			filter variance
 			vsm_config
 			{
-				min_variance 0.0000001
+				min_variance 0.00000001
 				light_bleeding_reduction 0.000001
 			}
 		}

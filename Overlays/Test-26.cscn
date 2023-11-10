@@ -12,14 +12,8 @@ scene "Scene"
 			texture_unit
 			{
 				image "Textures/alphaBlend.png"
-				channel diffuse
-				sampler	"Default"
-			}
-	
-			texture_unit
-			{
-				image "Textures/alphaBlend.png"
-				channel opacity
+				albedo_mask 0x00FFFFFF
+				opacity_mask 0xFF000000
 				sampler	"Default"
 			}
 		}

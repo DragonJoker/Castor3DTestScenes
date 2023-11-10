@@ -50,8 +50,8 @@ scene "Scene"
 		type point
 		parent "LightNode"
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
-		attenuation 1.0 0.0 0.0
+		intensity 40000.0 50000.0
+		range 10000.0
 		cut_off 20
 		shadows
 		{

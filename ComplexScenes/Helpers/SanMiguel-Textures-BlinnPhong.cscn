@@ -1,0 +1,2007 @@
+// Textures
+
+texture "0001_carros"
+{
+	image "Textures/SanMiguel/0001_carros.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "027_Cola_Caballo_06-30-1997"
+{
+	image "Textures/SanMiguel/027_Cola_Caballo_06-30-1997.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "052terresable"
+{
+	image "Textures/SanMiguel/052terresable.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "BL05lef2"
+{
+	image "Textures/SanMiguel/BL05lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "BS01brk"
+{
+	image "Textures/SanMiguel/BS01brk.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "BS01flo1"
+{
+	image "Textures/SanMiguel/BS01flo1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "BS01flo2"
+{
+	image "Textures/SanMiguel/BS01flo2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "BS01lef"
+{
+	image "Textures/SanMiguel/BS01lef.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "BS04brk"
+{
+	image "Textures/SanMiguel/BS04brk.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "BS04flo"
+{
+	image "Textures/SanMiguel/BS04flo.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "BS04lef"
+{
+	image "Textures/SanMiguel/BS04lef.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "BWK_1024"
+{
+	image "Textures/SanMiguel/BWK_1024.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Barro_2"
+{
+	image "Textures/SanMiguel/Barro_2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "D30_Smiguel_2003_7758"
+{
+	image "Textures/SanMiguel/D30_Smiguel_2003_7758.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "D30_Smiguel_2003_7768"
+{
+	image "Textures/SanMiguel/D30_Smiguel_2003_7768.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "D30_Smiguel_2003_7785"
+{
+	image "Textures/SanMiguel/D30_Smiguel_2003_7785.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "D30_Smiguel_2003_7812"
+{
+	image "Textures/SanMiguel/D30_Smiguel_2003_7812.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "D30_Smiguel_2003_7815"
+{
+	image "Textures/SanMiguel/D30_Smiguel_2003_7815.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "D30_Smiguel_2003_7833"
+{
+	image "Textures/SanMiguel/D30_Smiguel_2003_7833.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "D30_Smiguel_2003_7843"
+{
+	image "Textures/SanMiguel/D30_Smiguel_2003_7843.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "EU15lef"
+{
+	image "Textures/SanMiguel/EU15lef.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL03lef1"
+{
+	image "Textures/SanMiguel/FL03lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL04cnt1"
+{
+	image "Textures/SanMiguel/FL04cnt1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL04cnt2"
+{
+	image "Textures/SanMiguel/FL04cnt2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL04lef1"
+{
+	image "Textures/SanMiguel/FL04lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL04lef2"
+{
+	image "Textures/SanMiguel/FL04lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL04pet1"
+{
+	image "Textures/SanMiguel/FL04pet1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL04stm"
+{
+	image "Textures/SanMiguel/FL04stm.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL11lef1"
+{
+	image "Textures/SanMiguel/FL11lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL11lef2"
+{
+	image "Textures/SanMiguel/FL11lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL11pet1"
+{
+	image "Textures/SanMiguel/FL11pet1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL11pet2"
+{
+	image "Textures/SanMiguel/FL11pet2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL11pet3"
+{
+	image "Textures/SanMiguel/FL11pet3.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL11pet4"
+{
+	image "Textures/SanMiguel/FL11pet4.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL11sta"
+{
+	image "Textures/SanMiguel/FL11sta.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL11stm"
+{
+	image "Textures/SanMiguel/FL11stm.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL12lef1"
+{
+	image "Textures/SanMiguel/FL12lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL12pet1"
+{
+	image "Textures/SanMiguel/FL12pet1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL12pet2"
+{
+	image "Textures/SanMiguel/FL12pet2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL12pis1"
+{
+	image "Textures/SanMiguel/FL12pis1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL12sta1"
+{
+	image "Textures/SanMiguel/FL12sta1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL12stm"
+{
+	image "Textures/SanMiguel/FL12stm.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL13lef1"
+{
+	image "Textures/SanMiguel/FL13lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL13lef4"
+{
+	image "Textures/SanMiguel/FL13lef4.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL13lef5"
+{
+	image "Textures/SanMiguel/FL13lef5.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL13pet1"
+{
+	image "Textures/SanMiguel/FL13pet1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL13pet2"
+{
+	image "Textures/SanMiguel/FL13pet2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL13pet3"
+{
+	image "Textures/SanMiguel/FL13pet3.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL13stm"
+{
+	image "Textures/SanMiguel/FL13stm.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL15cnt2"
+{
+	image "Textures/SanMiguel/FL15cnt2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL15lef1"
+{
+	image "Textures/SanMiguel/FL15lef1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL15lef2"
+{
+	image "Textures/SanMiguel/FL15lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL15pet2"
+{
+	image "Textures/SanMiguel/FL15pet2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL15stm"
+{
+	image "Textures/SanMiguel/FL15stm.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL16lef1"
+{
+	image "Textures/SanMiguel/FL16lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL16lef3"
+{
+	image "Textures/SanMiguel/FL16lef3.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL16pet1"
+{
+	image "Textures/SanMiguel/FL16pet1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL16stm"
+{
+	image "Textures/SanMiguel/FL16stm.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL17cnt"
+{
+	image "Textures/SanMiguel/FL17cnt.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL17lef1"
+{
+	image "Textures/SanMiguel/FL17lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL17lef2"
+{
+	image "Textures/SanMiguel/FL17lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL17lef3"
+{
+	image "Textures/SanMiguel/FL17lef3.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL17lef5"
+{
+	image "Textures/SanMiguel/FL17lef5.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL17lef6"
+{
+	image "Textures/SanMiguel/FL17lef6.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL17pet1"
+{
+	image "Textures/SanMiguel/FL17pet1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL17pet2"
+{
+	image "Textures/SanMiguel/FL17pet2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL17pet5"
+{
+	image "Textures/SanMiguel/FL17pet5.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL17stm"
+{
+	image "Textures/SanMiguel/FL17stm.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL19lef2"
+{
+	image "Textures/SanMiguel/FL19lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL19lef3"
+{
+	image "Textures/SanMiguel/FL19lef3.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL19lef4"
+{
+	image "Textures/SanMiguel/FL19lef4.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL19pe13"
+{
+	image "Textures/SanMiguel/FL19pe13.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL19pe14"
+{
+	image "Textures/SanMiguel/FL19pe14.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL19pe15"
+{
+	image "Textures/SanMiguel/FL19pe15.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL19pe16"
+{
+	image "Textures/SanMiguel/FL19pe16.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL19stm"
+{
+	image "Textures/SanMiguel/FL19stm.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL29cnt1"
+{
+	image "Textures/SanMiguel/FL29cnt1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL29cnt2"
+{
+	image "Textures/SanMiguel/FL29cnt2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL29lef"
+{
+	image "Textures/SanMiguel/FL29lef.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL29pet1"
+{
+	image "Textures/SanMiguel/FL29pet1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL29pet2"
+{
+	image "Textures/SanMiguel/FL29pet2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL29stm1"
+{
+	image "Textures/SanMiguel/FL29stm1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL29stm2"
+{
+	image "Textures/SanMiguel/FL29stm2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "FL29twg"
+{
+	image "Textures/SanMiguel/FL29twg.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Fierro_A"
+{
+	image "Textures/SanMiguel/Fierro_A.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Fierro_A_Bump"
+{
+	image "Textures/SanMiguel/Fierro_A_Bump.dds"
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Finishes.Flooring.Carpet.Loop.5"
+{
+	image "Textures/SanMiguel/Finishes.Flooring.Carpet.Loop.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Forja_Macetas"
+{
+	image "Textures/SanMiguel/Forja_Macetas.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP01lef1"
+{
+	image "Textures/SanMiguel/HP01lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP01lef2"
+{
+	image "Textures/SanMiguel/HP01lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP01pet3"
+{
+	image "Textures/SanMiguel/HP01pet3.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP01stm1"
+{
+	image "Textures/SanMiguel/HP01stm1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP01stm2"
+{
+	image "Textures/SanMiguel/HP01stm2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP04lef2"
+{
+	image "Textures/SanMiguel/HP04lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP07lef1"
+{
+	image "Textures/SanMiguel/HP07lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP07lef2"
+{
+	image "Textures/SanMiguel/HP07lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP07stm1"
+{
+	image "Textures/SanMiguel/HP07stm1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP07stm2"
+{
+	image "Textures/SanMiguel/HP07stm2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP11lef2"
+{
+	image "Textures/SanMiguel/HP11lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP11stm"
+{
+	image "Textures/SanMiguel/HP11stm.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP13lef2"
+{
+	image "Textures/SanMiguel/HP13lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP13lef3"
+{
+	image "Textures/SanMiguel/HP13lef3.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP13stm2"
+{
+	image "Textures/SanMiguel/HP13stm2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP17lef1"
+{
+	image "Textures/SanMiguel/HP17lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP17lef2"
+{
+	image "Textures/SanMiguel/HP17lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP17stm"
+{
+	image "Textures/SanMiguel/HP17stm.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP19lef2"
+{
+	image "Textures/SanMiguel/HP19lef2.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP19lef3"
+{
+	image "Textures/SanMiguel/HP19lef3.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP19stm1"
+{
+	image "Textures/SanMiguel/HP19stm1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "HP19stm2"
+{
+	image "Textures/SanMiguel/HP19stm2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Maceta_A2_Color"
+{
+	image "Textures/SanMiguel/Maceta_A2_Color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Maceta_A_Color"
+{
+	image "Textures/SanMiguel/Maceta_A_Color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Maceta_B2_Color"
+{
+	image "Textures/SanMiguel/Maceta_B2_Color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Maceta_B_Color"
+{
+	image "Textures/SanMiguel/Maceta_B_Color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Maceta_C2_Color"
+{
+	image "Textures/SanMiguel/Maceta_C2_Color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Maceta_C_Color"
+{
+	image "Textures/SanMiguel/Maceta_C_Color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Maceta_D2_Color_0"
+{
+	image "Textures/SanMiguel/Maceta_D2_Color_0.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Maceta_D_Bump_0"
+{
+	image "Textures/SanMiguel/Maceta_D_Bump_0.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_Fierro_A_Bump"
+{
+	image "Textures/SanMiguel/N_Fierro_A_Bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_Finishes.Flooring.Carpet.Loop.5"
+{
+	image "Textures/SanMiguel/N_Finishes.Flooring.Carpet.Loop.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_Forja_Macetas_bump"
+{
+	image "Textures/SanMiguel/N_Forja_Macetas_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_HP11stm"
+{
+	image "Textures/SanMiguel/N_HP11stm.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_Maceta_A_Bump"
+{
+	image "Textures/SanMiguel/N_Maceta_A_Bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_Maceta_B_Bump"
+{
+	image "Textures/SanMiguel/N_Maceta_B_Bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_Maceta_C_Bump"
+{
+	image "Textures/SanMiguel/N_Maceta_C_Bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_Maceta_D_Bump_0"
+{
+	image "Textures/SanMiguel/N_Maceta_D_Bump_0.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_PITTED"
+{
+	image "Textures/SanMiguel/N_PITTED.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_WOOD08_Bump"
+{
+	image "Textures/SanMiguel/N_WOOD08_Bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_arco_frente_displace_inv"
+{
+	image "Textures/SanMiguel/N_arco_frente_displace_inv.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_arcos_lisos_2_bump"
+{
+	image "Textures/SanMiguel/N_arcos_lisos_2_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_arcos_lisos_3_bump_1"
+{
+	image "Textures/SanMiguel/N_arcos_lisos_3_bump_1.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_bark06mi"
+{
+	image "Textures/SanMiguel/N_bark06mi.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_bwk_1024_Bump"
+{
+	image "Textures/SanMiguel/N_bwk_1024_Bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_citrus_limon_leaf_Bump"
+{
+	image "Textures/SanMiguel/N_citrus_limon_leaf_Bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_columna_b_displacement_3_inv"
+{
+	image "Textures/SanMiguel/N_columna_b_displacement_3_inv.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_detmoldura_01_bump"
+{
+	image "Textures/SanMiguel/N_detmoldura_01_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_detmoldura_02_bump"
+{
+	image "Textures/SanMiguel/N_detmoldura_02_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_detmoldura_03_bump"
+{
+	image "Textures/SanMiguel/N_detmoldura_03_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_detmoldura_04_bump"
+{
+	image "Textures/SanMiguel/N_detmoldura_04_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_detmoldura_05_bump"
+{
+	image "Textures/SanMiguel/N_detmoldura_05_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_detmoldura_06_bump"
+{
+	image "Textures/SanMiguel/N_detmoldura_06_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_escalera_bump"
+{
+	image "Textures/SanMiguel/N_escalera_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_escurridera_bump"
+{
+	image "Textures/SanMiguel/N_escurridera_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_fl16lef3_bump"
+{
+	image "Textures/SanMiguel/N_fl16lef3_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_hp13lef1_bump"
+{
+	image "Textures/SanMiguel/N_hp13lef1_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_individual_bump"
+{
+	image "Textures/SanMiguel/N_individual_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_jardinera_1_displacement_2"
+{
+	image "Textures/SanMiguel/N_jardinera_1_displacement_2.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_l04-upper"
+{
+	image "Textures/SanMiguel/N_l04-upper.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_l33-upper"
+{
+	image "Textures/SanMiguel/N_l33-upper.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_l37-upper"
+{
+	image "Textures/SanMiguel/N_l37-upper.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_madera_barandal_esc_2_bump"
+{
+	image "Textures/SanMiguel/N_madera_barandal_esc_2_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_marco_puerta_1_bump"
+{
+	image "Textures/SanMiguel/N_marco_puerta_1_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_metal_viejo_2"
+{
+	image "Textures/SanMiguel/N_metal_viejo_2.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_mold_arco_01_bump"
+{
+	image "Textures/SanMiguel/N_mold_arco_01_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_moldura2piso_bump"
+{
+	image "Textures/SanMiguel/N_moldura2piso_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_moldura_techo_bump"
+{
+	image "Textures/SanMiguel/N_moldura_techo_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_molduraterraza_bump"
+{
+	image "Textures/SanMiguel/N_molduraterraza_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_muros_b1"
+{
+	image "Textures/SanMiguel/N_muros_b1.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_piso_patio_exterior_displace_inv"
+{
+	image "Textures/SanMiguel/N_piso_patio_exterior_displace_inv.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_piso_rustico_displace2"
+{
+	image "Textures/SanMiguel/N_piso_rustico_displace2.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_postes_barandal_bump"
+{
+	image "Textures/SanMiguel/N_postes_barandal_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_puerta_bump"
+{
+	image "Textures/SanMiguel/N_puerta_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_rust_detalle_bump"
+{
+	image "Textures/SanMiguel/N_rust_detalle_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_silla_d_piel_bump"
+{
+	image "Textures/SanMiguel/N_silla_d_piel_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_sm_leaf_02_bump"
+{
+	image "Textures/SanMiguel/N_sm_leaf_02_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_sm_tronco_bump"
+{
+	image "Textures/SanMiguel/N_sm_tronco_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_tela_blanca"
+{
+	image "Textures/SanMiguel/N_tela_blanca.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "N_vigas_a2_bump"
+{
+	image "Textures/SanMiguel/N_vigas_a2_bump.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "PufiAnimAlpha128x128"
+{
+	image "Textures/SanMiguel/PufiAnimAlpha128x128.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+}
+
+texture "TR02lef5"
+{
+	image "Textures/SanMiguel/TR02lef5.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "TR14lef1"
+{
+	image "Textures/SanMiguel/TR14lef1.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Vigas_A2"
+{
+	image "Textures/SanMiguel/Vigas_A2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Vigas_B"
+{
+	image "Textures/SanMiguel/Vigas_B.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "WOOD08"
+{
+	image "Textures/SanMiguel/WOOD08.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "aglaonema_bark"
+{
+	image "Textures/SanMiguel/aglaonema_bark.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "aglaonema_leaf"
+{
+	image "Textures/SanMiguel/aglaonema_leaf.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "ampelopsis_brevipedunculata_bark"
+{
+	image "Textures/SanMiguel/ampelopsis_brevipedunculata_bark.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "arco_frente"
+{
+	image "Textures/SanMiguel/arco_frente.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "arcos_lisos_2_color"
+{
+	image "Textures/SanMiguel/arcos_lisos_2_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "arcos_lisos_3_color_1"
+{
+	image "Textures/SanMiguel/arcos_lisos_3_color_1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bark06mi"
+{
+	image "Textures/SanMiguel/bark06mi.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bwk_1024_Spec2"
+{
+	image "Textures/SanMiguel/bwk_1024_Spec2.dds"
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "candil_madera"
+{
+	image "Textures/SanMiguel/candil_madera.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "cantera_naranja_liso"
+{
+	image "Textures/SanMiguel/cantera_naranja_liso.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "cenicero"
+{
+	image "Textures/SanMiguel/cenicero.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "ceramic_tile"
+{
+	image "Textures/SanMiguel/ceramic_tile.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "citrus_limon_leaf"
+{
+	image "Textures/SanMiguel/citrus_limon_leaf.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "columna_b_color"
+{
+	image "Textures/SanMiguel/columna_b_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "concreto_01"
+{
+	image "Textures/SanMiguel/concreto_01.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "concreto_02"
+{
+	image "Textures/SanMiguel/concreto_02.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "detmoldura_01_color"
+{
+	image "Textures/SanMiguel/detmoldura_01_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "detmoldura_02_color"
+{
+	image "Textures/SanMiguel/detmoldura_02_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "detmoldura_03_color"
+{
+	image "Textures/SanMiguel/detmoldura_03_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "detmoldura_04_color"
+{
+	image "Textures/SanMiguel/detmoldura_04_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "detmoldura_05_color"
+{
+	image "Textures/SanMiguel/detmoldura_05_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "detmoldura_06_color"
+{
+	image "Textures/SanMiguel/detmoldura_06_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "dracaena_fragrans_leaf"
+{
+	image "Textures/SanMiguel/dracaena_fragrans_leaf.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "elaeagnus_umbellate_bark"
+{
+	image "Textures/SanMiguel/elaeagnus_umbellate_bark.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "escalera_color"
+{
+	image "Textures/SanMiguel/escalera_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "escurridera_color"
+{
+	image "Textures/SanMiguel/escurridera_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "fierro_b"
+{
+	image "Textures/SanMiguel/fierro_b.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "fittonia_verschaffeltii_bark"
+{
+	image "Textures/SanMiguel/fittonia_verschaffeltii_bark.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "fuente_azulejo"
+{
+	image "Textures/SanMiguel/fuente_azulejo.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "fuente_piedra_01"
+{
+	image "Textures/SanMiguel/fuente_piedra_01.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "fuente_piedra_02"
+{
+	image "Textures/SanMiguel/fuente_piedra_02.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "hypoestes_phyllostachya_bark"
+{
+	image "Textures/SanMiguel/hypoestes_phyllostachya_bark.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "impatiens_newguinea_hybrids_petal"
+{
+	image "Textures/SanMiguel/impatiens_newguinea_hybrids_petal.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "individual_b"
+{
+	image "Textures/SanMiguel/individual_b.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "jardinera_1_color"
+{
+	image "Textures/SanMiguel/jardinera_1_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "l04-upper"
+{
+	image "Textures/SanMiguel/l04-upper.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "l33-upper"
+{
+	image "Textures/SanMiguel/l33-upper.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "l37-upper"
+{
+	image "Textures/SanMiguel/l37-upper.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "losa"
+{
+	image "Textures/SanMiguel/losa.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "madera_barandal_esc_2"
+{
+	image "Textures/SanMiguel/madera_barandal_esc_2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "madera_marcos"
+{
+	image "Textures/SanMiguel/madera_marcos.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "madera_rustica_2"
+{
+	image "Textures/SanMiguel/madera_rustica_2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "madera_triplay_01"
+{
+	image "Textures/SanMiguel/madera_triplay_01.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "marco_puerta_1"
+{
+	image "Textures/SanMiguel/marco_puerta_1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "metal_viejo_2"
+{
+	image "Textures/SanMiguel/metal_viejo_2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "mold_arco_01_color"
+{
+	image "Textures/SanMiguel/mold_arco_01_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "moldura2piso_color"
+{
+	image "Textures/SanMiguel/moldura2piso_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "moldura_techo"
+{
+	image "Textures/SanMiguel/moldura_techo.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "moldura_volado"
+{
+	image "Textures/SanMiguel/moldura_volado.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "molduraterraza__color"
+{
+	image "Textures/SanMiguel/molduraterraza__color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_a"
+{
+	image "Textures/SanMiguel/muros_a.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_b"
+{
+	image "Textures/SanMiguel/muros_b.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_b1"
+{
+	image "Textures/SanMiguel/muros_b1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_b2"
+{
+	image "Textures/SanMiguel/muros_b2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_c2"
+{
+	image "Textures/SanMiguel/muros_c2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_d"
+{
+	image "Textures/SanMiguel/muros_d.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_e"
+{
+	image "Textures/SanMiguel/muros_e.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_f"
+{
+	image "Textures/SanMiguel/muros_f.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_g"
+{
+	image "Textures/SanMiguel/muros_g.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_h"
+{
+	image "Textures/SanMiguel/muros_h.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_j"
+{
+	image "Textures/SanMiguel/muros_j.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_k"
+{
+	image "Textures/SanMiguel/muros_k.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_l"
+{
+	image "Textures/SanMiguel/muros_l.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_m"
+{
+	image "Textures/SanMiguel/muros_m.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_n"
+{
+	image "Textures/SanMiguel/muros_n.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_p_"
+{
+	image "Textures/SanMiguel/muros_p_.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_q"
+{
+	image "Textures/SanMiguel/muros_q.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_q3"
+{
+	image "Textures/SanMiguel/muros_q3.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_q4"
+{
+	image "Textures/SanMiguel/muros_q4.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "muros_q_patio2"
+{
+	image "Textures/SanMiguel/muros_q_patio2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "pared_barro_afinado"
+{
+	image "Textures/SanMiguel/pared_barro_afinado.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "pared_calle"
+{
+	image "Textures/SanMiguel/pared_calle.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "piso_patio_exterior"
+{
+	image "Textures/SanMiguel/piso_patio_exterior.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "piso_patio_exterior2"
+{
+	image "Textures/SanMiguel/piso_patio_exterior2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "piso_patio_exterior_displace_inv"
+{
+	image "Textures/SanMiguel/piso_patio_exterior_displace_inv.dds"
+	height_mask 0x00ff0000
+	height_factor 0.0100000
+	invert_y true
+}
+
+texture "piso_rustico"
+{
+	image "Textures/SanMiguel/piso_rustico.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "piso_rustico_Spec"
+{
+	image "Textures/SanMiguel/piso_rustico_Spec.dds"
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "piso_rustico_displace2"
+{
+	image "Textures/SanMiguel/piso_rustico_displace2.dds"
+	height_mask 0x00ff0000
+	height_factor 0.0100000
+	invert_y true
+}
+
+texture "plato_a"
+{
+	image "Textures/SanMiguel/plato_a.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "postes_barandal_color"
+{
+	image "Textures/SanMiguel/postes_barandal_color.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "puerta"
+{
+	image "Textures/SanMiguel/puerta.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "quercus_rubra_bark"
+{
+	image "Textures/SanMiguel/quercus_rubra_bark.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "rust_a1"
+{
+	image "Textures/SanMiguel/rust_a1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "rust_detalle"
+{
+	image "Textures/SanMiguel/rust_detalle.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "silla_d_piel"
+{
+	image "Textures/SanMiguel/silla_d_piel.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "sm_hoja_c_seca"
+{
+	image "Textures/SanMiguel/sm_hoja_c_seca.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "sm_leaf_02a"
+{
+	image "Textures/SanMiguel/sm_leaf_02a.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "sm_leaf_02b"
+{
+	image "Textures/SanMiguel/sm_leaf_02b.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "sm_leaf_03a"
+{
+	image "Textures/SanMiguel/sm_leaf_03a.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "sm_leaf_seca_02b"
+{
+	image "Textures/SanMiguel/sm_leaf_seca_02b.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "sm_leaf_seca_03b"
+{
+	image "Textures/SanMiguel/sm_leaf_seca_03b.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "sm_tronco"
+{
+	image "Textures/SanMiguel/sm_tronco.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "tapa_talabera"
+{
+	image "Textures/SanMiguel/tapa_talabera.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "techo"
+{
+	image "Textures/SanMiguel/techo.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "techo_01"
+{
+	image "Textures/SanMiguel/techo_01.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "tela_blanca"
+{
+	image "Textures/SanMiguel/tela_blanca.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "tela_mesa_b"
+{
+	image "Textures/SanMiguel/tela_mesa_b.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "tela_mesa_d"
+{
+	image "Textures/SanMiguel/tela_mesa_d.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "tela_silla_b"
+{
+	image "Textures/SanMiguel/tela_silla_b.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "wood.3.Bubinga"
+{
+	image "Textures/SanMiguel/wood.3.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "zebrina_pendula_bark"
+{
+	image "Textures/SanMiguel/zebrina_pendula_bark.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}

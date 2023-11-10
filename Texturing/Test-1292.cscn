@@ -22,6 +22,12 @@ scene "Scene"
 		border_colour float_opaque_black
 	}
 
+	texture "Albedo"
+	{
+		image "Textures/Cube/albedo.jpg"
+		albedo_mask 0x00ffffff
+	}
+
 	material "Textured"
 	{
 		pass
@@ -32,9 +38,8 @@ scene "Scene"
 
 			texture_unit
 			{
-				albedo_mask 0x00ffffff
+				texture "Albedo"
 				sampler "Linear"
-				image "Textures/Cube/albedo.jpg"
 			}
 		}
 	}

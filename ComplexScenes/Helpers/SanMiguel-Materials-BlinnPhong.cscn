@@ -1,452 +1,25 @@
-// Samplers
-
-sampler "Trilinear"
-{
-	min_filter linear
-	mag_filter linear
-	mip_filter linear
-	u_wrap_mode repeat
-	v_wrap_mode repeat
-	w_wrap_mode repeat
-	min_lod -1000.00
-	max_lod 1000.00
-	lod_bias 0.00000
-	border_colour float_opaque_black
-	max_anisotropy 1.00000
-}
-
 // Materials
 
-material "CafeChair_Metal"
+material "materialt"
 {
 
 	pass
 	{
-		diffuse 0.480000 0.480000 0.480000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 255.00000
-	}
-}
-
-material "material_0"
-{
-
-	pass
-	{
-		diffuse 0.100000 0.100000 0.100000
-		specular 0.500000 0.500000 0.500000
-		shininess 16.0000
-	}
-}
-
-material "material_032"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00000 0.00000 0.00000
-		shininess 16.0
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/individual_b.png"
-			diffuse_mask 0x00ffffff
+			texture "N_sm_leaf_02_bump"
 		}
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_individual_bump.png"
-			normal_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_033"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.196078 0.196078 0.196078
-		shininess 256.000
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/cenicero.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_034"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.196078 0.196078 0.196078
-		shininess 256.000
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/ceramic_tile.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_035"
-{
-
-	pass
-	{
-		diffuse 0.776471 0.756863 0.721569
-		specular 0.0128628 0.0128628 0.0128628
-		shininess 16.0
-	}
-}
-
-material "material_036"
-{
-
-	pass
-	{
-		diffuse 0.121569 0.113726 0.101961
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-	}
-}
-
-material "material_038"
-{
-
-	pass
-	{
-		diffuse 0.0862740 0.0823530 0.0745100
-		specular 0.449019 0.403922 0.354902
-		shininess 256.000
-	}
-}
-
-material "material_039"
-{
-
-	pass
-	{
-		diffuse 0.776471 0.749020 0.709804
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_PITTED.png"
-			normal_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_040"
-{
-
-	pass
-	{
-		diffuse 0.301950 0.875973 0.726676
-		specular 0.301950 0.875973 0.726676
-		shininess 256.000
-	}
-}
-
-material "material_041"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 1.00000 1.00000 1.00000
-		shininess 256.000
-		alpha 0.500000
-		bw_accumulation 1
-		alpha_blend_mode interpolative
-	}
-}
-
-material "material_042"
-{
-
-	pass
-	{
-		diffuse 0.142338 0.462081 0.235328
-		specular 0.142338 0.462081 0.235328
-		shininess 256.000
-	}
-}
-
-material "material_1"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_jardinera_1_displacement_2.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/jardinera_1_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_10"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/losa.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_11"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_moldura2piso_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/moldura2piso_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_12"
-{
-
-	pass
-	{
-		diffuse 0.750000 0.750000 0.750000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-	}
-}
-
-material "material_123"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00658824 0.00658824 0.00658824
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Forja_Macetas_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Forja_Macetas.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_124"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Maceta_A_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Maceta_A_Color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_125"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Maceta_A_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Maceta_A2_Color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_126"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Maceta_B_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Maceta_B_Color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_127"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Maceta_B_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Maceta_B2_Color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_128"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Maceta_C_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Maceta_C_Color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_129"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Maceta_C_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Maceta_C2_Color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_13"
-{
-
-	pass
-	{
-		diffuse 0.549020 0.549020 0.549020
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-	}
-}
-
-material "material_130"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Maceta_D_Bump_0.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Maceta_D2_Color_0.png"
-			diffuse_mask 0x00ffffff
+			texture "sm_leaf_02a"
 		}
 	}
 }
@@ -456,4455 +29,16 @@ material "material_131"
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
 		two_sided true
-		alpha_func greater 0.5
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/dracaena_fragrans_leaf.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_132"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/BS01brk.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_133"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/BS01lef.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_134"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/BS01flo1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_135"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/BS01flo2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_136"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/aglaonema_leaf.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_137"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/aglaonema_bark.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_138"
-{
-
-	pass
-	{
-		diffuse 0.147313 0.165899 0.988525
-		specular 0.00589252 0.00663596 0.0395410
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL13pet2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_139"
-{
-
-	pass
-	{
-		diffuse 0.445692 0.119083 0.00466900
-		specular 0.0178277 0.00476332 0.000186760
-		shininess 16.0
-	}
-}
-
-material "material_14"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		parallax_occlusion repeat
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_piso_rustico_displace2.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/piso_rustico_displace2.png"
-			height_mask 0x00ff0000
-			height_factor 0.01000
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/piso_rustico.png"
-			diffuse_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/piso_rustico_Spec.png"
-			specular_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_140"
-{
-
-	pass
-	{
-		diffuse 0.00891100 0.377880 0.531663
-		specular 0.000356440 0.0151152 0.0212665
-		shininess 16.0
-	}
-}
-
-material "material_141"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL16stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_142"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL16lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_143"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL16pet1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_144"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL16lef3.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_fl16lef3_bump.png"
-			normal_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_145"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/TR14lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_146"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/ampelopsis_brevipedunculata_bark.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_147"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP19stm1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_148"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP19stm2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_149"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP19lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_15"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00454904 0.00454904 0.00454904
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/madera_triplay_01.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_150"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP19lef3.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_151"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP19lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_152"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL15lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_153"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL15cnt2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_154"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL15stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_155"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL15pet2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_156"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL15lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_157"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL04cnt1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_158"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL15lef1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_159"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL15lef2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_16"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00000 0.00000 0.00000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/rust_a1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_160"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL15pet2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_161"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP07lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_162"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP07stm1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_163"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP07lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_164"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP07stm2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_165"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11pet1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_166"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11pet2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_167"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11sta.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_168"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11pet3.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_169"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11pet4.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_17"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_a.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_170"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_171"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_172"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_173"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11pet1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_174"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11pet2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_175"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11pet3.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_176"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11pet4.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_177"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL11lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_178"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP17lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_179"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP17lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_18"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_muros_b1.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_b1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_180"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP17stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_181"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_HP11stm.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP11stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_182"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00470588 0.00470588 0.00470588
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_hp13lef1_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP11lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_183"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL13pet1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_184"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL13pet2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_185"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL13pet3.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_186"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL13stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_187"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL13lef5.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_188"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL13lef4.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_189"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL13lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_19"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_c2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_190"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/elaeagnus_umbellate_bark.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_191"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/impatiens_newguinea_hybrids_petal.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_192"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/citrus_limon_leaf.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_citrus_limon_leaf_Bump.png"
-			normal_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_193"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP13stm2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_194"
-{
-
-	pass
-	{
-		diffuse 0.571184 0.601764 0.607166
-		specular 0.0228474 0.0240706 0.0242866
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL13lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_195"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP13lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_196"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP13stm2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_197"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP13lef3.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_198"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/BS04lef.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_199"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/BS04flo.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_2"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/cantera_naranja_liso.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_20"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_f.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_200"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/BS04brk.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_201"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL12lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_202"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL12pet2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_203"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL12pis1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_204"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL12sta1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_205"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL12stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_206"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL12pis1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_207"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL12pet1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_208"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL12stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_209"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP01stm1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_21"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_e.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_210"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP01stm2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_211"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP01stm1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_212"
-{
-
-	pass
-	{
-		diffuse 0.341000 0.397200 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL16pet1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_213"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP01stm1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_214"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP01stm2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_215"
-{
-
-	pass
-	{
-		diffuse 0.858800 0.803900 0.141200
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17lef6.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_216"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP01lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_217"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP01lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_218"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP01pet3.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_219"
-{
-
-	pass
-	{
-		diffuse 0.0549100 0.151900 0.0523500
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-	}
-}
-
-material "material_22"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_d.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_220"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL04lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_221"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL04lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_222"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL04pet1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_223"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL04cnt2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_224"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL04cnt1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_225"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL04stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_226"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/TR02lef5.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_227"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/quercus_rubra_bark.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_228"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL19pe13.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_229"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL19pe16.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_23"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_g.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_230"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL19pe14.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_231"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL19pe15.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_232"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL19lef4.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_233"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL19lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_234"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL19lef3.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_235"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL19stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_236"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/HP04lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_237"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/zebrina_pendula_bark.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_238"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/BL05lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_239"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/hypoestes_phyllostachya_bark.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_24"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_h.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_240"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29cnt1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_241"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29cnt2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_242"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29lef.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_243"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29twg.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_244"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29pet1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_245"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29pet2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_246"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29stm1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_247"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29twg.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_248"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29stm2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_249"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29lef.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_25"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_l.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_250"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL29pet2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_251"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_252"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_253"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17pet5.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_254"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_255"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17lef6.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_256"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17cnt.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_257"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17lef3.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_258"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17pet1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_259"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17stm.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_26"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_j.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_260"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17cnt.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_261"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17lef5.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_262"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17lef2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_263"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL17pet2.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_264"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/FL03lef1.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_265"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/fittonia_verschaffeltii_bark.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_266"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/EU15lef.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
-		}
-	}
-}
-
-material "material_267"
-{
-
-	pass
-	{
-		diffuse 0.480000 0.480000 0.480000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 256.000
-	}
-}
-
-material "material_268"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Fierro_A_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Fierro_A.png"
-			diffuse_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Fierro_A_Bump.png"
-			specular_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_269"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00313724 0.00313724 0.00313724
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_silla_d_piel_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/silla_d_piel.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_27"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_l.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_270"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0480000 0.0480000 0.0480000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_WOOD08_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/WOOD08.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_271"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0487342 0.0487342 0.0487342
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_WOOD08_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/WOOD08.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_272"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00000 0.00000 0.00000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/tapa_talabera.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_273"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0481013 0.0481013 0.0481013
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_WOOD08_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/WOOD08.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_274"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/tela_mesa_d.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_275"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/tela_mesa_b.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_276"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0486274 0.0486274 0.0486274
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_WOOD08_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/WOOD08.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_277"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Finishes.Flooring.Carpet.Loop.5.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Finishes.Flooring.Carpet.Loop.5.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_278"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_bwk_1024_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/BWK_1024.png"
-			diffuse_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/bwk_1024_Spec2.png"
-			specular_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_279"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_tela_blanca.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/tela_blanca.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_28"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_m.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_280"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0800000 0.0800000 0.0800000
-		shininess 0.0156250
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_Fierro_A_Bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Fierro_A.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_281"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/wood.3.Bubinga.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_282"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00000 0.00000 0.00000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/tela_silla_b.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_284"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Vigas_B.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_285"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/BWK_1024.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_286"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/tela_silla_b.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_287"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.196078 0.196078 0.196078
-		shininess 256.000
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/plato_a.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_29"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_n.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_3"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/moldura_volado.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_30"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_b.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_31"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_p_.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_32"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_q3.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_33"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_q.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_34"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_q4.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_35"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/techo.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_36"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/052terresable.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_37"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_q_patio2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_39"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_arcos_lisos_2_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/arcos_lisos_2_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_4"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_moldura_techo_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/moldura_techo.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_40"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_arcos_lisos_3_bump_1.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/arcos_lisos_3_color_1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_41"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_b2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_42"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00172548 0.00172548 0.00172548
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/madera_rustica_2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_43"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/madera_rustica_2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_44"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 0.0117188
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Maceta_D_Bump_0.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/muros_k.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_45"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/concreto_01.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_46"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_vigas_a2_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Vigas_A2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_47"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/techo_01.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_48"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-		parallax_occlusion repeat
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_piso_patio_exterior_displace_inv.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/piso_patio_exterior_displace_inv.png"
-			height_mask 0x00ff0000
-			height_factor 0.01000
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/piso_patio_exterior.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_49"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/fuente_piedra_01.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_5"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_escalera_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/escalera_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_51"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_arco_frente_displace_inv.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/arco_frente.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_52"
-{
-
-	pass
-	{
-		diffuse 0.337255 0.286275 0.223529
-		specular 0.0200784 0.0177255 0.0149020
-		shininess 16.0
-	}
-}
-
-material "material_53"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7785.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_54"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/0001_carros.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_55"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7815.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_56"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7812.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_57"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/027_Cola_Caballo_06-30-1997.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_58"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7812.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_59"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7843.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_6"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/pared_barro_afinado.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_60"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7785.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_61"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7758.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_62"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7843.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_63"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7833.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_64"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7768.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_65"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7833.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_66"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7833.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_67"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/D30_Smiguel_2003_7833.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_68"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00627452 0.00627452 0.00627452
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/madera_marcos.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_69"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_postes_barandal_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/postes_barandal_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_7"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/techo.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_70"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/piso_patio_exterior2.png"
-			diffuse_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/piso_patio_exterior_displace_inv.png"
-			height_mask 0x00ff0000
-			height_factor 0.01000
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_piso_patio_exterior_displace_inv.png"
-			normal_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_72"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00000 0.00000 0.00000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/rust_a1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_73"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00000 0.00000 0.00000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_rust_detalle_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/rust_detalle.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_74"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00000 0.00000 0.00000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/madera_barandal_esc_2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_75"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/pared_calle.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_76"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0125490 0.0125490 0.0125490
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/fierro_b.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_77"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00000 0.00000 0.00000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/fierro_b.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_78"
-{
-
-	pass
-	{
-		diffuse 0.808740 0.585009 0.479873
-		specular 0.0323496 0.0234004 0.0191949
-		shininess 16.0
-	}
-}
-
-material "material_79"
-{
-
-	pass
-	{
-		diffuse 0.200000 0.200000 0.200000
-		specular 0.300000 0.300000 0.300000
-		shininess 4.00000
-	}
-}
-
-material "material_8"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/concreto_02.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_80"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00658824 0.00658824 0.00658824
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/candil_madera.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_81"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0120784 0.0120784 0.0120784
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_metal_viejo_2.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/metal_viejo_2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_82"
-{
-
-	pass
-	{
-		diffuse 0.0588230 0.0588230 0.0588230
-		specular 0.0120784 0.0120784 0.0120784
-		shininess 16.0
-	}
-}
-
-material "material_83"
-{
-
-	pass
-	{
-		diffuse 0.200000 0.200000 0.200000
-		specular 0.200000 0.200000 0.200000
-		shininess 1.95312
-	}
-}
-
-material "material_84"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_detmoldura_06_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/detmoldura_06_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_85"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_detmoldura_05_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/detmoldura_05_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_86"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_detmoldura_04_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/detmoldura_04_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_87"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_detmoldura_03_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/detmoldura_03_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_88"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_detmoldura_02_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/detmoldura_02_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_89"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_detmoldura_01_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/detmoldura_01_color.png"
-			diffuse_mask 0x00ffffff
+			texture "dracaena_fragrans_leaf"
 		}
 	}
 }
@@ -4914,206 +48,209 @@ material "material_9"
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/moldura_volado.png"
-			diffuse_mask 0x00ffffff
+			texture "moldura_volado"
 		}
 	}
 }
 
-material "material_90"
+material "material_29"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_escurridera_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/escurridera_color.png"
-			diffuse_mask 0x00ffffff
+			texture "muros_n"
 		}
 	}
 }
 
-material "material_91"
+material "material_229"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/rust_a1.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_92"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
 		two_sided true
-		alpha_func greater 0.5
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/sm_leaf_seca_03b.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
+			texture "FL19pe16"
 		}
 	}
 }
 
-material "material_93"
+material "material_271"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0487342 0.0487342 0.0487342
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_WOOD08_Bump"
+		}
+
+		texture_unit
+		{
+			texture "WOOD08"
+		}
+	}
+}
+
+material "material_127"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_Maceta_B_Bump"
+		}
+
+		texture_unit
+		{
+			texture "Maceta_B2_Color"
+		}
+	}
+}
+
+material "material_84"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_detmoldura_06_bump"
+		}
+
+		texture_unit
+		{
+			texture "detmoldura_06_color"
+		}
+	}
+}
+
+material "material_284"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "Vigas_B"
+		}
+	}
+}
+
+material "material_201"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
 		two_sided true
-		alpha_func greater 0.5
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/sm_leaf_seca_02b.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
+			texture "FL12lef1"
 		}
 	}
 }
 
-material "material_94"
+material "material_160"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
 		two_sided true
-		alpha_func greater 0.5
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/sm_hoja_c_seca.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
+			texture "FL15pet2"
 		}
 	}
 }
 
-material "material_95"
+material "material_207"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_marco_puerta_1_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/marco_puerta_1.png"
-			diffuse_mask 0x00ffffff
+			texture "FL12pet1"
 		}
 	}
 }
 
-material "material_96"
+material "material_166"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00000 0.00000 0.00000
-		shininess 16.0
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_madera_barandal_esc_2_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/madera_barandal_esc_2.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_97"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_mold_arco_01_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/mold_arco_01_color.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "material_98"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/N_molduraterraza_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/molduraterraza__color.png"
-			diffuse_mask 0x00ffffff
+			texture "FL11pet2"
 		}
 	}
 }
@@ -5123,61 +260,330 @@ material "materiald"
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00172548 0.00172548 0.00172548
-		shininess 16.0
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00172548 0.00172548 0.00172548
+		roughness 0.937500
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_puerta_bump.png"
-			normal_mask 0x00ffffff
+			texture "N_puerta_bump"
 		}
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/puerta.png"
-			diffuse_mask 0x00ffffff
-		}
-	}
-}
-
-material "materiale"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/Barro_2.png"
-			diffuse_mask 0x00ffffff
+			texture "puerta"
 		}
 	}
 }
 
-material "materiali"
+material "material_98"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_columna_b_displacement_3_inv.png"
-			normal_mask 0x00ffffff
+			texture "N_molduraterraza_bump"
 		}
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/columna_b_color.png"
-			diffuse_mask 0x00ffffff
+			texture "molduraterraza__color"
 		}
+	}
+}
+
+material "material_193"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP13stm2"
+		}
+	}
+}
+
+material "material_8"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "concreto_02"
+		}
+	}
+}
+
+material "material_28"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_m"
+		}
+	}
+}
+
+material "material_228"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL19pe13"
+		}
+	}
+}
+
+material "material_79"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.0289912 0.0289912 0.0289912
+		specular_colour 0.300000 0.300000 0.300000
+		roughness 0.984375
+	}
+}
+
+material "material_279"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_tela_blanca"
+		}
+
+		texture_unit
+		{
+			texture "tela_blanca"
+		}
+	}
+}
+
+material "material_89"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_detmoldura_01_bump"
+		}
+
+		texture_unit
+		{
+			texture "detmoldura_01_color"
+		}
+	}
+}
+
+material "material_43"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "madera_rustica_2"
+		}
+	}
+}
+
+material "material_243"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL29twg"
+		}
+	}
+}
+
+material "material_73"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_rust_detalle_bump"
+		}
+
+		texture_unit
+		{
+			texture "rust_detalle"
+		}
+	}
+}
+
+material "material_273"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0481013 0.0481013 0.0481013
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_WOOD08_Bump"
+		}
+
+		texture_unit
+		{
+			texture "WOOD08"
+		}
+	}
+}
+
+material "material_55"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7815"
+		}
+	}
+}
+
+material "material_255"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL17lef6"
+		}
+	}
+}
+
+material "material_220"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL04lef1"
+		}
+	}
+}
+
+material "material_20"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_f"
+		}
+	}
+}
+
+material "material_0"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.00630957 0.00630957 0.00630957
+		specular_colour 0.500000 0.500000 0.500000
+		roughness 0.937500
 	}
 }
 
@@ -5186,191 +592,3538 @@ material "materialn"
 
 	pass
 	{
-		diffuse 0.710501 0.513535 0.303995
-		specular 0.200000 0.200000 0.200000
-		shininess 0.390625
+		lighting_model c3d.phong
+		colour_hdr 0.471457 0.230810 0.0728293
+		specular_colour 0.200000 0.200000 0.200000
+		roughness 0.998474
 	}
 }
 
-material "materialo"
+material "material_7"
 {
 
 	pass
 	{
-		diffuse 0.000000 0.000000 0.010000
-		specular 0.250000 0.250000 0.250000
-		shininess 4.00000
-		alpha 0.500000
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "techo"
+		}
+	}
+}
+
+material "material_27"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_l"
+		}
+	}
+}
+
+material "material_227"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "quercus_rubra_bark"
+		}
+	}
+}
+
+material "material_036"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.00969639 0.00837320 0.00658499
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+	}
+}
+
+material "material_70"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "piso_patio_exterior_displace_inv"
+		}
+
+		texture_unit
+		{
+			texture "N_piso_patio_exterior_displace_inv"
+		}
+
+		texture_unit
+		{
+			texture "piso_patio_exterior2"
+		}
+	}
+}
+
+material "material_270"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0480000 0.0480000 0.0480000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_WOOD08_Bump"
+		}
+
+		texture_unit
+		{
+			texture "WOOD08"
+		}
+	}
+}
+
+material "CafeChair_Metal"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.198944 0.198944 0.198944
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.00390625
+	}
+}
+
+material "material_032"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_individual_bump"
+		}
+
+		texture_unit
+		{
+			texture "individual_b"
+		}
+	}
+}
+
+material "material_033"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.196078 0.196078 0.196078
+		roughness 0.00000
+
+		texture_unit
+		{
+			texture "cenicero"
+		}
+	}
+}
+
+material "material_034"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.196078 0.196078 0.196078
+		roughness 0.00000
+
+		texture_unit
+		{
+			texture "ceramic_tile"
+		}
+	}
+}
+
+material "material_035"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.573160 0.541799 0.487766
+		specular_colour 0.0128628 0.0128628 0.0128628
+		roughness 0.937500
+	}
+}
+
+material "material_038"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.00455969 0.00411618 0.00330272
+		specular_colour 0.449019 0.403922 0.354902
+		roughness 0.00000
+	}
+}
+
+material "material_039"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.573160 0.529524 0.470440
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_PITTED"
+		}
+	}
+}
+
+material "material_040"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.0717558 0.747273 0.495393
+		specular_colour 0.301950 0.875973 0.726676
+		roughness 0.00000
+	}
+}
+
+material "material_041"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		alpha_blend_mode interpolative
+		opacity 0.500000
 		bw_accumulation 1
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.00000
+	}
+}
+
+material "material_042"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.0137185 0.182970 0.0414650
+		specular_colour 0.142338 0.462081 0.235328
+		roughness 0.00000
+	}
+}
+
+material "material_221"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
 		two_sided true
-	}
-}
-
-material "materialp"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/fuente_piedra_02.png"
-			diffuse_mask 0x00ffffff
+			texture "FL04lef2"
 		}
 	}
 }
 
-material "materialq"
+material "material_21"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.00000 0.00000 0.00000
-		shininess 16.0
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/fuente_azulejo.png"
-			diffuse_mask 0x00ffffff
+			texture "muros_e"
 		}
 	}
 }
 
-material "materialr"
+material "material_1"
 {
 
 	pass
 	{
-		diffuse 0.750000 0.750000 0.750000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
-	}
-}
-
-material "materials"
-{
-
-	pass
-	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_sm_tronco_bump.png"
-			normal_mask 0x00ffffff
+			texture "N_jardinera_1_displacement_2"
 		}
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/sm_tronco.png"
-			diffuse_mask 0x00ffffff
+			texture "jardinera_1_color"
 		}
 	}
 }
 
-material "materialt"
+material "material_210"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP01stm2"
+		}
+	}
+}
+
+material "material_157"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
 		two_sided true
-		alpha_func greater 0.5
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_sm_leaf_02_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/sm_leaf_02a.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
+			texture "FL04cnt1"
 		}
 	}
 }
 
-material "materialu"
+material "material_10"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "losa"
+		}
+	}
+}
+
+material "material_211"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP01stm1"
+		}
+	}
+}
+
+material "material_156"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
 		two_sided true
-		alpha_func greater 0.5
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_sm_leaf_02_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/sm_leaf_02b.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
+			texture "FL15lef2"
 		}
 	}
 }
 
-material "materialv"
+material "material_11"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_moldura2piso_bump"
+		}
+
+		texture_unit
+		{
+			texture "moldura2piso_color"
+		}
+	}
+}
+
+material "material_212"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
 		two_sided true
-		alpha_func greater 0.5
+		colour_hdr 0.0937691 0.131166 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_sm_leaf_02_bump.png"
-			normal_mask 0x00ffffff
-		}
-
-		texture_unit
-		{
-			image "Textures/SanMiguel/sm_leaf_03a.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
+			texture "FL16pet1"
 		}
 	}
 }
 
-material "materialw"
+material "material_155"
 {
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_bark06mi.png"
-			normal_mask 0x00ffffff
+			texture "FL15pet2"
+		}
+	}
+}
+
+material "material_12"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.531049 0.531049 0.531049
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+	}
+}
+
+material "material_123"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00658824 0.00658824 0.00658824
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_Forja_Macetas_bump"
 		}
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/bark06mi.png"
-			diffuse_mask 0x00ffffff
+			texture "Forja_Macetas"
+		}
+	}
+}
+
+material "material_124"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_Maceta_A_Bump"
+		}
+
+		texture_unit
+		{
+			texture "Maceta_A_Color"
+		}
+	}
+}
+
+material "material_125"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_Maceta_A_Bump"
+		}
+
+		texture_unit
+		{
+			texture "Maceta_A2_Color"
+		}
+	}
+}
+
+material "material_126"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_Maceta_B_Bump"
+		}
+
+		texture_unit
+		{
+			texture "Maceta_B_Color"
+		}
+	}
+}
+
+material "material_128"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_Maceta_C_Bump"
+		}
+
+		texture_unit
+		{
+			texture "Maceta_C_Color"
+		}
+	}
+}
+
+material "material_129"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_Maceta_C_Bump"
+		}
+
+		texture_unit
+		{
+			texture "Maceta_C2_Color"
+		}
+	}
+}
+
+material "material_213"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP01stm1"
+		}
+	}
+}
+
+material "material_154"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL15stm"
+		}
+	}
+}
+
+material "material_13"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.267358 0.267358 0.267358
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+	}
+}
+
+material "material_130"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_Maceta_D_Bump_0"
+		}
+
+		texture_unit
+		{
+			texture "Maceta_D2_Color_0"
+		}
+	}
+}
+
+material "material_132"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "BS01brk"
+		}
+	}
+}
+
+material "material_133"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "BS01lef"
+		}
+	}
+}
+
+material "material_134"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "BS01flo1"
+		}
+	}
+}
+
+material "material_135"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "BS01flo2"
+		}
+	}
+}
+
+material "material_136"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "aglaonema_leaf"
+		}
+	}
+}
+
+material "material_137"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "aglaonema_bark"
+		}
+	}
+}
+
+material "material_138"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.0147955 0.0192157 0.974929
+		specular_colour 0.00589252 0.00663596 0.0395410
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL13pet2"
+		}
+	}
+}
+
+material "material_139"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.168996 0.00926551 7.45234e-06
+		specular_colour 0.0178277 0.00476332 0.000186760
+		roughness 0.937500
+	}
+}
+
+material "material_214"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP01stm2"
+		}
+	}
+}
+
+material "material_153"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL15cnt2"
+		}
+	}
+}
+
+material "material_14"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		parallax_occlusion repeat
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "piso_rustico_displace2"
+		}
+
+		texture_unit
+		{
+			texture "N_piso_rustico_displace2"
+		}
+
+		texture_unit
+		{
+			texture "piso_rustico"
+		}
+
+		texture_unit
+		{
+			texture "piso_rustico_Spec"
+		}
+	}
+}
+
+material "material_61"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7758"
+		}
+	}
+}
+
+material "material_261"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL17lef5"
+		}
+	}
+}
+
+material "material_140"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 3.08914e-05 0.117538 0.249115
+		specular_colour 0.000356440 0.0151152 0.0212665
+		roughness 0.937500
+	}
+}
+
+material "material_60"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7785"
+		}
+	}
+}
+
+material "material_260"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL17cnt"
+		}
+	}
+}
+
+material "material_141"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL16stm"
+		}
+	}
+}
+
+material "material_63"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7833"
+		}
+	}
+}
+
+material "material_263"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL17pet2"
+		}
+	}
+}
+
+material "material_142"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL16lef1"
+		}
+	}
+}
+
+material "material_62"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7843"
+		}
+	}
+}
+
+material "material_262"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL17lef2"
+		}
+	}
+}
+
+material "material_143"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL16pet1"
+		}
+	}
+}
+
+material "material_65"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7833"
+		}
+	}
+}
+
+material "material_265"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "fittonia_verschaffeltii_bark"
+		}
+	}
+}
+
+material "material_144"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "N_fl16lef3_bump"
+		}
+
+		texture_unit
+		{
+			texture "FL16lef3"
+		}
+	}
+}
+
+material "material_64"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7768"
+		}
+	}
+}
+
+material "material_264"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL03lef1"
+		}
+	}
+}
+
+material "material_145"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "TR14lef1"
+		}
+	}
+}
+
+material "material_67"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7833"
+		}
+	}
+}
+
+material "material_267"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.198944 0.198944 0.198944
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.00000
+	}
+}
+
+material "material_146"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "ampelopsis_brevipedunculata_bark"
+		}
+	}
+}
+
+material "material_66"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7833"
+		}
+	}
+}
+
+material "material_266"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "EU15lef"
+		}
+	}
+}
+
+material "material_147"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP19stm1"
+		}
+	}
+}
+
+material "material_69"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_postes_barandal_bump"
+		}
+
+		texture_unit
+		{
+			texture "postes_barandal_color"
+		}
+	}
+}
+
+material "material_269"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00313724 0.00313724 0.00313724
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_silla_d_piel_bump"
+		}
+
+		texture_unit
+		{
+			texture "silla_d_piel"
+		}
+	}
+}
+
+material "material_148"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP19stm2"
+		}
+	}
+}
+
+material "material_68"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00627452 0.00627452 0.00627452
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "madera_marcos"
+		}
+	}
+}
+
+material "material_268"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_Fierro_A_Bump"
+		}
+
+		texture_unit
+		{
+			texture "Fierro_A"
+		}
+
+		texture_unit
+		{
+			texture "Fierro_A_Bump"
+		}
+	}
+}
+
+material "material_149"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP19lef2"
+		}
+	}
+}
+
+material "material_215"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 0.715422 0.618649 0.0134783
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL17lef6"
+		}
+	}
+}
+
+material "material_152"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL15lef1"
+		}
+	}
+}
+
+material "material_15"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00454904 0.00454904 0.00454904
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "madera_triplay_01"
+		}
+	}
+}
+
+material "material_217"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP01lef1"
+		}
+	}
+}
+
+material "material_17"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_a"
+		}
+	}
+}
+
+material "material_150"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP19lef3"
+		}
+	}
+}
+
+material "material_216"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP01lef2"
+		}
+	}
+}
+
+material "material_16"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "rust_a1"
+		}
+	}
+}
+
+material "material_151"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP19lef2"
+		}
+	}
+}
+
+material "material_158"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL15lef1"
+		}
+	}
+}
+
+material "material_159"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL15lef2"
+		}
+	}
+}
+
+material "material_200"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "BS04brk"
+		}
+	}
+}
+
+material "material_161"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP07lef1"
+		}
+	}
+}
+
+material "material_203"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL12pis1"
+		}
+	}
+}
+
+material "material_162"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP07stm1"
+		}
+	}
+}
+
+material "material_202"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL12pet2"
+		}
+	}
+}
+
+material "material_163"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP07lef2"
+		}
+	}
+}
+
+material "material_205"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL12stm"
+		}
+	}
+}
+
+material "material_164"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP07stm2"
+		}
+	}
+}
+
+material "material_204"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL12sta1"
+		}
+	}
+}
+
+material "material_165"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11pet1"
+		}
+	}
+}
+
+material "material_206"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL12pis1"
+		}
+	}
+}
+
+material "material_167"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11sta"
+		}
+	}
+}
+
+material "material_209"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP01stm1"
+		}
+	}
+}
+
+material "material_168"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11pet3"
+		}
+	}
+}
+
+material "material_208"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL12stm"
+		}
+	}
+}
+
+material "material_169"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11pet4"
+		}
+	}
+}
+
+material "material_33"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_q"
+		}
+	}
+}
+
+material "material_233"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL19lef2"
+		}
+	}
+}
+
+material "material_170"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11lef1"
+		}
+	}
+}
+
+material "material_32"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_q3"
+		}
+	}
+}
+
+material "material_232"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL19lef4"
+		}
+	}
+}
+
+material "material_171"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11lef2"
+		}
+	}
+}
+
+material "material_31"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_p_"
+		}
+	}
+}
+
+material "material_231"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL19pe15"
+		}
+	}
+}
+
+material "material_172"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL11stm"
+		}
+	}
+}
+
+material "material_30"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_b"
+		}
+	}
+}
+
+material "material_230"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL19pe14"
+		}
+	}
+}
+
+material "material_173"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11pet1"
+		}
+	}
+}
+
+material "material_37"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_q_patio2"
+		}
+	}
+}
+
+material "material_237"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "zebrina_pendula_bark"
+		}
+	}
+}
+
+material "material_174"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11pet2"
+		}
+	}
+}
+
+material "material_36"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "052terresable"
+		}
+	}
+}
+
+material "material_236"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP04lef2"
+		}
+	}
+}
+
+material "material_175"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11pet3"
+		}
+	}
+}
+
+material "material_35"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "techo"
+		}
+	}
+}
+
+material "material_235"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL19stm"
+		}
+	}
+}
+
+material "material_176"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11pet4"
+		}
+	}
+}
+
+material "material_34"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_q4"
+		}
+	}
+}
+
+material "material_234"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL19lef3"
+		}
+	}
+}
+
+material "material_177"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL11lef1"
+		}
+	}
+}
+
+material "material_178"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP17lef1"
+		}
+	}
+}
+
+material "material_179"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP17lef2"
+		}
+	}
+}
+
+material "material_218"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP01pet3"
+		}
+	}
+}
+
+material "material_18"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_muros_b1"
+		}
+
+		texture_unit
+		{
+			texture "muros_b1"
+		}
+	}
+}
+
+material "material_180"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP17stm"
+		}
+	}
+}
+
+material "material_181"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_HP11stm"
+		}
+
+		texture_unit
+		{
+			texture "HP11stm"
+		}
+	}
+}
+
+material "material_182"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00470588 0.00470588 0.00470588
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "N_hp13lef1_bump"
+		}
+
+		texture_unit
+		{
+			texture "HP11lef2"
+		}
+	}
+}
+
+material "material_183"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL13pet1"
+		}
+	}
+}
+
+material "material_184"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL13pet2"
+		}
+	}
+}
+
+material "material_185"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL13pet3"
+		}
+	}
+}
+
+material "material_186"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL13stm"
+		}
+	}
+}
+
+material "material_187"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL13lef5"
+		}
+	}
+}
+
+material "material_188"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL13lef4"
+		}
+	}
+}
+
+material "material_189"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL13lef1"
+		}
+	}
+}
+
+material "material_219"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.00168746 0.0158280 0.00151921
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+	}
+}
+
+material "material_19"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_c2"
+		}
+	}
+}
+
+material "material_190"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "elaeagnus_umbellate_bark"
+		}
+	}
+}
+
+material "material_191"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "impatiens_newguinea_hybrids_petal"
+		}
+	}
+}
+
+material "material_192"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "N_citrus_limon_leaf_Bump"
+		}
+
+		texture_unit
+		{
+			texture "citrus_limon_leaf"
+		}
+	}
+}
+
+material "material_194"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 0.291680 0.327143 0.333639
+		specular_colour 0.0228474 0.0240706 0.0242866
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL13lef1"
+		}
+	}
+}
+
+material "material_195"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP13lef2"
+		}
+	}
+}
+
+material "material_196"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "HP13stm2"
+		}
+	}
+}
+
+material "material_197"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "HP13lef3"
+		}
+	}
+}
+
+material "material_93"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "sm_leaf_seca_02b"
+		}
+	}
+}
+
+material "material_198"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "BS04lef"
+		}
+	}
+}
+
+material "material_92"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "sm_leaf_seca_03b"
+		}
+	}
+}
+
+material "material_199"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "BS04flo"
+		}
+	}
+}
+
+material "material_222"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL04pet1"
+		}
+	}
+}
+
+material "material_22"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_d"
+		}
+	}
+}
+
+material "material_2"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "cantera_naranja_liso"
+		}
+	}
+}
+
+material "material_3"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "moldura_volado"
+		}
+	}
+}
+
+material "material_23"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_g"
+		}
+	}
+}
+
+material "material_223"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL04cnt2"
+		}
+	}
+}
+
+material "material_4"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_moldura_techo_bump"
+		}
+
+		texture_unit
+		{
+			texture "moldura_techo"
+		}
+	}
+}
+
+material "material_24"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_h"
+		}
+	}
+}
+
+material "material_224"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL04cnt1"
+		}
+	}
+}
+
+material "material_5"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_escalera_bump"
+		}
+
+		texture_unit
+		{
+			texture "escalera_color"
+		}
+	}
+}
+
+material "material_25"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_l"
+		}
+	}
+}
+
+material "material_225"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL04stm"
+		}
+	}
+}
+
+material "material_6"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "pared_barro_afinado"
+		}
+	}
+}
+
+material "material_26"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_j"
+		}
+	}
+}
+
+material "material_226"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "TR02lef5"
+		}
+	}
+}
+
+material "material_238"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "BL05lef2"
+		}
+	}
+}
+
+material "material_39"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_arcos_lisos_2_bump"
+		}
+
+		texture_unit
+		{
+			texture "arcos_lisos_2_color"
+		}
+	}
+}
+
+material "material_239"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "hypoestes_phyllostachya_bark"
+		}
+	}
+}
+
+material "material_40"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_arcos_lisos_3_bump_1"
+		}
+
+		texture_unit
+		{
+			texture "arcos_lisos_3_color_1"
+		}
+	}
+}
+
+material "material_240"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL29cnt1"
+		}
+	}
+}
+
+material "material_41"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "muros_b2"
+		}
+	}
+}
+
+material "material_241"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL29cnt2"
+		}
+	}
+}
+
+material "material_42"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00172548 0.00172548 0.00172548
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "madera_rustica_2"
+		}
+	}
+}
+
+material "material_242"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL29lef"
+		}
+	}
+}
+
+material "material_44"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.999954
+
+		texture_unit
+		{
+			texture "Maceta_D_Bump_0"
+		}
+
+		texture_unit
+		{
+			texture "muros_k"
+		}
+	}
+}
+
+material "material_244"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL29pet1"
+		}
+	}
+}
+
+material "material_45"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "concreto_01"
+		}
+	}
+}
+
+material "material_245"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL29pet2"
+		}
+	}
+}
+
+material "material_46"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_vigas_a2_bump"
+		}
+
+		texture_unit
+		{
+			texture "Vigas_A2"
+		}
+	}
+}
+
+material "material_246"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL29stm1"
+		}
+	}
+}
+
+material "material_47"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "techo_01"
+		}
+	}
+}
+
+material "material_247"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL29twg"
+		}
+	}
+}
+
+material "material_48"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		parallax_occlusion repeat
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "piso_patio_exterior_displace_inv"
+		}
+
+		texture_unit
+		{
+			texture "N_piso_patio_exterior_displace_inv"
+		}
+
+		texture_unit
+		{
+			texture "piso_patio_exterior"
+		}
+	}
+}
+
+material "material_248"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL29stm2"
+		}
+	}
+}
+
+material "material_49"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "fuente_piedra_01"
+		}
+	}
+}
+
+material "material_249"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL29lef"
 		}
 	}
 }
@@ -5380,23 +4133,40 @@ material "materialx"
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
 		two_sided true
-		alpha_func greater 0.5
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_l33-upper.png"
-			normal_mask 0x00ffffff
+			texture "N_l33-upper"
 		}
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/l33-upper.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
+			texture "l33-upper"
+		}
+	}
+}
+
+material "material_250"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL29pet2"
 		}
 	}
 }
@@ -5406,23 +4176,62 @@ material "materialy"
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
 		two_sided true
-		alpha_func greater 0.5
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_l37-upper.png"
-			normal_mask 0x00ffffff
+			texture "N_l37-upper"
 		}
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/l37-upper.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
+			texture "l37-upper"
+		}
+	}
+}
+
+material "material_51"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_arco_frente_displace_inv"
+		}
+
+		texture_unit
+		{
+			texture "arco_frente"
+		}
+	}
+}
+
+material "material_251"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL17lef1"
 		}
 	}
 }
@@ -5432,23 +4241,1055 @@ material "materialz"
 
 	pass
 	{
-		diffuse 1.00000 1.00000 1.00000
-		specular 0.0400000 0.0400000 0.0400000
-		shininess 16.0
+		lighting_model c3d.phong
 		two_sided true
-		alpha_func greater 0.5
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/N_l04-upper.png"
-			normal_mask 0x00ffffff
+			texture "N_l04-upper"
 		}
 
 		texture_unit
 		{
-			image "Textures/SanMiguel/l04-upper.png"
-			diffuse_mask 0x00ffffff
-			opacity_mask 0xff000000
+			texture "l04-upper"
+		}
+	}
+}
+
+material "material_52"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.0915184 0.0638151 0.0370284
+		specular_colour 0.0200784 0.0177255 0.0149020
+		roughness 0.937500
+	}
+}
+
+material "material_252"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL17lef2"
+		}
+	}
+}
+
+material "material_53"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7785"
+		}
+	}
+}
+
+material "material_253"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL17pet5"
+		}
+	}
+}
+
+material "material_54"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "0001_carros"
+		}
+	}
+}
+
+material "material_254"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL17stm"
+		}
+	}
+}
+
+material "material_56"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7812"
+		}
+	}
+}
+
+material "material_256"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL17cnt"
+		}
+	}
+}
+
+material "material_57"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "027_Cola_Caballo_06-30-1997"
+		}
+	}
+}
+
+material "material_257"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL17lef3"
+		}
+	}
+}
+
+material "materialp"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "fuente_piedra_02"
+		}
+	}
+}
+
+material "material_58"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7812"
+		}
+	}
+}
+
+material "material_258"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "FL17pet1"
+		}
+	}
+}
+
+material "materialq"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "fuente_azulejo"
+		}
+	}
+}
+
+material "material_59"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "D30_Smiguel_2003_7843"
+		}
+	}
+}
+
+material "material_259"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "FL17stm"
+		}
+	}
+}
+
+material "material_72"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "rust_a1"
+		}
+	}
+}
+
+material "material_272"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "tapa_talabera"
+		}
+	}
+}
+
+material "material_74"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "madera_barandal_esc_2"
+		}
+	}
+}
+
+material "material_274"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "tela_mesa_d"
+		}
+	}
+}
+
+material "material_75"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "pared_calle"
+		}
+	}
+}
+
+material "material_275"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "tela_mesa_b"
+		}
+	}
+}
+
+material "material_76"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0125490 0.0125490 0.0125490
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "fierro_b"
+		}
+	}
+}
+
+material "material_276"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0486274 0.0486274 0.0486274
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_WOOD08_Bump"
+		}
+
+		texture_unit
+		{
+			texture "WOOD08"
+		}
+	}
+}
+
+material "material_77"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "fierro_b"
+		}
+	}
+}
+
+material "material_277"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_Finishes.Flooring.Carpet.Loop.5"
+		}
+
+		texture_unit
+		{
+			texture "Finishes.Flooring.Carpet.Loop.5"
+		}
+	}
+}
+
+material "material_78"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.626873 0.307438 0.198828
+		specular_colour 0.0323496 0.0234004 0.0191949
+		roughness 0.937500
+	}
+}
+
+material "material_278"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_bwk_1024_Bump"
+		}
+
+		texture_unit
+		{
+			texture "BWK_1024"
+		}
+
+		texture_unit
+		{
+			texture "bwk_1024_Spec2"
+		}
+	}
+}
+
+material "material_80"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00658824 0.00658824 0.00658824
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "candil_madera"
+		}
+	}
+}
+
+material "material_280"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0800000 0.0800000 0.0800000
+		roughness 0.999939
+
+		texture_unit
+		{
+			texture "N_Fierro_A_Bump"
+		}
+
+		texture_unit
+		{
+			texture "Fierro_A"
+		}
+	}
+}
+
+material "material_81"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0120784 0.0120784 0.0120784
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_metal_viejo_2"
+		}
+
+		texture_unit
+		{
+			texture "metal_viejo_2"
+		}
+	}
+}
+
+material "material_281"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "wood.3.Bubinga"
+		}
+	}
+}
+
+material "material_82"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.00196338 0.00196338 0.00196338
+		specular_colour 0.0120784 0.0120784 0.0120784
+		roughness 0.937500
+	}
+}
+
+material "material_282"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "tela_silla_b"
+		}
+	}
+}
+
+material "material_85"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_detmoldura_05_bump"
+		}
+
+		texture_unit
+		{
+			texture "detmoldura_05_color"
+		}
+	}
+}
+
+material "material_285"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "BWK_1024"
+		}
+	}
+}
+
+material "material_86"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_detmoldura_04_bump"
+		}
+
+		texture_unit
+		{
+			texture "detmoldura_04_color"
+		}
+	}
+}
+
+material "material_286"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "tela_silla_b"
+		}
+	}
+}
+
+material "material_87"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_detmoldura_03_bump"
+		}
+
+		texture_unit
+		{
+			texture "detmoldura_03_color"
+		}
+	}
+}
+
+material "material_287"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.196078 0.196078 0.196078
+		roughness 0.00000
+
+		texture_unit
+		{
+			texture "plato_a"
+		}
+	}
+}
+
+material "material_83"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.0289912 0.0289912 0.0289912
+		specular_colour 0.200000 0.200000 0.200000
+		roughness 0.992371
+	}
+}
+
+material "material_88"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_detmoldura_02_bump"
+		}
+
+		texture_unit
+		{
+			texture "detmoldura_02_color"
+		}
+	}
+}
+
+material "material_90"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_escurridera_bump"
+		}
+
+		texture_unit
+		{
+			texture "escurridera_color"
+		}
+	}
+}
+
+material "material_91"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "rust_a1"
+		}
+	}
+}
+
+material "material_94"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "sm_hoja_c_seca"
+		}
+	}
+}
+
+material "material_95"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_marco_puerta_1_bump"
+		}
+
+		texture_unit
+		{
+			texture "marco_puerta_1"
+		}
+	}
+}
+
+material "material_96"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_madera_barandal_esc_2_bump"
+		}
+
+		texture_unit
+		{
+			texture "madera_barandal_esc_2"
+		}
+	}
+}
+
+material "material_97"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_mold_arco_01_bump"
+		}
+
+		texture_unit
+		{
+			texture "mold_arco_01_color"
+		}
+	}
+}
+
+material "materiale"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "Barro_2"
+		}
+	}
+}
+
+material "materiali"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_columna_b_displacement_3_inv"
+		}
+
+		texture_unit
+		{
+			texture "columna_b_color"
+		}
+	}
+}
+
+material "materialo"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		opacity 0.500000
+		bw_accumulation 1
+		colour_hdr 0.00000 0.00000 3.98107e-05
+		specular_colour 0.250000 0.250000 0.250000
+		roughness 0.984375
+	}
+}
+
+material "materialr"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 0.531049 0.531049 0.531049
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+	}
+}
+
+material "materials"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_sm_tronco_bump"
+		}
+
+		texture_unit
+		{
+			texture "sm_tronco"
+		}
+	}
+}
+
+material "materialu"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "N_sm_leaf_02_bump"
+		}
+
+		texture_unit
+		{
+			texture "sm_leaf_02b"
+		}
+	}
+}
+
+material "materialv"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+		alpha_func greater 0.500000
+
+		texture_unit
+		{
+			texture "N_sm_leaf_02_bump"
+		}
+
+		texture_unit
+		{
+			texture "sm_leaf_03a"
+		}
+	}
+}
+
+material "materialw"
+{
+
+	pass
+	{
+		lighting_model c3d.phong
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.0400000 0.0400000 0.0400000
+		roughness 0.937500
+
+		texture_unit
+		{
+			texture "N_bark06mi"
+		}
+
+		texture_unit
+		{
+			texture "bark06mi"
 		}
 	}
 }

@@ -55,5 +55,10 @@ window "Window"
 			// bend_step_count 10
 			// bend_step_size 0.5
 		}
+
+		clusters
+		{
+			enabled false
+		}
 	}
 }

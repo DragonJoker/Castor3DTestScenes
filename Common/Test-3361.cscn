@@ -30,15 +30,9 @@ scene "Billboards"
 
 			texture_unit
 			{
-				channel diffuse
-				image "Textures/Billboards/AlphaRejection.png" rgb
-				sampler	"Default"
-			}
-
-			texture_unit
-			{
-				channel opacity
-				image "Textures/Billboards/AlphaRejection.png" a
+				image "Textures/Billboards/AlphaRejection.png"
+				diffuse_mask 0x00ffffff
+				opacity_mask 0xff000000
 				sampler	"Default"
 			}
 		}

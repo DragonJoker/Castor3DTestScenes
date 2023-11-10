@@ -7,6 +7,7 @@ scene "SanMiguel"
 	ambient_light 0.00000 0.00000 0.00000
 	background_colour 0.00000 0.00000 0.00000
 	lpv_indirect_attenuation 1.70000
+	include "Helpers/SanMiguel-Textures-SpecularGlossiness.cscn"
 	include "Helpers/SanMiguel-Materials-SpecularGlossiness.cscn"
 	include "Helpers/SanMiguel-Meshes.cscn"
 	include "Helpers/SanMiguel-Nodes.cscn"

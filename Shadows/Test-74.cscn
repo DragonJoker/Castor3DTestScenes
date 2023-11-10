@@ -50,8 +50,8 @@ scene "Scene"
 		type spot
 		parent "LightNode"
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
-		attenuation 1.0 0.0 0.0
+		intensity 800000.0 1000000.0
+		attenuation 1.0 0.01 0.0
 		inner_cut_off 10
 		outer_cut_off 20
 		shadows
@@ -60,8 +60,8 @@ scene "Scene"
 			filter pcf
 			pcf_config
 			{
-				min_offset 0.00001
-				max_slope_offset 0.00001
+				min_offset 0.0000001
+				max_slope_offset 0.000001
 			}
 		}
 	}

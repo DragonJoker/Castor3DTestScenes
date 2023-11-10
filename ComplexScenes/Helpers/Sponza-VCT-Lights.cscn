@@ -11,10 +11,10 @@ light "Light"
 	type directional
 	colour 1.00000 1.00000 1.00000
 	intensity 8.00000 10.0000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 		volumetric_steps 20

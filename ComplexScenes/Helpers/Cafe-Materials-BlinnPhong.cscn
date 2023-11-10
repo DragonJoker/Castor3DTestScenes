@@ -96,20 +96,10 @@ material "billard/light"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/billard_light.png"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/billard_light.png"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/billard_light.png"
-		}
-
-		texture_unit
-		{
 			opacity_mask 0xFF000000
-			image "Textures/CafeLegacy/billard_light.png" a
 		}
 	}
 }
@@ -174,14 +164,9 @@ material "cafe/cafe_aqua_coffre"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_coffre.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_coffre.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_coffre.jpg"
 		}
 	}
 }
@@ -198,14 +183,9 @@ material "cafe/cafe_aqua_coquillage_01"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_coquillage_01.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_coquillage_01.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_coquillage_01.jpg"
 		}
 	}
 }
@@ -222,14 +202,9 @@ material "cafe/cafe_aqua_coquillage_02"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_coquillage_02.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_coquillage_02.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_coquillage_02.jpg"
 		}
 	}
 }
@@ -246,14 +221,9 @@ material "cafe/cafe_aqua_fond"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_fond.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_fond.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_fond.jpg"
 		}
 	}
 }
@@ -270,14 +240,9 @@ material "cafe/cafe_aqua_pierre_01"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_pierre_01.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_pierre_01.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_pierre_01.jpg"
 		}
 	}
 }
@@ -294,14 +259,9 @@ material "cafe/cafe_aqua_pierre_02"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_pierre_02.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_pierre_02.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_pierre_02.jpg"
 		}
 	}
 }
@@ -318,14 +278,9 @@ material "cafe/cafe_aqua_pierre_03"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_pierre_03.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_pierre_03.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_pierre_03.jpg"
 		}
 	}
 }
@@ -342,14 +297,9 @@ material "cafe/cafe_aqua_plafond"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_plafond.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plafond.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plafond.jpg"
 		}
 	}
 }
@@ -367,20 +317,10 @@ material "cafe/cafe_aqua_plante_01"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_plante_01.png"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plante_01.png"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plante_01.png"
-		}
-
-		texture_unit
-		{
 			opacity_mask 0xFF000000
-			image "Textures/CafeLegacy/cafe_aqua_plante_01.png" a
 		}
 	}
 }
@@ -398,20 +338,10 @@ material "cafe/cafe_aqua_plante_02"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_plante_02.png"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plante_02.png"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plante_02.png"
-		}
-
-		texture_unit
-		{
 			opacity_mask 0xFF000000
-			image "Textures/CafeLegacy/cafe_aqua_plante_02.png" a
 		}
 	}
 }
@@ -429,20 +359,10 @@ material "cafe/cafe_aqua_plante_03"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_plante_03.png"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plante_03.png"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_plante_03.png"
-		}
-
-		texture_unit
-		{
 			opacity_mask 0xFF000000
-			image "Textures/CafeLegacy/cafe_aqua_plante_03.png" a
 		}
 	}
 }
@@ -459,14 +379,9 @@ material "cafe/cafe_aqua_sol_01"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_sol_01.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_sol_01.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_sol_01.jpg"
 		}
 	}
 }
@@ -483,14 +398,9 @@ material "cafe/cafe_aqua_sol_02"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_sol_02.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_sol_02.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_sol_02.jpg"
 		}
 	}
 }
@@ -507,14 +417,9 @@ material "cafe/cafe_aqua_tube"
 
 		texture_unit
 		{
+			image "Textures/CafeLegacy/cafe_aqua_tube.jpg"
 			diffuse_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_tube.jpg"
-		}
-
-		texture_unit
-		{
 			emissive_mask 0x00FFFFFF
-			image "Textures/CafeLegacy/cafe_aqua_tube.jpg"
 		}
 	}
 }
@@ -1051,14 +956,9 @@ material "cafe/cafe_vitre"
 
 		texture_unit
 		{
-			diffuse_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/cafe_vitre.png"
-		}
-
-		texture_unit
-		{
+			diffuse_mask 0x00FFFFFF
 			opacity_mask 0xFF000000
-			image "Textures/CafeLegacy/cafe_vitre.png" a
 		}
 	}
 }
@@ -1130,14 +1030,9 @@ material "plante_01/plante_01"
 
 		texture_unit
 		{
-			diffuse_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/plante_01.png"
-		}
-
-		texture_unit
-		{
+			diffuse_mask 0x00FFFFFF
 			opacity_mask 0xFF000000
-			image "Textures/CafeLegacy/plante_01.png" a
 		}
 	}
 }
@@ -1173,14 +1068,9 @@ material "plante_02/plante_02"
 
 		texture_unit
 		{
-			diffuse_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/plante_02.png"
-		}
-
-		texture_unit
-		{
+			diffuse_mask 0x00FFFFFF
 			opacity_mask 0xFF000000
-			image "Textures/CafeLegacy/plante_02.png" a
 		}
 	}
 }
@@ -1216,14 +1106,9 @@ material "plante_03/plante_03"
 
 		texture_unit
 		{
-			diffuse_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/plante_03.png"
-		}
-
-		texture_unit
-		{
+			diffuse_mask 0x00FFFFFF
 			opacity_mask 0xFF000000
-			image "Textures/CafeLegacy/plante_03.png" a
 		}
 	}
 }
@@ -1259,14 +1144,9 @@ material "plante_05/plante_05"
 
 		texture_unit
 		{
-			diffuse_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/plante_05.png"
-		}
-
-		texture_unit
-		{
+			diffuse_mask 0x00FFFFFF
 			opacity_mask 0xFF000000
-			image "Textures/CafeLegacy/plante_05.png" a
 		}
 	}
 }
@@ -1386,14 +1266,9 @@ material "table_verre/table_bar_verre"
 
 		texture_unit
 		{
-			diffuse_mask 0x00FFFFFF
 			image "Textures/CafeLegacy/table_bar_verre.png"
-		}
-
-		texture_unit
-		{
+			diffuse_mask 0x00FFFFFF
 			opacity_mask 0xFF000000
-			image "Textures/CafeLegacy/table_bar_verre.png" a
 		}
 	}
 }

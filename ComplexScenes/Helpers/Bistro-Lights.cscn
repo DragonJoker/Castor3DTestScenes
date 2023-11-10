@@ -11,10 +11,10 @@ light "SunLight"
 	type directional
 	colour 1.00000 1.00000 0.8.00000
 	intensity 8.00000 10.0000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -141,10 +141,10 @@ light "Light_Bar_01"
 	colour 1.00000 1.00000 0.400000
 	intensity 1.0000 1.0000
 	attenuation 1.00000 0.500000 0.00000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -187,10 +187,10 @@ light "Light_Bar_02"
 	colour 1.00000 1.00000 0.400000
 	intensity 1.0000 1.0000
 	attenuation 1.00000 0.500000 0.00000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -233,10 +233,10 @@ light "Light_Bar_03"
 	colour 1.00000 1.00000 0.400000
 	intensity 1.0000 1.0000
 	attenuation 1.00000 0.500000 0.00000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -279,10 +279,10 @@ light "Light_Bar_04"
 	colour 1.00000 1.00000 0.400000
 	intensity 1.0000 1.0000
 	attenuation 1.00000 0.500000 0.00000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -327,10 +327,10 @@ light "Light_Ceiling_01"
 	attenuation 0.500000 0.200000 0.00000
 	exponent 1.00000
 	cut_off 45.0000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -375,10 +375,10 @@ light "Light_Ceiling_02"
 	attenuation 0.500000 0.200000 0.00000
 	exponent 1.00000
 	cut_off 45.0000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -423,10 +423,10 @@ light "Light_Ceiling_03"
 	attenuation 0.500000 0.200000 0.00000
 	exponent 1.00000
 	cut_off 45.0000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -471,10 +471,10 @@ light "Light_Ceiling_04"
 	attenuation 0.500000 0.200000 0.00000
 	exponent 1.00000
 	cut_off 45.0000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -517,10 +517,10 @@ light "Light_Wall_01"
 	colour 1.00000 1.00000 0.800000
 	intensity 1.0000 1.0000
 	attenuation 1.00000 0.500000 0.00000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -563,10 +563,10 @@ light "Light_Wall_02"
 	colour 1.00000 1.00000 0.800000
 	intensity 1.0000 1.0000
 	attenuation 1.00000 0.500000 0.00000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -609,10 +609,10 @@ light "Light_Wall_03"
 	colour 1.00000 1.00000 0.800000
 	intensity 1.0000 1.0000
 	attenuation 1.00000 0.500000 0.00000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -655,10 +655,10 @@ light "Light_Wall_04"
 	colour 1.00000 1.00000 0.800000
 	intensity 1.0000 1.0000
 	attenuation 1.00000 0.500000 0.00000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -701,10 +701,10 @@ light "Light_Wall_05"
 	colour 1.00000 1.00000 0.800000
 	intensity 1.0000 1.0000
 	attenuation 1.00000 0.500000 0.00000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 
@@ -747,10 +747,10 @@ light "Light_Wall_06"
 	colour 1.00000 1.00000 0.800000
 	intensity 1.0000 1.0000
 	attenuation 1.00000 0.500000 0.00000
-	shadow_producer true
 
 	shadows
 	{
+		producer true
 		filter pcf
 		global_illumination none
 

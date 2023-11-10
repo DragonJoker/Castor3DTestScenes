@@ -16,8 +16,8 @@ scene "Scene"
 		type point
 		parent "PointLightNode"
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
-		attenuation 1.0 0.01 0.0
+		intensity 4000.0 5000.0
+		range 200.0
 	}
 
 	object "PointLight"

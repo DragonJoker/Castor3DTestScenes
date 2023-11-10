@@ -49,8 +49,8 @@ scene "Scene"
 		parent "SpotLightNode"
 		type spot
 		colour 1 1 1
-		intensity 0.8 1.0
-		attenuation 1 0 0
+		intensity 8000.0 10000.0
+		attenuation 1.0 0.01 0.0
 		exponent 1.000000
 		inner_cut_off 10
 		outer_cut_off 20
@@ -61,7 +61,7 @@ scene "Scene"
 			pcf_config
 			{
 				min_offset 0.00001
-				max_slope_offset 0.0005
+				max_slope_offset 0.0001
 			}
 		}
 	}

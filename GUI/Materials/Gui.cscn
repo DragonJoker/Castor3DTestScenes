@@ -14,13 +14,9 @@ material "Titre"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/titre.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/titre.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/titre.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -31,13 +27,9 @@ material "BasDroite"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/bord_droit.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/bord_droit.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/bord_droit.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -48,13 +40,9 @@ material "BaseMenu"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/bord_gauche.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/bord_gauche.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/bord_gauche.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -65,13 +53,9 @@ material "MenuInGame"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/menu.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/menu.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/menu.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -82,13 +66,9 @@ material "MenuInGameMO"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/menumo.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/menumo.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/menumo.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -99,13 +79,9 @@ material "Retour"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/retour.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/retour.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/retour.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -116,13 +92,9 @@ material "RetourMO"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/retourmo.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/retourmo.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/retourmo.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -134,13 +106,9 @@ material "Frame"
 		albedo 1.0 1.0 0.0
 		texture_unit
 		{
+			image "Textures/Gui/frame.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/frame.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/frame.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -152,13 +120,9 @@ material "FrameMO"
 		albedo 1.0 0.0 1.0
 		texture_unit
 		{
+			image "Textures/Gui/frame.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/frame.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/frame.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -170,13 +134,9 @@ material "FrameMP"
 		albedo 0.0 1.0 1.0
 		texture_unit
 		{
+			image "Textures/Gui/frame.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/frame.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/frame.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -188,13 +148,9 @@ material "FrameCenter"
 		albedo 1.0 1.0 0.0
 		texture_unit
 		{
+			image "Textures/Gui/frame_center.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/frame_center.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/frame_center.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -206,13 +162,9 @@ material "FrameCenterMO"
 		albedo 1.0 0.0 1.0
 		texture_unit
 		{
+			image "Textures/Gui/frame_center.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/frame_center.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/frame_center.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -224,13 +176,9 @@ material "FrameCenterMP"
 		albedo 0.0 1.0 1.0
 		texture_unit
 		{
+			image "Textures/Gui/frame_center.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/frame_center.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/frame_center.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -241,13 +189,9 @@ material "Commencer"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/commencer.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/commencer.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/commencer.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -258,13 +202,9 @@ material "CommencerMO"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/commencermo.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/commencermo.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/commencermo.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -275,13 +215,9 @@ material "Recommencer"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/recommencer.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/recommencer.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/recommencer.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -292,13 +228,9 @@ material "RecommencerMO"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/recommencermo.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/recommencermo.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/recommencermo.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -309,13 +241,9 @@ material "Continuer"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/continuer.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/continuer.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/continuer.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -326,13 +254,9 @@ material "ContinuerMO"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/continuermo.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/continuermo.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/continuermo.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -343,13 +267,9 @@ material "Regles"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/regles.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/regles.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/regles.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -360,13 +280,9 @@ material "ReglesMO"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/reglesmo.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/reglesmo.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/reglesmo.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -377,13 +293,9 @@ material "Gagne"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/gagne.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/gagne.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/gagne.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -394,13 +306,9 @@ material "Perdu"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/perdu.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/perdu.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/perdu.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -411,13 +319,9 @@ material "NoBorderMenu"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/nobordermenu.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/nobordermenu.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/nobordermenu.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -428,13 +332,9 @@ material "NoBorderMenuCenter"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/nobordermenucenter.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/nobordermenucenter.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/nobordermenucenter.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -445,13 +345,9 @@ material "HorizSeparator"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/horiz_separator.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/horiz_separator.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/horiz_separator.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }
@@ -462,13 +358,9 @@ material "VerticSeparator"
 	{
 		texture_unit
 		{
+			image "Textures/Gui/vertic_separator.png"
 			albedo_mask 0x00FFFFFF
-			image "Textures/Gui/vertic_separator.png" rgb
-		}
-		texture_unit
-		{
-			channel opacity
-			image "Textures/Gui/vertic_separator.png" a
+			opacity_mask 0xFF000000
 		}
 	}
 }

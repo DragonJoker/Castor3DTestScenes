@@ -40,8 +40,8 @@ scene "Scene"
 		type spot
 		parent "SpotLightNode"
 		colour 1.0 0.0 0.0
-		intensity 0.8 1.0
-		attenuation 1.0 0.01 0.0
+		intensity 10000.0 12500.0
+		range 10000.0
 		cut_off 20
 		shadows
 		{
@@ -50,7 +50,7 @@ scene "Scene"
 			raw_config
 			{
 				min_offset 0.0
-				max_slope_offset 0.0005
+				max_slope_offset 0.0001
 			}
 		}
 	}
@@ -65,8 +65,8 @@ scene "Scene"
 		type point
 		parent "PointLightNode"
 		colour 0.0 1.0 0.0
-		intensity 0.8 1.0
-		attenuation 1.0 0.01 0.0
+		intensity 10000.0 12500.0
+		range 10000.0
 		shadows
 		{
 			producer true

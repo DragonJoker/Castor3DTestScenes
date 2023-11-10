@@ -76,8 +76,23 @@ scene "Scene"
 
 	//Animated object groups
 
-	animated_object_group "nodes[8]0"
+	animated_object_group "scene-8_0"
 	{
+/*
+		animated_object "gltf-Node-23-Bra_Bra_0-10"
+		animated_object "gltf-Node-25-short_jeans_short_jeans_0-11"
+		animated_object "gltf-Node-10-2-2"
+		animated_object "gltf-Node-15-5-5"
+		animated_object "gltf-Node-11-3-3"
+		animated_object "gltf-Node-13-4-4"
+		animated_object "gltf-Node-16-6-6"
+		animated_object "gltf-Node-18-CC_Base_Eye_Eye_0-7"
+		animated_object "gltf-Node-19-CC_Base_Eye_Cornea_0-8"
+		animated_object "gltf-Node-21-Boots_Boots_0-9"
+		animated_object "gltf-Node-27-RL_G6_Hair_low pony tail_0-12"
+		animated_object "gltf-Node-8-0-0"
+		animated_object "gltf-Node-9-1-1"
+*/
 		start_animation "walk0518"
 	}
 }
