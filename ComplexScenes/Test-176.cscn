@@ -90,21 +90,5 @@ window "RenderPanel"
 			bend_step_count 4
 			bend_step_size 0.500000
 		}
-
-		water_rendering
-		{
-			dampeningFactor 5.0
-			depthSofteningDistance 5.0
-			refractionRatio 1.2
-			refractionDistortionFactor 0.04
-			refractionHeightFactor 2.5
-			refractionDistanceFactor 15.0
-			normalMapScrollSpeed 0.001 0.001
-			normalMapScroll 1.0 0.0 0.0 1.0
-			ssrSettings 0.5 20.0 10.0 20.0
-			normals1 "Textures/Waves/waterNM1.dds"
-			normals2 "Textures/Waves/waterNM2.dds"
-			noise "Textures/Waves/waterNoise.dds"
-		}
 	}
 }

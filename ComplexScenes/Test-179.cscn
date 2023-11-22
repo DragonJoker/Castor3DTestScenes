@@ -1,6 +1,7 @@
 // Global configuration
 // debug_overlays true
 materials pbr
+debug_max_image_size 64
 
 scene "Parc"
 {

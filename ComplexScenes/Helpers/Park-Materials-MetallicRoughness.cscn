@@ -1952,14 +1952,51 @@ material "fontaine/bronze"
 
 material "fontaine/eau"
 {
-	render_pass "c3d.water"
-
 	pass
 	{
 		albedo 0.465 0.797 0.991
 		transmission 0.8 0.8 0.8
 		roughness 0.08
 		metalness 0.00000
+		refraction_ratio 1.2
+		dampeningFactor 5.0
+		depthSofteningDistance 5.0
+		refractionDistortionFactor 0.04
+		refractionHeightFactor 2.5
+		refractionDistanceFactor 15.0
+		ssrStepSize 0.5
+		ssrForwardStepsCount 20.0
+		ssrBackwardStepsCount 10.0
+		ssrDepthMult 20.0
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Waves/waterNM1.dds"
+			water_normal1_mask 0x00FFFFFF
+			animation
+			{
+				translate 0.01 0.0
+			}
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Waves/waterNM2.dds"
+			water_normal2_mask 0x00FFFFFF
+			animation
+			{
+				translate 0.0 0.01
+			}
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			image "Textures/Waves/waterNoise.dds"
+			water_noise_mask 0x00FF0000
+		}
 	}
 }
 

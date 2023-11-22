@@ -1,6 +1,6 @@
 materials pbr
 max_image_size 2048
-//max_image_size 256
+debug_max_image_size 64
 
 scene "Scene"
 {

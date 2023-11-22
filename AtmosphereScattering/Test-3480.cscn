@@ -15,16 +15,6 @@ scene "Scene"
 		type directional
 		colour 1.0 0.8 0.6
 		intensity 8.0 10.0
-		shadows
-		{
-			producer true
-			filter pcf
-			pcf_config
-			{
-				min_offset 0.0
-				max_slope_offset 0.0009
-			}
-		}
 	}
 
 	scene_node "PlanetNode"
@@ -125,6 +115,24 @@ scene "Scene"
 		border_colour float_opaque_black
 	}
 
+	texture "BricksDif"
+	{
+		image "Textures/Bricks/Diffuse.jpg"
+		albedo_mask 0x00FFFFFF
+	}
+
+	texture "BricksNml"
+	{
+		image "Textures/Bricks/Normal.jpg"
+		normal_mask 0x00FFFFFF
+	}
+
+	texture "BricksRgh"
+	{
+		image "Textures/Bricks/Height.jpg"
+		roughness_mask 0x00FF0000
+	}
+
 	material "FloorMaterial"
 	{
 		pass
@@ -136,23 +144,20 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Bricks/Diffuse.jpg"
-				albedo_mask 0x00FFFFFF
-				sampler	"Linear"
+				texture "BricksDif"
+				sampler "Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Bricks/Normal.jpg"
-				normal_mask 0x00FFFFFF
-				sampler	"Linear"
+				texture "BricksNml"
+				sampler "Linear"
 			}
 
 			texture_unit
 			{
-				image "Textures/Bricks/Height.jpg"
-				channel roughness
-				sampler	"Linear"
+				texture "BricksRgh"
+				sampler "Linear"
 			}
 		}
 	}
@@ -173,16 +178,67 @@ scene "Scene"
 		mesh "FloorMesh"
 	}
 
+	texture "WaterNormal1"
+	{
+		image "Textures/Waves/waterNM1.dds"
+		water_normal1_mask 0x00FFFFFF
+	}
+
+	texture "WaterNormal2"
+	{
+		image "Textures/Waves/waterNM2.dds"
+		water_normal2_mask 0x00FFFFFF
+	}
+
+	texture "WaterNoise"
+	{
+		image "Textures/Waves/waterNoise.dds"
+		water_noise_mask 0x00FF0000
+	}
+
 	material "WaterMaterial"
 	{
-		render_pass "c3d.water"
-
 		pass
 		{
 			colour_srgb 0.003 0.599 0.812
-			emissive 0.0
 			metalness 0.0
 			roughness 0.08
+			refraction_ratio 1.2
+			dampeningFactor 5.0
+			depthSofteningDistance 0.5
+			refractionDistortionFactor 0.04
+			refractionHeightFactor 2.5
+			refractionDistanceFactor 0.05
+			ssrStepSize 0.5
+			ssrForwardStepsCount 20.0
+			ssrBackwardStepsCount 10.0
+			ssrDepthMult 20.0
+
+			texture_unit
+			{
+				texture "WaterNormal1"
+				sampler "Linear"
+				animation
+				{
+					translate 0.01 0.0
+				}
+			}
+
+			texture_unit
+			{
+				texture "WaterNormal2"
+				sampler "Linear"
+				animation
+				{
+					translate 0.0 0.01
+				}
+			}
+
+			texture_unit
+			{
+				texture "WaterNoise"
+				sampler "Linear"
+			}
 		}
 	}
 	mesh "WaterMesh"
@@ -233,24 +289,5 @@ window "Window"
 		size 800 600
 		scene "Scene"
 		camera "MainCamera"
-
-		water_rendering
-		{
-			dampeningFactor 5.0
-			depthSofteningDistance 0.5
-			refractionRatio 1.2
-			refractionDistortionFactor 0.04
-			refractionHeightFactor 2.5
-			refractionDistanceFactor 0.05
-			normalMapScrollSpeed 0.01 0.01
-			normalMapScroll 1.0 0.0 0.0 1.0
-			ssrStepSize 0.5
-			ssrForwardStepsCount 20.0
-			ssrBackwardStepsCount 10.0
-			ssrDepthMult 20.0
-			normals1 "Textures/Waves/waterNM1.dds"
-			normals2 "Textures/Waves/waterNM2.dds"
-			noise "Textures/Waves/waterNoise.dds"
-		}
 	}
 }

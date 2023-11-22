@@ -1,5 +1,6 @@
 // Global configuration
 materials blinn_phong
+debug_max_image_size 64
 
 scene "BaltardOut"
 {

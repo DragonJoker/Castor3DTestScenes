@@ -4,7 +4,7 @@ scene "Scene"
 {
 	ambient_light 0.2 0.2 0.2
 	background_colour 0.5 0.5 0.5
-/**/
+
 	scene_node "LightNode"
 	{
 		orientation -0.314519 -0.947404 0.0591858 337.532
@@ -103,14 +103,7 @@ scene "Scene"
 			coverage 0.0
 		}
 	}
-/**/
-/*
-	ambient_light 1.0 1.0 1.0
-	skybox
-	{
-		equirectangular "Textures/005.hdr" 1024
-	}
-/**/
+
 	sampler "Linear"
 	{
 		min_filter linear
@@ -120,6 +113,36 @@ scene "Scene"
 		v_wrap_mode repeat
 		w_wrap_mode repeat
 		border_colour float_opaque_black
+	}
+
+	texture "rockface_albedo"
+	{
+		image "Textures/Rock/eroded-layered-rockface_albedo.png"
+		albedo_mask 0x00FFFFFF
+	}
+
+	texture "rockface_normal"
+	{
+		image "Textures/Rock/eroded-layered-rockface_normal-ogl.png"
+		normal_mask 0x00FFFFFF
+	}
+
+	texture "rockface_ao"
+	{
+		image "Textures/Rock/eroded-layered-rockface_ao.png"
+		occlusion_mask 0x00FF0000
+	}
+
+	texture "rockface_height"
+	{
+		image "Textures/Rock/eroded-layered-rockface_height.png"
+		height_mask 0x00FF0000
+	}
+
+	texture "rockface_roughness"
+	{
+		image "Textures/Rock/eroded-layered-rockface_roughness.png"
+		roughness_mask 0x00FF0000
 	}
 
 	material "FloorMaterial"
@@ -135,37 +158,32 @@ scene "Scene"
 
 			texture_unit
 			{
-				image "Textures/Rock/eroded-layered-rockface_albedo.png"
-				albedo_mask 0x00FFFFFF
 				sampler	"Linear"
+				texture	"rockface_albedo"
 			}
 
 			texture_unit
 			{
-				image "Textures/Rock/eroded-layered-rockface_normal-ogl.png"
-				normal_mask 0x00FFFFFF
 				sampler	"Linear"
+				texture	"rockface_normal"
 			}
 
 			texture_unit
 			{
-				image "Textures/Rock/eroded-layered-rockface_ao.png"
-				occlusion_mask 0x00FF0000
 				sampler	"Linear"
+				texture	"rockface_ao"
 			}
 
 			texture_unit
 			{
-				image "Textures/Rock/eroded-layered-rockface_height.png"
-				height_mask 0x00FF0000
 				sampler	"Linear"
+				texture	"rockface_height"
 			}
 
 			texture_unit
 			{
-				image "Textures/Rock/eroded-layered-rockface_roughness.png"
-				roughness_mask 0x00FF0000
 				sampler	"Linear"
+				texture	"rockface_roughness"
 			}
 		}
 	}
@@ -191,8 +209,6 @@ scene "Scene"
 
 	material "OceanMaterial"
 	{
-		render_pass "c3d.fft_ocean"
-
 		pass
 		{
 			colour_srgb 0.003 0.812 0.599
@@ -200,11 +216,34 @@ scene "Scene"
 			metalness 0.0
 			roughness 0.08
 			two_sided true
+			refraction_ratio 1.2
+			depthSofteningDistance 2.0
+			refractionDistortionFactor 0.04
+			refractionHeightFactor 0.006
+			refractionDistanceFactor 0.08
+			ssrStepSize 0.5
+			ssrForwardStepsCount 20.0
+			ssrBackwardStepsCount 10.0
+			ssrDepthMult 20.0
+			waterDensity 0.3
 		}
 	}
 	mesh "OceanMesh"
 	{
-		type "plane" -width_subdiv=639 -depth_subdiv=639 -width=20480.0 -depth=20480.0 -flipYZ -sort_around_center
+		fft_waves
+		{
+			disableRandomSeed true
+			heightMapSamples 256
+			displacementDownsample 1
+			size 200.0 200.0
+			amplitude 3.0
+			normalMapFreqMod 7.3 7.3
+			windDirection 0.76339 -0.64594
+			windVelocity 16
+			patchSize 32.0 32.0
+			blocksCount 640 640
+			lod0Distance 50.0
+		}
 		default_material "OceanMaterial"
 	}
 	scene_node "OceanNode"
@@ -255,35 +294,6 @@ window "Window"
 		pbr_bloom
 		{
 			bloomStrength 0.01
-		}
-
-		fft_ocean_rendering
-		{
-			depthSofteningDistance 2.0
-			refractionRatio 1.2
-			refractionDistortionFactor 0.04
-			refractionHeightFactor 0.006
-			refractionDistanceFactor 0.08
-			ssrStepSize 0.5
-			ssrForwardStepsCount 20.0
-			ssrBackwardStepsCount 10.0
-			ssrDepthMult 20.0
-			density 0.3
-
-			fft_config
-			{
-				disableRandomSeed true
-				heightMapSamples 256
-				displacementDownsample 1
-				size 200.0 200.0
-				amplitude 3.0
-				normalMapFreqMod 7.3 7.3
-				windDirection 0.76339 -0.64594
-				windVelocity 16
-				patchSize 32.0 32.0
-				blocksCount 640 640
-				lod0Distance 50.0
-			}
 		}
 	}
 }
