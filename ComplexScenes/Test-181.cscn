@@ -1,39 +1,39 @@
 // Global configuration
-materials pbr
+materials c3d.pbr
 
 scene "BaltardIn"
 {
 	// Scene configuration
 	ambient_light 1.00000 1.00000 1.00000
 	background_colour 0.0100000 0.0100000 0.0100000
-	include "Helpers/BaltardIn-Materials-PBRSG.cscn"
+	lpv_indirect_attenuation 1.70000
+	include "Helpers/BaltardIn-Samplers.cscn"
+	include "Helpers/BaltardIn-Textures-SpecularGlossiness.cscn"
+	include "Helpers/BaltardIn-Materials-SpecularGlossiness.cscn"
 	include "Helpers/BaltardIn-Meshes.cscn"
 	include "Helpers/BaltardIn-Nodes.cscn"
 	include "Helpers/BaltardIn-Objects.cscn"
-	include "Helpers/BaltardIn-Lights.cscn"
 
-	// Skybox
+	//Skybox
 
 	skybox
 	{
-		right "Textures/BaltardIn/cube_map_baltard_ns_RT.jpg"
-		left "Textures/BaltardIn/cube_map_baltard_ns_LF.jpg"
-		bottom "Textures/BaltardIn/cube_map_baltard_ns_DN.jpg"
-		top "Textures/BaltardIn/cube_map_baltard_ns_UP.jpg"
-		back "Textures/BaltardIn/cube_map_baltard_ns_FR.jpg"
-		front "Textures/BaltardIn/cube_map_baltard_ns_BK.jpg"
+		right "Textures/cube_map_baltard_ns_RT.jpg"
+		left "Textures/cube_map_baltard_ns_LF.jpg"
+		bottom "Textures/cube_map_baltard_ns_DN.jpg"
+		top "Textures/cube_map_baltard_ns_UP.jpg"
+		back "Textures/cube_map_baltard_ns_FR.jpg"
+		front "Textures/cube_map_baltard_ns_BK.jpg"
 	}
 
-	// Cameras nodes
+	//Cameras nodes
 
 	scene_node "MainCameraNode"
 	{
-		orientation 1 0 0 0
-		position 7.45687 34.1209 -113.5
-		scale 1 1 1
+		position 7.45687 34.1209 -113.500
 	}
 
-	// Cameras
+	//Cameras
 
 	camera "MainCamera"
 	{
@@ -42,17 +42,17 @@ scene "BaltardIn"
 		viewport
 		{
 			type perspective
-			near 0.5
-			aspect_ratio 1.778
-			far 1200.0
-			fov_y 45
+			near 0.500000
+			far 1200.00
+			aspect_ratio 1.77800
+			fov_y 45.0000
 		}
 	}
 }
 
-// Windows
+//Windows
 
-window "Window"
+window "RenderPanel"
 {
 	vsync false
 	fullscreen false
@@ -60,22 +60,26 @@ window "Window"
 	render_target
 	{
 		size 1920 1080
-		format argb32
+		format rgba32
+		tone_mapping "linear"
 		scene "BaltardIn"
 		camera "MainCamera"
-		tone_mapping "linear"
 
 		ssao
 		{
 			enabled true
 			high_quality true
-			intensity 1
-			radius 5
-			bias 0.023
+			use_normals_buffer false
+			blur_high_quality false
+			intensity 1.00000
+			radius 5.00000
+			bias 0.0230000
 			num_samples 19
-			edge_sharpness 1
+			edge_sharpness 1.00000
 			blur_step_size 2
 			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
 		}
 	}
 }

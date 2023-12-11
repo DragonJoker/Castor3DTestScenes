@@ -1,0 +1,510 @@
+// Textures
+
+texture "024briques"
+{
+	image "Textures/BaltardOut/024briques.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "abris_bus_metal"
+{
+	image "Textures/BaltardOut/abris_bus_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "abris_bus_plan"
+{
+	image "Textures/BaltardOut/abris_bus_plan.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "abris_bus_pub_02"
+{
+	image "Textures/BaltardOut/abris_bus_pub_02.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "arbre_rue_bac"
+{
+	image "Textures/BaltardOut/arbre_rue_bac.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "arbre_rue_branche"
+{
+	image "Textures/BaltardOut/arbre_rue_branche.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "arbre_rue_terre"
+{
+	image "Textures/BaltardOut/arbre_rue_terre.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "arbre_rue_tronc"
+{
+	image "Textures/BaltardOut/arbre_rue_tronc.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_bronze"
+{
+	image "Textures/BaltardOut/baltar_bronze.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_bronze_alpha"
+{
+	image "Textures/BaltardOut/baltar_bronze_alpha.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_ciment"
+{
+	image "Textures/BaltardOut/baltar_ciment.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_metal_bleu"
+{
+	image "Textures/BaltardOut/baltar_metal_bleu.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_mur"
+{
+	image "Textures/BaltardOut/baltar_mur.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_tuiles"
+{
+	image "Textures/BaltardOut/baltar_tuiles.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "banc_bois"
+{
+	image "Textures/BaltardOut/banc_bois.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "banc_metal"
+{
+	image "Textures/BaltardOut/banc_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "barriere_chantier_bois"
+{
+	image "Textures/BaltardOut/barriere_chantier_bois.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "barriere_chantier_peinture"
+{
+	image "Textures/BaltardOut/barriere_chantier_peinture.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "barriere_metal"
+{
+	image "Textures/BaltardOut/barriere_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "barriere_verre"
+{
+	image "Textures/BaltardOut/barriere_verre.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "beton_use"
+{
+	image "Textures/BaltardOut/beton_use.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bite_metal"
+{
+	image "Textures/BaltardOut/bite_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bois_balais"
+{
+	image "Textures/BaltardOut/bois_balais.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "borne_metal"
+{
+	image "Textures/BaltardOut/borne_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "borne_metal_gris"
+{
+	image "Textures/BaltardOut/borne_metal_gris.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "brick008"
+{
+	image "Textures/BaltardOut/brick008.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "brick040+"
+{
+	image "Textures/BaltardOut/brick040+.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "brick047"
+{
+	image "Textures/BaltardOut/brick047.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "briques"
+{
+	image "Textures/BaltardOut/briques.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "buisson"
+{
+	image "Textures/BaltardOut/buisson.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "cabine_telephone_metal"
+{
+	image "Textures/BaltardOut/cabine_telephone_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "cabine_telephone_phone"
+{
+	image "Textures/BaltardOut/cabine_telephone_phone.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "camera"
+{
+	image "Textures/BaltardOut/camera.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "cartons"
+{
+	image "Textures/BaltardOut/cartons.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "corbeille_bois"
+{
+	image "Textures/BaltardOut/corbeille_bois.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "corbeille_metal"
+{
+	image "Textures/BaltardOut/corbeille_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "corbeille_trash"
+{
+	image "Textures/BaltardOut/corbeille_trash.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "eau_sceau"
+{
+	image "Textures/BaltardOut/eau_sceau.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "feu_tricolore_metal"
+{
+	image "Textures/BaltardOut/feu_tricolore_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "feu_tricolore_pieton_vert"
+{
+	image "Textures/BaltardOut/feu_tricolore_pieton_vert.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "feu_tricolore_rouge"
+{
+	image "Textures/BaltardOut/feu_tricolore_rouge.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "feuille_chene"
+{
+	image "Textures/BaltardOut/feuille_chene.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "feuille_saule"
+{
+	image "Textures/BaltardOut/feuille_saule.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "font_bois_baltard"
+{
+	image "Textures/BaltardOut/font_bois_baltard.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "grille"
+{
+	image "Textures/BaltardOut/grille.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "grille_parc"
+{
+	image "Textures/BaltardOut/grille_parc.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "herbe"
+{
+	image "Textures/BaltardOut/herbe.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "maison_01"
+{
+	image "Textures/BaltardOut/maison_01.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "maison_02"
+{
+	image "Textures/BaltardOut/maison_02.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "maison_03"
+{
+	image "Textures/BaltardOut/maison_03.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "maison_04"
+{
+	image "Textures/BaltardOut/maison_04.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "metal_noir"
+{
+	image "Textures/BaltardOut/metal_noir.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "metal_or"
+{
+	image "Textures/BaltardOut/metal_or.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "mur_baltard_01"
+{
+	image "Textures/BaltardOut/mur_baltard_01.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "murcim001"
+{
+	image "Textures/BaltardOut/murcim001.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "panneau_place_mog"
+{
+	image "Textures/BaltardOut/panneau_place_mog.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "plan"
+{
+	image "Textures/BaltardOut/plan.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "plot_chantier_plastique"
+{
+	image "Textures/BaltardOut/plot_chantier_plastique.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "porte_metal"
+{
+	image "Textures/BaltardOut/porte_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "poubelle_plastik_gris"
+{
+	image "Textures/BaltardOut/poubelle_plastik_gris.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "poubelle_plastik_noir"
+{
+	image "Textures/BaltardOut/poubelle_plastik_noir.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "poubelle_plastik_vert"
+{
+	image "Textures/BaltardOut/poubelle_plastik_vert.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "rembarde_muret"
+{
+	image "Textures/BaltardOut/rembarde_muret.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "reverbere_metal"
+{
+	image "Textures/BaltardOut/reverbere_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "reverbere_vitre"
+{
+	image "Textures/BaltardOut/reverbere_vitre.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "road12"
+{
+	image "Textures/BaltardOut/road12.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "sol_carrele"
+{
+	image "Textures/BaltardOut/sol_carrele.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "tronc_chene"
+{
+	image "Textures/BaltardOut/tronc_chene.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "tronc_saule"
+{
+	image "Textures/BaltardOut/tronc_saule.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "visiophone"
+{
+	image "Textures/BaltardOut/visiophone.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "wet_floor"
+{
+	image "Textures/BaltardOut/wet_floor.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}

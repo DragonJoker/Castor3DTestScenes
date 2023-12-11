@@ -1,1119 +1,1008 @@
-
 // Materials
 
-material "baffles_boite/baffles"
+material "table_haute/cuivre"
 {
+
 	pass
 	{
-		albedo 0.588235 0.588235 0.588235
-		specular 0.0900000 0.0900000 0.0900000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/baffles.jpg" rgb
-		}
-	}
-}
-
-material "barriere_verre/metal"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 1.00000 1.00000 1.00000
-		glossiness 0.8
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/barriere_metal.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			specular_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/barriere_metal.jpg" rgb
-		}
-	}
-}
-
-material "barriere_verre/verre"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.324000 0.324000 0.324000
-		glossiness 0.9
-		alpha_blend_mode interpolative
-
-		texture_unit
-		{
-			levels_count 6
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/barriere_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel opacity
-			image "Textures/BoitePBRSG/barriere_verre.png" a
-		}
-	}
-}
-
-material "bars_boite/bois"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.126000 0.126000 0.126000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_bois.jpg" rgb
-		}
-	}
-}
-
-material "bars_boite/bois_noir"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.100000 0.100000 0.100000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_bois_noir.jpg" rgb
-		}
-	}
-}
-
-material "bars_boite/bouteilles"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_bouteille_01.jpg" rgb
-		}
-	}
-}
-
-material "bars_boite/bouteilles02"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_bouteille_02.jpg" rgb
-		}
-	}
-}
-
-material "bars_boite/bouteilles03"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_bouteille_03.jpg" rgb
-		}
-	}
-}
-
-material "bars_boite/bouteilles04"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_bouteille_04.jpg" rgb
-		}
-	}
-}
-
-material "bars_boite/distrib_biere"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 8
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/distrib_biere.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 8
-			specular_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/distrib_biere.jpg" rgb
-		}
-	}
-}
-
-material "bars_boite/grille_biere"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/grille_biere.jpg" rgb
-		}
-	}
-}
-
-material "bars_boite/lumiere"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		emissive_colour 0.588000 0.588000 0.588000
-		emissive 2.0
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			emissive_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_lumiere.jpg" rgb
-		}
+		colour_hdr 0.666667 0.501961 0.00392157
+		specular_colour 0.459000 0.459000 0.459000
+		roughness 0.100000
 	}
 }
 
 material "bars_boite/metal"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 1.00000
-		specular 1.00000 1.00000 1.00000
-		glossiness 0.8
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.200000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_metal.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			specular_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_metal.jpg" rgb
-		}
-	}
-}
-
-material "bars_boite/porte_bar"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_porte.jpg" rgb
-		}
-	}
-}
-
-material "bars_boite/verre"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.270000 0.270000 0.270000
-		glossiness 0.9
-		alpha_blend_mode interpolative
-
-		texture_unit
-		{
-			levels_count 6
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/bar_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel opacity
-			image "Textures/BoitePBRSG/bar_verre.png" a
-		}
-	}
-}
-
-material "boite/murs"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.0
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/mur_boite.jpg" rgb
-		}
-	}
-}
-
-material "boite/noir"
-{
-	pass
-	{
-		albedo 0.000000 0.000000 0.000000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-	}
-}
-
-material "boite/parquet 1"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/parquet_boite.jpg" rgb
-		}
-	}
-}
-
-material "boite/parquet 2"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/parquet_boite.jpg" rgb
-		}
-	}
-}
-
-material "boite/plafond"
-{
-	pass
-	{
-		albedo 0.588235 0.588235 0.588235
-		specular 0.117000 0.117000 0.117000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/plafond_boite.jpg" rgb
-		}
-	}
-}
-
-material "boite/porte"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 8
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/porte_boite.jpg" rgb
-		}
-	}
-}
-
-material "boite/sol 1"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 10
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/beton_boite.jpg" rgb
-		}
-	}
-}
-
-material "boite/sol 2"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 10
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/beton_boite.jpg" rgb
-		}
-	}
-}
-
-material "boite/sol 3"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 10
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/beton_boite.jpg" rgb
-		}
-	}
-}
-
-material "canape_triple/canape_triple"
-{
-	pass
-	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 10
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/canape_bar.jpg" rgb
-		}
-	}
-}
-
-material "dj_boite/bloc"
-{
-	pass
-	{
-		albedo 0.588235 0.588235 0.588235
-		specular 0.117000 0.117000 0.117000
-		glossiness 0.5
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/dj_beton.jpg" rgb
-		}
-	}
-}
-
-material "dj_boite/metal"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 1.00000 1.00000 1.00000
-		glossiness 0.8
-		two_sided true
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/dj_metal.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			specular_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/dj_metal.jpg" rgb
+			texture "bar_metal"
 		}
 	}
 }
 
 material "dj_boite/piste"
 {
+
 	pass
 	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/dj_piste.jpg" rgb
+			texture "dj_piste"
 		}
 	}
 }
 
-material "dj_boite/table"
+material "boite/porte"
 {
+
 	pass
 	{
-		albedo 0.588235 0.588235 0.588235
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/dj_table.JPG" rgb
+			texture "porte_boite"
 		}
 	}
 }
 
-material "dj_boite/vinyle"
+material "table_haute/laque"
 {
+
 	pass
 	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
-
-		texture_unit
-		{
-			levels_count 8
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/dj_vinyle.jpg" rgb
-		}
+		colour_hdr 0.00000 0.00000 0.00000
+		specular_colour 0.315000 0.315000 0.315000
+		roughness 0.200000
 	}
 }
 
-material "escaliers_boite/metal"
+material "plante_05/plante_05"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 1.00000
-		specular 1.00000 1.00000 1.00000
-		glossiness 0.8
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+		alpha_func greater 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/barriere_metal.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			specular_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/barriere_metal.jpg" rgb
-		}
-	}
-}
-
-material "escaliers_boite/verre"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.324000 0.324000 0.324000
-		glossiness 0.9
-		alpha_blend_mode interpolative
-
-		texture_unit
-		{
-			levels_count 6
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/barriere_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 6
-			channel opacity
-			image "Textures/BoitePBRSG/barriere_verre.png" a
+			texture "plante_05"
 		}
 	}
 }
 
 material "fauteuil/gros_fauteuil_bar"
 {
+
 	pass
 	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 10
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/canape_bar.jpg" rgb
+			texture "canape_bar"
+		}
+	}
+}
+
+material "baffles_boite/baffles"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588235 0.588235 0.588235
+		specular_colour 0.0900000 0.0900000 0.0900000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "baffles"
+		}
+	}
+}
+
+material "barriere_verre/metal"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.200000
+
+		texture_unit
+		{
+			texture "barriere_metal"
+		}
+	}
+}
+
+material "barriere_verre/verre"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		alpha_blend_mode interpolative
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.324000 0.324000 0.324000
+		roughness 0.100000
+
+		texture_unit
+		{
+			texture "barriere_verre"
+		}
+	}
+}
+
+material "bars_boite/bois"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.126000 0.126000 0.126000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "bar_bois"
+		}
+	}
+}
+
+material "bars_boite/bois_noir"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.100000 0.100000 0.100000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "bar_bois_noir"
+		}
+	}
+}
+
+material "boite/sol 3"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "beton_boite"
+		}
+	}
+}
+
+material "bars_boite/bouteilles"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "bar_bouteille_01"
+		}
+	}
+}
+
+material "bars_boite/bouteilles02"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "bar_bouteille_02"
+		}
+	}
+}
+
+material "bars_boite/grille_biere"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "grille_biere"
+		}
+	}
+}
+
+material "bars_boite/bouteilles03"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "bar_bouteille_03"
+		}
+	}
+}
+
+material "bars_boite/bouteilles04"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "bar_bouteille_04"
+		}
+	}
+}
+
+material "bars_boite/distrib_biere"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "distrib_biere"
+		}
+	}
+}
+
+material "bars_boite/lumiere"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		emissive_colour 0.588000 0.588000 0.588000
+		emissive_factor 2.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "bar_lumiere"
+		}
+	}
+}
+
+material "bars_boite/porte_bar"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "bar_porte"
+		}
+	}
+}
+
+material "bars_boite/verre"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		alpha_blend_mode interpolative
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.270000 0.270000 0.270000
+		roughness 0.100000
+
+		texture_unit
+		{
+			texture "bar_verre"
+		}
+	}
+}
+
+material "boite/murs"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 1.00000
+
+		texture_unit
+		{
+			texture "mur_boite"
+		}
+	}
+}
+
+material "boite/noir"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.00000 0.00000 0.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+	}
+}
+
+material "boite/parquet 1"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "parquet_boite"
+		}
+	}
+}
+
+material "boite/parquet 2"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "parquet_boite"
+		}
+	}
+}
+
+material "boite/plafond"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588235 0.588235 0.588235
+		specular_colour 0.117000 0.117000 0.117000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "plafond_boite"
+		}
+	}
+}
+
+material "boite/sol 1"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "beton_boite"
+		}
+	}
+}
+
+material "boite/sol 2"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "beton_boite"
+		}
+	}
+}
+
+material "canape_triple/canape_triple"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "canape_bar"
+		}
+	}
+}
+
+material "dj_boite/bloc"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588235 0.588235 0.588235
+		specular_colour 0.117000 0.117000 0.117000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "dj_beton"
+		}
+	}
+}
+
+material "dj_boite/metal"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.200000
+
+		texture_unit
+		{
+			texture "dj_metal"
+		}
+	}
+}
+
+material "dj_boite/table"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588235 0.588235 0.588235
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "dj_table"
+		}
+	}
+}
+
+material "dj_boite/vinyle"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
+
+		texture_unit
+		{
+			texture "dj_vinyle"
+		}
+	}
+}
+
+material "escaliers_boite/metal"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.200000
+
+		texture_unit
+		{
+			texture "barriere_metal"
+		}
+	}
+}
+
+material "escaliers_boite/verre"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		alpha_blend_mode interpolative
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.324000 0.324000 0.324000
+		roughness 0.100000
+
+		texture_unit
+		{
+			texture "barriere_verre"
 		}
 	}
 }
 
 material "panneau_mural/panneau_pub"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 1.00000
-		specular 1.00000 1.00000 1.00000
-		glossiness 0.8
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.200000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/panneau_pub_metal.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			specular_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/panneau_pub_metal.jpg" rgb
+			texture "panneau_pub_metal"
 		}
 	}
 }
 
 material "panneau_mural/pub"
 {
+
 	pass
 	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/panneau_pub_pub_01.jpg" rgb
-		}
-	}
-}
-
-material "plante_05/plante_05"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		two_sided true
-		alpha_func greater 0.5
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/plante_05.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			channel opacity
-			image "Textures/BoitePBRSG/plante_05.png" a
+			texture "panneau_pub_pub_01"
 		}
 	}
 }
 
 material "plante_05/plante_pot"
 {
+
 	pass
 	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/plante_pot.jpg" rgb
+			texture "plante_pot"
 		}
 	}
 }
 
 material "plasma/ecran"
 {
+
 	pass
 	{
-		albedo 0.0392157 0.0392157 0.0392157
-		specular 0.135000 0.135000 0.135000
-		glossiness 0.5
+		lighting_model c3d.pbr
+		colour_hdr 0.0392157 0.0392157 0.0392157
+		specular_colour 0.135000 0.135000 0.135000
+		roughness 0.500000
+	}
+}
+
+material "table_verre/table_bar_verre"
+{
+
+	pass
+	{
+		lighting_model c3d.pbr
+		alpha_blend_mode interpolative
+		colour_hdr 1.00000 1.00000 1.00000
+		specular_colour 0.270000 0.270000 0.270000
+		roughness 0.100000
+
+		texture_unit
+		{
+			texture "table_bar_verre"
+		}
 	}
 }
 
 material "plasma/plasma"
 {
+
 	pass
 	{
-		albedo 0.117647 0.117647 0.117647
-		specular 0.0540000 0.0540000 0.0540000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 0.117647 0.117647 0.117647
+		specular_colour 0.0540000 0.0540000 0.0540000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/plasma.jpg" rgb
+			texture "plasma"
 		}
 	}
 }
 
 material "pouf/pouf"
 {
+
 	pass
 	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 10
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/pouf.jpg" rgb
+			texture "pouf"
 		}
 	}
 }
 
 material "spot_couleur/light bleu"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 0.000000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		emissive_colour 1.00000 1.00000 0.000000
-		emissive 2
-		two_sided true
+		lighting_model c3d.pbr
 		alpha_blend_mode interpolative
+		two_sided true
+		colour_hdr 1.00000 1.00000 0.00000
+		emissive_colour 1.00000 1.00000 0.00000
+		emissive_factor 2.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			channel opacity
-			image "Textures/BoitePBRSG/spot_light.png" a
+			texture "spot_light"
 		}
 	}
 }
 
 material "spot_couleur/light jaune"
 {
+
 	pass
 	{
-		albedo 0.000000 1.00000 0.000000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		emissive_colour 0.000000 1.00000 0.000000
-		emissive 2
-		two_sided true
+		lighting_model c3d.pbr
 		alpha_blend_mode interpolative
+		two_sided true
+		colour_hdr 0.00000 1.00000 0.00000
+		emissive_colour 0.00000 1.00000 0.00000
+		emissive_factor 2.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			channel opacity
-			image "Textures/BoitePBRSG/spot_light.png" a
+			texture "spot_light"
 		}
 	}
 }
 
 material "spot_couleur/light rouge"
 {
+
 	pass
 	{
-		albedo 0.000000 0.000000 1.00000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		emissive_colour 0.000000 0.000000 1.00000
-		emissive 2
-		two_sided true
+		lighting_model c3d.pbr
 		alpha_blend_mode interpolative
+		two_sided true
+		colour_hdr 0.00000 0.00000 1.00000
+		emissive_colour 0.00000 0.00000 1.00000
+		emissive_factor 2.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			channel opacity
-			image "Textures/BoitePBRSG/spot_light.png" a
+			texture "spot_light"
 		}
 	}
 }
 
 material "spot_couleur/light vert"
 {
+
 	pass
 	{
-		albedo 1.00000 0.000000 0.000000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		emissive_colour 1.00000 0.000000 0.000000
-		emissive 2
-		two_sided true
+		lighting_model c3d.pbr
 		alpha_blend_mode interpolative
+		two_sided true
+		colour_hdr 1.00000 0.00000 0.00000
+		emissive_colour 1.00000 0.00000 0.00000
+		emissive_factor 2.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			channel opacity
-			image "Textures/BoitePBRSG/spot_light.png" a
+			texture "spot_light"
 		}
 	}
 }
 
 material "spot_couleur/lumiere"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		emissive 2
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		emissive_colour 1.00000 1.00000 1.00000
+		emissive_factor 2.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 8
-			albedo_mask 0x00FFFFFF
-			emissive_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/spot_couleur_lumiere.jpg" rgb
+			texture "spot_couleur_lumiere"
 		}
 	}
 }
 
 material "spot_couleur/metal"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 1.00000
-		specular 1.00000 1.00000 1.00000
-		glossiness 0.8
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.200000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/spot_couleur_metal.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			specular_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/spot_couleur_metal.jpg" rgb
+			texture "spot_couleur_metal"
 		}
 	}
 }
 
 material "spot_simple/light"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		emissive 2
+		lighting_model c3d.pbr
 		alpha_blend_mode interpolative
+		colour_hdr 1.00000 1.00000 1.00000
+		emissive_colour 1.00000 1.00000 1.00000
+		emissive_factor 2.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			emissive_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/spot_light.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			channel opacity
-			image "Textures/BoitePBRSG/spot_light.png" a
+			texture "spot_light"
 		}
 	}
 }
 
 material "spot_simple/lumiere"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
-		emissive 2
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		emissive_colour 1.00000 1.00000 1.00000
+		emissive_factor 2.00000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 8
-			albedo_mask 0x00FFFFFF
-			emissive_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/spot_simple_lumiere.jpg" rgb
+			texture "spot_simple_lumiere"
 		}
 	}
 }
 
 material "spot_simple/metal"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 1.00000
-		specular 1.00000 1.00000 1.00000
-		glossiness 0.8
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.200000
 
 		texture_unit
 		{
-			levels_count 7
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/spot_simple_metal.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 7
-			specular_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/spot_simple_metal.jpg" rgb
+			texture "spot_simple_metal"
 		}
 	}
 }
 
 material "table_basse/table_basse_cuivre"
 {
+
 	pass
 	{
-		albedo 0.666667 0.501961 0.00392157
-		specular 0.459000 0.459000 0.459000
-		glossiness 0.9
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 0.666667 0.501961 0.00392157
+		specular_colour 0.459000 0.459000 0.459000
+		roughness 0.100000
 	}
 }
 
 material "table_basse/table_basse_laque"
 {
-	pass
-	{
-		albedo 0.000000 0.000000 0.000000
-		specular 0.315000 0.315000 0.315000
-		glossiness 0.8
-		two_sided true
-	}
-}
 
-material "table_haute/cuivre"
-{
 	pass
 	{
-		albedo 0.666667 0.501961 0.00392157
-		specular 0.459000 0.459000 0.459000
-		glossiness 0.9
+		lighting_model c3d.pbr
 		two_sided true
-	}
-}
-
-material "table_haute/laque"
-{
-	pass
-	{
-		albedo 0.000000 0.000000 0.000000
-		specular 0.315000 0.315000 0.315000
-		glossiness 0.8
-		two_sided true
+		colour_hdr 0.00000 0.00000 0.00000
+		specular_colour 0.315000 0.315000 0.315000
+		roughness 0.200000
 	}
 }
 
 material "table_verre/table_bar_fer_forge"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 1.00000
-		specular 1.00000 1.00000 1.00000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/table_bar_fer_forge.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			specular_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/table_bar_fer_forge.jpg" rgb
-		}
-	}
-}
-
-material "table_verre/table_bar_verre"
-{
-	pass
-	{
-		albedo 1.00000 1.00000 1.00000
-		specular 0.270000 0.270000 0.270000
-		glossiness 0.9
-		alpha_blend_mode interpolative
-
-		texture_unit
-		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/table_bar_verre.png" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			channel opacity
-			image "Textures/BoitePBRSG/table_bar_verre.png" a
+			texture "table_bar_fer_forge"
 		}
 	}
 }
 
 material "tabouret_boite/cuir"
 {
+
 	pass
 	{
-		albedo 0.588000 0.588000 0.588000
-		specular 0.000000 0.000000 0.000000
-		glossiness 0.5
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 0.588000 0.588000 0.588000
+		specular_colour 0.00000 0.00000 0.00000
+		roughness 0.500000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/tabouret_cuir.jpg" rgb
+			texture "tabouret_cuir"
 		}
 	}
 }
 
 material "tabouret_boite/metal"
 {
+
 	pass
 	{
-		albedo 1.00000 1.00000 1.00000
-		specular 1.00000 1.00000 1.00000
-		glossiness 0.8
+		lighting_model c3d.pbr
 		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.200000
 
 		texture_unit
 		{
-			levels_count 9
-			albedo_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/tabouret_metal.jpg" rgb
-		}
-
-		texture_unit
-		{
-			levels_count 9
-			specular_mask 0x00FFFFFF
-			image "Textures/BoitePBRSG/tabouret_metal.jpg" rgb
+			texture "tabouret_metal"
 		}
 	}
 }

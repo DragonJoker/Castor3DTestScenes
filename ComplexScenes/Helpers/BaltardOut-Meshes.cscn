@@ -1,0 +1,304 @@
+// Meshes
+
+mesh "abris_bus"
+{
+	import "Meshes/BaltardOut/abris_bus.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "cabine_telephone"
+{
+	import "Meshes/BaltardOut/cabine_telephone.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "arbre_rue"
+{
+	import "Meshes/BaltardOut/arbre_rue.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "barriere_crs"
+{
+	import "Meshes/BaltardOut/barriere_crs.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "banc"
+{
+	import "Meshes/BaltardOut/banc.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "camera_surveillance_gauche"
+{
+	import "Meshes/BaltardOut/camera_surveillance_gauche.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "saule_pleureur"
+{
+	import "Meshes/BaltardOut/saule_pleureur.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "barriere_chantier"
+{
+	import "Meshes/BaltardOut/barriere_chantier.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "borne_incendie"
+{
+	import "Meshes/BaltardOut/borne_incendie.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "cartons"
+{
+	import "Meshes/BaltardOut/cartons.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "chene"
+{
+	import "Meshes/BaltardOut/chene.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "corbeille"
+{
+	import "Meshes/BaltardOut/corbeille.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "entree_station"
+{
+	import "Meshes/BaltardOut/entree_station.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+		material 4 "C3D_DefaultMaterial"
+		material 5 "C3D_DefaultMaterial"
+		material 6 "C3D_DefaultMaterial"
+		material 7 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "pavillon_baltard"
+{
+	import "Meshes/BaltardOut/pavillon_baltard.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+		material 4 "C3D_DefaultMaterial"
+		material 5 "C3D_DefaultMaterial"
+		material 6 "C3D_DefaultMaterial"
+		material 7 "C3D_DefaultMaterial"
+		material 8 "C3D_DefaultMaterial"
+		material 9 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "feu_tricolore"
+{
+	import "Meshes/BaltardOut/feu_tricolore.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "grille_baltard_out"
+{
+	import "Meshes/BaltardOut/grille_baltard_out.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "interphone"
+{
+	import "Meshes/BaltardOut/interphone.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "maison_baltard_01"
+{
+	import "Meshes/BaltardOut/maison_baltard_01.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "maison_baltard_02"
+{
+	import "Meshes/BaltardOut/maison_baltard_02.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "maison_baltard_03"
+{
+	import "Meshes/BaltardOut/maison_baltard_03.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "maison_baltard_04"
+{
+	import "Meshes/BaltardOut/maison_baltard_04.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "maison_baltard_05"
+{
+	import "Meshes/BaltardOut/maison_baltard_05.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "maison_baltard_06"
+{
+	import "Meshes/BaltardOut/maison_baltard_06.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "maison_baltard_07"
+{
+	import "Meshes/BaltardOut/maison_baltard_07.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "plot_chantier"
+{
+	import "Meshes/BaltardOut/plot_chantier.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
+mesh "poubelle"
+{
+	import "Meshes/BaltardOut/poubelle.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "reverbere"
+{
+	import "Meshes/BaltardOut/reverbere.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "road_structure"
+{
+	import "Meshes/BaltardOut/road_structure.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+		material 4 "C3D_DefaultMaterial"
+		material 5 "C3D_DefaultMaterial"
+		material 6 "C3D_DefaultMaterial"
+		material 7 "C3D_DefaultMaterial"
+		material 8 "C3D_DefaultMaterial"
+		material 9 "C3D_DefaultMaterial"
+		material 10 "C3D_DefaultMaterial"
+		material 11 "C3D_DefaultMaterial"
+		material 12 "C3D_DefaultMaterial"
+		material 13 "C3D_DefaultMaterial"
+		material 14 "C3D_DefaultMaterial"
+		material 15 "C3D_DefaultMaterial"
+		material 16 "C3D_DefaultMaterial"
+		material 17 "C3D_DefaultMaterial"
+		material 18 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "wet_floor"
+{
+	import "Meshes/BaltardOut/wet_floor.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+	}
+}

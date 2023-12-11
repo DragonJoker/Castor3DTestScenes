@@ -1,23 +1,15 @@
 // Lights
 
-define spotBarRange 1000.0
-define spotBarIntensity 1000.0 1000.0
-
-define spotSceneRange 2000.0
-define spotSceneIntensity 2000.0 2000.0
-
-define spotFloorRange 2000.0
-define spotFloorIntensity 2000.0 2000.0
-
 light "bar_spot_01"
 {
 	parent "bar_spot_01"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "bar_spot_02"
@@ -25,10 +17,11 @@ light "bar_spot_02"
 	parent "bar_spot_02"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "bar_spot_03"
@@ -36,10 +29,11 @@ light "bar_spot_03"
 	parent "bar_spot_03"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "bar_spot_04"
@@ -47,10 +41,11 @@ light "bar_spot_04"
 	parent "bar_spot_04"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "bar_spot_05"
@@ -58,10 +53,11 @@ light "bar_spot_05"
 	parent "bar_spot_05"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "bar_spot_06"
@@ -69,10 +65,11 @@ light "bar_spot_06"
 	parent "bar_spot_06"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "bar_spot_07"
@@ -80,10 +77,11 @@ light "bar_spot_07"
 	parent "bar_spot_07"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "bar_spot_08"
@@ -91,10 +89,11 @@ light "bar_spot_08"
 	parent "bar_spot_08"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "blue_spot"
@@ -102,10 +101,11 @@ light "blue_spot"
 	parent "blue_spot"
 	type spot
 	colour 0.00000 0.00000 1.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "green_spot"
@@ -113,21 +113,11 @@ light "green_spot"
 	parent "green_spot"
 	type spot
 	colour 0.00000 1.00000 0.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
-}
-
-light "upstairs_bar_spot_05"
-{
-	parent "upstairs_bar_spot_05"
-	type spot
-	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
-	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "red_spot"
@@ -135,10 +125,11 @@ light "red_spot"
 	parent "red_spot"
 	type spot
 	colour 1.00000 0.00000 0.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "scene_spot_01"
@@ -146,10 +137,11 @@ light "scene_spot_01"
 	parent "scene_spot_01"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "scene_spot_02"
@@ -157,10 +149,11 @@ light "scene_spot_02"
 	parent "scene_spot_02"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "scene_spot_03"
@@ -168,10 +161,11 @@ light "scene_spot_03"
 	parent "scene_spot_03"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "scene_spot_04"
@@ -179,10 +173,11 @@ light "scene_spot_04"
 	parent "scene_spot_04"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "scene_spot_05"
@@ -190,10 +185,11 @@ light "scene_spot_05"
 	parent "scene_spot_05"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "scene_spot_06"
@@ -201,10 +197,11 @@ light "scene_spot_06"
 	parent "scene_spot_06"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "scene_spot_07"
@@ -212,10 +209,11 @@ light "scene_spot_07"
 	parent "scene_spot_07"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "scene_spot_08"
@@ -223,10 +221,11 @@ light "scene_spot_08"
 	parent "scene_spot_08"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "spot_01"
@@ -234,10 +233,11 @@ light "spot_01"
 	parent "spot_01"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotFloorIntensity
-	range spotFloorRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "spot_02"
@@ -245,10 +245,11 @@ light "spot_02"
 	parent "spot_02"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotFloorIntensity
-	range spotFloorRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "spot_03"
@@ -256,10 +257,11 @@ light "spot_03"
 	parent "spot_03"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotFloorIntensity
-	range spotFloorRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "spot_04"
@@ -267,10 +269,11 @@ light "spot_04"
 	parent "spot_04"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotFloorIntensity
-	range spotFloorRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "spot_05"
@@ -278,10 +281,11 @@ light "spot_05"
 	parent "spot_05"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotFloorIntensity
-	range spotFloorRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "spot_06"
@@ -289,10 +293,11 @@ light "spot_06"
 	parent "spot_06"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotFloorIntensity
-	range spotFloorRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "spot_07"
@@ -300,10 +305,11 @@ light "spot_07"
 	parent "spot_07"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotFloorIntensity
-	range spotFloorRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "spot_08"
@@ -311,10 +317,11 @@ light "spot_08"
 	parent "spot_08"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotFloorIntensity
-	range spotFloorRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "spot_09"
@@ -322,10 +329,11 @@ light "spot_09"
 	parent "spot_09"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotFloorIntensity
-	range spotFloorRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "spot_10"
@@ -333,10 +341,11 @@ light "spot_10"
 	parent "spot_10"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotFloorIntensity
-	range spotFloorRange
+	intensity 2000.00 2000.00
+	range 2000.00
 	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }
 
 light "upstairs_bar_spot_01"
@@ -344,10 +353,11 @@ light "upstairs_bar_spot_01"
 	parent "upstairs_bar_spot_01"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "upstairs_bar_spot_02"
@@ -355,10 +365,11 @@ light "upstairs_bar_spot_02"
 	parent "upstairs_bar_spot_02"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "upstairs_bar_spot_03"
@@ -366,10 +377,11 @@ light "upstairs_bar_spot_03"
 	parent "upstairs_bar_spot_03"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "upstairs_bar_spot_04"
@@ -377,21 +389,23 @@ light "upstairs_bar_spot_04"
 	parent "upstairs_bar_spot_04"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
-light "upstairs_bar_spot_19"
+light "upstairs_bar_spot_05"
 {
-	parent "upstairs_bar_spot_19"
+	parent "upstairs_bar_spot_05"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "upstairs_bar_spot_06"
@@ -399,10 +413,11 @@ light "upstairs_bar_spot_06"
 	parent "upstairs_bar_spot_06"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "upstairs_bar_spot_07"
@@ -410,21 +425,11 @@ light "upstairs_bar_spot_07"
 	parent "upstairs_bar_spot_07"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
-}
-
-light "yellow_spot"
-{
-	parent "yellow_spot"
-	type spot
-	colour 1.00000 1.00000 0.00000
-	intensity spotSceneIntensity
-	range spotSceneRange
-	exponent 1.00000
-	cut_off 10.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "upstairs_bar_spot_08"
@@ -432,10 +437,11 @@ light "upstairs_bar_spot_08"
 	parent "upstairs_bar_spot_08"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
 }
 
 light "upstairs_bar_spot_09"
@@ -443,8 +449,33 @@ light "upstairs_bar_spot_09"
 	parent "upstairs_bar_spot_09"
 	type spot
 	colour 1.00000 1.00000 1.00000
-	intensity spotBarIntensity
-	range spotBarRange
+	intensity 1000.00 1000.00
+	range 1000.00
 	exponent 1.00000
-	cut_off 45.0000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
+}
+
+light "upstairs_bar_spot_19"
+{
+	parent "upstairs_bar_spot_19"
+	type spot
+	colour 1.00000 1.00000 1.00000
+	intensity 1000.00 1000.00
+	range 1000.00
+	exponent 1.00000
+	inner_cut_off 22.5000
+	outer_cut_off 45.0000
+}
+
+light "yellow_spot"
+{
+	parent "yellow_spot"
+	type spot
+	colour 1.00000 1.00000 0.00000
+	intensity 2000.00 2000.00
+	range 2000.00
+	exponent 1.00000
+	inner_cut_off 5.00000
+	outer_cut_off 10.0000
 }

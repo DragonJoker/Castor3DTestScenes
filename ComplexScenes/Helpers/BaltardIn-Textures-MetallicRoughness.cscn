@@ -1,0 +1,156 @@
+// Textures
+
+texture "baffles"
+{
+	image "Textures/BaltardIn/baffles.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_bronze"
+{
+	image "Textures/BaltardIn/baltar_bronze.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_int_bois"
+{
+	image "Textures/BaltardIn/baltar_int_bois.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_int_ciment"
+{
+	image "Textures/BaltardIn/baltar_int_ciment.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_int_grille"
+{
+	image "Textures/BaltardIn/baltar_int_grille.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_int_mur"
+{
+	image "Textures/BaltardIn/baltar_int_mur.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_int_sol"
+{
+	image "Textures/BaltardIn/baltar_int_sol.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_int_vitre"
+{
+	image "Textures/BaltardIn/baltar_int_vitre.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "baltar_metal_bleu"
+{
+	image "Textures/BaltardIn/baltar_metal_bleu.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "barriere_verre"
+{
+	image "Textures/BaltardIn/barriere_verre.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bois_ns"
+{
+	image "Textures/BaltardIn/bois_ns.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "cube_ns_01"
+{
+	image "Textures/BaltardIn/cube_ns_01.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "cube_ns_02"
+{
+	image "Textures/BaltardIn/cube_ns_02.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "gradin_ns"
+{
+	image "Textures/BaltardIn/gradin_ns.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "marche_ns"
+{
+	image "Textures/BaltardIn/marche_ns.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "ns_bg"
+{
+	image "Textures/BaltardIn/ns_bg.dds"
+	colour_mask 0x00ffffff
+	emissive_mask 0x00ffffff
+	invert_y true
+}
+
+texture "piste_ns"
+{
+	image "Textures/BaltardIn/piste_ns.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "piste_ns_02"
+{
+	image "Textures/BaltardIn/piste_ns_02.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "plasma"
+{
+	image "Textures/BaltardIn/plasma.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "spot_light"
+{
+	image "Textures/BaltardIn/spot_light.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	emissive_mask 0x00ffffff
+	invert_y true
+}
+
+texture "spot_simple_metal"
+{
+	image "Textures/BaltardIn/spot_simple_metal.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}

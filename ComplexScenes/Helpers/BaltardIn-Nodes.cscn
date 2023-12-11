@@ -1,14 +1,14 @@
-// Objects nodes
+// Nodes
+
 scene_node "main"
 {
-	scale 0.1 0.1 0.1
+	scale 0.100000 0.100000 0.100000
 }
 
 scene_node "boule_facettes"
 {
 	parent "main"
-	orientation 1 0 0 0
-	position 0 985 -75
+	position 0.00000 985.000 -75.0000
 	scale 1.60588 1.60588 1.60588
 }
 
@@ -16,7 +16,7 @@ scene_node "plasma"
 {
 	parent "main"
 	orientation 0 -1 0 180
-	position -4690 620 -54180
+	position -4690.00 620.000 -54180.0
 	scale 2.32381 2.32381 2.32381
 }
 
@@ -24,7 +24,7 @@ scene_node "plasma_1"
 {
 	parent "main"
 	orientation 0 -1 0 180
-	position 5 595 1970
+	position 5.00000 595.000 1970.00
 	scale 3.12889 3.12889 3.12889
 }
 
@@ -32,7 +32,7 @@ scene_node "plasma_2"
 {
 	parent "main"
 	orientation 0 -1 0 148
-	position 1280 755 1225
+	position 1280.00 755.000 1225.00
 	scale 1.07744 1.07744 1.07744
 }
 
@@ -40,6 +40,6 @@ scene_node "plasma_3"
 {
 	parent "main"
 	orientation 0 -1 0 212
-	position -1250 755 1230
+	position -1250.00 755.000 1230.00
 	scale 1.07744 1.07744 1.07744
 }

@@ -4,14 +4,15 @@ materials c3d.pbr
 scene "BaltardOut"
 {
 	// Scene configuration
-	ambient_light 1.000000 1.000000 1.000000
+	ambient_light 1.00000 1.00000 1.00000
 	background_colour 0.500000 0.500000 0.500000
 	lpv_indirect_attenuation 1.70000
-	include "Helpers/SpecularGlossiness-BaltardOut-Materials.cscn"
-	include "Helpers/SpecularGlossiness-BaltardOut-Meshes.cscn"
-	include "Helpers/SpecularGlossiness-BaltardOut-Nodes.cscn"
-	include "Helpers/SpecularGlossiness-BaltardOut-Objects.cscn"
-	include "Helpers/SpecularGlossiness-BaltardOut-Lights.cscn"
+	include "Helpers/BaltardOut-Textures-SpecularGlossiness.cscn"
+	include "Helpers/BaltardOut-Materials-SpecularGlossiness.cscn"
+	include "Helpers/BaltardOut-Meshes.cscn"
+	include "Helpers/BaltardOut-Nodes.cscn"
+	include "Helpers/BaltardOut-Objects.cscn"
+	include "Helpers/BaltardOut-Lights-SpecularGlossiness.cscn"
 
 	//Skybox
 
@@ -30,7 +31,7 @@ scene "BaltardOut"
 		solarIrradiance 1.00000 1.00000 1.00000
 		sunAngularRadius 0.00467500
 		absorptionExtinction 0.000650000 0.00188100 8.50000e-05
-		maxSunZenithAngle 1.78024
+		maxSunZenithAngle 0.0310714
 		rayleighScattering 0.00580200 0.0135580 0.0331000
 		mieScattering 0.00399600 0.00399600 0.00399600
 		miePhaseFunctionG 0.800000
@@ -141,15 +142,9 @@ scene "BaltardOut"
 		{
 			type perspective
 			near 1.00000
-			far 11000.00
+			far 11000.0
 			aspect_ratio 1.77800
 			fov_y 45.0000
-		}
-
-		hdr_config
-		{
-			exposure 1.00000
-			gamma 2.20000
 		}
 	}
 }

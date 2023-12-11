@@ -3,6 +3,7 @@
 mesh "baltard_in_ns"
 {
 	import "Meshes/BaltardIn/baltard_in_ns.cmsh"
+
 	default_materials
 	{
 		material 0 "baltard_in_ns/piste_ns_01"
@@ -26,9 +27,21 @@ mesh "baltard_in_ns"
 	}
 }
 
+mesh "plasma"
+{
+	import "Meshes/BaltardIn/plasma.cmsh"
+
+	default_materials
+	{
+		material 0 "plasma/ecran"
+		material 1 "plasma/plasma"
+	}
+}
+
 mesh "pavillon_baltard_in"
 {
 	import "Meshes/BaltardIn/pavillon_baltard_in.cmsh"
+
 	default_materials
 	{
 		material 0 "pavillon_baltard_in/vitres"
@@ -43,15 +56,5 @@ mesh "pavillon_baltard_in"
 		material 9 "pavillon_baltard_in/light"
 		material 10 "pavillon_baltard_in/metal_bleu"
 		material 11 "pavillon_baltard_in/black"
-	}
-}
-
-mesh "plasma"
-{
-	import "Meshes/BaltardIn/plasma.cmsh"
-	default_materials
-	{
-		material 0 "plasma/ecran"
-		material 1 "plasma/plasma"
 	}
 }

@@ -1,0 +1,304 @@
+// Textures
+
+texture "baffles"
+{
+	image "Textures/Boite/baffles.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bar_bois"
+{
+	image "Textures/Boite/bar_bois.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bar_bois_noir"
+{
+	image "Textures/Boite/bar_bois_noir.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bar_bouteille_01"
+{
+	image "Textures/Boite/bar_bouteille_01.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bar_bouteille_02"
+{
+	image "Textures/Boite/bar_bouteille_02.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bar_bouteille_03"
+{
+	image "Textures/Boite/bar_bouteille_03.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bar_bouteille_04"
+{
+	image "Textures/Boite/bar_bouteille_04.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bar_lumiere"
+{
+	image "Textures/Boite/bar_lumiere.dds"
+	colour_mask 0x00ffffff
+	emissive_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bar_metal"
+{
+	image "Textures/Boite/bar_metal.dds"
+	colour_mask 0x00ffffff
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bar_porte"
+{
+	image "Textures/Boite/bar_porte.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "bar_verre"
+{
+	image "Textures/Boite/bar_verre.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "barriere_metal"
+{
+	image "Textures/Boite/barriere_metal.dds"
+	colour_mask 0x00ffffff
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "barriere_verre"
+{
+	image "Textures/Boite/barriere_verre.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "beton_boite"
+{
+	image "Textures/Boite/beton_boite.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "canape_bar"
+{
+	image "Textures/Boite/canape_bar.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "distrib_biere"
+{
+	image "Textures/Boite/distrib_biere.dds"
+	colour_mask 0x00ffffff
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "dj_beton"
+{
+	image "Textures/Boite/dj_beton.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "dj_metal"
+{
+	image "Textures/Boite/dj_metal.dds"
+	colour_mask 0x00ffffff
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "dj_piste"
+{
+	image "Textures/Boite/dj_piste.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "dj_table"
+{
+	image "Textures/Boite/dj_table.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "dj_vinyle"
+{
+	image "Textures/Boite/dj_vinyle.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "grille_biere"
+{
+	image "Textures/Boite/grille_biere.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "mur_boite"
+{
+	image "Textures/Boite/mur_boite.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "panneau_pub_metal"
+{
+	image "Textures/Boite/panneau_pub_metal.dds"
+	colour_mask 0x00ffffff
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "panneau_pub_pub_01"
+{
+	image "Textures/Boite/panneau_pub_pub_01.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "parquet_boite"
+{
+	image "Textures/Boite/parquet_boite.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "plafond_boite"
+{
+	image "Textures/Boite/plafond_boite.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "plante_05"
+{
+	image "Textures/Boite/plante_05.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "plante_pot"
+{
+	image "Textures/Boite/plante_pot.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "plasma"
+{
+	image "Textures/Boite/plasma.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "porte_boite"
+{
+	image "Textures/Boite/porte_boite.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "pouf"
+{
+	image "Textures/Boite/pouf.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "spot_couleur_lumiere"
+{
+	image "Textures/Boite/spot_couleur_lumiere.dds"
+	colour_mask 0x00ffffff
+	emissive_mask 0x00ffffff
+	invert_y true
+}
+
+texture "spot_couleur_metal"
+{
+	image "Textures/Boite/spot_couleur_metal.dds"
+	colour_mask 0x00ffffff
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "spot_light"
+{
+	image "Textures/Boite/spot_light.dds"
+	opacity_mask 0xff000000
+	invert_y true
+}
+
+texture "spot_simple_lumiere"
+{
+	image "Textures/Boite/spot_simple_lumiere.dds"
+	colour_mask 0x00ffffff
+	emissive_mask 0x00ffffff
+	invert_y true
+}
+
+texture "spot_simple_metal"
+{
+	image "Textures/Boite/spot_simple_metal.dds"
+	colour_mask 0x00ffffff
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "table_bar_fer_forge"
+{
+	image "Textures/Boite/table_bar_fer_forge.dds"
+	colour_mask 0x00ffffff
+	specular_mask 0x00ffffff
+	invert_y true
+}
+
+texture "table_bar_verre"
+{
+	image "Textures/Boite/table_bar_verre.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "tabouret_cuir"
+{
+	image "Textures/Boite/tabouret_cuir.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "tabouret_metal"
+{
+	image "Textures/Boite/tabouret_metal.dds"
+	colour_mask 0x00ffffff
+	specular_mask 0x00ffffff
+	invert_y true
+}

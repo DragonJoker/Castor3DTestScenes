@@ -1,5 +1,5 @@
 // Global configuration
-materials pbr
+materials c3d.pbr
 
 scene "Boite"
 {
@@ -7,27 +7,13 @@ scene "Boite"
 	ambient_light 1.00000 1.00000 1.00000
 	background_colour 0.0100000 0.0100000 0.0100000
 	lpv_indirect_attenuation 1.70000
+	include "Helpers/Boite-Samplers.cscn"
+	include "Helpers/Boite-Textures-MetallicRoughness.cscn"
 	include "Helpers/Boite-Materials-MetallicRoughness.cscn"
 	include "Helpers/Boite-Meshes.cscn"
 	include "Helpers/Boite-Nodes.cscn"
 	include "Helpers/Boite-Objects.cscn"
 	include "Helpers/Boite-Lights.cscn"
-
-	//Voxel Cone Tracing
-
-	voxel_cone_tracing
-	{
-		enabled false
-		grid_size 2
-		conservative_rasterization false
-		temporal_smoothing false
-		occlusion false
-		secondary_bounce false
-		num_cones 2
-		max_distance 20.0000
-		ray_step_size 0.750000
-		voxel_size 1.00000
-	}
 
 	//Cameras nodes
 
@@ -46,16 +32,10 @@ scene "Boite"
 		viewport
 		{
 			type perspective
-			near 0.50000
-			far 1200.0
+			near 0.500000
+			far 1200.00
 			aspect_ratio 1.77800
 			fov_y 45.0000
-		}
-
-		hdr_config
-		{
-			exposure 1.00000
-			gamma 2.20000
 		}
 	}
 }
@@ -82,7 +62,7 @@ window "RenderPanel"
 			use_normals_buffer false
 			blur_high_quality false
 			intensity 1.00000
-			radius 5.0000
+			radius 5.00000
 			bias 0.0230000
 			num_samples 19
 			edge_sharpness 1.00000

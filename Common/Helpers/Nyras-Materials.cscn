@@ -186,8 +186,8 @@ material "PBRHead"
 		{
 			sampler "Trilinear"
 			levels_count 10
-			image "Textures/Nyras/head-transmittance.png"
-			transmittance_mask 0xff000000
+			image "Textures/Nyras/head-roughnesstransmittance.dds"
+			transmittance_mask 0x0000ff00
 		}
 
 		subsurface_scattering
@@ -389,8 +389,8 @@ material "ToonPBRHead"
 		{
 			sampler "Trilinear"
 			levels_count 10
-			image "Textures/Nyras/head-transmittance.png"
-			transmittance_mask 0xff000000
+			image "Textures/Nyras/head-roughnesstransmittance.dds"
+			transmittance_mask 0x0000ff00
 		}
 
 		subsurface_scattering

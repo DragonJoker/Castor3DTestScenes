@@ -1,5 +1,22 @@
 // Meshes
 
+mesh "table_basse"
+{
+	import "Meshes/Boite/table_basse.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "baffles_boite"
+{
+	import "Meshes/Boite/baffles_boite.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
 mesh "boite"
 {
 	import "Meshes/Boite/boite.cmsh"
@@ -18,23 +35,6 @@ mesh "boite"
 	}
 }
 
-mesh "table_basse"
-{
-	import "Meshes/Boite/table_basse.cmsh"
-
-	default_materials
-	{
-		material 0 "C3D_DefaultMaterial"
-		material 1 "C3D_DefaultMaterial"
-	}
-}
-
-mesh "baffles_boite"
-{
-	import "Meshes/Boite/baffles_boite.cmsh"
-	default_material "C3D_DefaultMaterial"
-}
-
 mesh "barriere_verre"
 {
 	import "Meshes/Boite/barriere_verre.cmsh"
@@ -43,21 +43,6 @@ mesh "barriere_verre"
 	{
 		material 0 "C3D_DefaultMaterial"
 		material 1 "C3D_DefaultMaterial"
-	}
-}
-
-mesh "dj_boite"
-{
-	import "Meshes/Boite/dj_boite.cmsh"
-
-	default_materials
-	{
-		material 0 "C3D_DefaultMaterial"
-		material 1 "C3D_DefaultMaterial"
-		material 2 "C3D_DefaultMaterial"
-		material 3 "C3D_DefaultMaterial"
-		material 4 "C3D_DefaultMaterial"
-		material 5 "C3D_DefaultMaterial"
 	}
 }
 
@@ -82,6 +67,27 @@ mesh "bars_boite"
 	}
 }
 
+mesh "dj_boite"
+{
+	import "Meshes/Boite/dj_boite.cmsh"
+
+	default_materials
+	{
+		material 0 "C3D_DefaultMaterial"
+		material 1 "C3D_DefaultMaterial"
+		material 2 "C3D_DefaultMaterial"
+		material 3 "C3D_DefaultMaterial"
+		material 4 "C3D_DefaultMaterial"
+		material 5 "C3D_DefaultMaterial"
+	}
+}
+
+mesh "canape_triple"
+{
+	import "Meshes/Boite/canape_triple.cmsh"
+	default_material "C3D_DefaultMaterial"
+}
+
 mesh "escaliers_boite"
 {
 	import "Meshes/Boite/escaliers_boite.cmsh"
@@ -91,12 +97,6 @@ mesh "escaliers_boite"
 		material 0 "C3D_DefaultMaterial"
 		material 1 "C3D_DefaultMaterial"
 	}
-}
-
-mesh "canape_triple"
-{
-	import "Meshes/Boite/canape_triple.cmsh"
-	default_material "C3D_DefaultMaterial"
 }
 
 mesh "fauteuil"

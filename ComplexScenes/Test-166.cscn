@@ -1,35 +1,35 @@
 // Global configuration
-materials blinn_phong
-debug_max_image_size 64
+materials c3d.phong
 
 scene "BaltardOut"
 {
 	// Scene configuration
 	ambient_light 0.200000 0.200000 0.200000
 	background_colour 0.500000 0.500000 0.500000
-	lpv_indirect_attenuation 1.7
-	include "Materials/BaltardOutLegacy.cscn"
-	include "Meshes/BaltardOut.cscn"
-	include "Nodes/BaltardOut.cscn"
-	include "Objects/BaltardOut.cscn"
-	include "Lights/BaltardOut.cscn"
+	lpv_indirect_attenuation 1.70000
+	include "Helpers/BaltardOut-Textures-BlinnPhong.cscn"
+	include "Helpers/BaltardOut-Materials-BlinnPhong.cscn"
+	include "Helpers/BaltardOut-Meshes.cscn"
+	include "Helpers/BaltardOut-Nodes.cscn"
+	include "Helpers/BaltardOut-Objects.cscn"
+	include "Helpers/BaltardOut-Lights-BlinnPhong.cscn"
 
-	// Skybox
+	//Skybox
 
 	skybox
 	{
-		equirectangular "Textures/BaltardOutLegacy/skybox.hdr" 1024
+		equirectangular "Textures/skybox.hdr" 1024
 	}
 
-	// Cameras nodes
+	//Cameras nodes
 
 	scene_node "CameraNode"
 	{
 		orientation 0.479944 -0.846948 0.228763 58.7399
-		position 110 46.2 -31.8
+		position 110.000 46.2000 -31.8000
 	}
 
-	// Cameras
+	//Cameras
 
 	camera "MainCamera"
 	{
@@ -38,23 +38,17 @@ scene "BaltardOut"
 		viewport
 		{
 			type perspective
-			near 1.0
+			near 1.00000
 			far 11000.0
-			aspect_ratio 1.778
-			fov_y 45
-		}
-
-		hdr_config
-		{
-			exposure 1
-			gamma 2.2
+			aspect_ratio 1.77800
+			fov_y 45.0000
 		}
 	}
 }
 
-// Windows
+//Windows
 
-window "Window"
+window "RenderPanel"
 {
 	vsync false
 	fullscreen false
@@ -62,10 +56,10 @@ window "Window"
 	render_target
 	{
 		size 1920 1080
-		format argb32
+		format rgba32
+		tone_mapping "linear"
 		scene "BaltardOut"
 		camera "MainCamera"
-		tone_mapping "linear"
 
 		ssao
 		{
@@ -73,15 +67,15 @@ window "Window"
 			high_quality true
 			use_normals_buffer false
 			blur_high_quality false
-			intensity 1
-			radius 50
-			bias 0.023
+			intensity 1.00000
+			radius 50.0000
+			bias 0.0230000
 			num_samples 19
-			edge_sharpness 1
+			edge_sharpness 1.00000
 			blur_step_size 2
 			blur_radius 4
 			bend_step_count 4
-			bend_step_size 0.5
+			bend_step_size 0.500000
 		}
 	}
 }
