@@ -35,6 +35,7 @@ gui
 			{
 				background_material "DarkBlue"
 				border_material "White"
+				text_material "White"
 
 				item_style
 				{
@@ -111,7 +112,6 @@ gui
 			{
 				background_material "FrameCenterMP"
 				border_material "White"
-				text_material "Black"
 
 				item_style
 				{

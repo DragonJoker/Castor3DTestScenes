@@ -14,6 +14,7 @@ scene "SanMiguel"
 	include "Helpers/SanMiguel-Nodes.cscn"
 	include "Helpers/SanMiguel-Objects.cscn"
 	include "Helpers/SanMiguel-Lights-VLS.cscn"
+	//include "Helpers/SanMiguel-Lights.cscn"
 
 	// Skybox
 
@@ -26,10 +27,10 @@ scene "SanMiguel"
 
 	scene_node "MainCameraNode"
 	{
-		// orientation 0.0338966 0.986528 -0.160044 156.397
-		// position 141.6314 20.0649 70.26671
 		orientation 0 1 0 310
 		position 23.6159 1.65023 -1.66404
+		//orientation -0.0157667 -0.996433 0.0829025 201.461
+		//position 14.7131 1.6325 5.19296
 	}
 
 	// Cameras
@@ -65,6 +66,7 @@ window "SanMiguel"
 	render_target
 	{
 		size 1280 720
+		//size 1920 1080
 		format argb32
 		scene "SanMiguel"
 		camera "MainCamera"
@@ -76,7 +78,7 @@ window "SanMiguel"
 			mode 1X
 			edgeDetection colour
 			preset ultra
-			reprojection false
+			enableReprojection false
 		}
 
 		ssao

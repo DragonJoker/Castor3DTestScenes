@@ -43,6 +43,8 @@ scene "Scene"
 			{
 				min_offset 0.00001
 				max_slope_offset 0.0001
+				sample_count 64
+				filter_size 8
 			}
 		}
 	}
@@ -62,6 +64,8 @@ scene "Scene"
 			{
 				min_offset 0.00001
 				max_slope_offset 0.0001
+				sample_count 64
+				filter_size 8
 			}
 		}
 	}
@@ -83,6 +87,8 @@ scene "Scene"
 			{
 				min_offset 0.00001
 				max_slope_offset 0.0001
+				sample_count 64
+				filter_size 8
 			}
 		}
 	}
@@ -104,6 +110,8 @@ scene "Scene"
 			{
 				min_offset 0.00001
 				max_slope_offset 0.0001
+				sample_count 64
+				filter_size 8
 			}
 		}
 	}

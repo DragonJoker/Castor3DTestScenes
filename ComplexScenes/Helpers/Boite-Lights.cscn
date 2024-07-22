@@ -6,7 +6,7 @@ light "bar_spot_01"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -18,7 +18,7 @@ light "bar_spot_02"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -30,7 +30,7 @@ light "bar_spot_03"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -42,7 +42,7 @@ light "bar_spot_04"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -54,7 +54,7 @@ light "bar_spot_05"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -66,7 +66,7 @@ light "bar_spot_06"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -78,7 +78,7 @@ light "bar_spot_07"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -90,7 +90,7 @@ light "bar_spot_08"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -102,7 +102,7 @@ light "blue_spot"
 	type spot
 	colour 0.00000 0.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -114,7 +114,7 @@ light "green_spot"
 	type spot
 	colour 0.00000 1.00000 0.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -126,7 +126,7 @@ light "red_spot"
 	type spot
 	colour 1.00000 0.00000 0.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -138,7 +138,7 @@ light "scene_spot_01"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -150,7 +150,7 @@ light "scene_spot_02"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -162,7 +162,7 @@ light "scene_spot_03"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -174,7 +174,7 @@ light "scene_spot_04"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -186,7 +186,7 @@ light "scene_spot_05"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -198,7 +198,7 @@ light "scene_spot_06"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -210,7 +210,7 @@ light "scene_spot_07"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -222,7 +222,7 @@ light "scene_spot_08"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -234,7 +234,7 @@ light "spot_01"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -246,7 +246,7 @@ light "spot_02"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -258,7 +258,7 @@ light "spot_03"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -270,7 +270,7 @@ light "spot_04"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -282,7 +282,7 @@ light "spot_05"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -294,7 +294,7 @@ light "spot_06"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -306,7 +306,7 @@ light "spot_07"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -318,7 +318,7 @@ light "spot_08"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -330,7 +330,7 @@ light "spot_09"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -342,7 +342,7 @@ light "spot_10"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000
@@ -354,7 +354,7 @@ light "upstairs_bar_spot_01"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -366,7 +366,7 @@ light "upstairs_bar_spot_02"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -378,7 +378,7 @@ light "upstairs_bar_spot_03"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -390,7 +390,7 @@ light "upstairs_bar_spot_04"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -402,7 +402,7 @@ light "upstairs_bar_spot_05"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -414,7 +414,7 @@ light "upstairs_bar_spot_06"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -426,7 +426,7 @@ light "upstairs_bar_spot_07"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -438,7 +438,7 @@ light "upstairs_bar_spot_08"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -450,7 +450,7 @@ light "upstairs_bar_spot_09"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -462,7 +462,7 @@ light "upstairs_bar_spot_19"
 	type spot
 	colour 1.00000 1.00000 1.00000
 	intensity 1000.00 1000.00
-	range 1000.00
+	range 200.00
 	exponent 1.00000
 	inner_cut_off 22.5000
 	outer_cut_off 45.0000
@@ -474,7 +474,7 @@ light "yellow_spot"
 	type spot
 	colour 1.00000 1.00000 0.00000
 	intensity 2000.00 2000.00
-	range 2000.00
+	range 400.00
 	exponent 1.00000
 	inner_cut_off 5.00000
 	outer_cut_off 10.0000

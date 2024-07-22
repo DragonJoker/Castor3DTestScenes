@@ -5371,8 +5371,11 @@ material "materialo"
 		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.00000 0.00000 0.0100000
-		transmission 0.800000
-		refraction_ratio 0.920000
+		alpha_blend_mode interpolative
+		opacity 0.500000
+		//transmission 0.800000
+		//refraction_ratio 0.920000
+		//has_refraction true
 		specular_colour 0.250000 0.250000 0.250000
 		roughness 0.100000
 	}

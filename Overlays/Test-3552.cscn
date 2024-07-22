@@ -1,0 +1,172 @@
+materials blinn_phong
+
+scene "Scene"
+{
+	sdf_font "SdfArial"
+	{
+		file "Fonts/arial.ttf"
+	}
+
+	ambient_light 0.2 0.2 0.2
+	background_image "Textures/backgroundImage.jpg"
+ 
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		min_lod 0.0
+		max_lod 1.0
+		lod_bias 0.0
+		u_wrap_mode clamp_to_edge
+		v_wrap_mode clamp_to_edge
+		w_wrap_mode clamp_to_edge
+		border_colour float_opaque_black
+	}
+
+	material "BlackBlend"
+	{
+		pass
+		{
+			diffuse 0.0 0.0 0.0
+			alpha 0.8
+		}
+	}
+
+	material "ColourMapWhite"
+	{
+		pass
+		{
+			diffuse 1.0 1.0 1.0
+			alpha 0.8
+	
+			texture_unit
+			{
+				image "Textures/diffuse.jpg"
+				diffuse_mask 0x00FFFFFF
+				sampler	"Linear"
+			}
+		}
+	}
+
+	material "ColourMapPink"
+	{
+		pass
+		{
+			diffuse 1.0 0.0 1.0
+			alpha 0.8
+	
+			texture_unit
+			{
+				image "Textures/diffuse.jpg"
+				diffuse_mask 0x00FFFFFF
+				sampler	"Linear"
+			}
+		}
+	}
+
+	material "BlendTexture"
+	{
+		pass
+		{
+			diffuse 1.0 1.0 1.0 1.0
+	
+			texture_unit
+			{
+				image "Textures/alphaBlend.png"
+				diffuse_mask 0x00FFFFFF
+				opacity_mask 0xFF000000
+				sampler	"Linear"
+			}
+		}
+	}
+
+	material "YellowBlend"
+	{
+		pass
+		{
+			diffuse 1.0 1.0 0.0
+			alpha 0.6
+		}
+	}
+
+	panel_overlay "MainPanel"
+	{
+		size 0.5 0.5
+		position 0.25 0.25
+		material "ColourMapPink"
+
+		border_panel_overlay "ChildPanel"
+		{
+			pxl_size 480 270
+			position 0.25 0.25
+			center_uv 0.125 0.125 0.875 0.875
+			material "BlendTexture"
+			pxl_border_size 32 32 32 32
+			border_position external
+			border_material "BlendTexture"
+			border_inner_uv 0.125 0.125 0.875 0.875
+
+			text_overlay "ChildChildText"
+			{
+				size 1.0 1.0
+				position 0.0 0.0
+				material "DarkRed"
+				font "SdfArial"
+				text_height 60
+				text "Je ne	sais pas trop..."
+				text_wrapping break_words
+			}
+		}
+	}
+
+	panel_overlay "MainTextPanel"
+	{
+		pxl_size 1070 150
+		position 0.0 0.0
+		material "YellowBlend"
+
+		text_overlay "ChildText"
+		{
+			size 1.0 1.0
+			position 0.0 0.0
+			material "ColourMapWhite"
+			font "SdfArial"
+			text_height 100
+			text "Coucou !! La vie est belle? Ici ça va"
+			text_wrapping break
+			texturing_mode letter
+		}
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 180
+		position 0.0 0.0 100.0
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.778
+			near 0.1
+			far 20000
+		}
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 1280 720
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

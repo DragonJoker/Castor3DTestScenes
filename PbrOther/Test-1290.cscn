@@ -43,6 +43,7 @@ scene "Nyra"
 			type perspective
 			near 1
 			aspect_ratio 1.333
+			//aspect_ratio 1.7778
 			far 12000
 			fov_y 45
 		}
@@ -83,6 +84,7 @@ window "Window"
 	render_target
 	{
 		size 800 600
+		//size 1920 1080
 		format argb32
 		scene "Nyra"
 		camera "MainCamera"

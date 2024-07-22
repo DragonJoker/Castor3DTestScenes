@@ -5183,6 +5183,7 @@ material "materialo"
 		lighting_model c3d.phong
 		two_sided true
 		opacity 0.500000
+		alpha_blend_mode interpolative
 		bw_accumulation 1
 		colour_hdr 0.00000 0.00000 3.98107e-05
 		specular_colour 0.250000 0.250000 0.250000

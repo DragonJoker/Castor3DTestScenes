@@ -1062,7 +1062,7 @@ material "Imp-MASTER_Awning_Fabric_Cyan"
 		texture_unit
 		{
 			levels_count 8
-			image "Textures/Bistro/Paris_BistroAwning_Fabric_01A_spec.dds"
+			image "Textures/Bistro/Paris_BistroAwning_fabric_01A_spec.dds"
 			specular_mask 0x00ffffff
 			invert_y true
 		}
@@ -1082,7 +1082,7 @@ material "Imp-MASTER_Awning_Fabric_Red"
 		texture_unit
 		{
 			levels_count 8
-			image "Textures/Bistro/paris_bistroawning_fabric_01a_diff.dds"
+			image "Textures/Bistro/Paris_BistroAwning_fabric_01A_diff.dds"
 			albedo_mask 0x00ffffff
 			invert_y true
 		}
@@ -1090,7 +1090,7 @@ material "Imp-MASTER_Awning_Fabric_Red"
 		texture_unit
 		{
 			levels_count 8
-			image "Textures/Bistro/Paris_BistroAwning_Fabric_01A_spec.dds"
+			image "Textures/Bistro/Paris_BistroAwning_fabric_01A_spec.dds"
 			specular_mask 0x00ffffff
 			invert_y true
 		}
@@ -1476,7 +1476,7 @@ material "Imp-MASTER_Concrete_Grooved"
 		texture_unit
 		{
 			levels_count 8
-			image "Textures/Bistro/concrete_grooved_02_diff.dds"
+			image "Textures/Bistro/Concrete_Grooved_02_Diff.dds"
 			albedo_mask 0x00ffffff
 			invert_y true
 		}
@@ -4748,7 +4748,7 @@ material "Imp-Spotlight_Emissive"
 		texture_unit
 		{
 			levels_count 8
-			image "Textures/Bistro/Paris_BistroExteriorSpotLight_01_diff.dds"
+			image "Textures/Bistro/paris_bistroexteriorspotlight_01_diff.dds"
 			albedo_mask 0x00ffffff
 			invert_y true
 		}
@@ -4798,7 +4798,7 @@ material "Imp-Spotlight_Main"
 		texture_unit
 		{
 			levels_count 8
-			image "Textures/Bistro/Paris_BistroExteriorSpotLight_01_diff.dds"
+			image "Textures/Bistro/paris_bistroexteriorspotlight_01_diff.dds"
 			albedo_mask 0x00ffffff
 			invert_y true
 		}
@@ -4806,7 +4806,7 @@ material "Imp-Spotlight_Main"
 		texture_unit
 		{
 			levels_count 8
-			image "Textures/Bistro/Paris_BistroExteriorSpotLight_01_spec.dds"
+			image "Textures/Bistro/paris_bistroexteriorspotlight_01_spec.dds"
 			specular_mask 0x00ffffff
 			invert_y true
 		}
@@ -5118,7 +5118,7 @@ material "Imp-Trolley_Wood_Painted"
 		texture_unit
 		{
 			levels_count 8
-			image "Textures/Bistro/Wood_Painted_02_Spec.dds"
+			image "Textures/Bistro/wood_painted_02_spec.dds"
 			specular_mask 0x00ffffff
 			invert_y true
 		}
@@ -5267,7 +5267,7 @@ material "Imp-Wood"
 		texture_unit
 		{
 			levels_count 8
-			image "Textures/Bistro/Wood_Planks_01_Diff.dds"
+			image "Textures/Bistro/wood_planks_01_diff.dds"
 			albedo_mask 0x00ffffff
 			invert_y true
 		}

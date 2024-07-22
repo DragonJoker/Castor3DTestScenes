@@ -21,6 +21,16 @@ scene "Scene"
 		text_wrapping break_words
 	}
 
+	text_overlay "SecondText"
+	{
+		size 0.5 0.5
+		position 0.25 0.45
+		material "DarkRed"
+		font "Arial20"
+		text "Test Text"
+		text_wrapping break_words
+	}
+
 	scene_node "MainCameraNode"
 	{
 		orientation 0 1 0 180

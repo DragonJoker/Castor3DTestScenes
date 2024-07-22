@@ -24,6 +24,11 @@ scene_node "LightNode"
 	orientation 1 0 0 124.593
 }
 
+scene_node "PlanetNode"
+{
+	position 0.0 -6360100.0 0.0
+}
+
 scene_node "abris_bus"
 {
 	orientation -0 -1 -0 180

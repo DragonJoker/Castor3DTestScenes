@@ -1,12 +1,5 @@
 // Lights
 
-scene_node "LightNode"
-{
-	orientation 0.636294 -0.431266 0.63964 134.761
-	// Orientation from sun on skybox
-	// orientation 0.497314 0.68907 -0.527125 210.623
-}
-
 light "SunLight"
 {
 	parent "LightNode"

@@ -10,7 +10,7 @@ light "spot_01"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -46,7 +46,7 @@ light "spot_02"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -82,7 +82,7 @@ light "spot_03"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -118,7 +118,7 @@ light "spot_04"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -154,7 +154,7 @@ light "spot_05"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -190,7 +190,7 @@ light "spot_06"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -226,7 +226,7 @@ light "spot_07"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -262,7 +262,7 @@ light "spot_08"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -298,7 +298,7 @@ light "spot_09"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -334,7 +334,7 @@ light "spot_10"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -370,7 +370,7 @@ light "spot_11"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -406,7 +406,7 @@ light "spot_12"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -442,7 +442,7 @@ light "spot_13"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -478,7 +478,7 @@ light "spot_14"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -514,7 +514,7 @@ light "spot_15"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -550,7 +550,7 @@ light "spot_16"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -586,7 +586,7 @@ light "spot_17"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -622,7 +622,7 @@ light "spot_18"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -658,7 +658,7 @@ light "spot_19"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -694,7 +694,7 @@ light "spot_20"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -730,7 +730,7 @@ light "spot_21"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -766,7 +766,7 @@ light "spot_22"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -802,7 +802,7 @@ light "spot_23"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -838,7 +838,7 @@ light "spot_24"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -874,7 +874,7 @@ light "spot_25"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -910,7 +910,7 @@ light "spot_26"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -946,7 +946,7 @@ light "spot_27_bar"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -982,7 +982,7 @@ light "spot_28_bar"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1018,7 +1018,7 @@ light "spot_29_bar"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1054,7 +1054,7 @@ light "spot_30_bar"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1090,7 +1090,7 @@ light "spot_31_bar"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1126,7 +1126,7 @@ light "spot_32_bar"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1162,7 +1162,7 @@ light "spot_33_bar"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1198,7 +1198,7 @@ light "spot_34_bar"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1234,7 +1234,7 @@ light "spot_35_bar"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1270,7 +1270,7 @@ light "spot_36_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1306,7 +1306,7 @@ light "spot_37_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1342,7 +1342,7 @@ light "spot_38_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1378,7 +1378,7 @@ light "spot_39_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1414,7 +1414,7 @@ light "spot_40_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1450,7 +1450,7 @@ light "spot_41_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1486,7 +1486,7 @@ light "spot_42_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1522,7 +1522,7 @@ light "spot_43_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1558,7 +1558,7 @@ light "spot_44_bar_back_display"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1594,7 +1594,7 @@ light "spot_45_bar_back_display"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1630,7 +1630,7 @@ light "spot_46_billard"
 	type spot
 	colour 1.0 1.0 0.5
 	intensity 2.0 2.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 25.0
 	shadows
 	{
@@ -1666,7 +1666,7 @@ light "spot_47_billard"
 	type spot
 	colour 1.0 1.0 0.5
 	intensity 2.0 2.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 25.0
 	shadows
 	{
@@ -1702,7 +1702,7 @@ light "spot_48_billard"
 	type spot
 	colour 1.0 1.0 0.5
 	intensity 2.0 2.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 25.0
 	shadows
 	{
@@ -1738,7 +1738,7 @@ light "spot_49_billard"
 	type spot
 	colour 1.0 1.0 0.5
 	intensity 2.0 2.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 25.0
 	shadows
 	{
@@ -1774,7 +1774,7 @@ light "spot_50_billard"
 	type spot
 	colour 1.0 1.0 0.5
 	intensity 2.0 2.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 25.0
 	shadows
 	{
@@ -1810,7 +1810,7 @@ light "spot_51_billard"
 	type spot
 	colour 1.0 1.0 0.5
 	intensity 2.0 2.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 25.0
 	shadows
 	{
@@ -1846,7 +1846,7 @@ light "spot_52"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1882,7 +1882,7 @@ light "spot_53"
 	type spot
 	colour 1.0 1.0 1.0
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 1000.0
 	cut_off 45.0
 	shadows
 	{
@@ -1917,7 +1917,7 @@ light "aqua_point_01"
 	type point
 	colour 0.40000 0.64706 0.84314
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 3000.0
 }
 
 scene_node "aqua_point_02"
@@ -1931,5 +1931,5 @@ light "aqua_point_02"
 	type point
 	colour 0.40000 0.64706 0.84314
 	intensity 10000.0 10000.0
-	attenuation 1 0.02 0
+	range 3000.0
 }

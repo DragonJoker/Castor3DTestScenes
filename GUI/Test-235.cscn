@@ -74,7 +74,6 @@ gui
 		{
 			background_material "FrameCenterMP"
 			border_material "White"
-			text_material "White"
 
 			item_style
 			{

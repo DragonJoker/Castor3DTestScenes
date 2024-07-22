@@ -25,6 +25,8 @@ scene "Scene"
 			{
 				min_offset 0.0
 				max_slope_offset 0.0009
+				sample_count 64
+				filter_size 8
 			}
 		}
 	}

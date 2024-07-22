@@ -6,11 +6,11 @@ scene "Parc"
 	// Scene configuration
 	ambient_light 0.200000 0.200000 0.200000
 	background_colour 0.500000 0.500000 0.500000
-	lpv_indirect_attenuation 0.1
+	lpv_indirect_attenuation 1.0
 	include "Helpers/Park-Materials-BlinnPhong.cscn"
 	include "Helpers/Park-Meshes.cscn"
 	include "Helpers/Park-Nodes.cscn"
-	include "Helpers/Park-Lights.cscn"
+	include "Helpers/Park-Lights-LPV.cscn"
 	include "Helpers/Park-Objects.cscn"
 
 	// Skybox

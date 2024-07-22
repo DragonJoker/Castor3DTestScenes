@@ -23,3 +23,8 @@ scene_node "Interior-$MergedNode_0"
 	parent "interiorScaleNode"
 	static true
 }
+
+scene_node "PlanetNode"
+{
+	position 0.0 -6360100.0 0.0
+}

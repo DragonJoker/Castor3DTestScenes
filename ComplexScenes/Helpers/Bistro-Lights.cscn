@@ -36,13 +36,6 @@ light "SunLight"
 			light_bleeding_reduction 0.00000
 		}
 
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
-		}
-
 		lpv_config
 		{
 			texel_area_modifier 1.00000
@@ -158,19 +151,14 @@ light "Light_Bar_01"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -204,19 +192,14 @@ light "Light_Bar_02"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -250,19 +233,14 @@ light "Light_Bar_03"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -296,19 +274,14 @@ light "Light_Bar_04"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -344,19 +317,14 @@ light "Light_Ceiling_01"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -392,19 +360,14 @@ light "Light_Ceiling_02"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -440,19 +403,14 @@ light "Light_Ceiling_03"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -488,19 +446,14 @@ light "Light_Ceiling_04"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -534,19 +487,14 @@ light "Light_Wall_01"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -580,19 +528,14 @@ light "Light_Wall_02"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -626,19 +569,14 @@ light "Light_Wall_03"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -672,19 +610,14 @@ light "Light_Wall_04"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -718,19 +651,14 @@ light "Light_Wall_05"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
@@ -764,19 +692,14 @@ light "Light_Wall_06"
 		{
 			min_offset 0.0
 			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
 		}
 
 		vsm_config
 		{
 			min_variance 1.00000e-12
 			light_bleeding_reduction 0.00000
-		}
-
-		rsm_config
-		{
-			intensity 0.00000
-			max_radius 0.00000
-			sample_count 100
 		}
 
 		lpv_config
