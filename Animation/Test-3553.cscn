@@ -1,0 +1,179 @@
+// Global configuration
+materials blinn_phong
+
+scene "Imported"
+{
+	// Scene configuration
+	ambient_light 0.00000 0.00000 0.00000
+	background_colour 0.500000 0.500000 0.500000
+
+	//Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		position 0.0 0.7 3.0
+		orientation 0.0 1.0 0.0 180.0
+	}
+
+	//Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.1
+			far 2000.0
+			aspect_ratio 1.77780
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+
+	// Objects nodes
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 150
+		position 0 0 0
+		scale 1 1 1
+	}
+
+	scene_node "MrBean"
+	{
+	}
+
+	// Lights
+
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1 1 1
+		intensity 0.8 1
+	}
+
+	// Skeletons
+
+	skeleton "Mixamo"
+	{
+		import "Meshes/Mixamo/MrBean/MrBean.fbx"
+		import_single_anim "Joyful Jump" "Meshes/Mixamo/Joyful Jump.fbx"
+		import_single_anim "Jumping" "Meshes/Mixamo/Jumping.fbx"
+		import_single_anim "Running" "Meshes/Mixamo/Running.fbx"
+		import_single_anim "Standing Idle" "Meshes/Mixamo/Standing Idle.fbx"
+		import_single_anim "Standing Up" "Meshes/Mixamo/Standing Up.fbx"
+		import_single_anim "Start Walking" "Meshes/Mixamo/Start Walking.fbx"
+		import_single_anim "Walking" "Meshes/Mixamo/Walking.fbx"
+		import_single_anim "Stop Walking" "Meshes/Mixamo/Stop Walking.fbx"
+	}
+
+	// Meshes
+
+	mesh "MrBean"
+	{
+		import "Meshes/Mixamo/MrBean/MrBean.fbx"
+		skeleton "Mixamo"
+	}
+
+	// Geometries
+
+	object "MrBean"
+	{
+		parent "MrBean"
+		mesh "MrBean"
+	}
+
+	// Animated object groups
+
+	animated_object_group "MrBean"
+	{
+		animated_object "MrBean"
+
+		animation "Joyful Jump"
+		{
+		}
+
+		animation "Jumping"
+		{
+		}
+
+		animation "Running"
+		{
+			looped true
+		}
+
+		animation "Standing Idle"
+		{
+			looped true
+		}
+
+		animation "Standing Up"
+		{
+		}
+
+		animation "Start Walking"
+		{
+		}
+
+		animation "Walking"
+		{
+			looped true
+		}
+
+		animation "Stop Walking"
+		{
+		}
+
+		start_animation "Standing Idle"
+	}
+}
+
+//Windows
+
+window "MainWindow"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format argb32
+		scene "Imported"
+		camera "MainCamera"
+		tone_mapping "aces"
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			use_normals_buffer false
+			blur_high_quality false
+			intensity 1.00000
+			radius 0.50000
+			bias 0.0230000
+			num_samples 19
+			edge_sharpness 1.00000
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
+		}
+
+		smaa
+		{
+			mode T2X
+			preset ultra
+			edgeDetection colour
+			enablePredication true
+		}
+	}
+}
