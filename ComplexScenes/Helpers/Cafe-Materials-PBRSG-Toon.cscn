@@ -1253,7 +1253,7 @@ material "cafe/cafe_sol_01"
 
 		texture_unit
 		{
-			albedo_mask 0x00FFFFFF
+			normal_mask 0x00FFFFFF
 			image "Textures/CafePBRSG/cafe_sol_01-normal.png" rgb
 		}
 

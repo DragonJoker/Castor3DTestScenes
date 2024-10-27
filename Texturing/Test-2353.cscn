@@ -39,6 +39,13 @@ scene "Scene"
 
 			texture_unit
 			{
+				specular_factor_mask 0x00ff0000
+				sampler "Linear"
+				image "Textures/Rusted/glossiness.jpg"
+			}
+
+			texture_unit
+			{
 				specular_mask 0x00ffffff
 				sampler "Linear"
 				image "Textures/Rusted/specular.jpg"

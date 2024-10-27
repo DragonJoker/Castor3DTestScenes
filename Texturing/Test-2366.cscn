@@ -29,6 +29,7 @@ scene "Scene"
 			albedo 0.75164 0.75164 0.75164 1.0
 			specular 0.628281 0.628281 0.628281
 			glossiness 0.6
+			reflections true
 
 			texture_unit
 			{
@@ -36,7 +37,13 @@ scene "Scene"
 				sampler "Linear"
 				image "Textures/Rusted/specular.jpg"
 			}
-			reflections true
+
+			texture_unit
+			{
+				specular_factor_mask 0x00ff0000
+				sampler "Linear"
+				image "Textures/Rusted/glossiness.jpg"
+			}
 		}
 	}
 
