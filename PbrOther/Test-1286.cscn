@@ -1,4 +1,8 @@
-materials pbr
+default_lighting_model "pbr"
+{
+	diffuse_brdf "energy_conservative_oren_nayar"
+	specular_brdf "cook_torrance"
+}
 
 scene "Scene"
 {

@@ -1,5 +1,9 @@
 // Global configuration
-materials pbr
+default_lighting_model "pbr"
+{
+	diffuse_brdf "lambertian"
+	specular_brdf "cook_torrance"
+}
 
 scene "Nyra"
 {

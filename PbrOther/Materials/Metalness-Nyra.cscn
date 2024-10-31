@@ -26,52 +26,52 @@ material "Body"
 		two_sided true
 		alpha_func greater 0.5
 
-		texture_unit
+		lighting_model "pbr"
 		{
-			sampler "Trilinear"
-			albedo_mask 0x00FFFFFF
-			levels_count 10
-			image "Textures/Nyra/body-diffuse.jpg" rgb
+			diffuse_brdf "energy_conservative_oren_nayar"
+			specular_brdf "cook_torrance"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel opacity
-			levels_count 10
-			image "Textures/Nyra/body-opacity.png" a
+			albedo_mask 0x00FFFFFF
+			image "Textures/Nyra/body-diffuse.jpg"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			opacity_mask 0xFF000000
+			image "Textures/Nyra/body-opacity.png"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			normal_mask 0x00FFFFFF
-			levels_count 10
-			image "Textures/Nyra/body-normal.jpg" rgb
+			image "Textures/Nyra/body-normal.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel metalness
-			levels_count 10
-			image "Textures/Nyra/body-metallic.jpg" rgb
+			metalness_mask 0x00FF0000
+			image "Textures/Nyra/body-metallic.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel roughness
-			levels_count 10
-			image "Textures/Nyra/body-roughness.jpg" rgb
+			roughness_mask 0x00FF0000
+			image "Textures/Nyra/body-roughness.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel height
-			levels_count 10
-			image "Textures/Nyra/body-displ.png" rgb
+			height_mask 0x00FF0000
+			image "Textures/Nyra/body-displ.png"
 		}
 	}
 }
@@ -102,56 +102,49 @@ material "Eyes"
 		{
 			sampler "Trilinear"
 			albedo_mask 0x00FFFFFF
-			levels_count 10
-			image "Textures/Nyra/head-diffuse.jpg" rgb
+			image "Textures/Nyra/head-diffuse.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel opacity
-			levels_count 10
-			image "Textures/Nyra/head-opacity.png" a
+			opacity_mask 0xFF000000
+			image "Textures/Nyra/head-opacity.png"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			normal_mask 0x00FFFFFF
-			levels_count 10
-			image "Textures/Nyra/head-normal.jpg" rgb
+			image "Textures/Nyra/head-normal.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel metalness
-			levels_count 10
-			image "Textures/Nyra/head-metallic.jpg" rgb
+			metalness_mask 0x00FF0000
+			image "Textures/Nyra/head-metallic.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel roughness
-			levels_count 10
-			image "Textures/Nyra/head-roughness.jpg" rgb
+			roughness_mask 0x00FF0000
+			image "Textures/Nyra/head-roughness.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel height
-			levels_count 10
-			image "Textures/Nyra/head-displ.png" rgb
+			height_mask 0x00FF0000
+			image "Textures/Nyra/head-displ.png"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel transmittance
-			levels_count 10
-			image "Textures/Nyra/head-transmittance.png" rgb
+			transmittance_mask 0xFF000000
+			image "Textures/Nyra/head-transmittance.png"
 		}
 	}
 }
@@ -168,40 +161,35 @@ material "Head"
 		{
 			sampler "Trilinear"
 			albedo_mask 0x00FFFFFF
-			levels_count 10
-			image "Textures/Nyra/head-diffuse.jpg" rgb
+			image "Textures/Nyra/head-diffuse.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
 			normal_mask 0x00FFFFFF
-			levels_count 10
-			image "Textures/Nyra/head-normal.jpg" rgb
+			image "Textures/Nyra/head-normal.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel metalness
-			levels_count 10
-			image "Textures/Nyra/head-metallic.jpg" rgb
+			metalness_mask 0x00FF0000
+			image "Textures/Nyra/head-metallic.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel roughness
-			levels_count 10
-			image "Textures/Nyra/head-roughness.jpg" rgb
+			roughness_mask 0x00FF0000
+			image "Textures/Nyra/head-roughness.jpg"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			channel height
-			levels_count 10
-			image "Textures/Nyra/head-displ.png" rgb
+			height_mask 0x00FF0000
+			image "Textures/Nyra/head-displ.png"
 		}
 	}
 }
