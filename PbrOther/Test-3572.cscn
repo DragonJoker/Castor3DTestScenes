@@ -1,0 +1,87 @@
+// Global configuration
+
+default_lighting_model "c3d.pbr"
+{
+	diffuse_brdf "disney"
+	specular_brdf "disney"
+}
+
+scene "CompareAnisotropy"
+{
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.500000 0.500000 0.500000
+	lpv_indirect_attenuation 1.70000
+	include "Helpers\CompareAnisotropy-Textures.cscn"
+	include "Helpers\CompareAnisotropy-Samplers.cscn"
+	include "Helpers\CompareAnisotropy-Materials-Disney.cscn"
+	include "Helpers\CompareAnisotropy-Meshes.cscn"
+	include "Helpers\CompareAnisotropy-Nodes.cscn"
+	include "Helpers\CompareAnisotropy-Objects.cscn"
+
+	//Skybox
+
+	skybox
+	{
+		visible false
+		equirectangular "Textures/citySkybox.hdr" 1024
+	}
+
+	//Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 180
+		position 0.000284314 0.500000 3.06820
+	}
+
+	//Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.0100000
+			far 1000.00
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+	}
+}
+
+//Windows
+
+window "RenderPanel"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format rgba32
+		tone_mapping "linear"
+		scene "CompareAnisotropy"
+		camera "MainCamera"
+
+		ssao
+		{
+			enabled false
+			high_quality false
+			use_normals_buffer false
+			blur_high_quality false
+			intensity 1.00000
+			radius 0.500000
+			bias 0.0250000
+			num_samples 19
+			edge_sharpness 1.00000
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
+		}
+	}
+}
