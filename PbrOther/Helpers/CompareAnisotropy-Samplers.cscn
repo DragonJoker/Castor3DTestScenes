@@ -1,0 +1,16 @@
+// Samplers
+
+sampler "NevLinLinLinURepVRepWRepFtb"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter linear
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod -1000.00
+	max_lod 1000.00
+	lod_bias 0.00000
+	border_colour float_opaque_black
+	max_anisotropy 1.00000
+}

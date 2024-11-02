@@ -1,0 +1,38 @@
+// Textures
+
+texture "Image_0_0"
+{
+	image "Textures\CompareAnisotropy\Image_0_0.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Image_1_1"
+{
+	image "Textures\CompareAnisotropy\Image_1_1.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Image_2_2"
+{
+	image "Textures\CompareAnisotropy\Image_2_2.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Image_3_3"
+{
+	image "Textures\CompareAnisotropy\Image_3_3.dds"
+	metalness_mask 0x000000ff
+	roughness_mask 0x0000ff00
+	invert_y true
+}
+
+texture "Image_4_4"
+{
+	image "Textures\CompareAnisotropy\Image_4_4.dds"
+	anisotropy_direction_mask 0x00ffff00
+	anisotropy_strength_mask 0x000000ff
+	invert_y true
+}

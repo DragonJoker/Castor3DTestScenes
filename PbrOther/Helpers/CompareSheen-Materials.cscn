@@ -1,0 +1,41 @@
+// Materials
+
+material "Gltf-glTF Logo Sheen"
+{
+
+	pass
+	{
+		roughness 0.750000
+		sheen_colour 1.00000 0.00000 0.00000
+		sheen_roughness 0.300000
+
+		texture_unit
+		{
+			texture "Image_1_1"
+		}
+
+		texture_unit
+		{
+			texture "Image_0_0"
+		}
+	}
+}
+
+material "Gltf-glTF Logo"
+{
+
+	pass
+	{
+		roughness 0.750000
+
+		texture_unit
+		{
+			texture "Image_1_1"
+		}
+
+		texture_unit
+		{
+			texture "Image_2_2"
+		}
+	}
+}

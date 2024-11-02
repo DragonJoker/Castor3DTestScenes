@@ -1,0 +1,13 @@
+// Nodes
+
+scene_node "Gltf-GeoSphere001"
+{
+	orientation 1 0 0 270
+	position -0.550000 0.00000 0.00000
+}
+
+scene_node "Gltf-GeoSphere002"
+{
+	orientation 1 0 0 270
+	position 0.550000 0.00000 0.00000
+}

@@ -1,0 +1,25 @@
+// Meshes
+
+mesh "Gltf-CompareAnisotropy-3"
+{
+	import "Meshes/CompareAnisotropy/Gltf-CompareAnisotropy-3.cmsh"
+	default_material "Gltf-spiral"
+}
+
+mesh "Gltf-CompareAnisotropy"
+{
+	import "Meshes/CompareAnisotropy/Gltf-CompareAnisotropy.cmsh"
+	default_material "Gltf-grooved-anisotropy"
+}
+
+mesh "Gltf-CompareAnisotropy-1"
+{
+	import "Meshes/CompareAnisotropy/Gltf-CompareAnisotropy-1.cmsh"
+	default_material "Gltf-spiral-anisotropy"
+}
+
+mesh "Gltf-CompareAnisotropy-2"
+{
+	import "Meshes/CompareAnisotropy/Gltf-CompareAnisotropy-2.cmsh"
+	default_material "Gltf-grooved"
+}

@@ -1,0 +1,13 @@
+// Objects
+
+object "Gltf-GeoSphere001"
+{
+	parent "Gltf-GeoSphere001"
+	mesh "Gltf-GeoSphere001"
+}
+
+object "Gltf-GeoSphere002"
+{
+	parent "Gltf-GeoSphere002"
+	mesh "Gltf-GeoSphere002"
+}

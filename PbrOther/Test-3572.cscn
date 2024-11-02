@@ -1,6 +1,6 @@
 // Global configuration
 
-default_lighting_model "c3d.pbr"
+default_lighting_model "pbr"
 {
 	diffuse_brdf "disney"
 	specular_brdf "disney"
@@ -24,7 +24,7 @@ scene "CompareAnisotropy"
 	skybox
 	{
 		visible false
-		equirectangular "Textures/citySkybox.hdr" 1024
+		equirectangular "Textures/cityCenterSkybox.hdr" 1024
 	}
 
 	//Cameras nodes

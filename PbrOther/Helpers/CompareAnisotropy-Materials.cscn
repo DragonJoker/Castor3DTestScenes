@@ -1,0 +1,131 @@
+// Materials
+
+material "Gltf-grooved-anisotropy"
+{
+
+	pass
+	{
+
+		lighting_model "c3d.pbr"
+		{
+			specular_brdf "anisotropic"
+		}
+		metalness 1.00000
+		anisotropy_strength 1.00000
+		anisotropy_rotation 91.6732
+
+		texture_unit
+		{
+			sampler "NevLinLinLinURepVRepWRepFtb"
+			texture "Image_2_2"
+
+			transform
+			{
+				translate 6.00000 -1.00000 0.00000
+				rotate -90.0000
+				scale 6.00000 2.00000 1.00000
+			}
+		}
+
+		texture_unit
+		{
+			sampler "NevLinLinLinURepVRepWRepFtb"
+			texture "Image_1_1"
+		}
+
+		texture_unit
+		{
+			sampler "NevLinLinLinURepVRepWRepFtb"
+			texture "Image_3_3"
+		}
+	}
+}
+
+material "Gltf-spiral-anisotropy"
+{
+
+	pass
+	{
+
+		lighting_model "c3d.pbr"
+		{
+			specular_brdf "anisotropic"
+		}
+		colour_hdr 0.579547 0.271577 0.183549
+		metalness 1.00000
+		roughness 0.100000
+		anisotropy_strength 1.00000
+		anisotropy_rotation 91.6732
+
+		texture_unit
+		{
+			sampler "NevLinLinLinURepVRepWRepFtb"
+			texture "Image_0_0"
+		}
+
+		texture_unit
+		{
+			sampler "NevLinLinLinURepVRepWRepFtb"
+			texture "Image_4_4"
+		}
+	}
+}
+
+material "Gltf-grooved"
+{
+
+	pass
+	{
+
+		lighting_model "c3d.pbr"
+		{
+		}
+		metalness 1.00000
+
+		texture_unit
+		{
+			sampler "NevLinLinLinURepVRepWRepFtb"
+			texture "Image_2_2"
+
+			transform
+			{
+				translate 6.00000 -1.00000 0.00000
+				rotate -90.0000
+				scale 6.00000 2.00000 1.00000
+			}
+		}
+
+		texture_unit
+		{
+			sampler "NevLinLinLinURepVRepWRepFtb"
+			texture "Image_1_1"
+		}
+
+		texture_unit
+		{
+			sampler "NevLinLinLinURepVRepWRepFtb"
+			texture "Image_3_3"
+		}
+	}
+}
+
+material "Gltf-spiral"
+{
+
+	pass
+	{
+
+		lighting_model "c3d.pbr"
+		{
+		}
+		colour_hdr 0.579547 0.271577 0.183549
+		metalness 1.00000
+		roughness 0.100000
+
+		texture_unit
+		{
+			sampler "NevLinLinLinURepVRepWRepFtb"
+			texture "Image_0_0"
+		}
+	}
+}

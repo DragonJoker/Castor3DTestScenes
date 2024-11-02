@@ -1,0 +1,106 @@
+// Global configuration
+default_lighting_model "pbr"
+{
+	diffuse_brdf "disney"
+	specular_brdf "disney"
+	clearcoat_brdf "disney"
+}
+
+scene "Scene"
+{
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.00000 0.00000 0.00000
+	lpv_indirect_attenuation 1.70000
+	include "Helpers/Clearcoat-Materials.cscn"
+	include "Helpers/Clearcoat-Meshes.cscn"
+	include "Helpers/Clearcoat-Nodes.cscn"
+	include "Helpers/Clearcoat-Objects.cscn"
+
+	//Skybox
+
+	skybox
+	{
+		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
+	}
+
+	//Voxel Cone Tracing
+
+	voxel_cone_tracing
+	{
+		enabled false
+		grid_size 2
+		conservative_rasterization false
+		temporal_smoothing false
+		occlusion false
+		secondary_bounce false
+		num_cones 2
+		max_distance 20.0000
+		ray_step_size 0.750000
+		voxel_size 1.00000
+	}
+
+	//Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 210
+		position 8.50000 0.00000 18.0000
+	}
+
+	//Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.100000
+			far 1000.00
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+}
+
+//Windows
+
+window "RenderPanel"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format rgba32
+		tone_mapping "linear"
+		scene "Scene"
+		camera "MainCamera"
+
+		ssao
+		{
+			enabled false
+			high_quality false
+			use_normals_buffer false
+			blur_high_quality false
+			intensity 1.00000
+			radius 0.500000
+			bias 0.0250000
+			num_samples 19
+			edge_sharpness 1.00000
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
+		}
+	}
+}

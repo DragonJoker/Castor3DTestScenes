@@ -1,0 +1,22 @@
+// Textures
+
+texture "Image_0_0"
+{
+	image "Textures\CompareSheen\Image_0_0.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Image_1_1"
+{
+	image "Textures\CompareSheen\Image_1_1.dds"
+	normal_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Image_2_2"
+{
+	image "Textures\CompareSheen\Image_2_2.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}

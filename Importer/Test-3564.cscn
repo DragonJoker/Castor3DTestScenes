@@ -1,0 +1,85 @@
+// Global configuration
+materials pbr
+
+scene "CompareAnisotropy"
+{
+	// Scene configuration
+	ambient_light 1.00000 1.00000 1.00000
+	background_colour 0.50000 0.50000 0.50000
+
+	//Skybox
+
+	skybox
+	{
+		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
+		visible false
+	}
+
+	// Samplers
+
+	sampler "Trilinear"
+	{
+		min_filter linear
+		mag_filter linear
+		mip_filter linear
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		lod_bias 0.00000
+		border_colour float_opaque_black
+		max_anisotropy 1.00000
+	}
+
+	//Cameras nodes
+
+	scene_node "MainCameraNode"
+	{
+	}
+
+	//Cameras
+
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.100000
+			far 1000.00
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+
+	import
+	{
+		file "Meshes/CompareAnisotropy/CompareAnisotropy.gltf"
+		recenter_camera "MainCamera"
+		preferred_importer "gltf"
+		prefix "Gltf"
+	}
+}
+
+//Windows
+
+window "MainWindow"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format argb32
+		scene "CompareAnisotropy"
+		camera "MainCamera"
+		tone_mapping "linear"
+	}
+}

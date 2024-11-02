@@ -1,0 +1,33 @@
+// Nodes
+
+scene_node "Gltf-Spheroid001"
+{
+	orientation -0.935113 0.250563 0.250563 93.841
+	position -0.500000 0.00000 0.00000
+}
+
+scene_node "Gltf-Spheroid001_primitive0"
+{
+	parent "Gltf-Spheroid001"
+}
+
+scene_node "Gltf-Spheroid001_primitive1"
+{
+	parent "Gltf-Spheroid001"
+}
+
+scene_node "Gltf-Spheroid002"
+{
+	orientation -0.935113 0.250563 0.250563 93.841
+	position 0.500000 0.00000 0.00000
+}
+
+scene_node "Gltf-Spheroid002_primitive0"
+{
+	parent "Gltf-Spheroid002"
+}
+
+scene_node "Gltf-Spheroid002_primitive1"
+{
+	parent "Gltf-Spheroid002"
+}

@@ -1,0 +1,25 @@
+// Objects
+
+object "Gltf-Spheroid001_primitive0_Gltf-CompareAnisotropy-2"
+{
+	parent "Gltf-Spheroid001_primitive0"
+	mesh "Gltf-CompareAnisotropy-2"
+}
+
+object "Gltf-Spheroid001_primitive1_Gltf-CompareAnisotropy-3"
+{
+	parent "Gltf-Spheroid001_primitive1"
+	mesh "Gltf-CompareAnisotropy-3"
+}
+
+object "Gltf-Spheroid002_primitive0_Gltf-CompareAnisotropy"
+{
+	parent "Gltf-Spheroid002_primitive0"
+	mesh "Gltf-CompareAnisotropy"
+}
+
+object "Gltf-Spheroid002_primitive1_Gltf-CompareAnisotropy-1"
+{
+	parent "Gltf-Spheroid002_primitive1"
+	mesh "Gltf-CompareAnisotropy-1"
+}

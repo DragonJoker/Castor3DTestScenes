@@ -1,0 +1,13 @@
+// Meshes
+
+mesh "Gltf-GeoSphere001"
+{
+	import "Meshes/CompareSheen/Gltf-GeoSphere001.cmsh"
+	default_material "Gltf-glTF Logo"
+}
+
+mesh "Gltf-GeoSphere002"
+{
+	import "Meshes/CompareSheen/Gltf-GeoSphere002.cmsh"
+	default_material "Gltf-glTF Logo Sheen"
+}

@@ -22,7 +22,7 @@ scene "CompareAnisotropy"
 	skybox
 	{
 		visible false
-		equirectangular "Textures/citySkybox.hdr" 1024
+		equirectangular "Textures/cityCenterSkybox.hdr" 1024
 	}
 
 	//Cameras nodes
