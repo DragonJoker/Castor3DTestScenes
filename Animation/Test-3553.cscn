@@ -57,7 +57,7 @@ scene "Imported"
 		parent "LightNode"
 		type directional
 		colour 1 1 1
-		intensity 0.8 1
+		illumination 1.0
 	}
 
 	// Skeletons

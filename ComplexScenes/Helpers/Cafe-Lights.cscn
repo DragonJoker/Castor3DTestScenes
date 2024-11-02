@@ -9,7 +9,7 @@ light "spot_01"
 	parent "spot_01"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -45,7 +45,7 @@ light "spot_02"
 	parent "spot_02"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -81,7 +81,7 @@ light "spot_03"
 	parent "spot_03"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -117,7 +117,7 @@ light "spot_04"
 	parent "spot_04"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -153,7 +153,7 @@ light "spot_05"
 	parent "spot_05"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -189,7 +189,7 @@ light "spot_06"
 	parent "spot_06"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -225,7 +225,7 @@ light "spot_07"
 	parent "spot_07"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -261,7 +261,7 @@ light "spot_08"
 	parent "spot_08"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -297,7 +297,7 @@ light "spot_09"
 	parent "spot_09"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -333,7 +333,7 @@ light "spot_10"
 	parent "spot_10"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -369,7 +369,7 @@ light "spot_11"
 	parent "spot_11"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -405,7 +405,7 @@ light "spot_12"
 	parent "spot_12"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -441,7 +441,7 @@ light "spot_13"
 	parent "spot_13"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -477,7 +477,7 @@ light "spot_14"
 	parent "spot_14"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -513,7 +513,7 @@ light "spot_15"
 	parent "spot_15"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -549,7 +549,7 @@ light "spot_16"
 	parent "spot_16"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -585,7 +585,7 @@ light "spot_17"
 	parent "spot_17"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -621,7 +621,7 @@ light "spot_18"
 	parent "spot_18"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -657,7 +657,7 @@ light "spot_19"
 	parent "spot_19"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -693,7 +693,7 @@ light "spot_20"
 	parent "spot_20"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -729,7 +729,7 @@ light "spot_21"
 	parent "spot_21"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -765,7 +765,7 @@ light "spot_22"
 	parent "spot_22"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -801,7 +801,7 @@ light "spot_23"
 	parent "spot_23"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -837,7 +837,7 @@ light "spot_24"
 	parent "spot_24"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -873,7 +873,7 @@ light "spot_25"
 	parent "spot_25"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -909,7 +909,7 @@ light "spot_26"
 	parent "spot_26"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -945,7 +945,7 @@ light "spot_27_bar"
 	parent "spot_27_bar"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -981,7 +981,7 @@ light "spot_28_bar"
 	parent "spot_28_bar"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1017,7 +1017,7 @@ light "spot_29_bar"
 	parent "spot_29_bar"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1053,7 +1053,7 @@ light "spot_30_bar"
 	parent "spot_30_bar"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1089,7 +1089,7 @@ light "spot_31_bar"
 	parent "spot_31_bar"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1125,7 +1125,7 @@ light "spot_32_bar"
 	parent "spot_32_bar"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1161,7 +1161,7 @@ light "spot_33_bar"
 	parent "spot_33_bar"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1197,7 +1197,7 @@ light "spot_34_bar"
 	parent "spot_34_bar"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1233,7 +1233,7 @@ light "spot_35_bar"
 	parent "spot_35_bar"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1269,7 +1269,7 @@ light "spot_36_bar_back"
 	parent "spot_36_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1305,7 +1305,7 @@ light "spot_37_bar_back"
 	parent "spot_37_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1341,7 +1341,7 @@ light "spot_38_bar_back"
 	parent "spot_38_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1377,7 +1377,7 @@ light "spot_39_bar_back"
 	parent "spot_39_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1413,7 +1413,7 @@ light "spot_40_bar_back"
 	parent "spot_40_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1449,7 +1449,7 @@ light "spot_41_bar_back"
 	parent "spot_41_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1485,7 +1485,7 @@ light "spot_42_bar_back"
 	parent "spot_42_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1521,7 +1521,7 @@ light "spot_43_bar_back"
 	parent "spot_43_bar_back"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1557,7 +1557,7 @@ light "spot_44_bar_back_display"
 	parent "spot_44_bar_back_display"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1593,7 +1593,7 @@ light "spot_45_bar_back_display"
 	parent "spot_45_bar_back_display"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1629,7 +1629,7 @@ light "spot_46_billard"
 	parent "spot_46_billard"
 	type spot
 	colour 1.0 1.0 0.5
-	intensity 2.0 2.0
+	intensity 2.0
 	range 1000.0
 	cut_off 25.0
 	shadows
@@ -1665,7 +1665,7 @@ light "spot_47_billard"
 	parent "spot_47_billard"
 	type spot
 	colour 1.0 1.0 0.5
-	intensity 2.0 2.0
+	intensity 2.0
 	range 1000.0
 	cut_off 25.0
 	shadows
@@ -1701,7 +1701,7 @@ light "spot_48_billard"
 	parent "spot_48_billard"
 	type spot
 	colour 1.0 1.0 0.5
-	intensity 2.0 2.0
+	intensity 2.0
 	range 1000.0
 	cut_off 25.0
 	shadows
@@ -1737,7 +1737,7 @@ light "spot_49_billard"
 	parent "spot_49_billard"
 	type spot
 	colour 1.0 1.0 0.5
-	intensity 2.0 2.0
+	intensity 2.0
 	range 1000.0
 	cut_off 25.0
 	shadows
@@ -1773,7 +1773,7 @@ light "spot_50_billard"
 	parent "spot_50_billard"
 	type spot
 	colour 1.0 1.0 0.5
-	intensity 2.0 2.0
+	intensity 2.0
 	range 1000.0
 	cut_off 25.0
 	shadows
@@ -1809,7 +1809,7 @@ light "spot_51_billard"
 	parent "spot_51_billard"
 	type spot
 	colour 1.0 1.0 0.5
-	intensity 2.0 2.0
+	intensity 2.0
 	range 1000.0
 	cut_off 25.0
 	shadows
@@ -1845,7 +1845,7 @@ light "spot_52"
 	parent "spot_52"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1881,7 +1881,7 @@ light "spot_53"
 	parent "spot_53"
 	type spot
 	colour 1.0 1.0 1.0
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 1000.0
 	cut_off 45.0
 	shadows
@@ -1916,7 +1916,7 @@ light "aqua_point_01"
 	parent "aqua_point_01"
 	type point
 	colour 0.40000 0.64706 0.84314
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 3000.0
 }
 
@@ -1930,6 +1930,6 @@ light "aqua_point_02"
 	parent "aqua_point_02"
 	type point
 	colour 0.40000 0.64706 0.84314
-	intensity 10000.0 10000.0
+	intensity 10000.0
 	range 3000.0
 }

@@ -90,10 +90,10 @@ scene "TextureScene"
 	}
 	light "SunLight1"
 	{
-		parent		"SunLightNode1"
-		type		directional
-		colour		1 1 1
-		intensity	0.0 0.8 1.0
+		parent "SunLightNode1"
+		type directional
+		colour 1 1 1
+		illumination 1.0
 	}
 
 	scene_node "FinalNode"
@@ -234,7 +234,7 @@ scene "FinalScene"
 		parent "SunLightNode1"
 		type directional
 		colour 1 1 1
-		intensity 0.8 1.0
+		illumination 1.0
 	}
 
 	scene_node "FinalNode"

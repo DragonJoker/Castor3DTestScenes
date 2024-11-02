@@ -2,6 +2,7 @@ materials blinn_phong
 
 scene "Nyra"
 {
+	ambient_light 0.5 0.5 0.5
 	include "Materials/Nyra.cscn"
 
 	// Skybox
@@ -64,7 +65,7 @@ scene "Nyra"
 		parent "LightNode"
 		type directional
 		colour 1 1 1
-		intensity 1 1
+		illumination 1.0
 		// shadows
 		// {
 			// producer true

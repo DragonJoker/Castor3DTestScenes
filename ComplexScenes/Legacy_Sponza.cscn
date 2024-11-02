@@ -92,7 +92,7 @@ scene "Scene"
 		parent "LightNode"
 		type directional
 		colour 1.0 1.0 0.5
-		intensity 8 10
+		illumination 10
 		shadows
 		{
 			producer true
@@ -153,7 +153,7 @@ scene "Scene"
 		// parent "LightNode"
 		// type spot
 		// colour 1.0 1.0 0.5
-		// intensity 8.0 10.0
+		// intensity 10.0
 		// attenuation 1.0 0.5 0.0
 		// cut_off 10.0
 		// shadows
@@ -196,7 +196,7 @@ scene "Scene"
 		// parent "LightNode"
 		// type spot
 		// colour 1.0 1.0 0.5
-		// intensity 40.0 50.0
+		// intensity 50.0
 		// attenuation 1.0 0.2 0.0
 		// cut_off 45.0
 		// shadows
@@ -239,7 +239,7 @@ scene "Scene"
 		// parent "LightNode"
 		// type point
 		// colour 1.0 1.0 0.5
-		// intensity 8.0 10.0
+		// intensity 10.0
 		// attenuation 1 0.02 0
 		// shadows
 		// {

@@ -68,7 +68,7 @@ scene "Scene"
 		parent "LightNode"
 		type directional
 		colour 1.00000 1.00000 1.00000
-		intensity 8.0 10.0
+		intensity 10.0
 	}
 
 	import

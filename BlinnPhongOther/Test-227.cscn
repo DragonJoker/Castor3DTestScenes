@@ -64,7 +64,7 @@ scene "Nyra"
 		parent "LightNode"
 		type directional
 		colour 1 1 1
-		intensity 1 1
+		illumination 1.0
 		// shadows
 		// {
 			// producer true

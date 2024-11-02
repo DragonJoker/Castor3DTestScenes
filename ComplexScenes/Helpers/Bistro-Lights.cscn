@@ -10,7 +10,7 @@ light "SunLight"
 	parent "LightNode"
 	type directional
 	colour 1.00000 1.00000 0.8.00000
-	intensity 8.00000 10.0000
+	illumination 10.0000
 
 	shadows
 	{
@@ -132,7 +132,7 @@ light "Light_Bar_01"
 	parent "Light_Bar_01"
 	type point
 	colour 1.00000 1.00000 0.400000
-	intensity 1.0000 1.0000
+	intensity 1.0000
 	attenuation 1.00000 0.500000 0.00000
 
 	shadows
@@ -173,7 +173,7 @@ light "Light_Bar_02"
 	parent "Light_Bar_02"
 	type point
 	colour 1.00000 1.00000 0.400000
-	intensity 1.0000 1.0000
+	intensity 1.0000
 	attenuation 1.00000 0.500000 0.00000
 
 	shadows
@@ -214,7 +214,7 @@ light "Light_Bar_03"
 	parent "Light_Bar_03"
 	type point
 	colour 1.00000 1.00000 0.400000
-	intensity 1.0000 1.0000
+	intensity 1.0000
 	attenuation 1.00000 0.500000 0.00000
 
 	shadows
@@ -255,7 +255,7 @@ light "Light_Bar_04"
 	parent "Light_Bar_04"
 	type point
 	colour 1.00000 1.00000 0.400000
-	intensity 1.0000 1.0000
+	intensity 1.0000
 	attenuation 1.00000 0.500000 0.00000
 
 	shadows
@@ -296,7 +296,7 @@ light "Light_Ceiling_01"
 	parent "Light_Ceiling_01"
 	type spot
 	colour 1.00000 1.00000 0.400000
-	intensity 6.00000 6.00000
+	intensity 6.00000
 	attenuation 0.500000 0.200000 0.00000
 	exponent 1.00000
 	cut_off 45.0000
@@ -339,7 +339,7 @@ light "Light_Ceiling_02"
 	parent "Light_Ceiling_02"
 	type spot
 	colour 1.00000 1.00000 0.400000
-	intensity 6.00000 6.00000
+	intensity 6.00000
 	attenuation 0.500000 0.200000 0.00000
 	exponent 1.00000
 	cut_off 45.0000
@@ -382,7 +382,7 @@ light "Light_Ceiling_03"
 	parent "Light_Ceiling_03"
 	type spot
 	colour 1.00000 1.00000 0.400000
-	intensity 6.00000 6.00000
+	intensity 6.00000
 	attenuation 0.500000 0.200000 0.00000
 	exponent 1.00000
 	cut_off 45.0000
@@ -425,7 +425,7 @@ light "Light_Ceiling_04"
 	parent "Light_Ceiling_04"
 	type spot
 	colour 1.00000 1.00000 0.400000
-	intensity 6.00000 6.00000
+	intensity 6.00000
 	attenuation 0.500000 0.200000 0.00000
 	exponent 1.00000
 	cut_off 45.0000
@@ -468,7 +468,7 @@ light "Light_Wall_01"
 	parent "Light_Wall_01"
 	type point
 	colour 1.00000 1.00000 0.800000
-	intensity 1.0000 1.0000
+	intensity 1.0000
 	attenuation 1.00000 0.500000 0.00000
 
 	shadows
@@ -509,7 +509,7 @@ light "Light_Wall_02"
 	parent "Light_Wall_02"
 	type point
 	colour 1.00000 1.00000 0.800000
-	intensity 1.0000 1.0000
+	intensity 1.0000
 	attenuation 1.00000 0.500000 0.00000
 
 	shadows
@@ -550,7 +550,7 @@ light "Light_Wall_03"
 	parent "Light_Wall_03"
 	type point
 	colour 1.00000 1.00000 0.800000
-	intensity 1.0000 1.0000
+	intensity 1.0000
 	attenuation 1.00000 0.500000 0.00000
 
 	shadows
@@ -591,7 +591,7 @@ light "Light_Wall_04"
 	parent "Light_Wall_04"
 	type point
 	colour 1.00000 1.00000 0.800000
-	intensity 1.0000 1.0000
+	intensity 1.0000
 	attenuation 1.00000 0.500000 0.00000
 
 	shadows
@@ -632,7 +632,7 @@ light "Light_Wall_05"
 	parent "Light_Wall_05"
 	type point
 	colour 1.00000 1.00000 0.800000
-	intensity 1.0000 1.0000
+	intensity 1.0000
 	attenuation 1.00000 0.500000 0.00000
 
 	shadows
@@ -673,7 +673,7 @@ light "Light_Wall_06"
 	parent "Light_Wall_06"
 	type point
 	colour 1.00000 1.00000 0.800000
-	intensity 1.0000 1.0000
+	intensity 1.0000
 	attenuation 1.00000 0.500000 0.00000
 
 	shadows

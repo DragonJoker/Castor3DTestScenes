@@ -22,30 +22,21 @@ material "BlueTransWithMask"
 
 	pass
 	{
-		alpha_blend_mode interpolative
 		two_sided true
 		colour_hdr 0.0865004 0.462077 0.846874
 		transmission 1.00000
 		roughness 0.00000
 		alpha_func greater 0.950000
 		blend_alpha_func less_equal 0.950000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture214190.dds"
-			opacity_mask 0xff000000
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Image_texture214190_texture214190"
 		}
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture14184.dds"
-			transmission_mask 0x00ff0000
-			invert_y true
+			texture "Image_texture14184_texture14184"
 		}
 	}
 }
@@ -55,7 +46,6 @@ material "BlueTransWithMaskMetal"
 
 	pass
 	{
-		alpha_blend_mode interpolative
 		two_sided true
 		colour_hdr 0.0865004 0.462077 0.846874
 		transmission 1.00000
@@ -63,32 +53,20 @@ material "BlueTransWithMaskMetal"
 		roughness 0.00000
 		alpha_func greater 0.950000
 		blend_alpha_func less_equal 0.950000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture214190.dds"
-			opacity_mask 0xff000000
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Image_texture214190_texture214190"
 		}
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture175763.dds"
-			metalness_mask 0x000000ff
-			roughness_mask 0x0000ff00
-			invert_y true
+			texture "Image_texture175763_texture175763"
 		}
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture14184.dds"
-			transmission_mask 0x00ff0000
-			invert_y true
+			texture "Image_texture14184_texture14184"
 		}
 	}
 }
@@ -98,39 +76,25 @@ material "BlueTransWithMaskRough"
 
 	pass
 	{
-		alpha_blend_mode interpolative
 		two_sided true
 		colour_hdr 0.0865004 0.462077 0.846874
 		transmission 1.00000
-		roughness 1.00000
 		alpha_func greater 0.950000
 		blend_alpha_func less_equal 0.950000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture214190.dds"
-			opacity_mask 0xff000000
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Image_texture214190_texture214190"
 		}
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture177328.dds"
-			metalness_mask 0x000000ff
-			roughness_mask 0x0000ff00
-			invert_y true
+			texture "Image_texture177328_texture177328"
 		}
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture14184.dds"
-			transmission_mask 0x00ff0000
-			invert_y true
+			texture "Image_texture14184_texture14184"
 		}
 	}
 }
@@ -140,15 +104,11 @@ material "Cloth Backdrop"
 
 	pass
 	{
-		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.493500
 
 		texture_unit
 		{
-			levels_count 10
-			image "Textures/Transmission/texture28577.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Image_texture28577_texture28577"
 		}
 	}
 }
@@ -158,22 +118,16 @@ material "GreenMask"
 
 	pass
 	{
-		alpha_blend_mode interpolative
 		two_sided true
 		colour_hdr 0.149959 0.830771 0.191202
 		transmission 1.00000
 		roughness 0.00000
 		alpha_func greater 0.950000
 		blend_alpha_func less_equal 0.950000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture4086.dds"
-			opacity_mask 0xff000000
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Image_texture4086_texture4086"
 		}
 	}
 }
@@ -183,7 +137,6 @@ material "GreenMaskMetal"
 
 	pass
 	{
-		alpha_blend_mode interpolative
 		two_sided true
 		colour_hdr 0.149959 0.830771 0.191202
 		transmission 1.00000
@@ -191,24 +144,15 @@ material "GreenMaskMetal"
 		roughness 0.00000
 		alpha_func greater 0.950000
 		blend_alpha_func less_equal 0.950000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture4086.dds"
-			opacity_mask 0xff000000
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Image_texture4086_texture4086"
 		}
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture175763.dds"
-			metalness_mask 0x000000ff
-			roughness_mask 0x0000ff00
-			invert_y true
+			texture "Image_texture175763_texture175763"
 		}
 	}
 }
@@ -218,22 +162,16 @@ material "GreenMaskRough"
 
 	pass
 	{
-		alpha_blend_mode interpolative
 		two_sided true
 		colour_hdr 0.149959 0.830771 0.191202
 		transmission 1.00000
 		roughness 0.320000
 		alpha_func greater 0.950000
 		blend_alpha_func less_equal 0.950000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture4086.dds"
-			opacity_mask 0xff000000
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Image_texture4086_texture4086"
 		}
 	}
 }
@@ -249,10 +187,7 @@ material "LabelMaterial"
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture15366.dds"
-			emissive_mask 0x00ffffff
-			invert_y true
+			texture "Image_texture15366_texture15366"
 		}
 	}
 }
@@ -266,14 +201,10 @@ material "RedTransTexture"
 		colour_hdr 0.955973 0.177889 0.0953072
 		transmission 1.00000
 		roughness 0.00000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture14184.dds"
-			transmission_mask 0x00ff0000
-			invert_y true
+			texture "Image_texture14184_texture14184"
 		}
 	}
 }
@@ -288,23 +219,15 @@ material "RedTransTextureMetal"
 		transmission 1.00000
 		metalness 1.00000
 		roughness 0.00000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture175763.dds"
-			metalness_mask 0x000000ff
-			roughness_mask 0x0000ff00
-			invert_y true
+			texture "Image_texture175763_texture175763"
 		}
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture14184.dds"
-			transmission_mask 0x00ff0000
-			invert_y true
+			texture "Image_texture14184_texture14184"
 		}
 	}
 }
@@ -317,24 +240,15 @@ material "RedTransTextureRough"
 		two_sided true
 		colour_hdr 0.955973 0.177889 0.0953072
 		transmission 1.00000
-		roughness 1.00000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture177328.dds"
-			metalness_mask 0x000000ff
-			roughness_mask 0x0000ff00
-			invert_y true
+			texture "Image_texture177328_texture177328"
 		}
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture14184.dds"
-			transmission_mask 0x00ff0000
-			invert_y true
+			texture "Image_texture14184_texture14184"
 		}
 	}
 }
@@ -348,7 +262,6 @@ material "YellowTrans"
 		colour_hdr 0.846874 0.871366 0.0930590
 		transmission 1.00000
 		roughness 0.00000
-		refraction_ratio 1.00000
 	}
 }
 
@@ -362,15 +275,10 @@ material "YellowTransMetal"
 		transmission 1.00000
 		metalness 1.00000
 		roughness 0.00000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture10487.dds"
-			metalness_mask 0x000000ff
-			roughness_mask 0x0000ff00
-			invert_y true
+			texture "Image_texture10487_texture10487"
 		}
 	}
 }
@@ -383,16 +291,10 @@ material "YellowTransRough"
 		two_sided true
 		colour_hdr 0.846874 0.871366 0.0930590
 		transmission 1.00000
-		roughness 1.00000
-		refraction_ratio 1.00000
 
 		texture_unit
 		{
-			levels_count 7
-			image "Textures/Transmission/texture6807.dds"
-			metalness_mask 0x000000ff
-			roughness_mask 0x0000ff00
-			invert_y true
+			texture "Image_texture6807_texture6807"
 		}
 	}
 }

@@ -1,5 +1,8 @@
 // Global configuration
-materials c3d.pbr
+default_lighting_model "c3d.pbr"
+{
+	scattering_model "atmosphere_scattering"
+}
 
 scene "BaltardOut"
 {

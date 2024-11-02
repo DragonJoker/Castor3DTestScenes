@@ -42,7 +42,7 @@ scene "Scene"
 		type point
 		parent "PointLightNode"
 		colour 1.0 1.0 1.0
-		intensity 8.0 10.0
+		intensity 10.0
 		attenuation 1 0.1 0
 	}
 	object "LightPrimitive"
@@ -64,7 +64,7 @@ scene "Scene"
 		type directional
 		parent "SunLightNode1"
 		colour 1.0 1.0 1.0 1.0
-		intensity 8.0 10.0
+		illumination 10.0
 	}
 
 	scene_node "FinalNode"

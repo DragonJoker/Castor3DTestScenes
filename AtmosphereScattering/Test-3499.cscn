@@ -1,6 +1,8 @@
-materials pbr
 default_unit km
-
+default_lighting_model "c3d.pbr"
+{
+	scattering_model "atmosphere_scattering"
+}
 scene "Scene"
 {
 	ambient_light 0.2 0.2 0.2
@@ -16,7 +18,7 @@ scene "Scene"
 		parent "LightNode"
 		type directional
 		colour 1.0 0.2 0.2
-		intensity 8.0 10.0
+		illumination 10.0
 		shadows
 		{
 			producer true

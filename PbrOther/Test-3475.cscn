@@ -2,7 +2,7 @@
 default_lighting_model "pbr"
 {
 	diffuse_brdf "lambertian"
-	specular_brdf "cook_torrance"
+	specular_brdf "default"
 }
 
 scene "Nyra"
@@ -69,7 +69,7 @@ scene "Nyra"
 		parent "LightNode"
 		type directional
 		colour 1 1 1
-		intensity 8 10
+		intensity 10.0
 	}
 
 	// Geometries

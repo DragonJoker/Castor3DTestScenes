@@ -95,6 +95,7 @@ scene "Scene"
 	{
 		pass
 		{
+			lighting_model "c3d.water"
 			colour_srgb 0.003 0.599 0.812
 			metalness 0.0
 			roughness 0.08
@@ -197,7 +198,7 @@ scene "Scene"
 		parent "LightNode"
 		type directional
 		colour 1.0 1.0 1.0
-		intensity 8.0 10.0
+		illumination 10.0
 	}
 
 	// Cameras

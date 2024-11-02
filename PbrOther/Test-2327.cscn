@@ -3,7 +3,7 @@ materials pbr
 scene "Scene"
 {
 	background_colour 0.5 0.5 0.5 1.0
-	ambient_light 0.2 0.2 0.2
+	ambient_light 1.0 1.0 1.0
 
 	sampler "Linear"
 	{
@@ -31,8 +31,9 @@ scene "Scene"
 			emissive 0.0 0.0 0.0 1.0
 			specular 0.628281 0.628281 0.628281 1.0
 			glossiness 0.3828125
-			refraction_ratio 0.92
-			has_refraction true
+			two_sided true
+			refraction_ratio 2.42
+			transmission 1.0
 			reflections true
 		}
 	}
@@ -45,8 +46,9 @@ scene "Scene"
 			emissive 0.0 0.0 0.0 1.0
 			specular 0.628281 0.555802 0.366065 1.0
 			glossiness 1.0
-			refraction_ratio 0.92
-			has_refraction true
+			two_sided true
+			refraction_ratio 2.42
+			transmission 1.0
 			reflections true
 		}
 	}
@@ -59,8 +61,9 @@ scene "Scene"
 			emissive 0.0 0.0 0.0 1.0
 			specular 0.256777 0.137622 0.086014 1.0
 			glossiness 0.625
-			refraction_ratio 0.92
-			has_refraction true
+			two_sided true
+			refraction_ratio 2.42
+			transmission 1.0
 			reflections true
 		}
 	}

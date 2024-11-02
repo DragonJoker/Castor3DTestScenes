@@ -26,12 +26,6 @@ material "Body"
 		two_sided true
 		alpha_func greater 0.5
 
-		lighting_model "pbr"
-		{
-			diffuse_brdf "energy_conservative_oren_nayar"
-			specular_brdf "cook_torrance"
-		}
-
 		texture_unit
 		{
 			sampler "Trilinear"

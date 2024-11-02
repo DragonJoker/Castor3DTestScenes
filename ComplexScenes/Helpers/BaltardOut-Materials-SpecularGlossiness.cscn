@@ -5,7 +5,6 @@ material "pavillon_baltard/toit"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		specular_colour 0.288000 0.288000 0.288000
@@ -23,7 +22,6 @@ material "grille_baltard_out/grille_parc"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		specular_colour 0.156863 0.156863 0.156863
@@ -42,7 +40,6 @@ material "abris_bus/metal"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.432000 0.432000 0.432000
@@ -60,7 +57,6 @@ material "pavillon_baltard/antenne"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		specular_colour 0.784314 0.784314 0.784314
@@ -73,7 +69,6 @@ material "road_structure/mur_baltard_04"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -90,7 +85,6 @@ material "maison_baltard_04"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -108,7 +102,6 @@ material "reverbere/lumiere"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		alpha_blend_mode interpolative
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
@@ -128,7 +121,6 @@ material "entree_station/metal_or"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.315000 0.315000 0.315000
@@ -146,7 +138,6 @@ material "road_structure/mur_baltard_02"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -163,7 +154,6 @@ material "entree_station/plafond"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -175,7 +165,6 @@ material "road_structure/buisson_baltard"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -193,7 +182,6 @@ material "arbre_rue/tronc"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.0810000 0.0810000 0.0810000
@@ -211,7 +199,6 @@ material "abris_bus/plan"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -228,7 +215,6 @@ material "abris_bus/pub"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -245,7 +231,6 @@ material "abris_bus/verre"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		alpha_blend_mode interpolative
 		two_sided true
 		colour_hdr 0.436813 0.436813 0.436813
@@ -264,7 +249,6 @@ material "arbre_rue/bac"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.0720000 0.0720000 0.0720000
@@ -282,7 +266,6 @@ material "arbre_rue/feuilles"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.311180 0.311180 0.311180
 		roughness 0.500000
@@ -300,7 +283,6 @@ material "arbre_rue/terre"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -317,7 +299,6 @@ material "entree_station/nom_station"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.189000 0.189000 0.189000
@@ -335,7 +316,6 @@ material "banc/bois"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -352,7 +332,6 @@ material "banc/metal"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.234000 0.234000 0.234000
@@ -370,7 +349,6 @@ material "barriere_chantier/bois"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -387,7 +365,6 @@ material "barriere_chantier/peinture"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -404,7 +381,6 @@ material "corbeille/metal"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.288000 0.288000 0.288000
@@ -422,7 +398,6 @@ material "barriere_crs/barriere_crs"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.311180 0.311180 0.311180
 		specular_colour 0.504000 0.504000 0.504000
@@ -440,7 +415,6 @@ material "borne_incendie/borne_incendie_gris"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		specular_colour 0.351000 0.351000 0.351000
@@ -458,7 +432,6 @@ material "borne_incendie/borne_incendie_rouge"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		specular_colour 0.351000 0.351000 0.351000
@@ -476,7 +449,6 @@ material "cabine_telephone/metal"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.333000 0.333000 0.333000
@@ -494,7 +466,6 @@ material "grille_baltard_out/bareaux"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		specular_colour 0.207000 0.207000 0.207000
@@ -512,7 +483,6 @@ material "cabine_telephone/phone"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.135000 0.135000 0.135000
@@ -530,7 +500,6 @@ material "cabine_telephone/verre"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		alpha_blend_mode interpolative
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
@@ -549,7 +518,6 @@ material "cabine_telephone/verre marron"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -561,7 +529,6 @@ material "camera_surveillance_gauche/camera_surveillance_gauche"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.311180 0.311180 0.311180
 		specular_colour 0.0990000 0.0990000 0.0990000
@@ -579,7 +546,6 @@ material "wet_floor/wet_floor"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.126000 0.126000 0.126000
@@ -597,7 +563,6 @@ material "cartons/cartons"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -614,7 +579,6 @@ material "chene/feuilles"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -632,7 +596,6 @@ material "chene/tronc"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.311180 0.311180 0.311180
 		specular_colour 0.0900000 0.0900000 0.0900000
@@ -650,7 +613,6 @@ material "corbeille/bois"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.0720000 0.0720000 0.0720000
@@ -668,7 +630,6 @@ material "corbeille/trash"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -685,7 +646,6 @@ material "maison_baltard_03"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -703,7 +663,6 @@ material "entree_station/metal"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.180000 0.180000 0.180000
@@ -721,7 +680,6 @@ material "pavillon_baltard/bord_toit"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		specular_colour 0.0784314 0.0784314 0.0784314
@@ -739,7 +697,6 @@ material "entree_station/mur"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -756,7 +713,6 @@ material "entree_station/muret"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -773,7 +729,6 @@ material "entree_station/plan"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -790,7 +745,6 @@ material "entree_station/sol"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.216000 0.216000 0.216000
@@ -808,7 +762,6 @@ material "feu_tricolore/feu"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -825,7 +778,6 @@ material "feu_tricolore/metal"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.315000 0.315000 0.315000
@@ -843,7 +795,6 @@ material "feu_tricolore/pieton"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -860,7 +811,6 @@ material "grille_baltard_out/dorures"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		specular_colour 0.459000 0.459000 0.459000
@@ -878,7 +828,6 @@ material "grille_baltard_out/muret"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		specular_colour 0.0900000 0.0900000 0.0900000
@@ -896,7 +845,6 @@ material "interphone/interphone"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.311180 0.311180 0.311180
 		specular_colour 0.0990000 0.0990000 0.0990000
@@ -914,7 +862,6 @@ material "maison_baltard_01"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -932,7 +879,6 @@ material "maison_baltard_02"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -950,7 +896,6 @@ material "maison_baltard_05"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -968,7 +913,6 @@ material "maison_baltard_06"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 1.00000
@@ -986,7 +930,6 @@ material "maison_baltard_07"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1004,7 +947,6 @@ material "pavillon_baltard/black"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.00000 0.00000 0.00000
 		roughness 0.500000
@@ -1016,7 +958,6 @@ material "road_structure/road"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1033,7 +974,6 @@ material "pavillon_baltard/bronze"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		specular_colour 0.196078 0.196078 0.196078
@@ -1051,7 +991,6 @@ material "pavillon_baltard/bronze_alpha"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		roughness 0.250000
@@ -1069,7 +1008,6 @@ material "pavillon_baltard/metal_bleu"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		specular_colour 0.156863 0.156863 0.156863
@@ -1087,7 +1025,6 @@ material "pavillon_baltard/motifs"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		specular_colour 0.117647 0.117647 0.117647
@@ -1105,7 +1042,6 @@ material "pavillon_baltard/vitres"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.00000 0.00000 0.00000
 		specular_colour 0.117647 0.117647 0.117647
@@ -1118,7 +1054,6 @@ material "plot_chantier/plot_chantier"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.180000 0.180000 0.180000
@@ -1136,7 +1071,6 @@ material "poubelle/plastique_gris"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -1153,7 +1087,6 @@ material "poubelle/plastique_noir"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -1170,7 +1103,6 @@ material "poubelle/plastique_vert"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		roughness 0.500000
@@ -1187,7 +1119,6 @@ material "reverbere/metal"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.144000 0.144000 0.144000
@@ -1205,7 +1136,6 @@ material "road_structure/beton_use"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1222,7 +1152,6 @@ material "road_structure/fond"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.991392 0.991392 0.991392
 		roughness 0.500000
@@ -1240,7 +1169,6 @@ material "road_structure/grille_baltard"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.250000
@@ -1258,7 +1186,6 @@ material "road_structure/herbe"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1275,7 +1202,6 @@ material "road_structure/maison_02"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1292,7 +1218,6 @@ material "road_structure/maison_03"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1309,7 +1234,6 @@ material "road_structure/maison_04"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1326,7 +1250,6 @@ material "road_structure/maison_baltard_01"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1338,7 +1261,6 @@ material "road_structure/mur_baltard_01"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1355,7 +1277,6 @@ material "road_structure/mur_baltard_03"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1372,7 +1293,6 @@ material "road_structure/pave_baltard"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1389,7 +1309,6 @@ material "road_structure/portail_baltard"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.250000
@@ -1407,7 +1326,6 @@ material "road_structure/porte"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		specular_colour 0.0588235 0.0588235 0.0588235
@@ -1425,7 +1343,6 @@ material "road_structure/rembarde_mur"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1442,7 +1359,6 @@ material "road_structure/trottoire_baltard"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 1.00000 1.00000 1.00000
 		roughness 0.500000
@@ -1459,7 +1375,6 @@ material "saule_pleureur/feuilles"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.311180 0.311180 0.311180
 		roughness 0.500000
@@ -1477,7 +1392,6 @@ material "saule_pleureur/tronc"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.108000 0.108000 0.108000
@@ -1495,7 +1409,6 @@ material "wet_floor/bois"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
 		specular_colour 0.144000 0.144000 0.144000
@@ -1513,7 +1426,6 @@ material "wet_floor/eau"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		alpha_blend_mode interpolative
 		two_sided true
 		colour_hdr 0.310907 0.310907 0.310907
@@ -1532,7 +1444,6 @@ material "wet_floor/metal"
 
 	pass
 	{
-		lighting_model c3d.pbr
 		two_sided true
 		colour_hdr 0.311180 0.311180 0.311180
 		specular_colour 0.414000 0.414000 0.414000

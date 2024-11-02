@@ -7,6 +7,7 @@ scene "Scene"
 	ambient_light 1.00000 1.00000 1.00000
 	background_colour 1.00000 1.00000 1.00000
 	lpv_indirect_attenuation 1.70000
+	include "Helpers/Transmission-Textures.cscn"
 	include "Helpers/Transmission-Materials.cscn"
 	include "Helpers/Transmission-Meshes.cscn"
 	include "Helpers/Transmission-Nodes.cscn"

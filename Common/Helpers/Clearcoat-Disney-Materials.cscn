@@ -1,0 +1,288 @@
+// Samplers
+
+sampler "Default"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter nearest
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod -1000.00
+	max_lod 1000.00
+	lod_bias 0.00000
+	border_colour float_opaque_black
+	max_anisotropy 1.00000
+}
+
+// Materials
+
+material "BaseNorm_Base"
+{
+
+	pass
+	{
+		colour_hdr 0.0129830 0.0221739 0.109462
+		roughness 0.440000
+
+		texture_unit
+		{
+			image "Textures/Clearcoat/RibsNormal.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "BaseNorm_Coated"
+{
+
+	pass
+	{
+		colour_hdr 0.0128486 0.0218611 0.110689
+		roughness 0.440000
+		clearcoat_factor 1.00000
+		clearcoat_roughness_factor 0.0300000
+
+		texture_unit
+		{
+			image "Textures/Clearcoat/RibsNormal.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "CoatNorm_Coated"
+{
+
+	pass
+	{
+		colour_hdr 0.0129830 0.0221739 0.109462
+		roughness 0.440000
+		clearcoat_factor 1.00000
+		clearcoat_roughness_factor 0.0300000
+
+		texture_unit
+		{
+			levels_count 9
+			image "Textures/Clearcoat/PlasticWrap_normals.dds"
+			clearcoat_normal_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "CoatNorm_Coating"
+{
+
+	pass
+	{
+		colour_hdr 0.00000 0.00000 0.00000
+		roughness 0.0300000
+
+		texture_unit
+		{
+			image "Textures/Clearcoat/PlasticWrap_normals.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "LabelMaterial"
+{
+
+	pass
+	{
+		colour_hdr 0.00000 0.00000 0.00000
+		emissive 1.73205
+		roughness 0.900000
+
+		texture_unit
+		{
+			levels_count 7
+			image "Textures/Clearcoat/ClearCoatLabels.dds"
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Partial_Base"
+{
+
+	pass
+	{
+		colour_hdr 0.0129830 0.0221739 0.109462
+		roughness 0.440000
+	}
+}
+
+material "Partial_Coated"
+{
+
+	pass
+	{
+		colour_hdr 0.0129830 0.0221739 0.109462
+		roughness 0.440000
+		clearcoat_factor 1.00000
+		clearcoat_roughness_factor 0.0300000
+
+		texture_unit
+		{
+			levels_count 7
+			image "Textures/Clearcoat/PartialCoating.dds"
+			clearcoat_mask 0x00ff0000
+			invert_y true
+		}
+	}
+}
+
+material "Partial_Coating"
+{
+
+	pass
+	{
+		alpha_blend_mode interpolative
+		two_sided true
+		colour_hdr 1.00000 1.00000 1.00000
+		roughness 0.0300000
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+
+		texture_unit
+		{
+			levels_count 7
+			image "Textures/Clearcoat/PartialCoating_Alpha.dds"
+			opacity_mask 0xff000000
+			colour_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "RoughVariations_Base"
+{
+
+	pass
+	{
+		colour_hdr 0.0129830 0.0221739 0.109462
+		roughness 0.600000
+	}
+}
+
+material "RoughVariations_Coated"
+{
+
+	pass
+	{
+		colour_hdr 0.0129830 0.0221739 0.109462
+		roughness 0.600000
+		clearcoat_factor 1.00000
+		clearcoat_roughness_factor 1.00000
+
+		texture_unit
+		{
+			levels_count 8
+			image "Textures/Clearcoat/RoughnessStripes.dds"
+			clearcoat_roughness_mask 0x0000ff00
+			invert_y true
+		}
+	}
+}
+
+material "RoughVariations_Coating"
+{
+
+	pass
+	{
+		colour_hdr 0.00000 0.00000 0.00000
+		roughness 1.00000
+
+		texture_unit
+		{
+			levels_count 8
+			image "Textures/Clearcoat/RoughnessStripes.dds"
+			metalness_mask 0x000000ff
+			roughness_mask 0x0000ff00
+			invert_y true
+		}
+	}
+}
+
+material "SharedNorm_Coated"
+{
+
+	pass
+	{
+		colour_hdr 0.0129830 0.0221739 0.109462
+		roughness 0.440000
+		clearcoat_factor 1.00000
+		clearcoat_roughness_factor 0.0300000
+
+		texture_unit
+		{
+			image "Textures/Clearcoat/RibsNormal.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "Textures/Clearcoat/RibsNormal.dds"
+			clearcoat_normal_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "SharedNorm_Coating"
+{
+
+	pass
+	{
+		colour_hdr 0.00000 0.00000 0.00000
+		roughness 0.0300000
+
+		texture_unit
+		{
+			image "Textures/Clearcoat/RibsNormal.dds"
+			normal_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Simple_Base"
+{
+
+	pass
+	{
+		colour_hdr 0.500000 0.0200000 0.0100000
+		roughness 0.440000
+	}
+}
+
+material "Simple_Coated"
+{
+
+	pass
+	{
+		colour_hdr 0.500000 0.0200000 0.0100000
+		roughness 0.440000
+		clearcoat_factor 1.00000
+		clearcoat_roughness_factor 0.0300000
+	}
+}
+
+material "Simple_Coating"
+{
+
+	pass
+	{
+		colour_hdr 0.00000 0.00000 0.00000
+		roughness 0.0300000
+	}
+}

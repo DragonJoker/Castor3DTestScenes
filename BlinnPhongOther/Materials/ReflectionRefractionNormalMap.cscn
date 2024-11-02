@@ -23,9 +23,9 @@ material "MatBody"
 		shininess 256.0
 		alpha_func greater 0.5
 		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
 		reflections true
+		refraction_ratio 2.42
+		transmission 1.0
 
 		texture_unit
 		{
@@ -53,9 +53,9 @@ material "MatHead"
 		specular 0.75164 0.75164 0.75164 1.0
 		shininess 256.0
 		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
 		reflections true
+		refraction_ratio 2.42
+		transmission 1.0
 
 		texture_unit
 		{
@@ -75,9 +75,9 @@ material "cornea"
 		specular 0.75164 0.75164 0.75164 1.0
 		shininess 256.0
 		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
 		reflections true
+		refraction_ratio 2.42
+		transmission 1.0
 	}
 }
 
@@ -90,9 +90,9 @@ material "dx11Shader6"
 		shininess 256.0
 		alpha_func greater 0.5
 		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
 		reflections true
+		refraction_ratio 2.42
+		transmission 1.0
 
 		texture_unit
 		{

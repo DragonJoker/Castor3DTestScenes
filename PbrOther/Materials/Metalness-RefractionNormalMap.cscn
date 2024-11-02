@@ -22,9 +22,11 @@ material "MatBody"
 		roughness 0.0
 		metalness 0.0
 		alpha_func greater 0.5
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 
 		texture_unit
 		{
@@ -51,9 +53,11 @@ material "MatHead"
 		albedo 0.75164 0.75164 0.75164 1.0
 		roughness 0.0
 		metalness 0.0
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 
 		texture_unit
 		{
@@ -72,9 +76,11 @@ material "cornea"
 		albedo 0.75164 0.75164 0.75164 1.0
 		roughness 0.0
 		metalness 0.0
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 	}
 }
 
@@ -86,9 +92,11 @@ material "dx11Shader6"
 		roughness 0.0
 		metalness 0.0
 		alpha_func greater 0.5
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 
 		texture_unit
 		{

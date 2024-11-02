@@ -14,7 +14,7 @@ scene "Scene"
 		parent "LightNode"
 		type directional
 		colour 1.0 0.2 0.2
-		intensity 8.0 10.0
+		illumination 10.0
 	}
 
 	scene_node "PlanetNode"

@@ -53,7 +53,7 @@ scene "Scene"
 		parent "LightNode"
 		type directional
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
+		illumination 1.0
 	}
 
 	scene_node "FinalNode"
@@ -62,7 +62,7 @@ scene "Scene"
 	}
 	mesh "Mesh"
 	{
-		type "cube" -width=50 -height=50 depth=50
+		type "cube" -width=50 -height=50 -depth=50
 		default_material "Textured"
 	}
 	object "FinalPrimitive"

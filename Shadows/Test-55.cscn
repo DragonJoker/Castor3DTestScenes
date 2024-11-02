@@ -16,7 +16,7 @@ scene "Scene"
 		type directional
 		parent "LightNode"
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
+		intensity 1.0
 		shadows
 		{
 			producer true
@@ -40,7 +40,7 @@ scene "Scene"
 		type spot
 		parent "SpotLightNode"
 		colour 1.0 0.0 0.0
-		intensity 10000.0 12500.0
+		intensity 12500.0
 		range 10000.0
 		inner_cut_off 10
 		outer_cut_off 20
@@ -66,7 +66,7 @@ scene "Scene"
 		type point
 		parent "PointLightNode"
 		colour 0.0 1.0 0.0
-		intensity 10000.0 12500.0
+		intensity 12500.0
 		range 10000.0
 		shadows
 		{

@@ -40,7 +40,7 @@ scene "TransmissionTest"
 		parent "LightNode"
 		type directional
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
+		intensity 1.0
 	}
 
 	//Cameras nodes

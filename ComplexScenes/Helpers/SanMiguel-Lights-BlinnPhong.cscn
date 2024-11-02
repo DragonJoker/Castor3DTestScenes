@@ -5,7 +5,7 @@ light "SunLight"
 	parent "LightNode"
 	type directional
 	colour 1.00000 1.00000 1.00000
-	intensity 4.00000 5.00000
+	illumination 5.00000
 
 	shadows
 	{

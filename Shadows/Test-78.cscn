@@ -24,7 +24,6 @@ scene "Scene"
 			diffuse 0.75164 0.60648 0.22648 1.0
 			emissive 0.0 0.0 0.0 1.0
 			specular 0.628281 0.555802 0.366065 1.0
-			ambient 1.0
 			shininess 51.2
 		}
 	}
@@ -36,7 +35,6 @@ scene "Scene"
 			diffuse 0.7038 0.27048 0.0828 1.0
 			emissive 0.0 0.0 0.0 1.0
 			specular 0.256777 0.137622 0.086014 1.0
-			ambient 1.0
 			shininess 51.2
 		}
 	}
@@ -50,7 +48,7 @@ scene "Scene"
 		type point
 		parent "LightNode"
 		colour 1.0 1.0 1.0
-		intensity 40000.0 50000.0
+		intensity 50000.0
 		range 10000.0
 		cut_off 20
 		shadows

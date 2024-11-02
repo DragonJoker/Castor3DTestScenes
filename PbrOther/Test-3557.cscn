@@ -1,7 +1,7 @@
 default_lighting_model "pbr"
 {
 	diffuse_brdf "fujii_oren_nayar"
-	specular_brdf "cook_torrance"
+	specular_brdf "default"
 }
 
 scene "Scene"
@@ -838,7 +838,7 @@ scene "Scene"
 		parent "LightNode2"
 		type directional
 		colour 1.0 1.0 0.5
-		intensity 0.8 1.0
+		intensity 1.0
 	}
 
 	scene_node "Base"

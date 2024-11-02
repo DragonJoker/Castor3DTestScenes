@@ -5,7 +5,7 @@ light "Light"
 	parent "Light"
 	type directional
 	colour 1.00000 1.00000 1.00000
-	intensity 2.00000 2.00000
+	illumination 2.00000
 
 	shadows
 	{

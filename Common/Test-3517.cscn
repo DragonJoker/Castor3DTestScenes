@@ -17,7 +17,7 @@ scene "Test"
 	{
 		pass
 		{
-			lighting_model c3d.phong
+			lighting_model "c3d.phong"
 			diffuse 1.000 0.766 0.336
 			shininess 128.0
 			specular 0.625 0.47875 0.22875
@@ -28,7 +28,7 @@ scene "Test"
 	{
 		pass
 		{
-			lighting_model toon.phong
+			lighting_model "toon.phong"
 			diffuse 1.000 0.766 0.336
 			shininess 128.0
 			specular 0.625 0.47875 0.22875
@@ -42,7 +42,7 @@ scene "Test"
 	{
 		pass
 		{
-			lighting_model c3d.pbr
+			lighting_model "c3d.pbr"
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
 			specular 0.625 0.47875 0.22875
@@ -54,7 +54,7 @@ scene "Test"
 	{
 		pass
 		{
-			lighting_model toon.pbr
+			lighting_model "toon.pbr"
 			albedo 1.000 0.766 0.336
 			glossiness 0.50
 			specular 0.625 0.47875 0.22875
@@ -85,7 +85,7 @@ scene "Test"
 		parent "LightNode2"
 		type directional
 		colour 1.0 1.0 0.5
-		intensity 0.8 1.0
+		illumination 1.0
 	}
 
 	//Cameras nodes

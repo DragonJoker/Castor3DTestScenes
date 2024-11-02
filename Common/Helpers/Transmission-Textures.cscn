@@ -1,0 +1,70 @@
+// Textures
+
+texture "Image_texture10487_texture10487"
+{
+	image "Textures/Transmission/texture10487.dds"
+	metalness_mask 0x000000ff
+	roughness_mask 0x0000ff00
+	invert_y true
+}
+
+texture "Image_texture14184_texture14184"
+{
+	image "Textures/Transmission/texture14184.dds"
+	transmission_mask 0x00ff0000
+	invert_y true
+}
+
+texture "Image_texture15366_texture15366"
+{
+	image "Textures/Transmission/texture15366.dds"
+	emissive_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Image_texture175763_texture175763"
+{
+	image "Textures/Transmission/texture175763.dds"
+	metalness_mask 0x000000ff
+	roughness_mask 0x0000ff00
+	invert_y true
+}
+
+texture "Image_texture177328_texture177328"
+{
+	image "Textures/Transmission/texture177328.dds"
+	metalness_mask 0x000000ff
+	roughness_mask 0x0000ff00
+	invert_y true
+}
+
+texture "Image_texture214190_texture214190"
+{
+	image "Textures/Transmission/texture214190.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Image_texture28577_texture28577"
+{
+	image "Textures/Transmission/texture28577.dds"
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Image_texture4086_texture4086"
+{
+	image "Textures/Transmission/texture4086.dds"
+	opacity_mask 0xff000000
+	colour_mask 0x00ffffff
+	invert_y true
+}
+
+texture "Image_texture6807_texture6807"
+{
+	image "Textures/Transmission/texture6807.dds"
+	metalness_mask 0x000000ff
+	roughness_mask 0x0000ff00
+	invert_y true
+}

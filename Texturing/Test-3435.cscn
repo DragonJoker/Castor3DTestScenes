@@ -48,7 +48,7 @@ scene "Scene"
 		parent "SunLightNode1"
 		type directional
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
+		illumination 1.0
 	}
 
 	scene_node "BulbLight1"
@@ -60,7 +60,7 @@ scene "Scene"
 		parent "BulbLight1"
 		type point
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
+		intensity 1.0
 		attenuation 1.0 0.25 0.0
 	}
 

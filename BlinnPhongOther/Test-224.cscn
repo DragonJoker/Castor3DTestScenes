@@ -30,8 +30,11 @@ scene "Scene"
 			diffuse 0.75164	0.75164	0.75164 1.0
 			specular 0.628281 0.628281 0.628281 1.0
 			shininess 98.0
-			refraction_ratio 0.92
-			has_refraction true
+			refraction_ratio 2.42
+			transmission 1.0
+			attenuation_colour 1.0 1.0 1.0
+			attenuation_distance 1.0
+			thickness_factor 1.0
 		}
 	}
 
@@ -42,8 +45,12 @@ scene "Scene"
 			diffuse 0.75164 0.60648 0.22648 1.0
 			specular 0.628281 0.555802 0.366065 1.0
 			shininess 256.0
-			refraction_ratio 0.92
-			has_refraction true
+			refraction_ratio 2.42
+			transmission 1.0
+			attenuation_colour 1.0 1.0 1.0
+			attenuation_distance 1.0
+			thickness_factor 1.0
+
 		}
 	}
 
@@ -54,8 +61,12 @@ scene "Scene"
 			diffuse 0.7038 0.27048 0.0828 1.0
 			specular 0.256777 0.137622 0.086014 1.0
 			shininess 160.0
-			refraction_ratio 0.92
-			has_refraction true
+			refraction_ratio 2.42
+			transmission 1.0
+			attenuation_colour 1.0 1.0 1.0
+			attenuation_distance 1.0
+			thickness_factor 1.0
+
 		}
 	}
 

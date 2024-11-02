@@ -17,7 +17,7 @@ scene "Scene"
 		type spot
 		parent "SpotLightNode"
 		colour 1.0 1.0 1.0
-		intensity 4000.0 5000.0
+		intensity 5000.0
 		range 500.0
 		inner_cut_off 10
 		outer_cut_off 20

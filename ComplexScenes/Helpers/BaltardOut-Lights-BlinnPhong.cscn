@@ -5,7 +5,7 @@ light "light_01"
 	parent "LightNode"
 	type directional
 	colour 1.00000 1.00000 1.00000
-	intensity 0.700000 0.800000
+	illumination 0.800000
 
 	shadows
 	{

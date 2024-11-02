@@ -70,7 +70,7 @@ scene "Scene"
 		type point
 		parent "PointLightNode1"
 		colour 1.0 1.0 1.0
-		intensity 10000.0 12500.0
+		intensity 12500.0
 		range 10000.0
 		shadows
 		{
@@ -89,7 +89,7 @@ scene "Scene"
 		type point
 		parent "PointLightNode2"
 		colour 1.0 1.0 1.0
-		intensity 10000.0 12500.0
+		intensity 12500.0
 		range 10000.0
 		shadows
 		{

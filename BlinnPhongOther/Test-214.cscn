@@ -15,7 +15,7 @@ scene "Scene"
 		parent "LightNode"
 		type directional
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
+		illumination 1.0
 		shadows
 		{
 			producer true

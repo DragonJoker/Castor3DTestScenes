@@ -8,6 +8,6 @@ light "Light"
 	parent "LightNode"
 	type point
 	colour 1.0 1.0 1.0
-	intensity 100.0 80.0
+	intensity 80.0
 	attenuation 1.0 1.0 1.0
 }

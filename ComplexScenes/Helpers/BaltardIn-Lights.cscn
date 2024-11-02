@@ -12,6 +12,6 @@
 //	parent "point_light_01"
 //	type point
 //	colour 1 1 1
-//	intensity 0.7 0.8
+//	intensity 0.8
 //	attenuation 1 0.1 0
 //}

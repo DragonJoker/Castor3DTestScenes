@@ -29,8 +29,11 @@ scene "Scene"
 			diffuse 0.75164 0.75164 0.75164
 			specular 0.628281 0.628281 0.628281
 			shininess 192.0
-			refraction_ratio 0.92
-			has_refraction true
+			refraction_ratio 2.42
+			transmission 1.0
+			attenuation_distance 1.0
+			attenuation_colour 1.0 1.0 1.0
+			thickness_factor 1.0
 			reflections true
 		}
 	}
@@ -44,7 +47,7 @@ scene "Scene"
 		parent "SunLightNode1"
 		type directional
 		colour 1.0 1.0 1.0
-		intensity 0.8 1.0
+		illumination 1.0
 	}
 
 	scene_node "FinalNode"

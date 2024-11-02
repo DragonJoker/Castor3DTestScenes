@@ -112,9 +112,11 @@ material "RefrMatBody"
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 
 		texture_unit
 		{
@@ -141,9 +143,11 @@ material "RefrMatHead"
 		diffuse 0.75164	0.75164	0.75164
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 
 		texture_unit
 		{
@@ -162,9 +166,11 @@ material "RefrCornea"
 		diffuse 0.75164	0.75164	0.75164
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 	}
 }
 
@@ -176,9 +182,11 @@ material "RefrDx11Shader6"
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 
 		texture_unit
 		{
@@ -206,9 +214,11 @@ material "ReflRefrMatBody"
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 		reflections true
 
 		texture_unit
@@ -236,9 +246,11 @@ material "ReflRefrMatHead"
 		diffuse 0.75164	0.75164	0.75164
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 		reflections true
 
 		texture_unit
@@ -258,9 +270,11 @@ material "ReflRefrCornea"
 		diffuse 0.75164	0.75164	0.75164
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 		reflections true
 	}
 }
@@ -273,9 +287,11 @@ material "ReflRefrDx11Shader6"
 		specular 0.75164 0.75164 0.75164
 		shininess 256.0
 		alpha_func greater 0.5
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 		reflections true
 
 		texture_unit

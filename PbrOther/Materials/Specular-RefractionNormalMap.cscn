@@ -21,24 +21,38 @@ material "MatBody"
 		specular 1.0 1.0 1.0
 		glossiness 1.0
 		alpha_func greater 0.5
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 
 		texture_unit
 		{
-			channel opacity
-			levels_count 6
-			image "Textures/Nyra/body-opacity.png" a
+			opacity_mask 0xFF000000
+			image "Textures/Nyra/body-opacity.png"
 			sampler "Trilinear"
 		}
 
 		texture_unit
 		{
-			normal_mask 0x00FFFFFF
-			levels_count 6
-			image "Textures/Nyra/body-normal.jpg" rgb
 			sampler "Trilinear"
+			albedo_mask 0x00FFFFFF
+			image "Textures/Nyra/body-diffuse.jpg"
+		}
+
+		texture_unit
+		{
+			normal_mask 0x00FFFFFF
+			image "Textures/Nyra/body-normal.jpg"
+			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			roughness_mask 0x00FF0000
+			image "Textures/Nyra/body-roughness.jpg"
 		}
 	}
 }
@@ -49,16 +63,31 @@ material "MatHead"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			albedo_mask 0x00FFFFFF
+			image "Textures/Nyra/head-diffuse.jpg"
+		}
 
 		texture_unit
 		{
 			normal_mask 0x00FFFFFF
-			levels_count 6
-			image "Textures/Nyra/head-normal.jpg" rgb
+			image "Textures/Nyra/head-normal.jpg"
 			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			roughness_mask 0x00FF0000
+			image "Textures/Nyra/head-roughness.jpg"
 		}
 	}
 }
@@ -69,9 +98,11 @@ material "cornea"
 	{
 		specular 1.0 1.0 1.0
 		glossiness 1.0
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 	}
 }
 
@@ -82,15 +113,24 @@ material "dx11Shader6"
 		specular 1.0 1.0 1.0
 		glossiness 1.0
 		alpha_func greater 0.5
-		two_sided true
-		refraction_ratio 0.92
-		has_refraction true
+		refraction_ratio 2.42
+		transmission 1.0
+		attenuation_distance 1.0
+		attenuation_colour 1.0 1.0 1.0
+		thickness_factor 1.0
 
 		texture_unit
 		{
-			channel opacity
+			sampler "Trilinear"
+			albedo_mask 0x00FFFFFF
+			image "Textures/Nyra/head-diffuse.jpg"
+		}
+
+		texture_unit
+		{
+			opacity_mask 0xFF000000
 			levels_count 6
-			image "Textures/Nyra/head-opacity.png" a
+			image "Textures/Nyra/head-opacity.png"
 			sampler "Trilinear"
 		}
 
@@ -98,8 +138,15 @@ material "dx11Shader6"
 		{
 			normal_mask 0x00FFFFFF
 			levels_count 6
-			image "Textures/Nyra/head-normal.jpg" rgb
+			image "Textures/Nyra/head-normal.jpg"
 			sampler "Trilinear"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			roughness_mask 0x00FF0000
+			image "Textures/Nyra/head-roughness.jpg"
 		}
 	}
 }

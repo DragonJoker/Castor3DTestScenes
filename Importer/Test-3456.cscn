@@ -21,7 +21,7 @@ scene "AnimScene"
 		parent "LightNode"
 		type directional
 		colour 1 1 1
-		intensity 0.8 1
+		intensity 5.0
 	}
 
 	// Cameras nodes
@@ -78,5 +78,18 @@ window "MainWindow"
 		scene "AnimScene"
 		camera "AnimCamera"
 		tone_mapping "aces"
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			intensity 1.0
+			radius 50.0
+			bias 0.023
+			num_samples 19
+			edge_sharpness 1.0
+			blur_step_size 2
+			blur_radius 4
+		}
 	}
 }

@@ -30,9 +30,11 @@ scene "Scene"
 			albedo 0.75164	0.75164	0.75164 1.0
 			roughness 0.6171875
 			metalness 0.0
-			refraction_ratio 0.92
-			has_refraction true
-			two_sided true
+			refraction_ratio 2.42
+			transmission 1.0
+			attenuation_distance 1.0
+			attenuation_colour 1.0 1.0 1.0
+			thickness_factor 1.0
 		}
 	}
 
@@ -43,9 +45,11 @@ scene "Scene"
 			albedo 0.75164 0.60648 0.22648 1.0
 			roughness 0.0
 			metalness 0.0
-			refraction_ratio 0.92
-			has_refraction true
-			two_sided true
+			refraction_ratio 2.42
+			transmission 1.0
+			attenuation_distance 1.0
+			attenuation_colour 1.0 1.0 1.0
+			thickness_factor 1.0
 		}
 	}
 
@@ -56,12 +60,13 @@ scene "Scene"
 			albedo 0.7038 0.27048 0.0828 1.0
 			roughness 0.375
 			metalness 0.0
-			refraction_ratio 0.92
-			has_refraction true
-			two_sided true
+			refraction_ratio 2.42
+			transmission 1.0
+			attenuation_distance 1.0
+			attenuation_colour 1.0 1.0 1.0
+			thickness_factor 1.0
 		}
 	}
-
 	scene_node "Torus"
 	{
 		position 100.0 0.0 0.0
@@ -75,7 +80,6 @@ scene "Scene"
 		}
 		material "Silver"
 	}
-
 	scene_node "Sphere"
 	{
 		position 0.0 100.0 0.0
@@ -89,7 +93,6 @@ scene "Scene"
 		}
 		material "Gold"
 	}
-
 	scene_node "Cube"
 	{
 		position 0.0 0.0 0.0
@@ -103,7 +106,6 @@ scene "Scene"
 		}
 		material "Copper"
 	}
-
 	scene_node "Camera"
 	{
 		position -42.4948 -1.21124 -179.291
