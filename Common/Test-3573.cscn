@@ -1,0 +1,38 @@
+max_image_size 1024
+default_lighting_model "c3d.pbr"
+
+scene "Tests-14-3440"
+{
+	ambient_light 1.0 1.0 1.0
+	background_colour 0.5 0.5 0.5 1.0
+
+	skybox
+	{
+		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
+	}
+
+	import
+	{
+		file "Test-14.cscn"
+		prefix "Test-14"
+	}
+
+	import
+	{
+		file "Test-3440.cscn"
+		prefix "Test-3440"
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Tests-14-3440"
+		camera "Test-14-MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

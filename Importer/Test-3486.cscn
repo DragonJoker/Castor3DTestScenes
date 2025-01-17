@@ -12,6 +12,7 @@ scene "TransmissionTest"
 	skybox
 	{
 		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 2048
+		show_irradiance true
 	}
 
 	// Samplers

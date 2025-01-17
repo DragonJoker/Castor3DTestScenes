@@ -1,4 +1,4 @@
-materials pbr
+default_lighting_model "c3d.pbr"
 
 scene "Scene"
 {
@@ -31,25 +31,25 @@ scene "Scene"
 
 	texture "WaterNormal1"
 	{
-		image "Textures/Water/waterNM1.dds"
+		image "Textures/Waves/waterNM1.dds"
 		water_normal1_mask 0x00FFFFFF
 	}
 
 	texture "WaterNormal2"
 	{
-		image "Textures/Water/waterNM2.dds"
+		image "Textures/Waves/waterNM2.dds"
 		water_normal2_mask 0x00FFFFFF
 	}
 
 	texture "WaterNoise"
 	{
-		image "Textures/Water/waterNoise.dds"
+		image "Textures/Waves/waterNoise.dds"
 		water_noise_mask 0x00FF0000
 	}
 
 	texture "WaterFoam"
 	{
-		image "Textures/Water/waterFoam.dds"
+		image "Textures/Waves/waterFoam.dds"
 		water_foam_mask 0x00FFFFFF
 	}
 
@@ -101,7 +101,7 @@ scene "Scene"
 	{
 		pass
 		{
-			lighting_model water.pbr
+			lighting_model "c3d.water"
 			colour_srgb 0.003 0.599 0.812
 			metalness 0.0
 			roughness 0.08

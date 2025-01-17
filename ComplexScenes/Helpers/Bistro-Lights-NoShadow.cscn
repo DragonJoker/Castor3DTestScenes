@@ -14,7 +14,7 @@ light "SunLight"
 
 	shadows
 	{
-		producer false
+		producer true
 		filter pcf
 		global_illumination none
 

@@ -12,6 +12,7 @@ scene "CompareAnisotropy"
 	skybox
 	{
 		equirectangular "Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
+		show_irradiance true
 	}
 
 	// Samplers
