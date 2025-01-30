@@ -1,0 +1,5339 @@
+// Samplers
+
+sampler "Default"
+{
+	min_filter linear
+	mag_filter linear
+	mip_filter nearest
+	u_wrap_mode repeat
+	v_wrap_mode repeat
+	w_wrap_mode repeat
+	min_lod -1000.00
+	max_lod 1000.00
+	lod_bias 0.00000
+	border_colour float_opaque_black
+	max_anisotropy 1.00000
+}
+
+// Materials
+
+material "Imp-Antenna_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Clean_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Clean_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Antenna_Plastic"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.216000 0.216000 0.216000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plastic_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Antenna_Plastic_Blue"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.188000 0.188000 0.188000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plastic_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Ashtray"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/Paris_Ashtray_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/Paris_Ashtray_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Awnings_Beams"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.198000 0.198000 0.198000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_Beams_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Awnings_Fabric"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.192000 0.192000 0.192000
+		glossiness 0.0440000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_BistroAwning_fabric_01A_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_fabric_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_fabric_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Awnings_Hotel_Fabric"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_BistroAwning_02_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Balcony_Concrete"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Doors_04A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Doors_04A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Balcony_Green_Wood"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Doors_03A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Doors_03A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Balcony_Ornaments"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_MainBalcony_01A_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_MainBalcony_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_MainBalcony_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Balcony_Trims"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_MainBalcony_02A_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_MainBalcony_02A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_MainBalcony_02A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Banner_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.312000 0.312000 0.300000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Chrome_01_banner_metal_Diff.dds"
+			albedo_mask 0x00ffffff
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Bistro_Sign_Letters"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.0100000
+		emissive 1.23693
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/Grey_80.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Bistro_Sign_Main"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroFrontBanner_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroFrontBanner_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Bollards"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Bollard_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Bollard_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Chimneys_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/Grain_Metal_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Grain_Metal_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Cloth"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0410000 0.0410000 0.0410000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Cloths_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Concrete"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Concrete2"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Concrete3"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.0200000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Concrete_Striped"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Concrete_Grooved_02_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Concrete_Grooved_02_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Concrete_Grooved_02_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-CookieJar_Cookies"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Cookie_01_Lo_default_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-CookieJar_Glass1"
+{
+
+	pass
+	{
+		albedo 0.00000 0.00000 0.00000
+		specular 0.300000 0.300000 0.300000
+		glossiness 0.500000
+		alpha 0.173205
+		bw_accumulation 1
+		transmission 0.100000 0.100000 0.100000
+		two_sided true
+		alpha_blend_mode interpolative
+	}
+}
+
+material "Imp-Cutlery_chrome"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Chrome_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Chrome_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Cutlery_details"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 3
+			image "../Data/Textures/Bistro/Paris_Cutlery_01_details_diff.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0x00ff0000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 3
+			image "../Data/Textures/Bistro/Paris_Cutlery_01_details_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-ElectricBox"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0200000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ElectricBox_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ElectricBox_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Foliage_Bux_Hedges46"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.00100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/buxus_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Imp-Foliage_Bux_Hedges46AlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Foliage_Flowers"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Imp-Foliage_FlowersAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Foliage_Ivy_branches"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ivy_branch_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Foliage_Ivy_leaf_a"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_ivy_leaf_a_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Imp-Foliage_Ivy_leaf_aAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Foliage_Leaves"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Italian_Cypress_Leaves_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Imp-Foliage_LeavesAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Foliage_Linde_Tree_Large_Green_Leaves"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.0510000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Imp-Foliage_Linde_Tree_Large_Green_LeavesAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Foliage_Linde_Tree_Large_Orange_Leaves"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.0360000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Imp-Foliage_Linde_Tree_Large_Orange_LeavesAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Foliage_Linde_Tree_Large_Trunk"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Linden_Bark_A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Foliage_Paris_Flowers"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Imp-Foliage_Paris_FlowersAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Foliage_Trunk"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Italian_Cypress_Bark_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Lantern"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		emissive 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Lantern_01A_emi.dds"
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Lantern_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Lantern_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Awning_Beams"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_Beams_01B_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_Beams_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Awning_Fabric_Cyan"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_Fabric_Cyan_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_fabric_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Awning_Fabric_Red"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_fabric_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BistroAwning_fabric_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Bistro_Main_Door"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Bistro_main_door_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Bistro_main_door_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Black_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/grain_metal_01_black_metal_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Book_Covers"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Books_Covers_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Boulangerie"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Boulangeria_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Brick_Large_Beige_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/brick_large_03_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/brick_large_03_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/brick_large_03_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Brick_Large_White"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.0200000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/brick_large_02_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/brick_large_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/brick_large_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Brick_Small_Red"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/brick_small_02_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/brick_small_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/brick_small_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Brick_Small_Red_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Brick_Small_03_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Brick_Small_03_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Brick_Small_03_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Bronze_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Clean_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Bronze_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Building_Details"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/paris_building_09_details_disp.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Building_09_Details_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/paris_building_09_details_disp.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Concrete"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0470000 0.0470000 0.0470000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/concrete_smooth_02_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Concrete1"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Bistro_Main_Door_Concrete_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Bistro_Main_Door_Concrete_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Concrete_Grooved"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Concrete_Grooved_02_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Concrete_Plaster"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0470000 0.0470000 0.0470000
+		glossiness 0.0200000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Concrete_Smooth_03_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Concrete_Smooth_03_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Concrete_Smooth_03_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Concrete_Plaster1_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0470000 0.0470000 0.0470000
+		glossiness 0.0200000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Concrete_Smooth_03_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Concrete_Smooth_03_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Concrete_Smooth_03_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Concrete_Smooth"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0470000 0.0470000 0.0470000
+		glossiness 0.0200000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Concrete_Smooth_03_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Concrete_Smooth_03_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Concrete_Smooth_03_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Concrete_Smooth_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0160000 0.0160000 0.0160000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Concrete_White"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.388000 0.388000 0.388000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Plaster_01A_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plaster_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plaster_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Concrete_Yellow"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Plaster_01A_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plaster_01A_yellow_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plaster_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Curtains"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.0100000
+		emissive 0.0492443
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Windows_curtains_diff.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Details_Dark"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Building_09_Details_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Building_09_Details_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Doors"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Doors_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Doors_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Focus"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/paris_bistroexteriorspotlight_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/paris_bistroexteriorspotlight_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Focus_Glass"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0100000
+		emissive 3.46410
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_BistroExteriorSpotLightGlass_01_diff.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_BistroExteriorSpotLightGlass_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Focus_Ornament"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/bistro_woodpanelornament_01_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/bistro_woodpanelornament_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/bistro_woodpanelornament_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Forge_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_Building01_Window_01_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Imp-MASTER_Forge_MetalAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/paris_building01_window_01_displ.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Frosted_Glass"
+{
+
+	pass
+	{
+		albedo 0.00000 1.00000 0.00000
+		specular 0.235000 0.267000 0.278000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			image "../Data/Textures/Bistro/frosted_glass_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Glass_Clean"
+{
+
+	pass
+	{
+		albedo 0.00000 0.00000 0.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		alpha 0.346410
+		bw_accumulation 1
+		emissive_colour 0.00000 0.00000 0.00000
+		emissive 0.0173205
+		transmission 0.200000 0.200000 0.200000
+		two_sided true
+		alpha_blend_mode interpolative
+	}
+}
+
+material "Imp-MASTER_Glass_Dirty"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		alpha 0.346410
+		bw_accumulation 1
+		transmission 0.200000 0.200000 0.200000
+		two_sided true
+		alpha_blend_mode interpolative
+	}
+}
+
+material "Imp-MASTER_Glass_Exterior"
+{
+
+	pass
+	{
+		albedo 0.100000 0.100000 0.100000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0800000
+		alpha 0.346410
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Glass_Dirty_01_spec.dds"
+			albedo_mask 0x00ffffff
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Grain_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.180000 0.180000 0.180000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/grain_metal_01_black_metal_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Brushed_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/paris_brushed_metal_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/paris_brushed_metal_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Floor_Tile_Hexagonal_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0600000 0.0600000 0.0600000
+		glossiness 0.0800000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/tile_hexagonal_01_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/tile_hexagonal_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Frozen_Glass"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.120000 0.120000 0.120000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			image "../Data/Textures/Bistro/frosted_glass_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Glass"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.773000 0.773000 0.773000
+		glossiness 0.100000
+		alpha 0.346410
+		bw_accumulation 1
+		transmission 0.200000 0.200000 0.200000
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/grey_128.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Grid"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0830000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/Grey_128.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Hexagonal_Grid_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Grid1"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Hexagonal_Grid_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Hexagonal_Grid_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Material"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_MenuSign_01B_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Paris_Bartrim"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BarTrim_01a_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BarTrim_01a_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Paris_Lantern"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		emissive 1.00000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Lantern_01A_emi.dds"
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Imp-MASTER_Interior_01_Paris_LanternAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Lantern_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Plaster"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Plaster2"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_02_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Plaster_Red"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_02_red_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/concrete_smooth_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_White_Plastic"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.165000 0.165000 0.165000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 5
+			image "../Data/Textures/Bistro/White.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Wood"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_polished_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_polished_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Interior_01_Wooden_stuco"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_planks_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_polished_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Light_Bulb"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.341000 0.341000 0.341000
+		glossiness 0.0500000
+		emissive 5.50000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/paris_bistroexteriorspotlight_01_diff.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.332000 0.332000 0.319000
+		glossiness 0.0800000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Chrome_01_tint_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Metal_Pipe"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Grain_Metal_01_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/grain_metal_01_black_metal_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/metal_galvanized_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Plastic"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plastic_01_Planters_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plastic_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Rollup_Door"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		glossiness 0.0500000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Metal_RollDoor_01_spec.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_RollDoor_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_RollDoor_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Roofing_Metal_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/roofing_metal_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Roofing_Shingle_Green"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Roofing_Shingle_03_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Roofing_Shingle_03_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Roofing_Shingle_03_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Roofing_Shingle_Grey"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Roofing_Shingle_01_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Roofing_Shingle_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Roofing_Shingle_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Room_Interior"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Room_Interior_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Side_Letters"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 6
+			image "../Data/Textures/Bistro/Imp-MASTER_Side_LettersAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "../Data/Textures/Bistro/Paris_BistroSideBanner_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Trim_Cornice"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0470000 0.0470000 0.0470000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Trim_cornice_01_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Trim_cornice_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Wood_Brown"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_base_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_polished_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Wood_Painted3"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Wood_Painted_02_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_painted_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Wood_Painted_Cyan"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.0500000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_painted_flat_cyan_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Wood_Painted_Green"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0410000 0.0410000 0.0410000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_painted_flat_grey_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Wood_Painted_Green_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Wood_Painted_04_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Wood_Painted_04_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MASTER_Wood_Polished"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_base_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_polished_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MenuSign_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_MenuSign_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_MenuSign_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MenuSign_02_Glass"
+{
+
+	pass
+	{
+		albedo 0.800000 0.800000 0.800000
+		specular 0.376000 0.376000 0.376000
+		glossiness 0.0158500
+		alpha 0.675500
+		bw_accumulation 1
+		transmission 0.390000 0.390000 0.390000
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Glass_Dirty_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-MenuSign_02_Mesh"
+{
+
+	pass
+	{
+		albedo 0.800000 0.800000 0.800000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0158500
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_MenuSign_01B_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_MenuSign_01B_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Metal_Bronze_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Bronze_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Bronze_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Metal_Chrome1"
+{
+
+	pass
+	{
+		albedo 0.00000 0.00000 0.00000
+		specular 0.769000 0.780000 0.780000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Chrome_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Chrome_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Metal_Worn_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Clean_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Clean_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-NapkinHolder"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Napkinholder_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Napkinholder_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-NapkinHolder_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Napkinholder_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Napkinholder_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_BarStool"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_BarStool_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_BarStool_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Beertap"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BeerTap_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_BeerTap_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Cashregister"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_CashRegister_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_CashRegister_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Cashregister_Buttons"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_CashRegister_Buttons_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_CashRegister_Buttons_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Cashregister_Glass"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.831000 0.831000 0.831000
+		glossiness 0.100000
+		alpha 0.173205
+		bw_accumulation 1
+		transmission 0.100000 0.100000 0.100000
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Glass_Dirty_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_CeilingFan"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		emissive 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_CeilingFan_01A_emi.dds"
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_CeilingFan_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_CeilingFan_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Ceiling_Lamp"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		emissive 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Ceiling_Lamp_01_emi.dds"
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Ceiling_Lamp_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Ceiling_Lamp_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Chair_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Chair_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Chair_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Coasters_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_Coasters_01_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_Coasters_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_Coasters_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Doormat"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.239000 0.239000 0.239000
+		glossiness 0.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_Doormat_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_LiquorBottle_01_Caps"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_LiquorBottle_01_Cap_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_LiquorBottle_01_Cap_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_LiquorBottle_01_Glass"
+{
+
+	pass
+	{
+		albedo 0.00000 0.00000 0.00000
+		specular 0.212000 0.212000 0.212000
+		glossiness 0.100000
+		alpha 0.346410
+		bw_accumulation 1
+		transmission 0.200000 0.200000 0.200000
+		two_sided true
+		alpha_blend_mode interpolative
+	}
+}
+
+material "Imp-Paris_LiquorBottle_01_Glass1"
+{
+
+	pass
+	{
+		albedo 0.00000 0.00000 0.00000
+		specular 0.400000 0.400000 0.400000
+		glossiness 5.00000
+		alpha 0.0707107
+		bw_accumulation 1
+		transmission 0.0300000 0.0500000 0.0400000
+		two_sided true
+		alpha_blend_mode interpolative
+	}
+}
+
+material "Imp-Paris_LiquorBottle_01_Glass_Wine"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0450000 0.0510000 0.0680000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/grey_30.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_LiquorBottle_01_Labels"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_LiquorBottle_labels_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0x00ff0000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_LiquorBottle_labels_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_LiquorBottle_02_Glass"
+{
+
+	pass
+	{
+		albedo 0.00000 0.00000 0.00000
+		specular 0.500000 0.200000 0.0980000
+		glossiness 5.00000
+		alpha 0.223607
+		bw_accumulation 1
+		transmission 0.200000 0.100000 0.00000
+		two_sided true
+		alpha_blend_mode interpolative
+	}
+}
+
+material "Imp-Paris_LiquorBottle_03_Glass"
+{
+
+	pass
+	{
+		albedo 0.00000 0.00000 0.00000
+		specular 0.212000 0.255000 0.333000
+		glossiness 0.100000
+		alpha 0.346410
+		bw_accumulation 1
+		transmission 0.200000 0.200000 0.200000
+		two_sided true
+		alpha_blend_mode interpolative
+	}
+}
+
+material "Imp-Paris_Painting_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Painting_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Painting_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Paintings"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Paintings_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Paintings_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Paintings_Glass"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.831000 0.831000 0.831000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Glass_Dirty_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Radiator"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Radiator_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Radiator_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_StreetSign_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_StreetSign_01A_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_StreetSign_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_StreetSign_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Streetpivot"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.216000 0.149000 0.129000
+		glossiness 0.0800000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_StreetPivot_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Bollard_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_StringLights_01_Blue_Color"
+{
+
+	pass
+	{
+		albedo 0.800000 0.800000 0.800000
+		specular 0.434000 0.434000 0.434000
+		glossiness 0.0151740
+		emissive 3.20156
+		emissive_colour 0.800000 0.800000 0.800000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 5
+			image "../Data/Textures/Bistro/White.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_StringLights_01_Green_Color"
+{
+
+	pass
+	{
+		albedo 0.800000 0.800000 0.800000
+		specular 0.434000 0.434000 0.434000
+		glossiness 0.0158500
+		emissive_colour 0.800000 0.800000 0.800000
+		emissive 2.29129
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/Green.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_StringLights_01_Orange_Color"
+{
+
+	pass
+	{
+		albedo 0.800000 0.800000 0.800000
+		specular 0.434000 0.434000 0.434000
+		glossiness 0.0152130
+		emissive_colour 0.800000 0.800000 0.800000
+		emissive 2.23830
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/Orange.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_StringLights_01_Pink_Color"
+{
+
+	pass
+	{
+		albedo 0.800000 0.800000 0.800000
+		specular 0.434000 0.434000 0.434000
+		glossiness 0.0158500
+		emissive_colour 0.800000 0.800000 0.800000
+		emissive 2.24499
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/Purple.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_StringLights_01_Red_Color"
+{
+
+	pass
+	{
+		albedo 0.800000 0.800000 0.800000
+		specular 0.456000 0.456000 0.456000
+		glossiness 0.0151740
+		emissive_colour 0.800000 0.800000 0.800000
+		emissive 3.00832
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 4
+			image "../Data/Textures/Bistro/Red_Full.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_StringLights_01_White_Color"
+{
+
+	pass
+	{
+		albedo 0.800000 0.800000 0.800000
+		specular 0.435000 0.435000 0.435000
+		glossiness 0.0158500
+		emissive_colour 0.800000 0.800000 0.800000
+		emissive 16.7631
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 5
+			image "../Data/Textures/Bistro/White.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Table_03"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.200000 0.200000 0.200000
+		glossiness 0.0800000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_polished_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_polished_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Table_Terrace"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_Table_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_Table_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Table_cloth_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.300000 0.300000 0.300000
+		glossiness 0.00500000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_Cotton_Placemat_01_Diff.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Cotton_Placemat_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Cotton_Placemat_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_TrafficSign_A"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_TrafficSign_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_TrafficSign_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Wall_Bulb_Light"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.0100000
+		emissive 1.73205
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 5
+			image "../Data/Textures/Bistro/White.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Paris_Wall_Light_Interior"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		emissive 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Wall_Light_Interior_emi.dds"
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Wall_Light_Interior_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Wall_Light_Interior_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Brick_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Pavement_Brick_01_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Pavement_Brick_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Pavement_Brick_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Cobble_Leaves_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.239000 0.239000 0.239000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_01_b_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Cobblestone_01_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.239000 0.239000 0.239000
+		glossiness 0.0500000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_01_b_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_01_b_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Cobblestone_02"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.0100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_03_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_03_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Cobblestone_Big_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_Big_01_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_Big_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_Big_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Cobblestone_Small_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_Small_01_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_Small_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Pavement_Cobblestone_Small_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Cobblestone_Wet_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Cobble_02B_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Cobble_02B_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Cobble_02B_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Cobblestone_Wet_Leaves_BLENDSHADER"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.00100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Cobble_02B_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Curbstones"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Curbstones_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Ground_Wet"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.100000 0.100000 0.100000
+		glossiness 0.0300000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Ground_Wet_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Pavement_Manhole_Cover"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_manholecover_01b_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_manholecover_01b_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_manholecover_01b_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Plantpots"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_PlantPot_01A_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_PlantPot_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Plants_Metal_Base_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Clean_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Bronze_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Plants_plants"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0500000 0.0500000 0.0500000
+		glossiness 0.0200000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Imp-Plants_plantsAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Plaster"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/brick_large_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/brick_large_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Plastic_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plastic_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plastic_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Plastic_02"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plastic_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plastic_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Plates_Ceramic"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.224000 0.224000 0.224000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Ceramic_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Plates_Details"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.216000 0.216000 0.216000
+		glossiness 0.100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Imp-Plates_DetailsAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Rubber_Bar_Mat_01"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Rubber_Bar_Mat_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Rubber_Bar_Mat_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Shopsign_Bakery"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_ShopSign_bakery_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ShopSign_bakery_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ShopSign_bakery_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Shopsign_Book_Store"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0.100000
+		emissive 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			image "../Data/Textures/Bistro/Paris_ShopSign_bookshop_ddna.dds"
+			normal_mask 0x00ffffff
+			height_mask 0xff000000
+			height_factor 0.100000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ShopSign_bookshop_emt.dds"
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ShopSign_bookshop_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ShopSign_bookshop_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Shopsign_Pharmacy"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.0400000 0.0400000 0.0400000
+		glossiness 0.100000
+		emissive 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ShopSign_pharmacy_diff.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Shopsign_Ties_Shop"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ShopSign_ties shop_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_ShopSign_ties shop_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Sidewalkbarrier"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_SidewalkBarrier_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_SidewalkBarrier_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Spotlight_Emissive"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.341000 0.341000 0.341000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/paris_bistroexteriorspotlight_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Spotlight_Glass"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0500000
+		emissive 3.46410
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_BistroExteriorSpotLightGlass_01_diff.dds"
+			albedo_mask 0x00ffffff
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_BistroExteriorSpotLightGlass_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Spotlight_Main"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/paris_bistroexteriorspotlight_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/paris_bistroexteriorspotlight_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Streetlight_Chains"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+		alpha_func greater 0.950000
+		blend_alpha_func less_equal 0.950000
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 6
+			image "../Data/Textures/Bistro/Imp-Streetlight_ChainsAlbOpa.dds"
+			albedo_mask 0x00ffffff
+			opacity_mask 0xff000000
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "../Data/Textures/Bistro/Street_decals_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Streetlight_Glass"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.788000 0.788000 0.788000
+		glossiness 0.200000
+		alpha 0.519615
+		bw_accumulation 1
+		transmission 0.300000 0.300000 0.300000
+		two_sided true
+		alpha_blend_mode interpolative
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_StreetLight_Glass_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Streetlight_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.0700000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_StreetLight_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_StreetLight_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Streetlight_Support_Bulb"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.400000 0.400000 0.400000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_StreetLight_Glass_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Stringlights"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.00000 0.00000 0.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 6
+			image "../Data/Textures/Bistro/paris_stringlights_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "../Data/Textures/Bistro/paris_stringlights_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-ToffeeJar_Label"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_LiquorBottle_labels_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_LiquorBottle_labels_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-ToffeeJar_Metal"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Metal_Chrome_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 6
+			image "../Data/Textures/Bistro/Metal_Chrome_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-ToffeeJar_Toffee"
+{
+
+	pass
+	{
+		albedo 0.00000 0.00000 0.00000
+		specular 0.823000 0.456000 0.0150000
+		glossiness 0.100000
+		two_sided true
+	}
+}
+
+material "Imp-Trashcan"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_TrashCan_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_TrashCan_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Trolley_Plastic"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plastic_01_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Plastic_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Trolley_Wheels"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_TrashCan_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_TrashCan_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Trolley_Wood_Painted"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Wood_Painted_02_Diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_painted_02_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Vespa"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 1.00000 1.00000 1.00000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_VespaScooter_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_VespaScooter_01_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Vespa_Headlight"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+	}
+}
+
+material "Imp-Vespa_Odometer"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.239000 0.239000 0.239000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 7
+			image "../Data/Textures/Bistro/Paris_VespaScooter_01_odometer_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Vespa_Odometer_Glass"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+	}
+}
+
+material "Imp-Wall_Lamp"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		emissive 1.00000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Lantern_01A_emi.dds"
+			emissive_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Lantern_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Lantern_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-WickerBasket"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.188000 0.188000 0.188000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_WickerBasket_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-Wood"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/wood_planks_01_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Wood_Planks_01_Spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-curtainA"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Curtain_01A_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Curtain_01A_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}
+
+material "Imp-curtainB1"
+{
+
+	pass
+	{
+		albedo 1.00000 1.00000 1.00000
+		specular 0.500000 0.500000 0.500000
+		glossiness 0.100000
+		two_sided true
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Curtain_01B_diff.dds"
+			albedo_mask 0x00ffffff
+			invert_y true
+		}
+
+		texture_unit
+		{
+			levels_count 8
+			image "../Data/Textures/Bistro/Paris_Curtain_01B_spec.dds"
+			specular_mask 0x00ffffff
+			invert_y true
+		}
+	}
+}

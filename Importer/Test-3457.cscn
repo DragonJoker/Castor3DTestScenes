@@ -78,9 +78,9 @@ scene "Scene"
 		rescale 0.01
 	}
 
-	animated_object_group "MocapGuy_EyesMocapGuy"
+	animated_object_group "RootNodeMocapGuy"
 	{
-		start_animation "mixamo.com"
+		start_animation "mixamo_com"
 	}
 }
 

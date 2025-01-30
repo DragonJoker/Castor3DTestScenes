@@ -60,9 +60,9 @@ scene "AnimScene"
 		file_anim "Meshes/HellKnight/attack2.md5anim"
 		file_anim "Meshes/HellKnight/idle2.md5anim"
 	}
-	animated_object_group "<MD5_Mesh>hellknight_models_msh"
+	animated_object_group "<MD5_Mesh>models_hellknight"
 	{
-		start_animation "attack2"
+		start_animation "attack2-0"
 	}
 }
 

@@ -28,10 +28,9 @@ scene "Scene"
 		position 100.0 100.0 0.0
 	}
 
-	light "PointLight1"
+	light_group "PointLights"
 	{
 		type point
-		parent "PointLightNode1"
 		colour 1.0 1.0 1.0
 		intensity 12500.0
 		range 10000.0
@@ -47,33 +46,16 @@ scene "Scene"
 				filter_size 8
 			}
 		}
-	}
-
-	light "PointLight2"
-	{
-		type point
-		parent "PointLightNode2"
-		colour 1.0 1.0 1.0
-		intensity 12500.0
-		range 10000.0
-		shadows
+		instances
 		{
-			producer true
-			filter pcf
-			pcf_config
-			{
-				min_offset 0.00001
-				max_slope_offset 0.0001
-				sample_count 64
-				filter_size 8
-			}
+			instance "PointLightNode1"
+			instance "PointLightNode2"
 		}
 	}
 
-	light "SpotLight1"
+	light_group "SpotLights"
 	{
 		type spot
-		parent "SpotLightNode1"
 		colour 1.0 1.0 1.0
 		intensity 12500.0
 		range 10000.0
@@ -91,28 +73,10 @@ scene "Scene"
 				filter_size 8
 			}
 		}
-	}
-
-	light "SpotLight2"
-	{
-		type spot
-		parent "SpotLightNode2"
-		colour 1.0 1.0 1.0
-		intensity 12500.0
-		range 10000.0
-		inner_cut_off 10
-		outer_cut_off 20
-		shadows
+		instances
 		{
-			producer true
-			filter pcf
-			pcf_config
-			{
-				min_offset 0.00001
-				max_slope_offset 0.0001
-				sample_count 64
-				filter_size 8
-			}
+			instance "SpotLightNode1"
+			instance "SpotLightNode2"
 		}
 	}
 

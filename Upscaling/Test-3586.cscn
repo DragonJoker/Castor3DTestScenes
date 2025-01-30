@@ -1,0 +1,1029 @@
+materials blinn_phong
+
+upscaling
+{
+	enabled true
+	mode dlaa
+}
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.5 0.5 0.5 1.0
+	include "../Data/Materials/Common.cscn"
+	include "../Data/Materials/Hellknight.cscn"
+
+	skybox
+	{
+		equirectangular "../Data/Textures/backgroundSkyboxEquirectangularHdr.hdr" 1024
+	}
+
+	scene_node "LightNode"
+	{
+		orientation 1 0 0 -225
+	}
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 1.0 1.0
+		illumination 1.0
+	}
+
+	scene_node "MainCameraNode"
+	{
+		orientation 0 1 0 135
+		position -336 79 532
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 1.0
+			far 20000.0
+		}
+	}
+
+	/**
+	*	MORPHING
+	*/
+
+	material "Morphing"
+	{
+		pass
+		{
+			diffuse 0.64 0.64 0.64
+			specular 0.5 0.5 0.5
+			shininess 96.078431
+		}
+	}
+	mesh "Morphing"
+	{
+		import "../Data/Meshes/Morphing/untitled_0_000001.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000002.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000003.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000004.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000005.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000006.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000007.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000008.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000009.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000010.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000011.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000012.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000013.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000014.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000015.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000016.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000017.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000018.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000019.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000020.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000021.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000022.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000023.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000024.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000025.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000026.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000027.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000028.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000029.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000030.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000031.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000032.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000033.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000034.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000035.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000036.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000037.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000038.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000039.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000040.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000041.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000042.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000043.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000044.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000045.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000046.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000047.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000048.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000049.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000050.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000051.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000052.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000053.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000054.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000055.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000056.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000057.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000058.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000059.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000060.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000061.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000062.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000063.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000064.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000065.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000066.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000067.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000068.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000069.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000070.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000071.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000072.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000073.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000074.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000075.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000076.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000077.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000078.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000079.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000080.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000081.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000082.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000083.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000084.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000085.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000086.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000087.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000088.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000089.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000090.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000091.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000092.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000093.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000094.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000095.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000096.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000097.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000098.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000099.obj" -no_optimisations
+		import_morph_target "../Data/Meshes/Morphing/untitled_0_000100.obj" -no_optimisations
+		morph_animation "Morph"
+		{
+			target_weight 0.1 0 1.0
+			target_weight 0.2 1 1.0
+			target_weight 0.3 2 1.0
+			target_weight 0.4 3 1.0
+			target_weight 0.5 4 1.0
+			target_weight 0.6 5 1.0
+			target_weight 0.7 6 1.0
+			target_weight 0.8 7 1.0
+			target_weight 0.9 8 1.0
+			target_weight 1.0 9 1.0
+			target_weight 1.1 10 1.0
+			target_weight 1.2 11 1.0
+			target_weight 1.3 12 1.0
+			target_weight 1.4 13 1.0
+			target_weight 1.5 14 1.0
+			target_weight 1.6 15 1.0
+			target_weight 1.7 16 1.0
+			target_weight 1.8 17 1.0
+			target_weight 1.9 18 1.0
+			target_weight 2.0 19 1.0
+			target_weight 2.1 20 1.0
+			target_weight 2.2 21 1.0
+			target_weight 2.3 22 1.0
+			target_weight 2.4 23 1.0
+			target_weight 2.5 24 1.0
+			target_weight 2.6 25 1.0
+			target_weight 2.7 26 1.0
+			target_weight 2.8 27 1.0
+			target_weight 2.9 28 1.0
+			target_weight 3.0 29 1.0
+			target_weight 3.1 30 1.0
+			target_weight 3.2 31 1.0
+			target_weight 3.3 32 1.0
+			target_weight 3.4 33 1.0
+			target_weight 3.5 34 1.0
+			target_weight 3.6 35 1.0
+			target_weight 3.7 36 1.0
+			target_weight 3.8 37 1.0
+			target_weight 3.9 38 1.0
+			target_weight 4.0 39 1.0
+			target_weight 4.1 40 1.0
+			target_weight 4.2 41 1.0
+			target_weight 4.3 42 1.0
+			target_weight 4.4 43 1.0
+			target_weight 4.5 44 1.0
+			target_weight 4.6 45 1.0
+			target_weight 4.7 46 1.0
+			target_weight 4.8 47 1.0
+			target_weight 4.9 48 1.0
+			target_weight 5.0 49 1.0
+			target_weight 5.1 50 1.0
+			target_weight 5.2 51 1.0
+			target_weight 5.3 52 1.0
+			target_weight 5.4 53 1.0
+			target_weight 5.5 54 1.0
+			target_weight 5.6 55 1.0
+			target_weight 5.7 56 1.0
+			target_weight 5.8 57 1.0
+			target_weight 5.9 58 1.0
+			target_weight 6.0 59 1.0
+			target_weight 6.1 60 1.0
+			target_weight 6.2 61 1.0
+			target_weight 6.3 62 1.0
+			target_weight 6.4 63 1.0
+			target_weight 6.5 64 1.0
+			target_weight 6.6 65 1.0
+			target_weight 6.7 66 1.0
+			target_weight 6.8 67 1.0
+			target_weight 6.9 68 1.0
+			target_weight 7.0 69 1.0
+			target_weight 7.1 70 1.0
+			target_weight 7.2 71 1.0
+			target_weight 7.3 72 1.0
+			target_weight 7.4 73 1.0
+			target_weight 7.5 74 1.0
+			target_weight 7.6 75 1.0
+			target_weight 7.7 76 1.0
+			target_weight 7.8 77 1.0
+			target_weight 7.9 78 1.0
+			target_weight 8.0 79 1.0
+			target_weight 8.1 80 1.0
+			target_weight 8.2 81 1.0
+			target_weight 8.3 82 1.0
+			target_weight 8.4 83 1.0
+			target_weight 8.5 84 1.0
+			target_weight 8.6 85 1.0
+			target_weight 8.7 86 1.0
+			target_weight 8.8 87 1.0
+			target_weight 8.9 88 1.0
+			target_weight 9.0 89 1.0
+			target_weight 9.1 90 1.0
+			target_weight 9.2 91 1.0
+			target_weight 9.3 92 1.0
+			target_weight 9.4 93 1.0
+			target_weight 9.5 94 1.0
+			target_weight 9.6 95 1.0
+			target_weight 9.7 96 1.0
+			target_weight 9.8 97 1.0
+			target_weight 9.9 98 1.0
+		}
+		default_material "Morphing"
+	}
+	scene_node "MorphingNode"
+	{
+		position 0.0 -0.5 0.0
+		scale 20.0 20.0 20.0
+	}
+	object "MorphingObject"
+	{
+		parent "MorphingNode"
+		mesh "Morphing"
+	}
+	animated_object_group "Morphing"
+	{
+		animated_object "MorphingObject"
+
+		animation "Morph"
+		{
+			looped true
+		}
+
+		start_animation "Morph"
+	}
+
+	/**
+	*	SKINNING
+	*/
+
+	mesh "HellKnightMesh"
+	{
+		import "../Data/Meshes/Hellknight.cmsh"
+		default_materials
+		{
+			material 0 "hellknight"
+			material 1 "gob2"
+			material 2 "gob"
+			material 3 "tongue"
+		}
+	}
+	scene_node "HellKnight1Node1"
+	{
+		orientation 1 0 0 180
+		position 45 -30 -50
+		scale 1 1 1
+	}
+	scene_node "HellKnight1Node2"
+	{
+		parent "HellKnight1Node1"
+		orientation 0 1 0 90
+		position 0 0 0
+		scale 1 1 1
+	}
+	scene_node "HellKnight2Node1"
+	{
+		orientation 1 0 0 180
+		position 15 -30 -100
+		scale 1 1 1
+	}
+	scene_node "HellKnight2Node2"
+	{
+		parent "HellKnight2Node1"
+		orientation 0 1 0 90
+		position 0 0 0
+		scale 1 1 1
+	}
+	scene_node "HellKnight3Node1"
+	{
+		orientation 1 0 0 180
+		position -15 -30 -50
+		scale 1 1 1
+	}
+	scene_node "HellKnight3Node2"
+	{
+		parent "HellKnight3Node1"
+		orientation 0 1 0 90
+		position 0 0 0
+		scale 1 1 1
+	}
+	scene_node "HellKnight4Node1"
+	{
+		orientation 1 0 0 180
+		position -45 -30 -100
+		scale 1 1 1
+	}
+	scene_node "HellKnight4Node2"
+	{
+		parent "HellKnight4Node1"
+		orientation 0 1 0 90
+		position 0 0 0
+		scale 1 1 1
+	}
+	object "HellKnight1"
+	{
+		parent "HellKnight1Node2"
+		mesh "HellKnightMesh"
+	}
+	object "HellKnight2"
+	{
+		parent "HellKnight2Node2"
+		mesh "HellKnightMesh"
+	}
+	object "HellKnight3"
+	{
+		parent "HellKnight3Node2"
+		mesh "HellKnightMesh"
+	}
+	object "HellKnight4"
+	{
+		parent "HellKnight4Node2"
+		mesh "HellKnightMesh"
+	}
+	animated_object_group "HellKnight1_2Anim"
+	{
+		animated_object "HellKnight1"
+		animated_object "HellKnight2"
+
+		animation "idle2"
+		{
+			looped true
+			scale 1
+		}
+
+		start_animation "idle2"
+	}
+	animated_object_group "HellKnight3Anim"
+	{
+		animated_object "HellKnight3"
+
+		animation "attack2"
+		{
+			looped true
+			scale 2
+		}
+
+		start_animation "attack2"
+	}
+	animated_object_group "HellKnight4Anim"
+	{
+		animated_object "HellKnight4"
+
+		animation "attack2"
+		{
+			looped true
+			scale -1
+		}
+
+		start_animation "attack2"
+	}
+
+	/**
+	*	BILLBOARDS
+	*/
+
+	material "Billboards"
+	{
+		pass
+		{
+			diffuse 0.5 0.5 0.5 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 1.0 1.0 1.0 1.0
+			shininess 50.0
+			mixed_interpolation true
+
+			texture_unit
+			{
+				channel diffuse
+				image "../Data/Textures/Billboards/AlphaRejection.png" rgb
+				sampler	"Default"
+			}
+
+			texture_unit
+			{
+				channel opacity
+				image "../Data/Textures/Billboards/AlphaRejection.png" a
+				sampler	"Default"
+			}
+		}
+	}
+
+	material "Billboard"
+	{
+		pass
+		{
+			diffuse 0.5 0.5 0.5 1.0
+			emissive 0.0 0.0 0.0 1.0
+			specular 1.0 1.0 1.0 1.0
+			shininess 50.0
+			two_sided true
+
+			texture_unit
+			{
+				image "../Data/Textures/Bricks/Diffuse.jpg"
+				channel diffuse
+				sampler	"Default"
+			}
+		}
+	}
+
+	scene_node "Billboards"
+	{
+		scale 10 10 10
+	}
+	billboard "Billboards"
+	{
+		parent "Billboards"
+		type cylindrical
+		material "Billboards"
+		dimensions 50 50
+		positions
+		{
+			pos  0.0  0.0  0.0
+			pos  0.0  0.0 10.0
+			pos  0.0  0.0 20.0
+			pos 10.0  0.0  0.0
+			pos 10.0  0.0 10.0
+			pos 10.0  0.0 20.0
+			pos 20.0  0.0  0.0
+			pos 20.0  0.0 10.0
+			pos 20.0  0.0 20.0
+			pos  0.0 10.0  0.0
+			pos  0.0 10.0 10.0
+			pos  0.0 10.0 20.0
+			pos 10.0 10.0  0.0
+			pos 10.0 10.0 10.0
+			pos 10.0 10.0 20.0
+			pos 20.0 10.0  0.0
+			pos 20.0 10.0 10.0
+			pos 20.0 10.0 20.0
+			pos  0.0 20.0  0.0
+			pos  0.0 20.0 10.0
+			pos  0.0 20.0 20.0
+			pos 10.0 20.0  0.0
+			pos 10.0 20.0 10.0
+			pos 10.0 20.0 20.0
+			pos 20.0 20.0  0.0
+			pos 20.0 20.0 10.0
+			pos 20.0 20.0 20.0
+		}
+	}
+
+	scene_node "Billboard"
+	{
+		scale 10 10 10
+	}
+	billboard "Billboard"
+	{
+		parent "Billboard"
+		type spherical
+		material "Billboard"
+		dimensions 200 200
+		positions
+		{
+			pos 80.0 40.0 -40.0
+		}
+	}
+
+	/**
+	*	PARTICLES
+	*/
+
+	material "Fireworks"
+	{
+		pass
+		{
+			diffuse 1 0 0
+			specular 0 0 0
+			emissive_colour 1 0 0
+			emissive_factor 1.0
+			shininess 50
+			mixed_interpolation true
+
+			texture_unit
+			{
+				image "../Data/Textures/fireworks_red.png"
+				channel opacity
+				sampler	"Default"
+			}
+		}
+	}
+	scene_node "Fireworks"
+	{
+		position 400 0 0
+	}
+	particle_system "Fireworks"
+	{
+		parent "Fireworks"
+		particles_count 10000
+		dimensions 20 20
+		material "Fireworks"
+		particle
+		{
+			type "fireworks"
+			variable "position" vec3f 0 0 0
+			variable "type" float 0
+			variable "velocity" vec3f 0 0.01 0
+			variable "age" float 0
+		}
+	}
+
+	/**
+	*	INSTANCING
+	*/
+
+	mesh "InstOpqMesh"
+	{
+		type "torus" -inner_count=40 -outer_count=40 -inner_size=15 -outer_size=35
+	}
+
+	scene_node "InstOpqFinalNode0"
+	{
+		position 0 -100 0
+	}
+	object "InstOpqFinalPrimitive0"
+	{
+		parent "InstOpqFinalNode0"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode1"
+	{
+		position 100 -100 0
+	}
+	object "InstOpqFinalPrimitive1"
+	{
+		parent "InstOpqFinalNode1"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode2"
+	{
+		position 200 -100 0
+	}
+	object "InstOpqFinalPrimitive2"
+	{
+		parent "InstOpqFinalNode2"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode3"
+	{
+		position 300 -100 0
+	}
+	object "InstOpqFinalPrimitive3"
+	{
+		parent "InstOpqFinalNode3"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode4"
+	{
+		position 400 -100 0
+	}
+	object "InstOpqFinalPrimitive4"
+	{
+		parent "InstOpqFinalNode4"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode5"
+	{
+		position 500 -100 0
+	}
+	object "InstOpqFinalPrimitive5"
+	{
+		parent "InstOpqFinalNode5"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode6"
+	{
+		position 600 -100 0
+	}
+	object "InstOpqFinalPrimitive6"
+	{
+		parent "InstOpqFinalNode6"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode7"
+	{
+		position 700 -100 0
+	}
+	object "InstOpqFinalPrimitive7"
+	{
+		parent "InstOpqFinalNode7"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode8"
+	{
+		position 800 -100 0
+	}
+	object "InstOpqFinalPrimitive8"
+	{
+		parent "InstOpqFinalNode8"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode9"
+	{
+		position 900 -100 0
+	}
+	object "InstOpqFinalPrimitive9"
+	{
+		parent "InstOpqFinalNode9"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode10"
+	{
+		position 0 -50 0
+	}
+	object "InstOpqFinalPrimitive10"
+	{
+		parent "InstOpqFinalNode10"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode11"
+	{
+		position 100 -50 0
+	}
+	object "InstOpqFinalPrimitive11"
+	{
+		parent "InstOpqFinalNode11"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode12"
+	{
+		position 200 -50 0
+	}
+	object "InstOpqFinalPrimitive12"
+	{
+		parent "InstOpqFinalNode12"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode13"
+	{
+		position 300 -50 0
+	}
+	object "InstOpqFinalPrimitive13"
+	{
+		parent "InstOpqFinalNode13"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode14"
+	{
+		position 400 -50 0
+	}
+	object "InstOpqFinalPrimitive14"
+	{
+		parent "InstOpqFinalNode14"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode15"
+	{
+		position 500 -50 0
+	}
+	object "InstOpqFinalPrimitive15"
+	{
+		parent "InstOpqFinalNode15"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode16"
+	{
+		position 600 -50 0
+	}
+	object "InstOpqFinalPrimitive16"
+	{
+		parent "InstOpqFinalNode16"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode17"
+	{
+		position 700 -50 0
+	}
+	object "InstOpqFinalPrimitive17"
+	{
+		parent "InstOpqFinalNode17"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode18"
+	{
+		position 800 -50 0
+	}
+	object "InstOpqFinalPrimitive18"
+	{
+		parent "InstOpqFinalNode18"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode19"
+	{
+		position 900 -50 0
+	}
+	object "InstOpqFinalPrimitive19"
+	{
+		parent "InstOpqFinalNode19"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode20"
+	{
+		position 0 -100 100
+	}
+	object "InstOpqFinalPrimitive20"
+	{
+		parent "InstOpqFinalNode20"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode21"
+	{
+		position 100 -100 100
+	}
+	object "InstOpqFinalPrimitive21"
+	{
+		parent "InstOpqFinalNode21"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode22"
+	{
+		position 200 -100 100
+	}
+	object "InstOpqFinalPrimitive22"
+	{
+		parent "InstOpqFinalNode22"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode23"
+	{
+		position 300 -100 100
+	}
+	object "InstOpqFinalPrimitive23"
+	{
+		parent "InstOpqFinalNode23"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode24"
+	{
+		position 400 -100 100
+	}
+	object "InstOpqFinalPrimitive24"
+	{
+		parent "InstOpqFinalNode24"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode25"
+	{
+		position 500 -100 100
+	}
+	object "InstOpqFinalPrimitive25"
+	{
+		parent "InstOpqFinalNode25"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode26"
+	{
+		position 600 -100 100
+	}
+	object "InstOpqFinalPrimitive26"
+	{
+		parent "InstOpqFinalNode26"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode27"
+	{
+		position 700 -100 100
+	}
+	object "InstOpqFinalPrimitive27"
+	{
+		parent "InstOpqFinalNode27"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode28"
+	{
+		position 800 -100 100
+	}
+	object "InstOpqFinalPrimitive28"
+	{
+		parent "InstOpqFinalNode28"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode29"
+	{
+		position 900 -100 100
+	}
+	object "InstOpqFinalPrimitive29"
+	{
+		parent "InstOpqFinalNode29"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode30"
+	{
+		position 0 -50 100
+	}
+	object "InstOpqFinalPrimitive30"
+	{
+		parent "InstOpqFinalNode30"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode31"
+	{
+		position 100 -50 100
+	}
+	object "InstOpqFinalPrimitive31"
+	{
+		parent "InstOpqFinalNode31"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode32"
+	{
+		position 200 -50 100
+	}
+	object "InstOpqFinalPrimitive32"
+	{
+		parent "InstOpqFinalNode32"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode33"
+	{
+		position 300 -50 100
+	}
+	object "InstOpqFinalPrimitive33"
+	{
+		parent "InstOpqFinalNode33"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode34"
+	{
+		position 400 -50 100
+	}
+	object "InstOpqFinalPrimitive34"
+	{
+		parent "InstOpqFinalNode34"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode35"
+	{
+		position 500 -50 100
+	}
+	object "InstOpqFinalPrimitive35"
+	{
+		parent "InstOpqFinalNode35"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode36"
+	{
+		position 600 -50 100
+	}
+	object "InstOpqFinalPrimitive36"
+	{
+		parent "InstOpqFinalNode36"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode37"
+	{
+		position 700 -50 100
+	}
+	object "InstOpqFinalPrimitive37"
+	{
+		parent "InstOpqFinalNode37"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+
+	scene_node "InstOpqFinalNode38"
+	{
+		position 800 -50 100
+	}
+	object "InstOpqFinalPrimitive38"
+	{
+		parent "InstOpqFinalNode38"
+		mesh "InstOpqMesh"
+		material "AlphaSilver"
+	}
+
+	scene_node "InstOpqFinalNode39"
+	{
+		position 900 -50 100
+	}
+	object "InstOpqFinalPrimitive39"
+	{
+		parent "InstOpqFinalNode39"
+		mesh "InstOpqMesh"
+		material "Gold"
+	}
+}
+
+window "Window"
+{
+	render_target
+	{
+		format argb32
+		size 800 600
+		scene "Scene"
+		camera "MainCamera"
+	}
+	fullscreen false
+	vsync false
+}

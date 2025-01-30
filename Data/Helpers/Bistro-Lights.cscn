@@ -1,0 +1,710 @@
+// Lights
+
+scene_node "LightNode"
+{
+	orientation -0.71521 0.380994 -0.585934 236.489
+}
+
+light "SunLight"
+{
+	parent "LightNode"
+	type directional
+	colour 1.00000 1.00000 0.8.00000
+	illumination 10.0000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 0.0006
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 0.0006
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-07
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+scene_node "Light_Bar_01"
+{
+	orientation 1 0 0 90
+	position 6.61135 2.4 -4.20258
+}
+
+scene_node "Light_Bar_02"
+{
+	orientation 1 0 0 90
+	position 7.21552 2.4 -2.80036
+}
+
+scene_node "Light_Bar_03"
+{
+	orientation 1 0 0 90
+	position 8.80193 2.4 -1.92107
+}
+
+scene_node "Light_Bar_04"
+{
+	orientation 1 0 0 90
+	position 10.3638 2.4 -1.05028
+}
+
+scene_node "Light_Ceiling_01"
+{
+	orientation 1 0 0 90
+	position 4.99088 3.00000 -0.516717
+}
+
+scene_node "Light_Ceiling_02"
+{
+	orientation 1 0 0 90
+	position 7.98487 3.00000 1.00846
+}
+
+scene_node "Light_Ceiling_03"
+{
+	orientation 1 0 0 90
+	position 4.27034 3.00000 -4.93949
+}
+
+scene_node "Light_Ceiling_04"
+{
+	orientation 1 0 0 90
+	position 6.11195 3.00000 -8.49181
+}
+
+scene_node "Light_Wall_01"
+{
+	orientation 1 0 0 90
+	position 1.92125 2.50000 -8.11243
+}
+
+scene_node "Light_Wall_02"
+{
+	orientation 1 0 0 90
+	position 0.522318 2.50000 -5.54174
+}
+
+scene_node "Light_Wall_03"
+{
+	orientation 1 0 0 90
+	position -0.950808 2.50000 -2.83799
+}
+
+scene_node "Light_Wall_04"
+{
+	orientation 1 0 0 90
+	position 0.399102 2.50000 0.538444
+}
+
+scene_node "Light_Wall_05"
+{
+	orientation 1 0 0 90
+	position 3.36125 2.50000 1.94066
+}
+
+scene_node "Light_Wall_06"
+{
+	orientation 1 0 0 90
+	position 6.17586 2.50000 3.04287
+}
+
+light "Light_Bar_01"
+{
+	parent "Light_Bar_01"
+	type point
+	colour 1.00000 1.00000 0.400000
+	intensity 1.0000
+	attenuation 1.00000 0.500000 0.00000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Bar_02"
+{
+	parent "Light_Bar_02"
+	type point
+	colour 1.00000 1.00000 0.400000
+	intensity 1.0000
+	attenuation 1.00000 0.500000 0.00000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Bar_03"
+{
+	parent "Light_Bar_03"
+	type point
+	colour 1.00000 1.00000 0.400000
+	intensity 1.0000
+	attenuation 1.00000 0.500000 0.00000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Bar_04"
+{
+	parent "Light_Bar_04"
+	type point
+	colour 1.00000 1.00000 0.400000
+	intensity 1.0000
+	attenuation 1.00000 0.500000 0.00000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Ceiling_01"
+{
+	parent "Light_Ceiling_01"
+	type spot
+	colour 1.00000 1.00000 0.400000
+	intensity 6.00000
+	attenuation 0.500000 0.200000 0.00000
+	exponent 1.00000
+	cut_off 45.0000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Ceiling_02"
+{
+	parent "Light_Ceiling_02"
+	type spot
+	colour 1.00000 1.00000 0.400000
+	intensity 6.00000
+	attenuation 0.500000 0.200000 0.00000
+	exponent 1.00000
+	cut_off 45.0000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Ceiling_03"
+{
+	parent "Light_Ceiling_03"
+	type spot
+	colour 1.00000 1.00000 0.400000
+	intensity 6.00000
+	attenuation 0.500000 0.200000 0.00000
+	exponent 1.00000
+	cut_off 45.0000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Ceiling_04"
+{
+	parent "Light_Ceiling_04"
+	type spot
+	colour 1.00000 1.00000 0.400000
+	intensity 6.00000
+	attenuation 0.500000 0.200000 0.00000
+	exponent 1.00000
+	cut_off 45.0000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Wall_01"
+{
+	parent "Light_Wall_01"
+	type point
+	colour 1.00000 1.00000 0.800000
+	intensity 1.0000
+	attenuation 1.00000 0.500000 0.00000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Wall_02"
+{
+	parent "Light_Wall_02"
+	type point
+	colour 1.00000 1.00000 0.800000
+	intensity 1.0000
+	attenuation 1.00000 0.500000 0.00000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Wall_03"
+{
+	parent "Light_Wall_03"
+	type point
+	colour 1.00000 1.00000 0.800000
+	intensity 1.0000
+	attenuation 1.00000 0.500000 0.00000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Wall_04"
+{
+	parent "Light_Wall_04"
+	type point
+	colour 1.00000 1.00000 0.800000
+	intensity 1.0000
+	attenuation 1.00000 0.500000 0.00000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Wall_05"
+{
+	parent "Light_Wall_05"
+	type point
+	colour 1.00000 1.00000 0.800000
+	intensity 1.0000
+	attenuation 1.00000 0.500000 0.00000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}
+
+light "Light_Wall_06"
+{
+	parent "Light_Wall_06"
+	type point
+	colour 1.00000 1.00000 0.800000
+	intensity 1.0000
+	attenuation 1.00000 0.500000 0.00000
+
+	shadows
+	{
+		producer true
+		filter pcf
+		global_illumination none
+
+		raw_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+		}
+
+		pcf_config
+		{
+			min_offset 0.0
+			max_slope_offset 1.0e-06
+			filter_size 1
+			sample_count 8
+		}
+
+		vsm_config
+		{
+			min_variance 1.00000e-12
+			light_bleeding_reduction 0.00000
+		}
+
+		lpv_config
+		{
+			texel_area_modifier 1.00000
+		}
+	}
+}

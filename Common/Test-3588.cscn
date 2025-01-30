@@ -1,0 +1,218 @@
+default_lighting_model "c3d.pbr"
+{
+	scattering_model "atmosphere_scattering"
+}
+
+scene "Scene"
+{
+	ambient_light 0.2 0.2 0.2
+	background_colour 0.5 0.5 0.5
+
+	scene_node "LightNode"
+	{
+		orientation -0.314519 -0.947404 0.0591858 337.532
+	}
+	light "SunLight"
+	{
+		parent "LightNode"
+		type directional
+		colour 1.0 0.2 0.2
+		illumination 10.0
+	}
+
+	scene_node "PlanetNode"
+	{
+		position 0.0 -6360000.0 0.0
+	}
+
+	atmospheric_scattering
+	{
+		sunNode "LightNode"
+		planetNode "PlanetNode"
+		transmittanceResolution 256 64
+		multiScatterResolution 32
+		atmosphereVolumeResolution 32
+		skyViewResolution 192 108
+
+		atmosphere
+		{
+			sunIlluminance 1.0 1.0 1.0
+			sunIlluminanceScale 1.0
+			rayMarchMinSPP 4
+			rayMarchMaxSPP 14
+			multipleScatteringFactor 1.0
+			solarIrradiance 1.0 1.0 1.0
+			sunAngularRadius 0.004675
+			absorptionExtinction 0.000650 0.001881 0.000085
+			maxSunZenithAngle 102.0
+			rayleighScattering 0.005802 0.013558 0.033100
+			mieScattering 0.003996 0.003996 0.003996
+			miePhaseFunctionG 0.8
+			mieExtinction 0.004440 0.004440 0.004440
+			bottomRadius 6360.0
+			topRadius 6460.0
+			groundAlbedo 0.0 0.0 0.0
+
+			minRayleighDensity
+			{
+				layerWidth 0.0
+				expTerm 0.0
+				expScale 0.0
+				linearTerm 0.0
+				constantTerm 0.0
+			}
+			maxRayleighDensity
+			{
+				layerWidth 0.0
+				expTerm 1.0
+				expScale -0.125 // -1 / 8
+				linearTerm 0.0
+				constantTerm 0.0
+			}
+
+			minMieDensity
+			{
+				layerWidth 0.0
+				expTerm 0.0
+				expScale 0.0
+				linearTerm 0.0
+				constantTerm 0.0
+			}
+			maxMieDensity
+			{
+				layerWidth 0.0
+				expTerm 1.0
+				expScale -0.83333 // -1 / 1.2
+				linearTerm 0.0
+				constantTerm 0.0
+			}
+
+			minAbsorptionDensity
+			{
+				layerWidth 25.0
+				expTerm 0.0
+				expScale 0.0
+				linearTerm 0.066666 // 1 / 15
+				constantTerm -0.66666 // -2 / 3
+			}
+			maxAbsorptionDensity
+			{
+				layerWidth 0.0
+				expTerm 0.0
+				expScale 0.0
+				linearTerm -0.066666 // -1 / 15
+				constantTerm 2.66666 // 8 / 3
+			}
+		}
+
+		clouds
+		{
+			coverage 0.0
+		}
+	}
+
+	sampler "Linear"
+	{
+		min_filter linear
+		mag_filter linear
+		lod_bias 0.0
+		u_wrap_mode repeat
+		v_wrap_mode repeat
+		w_wrap_mode repeat
+		border_colour float_opaque_black
+	}
+
+	material "OceanMaterial"
+	{
+		pass
+		{
+			lighting_model "c3d.water"
+			{
+				scattering_model "atmosphere_scattering"
+			}
+			colour_srgb 0.003 0.812 0.599
+			emissive 0.0
+			metalness 0.0
+			roughness 0.08
+			two_sided true
+			refraction_ratio 1.2
+			depthSofteningDistance 2.0
+			refractionDistortionFactor 0.04
+			refractionHeightFactor 0.006
+			refractionDistanceFactor 0.08
+			ssrStepSize 0.5
+			ssrForwardStepsCount 20.0
+			ssrBackwardStepsCount 10.0
+			ssrDepthMult 20.0
+			waterDensity 0.3
+		}
+	}
+	mesh "OceanMesh"
+	{
+		fft_waves
+		{
+			disableRandomSeed true
+			heightMapSamples 256
+			displacementDownsample 1
+			size 200.0 200.0
+			amplitude 3.0
+			normalMapFreqMod 7.3 7.3
+			windDirection 0.76339 -0.64594
+			windVelocity 16
+			patchSize 32.0 32.0
+			blocksCount 640 640
+			lod0Distance 50.0
+		}
+		default_material "OceanMaterial"
+	}
+	scene_node "OceanNode"
+	{
+		position 0.0 0.0 0.0
+	}
+	object "Ocean"
+	{
+		parent "OceanNode"
+		mesh "OceanMesh"
+		cullable false
+	}
+
+	scene_node "MainCameraNode"
+	{
+		position 447.997 22.4646 348.392
+		orientation 0.0 1.0 0.0 220.0
+		//position -607.11 17.5754 -379.806
+		//orientation 0.0 1.0 0.0 63
+	}
+	camera "MainCamera"
+	{
+		parent "MainCameraNode"
+		primitive triangle_list
+		viewport "MainViewport"
+		{
+			type perspective
+			fov_y 45.0
+			aspect_ratio 1.333
+			near 1.0
+			far 10000.0
+		}
+	}
+}
+
+window "Window"
+{
+	fullscreen false
+	vsync false
+
+	render_target
+	{
+		format rgba32
+		size 1920 1080
+		scene "Scene"
+		camera "MainCamera"
+
+		pbr_bloom
+		{
+			bloomStrength 0.01
+		}
+	}
+}

@@ -221,19 +221,32 @@ scene "Scene"
 			type "custom"
 			submesh
 			{
-				vertex 0.0 0.0 0.0
-				normal 0.0 0.0 1.0
-				uv 0.25 0.25
-				vertex 0.0 1.0 0.0
-				normal 0.0 0.0 1.0
-				uv 0.25 0.75
-				vertex 1.0 1.0 0.0
-				normal 0.0 0.0 1.0
-				uv 0.75 0.75
-				vertex 1.0 0.0 0.0
-				normal 0.0 0.0 1.0
-				uv 0.75 0.25
-				face 0 1 2 3
+				positions
+				{
+					value 0.0 0.0 0.0
+					value 0.0 1.0 0.0
+					value 1.0 1.0 0.0
+					value 1.0 0.0 0.0
+				}
+				normals
+				{
+					value 0.0 0.0 1.0
+					value 0.0 0.0 1.0
+					value 0.0 0.0 1.0
+					value 0.0 0.0 1.0
+				}
+				texcoords0
+				{
+					value 0.25 0.25 0.0
+					value 0.25 0.75 0.0
+					value 0.75 0.75 0.0
+					value 0.75 0.25 0.0
+				}
+				faces
+				{
+					value 0 1 2
+					value 0 2 3
+				}
 			}
 		}
 		material "Nearest"
@@ -251,18 +264,18 @@ scene "Scene"
 			type "custom"
 			submesh
 			{
-				vertex 0.0 0.0 0.0
+				position 0.0 0.0 0.0
 				normal 0.0 0.0 1.0
-				uv 0.25 0.25
-				vertex 0.0 1.0 0.0
+				texcoord0 0.25 0.25 0.0
+				position 0.0 1.0 0.0
 				normal 0.0 0.0 1.0
-				uv 0.25 0.75
-				vertex 1.0 1.0 0.0
+				texcoord0 0.25 0.75 0.0
+				position 1.0 1.0 0.0
 				normal 0.0 0.0 1.0
-				uv 0.75 0.75
-				vertex 1.0 0.0 0.0
+				texcoord0 0.75 0.75 0.0
+				position 1.0 0.0 0.0
 				normal 0.0 0.0 1.0
-				uv 0.75 0.25
+				texcoord0 0.75 0.25 0.0
 				face 0 1 2 3
 			}
 		}
@@ -281,18 +294,18 @@ scene "Scene"
 			type "custom"
 			submesh
 			{
-				vertex 0.0 0.0 0.0
+				position 0.0 0.0 0.0
 				normal 0.0 0.0 1.0
-				uv -0.25 -0.25
-				vertex 0.0 1.0 0.0
+				texcoord0 -0.25 -0.25 0.0
+				position 0.0 1.0 0.0
 				normal 0.0 0.0 1.0
-				uv -0.25 1.25
-				vertex 1.0 1.0 0.0
+				texcoord0 -0.25 1.25 0.0
+				position 1.0 1.0 0.0
 				normal 0.0 0.0 1.0
-				uv 1.25 1.25
-				vertex 1.0 0.0 0.0
+				texcoord0 1.25 1.25 0.0
+				position 1.0 0.0 0.0
 				normal 0.0 0.0 1.0
-				uv 1.25 -0.25
+				texcoord0 1.25 -0.25 0.0
 				face 0 1 2 3
 			}
 		}
@@ -311,18 +324,18 @@ scene "Scene"
 			type "custom"
 			submesh
 			{
-				vertex 0.0 0.0 0.0
+				position 0.0 0.0 0.0
 				normal 0.0 0.0 1.0
-				uv -0.25 -0.25
-				vertex 0.0 1.0 0.0
+				texcoord0 -0.25 -0.25 0.0
+				position 0.0 1.0 0.0
 				normal 0.0 0.0 1.0
-				uv -0.25 1.25
-				vertex 1.0 1.0 0.0
+				texcoord0 -0.25 1.25 0.0
+				position 1.0 1.0 0.0
 				normal 0.0 0.0 1.0
-				uv 1.25 1.25
-				vertex 1.0 0.0 0.0
+				texcoord0 1.25 1.25 0.0
+				position 1.0 0.0 0.0
 				normal 0.0 0.0 1.0
-				uv 1.25 -0.25
+				texcoord0 1.25 -0.25 0.0
 				face 0 1 2 3
 			}
 		}
@@ -341,18 +354,18 @@ scene "Scene"
 			type "custom"
 			submesh
 			{
-				vertex 0.0 0.0 0.0
+				position 0.0 0.0 0.0
 				normal 0.0 0.0 1.0
-				uv -0.25 -0.25
-				vertex 0.0 1.0 0.0
+				uvw -0.25 -0.25 0.0
+				position 0.0 1.0 0.0
 				normal 0.0 0.0 1.0
-				uv -0.25 1.25
-				vertex 1.0 1.0 0.0
+				uvw -0.25 1.25 0.0
+				position 1.0 1.0 0.0
 				normal 0.0 0.0 1.0
-				uv 1.25 1.25
-				vertex 1.0 0.0 0.0
+				uvw 1.25 1.25 0.0
+				position 1.0 0.0 0.0
 				normal 0.0 0.0 1.0
-				uv 1.25 -0.25
+				uvw 1.25 -0.25 0.0
 				face 0 1 2 3
 			}
 		}

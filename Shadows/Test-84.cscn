@@ -50,10 +50,9 @@ scene "Scene"
 		orientation 0.320588 0 0 40.947219
 	}
 
-	light "SpotLight1"
+	light_group "SpotLights"
 	{
 		type spot
-		parent "SpotLightNode1"
 		colour 1.0 1.0 1.0
 		intensity 10000.0
 		attenuation 1.0 0.01 0.0
@@ -69,26 +68,10 @@ scene "Scene"
 				light_bleeding_reduction 0.000001
 			}
 		}
-	}
-
-	light "SpotLight2"
-	{
-		type spot
-		parent "SpotLightNode2"
-		colour 1.0 1.0 1.0
-		intensity 10000.0
-		attenuation 1.0 0.01 0.0
-		inner_cut_off 10
-		outer_cut_off 20
-		shadows
+		instances
 		{
-			producer true
-			filter variance
-			vsm_config
-			{
-				min_variance 0.00000001
-				light_bleeding_reduction 0.000001
-			}
+			instance "SpotLightNode1"
+			instance "SpotLightNode2"
 		}
 	}
 

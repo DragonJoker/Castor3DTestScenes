@@ -1,3 +1,6 @@
+define thicknessScale 10
+define gaussianWidth 1
+
 // Samplers
 
 sampler "Trilinear"
@@ -33,39 +36,25 @@ material "PBRBody"
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/body-normaldispl.dds"
-			height_mask 0xff000000
-			height_factor 0.100000
-			normal_mask 0x00ffffff
-			invert_y true
+			texture "Body-NormalHeight"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 11
-			image "Textures/Nyras/body-opacitymetallic.dds"
-			opacity_mask 0x00ff0000
-			metalness_mask 0x0000ff00
-			invert_y true
+			texture "Body-OpacityMetalness"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 11
-			image "Textures/Nyras/body-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Body-Diffuse"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 11
-			image "Textures/Nyras/body-roughness.dds"
-			roughness_mask 0x00ff0000
-			invert_y true
+			texture "Body-Roughness"
 		}
 	}
 }
@@ -103,40 +92,25 @@ material "PBREyes"
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/head-normaldispl.dds"
-			height_mask 0xff000000
-			height_factor 0.100000
-			normal_mask 0x00ffffff
-			invert_y true
+			texture "Head-NormalHeight"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-opacitymetallic.dds"
-			opacity_mask 0x00ff0000
-			metalness_mask 0x0000ff00
-			invert_y true
+			texture "Head-Opacity"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Head-MetallicRoughness"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-roughnesstransmittance.dds"
-			roughness_mask 0x00ff0000
-			transmittance_mask 0x0000ff00
-			invert_y true
+			texture "Head-Diffuse"
 		}
 	}
 }
@@ -152,48 +126,37 @@ material "PBRHead"
 		specular 1.00000 1.00000 1.00000
 		metalness 1.00000
 		roughness 0.804688
+		transmittance 1.0
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/head-normaldispl.dds"
-			height_mask 0xff000000
-			height_factor 0.100000
-			normal_mask 0x00ffffff
-			invert_y true
+			texture "Head-NormalHeight"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Head-Diffuse"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-metallicroughness.dds"
-			metalness_mask 0x00ff0000
-			roughness_mask 0x0000ff00
-			invert_y true
+			texture "Head-MetallicRoughness"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-roughnesstransmittance.dds"
-			transmittance_mask 0x0000ff00
+			texture "Head-Transmittance"
 		}
 
 		subsurface_scattering
 		{
 			strength 1
-			gaussian_width 20
+			gaussian_width gaussianWidth
+			thickness_scale thicknessScale
 
 			transmittance_profile
 			{
@@ -227,39 +190,25 @@ material "ToonPBRBody"
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/body-normaldispl.dds"
-			height_mask 0xff000000
-			height_factor 0.100000
-			normal_mask 0x00ffffff
-			invert_y true
+			texture "Body-NormalHeight"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 11
-			image "Textures/Nyras/body-opacitymetallic.dds"
-			opacity_mask 0x00ff0000
-			metalness_mask 0x0000ff00
-			invert_y true
+			texture "Body-OpacityMetalness"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 11
-			image "Textures/Nyras/body-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Body-Diffuse"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 11
-			image "Textures/Nyras/body-roughness.dds"
-			roughness_mask 0x00ff0000
-			invert_y true
+			texture "Body-Roughness"
 		}
 	}
 }
@@ -303,40 +252,25 @@ material "ToonPBREyes"
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/head-normaldispl.dds"
-			height_mask 0xff000000
-			height_factor 0.100000
-			normal_mask 0x00ffffff
-			invert_y true
+			texture "Head-NormalHeight"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-opacitymetallic.dds"
-			opacity_mask 0x00ff0000
-			metalness_mask 0x0000ff00
-			invert_y true
+			texture "Head-Opacity"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Head-MetallicRoughness"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-roughnesstransmittance.dds"
-			roughness_mask 0x00ff0000
-			transmittance_mask 0x0000ff00
-			invert_y true
+			texture "Head-Diffuse"
 		}
 	}
 }
@@ -355,48 +289,37 @@ material "ToonPBRHead"
 		smooth_band_width 4.0
 		edge_width 1.0
 		edge_normal_factor 0.0
+		transmittance 1.0
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/head-normaldispl.dds"
-			height_mask 0xff000000
-			height_factor 0.100000
-			normal_mask 0x00ffffff
-			invert_y true
+			texture "Head-NormalHeight"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Head-Diffuse"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-metallicroughness.dds"
-			metalness_mask 0x00ff0000
-			roughness_mask 0x0000ff00
-			invert_y true
+			texture "Head-MetallicRoughness"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-roughnesstransmittance.dds"
-			transmittance_mask 0x0000ff00
+			texture "Head-Transmittance"
 		}
 
 		subsurface_scattering
 		{
 			strength 1
-			gaussian_width 20
+			gaussian_width gaussianWidth
+			thickness_scale thicknessScale
 
 			transmittance_profile
 			{
@@ -427,28 +350,19 @@ material "PhongBody"
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/body-normalopacity.dds"
-			normal_mask 0x00ffffff
-			opacity_mask 0xff000000
-			invert_y true
+			texture "Body-NormalOpacity"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 11
-			image "Textures/Nyras/body-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Body-Diffuse"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 11
-			image "Textures/Nyras/body-specular.dds"
-			specular_mask 0x00ffffff
-			invert_y true
+			texture "Body-Specular"
 		}
 	}
 }
@@ -486,28 +400,25 @@ material "PhongEyes"
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/head-normalopacity.dds"
-			normal_mask 0x00ffffff
-			opacity_mask 0xff000000
-			invert_y true
+			texture "Head-NormalHeight"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Head-Opacity"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-specular.dds"
-			specular_mask 0x00ffffff
-			invert_y true
+			texture "Head-Diffuse"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			texture "Head-Specular"
 		}
 	}
 }
@@ -523,31 +434,47 @@ material "PhongHead"
 		specular 1.00000 1.00000 1.00000
 		roughness 0.500000
 		ambient_factor 0.200000
+		transmittance 1.0
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/head-normal.dds"
-			normal_mask 0x00ffffff
-			invert_y true
+			texture "Head-NormalHeight"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Head-Diffuse"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-specular.dds"
-			specular_mask 0x00ffffff
-			invert_y true
+			texture "Head-Specular"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			texture "Head-Transmittance"
+		}
+
+		subsurface_scattering
+		{
+			strength 1
+			gaussian_width gaussianWidth
+			thickness_scale thicknessScale
+
+			transmittance_profile
+			{
+				factor 0.233 0.455 0.649 0.0064
+				factor 0.1 0.336 0.344 0.0484
+				factor 0.118 0.198 0.0 0.187
+				factor 0.113 0.007 0.007 0.567
+				factor 0.358 0.004 0.0 1.99
+				factor 0.078 0.0 0.0 7.41
+			}
 		}
 	}
 }
@@ -571,28 +498,19 @@ material "ToonPhongBody"
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/body-normalopacity.dds"
-			normal_mask 0x00ffffff
-			opacity_mask 0xff000000
-			invert_y true
+			texture "Body-NormalOpacity"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 11
-			image "Textures/Nyras/body-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Body-Diffuse"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 11
-			image "Textures/Nyras/body-specular.dds"
-			specular_mask 0x00ffffff
-			invert_y true
+			texture "Body-Specular"
 		}
 	}
 }
@@ -636,28 +554,25 @@ material "ToonPhongEyes"
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/head-normalopacity.dds"
-			normal_mask 0x00ffffff
-			opacity_mask 0xff000000
-			invert_y true
+			texture "Head-NormalHeight"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Head-Opacity"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-specular.dds"
-			specular_mask 0x00ffffff
-			invert_y true
+			texture "Head-Diffuse"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			texture "Head-Specular"
 		}
 	}
 }
@@ -676,31 +591,47 @@ material "ToonPhongHead"
 		smooth_band_width 4.0
 		edge_width 1.0
 		edge_normal_factor 0.0
+		transmittance 1.0
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			image "Textures/Nyras/head-normal.dds"
-			normal_mask 0x00ffffff
-			invert_y true
+			texture "Head-NormalHeight"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-diffuse.dds"
-			colour_mask 0x00ffffff
-			invert_y true
+			texture "Head-Diffuse"
 		}
 
 		texture_unit
 		{
 			sampler "Trilinear"
-			levels_count 10
-			image "Textures/Nyras/head-specular.dds"
-			specular_mask 0x00ffffff
-			invert_y true
+			texture "Head-Specular"
+		}
+
+		texture_unit
+		{
+			sampler "Trilinear"
+			texture "Head-Transmittance"
+		}
+
+		subsurface_scattering
+		{
+			strength 1
+			gaussian_width gaussianWidth
+			thickness_scale thicknessScale
+
+			transmittance_profile
+			{
+				factor 0.233 0.455 0.649 0.0064
+				factor 0.1 0.336 0.344 0.0484
+				factor 0.118 0.198 0.0 0.187
+				factor 0.113 0.007 0.007 0.567
+				factor 0.358 0.004 0.0 1.99
+				factor 0.078 0.0 0.0 7.41
+			}
 		}
 	}
 }

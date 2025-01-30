@@ -84,12 +84,12 @@ scene "MyScene"
 	}
 	skeleton "HeavySplash"
 	{
-		import "Meshes/tower1_heavy_splash.fbx" -prefix="HeavySplash"
-		import_anim "Meshes/tower1_heavy_splash.fbx" -prefix="HeavySplash"
+		import "Meshes/tower1_heavy_splash.fbx" -prefix=HeavySplash
+		import_anim "Meshes/tower1_heavy_splash.fbx" -prefix=HeavySplash
 	}
 	mesh "HeavySplash"
 	{
-		import "Meshes/tower1_heavy_splash.fbx" -prefix="HeavySplash"
+		import "Meshes/tower1_heavy_splash.fbx" -prefix=HeavySplash
 		skeleton "HeavySplash"
 		default_materials
 		{
@@ -111,12 +111,12 @@ scene "MyScene"
 	{
 		animated_object "HeavySplash"
 
-		animation "armature_short_range.1-attack"
+		animation "HeavySplash-armature_short_range_attack_1"
 		{
 			looped true
 		}
 
-		start_animation "armature_short_range.1-attack"
+		start_animation "HeavySplash-armature_short_range_attack_1"
 	}
 
 	material "inventor_accessories"
@@ -185,12 +185,12 @@ scene "MyScene"
 	}
 	skeleton "Inventor"
 	{
-		import "Meshes/tower1_inventor.fbx" -prefix="Inventor"
-		import_anim "Meshes/tower1_inventor.fbx" -prefix="Inventor"
+		import "Meshes/tower1_inventor.fbx" -prefix=Inventor
+		import_anim "Meshes/tower1_inventor.fbx" -prefix=Inventor
 	}
 	mesh "Inventor"
 	{
-		import "Meshes/tower1_inventor.fbx" -prefix="Inventor"
+		import "Meshes/tower1_inventor.fbx" -prefix=Inventor
 		skeleton "Inventor"
 		default_materials
 		{
@@ -212,12 +212,12 @@ scene "MyScene"
 	{
 		animated_object "Inventor"
 
-		animation "armature_inventor.1-Action"
+		animation "Inventor-armature_inventor_Action_1"
 		{
 			looped true
 		}
 
-		start_animation "armature_inventor.1-Action"
+		start_animation "Inventor-armature_inventor_Action_1"
 	}
 
 	material "short_range_accessories"
@@ -286,12 +286,12 @@ scene "MyScene"
 	}
 	skeleton "ShortRange"
 	{
-		import "Meshes/tower1_quick_short.fbx" -prefix="ShortRange"
-		import_anim "Meshes/tower1_quick_short.fbx" -prefix="ShortRange"
+		import "Meshes/tower1_quick_short.fbx" -prefix=ShortRange
+		import_anim "Meshes/tower1_quick_short.fbx" -prefix=ShortRange
 	}
 	mesh "ShortRange"
 	{
-		import "Meshes/tower1_quick_short.fbx" -prefix="ShortRange"
+		import "Meshes/tower1_quick_short.fbx" -prefix=ShortRange
 		skeleton "ShortRange"
 		default_materials
 		{
@@ -312,12 +312,12 @@ scene "MyScene"
 	{
 		animated_object "ShortRange"
 
-		animation "armature_short_range.1-attack"
+		animation "ShortRange-armature_short_range_attack_1"
 		{
 			looped true
 		}
 
-		start_animation "armature_short_range.1-attack"
+		start_animation "ShortRange-armature_short_range_attack_1"
 	}
 
 	scene_node "MainCameraNode"

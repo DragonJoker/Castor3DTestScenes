@@ -65,10 +65,9 @@ scene "Scene"
 		orientation -0.472211 -0.860915 -0.18932 49.9421
 	}
 
-	light "PointLight1"
+	light_group "PointLights"
 	{
 		type point
-		parent "PointLightNode1"
 		colour 1.0 1.0 1.0
 		intensity 12500.0
 		range 10000.0
@@ -82,24 +81,10 @@ scene "Scene"
 				light_bleeding_reduction 0.0
 			}
 		}
-	}
-
-	light "PointLight2"
-	{
-		type point
-		parent "PointLightNode2"
-		colour 1.0 1.0 1.0
-		intensity 12500.0
-		range 10000.0
-		shadows
+		instances
 		{
-			producer true
-			filter variance
-			vsm_config
-			{
-				min_variance 0.000001
-				light_bleeding_reduction 0.0
-			}
+			instance "PointLightNode1"
+			instance "PointLightNode2"
 		}
 	}
 

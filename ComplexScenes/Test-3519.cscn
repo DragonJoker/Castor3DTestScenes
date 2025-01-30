@@ -26,75 +26,80 @@ scene "BaltardOut"
 		transmittanceResolution 256 64
 		multiScatterResolution 32
 		atmosphereVolumeResolution 32
-		sunIlluminance 1.00000 1.00000 1.00000
-		sunIlluminanceScale 1.00000
-		rayMarchMinSPP 4
-		rayMarchMaxSPP 14
-		multipleScatteringFactor 1.00000
-		solarIrradiance 1.00000 1.00000 1.00000
-		sunAngularRadius 0.00467500
-		absorptionExtinction 0.000650000 0.00188100 8.50000e-05
-		maxSunZenithAngle 0.0310714
-		rayleighScattering 0.00580200 0.0135580 0.0331000
-		mieScattering 0.00399600 0.00399600 0.00399600
-		miePhaseFunctionG 0.800000
-		mieExtinction 0.00444000 0.00444000 0.00444000
-		bottomRadius 6360.00
-		topRadius 6460.00
-		groundAlbedo 0.00000 0.00000 0.00000
+		skyViewResolution 192 108
 
-		minRayleighDensity
+		atmosphere
 		{
-			layerWidth 0.00000
-			expTerm 0.00000
-			expScale 0.00000
-			linearTerm 0.00000
-			constantTerm 0.00000
-		}
+			sunIlluminance 1.00000 1.00000 1.00000
+			sunIlluminanceScale 1.00000
+			rayMarchMinSPP 4
+			rayMarchMaxSPP 14
+			multipleScatteringFactor 1.00000
+			solarIrradiance 1.00000 1.00000 1.00000
+			sunAngularRadius 0.00467500
+			absorptionExtinction 0.000650000 0.00188100 8.50000e-05
+			maxSunZenithAngle 0.0310714
+			rayleighScattering 0.00580200 0.0135580 0.0331000
+			mieScattering 0.00399600 0.00399600 0.00399600
+			miePhaseFunctionG 0.800000
+			mieExtinction 0.00444000 0.00444000 0.00444000
+			bottomRadius 6360.00
+			topRadius 6460.00
+			groundAlbedo 0.00000 0.00000 0.00000
 
-		maxRayleighDensity
-		{
-			layerWidth 0.00000
-			expTerm 1.00000
-			expScale -0.125000
-			linearTerm 0.00000
-			constantTerm 0.00000
-		}
+			minRayleighDensity
+			{
+				layerWidth 0.00000
+				expTerm 0.00000
+				expScale 0.00000
+				linearTerm 0.00000
+				constantTerm 0.00000
+			}
 
-		minMieDensity
-		{
-			layerWidth 0.00000
-			expTerm 0.00000
-			expScale 0.00000
-			linearTerm 0.00000
-			constantTerm 0.00000
-		}
+			maxRayleighDensity
+			{
+				layerWidth 0.00000
+				expTerm 1.00000
+				expScale -0.125000
+				linearTerm 0.00000
+				constantTerm 0.00000
+			}
 
-		maxMieDensity
-		{
-			layerWidth 0.00000
-			expTerm 1.00000
-			expScale -0.833330
-			linearTerm 0.00000
-			constantTerm 0.00000
-		}
+			minMieDensity
+			{
+				layerWidth 0.00000
+				expTerm 0.00000
+				expScale 0.00000
+				linearTerm 0.00000
+				constantTerm 0.00000
+			}
 
-		minAbsorptionDensity
-		{
-			layerWidth 25.0000
-			expTerm 0.00000
-			expScale 0.00000
-			linearTerm 0.0666660
-			constantTerm -0.666660
-		}
+			maxMieDensity
+			{
+				layerWidth 0.00000
+				expTerm 1.00000
+				expScale -0.833330
+				linearTerm 0.00000
+				constantTerm 0.00000
+			}
 
-		maxAbsorptionDensity
-		{
-			layerWidth 0.00000
-			expTerm 0.00000
-			expScale 0.00000
-			linearTerm -0.0666660
-			constantTerm 2.66666
+			minAbsorptionDensity
+			{
+				layerWidth 25.0000
+				expTerm 0.00000
+				expScale 0.00000
+				linearTerm 0.0666660
+				constantTerm -0.666660
+			}
+
+			maxAbsorptionDensity
+			{
+				layerWidth 0.00000
+				expTerm 0.00000
+				expScale 0.00000
+				linearTerm -0.0666660
+				constantTerm 2.66666
+			}
 		}
 
 		weather

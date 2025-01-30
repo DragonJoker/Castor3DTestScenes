@@ -36,7 +36,17 @@ window "Window"
 		size 800 600
 		scene "Scene"
 		camera "MainCamera"
-		tone_mapping "uncharted2"
+		uncharted2
+		{
+			shoulderStrength 0.15
+			linearStrength 0.50
+			linearAngle 0.10
+			toeStrength 0.20
+			toeNumerator 0.02
+			toeDenominator 0.30
+			linearWhitePointValue 11.2
+			exposureBias 2.0
+		}
 	}
 	fullscreen false
 	vsync false

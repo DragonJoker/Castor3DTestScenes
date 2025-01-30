@@ -42,72 +42,76 @@ scene "Scene"
 		multiScatterResolution 32
 		atmosphereVolumeResolution 32
 		skyViewResolution 192 108
-		sunIlluminance 1.0 1.0 1.0
-		sunIlluminanceScale 1.0
-		rayMarchMinSPP 4
-		rayMarchMaxSPP 14
-		multipleScatteringFactor 1.0
-		solarIrradiance 1.0 1.0 1.0
-		sunAngularRadius 0.004675
-		absorptionExtinction 0.000650 0.001881 0.000085
-		maxSunZenithAngle 102.0
-		rayleighScattering 0.005802 0.013558 0.033100
-		mieScattering 0.003996 0.003996 0.003996
-		miePhaseFunctionG 0.8
-		mieExtinction 0.004440 0.004440 0.004440
-		bottomRadius 6360.0
-		topRadius 6460.0
-		groundAlbedo 0.0 0.0 0.0
 
-		minRayleighDensity
+		atmosphere
 		{
-			layerWidth 0.0
-			expTerm 0.0
-			expScale 0.0
-			linearTerm 0.0
-			constantTerm 0.0
-		}
-		maxRayleighDensity
-		{
-			layerWidth 0.0
-			expTerm 1.0
-			expScale -0.125 // -1 / 8
-			linearTerm 0.0
-			constantTerm 0.0
-		}
+			sunIlluminance 1.0 1.0 1.0
+			sunIlluminanceScale 1.0
+			rayMarchMinSPP 4
+			rayMarchMaxSPP 14
+			multipleScatteringFactor 1.0
+			solarIrradiance 1.0 1.0 1.0
+			sunAngularRadius 0.004675
+			absorptionExtinction 0.000650 0.001881 0.000085
+			maxSunZenithAngle 102.0
+			rayleighScattering 0.005802 0.013558 0.033100
+			mieScattering 0.003996 0.003996 0.003996
+			miePhaseFunctionG 0.8
+			mieExtinction 0.004440 0.004440 0.004440
+			bottomRadius 6360.0
+			topRadius 6460.0
+			groundAlbedo 0.0 0.0 0.0
 
-		minMieDensity
-		{
-			layerWidth 0.0
-			expTerm 0.0
-			expScale 0.0
-			linearTerm 0.0
-			constantTerm 0.0
-		}
-		maxMieDensity
-		{
-			layerWidth 0.0
-			expTerm 1.0
-			expScale -0.83333 // -1 / 1.2
-			linearTerm 0.0
-			constantTerm 0.0
-		}
+			minRayleighDensity
+			{
+				layerWidth 0.0
+				expTerm 0.0
+				expScale 0.0
+				linearTerm 0.0
+				constantTerm 0.0
+			}
+			maxRayleighDensity
+			{
+				layerWidth 0.0
+				expTerm 1.0
+				expScale -0.125 // -1 / 8
+				linearTerm 0.0
+				constantTerm 0.0
+			}
 
-		minAbsorptionDensity
-		{
-			layerWidth 25.0
-			expTerm 0.0
-			expScale 0.0
-			linearTerm 0.066666 // 1 / 15
-			constantTerm -0.66666 // -2 / 3
-		}
-		maxAbsorptionDensity
-		{
-			layerWidth 0.0
-			expTerm 0.0
-			expScale 0.0
-			linearTerm -0.066666 // -1 / 15
-			constantTerm 2.66666 // 8 / 3
+			minMieDensity
+			{
+				layerWidth 0.0
+				expTerm 0.0
+				expScale 0.0
+				linearTerm 0.0
+				constantTerm 0.0
+			}
+			maxMieDensity
+			{
+				layerWidth 0.0
+				expTerm 1.0
+				expScale -0.83333 // -1 / 1.2
+				linearTerm 0.0
+				constantTerm 0.0
+			}
+
+			minAbsorptionDensity
+			{
+				layerWidth 25.0
+				expTerm 0.0
+				expScale 0.0
+				linearTerm 0.066666 // 1 / 15
+				constantTerm -0.66666 // -2 / 3
+			}
+			maxAbsorptionDensity
+			{
+				layerWidth 0.0
+				expTerm 0.0
+				expScale 0.0
+				linearTerm -0.066666 // -1 / 15
+				constantTerm 2.66666 // 8 / 3
+			}
 		}
 
 		clouds

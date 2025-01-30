@@ -50,10 +50,9 @@ scene "Scene"
 		orientation 0.320588 0 0 40.947219
 	}
 
-	light "SpotLight1"
+	light_group "SpotLights"
 	{
 		type spot
-		parent "SpotLightNode1"
 		colour 1.0 1.0 1.0
 		intensity 10000.0
 		attenuation 1.0 0.01 0.0
@@ -71,28 +70,10 @@ scene "Scene"
 				filter_size 8
 			}
 		}
-	}
-
-	light "SpotLight2"
-	{
-		type spot
-		parent "SpotLightNode2"
-		colour 1.0 1.0 1.0
-		intensity 10000.0
-		attenuation 1.0 0.01 0.0
-		inner_cut_off 10
-		outer_cut_off 20
-		shadows
+		instances
 		{
-			producer true
-			filter pcf
-			pcf_config
-			{
-				min_offset 0.00001
-				max_slope_offset 0.0001
-				filter_size 4
-				sample_count 64
-			}
+			instance "SpotLightNode1"
+			instance "SpotLightNode2"
 		}
 	}
 

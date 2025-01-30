@@ -39,6 +39,7 @@ scene "Scene"
 		pass
 		{
 			roughness 0.6
+			transmittance 1.0
 
 			texture_unit
 			{
@@ -69,6 +70,7 @@ scene "Scene"
 			{
 				strength 1
 				gaussian_width 20
+				thickness_scale 8.25
 
 				transmittance_profile
 				{
@@ -156,12 +158,13 @@ scene "Scene"
 		type spot
 		colour 1 1 1
 		intensity 10.0
-		attenuation 1 0.1 0
+		range 25.0
 		exponent 1.000000
-		cut_off 20.000000
+		inner_cut_off 10.000000
+		outer_cut_off 20.000000
 		shadows
 		{
-			producer false
+			producer true
 			filter variance
 			raw_config
 			{
@@ -188,7 +191,7 @@ scene "Scene"
 		mesh "SpotLightMesh"
 		material "WhiteEmit"
 	}
-/*
+/**/
 	scene_node "LightNodeB"
 	{
 		orientation 0 1 0 180
@@ -201,26 +204,29 @@ scene "Scene"
 		parent "LightNodeB"
 		colour 1 1 1
 		intensity 10.0
-		attenuation 1.0 0.1 0.0
+		range 6.0
 		exponent 1.000000
-		cut_off 20.000000
+		inner_cut_off 10.000000
+		outer_cut_off 20.000000
 		shadows
 		{
 			producer true
 			filter variance
 			raw_config
 			{
-				min_offset 0.000000001
-				max_slope_offset 0.000001
+				min_offset 0.00001
+				max_slope_offset 0.0001
 			}
 			pcf_config
 			{
-				min_offset 0.000000001
-				max_slope_offset 0.000001
+				min_offset 0.001
+				max_slope_offset 0.001
+				filter_size 4
+				sample_count 16
 			}
 			vsm_config
 			{
-				min_variance 0.000000000001
+				min_variance 0.00001
 				light_bleeding_reduction 0.0
 			}
 		}
@@ -233,7 +239,7 @@ scene "Scene"
 		mesh "SpotLightMesh"
 		material "WhiteEmit"
 	}
-*/
+/**/
 	// Geometries
 
 	object "FinalPrimitive"

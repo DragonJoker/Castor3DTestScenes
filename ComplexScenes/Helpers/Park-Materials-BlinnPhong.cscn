@@ -1599,7 +1599,7 @@ material "immeubles_parc/fenetre02"
 		texture_unit
 		{
 			levels_count 9
-			channel shininess
+			shininess_mask 0x00FF0000
 			sampler "TriLinear"
 			image "Textures/ParkLegacy/window-shininess.png"
 		}

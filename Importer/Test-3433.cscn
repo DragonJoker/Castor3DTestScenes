@@ -92,12 +92,12 @@ scene "Scene"
 	{
 		animated_object "FinalPrimitive"
 
-		animation "Take 001"
+		animation "Take_001"
 		{
 			looped true
 		}
 
-		start_animation "Take 001"
+		start_animation "Take_001"
 	}
 
 	scene_node "MainCameraNode"

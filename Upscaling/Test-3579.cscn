@@ -1,0 +1,135 @@
+// Global configuration
+materials pbr
+
+upscaling
+{
+	enabled true
+	mode max_performance
+}
+
+scene "Bistro"
+{
+	// Scene configuration
+	ambient_light 0.00000 0.00000 0.00000
+	background_colour 0.00000 0.00000 0.00000
+	lpv_indirect_attenuation 1.70000
+	include "../Data/Helpers/Bistro-Materials.cscn"
+	include "../Data/Helpers/Bistro-Meshes.cscn"
+	include "../Data/Helpers/Bistro-Nodes.cscn"
+	include "../Data/Helpers/Bistro-Lights.cscn"
+	include "../Data/Helpers/Bistro-Objects.cscn"
+
+	//Skybox
+
+	skybox
+	{
+		equirectangular "../Data/Textures/san_giuseppe_bridge_4k.hdr" 1024
+	}
+
+	//Voxel Cone Tracing
+
+	voxel_cone_tracing
+	{
+		enabled true
+		grid_size 256
+		conservative_rasterization true
+		temporal_smoothing false
+		occlusion false
+		secondary_bounce true
+		num_cones 16
+		max_distance 10.0000
+		ray_step_size 0.125000
+		voxel_size 2.00000
+	}
+
+	//Cameras nodes
+
+	scene_node "InteriorMainCameraNode"
+	{
+		orientation 0 1 0 90
+		position -0.442365 1.54 -1.11186
+	}
+
+	scene_node "ExteriorMainCameraNode"
+	{
+		orientation 0.138915 0.983574 -0.115261 80.3007
+		position -13.0816 3.09069 -0.0904408
+	}
+
+	//Cameras
+
+	camera "ExteriorMainCamera"
+	{
+		parent "ExteriorMainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.10000
+			far 200.000
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+
+	camera "InteriorMainCamera"
+	{
+		parent "InteriorMainCameraNode"
+
+		viewport
+		{
+			type perspective
+			near 0.10000
+			far 200.000
+			aspect_ratio 1.77800
+			fov_y 45.0000
+		}
+
+		hdr_config
+		{
+			exposure 1.00000
+			gamma 2.20000
+		}
+	}
+}
+
+//Windows
+
+window "RenderPanel"
+{
+	vsync false
+	fullscreen false
+
+	render_target
+	{
+		size 1920 1080
+		format rgba32
+		tone_mapping "aces"
+		scene "Bistro"
+		camera "ExteriorMainCamera"
+		postfx "pbr_bloom"
+
+		ssao
+		{
+			enabled true
+			high_quality true
+			use_normals_buffer true
+			blur_high_quality true
+			intensity 1.00000
+			radius 0.200000
+			bias 0.0250000
+			num_samples 23
+			edge_sharpness 1.00000
+			blur_step_size 2
+			blur_radius 4
+			bend_step_count 4
+			bend_step_size 0.500000
+		}
+	}
+}

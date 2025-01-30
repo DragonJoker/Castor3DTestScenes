@@ -7,17 +7,17 @@ scene "Bistro"
 	ambient_light 0.00000 0.00000 0.00000
 	background_colour 0.00000 0.00000 0.00000
 	lpv_indirect_attenuation 1.70000
-	include "Helpers/Bistro-Materials.cscn"
-	include "Helpers/Bistro-Meshes.cscn"
-	include "Helpers/Bistro-Nodes.cscn"
-	include "Helpers/Bistro-Lights.cscn"
-	include "Helpers/Bistro-Objects.cscn"
+	include "../Data/Helpers/Bistro-Materials.cscn"
+	include "../Data/Helpers/Bistro-Meshes.cscn"
+	include "../Data/Helpers/Bistro-Nodes.cscn"
+	include "../Data/Helpers/Bistro-Lights.cscn"
+	include "../Data/Helpers/Bistro-Objects.cscn"
 
 	//Skybox
 
 	skybox
 	{
-		equirectangular "Textures/san_giuseppe_bridge_4k.hdr" 1024
+		equirectangular "../Data/Textures/san_giuseppe_bridge_4k.hdr" 1024
 	}
 
 	//Voxel Cone Tracing
